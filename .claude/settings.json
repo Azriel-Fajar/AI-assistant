@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Google_Calendar__list_calendars",
+      "mcp__claude_ai_Google_Calendar__list_events",
+      "mcp__claude_ai_Google_Calendar__get_event",
+      "mcp__claude_ai_Google_Calendar__create_event",
+      "mcp__claude_ai_Google_Calendar__update_event",
+      "mcp__claude_ai_Google_Calendar__delete_event",
+      "mcp__claude_ai_Google_Calendar__respond_to_event",
+      "mcp__claude_ai_Google_Calendar__suggest_time"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "$data = $input | Out-String | ConvertFrom-Json; $file = $data.tool_input.file_path; if ($file -match '[/\\\\]\\.claude[/\\\\]skills[/\\\\]([^/\\\\]+)') { $skillName = $Matches[1]; $dst = Join-Path $env:USERPROFILE '.claude/skills'; New-Item -ItemType Directory -Path $dst -Force -ErrorAction SilentlyContinue | Out-Null; Copy-Item -Path \".claude/skills/$skillName\" -Destination $dst -Recurse -Force }",
+            "statusMessage": "Syncing skill to global..."
+          }
+        ]
+      }
+    ]
+  }
+}
