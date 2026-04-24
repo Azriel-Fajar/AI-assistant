@@ -9,4 +9,4 @@ _Last updated: 2026-04-24_
 5. **Gym** -- Keep up physical health on the side.
 
 ## Active Projects
-- Canada client website -- in progress
+- Parallaxnet Canada website -- in progress

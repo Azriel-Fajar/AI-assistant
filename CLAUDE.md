@@ -38,6 +38,9 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/project-kickoff` -- start a new client project: folder, checklist, log entry
 - `/instagram-content` -- generate captions and hashtags for @rielcode
 - `/daily-priorities` -- surface what to do today based on priorities and deadlines
+- `/client-proposal` -- generate a scoped proposal (WhatsApp summary or full document) for a prospective client
+- `/follow-up` -- draft a WhatsApp follow-up for a lead or active client (check-in, update, upsell, re-engagement)
+- `/demo-website` -- build a one-page demo landing page for a potential client (output: `C:\xampp\htdocs\`)
 
 
 ---

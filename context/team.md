@@ -3,4 +3,4 @@
 Azriel works solo. No employees or contractors.
 
 ## Current Clients
-- **Canada client** -- active project (website), communicates via WhatsApp
+- **Parallaxnet Canada** -- active project (website), client name: Ali, communicates via WhatsApp

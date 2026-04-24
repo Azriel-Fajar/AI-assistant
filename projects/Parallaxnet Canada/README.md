@@ -1,6 +1,6 @@
-# Canada Client -- Website
+# Parallaxnet Canada -- Website
 
-Custom website for a client based in Canada.
+Custom website for Parallaxnet, a client based in Canada.
 
 **Status:** Active
 
