@@ -42,25 +42,26 @@ If you don't have enough detail to be specific, note it and suggest the user upd
 
 ### 3. Output format
 
-Present the list in this format:
+Present the output in this format:
 
-```
-Today -- <date>
+**Today -- <date>**
 
-Top priorities:
-1. [URGENT] <specific task> -- <reason>
-2. <specific task> -- <reason>
-3. <specific task> -- <reason>
+| # | Priority | Task | Reason |
+|---|----------|------|--------|
+| 1 | URGENT | <specific task> | <reason> |
+| 2 | HIGH | <specific task> | <reason> |
+| 3 | HIGH | <specific task> | <reason> |
+| 4 | MEDIUM | <specific task> | <reason> |
+| 5 | MEDIUM | <specific task> | <reason> |
 
-Also worth doing today:
-4. <task>
-5. <task>
+**On your radar (not today):**
 
-On your radar (not today):
-- <upcoming deadline or thing to keep in mind>
-```
+| Item | Deadline / Note |
+|------|-----------------|
+| <upcoming deadline or thing to keep in mind> | <date or note> |
 
-Keep reasons short -- one clause, not a sentence.
+Priority labels: URGENT, HIGH, MEDIUM, LOW.
+Keep the Reason column short -- one clause, not a sentence.
 
 ---
 

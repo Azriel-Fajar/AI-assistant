@@ -1,11 +1,24 @@
 ---
 name: github-commit
-description: Use when the user wants to push code to GitHub. Stages all changes, auto-generates a commit message, handles repo creation if none exists, and pushes to main (or a specified branch).
+description: Use when the user wants to push code to GitHub. Stages all changes, auto-generates a commit message, handles repo creation if none exists, and pushes to main (or a specified branch). Also triggers automatically after any major update to the Jarvis AI assistant.
 ---
 
 ## What This Skill Does
 
 Stages all local changes, generates a concise commit message, and pushes to a GitHub repository. If no remote is configured, it asks for a repo name, creates the repo if it doesn't exist, and wires up the remote automatically.
+
+## When to Run Automatically
+
+Run this skill automatically (without the user asking) after any **major update** to the Jarvis AI assistant. Major updates include:
+
+- Any change to `CLAUDE.md` or `CLAUDE.local.md`
+- Any change to files under `context/` (me.md, work.md, goals.md, current-priorities.md, team.md)
+- Any new or modified skill under `.claude/skills/`
+- Any new entry in `decisions/log.md`
+- Any new or modified template under `templates/`
+- Any new or modified SOP under `references/sops/`
+
+Minor updates (small wording fixes, typos) do not require an auto-push -- use judgment.
 
 ## Steps
 
