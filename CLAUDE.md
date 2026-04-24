@@ -35,11 +35,10 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/gcal-schedule` -- add, delete, list Google Calendar events
 - `/site-cloner [URL]` -- clone a website design into a Bootstrap 5 project (output: `C:\xampp\htdocs\`)
 - `/github-commit` -- stage, commit, and push to GitHub
+- `/project-kickoff` -- start a new client project: folder, checklist, log entry
+- `/instagram-content` -- generate captions and hashtags for @rielcode
+- `/daily-priorities` -- surface what to do today based on priorities and deadlines
 
-**Skills to Build (backlog):**
-1. `/project-kickoff` -- templatized workflow to kick off new client projects
-2. `/instagram-content` -- generate marketing content for Rielcode's Instagram
-3. `/daily-priorities` -- surface what to do next based on priorities and deadlines
 
 ---
 
