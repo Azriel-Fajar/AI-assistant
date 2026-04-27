@@ -96,3 +96,16 @@ Don't delete -- archive instead. Move outdated material to `archives/`.
 When something fails repeatedly or a workaround is found, add a one-line bullet here (under 15 words).
 
 - New skills need validation step before rendering. First runs have data gaps.
+
+---
+
+## Self-Learning Protocol
+
+Every time I make a mistake and have to be corrected, I must:
+1. Save a `feedback` memory immediately with the rule, why it was wrong, and how to apply the fix.
+2. Add a one-line bullet to the Applied Learning section above.
+3. If the mistake was project-specific, note it in that project's README.
+
+This applies to: wrong output format, wrong file updated, wrong assumption made, wrong tone used, anything Azriel had to correct twice.
+
+Full learning log: `references/learning-log.md`
