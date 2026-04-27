@@ -71,39 +71,39 @@ _Vertical: Cafes & F&B, Salatiga_
 ## Cold Messages
 
 ### Koffietori
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya bikin website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
 >
-> Saya perhatikan Koffietori belum punya website -- apakah benar begitu? Apakah ada kemungkinan Koffietori butuh website? Kalau iya, saya senang bantu.
+> Saya perhatikan Koffietori belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Koffietori butuh website? Kalau benar, saya dengan senang hati membantu.
 >
-> Boleh saya tunjukkan contoh demo website yang saya buat untuk bisnis F&B?
+> Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Bragga Coffee
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya bikin website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
 >
-> Saya perhatikan Bragga Coffee belum punya website -- apakah benar begitu? Apakah ada kemungkinan Bragga Coffee butuh website? Kalau iya, saya senang bantu.
+> Saya perhatikan Bragga Coffee belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Bragga Coffee butuh website? Kalau benar, saya dengan senang hati membantu.
 >
-> Boleh saya tunjukkan contoh demo website yang saya buat untuk bisnis F&B?
+> Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Menepilah Cafe
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya bikin website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
 >
-> Saya perhatikan Menepilah belum punya website -- apakah benar begitu? Apakah ada kemungkinan Menepilah butuh website? Kalau iya, saya senang bantu.
+> Saya perhatikan Menepilah belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Menepilah butuh website? Kalau benar, saya dengan senang hati membantu.
 >
-> Boleh saya tunjukkan contoh demo website yang saya buat untuk bisnis F&B?
+> Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Waroeng Lada Hitam
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya bikin website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
 >
-> Saya perhatikan Waroeng Lada Hitam belum punya website -- apakah benar begitu? Apakah ada kemungkinan Waroeng Lada Hitam butuh website? Kalau iya, saya senang bantu.
+> Saya perhatikan Waroeng Lada Hitam belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Waroeng Lada Hitam butuh website? Kalau benar, saya dengan senang hati membantu.
 >
-> Boleh saya tunjukkan contoh demo website yang saya buat untuk bisnis F&B?
+> Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Secerca Coffee
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya bikin website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
 >
-> Saya perhatikan Secerca Coffee belum punya website -- apakah benar begitu? Apakah ada kemungkinan Secerca Coffee butuh website? Kalau iya, saya senang bantu.
+> Saya perhatikan Secerca Coffee belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Secerca Coffee butuh website? Kalau benar, saya dengan senang hati membantu.
 >
-> Boleh saya tunjukkan contoh demo website yang saya buat untuk bisnis F&B?
+> Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ---
 

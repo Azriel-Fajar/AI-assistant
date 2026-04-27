@@ -181,7 +181,15 @@ git push --set-upstream origin <branch>
 
 ---
 
-### 9. Report the result
+### 9. Send ntfy notification
+
+```bash
+curl -s -o /dev/null -H "Title: Push Successful" -d "Pushed \"<commit message>\" to <repo-name> (<branch>)." ntfy.sh/JARVIS
+```
+
+---
+
+### 10. Report the result
 
 Show a one-line summary:
 ```

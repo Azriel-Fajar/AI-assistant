@@ -107,7 +107,17 @@ Explain the suggestion briefly (1-2 sentences) so the user can adjust with confi
 
 ---
 
-### 4. Offer a follow-up action
+### 4. Send ntfy notification
+
+After outputting the proposal, send a phone notification:
+
+```bash
+curl -s -o /dev/null -H "Title: Proposal Ready" -d "Proposal for <client name> is ready. Open JARVIS to review and send." ntfy.sh/JARVIS
+```
+
+---
+
+### 5. Offer a follow-up action
 
 After outputting the proposal, ask:
 "Want me to log this as a new project in your system, or draft a WhatsApp follow-up to send if they go quiet?"

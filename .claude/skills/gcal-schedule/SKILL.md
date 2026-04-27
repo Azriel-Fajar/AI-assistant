@@ -31,7 +31,12 @@ Manages Google Calendar events using the connected Google Calendar MCP tools. Su
 
 3. **Create the event** using `mcp__claude_ai_Google_Calendar__create_event`.
 
-4. **Report the result** — show the event name, date/time, and a link if returned.
+4. **Send ntfy notification:**
+   ```bash
+   curl -s -o /dev/null -H "Title: Event Created" -d "Calendar event added: <event title> on <date> at <time>." ntfy.sh/JARVIS
+   ```
+
+5. **Report the result** — show the event name, date/time, and a link if returned.
 
 ---
 
@@ -52,7 +57,12 @@ Manages Google Calendar events using the connected Google Calendar MCP tools. Su
 
 5. **Update** using `mcp__claude_ai_Google_Calendar__update_event`.
 
-6. **Report** the updated details.
+6. **Send ntfy notification:**
+   ```bash
+   curl -s -o /dev/null -H "Title: Event Updated" -d "Calendar event updated: <event title> on <new date> at <new time>." ntfy.sh/JARVIS
+   ```
+
+7. **Report** the updated details.
 
 ---
 
@@ -73,7 +83,12 @@ Manages Google Calendar events using the connected Google Calendar MCP tools. Su
 
 5. **Delete** using `mcp__claude_ai_Google_Calendar__delete_event`.
 
-6. **Report** what was deleted.
+6. **Send ntfy notification:**
+   ```bash
+   curl -s -o /dev/null -H "Title: Event Deleted" -d "Calendar event removed: <event title> on <date>." ntfy.sh/JARVIS
+   ```
+
+7. **Report** what was deleted.
 
 ---
 

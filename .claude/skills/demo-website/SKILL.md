@@ -104,7 +104,17 @@ After generating the file:
 
 ---
 
-### 5. Report to the user
+### 5. Send ntfy notification
+
+After the build is confirmed production-ready, send a phone notification:
+
+```bash
+curl -s -o /dev/null -H "Title: Demo Site Ready" -d "Demo for <business name> is built and live at localhost/<folder-name>/." ntfy.sh/JARVIS
+```
+
+---
+
+### 6. Report to the user
 
 - List the file created and the output path
 - State the color scheme and font pairing used

@@ -69,7 +69,17 @@ Tailor tone and content by type:
 
 ---
 
-### 3. Offer a variation
+### 3. Send ntfy notification
+
+After presenting the message, send a phone notification:
+
+```bash
+curl -s -o /dev/null -H "Title: Follow-up Ready" -d "Follow-up message for <client name> is drafted. Open JARVIS to copy and send." ntfy.sh/JARVIS
+```
+
+---
+
+### 4. Offer a variation
 
 After presenting the message, ask:
 "Want a shorter version, a different tone, or a version in Bahasa Indonesia?"

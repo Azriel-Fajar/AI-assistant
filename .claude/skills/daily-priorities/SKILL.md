@@ -65,7 +65,17 @@ Keep the Reason column short -- one clause, not a sentence.
 
 ---
 
-### 4. Ask if the user wants to act on anything
+### 4. Send ntfy notification
+
+After outputting the priority list, send a phone notification:
+
+```bash
+curl -s -o /dev/null -H "Title: Daily Priorities Ready" -d "Your ranked task list for today is ready. Open JARVIS to review." ntfy.sh/JARVIS
+```
+
+---
+
+### 5. Ask if the user wants to act on anything
 
 After the list, ask:
 "Want to start on any of these now, or add any of them to your calendar?"

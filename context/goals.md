@@ -6,7 +6,7 @@ _Update this file at the start of each quarter._
 
 - Land 2 clients per month consistently
 - Complete current Canada client website project
-- Build and publish a portfolio site
+- Build and publish a portfolio site -- DONE: portfolio.rielcode.com
 - Pass all college coursework this semester
 - Reach financial independence from monthly allowance
 
