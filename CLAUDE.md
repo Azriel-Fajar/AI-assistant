@@ -41,6 +41,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/client-proposal` -- generate a scoped proposal (WhatsApp summary or full document) for a prospective client
 - `/follow-up` -- draft a WhatsApp follow-up for a lead or active client (check-in, update, upsell, re-engagement)
 - `/demo-website` -- build a one-page demo landing page for a potential client (output: `C:\xampp\htdocs\`)
+- `/new-project` -- start a new personal project: folder under `personal/`, checklist, log entry
 
 
 ---
