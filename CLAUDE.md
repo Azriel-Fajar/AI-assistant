@@ -43,6 +43,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/demo-website` -- build a one-page demo landing page for a potential client (output: `C:\xampp\htdocs\`)
 - `/new-project` -- start a new personal project: folder under `personal/`, checklist, log entry
 - `/lead-tracker` -- manage the full outreach pipeline (add, pipeline, update, next, message, close) with phone notifications and WhatsApp links
+- `/chatbot-integration` -- add OpenAI-powered floating chatbot to PHP/XAMPP projects (scans branding, generates HTML/CSS/JS/PHP handler, injects into footer)
 
 
 ---
