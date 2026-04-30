@@ -1,0 +1,30 @@
+{
+  "files": {
+    "code": [],
+    "document": [
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\CLAUDE.local.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\CLAUDE.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\context\\current-priorities.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\context\\goals.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\context\\me.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\context\\team.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\context\\work.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\decisions\\log.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\leads\\archive.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\leads\\leads.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\Parallaxnet Canada\\README.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\rielcode-outreach\\salatiga-cafes.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\references\\learning-log.md",
+      "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\templates\\session-summary.md"
+    ],
+    "paper": [],
+    "image": [],
+    "video": []
+  },
+  "total_files": 14,
+  "total_words": 2007,
+  "needs_graph": false,
+  "warning": "Corpus is ~2,007 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [],
+  "graphifyignore_patterns": 0
+}
