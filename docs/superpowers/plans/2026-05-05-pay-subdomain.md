@@ -2,11 +2,11 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a payment control panel at `pay.rielcode.com` where Azriel creates invoices, generates shareable payment links and QR codes, and clients pay via Midtrans Snap.
+**Goal:** Build an invoice control panel at `pay.rielcode.com` where Azriel creates invoices, generates shareable URLs and QR codes, and clients view/download invoices with bank transfer details and personal QRIS. No payment gateway -- manual confirmation flow.
 
-**Architecture:** Standalone PHP app in `C:\xampp\htdocs\pay\` locally, deployed to `pay.rielcode.com` subdomain on cPanel. Shares the same MySQL DB as `rielcode.com`. Session-based admin auth. Client payment pages are public (no login). Midtrans Snap handles the payment UI.
+**Architecture:** Standalone PHP app in `C:\xampp\htdocs\pay\` locally, deployed to `pay.rielcode.com` subdomain on cPanel. Shares the same MySQL DB as `rielcode.com`. Session-based admin auth. Client invoice pages are public (no login).
 
-**Tech Stack:** PHP 8+ (procedural), MySQL/mysqli, Bootstrap 5.3, PHPMailer, `chillerlan/php-qrcode` (Composer), Midtrans Snap PHP SDK
+**Tech Stack:** PHP 8+ (procedural), MySQL/mysqli, Bootstrap 5.3, PHPMailer, `chillerlan/php-qrcode` (Composer), `dompdf/dompdf` (Composer)
 
 ---
 
@@ -14,20 +14,20 @@
 
 ```
 C:\xampp\htdocs\pay\
-├── config.php                  # DB + Midtrans + SMTP credentials
+├── config.php                  # DB + SMTP + bank details
 ├── connection.php              # mysqli connection wrapper
-├── composer.json               # QR code + Midtrans dependencies
+├── composer.json               # QR code + dompdf dependencies
 ├── index.php                   # Redirect: logged in → dashboard, else → login
 ├── login.php                   # Admin login page + handler
 ├── logout.php                  # Session destroy + redirect
 ├── dashboard.php               # Invoice list, statuses, totals
 ├── invoice/
 │   ├── create.php              # Create new invoice form + handler
-│   ├── edit.php                # Edit existing invoice form + handler
-│   ├── view.php                # Public client payment page (?id=INV-2026-001)
-│   └── success.php             # Post-payment success page
-├── webhook/
-│   └── midtrans.php            # Midtrans payment webhook handler
+│   ├── edit.php                # Edit existing invoice + mark paid
+│   └── view.php                # Public client invoice page (?id=INV-2026-001)
+├── invoice-pdf.php             # Server-side PDF generation via dompdf
+├── IMG/
+│   └── qris.png                # Personal QRIS static image (upload manually, not in git)
 ├── inc/
 │   ├── auth.php                # Session auth check (include on admin pages)
 │   ├── header.php              # Admin HTML head + navbar
@@ -48,7 +48,6 @@ C:\xampp\htdocs\pay\
 ```bash
 mkdir C:\xampp\htdocs\pay
 mkdir C:\xampp\htdocs\pay\invoice
-mkdir C:\xampp\htdocs\pay\webhook
 mkdir C:\xampp\htdocs\pay\inc
 mkdir C:\xampp\htdocs\pay\CSS
 ```
@@ -59,7 +58,7 @@ Create `C:\xampp\htdocs\pay\composer.json`:
 {
     "require": {
         "chillerlan/php-qrcode": "^4.3",
-        "midtrans/midtrans-php": "^2.5"
+        "dompdf/dompdf": "^2.0"
     }
 }
 ```
@@ -71,15 +70,14 @@ cd C:\xampp\htdocs\pay
 composer install
 ```
 
-Expected: `vendor/` folder created with `chillerlan/php-qrcode` and `midtrans/midtrans-php`.
+Expected: `vendor/` folder created with both packages.
 
 - [ ] **Step 3: Create `.gitignore`**
-
-Create `C:\xampp\htdocs\pay\.gitignore`:
 
 ```
 vendor/
 config.php
+IMG/qris.png
 *.log
 ```
 
@@ -96,9 +94,6 @@ git commit -m "chore: init pay subdomain project"
 
 ## Task 2: DB tables
 
-**Files:**
-- Run SQL in phpMyAdmin on the same Rielcode DB
-
 - [ ] **Step 1: Open phpMyAdmin, select Rielcode DB, run:**
 
 ```sql
@@ -114,8 +109,6 @@ CREATE TABLE IF NOT EXISTS invoices (
   total DECIMAL(15,2) NOT NULL DEFAULT 0,
   due_date DATE NOT NULL,
   status ENUM('draft','sent','paid','overdue') NOT NULL DEFAULT 'draft',
-  midtrans_order_id VARCHAR(100) DEFAULT NULL,
-  midtrans_payment_url TEXT DEFAULT NULL,
   notes TEXT DEFAULT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -142,7 +135,6 @@ CREATE TABLE IF NOT EXISTS invoice_counter (
 - [ ] **Step 3: Commit**
 
 ```bash
-cd C:\xampp\htdocs\pay
 git add -A
 git commit -m "feat: add invoices, invoice_items, invoice_counter tables"
 ```
@@ -150,10 +142,6 @@ git commit -m "feat: add invoices, invoice_items, invoice_counter tables"
 ---
 
 ## Task 3: Config and connection files
-
-**Files:**
-- Create: `C:\xampp\htdocs\pay\config.php`
-- Create: `C:\xampp\htdocs\pay\connection.php`
 
 - [ ] **Step 1: Create `config.php`**
 
@@ -164,11 +152,6 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'your_db_user');     // replace with actual
 define('DB_PASS', 'your_db_pass');     // replace with actual
 define('DB_NAME', 'your_db_name');     // replace with actual
-
-// Midtrans
-define('MIDTRANS_SERVER_KEY', 'SB-Mid-server-xxxx');  // replace with Sandbox key
-define('MIDTRANS_CLIENT_KEY', 'SB-Mid-client-xxxx');  // replace with Sandbox key
-define('MIDTRANS_IS_PRODUCTION', false);               // set true for live
 
 // SMTP
 define('SMTP_HOST', 'smtp.gmail.com');
@@ -182,9 +165,14 @@ define('ADMIN_PASSWORD_HASH', password_hash('changeme', PASSWORD_DEFAULT));
 
 // App URL
 define('APP_URL', 'http://localhost/pay');  // change to https://pay.rielcode.com in production
+
+// Bank transfer details (shown on client invoice page)
+define('BANK_NAME', 'BCA');                          // replace with actual
+define('BANK_ACCOUNT_NUMBER', '1234567890');          // replace with actual
+define('BANK_ACCOUNT_NAME', 'Azriel Fajar Wibowo');  // replace with actual
 ```
 
-> **Note:** Never commit `config.php` (it's in `.gitignore`). On production server, create this file manually via cPanel file manager.
+> **Note:** Never commit `config.php` (it's in `.gitignore`). Create manually on production server.
 
 - [ ] **Step 2: Create `connection.php`**
 
@@ -211,12 +199,6 @@ git commit -m "feat: add DB connection wrapper"
 
 ## Task 4: Auth helpers and shared layout
 
-**Files:**
-- Create: `C:\xampp\htdocs\pay\inc\auth.php`
-- Create: `C:\xampp\htdocs\pay\inc\header.php`
-- Create: `C:\xampp\htdocs\pay\inc\footer.php`
-- Create: `C:\xampp\htdocs\pay\CSS\pay.css`
-
 - [ ] **Step 1: Create `inc/auth.php`**
 
 ```php
@@ -232,7 +214,6 @@ if (empty($_SESSION['admin_logged_in'])) {
 
 ```php
 <?php
-// Requires $pageTitle to be set before include
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -241,7 +222,6 @@ if (empty($_SESSION['admin_logged_in'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($pageTitle ?? 'Rielcode Pay'); ?></title>
     <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" type="image/png" href="<?php echo APP_URL; ?>/IMG/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -294,63 +274,42 @@ if (empty($_SESSION['admin_logged_in'])) {
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--text); font-family: 'Outfit', sans-serif; margin: 0; min-height: 100vh; }
 
-/* Navbar */
 .navbar { background: #0d0f11; border-bottom: 1px solid var(--border); padding: 12px 24px; }
 .navbar-brand { font-weight: 700; font-size: 1.1rem; color: var(--text) !important; }
 .brand-rc { color: var(--primary); }
 
-/* Main content */
 .main-content { padding: 32px 24px; max-width: 1100px; margin: 0 auto; }
 
-/* Cards */
 .pay-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
 .pay-card + .pay-card { margin-top: 16px; }
 
-/* Status badges */
 .badge-draft    { background: var(--surface-2); color: var(--muted); }
 .badge-sent     { background: rgba(58,123,255,0.15); color: var(--primary); }
 .badge-paid     { background: rgba(34,197,94,0.15); color: var(--success); }
 .badge-overdue  { background: rgba(239,68,68,0.15); color: var(--danger); }
 
-/* Tables */
 .table-pay { width: 100%; border-collapse: collapse; }
 .table-pay th { color: var(--muted); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; padding: 10px 12px; border-bottom: 1px solid var(--border); font-weight: 500; }
 .table-pay td { padding: 14px 12px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
 .table-pay tr:last-child td { border-bottom: none; }
 .table-pay tr:hover td { background: var(--surface-2); }
 
-/* Forms */
-.form-control, .form-select {
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: 8px;
-    padding: 10px 14px;
-}
-.form-control:focus, .form-select:focus {
-    background: var(--surface-2);
-    border-color: var(--primary);
-    color: var(--text);
-    box-shadow: 0 0 0 3px rgba(58,123,255,0.15);
-}
+.form-control, .form-select { background: var(--surface-2); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 10px 14px; }
+.form-control:focus, .form-select:focus { background: var(--surface-2); border-color: var(--primary); color: var(--text); box-shadow: 0 0 0 3px rgba(58,123,255,0.15); }
 .form-label { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
 
-/* Buttons */
 .btn-primary { background: var(--primary); border-color: var(--primary); }
 .btn-primary:hover { background: #2563eb; border-color: #2563eb; }
 .btn-outline-secondary { border-color: var(--border); color: var(--muted); }
 .btn-outline-secondary:hover { background: var(--surface-2); color: var(--text); }
 
-/* Stats row */
 .stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
 .stat-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
 .stat-value { font-size: 1.8rem; font-weight: 700; margin-top: 4px; }
 
-/* Invoice line items */
 .line-items-table th, .line-items-table td { padding: 8px 10px; }
 .line-items-table th { font-size: 12px; color: var(--muted); }
 
-/* Login page */
 .login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
 .login-box { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 40px; width: 100%; max-width: 400px; }
 .login-logo { font-size: 1.4rem; font-weight: 700; color: var(--primary); text-align: center; margin-bottom: 28px; }
@@ -362,9 +321,22 @@ body { background: var(--bg); color: var(--text); font-family: 'Outfit', sans-se
 .invoice-total-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-top: 24px; text-align: center; }
 .invoice-total-amount { font-size: 2rem; font-weight: 700; color: var(--text); }
 
-/* QR code */
+.bank-details-box { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-top: 16px; text-align: left; }
+.bank-details-box .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.bank-details-box .value { font-weight: 600; font-size: 1rem; }
+.qris-box { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-top: 16px; text-align: center; }
+.qris-box .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.qris-box img { max-width: 160px; border-radius: 8px; background: #fff; padding: 6px; }
+.payment-divider { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; text-align: center; margin: 12px 0; }
+
 .qr-wrap { text-align: center; }
 .qr-wrap img { max-width: 180px; border-radius: 8px; }
+
+@media print {
+    .no-print { display: none !important; }
+    body { background: #fff; color: #000; }
+    .pay-card, .invoice-public { border: none; }
+}
 ```
 
 - [ ] **Step 5: Commit**
@@ -377,11 +349,6 @@ git commit -m "feat: add auth helper, shared layout, and base CSS"
 ---
 
 ## Task 5: Login, logout, and index redirect
-
-**Files:**
-- Create: `C:\xampp\htdocs\pay\index.php`
-- Create: `C:\xampp\htdocs\pay\login.php`
-- Create: `C:\xampp\htdocs\pay\logout.php`
 
 - [ ] **Step 1: Create `index.php`**
 
@@ -421,15 +388,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = 'Incorrect password.';
     }
 }
-
-$pageTitle = 'Login | Rielcode Pay';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $pageTitle; ?></title>
+    <title>Login | Rielcode Pay</title>
     <meta name="robots" content="noindex, nofollow">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
@@ -466,7 +431,7 @@ header('Location: ' . APP_URL . '/login.php');
 exit;
 ```
 
-- [ ] **Step 4: Test -- open `http://localhost/pay/`. Verify it redirects to login. Enter wrong password, verify error shows. Enter correct password (`changeme`), verify redirect to dashboard (404 is fine for now).**
+- [ ] **Step 4: Test -- open `http://localhost/pay/`. Verify redirect to login. Enter wrong password, verify error. Enter correct password (`changeme`), verify redirect to dashboard.**
 
 - [ ] **Step 5: Commit**
 
@@ -479,22 +444,12 @@ git commit -m "feat: add login, logout, and index redirect"
 
 ## Task 6: Invoice number generator helper
 
-**Files:**
-- Create: `C:\xampp\htdocs\pay\inc\invoice_number.php`
-
 - [ ] **Step 1: Create `inc/invoice_number.php`**
 
 ```php
 <?php
-/**
- * Generates next invoice number for the current year.
- * Format: INV-YYYY-NNN (e.g. INV-2026-001)
- * Uses invoice_counter table to track per-year sequence.
- */
 function generate_invoice_number(mysqli $conn): string {
     $year = (int)date('Y');
-
-    // Upsert: increment counter for this year
     $stmt = $conn->prepare("
         INSERT INTO invoice_counter (year, last_number)
         VALUES (?, 1)
@@ -504,15 +459,13 @@ function generate_invoice_number(mysqli $conn): string {
     $stmt->execute();
     $stmt->close();
 
-    // Fetch the new number
     $stmt = $conn->prepare("SELECT last_number FROM invoice_counter WHERE year = ?");
     $stmt->bind_param("i", $year);
     $stmt->execute();
     $row = $stmt->get_result()->fetch_assoc();
     $stmt->close();
 
-    $number = (int)$row['last_number'];
-    return sprintf('INV-%d-%03d', $year, $number);
+    return sprintf('INV-%d-%03d', $year, (int)$row['last_number']);
 }
 ```
 
@@ -527,9 +480,6 @@ git commit -m "feat: add invoice number generator (INV-YYYY-NNN)"
 
 ## Task 7: Dashboard
 
-**Files:**
-- Create: `C:\xampp\htdocs\pay\dashboard.php`
-
 - [ ] **Step 1: Create `dashboard.php`**
 
 ```php
@@ -538,14 +488,8 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/connection.php';
 require_once __DIR__ . '/inc/auth.php';
 
-// Auto-mark overdue
-$conn->query("
-    UPDATE invoices
-    SET status = 'overdue'
-    WHERE status = 'sent' AND due_date < CURDATE()
-");
+$conn->query("UPDATE invoices SET status = 'overdue' WHERE status = 'sent' AND due_date < CURDATE()");
 
-// Stats
 $stats = $conn->query("
     SELECT
         COUNT(*) AS total,
@@ -557,7 +501,6 @@ $stats = $conn->query("
     FROM invoices
 ")->fetch_assoc();
 
-// Invoice list
 $invoices = $conn->query("SELECT * FROM invoices ORDER BY created_at DESC");
 
 $pageTitle = 'Dashboard | Rielcode Pay';
@@ -571,67 +514,28 @@ require_once __DIR__ . '/inc/header.php';
     </a>
 </div>
 
-<!-- Stats -->
 <div class="row g-3 mb-4">
-    <div class="col-6 col-md-3">
-        <div class="stat-box">
-            <div class="stat-label">Total</div>
-            <div class="stat-value"><?php echo (int)$stats['total']; ?></div>
-        </div>
-    </div>
-    <div class="col-6 col-md-3">
-        <div class="stat-box">
-            <div class="stat-label">Paid</div>
-            <div class="stat-value" style="color:var(--success)"><?php echo (int)$stats['paid_count']; ?></div>
-        </div>
-    </div>
-    <div class="col-6 col-md-3">
-        <div class="stat-box">
-            <div class="stat-label">Pending</div>
-            <div class="stat-value" style="color:var(--primary)"><?php echo (int)$stats['sent_count']; ?></div>
-        </div>
-    </div>
-    <div class="col-6 col-md-3">
-        <div class="stat-box">
-            <div class="stat-label">Overdue</div>
-            <div class="stat-value" style="color:var(--danger)"><?php echo (int)$stats['overdue_count']; ?></div>
-        </div>
-    </div>
+    <div class="col-6 col-md-3"><div class="stat-box"><div class="stat-label">Total</div><div class="stat-value"><?php echo (int)$stats['total']; ?></div></div></div>
+    <div class="col-6 col-md-3"><div class="stat-box"><div class="stat-label">Paid</div><div class="stat-value" style="color:var(--success)"><?php echo (int)$stats['paid_count']; ?></div></div></div>
+    <div class="col-6 col-md-3"><div class="stat-box"><div class="stat-label">Pending</div><div class="stat-value" style="color:var(--primary)"><?php echo (int)$stats['sent_count']; ?></div></div></div>
+    <div class="col-6 col-md-3"><div class="stat-box"><div class="stat-label">Overdue</div><div class="stat-value" style="color:var(--danger)"><?php echo (int)$stats['overdue_count']; ?></div></div></div>
 </div>
 
 <div class="row g-3 mb-4">
-    <div class="col-md-6">
-        <div class="stat-box">
-            <div class="stat-label">Revenue (IDR)</div>
-            <div class="stat-value">Rp <?php echo number_format((float)$stats['revenue_idr'], 0, ',', '.'); ?></div>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="stat-box">
-            <div class="stat-label">Revenue (USD)</div>
-            <div class="stat-value">$<?php echo number_format((float)$stats['revenue_usd'], 2); ?></div>
-        </div>
-    </div>
+    <div class="col-md-6"><div class="stat-box"><div class="stat-label">Revenue (IDR)</div><div class="stat-value">Rp <?php echo number_format((float)$stats['revenue_idr'], 0, ',', '.'); ?></div></div></div>
+    <div class="col-md-6"><div class="stat-box"><div class="stat-label">Revenue (USD)</div><div class="stat-value">$<?php echo number_format((float)$stats['revenue_usd'], 2); ?></div></div></div>
 </div>
 
-<!-- Invoice table -->
 <div class="pay-card p-0 overflow-hidden">
     <table class="table-pay w-100">
         <thead>
             <tr>
-                <th>Invoice</th>
-                <th>Client</th>
-                <th>Project</th>
-                <th>Amount</th>
-                <th>Due</th>
-                <th>Status</th>
-                <th>Actions</th>
+                <th>Invoice</th><th>Client</th><th>Project</th><th>Amount</th><th>Due</th><th>Status</th><th>Actions</th>
             </tr>
         </thead>
         <tbody>
         <?php while ($inv = $invoices->fetch_assoc()): ?>
             <?php
-            $statusClass = 'badge-' . $inv['status'];
             $amount = $inv['currency'] === 'IDR'
                 ? 'Rp ' . number_format($inv['total'], 0, ',', '.')
                 : '$' . number_format($inv['total'], 2);
@@ -642,7 +546,7 @@ require_once __DIR__ . '/inc/header.php';
                 <td><?php echo htmlspecialchars($inv['project_name']); ?></td>
                 <td><?php echo $amount; ?></td>
                 <td><?php echo date('d M Y', strtotime($inv['due_date'])); ?></td>
-                <td><span class="badge <?php echo $statusClass; ?> px-2 py-1 rounded"><?php echo ucfirst($inv['status']); ?></span></td>
+                <td><span class="badge badge-<?php echo $inv['status']; ?> px-2 py-1 rounded"><?php echo ucfirst($inv['status']); ?></span></td>
                 <td>
                     <a href="<?php echo APP_URL; ?>/invoice/edit.php?id=<?php echo $inv['id']; ?>" class="btn btn-sm btn-outline-secondary me-1">Edit</a>
                     <a href="<?php echo APP_URL; ?>/invoice/view.php?id=<?php echo urlencode($inv['invoice_number']); ?>" target="_blank" class="btn btn-sm btn-outline-secondary">View</a>
@@ -656,7 +560,7 @@ require_once __DIR__ . '/inc/header.php';
 <?php require_once __DIR__ . '/inc/footer.php'; ?>
 ```
 
-- [ ] **Step 2: Open `http://localhost/pay/dashboard.php`. Verify stats and empty table render correctly.**
+- [ ] **Step 2: Open `http://localhost/pay/dashboard.php`. Verify stats and empty table render.**
 
 - [ ] **Step 3: Commit**
 
@@ -668,9 +572,6 @@ git commit -m "feat: add dashboard with stats and invoice table"
 ---
 
 ## Task 8: Create invoice page
-
-**Files:**
-- Create: `C:\xampp\htdocs\pay\invoice\create.php`
 
 - [ ] **Step 1: Create `invoice/create.php`**
 
@@ -711,14 +612,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $subtotal += $line_total;
             $items[] = ['desc' => trim($desc), 'qty' => $qty, 'price' => $price, 'total' => $line_total];
         }
-        $total = $subtotal;
 
         $stmt = $conn->prepare("
             INSERT INTO invoices
                 (invoice_number, client_name, client_email, project_name, package, currency, subtotal, total, due_date, status, notes)
             VALUES (?,?,?,?,?,?,?,?,?,'draft',?)
         ");
-        $stmt->bind_param("ssssssddss", $invoice_number, $client_name, $client_email, $project_name, $package, $currency, $subtotal, $total, $due_date, $notes);
+        $stmt->bind_param("ssssssddss", $invoice_number, $client_name, $client_email, $project_name, $package, $currency, $subtotal, $subtotal, $due_date, $notes);
         $stmt->execute();
         $invoice_id = $conn->insert_id;
         $stmt->close();
@@ -754,22 +654,13 @@ require_once __DIR__ . '/../inc/header.php';
             <div class="pay-card mb-4">
                 <h6 class="mb-3" style="color:var(--muted);text-transform:uppercase;font-size:11px;letter-spacing:1px;">Client</h6>
                 <div class="row g-3">
-                    <div class="col-md-6">
-                        <label class="form-label">Client Name *</label>
-                        <input type="text" name="client_name" class="form-control" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Client Email *</label>
-                        <input type="email" name="client_email" class="form-control" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Project Name *</label>
-                        <input type="text" name="project_name" class="form-control" required>
-                    </div>
+                    <div class="col-md-6"><label class="form-label">Client Name *</label><input type="text" name="client_name" class="form-control" required></div>
+                    <div class="col-md-6"><label class="form-label">Client Email *</label><input type="email" name="client_email" class="form-control" required></div>
+                    <div class="col-md-6"><label class="form-label">Project Name *</label><input type="text" name="project_name" class="form-control" required></div>
                     <div class="col-md-6">
                         <label class="form-label">Package</label>
                         <select name="package" class="form-select">
-                            <option value="">— None —</option>
+                            <option value="">-- None --</option>
                             <?php while ($p = $packages->fetch_assoc()): ?>
                             <option value="<?php echo htmlspecialchars($p['package_name']); ?>"><?php echo htmlspecialchars($p['package_name']); ?></option>
                             <?php endwhile; ?>
@@ -781,17 +672,10 @@ require_once __DIR__ . '/../inc/header.php';
             <div class="pay-card mb-4">
                 <h6 class="mb-3" style="color:var(--muted);text-transform:uppercase;font-size:11px;letter-spacing:1px;">Line Items</h6>
                 <table class="line-items-table w-100 mb-3">
-                    <thead>
-                        <tr>
-                            <th style="width:50%">Description</th>
-                            <th style="width:10%">Qty</th>
-                            <th style="width:25%">Unit Price</th>
-                            <th style="width:15%">Total</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th style="width:50%">Description</th><th style="width:10%">Qty</th><th style="width:25%">Unit Price</th><th style="width:15%">Total</th></tr></thead>
                     <tbody id="items-body">
                         <tr>
-                            <td><input type="text" name="item_desc[]" class="form-control form-control-sm" placeholder="e.g. Web Development" required></td>
+                            <td><input type="text" name="item_desc[]" class="form-control form-control-sm" required></td>
                             <td><input type="number" name="item_qty[]" class="form-control form-control-sm item-qty" value="1" min="1"></td>
                             <td><input type="number" name="item_price[]" class="form-control form-control-sm item-price" value="0" min="0" step="1000"></td>
                             <td><span class="item-total">0</span></td>
@@ -803,7 +687,7 @@ require_once __DIR__ . '/../inc/header.php';
 
             <div class="pay-card">
                 <label class="form-label">Notes (optional)</label>
-                <textarea name="notes" class="form-control" rows="3" placeholder="Payment terms, additional info..."></textarea>
+                <textarea name="notes" class="form-control" rows="3"></textarea>
             </div>
         </div>
 
@@ -840,36 +724,26 @@ function addRow() {
     tbody.appendChild(row);
     bindRow(row);
 }
-
 function bindRow(row) {
     const qty = row.querySelector('.item-qty');
     const price = row.querySelector('.item-price');
     const total = row.querySelector('.item-total');
-    const update = () => {
-        const t = (parseInt(qty.value)||1) * (parseFloat(price.value)||0);
-        total.textContent = t.toLocaleString('id-ID');
-        updateGrandTotal();
-    };
+    const update = () => { const t = (parseInt(qty.value)||1)*(parseFloat(price.value)||0); total.textContent = t.toLocaleString('id-ID'); updateGrandTotal(); };
     qty.addEventListener('input', update);
     price.addEventListener('input', update);
 }
-
 function updateGrandTotal() {
     let sum = 0;
-    document.querySelectorAll('.item-qty').forEach((q, i) => {
-        const prices = document.querySelectorAll('.item-price');
-        sum += (parseInt(q.value)||1) * (parseFloat(prices[i]?.value)||0);
-    });
+    document.querySelectorAll('.item-qty').forEach((q,i) => { const prices = document.querySelectorAll('.item-price'); sum += (parseInt(q.value)||1)*(parseFloat(prices[i]?.value)||0); });
     document.getElementById('grand-total').textContent = sum.toLocaleString('id-ID');
 }
-
 document.querySelectorAll('#items-body tr').forEach(bindRow);
 </script>
 
 <?php require_once __DIR__ . '/../inc/footer.php'; ?>
 ```
 
-- [ ] **Step 2: Open `http://localhost/pay/invoice/create.php`. Fill a test invoice, submit. Verify redirect to edit page.**
+- [ ] **Step 2: Test -- create a test invoice, verify redirect to edit page.**
 
 - [ ] **Step 3: Commit**
 
@@ -880,10 +754,7 @@ git commit -m "feat: add invoice creation page"
 
 ---
 
-## Task 9: Edit invoice + generate Midtrans payment URL + QR code
-
-**Files:**
-- Create: `C:\xampp\htdocs\pay\invoice\edit.php`
+## Task 9: Edit invoice + generate shareable URL + QR code
 
 - [ ] **Step 1: Create `invoice/edit.php`**
 
@@ -912,57 +783,28 @@ $allItems = [];
 while ($row = $items->fetch_assoc()) $allItems[] = $row;
 
 $publicUrl = APP_URL . '/invoice/view.php?id=' . urlencode($inv['invoice_number']);
+$pdfUrl    = APP_URL . '/invoice-pdf.php?id=' . urlencode($inv['invoice_number']);
 
-// Generate QR (base64 PNG)
 $options = new QROptions(['outputType' => 'png', 'scale' => 5, 'imageBase64' => true]);
 $qrCode = (new QRCode($options))->render($publicUrl);
 
-// Handle: mark as sent + generate Midtrans payment URL
 $message = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     if ($_POST['action'] === 'send' && $inv['status'] === 'draft') {
-        \Midtrans\Config::$serverKey    = MIDTRANS_SERVER_KEY;
-        \Midtrans\Config::$isProduction = MIDTRANS_IS_PRODUCTION;
-        \Midtrans\Config::$isSanitized  = true;
-        \Midtrans\Config::$is3ds        = true;
-
-        $itemDetails = [];
-        foreach ($allItems as $item) {
-            $itemDetails[] = [
-                'id'       => 'ITEM-' . $item['id'],
-                'price'    => (int)$item['unit_price'],
-                'quantity' => (int)$item['quantity'],
-                'name'     => substr($item['description'], 0, 50),
-            ];
-        }
-
-        $params = [
-            'transaction_details' => [
-                'order_id'     => $inv['invoice_number'],
-                'gross_amount' => (int)$inv['total'],
-            ],
-            'customer_details' => [
-                'first_name' => $inv['client_name'],
-                'email'      => $inv['client_email'],
-            ],
-            'item_details' => $itemDetails,
-        ];
-
-        try {
-            $snapToken   = \Midtrans\Snap::getSnapToken($params);
-            $paymentUrl  = 'https://app' . (MIDTRANS_IS_PRODUCTION ? '' : '.sandbox') . '.midtrans.com/snap/v2/vtweb/' . $snapToken;
-
-            $s = $conn->prepare("UPDATE invoices SET status='sent', midtrans_order_id=?, midtrans_payment_url=? WHERE id=?");
-            $s->bind_param("ssi", $inv['invoice_number'], $paymentUrl, $id);
-            $s->execute();
-            $s->close();
-
-            $inv['status'] = 'sent';
-            $inv['midtrans_payment_url'] = $paymentUrl;
-            $message = 'Invoice marked as sent. Payment link generated.';
-        } catch (Exception $e) {
-            $message = 'Midtrans error: ' . $e->getMessage();
-        }
+        $s = $conn->prepare("UPDATE invoices SET status='sent' WHERE id=?");
+        $s->bind_param("i", $id);
+        $s->execute();
+        $s->close();
+        $inv['status'] = 'sent';
+        $message = 'Invoice marked as sent. Share the link or QR below with your client.';
+    }
+    if ($_POST['action'] === 'mark_paid') {
+        $s = $conn->prepare("UPDATE invoices SET status='paid' WHERE id=?");
+        $s->bind_param("i", $id);
+        $s->execute();
+        $s->close();
+        $inv['status'] = 'paid';
+        $message = 'Invoice marked as paid.';
     }
 }
 
@@ -1020,20 +862,30 @@ $amount = $inv['currency'] === 'IDR'
         <div class="pay-card mb-3">
             <form method="POST">
                 <input type="hidden" name="action" value="send">
-                <p style="color:var(--muted);font-size:13px;">Generate Midtrans payment link and mark invoice as sent.</p>
-                <button type="submit" class="btn btn-primary w-100">Generate Payment Link</button>
+                <p style="color:var(--muted);font-size:13px;">Generate shareable link and mark invoice as sent.</p>
+                <button type="submit" class="btn btn-primary w-100">Mark as Sent + Get Link</button>
             </form>
         </div>
         <?php endif; ?>
 
-        <?php if ($inv['midtrans_payment_url']): ?>
+        <?php if (in_array($inv['status'], ['sent', 'overdue'])): ?>
         <div class="pay-card mb-3">
-            <h6 class="mb-3" style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;">Payment Link</h6>
+            <form method="POST">
+                <input type="hidden" name="action" value="mark_paid">
+                <p style="color:var(--muted);font-size:13px;">Client confirmed payment via WhatsApp?</p>
+                <button type="submit" class="btn btn-success w-100">Mark as Paid</button>
+            </form>
+        </div>
+        <?php endif; ?>
+
+        <?php if ($inv['status'] !== 'draft'): ?>
+        <div class="pay-card mb-3">
+            <h6 class="mb-3" style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;">Client Invoice Link</h6>
             <div class="input-group mb-2">
                 <input type="text" class="form-control form-control-sm" value="<?php echo htmlspecialchars($publicUrl); ?>" id="pay-link" readonly>
                 <button class="btn btn-outline-secondary btn-sm" onclick="navigator.clipboard.writeText(document.getElementById('pay-link').value)">Copy</button>
             </div>
-            <a href="<?php echo htmlspecialchars($inv['midtrans_payment_url']); ?>" target="_blank" class="btn btn-outline-secondary btn-sm w-100 mt-1">Open Midtrans Link</a>
+            <a href="<?php echo htmlspecialchars($publicUrl); ?>" target="_blank" class="btn btn-outline-secondary btn-sm w-100">Preview</a>
         </div>
         <div class="pay-card text-center">
             <h6 class="mb-3" style="color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;">QR Code</h6>
@@ -1049,22 +901,20 @@ $amount = $inv['currency'] === 'IDR'
 <?php require_once __DIR__ . '/../inc/footer.php'; ?>
 ```
 
-- [ ] **Step 2: Open `http://localhost/pay/invoice/edit.php?id=1`. Verify invoice details show. If status is draft, click "Generate Payment Link" -- verify Midtrans token is fetched (sandbox) and status changes to `sent`. Verify QR code displays.**
+- [ ] **Step 2: Test -- open edit page for a draft invoice. Click "Mark as Sent + Get Link". Verify status changes, link appears, QR displays.**
 
-- [ ] **Step 3: Commit**
+- [ ] **Step 3: Test -- click "Mark as Paid". Verify status updates to paid.**
+
+- [ ] **Step 4: Commit**
 
 ```bash
 git add invoice/edit.php
-git commit -m "feat: add invoice edit page with Midtrans payment link + QR generation"
+git commit -m "feat: add invoice edit page with shareable link, QR, and manual paid toggle"
 ```
 
 ---
 
-## Task 10: Public client payment page
-
-**Files:**
-- Create: `C:\xampp\htdocs\pay\invoice\view.php`
-- Create: `C:\xampp\htdocs\pay\invoice\success.php`
+## Task 10: Public client invoice page
 
 - [ ] **Step 1: Create `invoice/view.php`**
 
@@ -1083,7 +933,6 @@ $inv = $stmt->get_result()->fetch_assoc();
 $stmt->close();
 if (!$inv) { http_response_code(404); die('Invoice not found.'); }
 
-// Auto-overdue check
 if ($inv['status'] === 'sent' && $inv['due_date'] < date('Y-m-d')) {
     $conn->query("UPDATE invoices SET status='overdue' WHERE id=" . (int)$inv['id']);
     $inv['status'] = 'overdue';
@@ -1097,9 +946,10 @@ $amount = $inv['currency'] === 'IDR'
     ? 'Rp ' . number_format($inv['total'], 0, ',', '.')
     : '$' . number_format($inv['total'], 2);
 
-$isPaid     = $inv['status'] === 'paid';
-$isOverdue  = $inv['status'] === 'overdue';
-$canPay     = in_array($inv['status'], ['sent', 'overdue']);
+$isPaid    = $inv['status'] === 'paid';
+$isOverdue = $inv['status'] === 'overdue';
+
+$pdfUrl = APP_URL . '/invoice-pdf.php?id=' . urlencode($invoice_number);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -1111,10 +961,6 @@ $canPay     = in_array($inv['status'], ['sent', 'overdue']);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="<?php echo APP_URL; ?>/CSS/pay.css" rel="stylesheet">
-    <?php if ($canPay && $inv['midtrans_payment_url']): ?>
-    <script src="https://app<?php echo MIDTRANS_IS_PRODUCTION ? '' : '.sandbox'; ?>.midtrans.com/snap/snap.js"
-            data-client-key="<?php echo MIDTRANS_CLIENT_KEY; ?>"></script>
-    <?php endif; ?>
 </head>
 <body style="background:#0d0f11;">
 <div class="invoice-public">
@@ -1125,13 +971,15 @@ $canPay     = in_array($inv['status'], ['sent', 'overdue']);
         </div>
         <div style="text-align:right;">
             <code style="color:rgba(255,255,255,0.5);font-size:13px;"><?php echo htmlspecialchars($inv['invoice_number']); ?></code>
-            <?php if ($isPaid): ?>
-                <div><span class="badge badge-paid px-2 py-1 rounded mt-1">Paid</span></div>
-            <?php elseif ($isOverdue): ?>
-                <div><span class="badge badge-overdue px-2 py-1 rounded mt-1">Overdue</span></div>
-            <?php else: ?>
-                <div><span class="badge badge-sent px-2 py-1 rounded mt-1">Unpaid</span></div>
-            <?php endif; ?>
+            <div>
+                <?php if ($isPaid): ?>
+                    <span class="badge badge-paid px-2 py-1 rounded mt-1">Paid</span>
+                <?php elseif ($isOverdue): ?>
+                    <span class="badge badge-overdue px-2 py-1 rounded mt-1">Overdue</span>
+                <?php else: ?>
+                    <span class="badge badge-sent px-2 py-1 rounded mt-1">Unpaid</span>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 
@@ -1145,9 +993,7 @@ $canPay     = in_array($inv['status'], ['sent', 'overdue']);
     <div class="pay-card mb-3">
         <h6 class="mb-3" style="color:rgba(255,255,255,0.4);font-size:11px;text-transform:uppercase;letter-spacing:1px;">Project</h6>
         <strong><?php echo htmlspecialchars($inv['project_name']); ?></strong>
-        <?php if ($inv['package']): ?>
-            <div style="color:rgba(255,255,255,0.4);font-size:13px;"><?php echo htmlspecialchars($inv['package']); ?></div>
-        <?php endif; ?>
+        <?php if ($inv['package']): ?><div style="color:rgba(255,255,255,0.4);font-size:13px;"><?php echo htmlspecialchars($inv['package']); ?></div><?php endif; ?>
     </div>
 
     <div class="pay-card mb-3">
@@ -1167,9 +1013,7 @@ $canPay     = in_array($inv['status'], ['sent', 'overdue']);
     </div>
 
     <?php if ($inv['notes']): ?>
-    <div class="pay-card mb-3" style="color:rgba(255,255,255,0.5);font-size:13px;">
-        <?php echo nl2br(htmlspecialchars($inv['notes'])); ?>
-    </div>
+    <div class="pay-card mb-3" style="color:rgba(255,255,255,0.5);font-size:13px;"><?php echo nl2br(htmlspecialchars($inv['notes'])); ?></div>
     <?php endif; ?>
 
     <div class="invoice-total-box">
@@ -1178,140 +1022,169 @@ $canPay     = in_array($inv['status'], ['sent', 'overdue']);
 
         <?php if ($isPaid): ?>
             <div style="color:#22c55e;margin-top:16px;font-weight:600;">Payment received. Thank you!</div>
-        <?php elseif ($canPay && $inv['midtrans_payment_url']): ?>
-            <a href="<?php echo htmlspecialchars($inv['midtrans_payment_url']); ?>"
-               class="btn btn-primary mt-4" style="padding:14px 40px;font-size:1rem;border-radius:10px;">
-               Pay Now
-            </a>
-            <div style="color:rgba(255,255,255,0.3);font-size:12px;margin-top:12px;">Secured by Midtrans</div>
-        <?php elseif ($isOverdue): ?>
-            <div style="color:#ef4444;margin-top:16px;">This invoice is overdue. Please contact us.</div>
         <?php else: ?>
-            <div style="color:rgba(255,255,255,0.4);margin-top:16px;font-size:13px;">Payment link will be provided shortly.</div>
+            <?php if ($inv['currency'] === 'IDR'): ?>
+            <div class="qris-box mt-3">
+                <div class="label">Scan QRIS</div>
+                <img src="<?php echo APP_URL; ?>/IMG/qris.png" alt="QRIS">
+                <div style="color:rgba(255,255,255,0.4);font-size:11px;margin-top:8px;">GoPay, OVO, DANA, BCA, and all banking apps</div>
+            </div>
+            <div class="payment-divider">or pay via bank transfer</div>
+            <?php endif; ?>
+            <div class="bank-details-box">
+                <div class="label">Bank Transfer</div>
+                <div class="value mt-2"><?php echo htmlspecialchars(BANK_NAME); ?></div>
+                <div style="font-size:1.3rem;font-weight:700;letter-spacing:2px;margin:6px 0;"><?php echo htmlspecialchars(BANK_ACCOUNT_NUMBER); ?></div>
+                <div style="color:rgba(255,255,255,0.6);font-size:14px;"><?php echo htmlspecialchars(BANK_ACCOUNT_NAME); ?></div>
+            </div>
+            <div style="color:rgba(255,255,255,0.4);font-size:12px;margin-top:12px;">After payment, send proof via WhatsApp to confirm.</div>
         <?php endif; ?>
+
+        <div class="mt-4 no-print">
+            <a href="<?php echo htmlspecialchars($pdfUrl); ?>" class="btn btn-outline-secondary btn-sm">Download PDF</a>
+        </div>
     </div>
 </div>
 </body>
 </html>
 ```
 
-- [ ] **Step 2: Create `invoice/success.php`**
-
-```php
-<?php
-require_once __DIR__ . '/../config.php';
-
-$invoice_number = trim($_GET['id'] ?? '');
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Successful | Rielcode</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="<?php echo APP_URL; ?>/CSS/pay.css" rel="stylesheet">
-</head>
-<body>
-<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;">
-    <div style="max-width:420px;">
-        <div style="width:72px;height:72px;background:rgba(34,197,94,0.15);border:2px solid #22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;margin:0 auto 24px;">&#10003;</div>
-        <h2 style="font-weight:700;margin-bottom:12px;">Payment Successful</h2>
-        <p style="color:rgba(255,255,255,0.5);">Thank you for your payment. We'll be in touch shortly to kick off your project.</p>
-        <?php if ($invoice_number): ?>
-        <p style="color:rgba(255,255,255,0.3);font-size:13px;margin-top:8px;">Invoice: <code><?php echo htmlspecialchars($invoice_number); ?></code></p>
-        <?php endif; ?>
-    </div>
-</div>
-</body>
-</html>
-```
-
-- [ ] **Step 3: Open `http://localhost/pay/invoice/view.php?id=INV-2026-001` (use the invoice number you created in Task 8). Verify invoice renders correctly with Pay Now button.**
-
-- [ ] **Step 4: Commit**
-
-```bash
-git add invoice/view.php invoice/success.php
-git commit -m "feat: add public invoice payment page and success page"
-```
-
----
-
-## Task 11: Midtrans webhook handler
-
-**Files:**
-- Create: `C:\xampp\htdocs\pay\webhook\midtrans.php`
-
-- [ ] **Step 1: Create `webhook/midtrans.php`**
-
-```php
-<?php
-require_once __DIR__ . '/../config.php';
-require_once __DIR__ . '/../connection.php';
-
-// Only accept POST
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    exit;
-}
-
-$payload = json_decode(file_get_contents('php://input'), true);
-if (!$payload) {
-    http_response_code(400);
-    exit;
-}
-
-$order_id      = $payload['order_id'] ?? '';
-$status_code   = $payload['status_code'] ?? '';
-$gross_amount  = $payload['gross_amount'] ?? '';
-$transaction_status = $payload['transaction_status'] ?? '';
-$fraud_status  = $payload['fraud_status'] ?? '';
-
-// Verify signature
-$expected_sig = hash('sha512', $order_id . $status_code . $gross_amount . MIDTRANS_SERVER_KEY);
-$received_sig = $payload['signature_key'] ?? '';
-
-if (!hash_equals($expected_sig, $received_sig)) {
-    http_response_code(403);
-    exit;
-}
-
-// Determine if payment is successful
-$is_paid = false;
-if ($transaction_status === 'capture' && $fraud_status === 'accept') $is_paid = true;
-if ($transaction_status === 'settlement') $is_paid = true;
-
-if ($is_paid) {
-    $stmt = $conn->prepare("UPDATE invoices SET status='paid' WHERE invoice_number = ? AND status != 'paid'");
-    $stmt->bind_param("s", $order_id);
-    $stmt->execute();
-    $stmt->close();
-}
-
-http_response_code(200);
-echo 'OK';
-```
-
-> **Note:** The `require_once` paths assume the file is at `webhook/midtrans.php`. Adjust paths if your local folder structure differs.
-
-- [ ] **Step 2: In Midtrans sandbox dashboard (`https://dashboard.sandbox.midtrans.com`), go to Settings > Configuration. Set Notification URL to `https://pay.rielcode.com/webhook/midtrans.php`.**
+- [ ] **Step 2: Open `http://localhost/pay/invoice/view.php?id=INV-2026-001`. Verify invoice renders with bank details and Download PDF button.**
 
 - [ ] **Step 3: Commit**
 
 ```bash
-git add webhook/midtrans.php
-git commit -m "feat: add Midtrans webhook handler with signature verification"
+git add invoice/view.php
+git commit -m "feat: add public client invoice page with bank transfer details and PDF download"
+```
+
+---
+
+## Task 11: PDF generation
+
+- [ ] **Step 1: Create `invoice-pdf.php`**
+
+```php
+<?php
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/connection.php';
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Dompdf\Dompdf;
+use Dompdf\Options;
+
+$invoice_number = trim($_GET['id'] ?? '');
+if (!$invoice_number) { http_response_code(404); die('Not found.'); }
+
+$stmt = $conn->prepare("SELECT * FROM invoices WHERE invoice_number = ?");
+$stmt->bind_param("s", $invoice_number);
+$stmt->execute();
+$inv = $stmt->get_result()->fetch_assoc();
+$stmt->close();
+if (!$inv) { http_response_code(404); die('Not found.'); }
+
+$items_result = $conn->query("SELECT * FROM invoice_items WHERE invoice_id = " . (int)$inv['id']);
+$allItems = [];
+while ($row = $items_result->fetch_assoc()) $allItems[] = $row;
+
+$amount = $inv['currency'] === 'IDR'
+    ? 'Rp ' . number_format($inv['total'], 0, ',', '.')
+    : '$' . number_format($inv['total'], 2);
+
+$rows = '';
+foreach ($allItems as $item) {
+    $rows .= '<tr>
+        <td>' . htmlspecialchars($item['description']) . '</td>
+        <td style="text-align:center;">' . (int)$item['quantity'] . '</td>
+        <td style="text-align:right;">' . number_format($item['unit_price'], 0, ',', '.') . '</td>
+        <td style="text-align:right;">' . number_format($item['total'], 0, ',', '.') . '</td>
+    </tr>';
+}
+
+$html = '
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: DejaVu Sans, sans-serif; font-size: 12px; color: #111; margin: 40px; }
+  .header { display: flex; justify-content: space-between; margin-bottom: 30px; }
+  .logo { font-size: 20px; font-weight: bold; color: #3a7bff; }
+  .invoice-meta { text-align: right; color: #555; font-size: 11px; }
+  .section-title { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  th { background: #f4f4f4; padding: 8px; text-align: left; font-size: 10px; text-transform: uppercase; color: #555; }
+  td { padding: 8px; border-bottom: 1px solid #eee; }
+  .total-row { font-size: 16px; font-weight: bold; text-align: right; margin-top: 10px; }
+  .bank-box { background: #f9f9f9; border: 1px solid #eee; border-radius: 6px; padding: 14px; margin-top: 20px; }
+  .bank-label { font-size: 10px; text-transform: uppercase; color: #888; }
+  .bank-value { font-size: 13px; font-weight: bold; }
+  .footer { margin-top: 40px; font-size: 10px; color: #aaa; text-align: center; }
+</style>
+</head>
+<body>
+<div style="display:flex;justify-content:space-between;margin-bottom:30px;">
+  <div><div class="logo">Rielcode</div><div style="color:#888;font-size:11px;">rielcode.com</div></div>
+  <div style="text-align:right;">
+    <div style="font-size:11px;color:#888;">Invoice</div>
+    <div style="font-weight:bold;">' . htmlspecialchars($inv['invoice_number']) . '</div>
+    <div style="color:#888;font-size:11px;">Due: ' . date('d M Y', strtotime($inv['due_date'])) . '</div>
+  </div>
+</div>
+
+<div style="margin-bottom:20px;">
+  <div class="section-title">Bill To</div>
+  <strong>' . htmlspecialchars($inv['client_name']) . '</strong><br>
+  <span style="color:#555;">' . htmlspecialchars($inv['client_email']) . '</span>
+</div>
+
+<div style="margin-bottom:10px;"><strong>' . htmlspecialchars($inv['project_name']) . '</strong></div>
+
+<table>
+  <thead><tr><th>Description</th><th style="text-align:center;">Qty</th><th style="text-align:right;">Price</th><th style="text-align:right;">Total</th></tr></thead>
+  <tbody>' . $rows . '</tbody>
+</table>
+
+<div class="total-row">Total: ' . $amount . '</div>
+
+<div class="bank-box">
+  <div class="bank-label">Payment' . ($inv['currency'] === 'IDR' ? ' via QRIS or Bank Transfer' : ' via Bank Transfer') . '</div>
+  ' . ($inv['currency'] === 'IDR' ? '<div style="color:#555;font-size:10px;margin-bottom:8px;">Scan QRIS with GoPay, OVO, DANA, or any banking app. Or transfer to:</div>' : '') . '
+  <div class="bank-value" style="margin-top:6px;">' . htmlspecialchars(BANK_NAME) . '</div>
+  <div style="font-size:15px;font-weight:bold;letter-spacing:2px;margin:4px 0;">' . htmlspecialchars(BANK_ACCOUNT_NUMBER) . '</div>
+  <div style="color:#555;">' . htmlspecialchars(BANK_ACCOUNT_NAME) . '</div>
+  <div style="color:#888;font-size:10px;margin-top:8px;">After payment, send proof via WhatsApp to confirm.</div>
+</div>
+
+<div class="footer">Generated by Rielcode &mdash; rielcode.com</div>
+</body>
+</html>';
+
+$options = new Options();
+$options->set('isRemoteEnabled', false);
+$dompdf = new Dompdf($options);
+$dompdf->loadHtml($html);
+$dompdf->setPaper('A4', 'portrait');
+$dompdf->render();
+$dompdf->stream($inv['invoice_number'] . '.pdf', ['Attachment' => true]);
+```
+
+- [ ] **Step 2: Open `http://localhost/pay/invoice-pdf.php?id=INV-2026-001`. Verify PDF downloads with correct invoice data and bank details.**
+
+- [ ] **Step 3: Commit**
+
+```bash
+git add invoice-pdf.php
+git commit -m "feat: add server-side PDF invoice generation via dompdf"
 ```
 
 ---
 
 ## Task 12: Deploy to cPanel subdomain
 
-- [ ] **Step 1: Log into cPanel. Go to Subdomains. Create `pay.rielcode.com` pointing to `/home/rier5192/pay/` (or equivalent).**
+- [ ] **Step 1: Log into cPanel. Go to Subdomains. Create `pay.rielcode.com` pointing to `/home/rier5192/pay/`.**
 
-- [ ] **Step 2: Upload files via git or cPanel file manager. If using git:**
+- [ ] **Step 2: Push to GitHub and clone on server:**
 
 ```bash
 cd C:\xampp\htdocs\pay
@@ -1319,14 +1192,14 @@ git remote add origin git@github.com:Azriel-Fajar/rielcode-pay.git
 git push -u origin main
 ```
 
-Then on server:
+On server:
 ```bash
 git clone git@github.com:Azriel-Fajar/rielcode-pay.git ~/pay
 cd ~/pay
 composer install --no-dev
 ```
 
-- [ ] **Step 3: Create `config.php` on the server manually via cPanel file manager. Use production values:**
+- [ ] **Step 3: Create `config.php` on server via cPanel file manager:**
 
 ```php
 <?php
@@ -1334,9 +1207,6 @@ define('DB_HOST', 'localhost');
 define('DB_USER', 'your_cpanel_db_user');
 define('DB_PASS', 'your_cpanel_db_pass');
 define('DB_NAME', 'your_cpanel_db_name');
-define('MIDTRANS_SERVER_KEY', 'Mid-server-xxxx');   // production key
-define('MIDTRANS_CLIENT_KEY', 'Mid-client-xxxx');   // production key
-define('MIDTRANS_IS_PRODUCTION', true);
 define('SMTP_HOST', 'mail.rielcode.com');
 define('SMTP_USER', 'info@rielcode.com');
 define('SMTP_PASS', 'rielinfo1407');
@@ -1344,8 +1214,13 @@ define('SMTP_PORT', 587);
 define('SMTP_SECURE', 'tls');
 define('ADMIN_PASSWORD_HASH', password_hash('your-strong-password', PASSWORD_DEFAULT));
 define('APP_URL', 'https://pay.rielcode.com');
+define('BANK_NAME', 'BCA');
+define('BANK_ACCOUNT_NUMBER', '1234567890');
+define('BANK_ACCOUNT_NAME', 'Azriel Fajar Wibowo');
 ```
 
-- [ ] **Step 4: Run DB migration SQL on production DB via cPanel phpMyAdmin (same SQL from Task 2).**
+- [ ] **Step 4: Upload `IMG/qris.png` to server via cPanel file manager. Get your personal QRIS image from your bank app or GoPay/OVO/DANA merchant QR.**
 
-- [ ] **Step 5: Open `https://pay.rielcode.com/`. Verify redirect to login. Login, create a test invoice, generate payment link, open client view URL. Verify Midtrans payment popup loads.**
+- [ ] **Step 5: Run DB migration SQL on production DB via phpMyAdmin (same SQL from Task 2).**
+
+- [ ] **Step 6: Open `https://pay.rielcode.com/`. Login, create test IDR invoice, mark sent, open client URL. Verify QRIS image and bank details show. Verify PDF downloads. Test USD invoice -- verify QRIS section hidden.**

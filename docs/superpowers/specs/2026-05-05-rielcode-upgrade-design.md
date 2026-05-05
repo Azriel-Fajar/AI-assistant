@@ -83,10 +83,8 @@ Separate PHP app deployed as cPanel subdomain. Shares MySQL DB with rielcode.com
 | `pay.rielcode.com/login` | Azriel | Admin login (session-based) |
 | `pay.rielcode.com/dashboard` | Azriel | All invoices, statuses, revenue totals |
 | `pay.rielcode.com/invoice/create` | Azriel | Create new invoice |
-| `pay.rielcode.com/invoice/[id]/edit` | Azriel | Edit existing invoice |
-| `pay.rielcode.com/invoice/[id]` | Client | Public payment page |
-| `pay.rielcode.com/invoice/[id]/success` | Client | Post-payment confirmation |
-| `pay.rielcode.com/webhook/midtrans` | Midtrans | Payment status callback |
+| `pay.rielcode.com/invoice/[id]/edit` | Azriel | Edit existing invoice + mark paid |
+| `pay.rielcode.com/invoice/[id]` | Client | Public invoice view + PDF download |
 
 ### 2.2 Invoice Creation (Azriel)
 
@@ -102,33 +100,61 @@ Fields:
 On save: generates unique invoice number (`INV-2026-001`, auto-incremented per year).
 
 On mark as `sent`:
-- Generates Midtrans payment URL
-- Generates QR code pointing to `pay.rielcode.com/invoice/[id]`
-- Both displayed on dashboard for Azriel to copy/download and send via WhatsApp
+- Generates shareable URL: `pay.rielcode.com/invoice/[invoice_number]`
+- Generates QR code pointing to that URL
+- Azriel copies URL / QR and sends to client via WhatsApp
 
-### 2.3 Client Payment Page
+### 2.3 Client Invoice Page
 
-Public, no login. Accessed via unique URL.
+Public, no login. Accessed via unique URL Azriel shares.
+
+On page open: invoice renders immediately (no redirect, no popup).
 
 Shows:
-- Invoice number, date, due date
+- Rielcode logo + branding
+- Invoice number, issue date, due date
 - Client name, project name
 - Line items table
 - Total (IDR or USD)
-- Midtrans Snap payment button
+- Bank transfer details (bank name, account number, account name)
 - Status badge (unpaid / paid / overdue)
+- "Download PDF" button -- generates and downloads invoice as PDF
+
+Payment flow:
+1. Client opens URL → sees invoice + bank details
+2. Client transfers to Azriel's bank account
+3. Client sends proof of payment via WhatsApp
+4. Azriel confirms in dashboard → marks invoice as `paid`
 
 ### 2.4 Invoice Statuses
 
 `draft` → `sent` → `paid`
 
-Auto-transition: `sent` → `overdue` if due date passed and status still `sent` (checked on page load or cron).
+Auto-transition: `sent` → `overdue` if due date passed and status still `sent` (checked on page load).
 
 ### 2.5 Auth
 
 - Single admin account (Azriel only)
 - Session-based login with CSRF protection
-- Client payment pages: public, no auth -- secured by unguessable invoice ID in URL
+- Client invoice pages: public, no auth -- secured by unguessable invoice number in URL
+
+### 2.6 Payment Details
+
+Displayed statically on client invoice page. Stored in `config.php`:
+
+**Bank Transfer:**
+- Bank name
+- Account number
+- Account name (Azriel's full name as registered)
+
+**QRIS (personal statis):**
+- Static QR image stored as `IMG/qris.png` in the pay subdomain
+- Client scans with any e-wallet or banking app (GoPay, OVO, DANA, BCA, etc.)
+- Manual confirmation still required -- client sends proof via WhatsApp
+- IDR only (QRIS does not support USD)
+- QRIS section hidden on USD invoices
+
+**Upgrade path:** Switch to Xendit QRIS dinamis (KTP only, no NPWP) when ready for auto-confirmation.
 
 ---
 
@@ -161,8 +187,6 @@ CREATE TABLE invoices (
   total DECIMAL(15,2) NOT NULL DEFAULT 0,
   due_date DATE NOT NULL,
   status ENUM('draft','sent','paid','overdue') NOT NULL DEFAULT 'draft',
-  midtrans_order_id VARCHAR(100),
-  midtrans_payment_url TEXT,
   notes TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
@@ -184,25 +208,37 @@ CREATE TABLE invoice_items (
 
 ---
 
-## 4. Midtrans Integration
+## 4. Payment Flow (Manual Invoice)
 
-### Payment Flow
-1. Azriel sets invoice to `sent` → Midtrans Snap API called → payment URL generated
-2. Client opens payment page → clicks Pay → Midtrans Snap popup opens
-3. Client pays via QRIS, bank transfer (VA), credit/debit card, GoPay, OVO, or DANA
-4. Midtrans sends webhook to `pay.rielcode.com/webhook/midtrans`
-5. Webhook verifies signature → updates invoice status to `paid`
-6. Client redirected to `/invoice/[id]/success`
+No payment gateway. Manual bank transfer.
 
-### Config
-- Server Key + Client Key stored in config file (not committed to git)
-- Sandbox mode for development, Production for live
-- Payment methods: QRIS, bank transfer, credit/debit card, GoPay, OVO, DANA
+### Flow
+1. Azriel creates invoice → marks as `sent` → URL generated
+2. Azriel sends URL to client via WhatsApp
+3. Client opens URL → sees full invoice + payment options
+4. Client pays via QRIS scan (IDR) or bank transfer
+5. Client downloads PDF if needed
+6. Client sends proof of payment via WhatsApp
+7. Azriel marks invoice as `paid` in dashboard
 
-### Webhook Security
-- Verify Midtrans `signature_key` using SHA-512: `hash('sha512', $order_id . $status_code . $gross_amount . $server_key)`
-- Reject any webhook with invalid signature (return 403)
-- Idempotent: ignore duplicate `paid` webhooks for already-paid invoices
+### Payment Options on Client Page
+- **QRIS (IDR only):** static QR image (`IMG/qris.png`), client scans with any app
+- **Bank transfer:** bank name, account number, account name
+- Both shown side by side for IDR invoices; QRIS hidden for USD invoices
+
+### Config (stored in config.php, never committed)
+- Bank name, account number, account name
+- QRIS image path: `IMG/qris.png` (uploaded manually to server)
+
+### PDF Generation
+- Client-side: browser print/save as PDF via `window.print()` with print stylesheet
+- Or server-side: `dompdf` via Composer (simpler alternative)
+- PDF includes: invoice header, line items, totals, bank details, Rielcode branding
+
+### Why no payment gateway
+- Midtrans requires NPWP (Indonesian tax ID) for registration
+- Manual flow works now, zero compliance overhead
+- Can integrate gateway later when NPWP obtained
 
 ---
 
@@ -214,8 +250,9 @@ CREATE TABLE invoice_items (
 | Frontend | Bootstrap 5.3, vanilla JS |
 | DB | MySQL via mysqli |
 | Email | PHPMailer (existing) |
-| PDF/QR | QR: `chillerlan/php-qrcode` via Composer |
-| Payments | Midtrans Snap (PHP SDK or raw API) |
+| QR Code | `chillerlan/php-qrcode` via Composer |
+| PDF | `dompdf/dompdf` via Composer (server-side) or browser print stylesheet |
+| Payments | Manual bank transfer -- no gateway |
 | Hosting | cPanel subdomain (same server as rielcode.com) |
 
 ---
