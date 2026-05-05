@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="UTF-8">
+<title>Project Completion Document</title>
+<style>
+  @page { size: A4 portrait; margin: 20mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'DejaVu Sans', sans-serif;
+    color: #1a1a1a;
+    font-size: 11pt;
+    line-height: 1.6;
+    margin: 0;
+  }
+  h1, h2, h3 { color: #0d0d0d; margin: 0 0 8pt 0; font-weight: 700; letter-spacing: -0.01em; }
+  h1 { font-size: 28pt; line-height: 1.15; }
+  h2 { font-size: 16pt; border-bottom: 2pt solid {{ACCENT}}; padding-bottom: 6pt; margin-top: 0; }
+  h3 { font-size: 12pt; color: {{ACCENT}}; }
+  p { margin: 0 0 8pt 0; }
+  a { color: {{ACCENT}}; text-decoration: none; }
+  table { width: 100%; border-collapse: collapse; margin: 8pt 0; }
+  th, td { text-align: left; padding: 8pt 10pt; border-bottom: 1pt solid #e5e5e5; vertical-align: top; }
+  th { background: #f7f7f7; font-weight: 700; font-size: 10pt; text-transform: uppercase; letter-spacing: 0.05em; }
+  .section { page-break-before: always; padding-top: 4pt; }
+  .section:first-of-type { page-break-before: auto; }
+
+  /* COVER */
+  .cover {
+    height: 247mm;
+    display: table;
+    width: 100%;
+  }
+  .cover-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+  }
+  .cover .logo { width: 70pt; height: 70pt; margin-bottom: 30pt; }
+  .cover .eyebrow {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #888;
+    margin-bottom: 14pt;
+  }
+  .cover .title { font-size: 36pt; line-height: 1.1; margin-bottom: 16pt; }
+  .cover .meta { font-size: 11pt; color: #555; }
+  .cover .meta strong { color: #1a1a1a; }
+  .cover-footer {
+    position: running(coverfoot);
+    font-size: 9pt;
+    color: #888;
+  }
+
+  /* CARDS */
+  .card {
+    background: #fafafa;
+    border-left: 3pt solid {{ACCENT}};
+    padding: 12pt 14pt;
+    margin: 8pt 0;
+  }
+  .card .label {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888;
+    margin-bottom: 4pt;
+  }
+  .card .value { font-size: 13pt; font-weight: 700; color: #0d0d0d; }
+  .creds-grid { width: 100%; }
+  .creds-grid td { width: 50%; padding: 6pt 0; border: none; vertical-align: top; }
+
+  .feature {
+    margin: 10pt 0;
+    padding-bottom: 10pt;
+    border-bottom: 1pt solid #ececec;
+  }
+  .feature:last-child { border-bottom: none; }
+  .feature h3 { margin-bottom: 4pt; }
+  .feature .how { color: #555; font-size: 10pt; margin-top: 4pt; }
+
+  ul { margin: 6pt 0 8pt 18pt; padding: 0; }
+  li { margin-bottom: 4pt; }
+
+  .footer-note {
+    margin-top: 20pt;
+    padding-top: 10pt;
+    border-top: 1pt solid #e5e5e5;
+    font-size: 9pt;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-inner">
+    <img class="logo" src="file://C:/xampp/htdocs/Rielcode/IMG/Rielcode Logo Square Transparent.png" alt="Rielcode">
+    <div class="eyebrow">{{COVER_EYEBROW}}</div>
+    <h1 class="title">{{PROJECT_NAME}}</h1>
+    <div class="meta">
+      {{COVER_PREPARED_FOR}} <strong>{{CLIENT_NAME}}</strong><br>
+      {{COVER_COMPLETED_ON}} <strong>{{COMPLETION_DATE}}</strong><br>
+      {{COVER_PREPARED_BY}} <strong>Rielcode</strong>
+    </div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<div class="section">
+  <h2>{{H_OVERVIEW}}</h2>
+  <p>{{PROJECT_SUMMARY}}</p>
+  <table class="creds-grid">
+    <tr>
+      <td><div class="label">{{L_LIVE_URL}}</div><div class="value"><a href="{{LIVE_URL}}">{{LIVE_URL}}</a></div></td>
+      <td><div class="label">{{L_DELIVERED}}</div><div class="value">{{COMPLETION_DATE}}</div></td>
+    </tr>
+  </table>
+</div>
+
+<!-- PAGES -->
+<div class="section">
+  <h2>{{H_PAGES}}</h2>
+  <p>{{PAGES_INTRO}}</p>
+  <table>
+    <thead>
+      <tr><th>{{TH_PAGE}}</th><th>{{TH_URL}}</th><th>{{TH_PURPOSE}}</th></tr>
+    </thead>
+    <tbody>
+      {{PAGES_ROWS}}
+    </tbody>
+  </table>
+</div>
+
+<!-- ADMIN -->
+{{ADMIN_SECTION}}
+
+<!-- FEATURES -->
+<div class="section">
+  <h2>{{H_FEATURES}}</h2>
+  <p>{{FEATURES_INTRO}}</p>
+  {{FEATURES_BLOCKS}}
+</div>
+
+<!-- HOSTING -->
+<div class="section">
+  <h2>{{H_HOSTING}}</h2>
+  <table class="creds-grid">
+    <tr>
+      <td><div class="label">{{L_HOST}}</div><div class="value">{{HOSTING_PROVIDER}}</div></td>
+      <td><div class="label">{{L_REGISTRAR}}</div><div class="value">{{DOMAIN_REGISTRAR}}</div></td>
+    </tr>
+    <tr>
+      <td><div class="label">{{L_FTP_HOST}}</div><div class="value">{{FTP_HOST}}</div></td>
+      <td><div class="label">{{L_FTP_USER}}</div><div class="value">{{FTP_USER}}</div></td>
+    </tr>
+    <tr>
+      <td><div class="label">{{L_FTP_PASS}}</div><div class="value">{{FTP_PASS_NOTE}}</div></td>
+      <td><div class="label">{{L_RENEWAL}}</div><div class="value">{{DOMAIN_RENEWAL}}</div></td>
+    </tr>
+  </table>
+  <p class="footer-note">{{HOSTING_NOTE}}</p>
+</div>
+
+<!-- MAINTENANCE -->
+<div class="section">
+  <h2>{{H_MAINTENANCE}}</h2>
+  <div class="card">
+    <div class="label">{{L_INCLUDED}}</div>
+    <div class="value">{{SUPPORT_WINDOW}}</div>
+  </div>
+  <div class="card">
+    <div class="label">{{L_CONTACT}}</div>
+    <div class="value">{{SUPPORT_CONTACT}}</div>
+  </div>
+  <div class="card">
+    <div class="label">{{L_RESPONSE}}</div>
+    <div class="value">{{SUPPORT_SLA}}</div>
+  </div>
+  <p class="footer-note">{{MAINTENANCE_NOTE}}</p>
+</div>
+
+<!-- NEXT STEPS -->
+<div class="section">
+  <h2>{{H_NEXT_STEPS}}</h2>
+  <p>{{NEXT_STEPS_INTRO}}</p>
+  <ul>
+    {{NEXT_STEPS_ITEMS}}
+  </ul>
+  <p class="footer-note">{{CLOSING_NOTE}}</p>
+</div>
+
+</body>
+</html>

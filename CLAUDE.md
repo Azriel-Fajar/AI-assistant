@@ -47,6 +47,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/new-project` -- start a new personal project: folder under `personal/`, checklist, log entry
 - `/lead-tracker` -- manage the full outreach pipeline (add, pipeline, update, next, message, close) with phone notifications and WhatsApp links
 - `/chatbot-integration` -- add OpenAI-powered floating chatbot to PHP/XAMPP projects (scans branding, generates HTML/CSS/JS/PHP handler, injects into footer)
+- `/project-completion-doc [project-path]` -- generate a branded Rielcode handoff PDF (pages, admin creds, features, hosting, maintenance, next steps) saved to `projects/[client]/completion-doc.pdf`
 - `/audit` -- Four-Cs gap report on AIOS setup. Run weekly to track improvement.
 - `/level-up` -- weekly review to find one automation, scope it, ship it.
 - `/skill-builder` -- build a new custom skill from scratch
