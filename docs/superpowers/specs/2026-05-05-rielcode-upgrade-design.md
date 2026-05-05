@@ -64,8 +64,8 @@ CREATE TABLE testimonials (
 Apply new dark design system across all pages:
 - Background: `#111315` / `#1c1f22`
 - Primary: `#3a7bff`
-- Accent: `#3ecf8e`
 - Text: white / light gray
+- Note: `#3ecf8e` and other colors are package-tier identifiers only, not global accent colors
 
 Full redesign applied when Azriel provides complete design spec from claude.ai/design.
 

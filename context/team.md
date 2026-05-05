@@ -3,4 +3,5 @@
 Azriel works solo. No employees or contractors.
 
 ## Current Clients
-- **Parallaxnet Canada** -- website built and ready, not yet delivered. Waiting on Ali to send social media links. Communicates via WhatsApp.
+
+- **Parallaxnet Canada** -- DELIVERED 2026-05-05. Payment sent, processing ~5 business days. Project closed.

@@ -1,6 +1,6 @@
 # Current Priorities
 
-_Last updated: 2026-04-27_
+_Last updated: 2026-05-05_
 
 1. **Business** -- Land more clients for Rielcode. Target: 2 per month.
 2. **College** -- Stay on top of coursework. Next deadline: Statistics & Probability homework due 2026-04-30 (no confirmation from professor yet).
@@ -9,5 +9,6 @@ _Last updated: 2026-04-27_
 5. **Gym** -- Keep up physical health on the side.
 
 ## Active Projects
-- Parallaxnet Canada website -- built and ready, not yet delivered. Waiting on Ali to send social media links.
+
+- Parallaxnet Canada -- DONE. Delivered 2026-05-05, payment processing (~5 business days).
 - Rielcode outreach -- 5 Salatiga cafe leads ready, cold messages written, reminder set for 2026-04-28 10:00 AM

@@ -2,12 +2,14 @@
 
 Custom website for Parallaxnet, a client based in Canada.
 
-**Status:** Complete -- not yet delivered. Blocked on client input.
+**Status:** Delivered. Payment sent -- processing (5 business days).
 
 **Key dates:**
+
 - Started: April 2026
 - Build complete: April 2026
-- Pending: Ali to provide social media links before delivery
+- Delivered: 2026-05-05
+- Payment received: 2026-05-05 (processing, ~5 business days)
 
 **Communication:** WhatsApp
-**Notes:** First international client. Built and ready on our end. Cannot deliver until Ali sends social media links.
+**Notes:** First international client. Ali chose to handle social media links himself. Project closed on our end.
