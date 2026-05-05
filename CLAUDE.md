@@ -52,6 +52,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/level-up` -- weekly review to find one automation, scope it, ship it.
 - `/skill-builder` -- build a new custom skill from scratch
 - `/video-to-website` -- convert a video into a website section or landing page
+- `/url-screenshot <url> [url2 ...]` -- full-page PNG screenshot of one or more URLs via Playwright (output: `screenshots/`)
 
 ---
 
