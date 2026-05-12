@@ -3,3 +3,5 @@ CLAUDE.local.md
 .claude/settings.local.json
 node_modules/
 .claude/skills/project-completion-doc/.tmp/
+playwright-report/
+test-results/

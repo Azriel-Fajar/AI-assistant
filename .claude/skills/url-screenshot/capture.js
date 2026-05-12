@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const OUTPUT_DIR = 'd:\\Main Storage\\Documents\\JARVIS\\screenshots';
+const OUTPUT_DIR = path.resolve(__dirname, '..', '..', '..', 'screenshots');
 const VIEWPORT = { width: 1920, height: 1080 };
 const NAV_TIMEOUT = 30000;
 const POST_LOAD_DELAY = 2000;
