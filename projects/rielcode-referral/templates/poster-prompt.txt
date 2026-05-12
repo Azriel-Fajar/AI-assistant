@@ -1,0 +1,14 @@
+Create a professional and modern promotional poster for a web development service called "Rielcode".
+
+Style: Clean, minimal, tech-forward. Dark background (deep navy or charcoal) with bright accent color (electric blue or lime green). Use sans-serif typography.
+
+Content to include:
+- Headline: "Butuh Website untuk Bisnis Kamu?"
+- Subheadline: "Rielcode — Bikin, Maintain, dan Perbaiki Website"
+- Features list (small text): Landing Page | Website Bisnis | Toko Online | Maintenance
+- CTA: "Hubungi Sekarang — rielcode.com"
+- Small tag at bottom: "Program Afiliasi — Dapatkan Komisi 10%"
+
+Layout: Portrait (1080x1350px for Instagram). Leave space at bottom for contact info overlay.
+
+Do NOT include photos of people. Use geometric shapes, code/browser UI mockups, or abstract tech elements as visual elements.
