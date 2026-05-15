@@ -1,7 +1,6 @@
 {
   "name": "url-screenshot",
   "version": "1.0.0",
-  "description": "",
   "main": "capture.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +10,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "playwright": "^1.59.1"
-  }
+    "playwright": "^1.60.0"
+  },
+  "description": ""
 }
