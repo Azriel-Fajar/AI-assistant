@@ -19,3 +19,8 @@ Append-only record of meaningful decisions and why they were made. `/level-up` P
 Keep it terse. Future-you will thank present-you for capturing the *why*, not just the *what*.
 
 ---
+[2026-05-16] DECISION: Launch Rielcode YouTube Shorts channel (English, hybrid builds+SMB tips, no-face screen-rec stack) and add /site-review skill | REASONING: Current promo = passive (affiliates+inactive IG). YT Shorts = scalable organic reach to international SMBs. /site-review automates quoting + upsells using rielcode-pricing.md, removes manual estimation friction | CONTEXT: 4 new skills built (/yt-strategy, /yt-script, /yt-batch, /site-review). Pricing reference seeded at references/rielcode-pricing.md.
+
+[2026-05-16] DECISION: YouTube channel strategy locked for Rielcode | REASONING: Hybrid build-showcase+SMB-tips pillars, English, no-face screen-rec, 3/week baseline. Targets international SMBs as primary, Indonesian secondary. Lead-gen funnel into rielcode.com /packages | CONTEXT: Strategy doc at projects/youtube-rielcode/strategy.md. First batch (May 18-22) due tomorrow via /yt-batch.
+
+[2026-05-16] DECISION: Build /repurpose-project + /audit-short skills, queue rest of wild-idea skills per growth-plan calendar | REASONING: Repurpose pipeline + Salatiga audit are LOW-effort/HIGH-ROI Week 1-2 plays. Building now while context fresh. Audit Tool + email course skills deferred to weeks 3-7 per calendar | CONTEXT: YT launch shifted to Tue May 19 (user not on main machine). ElevenLabs account confirmed (picked Content Business + Voice overs/TTS).

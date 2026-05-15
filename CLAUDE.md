@@ -54,6 +54,12 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/video-to-website` -- convert a video into a website section or landing page
 - `/url-screenshot <url> [url2 ...]` -- full-page PNG screenshot of one or more URLs via Playwright (output: `screenshots/`)
 - `/playwright` -- browser automation: `test`, `codegen`, `screenshot` (element/viewport), `scrape` (uses root-installed @playwright/test)
+- `/yt-strategy` -- lock YouTube channel strategy, content pillars, posting cadence (run once, then quarterly)
+- `/yt-script` -- generate one production-ready Shorts script (hook, body, CTA, shot list, voiceover)
+- `/yt-batch` -- generate full week of 2-5 Shorts scripts in one go, plus Sunday batch production plan
+- `/site-review <url>` -- audit any website, auto-calculate Rielcode cost, suggest upgrades, output quote/upsell-ready breakdown
+- `/repurpose-project [project-path]` -- generate 3 marketing assets from a delivered project (YT Short + IG carousel + written case study)
+- `/audit-short [url] [business-name]` -- Salatiga pipeline: site audit + 60s YT Short + IG tag-caption + DM follow-up draft
 
 ---
 
