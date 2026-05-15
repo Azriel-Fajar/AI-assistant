@@ -59,6 +59,10 @@ Shot list, voiceover settings, hashtags — same format as `/yt-script`.
 
 Save to `projects/[client]/repurpose-yt-short.md`.
 
+**Auto-generate via MCPs:**
+- ElevenLabs MCP → voiceover mp3 → `projects/[client]/audio/repurpose-vo.mp3`
+- Canva MCP → thumbnail + cover → `projects/[client]/thumbs/repurpose-yt-*.png`
+
 ### 3. Generate Instagram carousel (5 slides)
 
 ```
@@ -87,6 +91,8 @@ Plus IG post caption (max 150 words, no emojis, no em dashes, ends with CTA).
 Plus hashtag set (use `/instagram-content` style: 10-15 tags).
 
 Save to `projects/[client]/repurpose-ig-carousel.md`.
+
+**Auto-generate via Canva MCP:** 5 carousel slides (1080x1080 each) with branded layout. Save to `projects/[client]/carousel/slide-[1-5].png`.
 
 ### 4. Generate written case study
 

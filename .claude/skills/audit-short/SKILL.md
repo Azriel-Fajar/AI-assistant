@@ -62,6 +62,10 @@ Hashtags must include: `#[CityName]` `#[Industry]Indonesia` `#[CityName][Industr
 
 Save to `projects/youtube-rielcode/audit-shorts/YYYY-MM-DD-[business-slug].md`.
 
+**Auto-generate via MCPs:**
+- ElevenLabs MCP → voiceover mp3 → `projects/youtube-rielcode/audit-shorts/audio/[slug]-vo.mp3`
+- Canva MCP → thumbnail + Shorts cover → `projects/youtube-rielcode/audit-shorts/thumbs/[slug]-*.png` (overlay business name + "AUDIT" tag)
+
 ### 3. Draft IG tag-post caption
 
 ```

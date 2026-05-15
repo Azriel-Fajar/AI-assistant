@@ -110,6 +110,40 @@ Why: Curiosity-driving, conversion-focused message. Best if subscribers come fro
 
 ---
 
+## MCP-Auto-Gen Brand Kit (for Canva MCP + ElevenLabs MCP)
+
+Passed automatically to every Canva MCP call from yt-script/yt-batch/repurpose/audit-short:
+
+```yaml
+brand:
+  name: Rielcode
+  handle: "@rielcodeofficial"
+  url: rielcode.com
+  colors:
+    bg_primary: "#0a0a0a"     # near-black
+    bg_secondary: "#1a1a1a"   # dark gray
+    text: "#ffffff"
+    accent_green: "#4ade80"   # builds, Pro/wins
+    accent_blue: "#6fa3ff"    # tips, Starter
+    accent_purple: "#c084fc"  # Premium, hot takes
+  font:
+    display: bold sans-serif (Inter Bold / Plus Jakarta Sans Bold)
+    body: medium sans-serif
+  style: high contrast, minimal, NO emojis, NO em dashes
+  formats:
+    yt_shorts_cover: 1080x1920
+    yt_thumbnail: 1280x720
+    ig_carousel_slide: 1080x1080
+    ig_post: 1080x1350
+elevenlabs:
+  voice_primary: Adam (or Daniel) — professional male, mid-tone, US English
+  model: eleven_multilingual_v2
+  output: mp3_44100_128
+  pace_target: 150-170 wpm
+```
+
+---
+
 ## Profile Picture
 
 - Use Rielcode logo (from existing site assets in `C:\xampp\htdocs\Rielcode\IMG\`)

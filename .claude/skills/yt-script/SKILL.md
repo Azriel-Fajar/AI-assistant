@@ -57,13 +57,37 @@ SHOT 2 (2-8s): [Visual] | OVERLAY: "..."
 ...
 ```
 
-### 4. Voiceover settings
+### 4. Voiceover — auto-generate via ElevenLabs MCP
 
-Specify:
-- TTS tool: ElevenLabs (preferred) or OpenAI TTS
-- Voice preset: e.g. "professional male, mid-tone, US English"
-- Pace: 150-170 wpm (slightly fast for retention)
-- Pause markers: insert `[0.3s pause]` between beats
+Default behavior: after script approved, automatically call ElevenLabs MCP to generate the audio file.
+
+Steps:
+1. Concatenate voiceover lines (hook + body + CTA) into one clean string. Strip stage directions, shot descriptors, overlays.
+2. Insert `[pause]` markers at beat breaks (ElevenLabs respects these).
+3. Call ElevenLabs MCP text-to-speech tool:
+   - Voice: "Adam" or "Daniel" (professional male, mid-tone, US English). Use voice ID if known; else search ElevenLabs voice library MCP first.
+   - Model: `eleven_multilingual_v2` or latest stable
+   - Output format: `mp3_44100_128`
+   - Speed/pace: target 150-170 wpm (slight forward lean for retention)
+4. Save audio to: `projects/youtube-rielcode/audio/[short-slug]-vo.mp3`
+5. Report audio length back to Azriel (must be 35-55s — leaves room for intro/outro pad).
+
+If ElevenLabs MCP unavailable, fall back: write voiceover script block, tell Azriel to paste manually into elevenlabs.io.
+
+### 4b. Thumbnail — auto-generate via Canva MCP
+
+Default behavior: after script approved, call Canva MCP to generate a YT Shorts cover (1080x1920) and thumbnail (1280x720).
+
+Inputs to pass:
+- Headline text: punchy 3-5 word version of the hook (NOT the full hook — overlay must read in 0.5s)
+- Subline: 2-3 words (e.g. "Rielcode" or "Free audit inside")
+- Brand colors: black bg (#0a0a0a), white text, accent green (#4ade80) for Pro/builds, purple (#c084fc) for Premium
+- Style: bold sans-serif, high contrast, NO emojis
+- Reference image: if topic = real client build, attach screenshot of the live site (from `screenshots/` if exists)
+
+Save outputs to: `projects/youtube-rielcode/thumbs/[short-slug]-thumb.png` and `[short-slug]-cover.png`.
+
+If Canva MCP unavailable, fall back: write a Canva-ready brief Azriel can copy into the Canva editor.
 
 ### 5. Hashtags + description
 
@@ -72,12 +96,13 @@ Specify:
 
 ### 6. Production checklist
 
-End output with checklist:
-- [ ] Record screen B-roll
-- [ ] Generate voiceover (paste script into ElevenLabs)
-- [ ] Edit in CapCut/DaVinci with overlays
+End output with checklist (most steps auto-done by MCPs):
+- [x] Voiceover generated via ElevenLabs MCP → `projects/youtube-rielcode/audio/[slug]-vo.mp3`
+- [x] Thumbnail + cover generated via Canva MCP → `projects/youtube-rielcode/thumbs/[slug]-*.png`
+- [ ] Record screen B-roll (manual, OBS)
+- [ ] Edit in CapCut/DaVinci with overlays + assemble VO
 - [ ] Export 1080x1920, under 60s
-- [ ] Upload + schedule
+- [ ] Upload + schedule in YT Studio
 
 ## Rules
 

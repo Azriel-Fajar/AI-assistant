@@ -35,9 +35,19 @@ For each topic, generate:
 
 Show topic list. Ask Azriel: "Approve, swap, or regenerate any?"
 
-### 3. Full scripts (after approval)
+### 3. Full scripts (after approval) — MCP-batched
 
-For each approved topic, output full script using the same format as `/yt-script`:
+For each approved topic:
+1. Generate full script (same format as `/yt-script`)
+2. AUTO-CALL ElevenLabs MCP to render voiceover → save to `projects/youtube-rielcode/audio/[slug]-vo.mp3`
+3. AUTO-CALL Canva MCP to render thumbnail + Shorts cover → save to `projects/youtube-rielcode/thumbs/[slug]-thumb.png` + `[slug]-cover.png`
+4. Report each asset's path inline with the script
+
+Use same MCP settings as `/yt-script` (voice: Adam/Daniel, model: eleven_multilingual_v2, Canva brand colors black + accent).
+
+If running 3+ shorts, batch the MCP calls in parallel (one Claude tool-call message with all ElevenLabs + Canva invocations together) to save time.
+
+Script format per item:
 
 ```
 === SHORT [N] of [TOTAL] ===
@@ -57,19 +67,23 @@ HASHTAGS: ...
 DESCRIPTION: ...
 ```
 
-### 4. Production schedule
+### 4. Production schedule (MCP-compressed)
 
-End output with batch production plan:
+End output with batch production plan. With MCPs handling voiceover + thumbs, Azriel's manual time drops from 5hrs → 2-3hrs.
 
 ```
-SUNDAY BATCH PLAN:
-- 09:00-10:00 -- Record all screen B-roll (open browser, navigate sites, code snippets)
-- 10:00-11:00 -- Generate all voiceovers (paste scripts to ElevenLabs, export)
-- 11:00-14:00 -- Edit in CapCut/DaVinci (assemble, overlays, transitions)
-- 14:00-15:00 -- Export, write descriptions, schedule uploads in YouTube Studio
+BATCH DAY PLAN (with ElevenLabs + Canva MCPs):
+- DONE before batch day: Skill auto-generated all VOs + thumbs/covers (~10 min)
+- 09:00-10:00 -- Record screen B-roll (OBS, navigate sites, code snippets)
+- 10:00-12:00 -- Edit in CapCut/DaVinci (drag VO mp3s + thumbs in, assemble, overlays)
+- 12:00-13:00 -- Export 1080x1920, write descriptions, schedule uploads in YT Studio
 ```
 
 ### 5. Save batch + calendar
+
+Save full batch markdown to `projects/youtube-rielcode/batches/YYYY-WW.md`. List all generated asset paths inline.
+
+
 
 - Save full batch to `projects/youtube-rielcode/batches/YYYY-WW.md` (week number)
 - Offer to add publish dates to Google Calendar via `/gcal-schedule`
