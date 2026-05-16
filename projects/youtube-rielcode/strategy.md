@@ -91,11 +91,23 @@ Hook template: "[Common belief] is [dead/wrong/a scam]."
 
 Voice preset: ElevenLabs "Adam" or "Daniel" (professional male, mid-tone, US English). Pace 150-170 wpm.
 
+## Distribution Platforms
+
+| Platform | Handle | Caption style |
+|---|---|---|
+| YouTube Shorts | @rielcodeofficial | Minimal. Title-focused. |
+| Instagram Reels | @rielcode | Light hashtags (5-10). First-line hook in caption. |
+| TikTok | @rielcodeofficial | Heavy hashtags (10-15). Trending sounds optional. |
+
+Same raw video → post all 3. Platform-specific captions only.
+
 ## CTAs (rotate, never repeat in same batch)
 
-1. "DM me on Instagram @rielcodeofficial"
-2. "Link in bio for a free quote"
-3. "Comment your site URL for a free audit"
+Primary CTA (all platforms): "Link in bio" → rielcode.com
+
+1. "Link in bio for a free quote"
+2. "Comment your site URL for a free audit"
+3. "Link in bio to see my packages"
 
 ## 30-Day Launch Roadmap
 
