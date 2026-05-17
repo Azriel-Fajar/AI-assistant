@@ -9,10 +9,24 @@
       "mcp__claude_ai_Google_Calendar__update_event",
       "mcp__claude_ai_Google_Calendar__delete_event",
       "mcp__claude_ai_Google_Calendar__respond_to_event",
-      "mcp__claude_ai_Google_Calendar__suggest_time"
+      "mcp__claude_ai_Google_Calendar__suggest_time",
+      "Bash(npx *)"
     ]
   },
   "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "Set-Location 'C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS'; python -m graphify update . 2>&1 | Out-Null",
+            "statusMessage": "Updating graphify knowledge graph...",
+            "async": true
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit",

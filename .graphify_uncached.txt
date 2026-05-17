@@ -1,161 +1,123 @@
-D:\Main Storage\Documents\JARVIS\.graphify_detect.json
-D:\Main Storage\Documents\JARVIS\package.json
-D:\Main Storage\Documents\JARVIS\playwright.config.js
-D:\Main Storage\Documents\JARVIS\.claude\settings.json
-D:\Main Storage\Documents\JARVIS\.claude\skills\playwright\scrape-runner.js
-D:\Main Storage\Documents\JARVIS\.claude\skills\playwright\screenshot.js
-D:\Main Storage\Documents\JARVIS\.claude\skills\project-completion-doc\generate.php
-D:\Main Storage\Documents\JARVIS\.claude\skills\url-screenshot\capture.js
-D:\Main Storage\Documents\JARVIS\.claude\skills\url-screenshot\package.json
-D:\Main Storage\Documents\JARVIS\.obsidian\app.json
-D:\Main Storage\Documents\JARVIS\.obsidian\appearance.json
-D:\Main Storage\Documents\JARVIS\.obsidian\core-plugins.json
-D:\Main Storage\Documents\JARVIS\.obsidian\graph.json
-D:\Main Storage\Documents\JARVIS\.obsidian\workspace.json
-D:\Main Storage\Documents\JARVIS\homework-bot\config.py
-D:\Main Storage\Documents\JARVIS\homework-bot\gcal.py
-D:\Main Storage\Documents\JARVIS\homework-bot\homework_parser.py
-D:\Main Storage\Documents\JARVIS\homework-bot\main.py
-D:\Main Storage\Documents\JARVIS\homework-bot\tests\conftest.py
-D:\Main Storage\Documents\JARVIS\homework-bot\tests\test_calendar.py
-D:\Main Storage\Documents\JARVIS\homework-bot\tests\test_parser.py
-D:\Main Storage\Documents\JARVIS\homework-bot\tests\__init__.py
-D:\Main Storage\Documents\JARVIS\scripts\cross-browser-check\references\cross-browser-template.js
-D:\Main Storage\Documents\JARVIS\scripts\playwright\fill-custom-plan-pro.js
-D:\Main Storage\Documents\JARVIS\tests\playwright\rielcode-audit.spec.js
-D:\Main Storage\Documents\JARVIS\tests\playwright\smoke.spec.js
-D:\Main Storage\Documents\JARVIS\aios-intake.md
-D:\Main Storage\Documents\JARVIS\CLAUDE.md
-D:\Main Storage\Documents\JARVIS\connections.md
-D:\Main Storage\Documents\JARVIS\EXPANSIONS.md
-D:\Main Storage\Documents\JARVIS\.claude\rules\communication-style.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\example.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\audit\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\audit-short\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\chatbot-integration\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\client-proposal\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\daily-priorities\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\demo-website\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\emil-design-eng\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\follow-up\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\frontend-design\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\gcal-schedule\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\git-command\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\instagram-content\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\lead-tracker\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\level-up\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\new-project\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\onboard\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\playwright\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\project-completion-doc\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\project-completion-doc\template.html
-D:\Main Storage\Documents\JARVIS\.claude\skills\project-kickoff\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\repurpose-project\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\site-cloner\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\site-review\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\skill-builder\reference.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\skill-builder\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\url-screenshot\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\video-to-website\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\yt-batch\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\yt-script\SKILL.md
-D:\Main Storage\Documents\JARVIS\.claude\skills\yt-strategy\SKILL.md
-D:\Main Storage\Documents\JARVIS\context\about-business.md
-D:\Main Storage\Documents\JARVIS\context\about-me.md
-D:\Main Storage\Documents\JARVIS\context\current-priorities.md
-D:\Main Storage\Documents\JARVIS\context\goals.md
-D:\Main Storage\Documents\JARVIS\context\me.md
-D:\Main Storage\Documents\JARVIS\context\priorities.md
-D:\Main Storage\Documents\JARVIS\context\team.md
-D:\Main Storage\Documents\JARVIS\context\work.md
-D:\Main Storage\Documents\JARVIS\decisions\log.md
-D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-05-pay-subdomain.md
-D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-05-rielcode-main-site.md
-D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-12-referral-system.md
-D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-05-rielcode-upgrade-design.md
-D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-12-referral-system-design.md
-D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-13-dc-maintenance-odoo-design.md
-D:\Main Storage\Documents\JARVIS\homework-bot\README.md
-D:\Main Storage\Documents\JARVIS\homework-bot\requirements.txt
-D:\Main Storage\Documents\JARVIS\leads\archive.md
-D:\Main Storage\Documents\JARVIS\leads\leads.md
-D:\Main Storage\Documents\JARVIS\memory\MEMORY.md
-D:\Main Storage\Documents\JARVIS\memory\project_testimonial_page.md
-D:\Main Storage\Documents\JARVIS\projects\Parallaxnet Canada\README.md
-D:\Main Storage\Documents\JARVIS\projects\rielcode-growth-plan\README.md
-D:\Main Storage\Documents\JARVIS\projects\rielcode-outreach\salatiga-cafes.md
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\referral-program.md
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\ig-caption.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\info-card.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\linkedin-facebook-caption.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\poster-prompt.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\wa-template.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\CYN10-ig.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\CYN10-infocard.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\CYN10-wa.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\FRED14-ig.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\FRED14-infocard.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\FRED14-wa.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\MISAEL67-ig.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\MISAEL67-infocard.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\MISAEL67-wa.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\NAND24-ig.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\NAND24-infocard.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\NAND24-wa.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\YEZ10-ig.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\YEZ10-infocard.txt
-D:\Main Storage\Documents\JARVIS\projects\rielcode-referral\templates\personalized\YEZ10-wa.txt
-D:\Main Storage\Documents\JARVIS\projects\youtube-rielcode\channel-branding.md
-D:\Main Storage\Documents\JARVIS\projects\youtube-rielcode\README.md
-D:\Main Storage\Documents\JARVIS\projects\youtube-rielcode\strategy.md
-D:\Main Storage\Documents\JARVIS\references\3ms-framework.md
-D:\Main Storage\Documents\JARVIS\references\learning-log.md
-D:\Main Storage\Documents\JARVIS\references\rielcode-pricing.md
-D:\Main Storage\Documents\JARVIS\references\voice.md
-D:\Main Storage\Documents\JARVIS\scripts\cross-browser-check\SKILL.md
-D:\Main Storage\Documents\JARVIS\templates\session-summary.md
-D:\Main Storage\Documents\JARVIS\tests\rielcode-audit.md
-D:\Main Storage\Documents\JARVIS\projects\Parallaxnet Canada\Project Completion Document for Parallaxnet Canada.pdf
-D:\Main Storage\Documents\JARVIS\screenshots\checkout-confirmation-real.png
-D:\Main Storage\Documents\JARVIS\screenshots\checkout-fixed.png
-D:\Main Storage\Documents\JARVIS\screenshots\checkout-full-1280.png
-D:\Main Storage\Documents\JARVIS\screenshots\checkout-package-section.png
-D:\Main Storage\Documents\JARVIS\screenshots\checkout-packages-crop.png
-D:\Main Storage\Documents\JARVIS\screenshots\checkout-purchase-info.png
-D:\Main Storage\Documents\JARVIS\screenshots\example-com-el-h1-20260511-124239.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-parallaxnet-20id-public-20260515-204350.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-parallaxnet-20id-public-20260515-204553.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-parallaxnet-20id-public-galeri-20260515-204344.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-parallaxnet-20id-public-galeri-20260515-204547.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-parallaxnet-20id-public-galeri-20260515-204805.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-portfolio-20260507-102615.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-20260507-100715.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-20260507-101024.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-custom-plan-20260507-101618.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-order-form-20260507-101614.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-terms-conditions-20260507-101621.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-testimonials-index-php-20260507-120534.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-testimonials-thank-you-php-20260507-120515.png
-D:\Main Storage\Documents\JARVIS\screenshots\localhost-rielcode-testimonials-thank-you-php-20260507-121414.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-mobile-390-20260511.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-mobile-fixed-20260511.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-mobile-top-20260511.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-mobile-v2-20260511.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-mobile-v3-20260511.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-mobile-v4-20260511.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\01-homepage-hero.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\01-homepage-scrolled.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\02-mobile-initial.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\02-mobile-menu-open.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\02-mobile-scrolled.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\03-cta-clicked.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\03-packages-all.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\04-order-form-blank.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\04-order-form-filled.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\04-submit-blocked.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\05-custom-plan-features-toggled.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\05-custom-plan-initial.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\06-about.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\07-projects.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\08-testimonials.png
-D:\Main Storage\Documents\JARVIS\screenshots\rielcode-audit\09-broken-image-check.png
+playwright.config.js
+homework-bot\config.py
+homework-bot\gcal.py
+homework-bot\homework_parser.py
+homework-bot\main.py
+homework-bot\tests\conftest.py
+homework-bot\tests\test_calendar.py
+homework-bot\tests\test_parser.py
+homework-bot\tests\__init__.py
+scripts\cross-browser-check\references\cross-browser-template.js
+scripts\playwright\fill-custom-plan-pro.js
+tests\playwright\rielcode-audit.spec.js
+tests\playwright\smoke.spec.js
+tools\claude-widget.py
+tools\launch-widget.ps1
+aios-intake.md
+CLAUDE.local.md
+CLAUDE.md
+connections.md
+EXPANSIONS.md
+context\about-business.md
+context\about-me.md
+context\current-priorities.md
+context\goals.md
+context\me.md
+context\priorities.md
+context\team.md
+context\work.md
+decisions\log.md
+docs\superpowers\plans\2026-05-05-pay-subdomain.md
+docs\superpowers\plans\2026-05-05-rielcode-main-site.md
+docs\superpowers\plans\2026-05-12-referral-system.md
+docs\superpowers\specs\2026-05-05-rielcode-upgrade-design.md
+docs\superpowers\specs\2026-05-12-referral-system-design.md
+docs\superpowers\specs\2026-05-13-dc-maintenance-odoo-design.md
+graphify-out\graph.html
+graphify-out\GRAPH_REPORT.md
+homework-bot\README.md
+homework-bot\requirements.txt
+leads\archive.md
+leads\leads.md
+memory\MEMORY.md
+memory\project_testimonial_page.md
+playwright-report\index.html
+projects\Parallaxnet Canada\README.md
+projects\rielcode-growth-plan\README.md
+projects\rielcode-outreach\salatiga-cafes.md
+projects\rielcode-referral\referral-program.md
+projects\rielcode-referral\templates\ig-caption.txt
+projects\rielcode-referral\templates\info-card.txt
+projects\rielcode-referral\templates\linkedin-facebook-caption.txt
+projects\rielcode-referral\templates\poster-prompt.txt
+projects\rielcode-referral\templates\wa-template.txt
+projects\rielcode-referral\templates\personalized\CYN10-ig.txt
+projects\rielcode-referral\templates\personalized\CYN10-infocard.txt
+projects\rielcode-referral\templates\personalized\CYN10-wa.txt
+projects\rielcode-referral\templates\personalized\FRED14-ig.txt
+projects\rielcode-referral\templates\personalized\FRED14-infocard.txt
+projects\rielcode-referral\templates\personalized\FRED14-wa.txt
+projects\rielcode-referral\templates\personalized\MISAEL67-ig.txt
+projects\rielcode-referral\templates\personalized\MISAEL67-infocard.txt
+projects\rielcode-referral\templates\personalized\MISAEL67-wa.txt
+projects\rielcode-referral\templates\personalized\NAND24-ig.txt
+projects\rielcode-referral\templates\personalized\NAND24-infocard.txt
+projects\rielcode-referral\templates\personalized\NAND24-wa.txt
+projects\rielcode-referral\templates\personalized\YEZ10-ig.txt
+projects\rielcode-referral\templates\personalized\YEZ10-infocard.txt
+projects\rielcode-referral\templates\personalized\YEZ10-wa.txt
+projects\youtube-rielcode\channel-branding.md
+projects\youtube-rielcode\README.md
+projects\youtube-rielcode\strategy.md
+references\3ms-framework.md
+references\learning-log.md
+references\rielcode-pricing.md
+references\voice.md
+scripts\cross-browser-check\SKILL.md
+templates\session-summary.md
+tests\rielcode-audit.md
+tools\claude-widget-README.md
+projects\Parallaxnet Canada\Project Completion Document for Parallaxnet Canada.pdf
+screenshots\checkout-confirmation-real.png
+screenshots\checkout-fixed.png
+screenshots\checkout-full-1280.png
+screenshots\checkout-package-section.png
+screenshots\checkout-packages-crop.png
+screenshots\checkout-purchase-info.png
+screenshots\example-com-el-h1-20260511-124239.png
+screenshots\localhost-parallaxnet-20id-public-20260515-204350.png
+screenshots\localhost-parallaxnet-20id-public-20260515-204553.png
+screenshots\localhost-parallaxnet-20id-public-galeri-20260515-204344.png
+screenshots\localhost-parallaxnet-20id-public-galeri-20260515-204547.png
+screenshots\localhost-parallaxnet-20id-public-galeri-20260515-204805.png
+screenshots\localhost-portfolio-20260507-102615.png
+screenshots\localhost-rielcode-20260507-100715.png
+screenshots\localhost-rielcode-20260507-101024.png
+screenshots\localhost-rielcode-custom-plan-20260507-101618.png
+screenshots\localhost-rielcode-order-form-20260507-101614.png
+screenshots\localhost-rielcode-terms-conditions-20260507-101621.png
+screenshots\localhost-rielcode-testimonials-index-php-20260507-120534.png
+screenshots\localhost-rielcode-testimonials-thank-you-php-20260507-120515.png
+screenshots\localhost-rielcode-testimonials-thank-you-php-20260507-121414.png
+screenshots\rielcode-mobile-390-20260511.png
+screenshots\rielcode-mobile-fixed-20260511.png
+screenshots\rielcode-mobile-top-20260511.png
+screenshots\rielcode-mobile-v2-20260511.png
+screenshots\rielcode-mobile-v3-20260511.png
+screenshots\rielcode-mobile-v4-20260511.png
+screenshots\rielcode-audit\01-homepage-hero.png
+screenshots\rielcode-audit\01-homepage-scrolled.png
+screenshots\rielcode-audit\02-mobile-initial.png
+screenshots\rielcode-audit\02-mobile-menu-open.png
+screenshots\rielcode-audit\02-mobile-scrolled.png
+screenshots\rielcode-audit\03-cta-clicked.png
+screenshots\rielcode-audit\03-packages-all.png
+screenshots\rielcode-audit\04-order-form-blank.png
+screenshots\rielcode-audit\04-order-form-filled.png
+screenshots\rielcode-audit\04-submit-blocked.png
+screenshots\rielcode-audit\05-custom-plan-features-toggled.png
+screenshots\rielcode-audit\05-custom-plan-initial.png
+screenshots\rielcode-audit\06-about.png
+screenshots\rielcode-audit\07-projects.png
+screenshots\rielcode-audit\08-testimonials.png
+screenshots\rielcode-audit\09-broken-image-check.png

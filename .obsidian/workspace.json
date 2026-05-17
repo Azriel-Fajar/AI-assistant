@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d088ee30aa2455fc",
+        "id": "5323673a695861fd",
         "type": "tabs",
         "children": [
           {
-            "id": "5e251bbbf3eec674",
+            "id": "f34383b2c8bb2aca",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,7 +176,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "5e251bbbf3eec674",
+  "active": "f34383b2c8bb2aca",
   "lastOpenFiles": [
     "graphify-out/GRAPH_REPORT.md",
     "context/current-priorities.md"

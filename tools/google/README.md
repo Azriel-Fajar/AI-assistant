@@ -20,8 +20,8 @@ Copy config into `tools/google/config.json`:
 
 ```json
 {
-  "google_client_id": "YOUR_CLIENT_ID",
-  "google_client_secret": "YOUR_CLIENT_SECRET",
+  "google_client_id": "",
+  "google_client_secret": "",
   "default_timezone": "Asia/Jakarta"
 }
 ```
