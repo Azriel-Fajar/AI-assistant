@@ -1,0 +1,17 @@
+{
+  "name": "jarvis-google-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "gcal": "./gcal/index.js",
+    "gmail": "./gmail/index.js",
+    "gdrive": "./gdrive/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "commander": "^12.1.0",
+    "googleapis": "^140.0.0",
+    "open": "^10.1.0"
+  }
+}
