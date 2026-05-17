@@ -5,3 +5,4 @@ node_modules/
 .claude/skills/project-completion-doc/.tmp/
 playwright-report/
 test-results/
+.claude/worktrees/
