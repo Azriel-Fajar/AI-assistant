@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "aa65c921785ad8f9",
+        "id": "d088ee30aa2455fc",
         "type": "tabs",
         "children": [
           {
-            "id": "a59a66fa92ee57d2",
+            "id": "5e251bbbf3eec674",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -176,8 +176,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "a59a66fa92ee57d2",
+  "active": "5e251bbbf3eec674",
   "lastOpenFiles": [
+    "graphify-out/GRAPH_REPORT.md",
     "context/current-priorities.md"
   ]
 }
