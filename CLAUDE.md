@@ -60,6 +60,8 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/site-review <url>` -- audit any website, auto-calculate Rielcode cost, suggest upgrades, output quote/upsell-ready breakdown
 - `/repurpose-project [project-path]` -- generate 3 marketing assets from a delivered project (YT Short + IG carousel + written case study)
 - `/audit-short [url] [business-name]` -- Salatiga pipeline: site audit + 60s YT Short + IG tag-caption + DM follow-up draft
+- `/audit-tool-launch [phase]` -- guided build of the public rielcode.com/audit tool in 3 phases (form, scraper, PDF email delivery)
+- `/email-course-builder` -- write all 7 emails for the "$0 to First Website" lead magnet course + Brevo automation setup
 - `/ui-ux-pro-max` -- design intelligence: 161 rules, 50+ styles, 161 color palettes, 57 font pairings, 99 UX guidelines across 10 stacks
 - `/ui-styling` -- shadcn/ui + Tailwind CSS + canvas visual design; use when building React UIs or design systems
 - `/design-system` -- token architecture (primitive→semantic→component), CSS vars, component specs, slide generation
