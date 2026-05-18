@@ -9,7 +9,7 @@
     "yt": "./youtube/index.js"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest --testPathPattern=tests/"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js --testPathPattern=tests/"
   },
   "dependencies": {
     "chalk": "^5.3.0",
@@ -19,6 +19,7 @@
     "open": "^10.1.0"
   },
   "devDependencies": {
+    "@jest/globals": "^30.4.1",
     "jest": "^29.7.0"
   }
 }
