@@ -78,7 +78,8 @@ jest.unstable_mockModule('chalk', () => ({
 const mockExit = jest.spyOn(process, 'exit').mockImplementation(() => { throw new Error('process.exit'); });
 
 // Dynamic import — must come AFTER all unstable_mockModule calls
-const { listVideos, uploadVideo, searchVideos } = await import('../youtube/index.js');
+const { listVideos, uploadVideo, searchVideos, getAnalytics, listComments, replyToComment, deleteComment, runAuth } = await import('../youtube/index.js');
+const { runAuthFlow } = await import('../auth/oauth.js');
 
 // Expose mocks for completeness
 export {
@@ -266,5 +267,195 @@ describe('yt search', () => {
         expect.objectContaining({ videoId: 'srch001', title: 'Result One' }),
       ])
     );
+  });
+});
+
+// --- Task 6: yt analytics ---
+
+describe('yt analytics', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    mockReportsDimAndMetrics.mockResolvedValue({
+      data: {
+        columnHeaders: [
+          { name: 'day' },
+          { name: 'views' },
+          { name: 'likes' },
+          { name: 'comments' },
+        ],
+        rows: [
+          ['2026-05-01', 120, 10, 2],
+          ['2026-05-02', 200, 20, 5],
+        ],
+      },
+    });
+  });
+
+  test('queries channel analytics for 7d period', async () => {
+    await getAnalytics({ videoId: null, period: '7d', json: false });
+
+    expect(mockReportsDimAndMetrics).toHaveBeenCalledWith(
+      expect.objectContaining({
+        ids: 'channel==MINE',
+        dimensions: 'day',
+        metrics: 'views,likes,comments,estimatedMinutesWatched',
+        sort: 'day',
+      })
+    );
+
+    expect(mockPrintTable).toHaveBeenCalledWith(
+      ['day', 'views', 'likes', 'comments'],
+      [
+        ['2026-05-01', 120, 10, 2],
+        ['2026-05-02', 200, 20, 5],
+      ]
+    );
+  });
+
+  test('queries video-specific analytics when --video is set', async () => {
+    await getAnalytics({ videoId: 'vid123', period: '30d', json: false });
+
+    expect(mockReportsDimAndMetrics).toHaveBeenCalledWith(
+      expect.objectContaining({
+        ids: 'channel==MINE',
+        filters: 'video==vid123',
+      })
+    );
+  });
+
+  test('prints JSON when --json flag is set', async () => {
+    await getAnalytics({ videoId: null, period: '7d', json: true });
+    expect(mockPrintJson).toHaveBeenCalledWith(
+      expect.objectContaining({ rows: expect.any(Array) })
+    );
+  });
+});
+
+// --- Task 7: yt comments list ---
+
+describe('yt comments list', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    mockCommentThreadsList.mockResolvedValue({
+      data: {
+        items: [
+          {
+            id: 'ct001',
+            snippet: {
+              topLevelComment: {
+                id: 'c001',
+                snippet: {
+                  textDisplay: 'Great video!',
+                  authorDisplayName: 'Alice',
+                  publishedAt: '2026-05-10T08:00:00Z',
+                  likeCount: 5,
+                },
+              },
+              totalReplyCount: 2,
+            },
+          },
+          {
+            id: 'ct002',
+            snippet: {
+              topLevelComment: {
+                id: 'c002',
+                snippet: {
+                  textDisplay: 'Nice work!',
+                  authorDisplayName: 'Bob',
+                  publishedAt: '2026-05-11T09:00:00Z',
+                  likeCount: 1,
+                },
+              },
+              totalReplyCount: 0,
+            },
+          },
+        ],
+      },
+    });
+  });
+
+  test('lists comments with table output', async () => {
+    await listComments({ videoId: 'vid001', json: false });
+
+    expect(mockCommentThreadsList).toHaveBeenCalledWith({
+      part: ['snippet'],
+      videoId: 'vid001',
+      maxResults: 20,
+      order: 'time',
+    });
+
+    expect(mockPrintTable).toHaveBeenCalledWith(
+      ['Comment ID', 'Author', 'Text (preview)', 'Likes', 'Replies'],
+      [
+        ['c001', 'Alice', 'Great video!', 5, 2],
+        ['c002', 'Bob', 'Nice work!', 1, 0],
+      ]
+    );
+  });
+
+  test('prints JSON when --json flag is set', async () => {
+    await listComments({ videoId: 'vid001', json: true });
+    expect(mockPrintJson).toHaveBeenCalledWith(expect.any(Array));
+  });
+});
+
+// --- Task 8: yt comments reply ---
+
+describe('yt comments reply', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    mockCommentsInsert.mockResolvedValue({
+      data: { id: 'reply001', snippet: { textDisplay: 'Thanks!' } },
+    });
+  });
+
+  test('inserts a reply comment and prints success', async () => {
+    await replyToComment({ commentId: 'c001', body: 'Thanks!' });
+
+    expect(mockCommentsInsert).toHaveBeenCalledWith({
+      part: ['snippet'],
+      requestBody: {
+        snippet: {
+          parentId: 'c001',
+          textOriginal: 'Thanks!',
+        },
+      },
+    });
+
+    expect(mockPrintSuccess).toHaveBeenCalledWith(expect.stringContaining('reply001'));
+  });
+});
+
+// --- Task 9: yt comments delete ---
+
+describe('yt comments delete', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    mockCommentsList.mockResolvedValue({
+      data: {
+        items: [
+          { id: 'c001', snippet: { textDisplay: 'This is the comment text to preview.' } },
+        ],
+      },
+    });
+    mockCommentsDelete.mockResolvedValue({ data: {} });
+  });
+
+  test('deletes comment with --yolo flag (no confirmation)', async () => {
+    await deleteComment({ commentId: 'c001', yolo: true });
+
+    expect(mockCommentsDelete).toHaveBeenCalledWith({ id: 'c001' });
+    expect(mockPrintSuccess).toHaveBeenCalledWith(expect.stringContaining('c001'));
+  });
+});
+
+// --- Task 10: yt auth ---
+
+describe('yt auth', () => {
+  beforeEach(() => jest.clearAllMocks());
+
+  test('delegates to runAuthFlow', async () => {
+    await runAuth();
+    expect(runAuthFlow).toHaveBeenCalledTimes(1);
   });
 });
