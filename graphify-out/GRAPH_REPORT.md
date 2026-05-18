@@ -1,12 +1,12 @@
 # Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-05-18)
 
 ## Corpus Check
-- 21 files · ~1,200,238 words
+- 42 files · ~1,213,461 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 211 nodes · 252 edges · 32 communities detected
-- Extraction: 83% EXTRACTED · 16% INFERRED · 1% AMBIGUOUS · INFERRED: 40 edges (avg confidence: 0.81)
+- 268 nodes · 365 edges · 43 communities detected
+- Extraction: 77% EXTRACTED · 22% INFERRED · 1% AMBIGUOUS · INFERRED: 81 edges (avg confidence: 0.81)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -42,18 +42,29 @@
 - [[_COMMUNITY_Community 29|Community 29]]
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `create_homework_events()` - 15 edges
-2. `YouTube Channel Strategy` - 12 edges
-3. `parse_homework()` - 11 edges
-4. `_make_mock_service()` - 9 edges
-5. `CLAUDE.md Project Instructions` - 9 edges
-6. `Rielcode Growth Plan Detail` - 9 edges
-7. `Decisions Log` - 8 edges
-8. `Skill: /repurpose-project` - 8 edges
-9. `Skill: /audit-short` - 7 edges
-10. `Design Skill` - 7 edges
+2. `printTable()` - 13 edges
+3. `printJSON()` - 13 edges
+4. `YouTube Channel Strategy` - 12 edges
+5. `parse_homework()` - 11 edges
+6. `getAuthHeaders()` - 11 edges
+7. `_make_mock_service()` - 9 edges
+8. `printSuccess()` - 9 edges
+9. `CLAUDE.md Project Instructions` - 9 edges
+10. `Rielcode Growth Plan Detail` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Instagram Content Skill` --references--> `Rielcode Website (portfolio.rielcode.com)`  [EXTRACTED]
@@ -87,72 +98,72 @@
 ## Communities
 
 ### Community 0 - "Community 0"
-Cohesion: 0.12
-Nodes (22): Free Website Audit Tool, Canva MCP Integration, DomPDF PDF Generation Engine, ElevenLabs MCP Voiceover Generation, GitHub Repository Integration, Google Calendar MCP Integration, Ntfy.sh Push Notifications, Rielcode Pricing Reference (+14 more)
+Cohesion: 0.07
+Nodes (39): Free Website Audit Tool, Build-with-me Live Streams, Canva MCP Integration, ElevenLabs MCP Voiceover Generation, Free Website Audit Tool, Lead-Gen Funnel (YT to rielcode.com), $0 to First Website Mini-Course, Learning: Build Complete vs Delivered Distinction (+31 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.12
-Nodes (20): Build-with-me Live Streams, Free Website Audit Tool, Lead-Gen Funnel (YT to rielcode.com), $0 to First Website Mini-Course, Salatiga Case Study Generator, YT Pillar: Build Showcases, YT Pillar: Hot Takes / Controversy, YT Pillar: Process / Behind-Scenes (+12 more)
+Cohesion: 0.16
+Nodes (26): confirm(), deleteComment(), formatDate(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), igAnalytics(), igCommentsDelete() (+18 more)
 
 ### Community 2 - "Community 2"
+Cohesion: 0.13
+Nodes (12): getCalendar(), getDrive(), getGmail(), runAuth(), createOAuthClient(), getAuthenticatedClient(), loadConfig(), runAuthFlow() (+4 more)
+
+### Community 3 - "Community 3"
 Cohesion: 0.22
 Nodes (16): get_service_account_info(), build_service(), CalendarResult, create_homework_events(), _deadline_body(), _insert_event(), _study_block_body(), _make_mock_service() (+8 more)
 
-### Community 3 - "Community 3"
-Cohesion: 0.15
-Nodes (18): AIOS Intake, CLAUDE.md Project Instructions, Lead Generation System, Learning: Build Complete vs Delivered Distinction, Repurpose Per Build Pipeline, About Rielcode Business, About Azriel, Goals and Milestones Q2 2026 (+10 more)
-
 ### Community 4 - "Community 4"
-Cohesion: 0.17
-Nodes (8): confirm(), getCalendar(), getDrive(), getGmail(), createOAuthClient(), getAuthenticatedClient(), loadConfig(), runAuthFlow()
+Cohesion: 0.12
+Nodes (16): Decisions Log (decisions/log.md), DomPDF PDF Generation Engine, GitHub Repository Integration, Google Calendar MCP Integration, Lead Sales Pipeline (cold to closed), Leads CRM File (leads/leads.md), Ntfy.sh Push Notifications, Three Ms of AI Framework (Mindset Method Machine) (+8 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.2
 Nodes (11): _clean_subject(), parse_homework(), Parse a natural-language homework message.     Returns {"subject": str, "due_da, handle_message(), test_parse_all_noise_subject(), test_parse_bad_date_returns_none(), test_parse_day_name(), test_parse_explicit_date() (+3 more)
 
 ### Community 6 - "Community 6"
+Cohesion: 0.21
+Nodes (14): AIOS Intake, CLAUDE.md Project Instructions, Lead Generation System, About Rielcode Business, About Azriel, Goals and Milestones Q2 2026, Azriel Personal Profile, Priorities Q2 2026 (+6 more)
+
+### Community 7 - "Community 7"
 Cohesion: 0.18
 Nodes (12): Banner Art Direction Styles, Brand Guidelines Source of Truth, Banner Design Capability (22 Styles), Corporate Identity Program Capability, Logo Design Capability (55 Styles), Gemini AI Image Generation, Skill: banner-design, Skill: brand (+4 more)
 
-### Community 7 - "Community 7"
+### Community 8 - "Community 8"
 Cohesion: 0.2
 Nodes (12): Floating Chatbot Widget, Dark UI Design Theme, Free Hosting and .COM Promotional Banner, Rielcode Website (portfolio.rielcode.com), Rielcode Mobile Hero Screenshot (v1), Rielcode Mobile Hero Screenshot (v2 with chatbot), Rielcode Mobile Hero Screenshot (v3 with chatbot), Rielcode Mobile Hero Screenshot (v4 with chatbot) (+4 more)
 
-### Community 8 - "Community 8"
+### Community 9 - "Community 9"
+Cohesion: 0.22
+Nodes (4): handleError(), notAuthenticated(), getHeaders(), isNetworkError()
+
+### Community 10 - "Community 10"
 Cohesion: 0.2
 Nodes (11): portfolio.rielcode.com, MISAEL67 Referral Code, MISAEL67 Instagram Caption, MISAEL67 Info Card, MISAEL67 WhatsApp Message, Rielcode Referral Program, rielcode.com Website, Rielcode Base Instagram Caption Template (+3 more)
 
-### Community 9 - "Community 9"
+### Community 11 - "Community 11"
 Cohesion: 0.36
 Nodes (9): build_panel(), find_latest_session(), git_info(), main(), pct_bar(), pct_color(), Return branch, repo name, dirty flag for given path., Scan $TEMP for claude-ctx-*.json files and return the most recently     modified (+1 more)
 
-### Community 10 - "Community 10"
-Cohesion: 0.22
-Nodes (9): Decisions Log (decisions/log.md), Lead Sales Pipeline (cold to closed), Leads CRM File (leads/leads.md), Three Ms of AI Framework (Mindset Method Machine), WhatsApp Deep Links for Lead Communication, Lead Tracker Skill, Level Up Automation Skill, New Project Skill (+1 more)
-
-### Community 11 - "Community 11"
-Cohesion: 0.4
-Nodes (0): 
-
 ### Community 12 - "Community 12"
+Cohesion: 0.67
+Nodes (5): getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath()
+
+### Community 13 - "Community 13"
 Cohesion: 0.4
 Nodes (5): Google Calendar MCP Integration, ntfy Phone Notification System, Daily Priorities Skill, Follow-up Skill, WhatsApp Communication Channel
 
-### Community 13 - "Community 13"
+### Community 14 - "Community 14"
 Cohesion: 0.67
 Nodes (4): Demo Website Skill, Emil Design Engineer Skill, Frontend Design Skill, Tailwind CSS
 
-### Community 14 - "Community 14"
+### Community 15 - "Community 15"
 Cohesion: 0.5
 Nodes (4): Parallaxnet Client Site, Rielcode Hero Iterations (v1-v8), Rielcode Mobile Views, Rielcode Site Evolution (May 2026)
 
-### Community 15 - "Community 15"
-Cohesion: 0.67
-Nodes (2): Set up dummy environment variables for testing., setup_env_vars()
-
 ### Community 16 - "Community 16"
 Cohesion: 0.67
-Nodes (0): 
+Nodes (2): Set up dummy environment variables for testing., setup_env_vars()
 
 ### Community 17 - "Community 17"
 Cohesion: 0.67
@@ -196,21 +207,65 @@ Nodes (0):
 
 ### Community 27 - "Community 27"
 Cohesion: 1.0
-Nodes (1): CLAUDE.local.md Local Overrides
+Nodes (0): 
 
 ### Community 28 - "Community 28"
 Cohesion: 1.0
-Nodes (1): Session Summary Template
+Nodes (0): 
 
 ### Community 29 - "Community 29"
 Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v2
+Nodes (0): 
 
 ### Community 30 - "Community 30"
 Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v3
+Nodes (0): 
 
 ### Community 31 - "Community 31"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 32 - "Community 32"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 33 - "Community 33"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 34 - "Community 34"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 35 - "Community 35"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 36 - "Community 36"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 37 - "Community 37"
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 38 - "Community 38"
+Cohesion: 1.0
+Nodes (1): CLAUDE.local.md Local Overrides
+
+### Community 39 - "Community 39"
+Cohesion: 1.0
+Nodes (1): Session Summary Template
+
+### Community 40 - "Community 40"
+Cohesion: 1.0
+Nodes (1): Rielcode Portfolio Page Screenshot v2
+
+### Community 41 - "Community 41"
+Cohesion: 1.0
+Nodes (1): Rielcode Portfolio Page Screenshot v3
+
+### Community 42 - "Community 42"
 Cohesion: 1.0
 Nodes (1): Rielcode Services Page Screenshot v2
 
@@ -239,15 +294,37 @@ Nodes (1): Rielcode Services Page Screenshot v2
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 26`** (1 nodes): `launch-widget.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 27`** (1 nodes): `CLAUDE.local.md Local Overrides`
+- **Thin community `Community 27`** (1 nodes): `error.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 28`** (1 nodes): `Session Summary Template`
+- **Thin community `Community 28`** (1 nodes): `figma.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 29`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
+- **Thin community `Community 29`** (1 nodes): `output.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 30`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
+- **Thin community `Community 30`** (1 nodes): `jest.config.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 31`** (1 nodes): `Rielcode Services Page Screenshot v2`
+- **Thin community `Community 31`** (1 nodes): `youtube.test.js`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 32`** (1 nodes): `auth.instagram.test.js`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 33`** (1 nodes): `auth.tiktok.test.js`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 34`** (1 nodes): `error.test.js`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 35`** (1 nodes): `ig.list.test.js`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 36`** (1 nodes): `output.test.js`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 37`** (1 nodes): `tt.list.test.js`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 38`** (1 nodes): `CLAUDE.local.md Local Overrides`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 39`** (1 nodes): `Session Summary Template`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 40`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 41`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 42`** (1 nodes): `Rielcode Services Page Screenshot v2`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
@@ -259,11 +336,11 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **What is the exact relationship between `Rielcode Testimonials Page Screenshot` and `Rielcode Website (portfolio.rielcode.com)`?**
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
-- **Why does `Skill: /repurpose-project` connect `Community 0` to `Community 3`, `Community 7`?**
-  _High betweenness centrality (0.086) - this node is a cross-community bridge._
-- **Why does `Skill: /audit-short` connect `Community 1` to `Community 0`?**
-  _High betweenness centrality (0.073) - this node is a cross-community bridge._
-- **Why does `Decisions Log` connect `Community 0` to `Community 1`, `Community 3`?**
-  _High betweenness centrality (0.065) - this node is a cross-community bridge._
+- **Why does `Skill: /repurpose-project` connect `Community 0` to `Community 8`, `Community 4`?**
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
+- **Why does `Decisions Log` connect `Community 0` to `Community 6`?**
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
 - **Are the 9 inferred relationships involving `create_homework_events()` (e.g. with `handle_message()` and `test_creates_three_events()`) actually correct?**
   _`create_homework_events()` has 9 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 10 inferred relationships involving `printTable()` (e.g. with `listVideos()` and `searchVideos()`) actually correct?**
+  _`printTable()` has 10 INFERRED edges - model-reasoned connections that need verification._

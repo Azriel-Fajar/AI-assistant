@@ -1,6 +1,6 @@
 # Parallaxnet Canada -- Website
 
-Custom website for Parallaxnet, a client based in Canada.
+Custom website for Parallaxnet Canada, an independent Canadian entity under the Parallaxnet education network (HQ: parallaxnet.com, USA). Offers tech and business programs with hands-on learning. Based in Langley, BC.
 
 **Status:** Delivered. Payment sent -- processing (5 business days).
 

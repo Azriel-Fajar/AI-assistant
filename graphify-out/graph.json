@@ -239,7 +239,7 @@
       "source_file": "homework-bot\\config.py",
       "source_location": "L1",
       "id": "homework_bot_config_py",
-      "community": 2,
+      "community": 3,
       "norm_label": "config.py"
     },
     {
@@ -248,7 +248,7 @@
       "source_file": "homework-bot\\config.py",
       "source_location": "L16",
       "id": "config_get_service_account_info",
-      "community": 2,
+      "community": 3,
       "norm_label": "get_service_account_info()"
     },
     {
@@ -257,7 +257,7 @@
       "source_file": "homework-bot\\gcal.py",
       "source_location": "L1",
       "id": "homework_bot_gcal_py",
-      "community": 2,
+      "community": 3,
       "norm_label": "gcal.py"
     },
     {
@@ -266,7 +266,7 @@
       "source_file": "homework-bot\\gcal.py",
       "source_location": "L11",
       "id": "gcal_calendarresult",
-      "community": 2,
+      "community": 3,
       "norm_label": "calendarresult"
     },
     {
@@ -275,7 +275,7 @@
       "source_file": "homework-bot\\gcal.py",
       "source_location": "L19",
       "id": "gcal_build_service",
-      "community": 2,
+      "community": 3,
       "norm_label": "build_service()"
     },
     {
@@ -284,7 +284,7 @@
       "source_file": "homework-bot\\gcal.py",
       "source_location": "L25",
       "id": "gcal_create_homework_events",
-      "community": 2,
+      "community": 3,
       "norm_label": "create_homework_events()"
     },
     {
@@ -293,7 +293,7 @@
       "source_file": "homework-bot\\gcal.py",
       "source_location": "L49",
       "id": "gcal_insert_event",
-      "community": 2,
+      "community": 3,
       "norm_label": "_insert_event()"
     },
     {
@@ -302,7 +302,7 @@
       "source_file": "homework-bot\\gcal.py",
       "source_location": "L61",
       "id": "gcal_deadline_body",
-      "community": 2,
+      "community": 3,
       "norm_label": "_deadline_body()"
     },
     {
@@ -311,7 +311,7 @@
       "source_file": "homework-bot\\gcal.py",
       "source_location": "L70",
       "id": "gcal_study_block_body",
-      "community": 2,
+      "community": 3,
       "norm_label": "_study_block_body()"
     },
     {
@@ -383,7 +383,7 @@
       "source_file": "homework-bot\\tests\\conftest.py",
       "source_location": "L1",
       "id": "homework_bot_tests_conftest_py",
-      "community": 15,
+      "community": 16,
       "norm_label": "conftest.py"
     },
     {
@@ -392,7 +392,7 @@
       "source_file": "homework-bot\\tests\\conftest.py",
       "source_location": "L8",
       "id": "conftest_setup_env_vars",
-      "community": 15,
+      "community": 16,
       "norm_label": "setup_env_vars()"
     },
     {
@@ -400,7 +400,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot\\tests\\conftest.py",
       "source_location": "L9",
-      "community": 15,
+      "community": 16,
       "norm_label": "set up dummy environment variables for testing.",
       "id": "conftest_rationale_9"
     },
@@ -410,7 +410,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L1",
       "id": "homework_bot_tests_test_calendar_py",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_calendar.py"
     },
     {
@@ -419,7 +419,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L6",
       "id": "test_calendar_make_mock_service",
-      "community": 2,
+      "community": 3,
       "norm_label": "_make_mock_service()"
     },
     {
@@ -428,7 +428,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L14",
       "id": "test_calendar_test_creates_three_events",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_creates_three_events()"
     },
     {
@@ -437,7 +437,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L27",
       "id": "test_calendar_test_deadline_event_is_allday",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_deadline_event_is_allday()"
     },
     {
@@ -446,7 +446,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L42",
       "id": "test_calendar_test_deadline_event_end_is_next_day",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_deadline_event_end_is_next_day()"
     },
     {
@@ -455,7 +455,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L56",
       "id": "test_calendar_test_study_blocks_at_8pm",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_study_blocks_at_8pm()"
     },
     {
@@ -464,7 +464,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L72",
       "id": "test_calendar_test_study_block1_has_reminder",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_study_block1_has_reminder()"
     },
     {
@@ -473,7 +473,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L87",
       "id": "test_calendar_test_study_block2_no_reminder",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_study_block2_no_reminder()"
     },
     {
@@ -482,7 +482,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L102",
       "id": "test_calendar_test_study_blocks_are_2hours",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_study_blocks_are_2hours()"
     },
     {
@@ -491,7 +491,7 @@
       "source_file": "homework-bot\\tests\\test_calendar.py",
       "source_location": "L116",
       "id": "test_calendar_test_result_has_correct_dates",
-      "community": 2,
+      "community": 3,
       "norm_label": "test_result_has_correct_dates()"
     },
     {
@@ -608,7 +608,7 @@
       "source_file": "tests\\playwright\\rielcode-audit.spec.js",
       "source_location": "L1",
       "id": "tests_playwright_rielcode_audit_spec_js",
-      "community": 16,
+      "community": 17,
       "norm_label": "rielcode-audit.spec.js"
     },
     {
@@ -617,7 +617,7 @@
       "source_file": "tests\\playwright\\rielcode-audit.spec.js",
       "source_location": "L27",
       "id": "rielcode_audit_spec_attachconsolelistener",
-      "community": 16,
+      "community": 17,
       "norm_label": "attachconsolelistener()"
     },
     {
@@ -626,7 +626,7 @@
       "source_file": "tests\\playwright\\rielcode-audit.spec.js",
       "source_location": "L38",
       "id": "rielcode_audit_spec_shot",
-      "community": 16,
+      "community": 17,
       "norm_label": "shot()"
     },
     {
@@ -644,7 +644,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L1",
       "id": "tools_claude_widget_py",
-      "community": 9,
+      "community": 11,
       "norm_label": "claude-widget.py"
     },
     {
@@ -653,7 +653,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L49",
       "id": "claude_widget_pct_color",
-      "community": 9,
+      "community": 11,
       "norm_label": "pct_color()"
     },
     {
@@ -662,7 +662,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L57",
       "id": "claude_widget_pct_bar",
-      "community": 9,
+      "community": 11,
       "norm_label": "pct_bar()"
     },
     {
@@ -671,7 +671,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L69",
       "id": "claude_widget_git_info",
-      "community": 9,
+      "community": 11,
       "norm_label": "git_info()"
     },
     {
@@ -680,7 +680,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L88",
       "id": "claude_widget_find_latest_session",
-      "community": 9,
+      "community": 11,
       "norm_label": "find_latest_session()"
     },
     {
@@ -689,7 +689,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L108",
       "id": "claude_widget_read_caveman_flag",
-      "community": 9,
+      "community": 11,
       "norm_label": "read_caveman_flag()"
     },
     {
@@ -698,7 +698,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L124",
       "id": "claude_widget_build_panel",
-      "community": 9,
+      "community": 11,
       "norm_label": "build_panel()"
     },
     {
@@ -707,7 +707,7 @@
       "source_file": "tools\\claude-widget.py",
       "source_location": "L203",
       "id": "claude_widget_main",
-      "community": 9,
+      "community": 11,
       "norm_label": "main()"
     },
     {
@@ -715,7 +715,7 @@
       "file_type": "rationale",
       "source_file": "tools\\claude-widget.py",
       "source_location": "L70",
-      "community": 9,
+      "community": 11,
       "norm_label": "return branch, repo name, dirty flag for given path.",
       "id": "claude_widget_rationale_70"
     },
@@ -724,7 +724,7 @@
       "file_type": "rationale",
       "source_file": "tools\\claude-widget.py",
       "source_location": "L89",
-      "community": 9,
+      "community": 11,
       "norm_label": "scan $temp for claude-ctx-*.json files and return the most recently     modified",
       "id": "claude_widget_rationale_89"
     },
@@ -738,48 +738,201 @@
       "norm_label": "launch-widget.ps1"
     },
     {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\figma\\index.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_figma_index_js",
+      "community": 9,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "getHeaders()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\figma\\index.js",
+      "source_location": "L12",
+      "id": "index_getheaders",
+      "community": 9,
+      "norm_label": "getheaders()"
+    },
+    {
+      "label": "isNetworkError()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L11",
+      "id": "index_isnetworkerror",
+      "community": 9,
+      "norm_label": "isnetworkerror()"
+    },
+    {
+      "label": "error.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "community": 9,
+      "norm_label": "error.js"
+    },
+    {
+      "label": "handleError()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\error.js",
+      "source_location": "L3",
+      "id": "error_handleerror",
+      "community": 9,
+      "norm_label": "handleerror()"
+    },
+    {
+      "label": "notAuthenticated()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\error.js",
+      "source_location": "L16",
+      "id": "error_notauthenticated",
+      "community": 9,
+      "norm_label": "notauthenticated()"
+    },
+    {
+      "label": "fileNotFound()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L18",
+      "id": "error_filenotfound",
+      "community": 9,
+      "norm_label": "filenotfound()"
+    },
+    {
+      "label": "noConnection()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L23",
+      "id": "error_noconnection",
+      "community": 9,
+      "norm_label": "noconnection()"
+    },
+    {
+      "label": "badFormat()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L28",
+      "id": "error_badformat",
+      "community": 9,
+      "norm_label": "badformat()"
+    },
+    {
+      "label": "output.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\output.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_output_js",
+      "community": 1,
+      "norm_label": "output.js"
+    },
+    {
+      "label": "printTable()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L4",
+      "id": "output_printtable",
+      "community": 1,
+      "norm_label": "printtable()"
+    },
+    {
+      "label": "printJSON()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L13",
+      "id": "output_printjson",
+      "community": 1,
+      "norm_label": "printjson()"
+    },
+    {
+      "label": "printSuccess()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L17",
+      "id": "output_printsuccess",
+      "community": 1,
+      "norm_label": "printsuccess()"
+    },
+    {
+      "label": "error.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\error.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_error_test_js",
+      "community": 27,
+      "norm_label": "error.test.js"
+    },
+    {
+      "label": "figma.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\figma.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_figma_test_js",
+      "community": 28,
+      "norm_label": "figma.test.js"
+    },
+    {
+      "label": "output.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\output.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_output_test_js",
+      "community": 29,
+      "norm_label": "output.test.js"
+    },
+    {
+      "label": "jest.config.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\jest.config.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_jest_config_js",
+      "community": 30,
+      "norm_label": "jest.config.js"
+    },
+    {
       "label": "oauth.js",
       "file_type": "code",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_auth_oauth_js",
-      "community": 4,
+      "community": 2,
       "norm_label": "oauth.js"
     },
     {
       "label": "loadConfig()",
       "file_type": "code",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "oauth_loadconfig",
-      "community": 4,
+      "community": 2,
       "norm_label": "loadconfig()"
     },
     {
       "label": "createOAuthClient()",
       "file_type": "code",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "oauth_createoauthclient",
-      "community": 4,
+      "community": 2,
       "norm_label": "createoauthclient()"
     },
     {
       "label": "getAuthenticatedClient()",
       "file_type": "code",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "id": "oauth_getauthenticatedclient",
-      "community": 4,
+      "community": 2,
       "norm_label": "getauthenticatedclient()"
     },
     {
       "label": "runAuthFlow()",
       "file_type": "code",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L56",
+      "source_location": "L57",
       "id": "oauth_runauthflow",
-      "community": 4,
+      "community": 2,
       "norm_label": "runauthflow()"
     },
     {
@@ -788,7 +941,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gcal\\index.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_gcal_index_js",
-      "community": 4,
+      "community": 2,
       "norm_label": "index.js"
     },
     {
@@ -797,7 +950,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gcal\\index.js",
       "source_location": "L10",
       "id": "index_getcalendar",
-      "community": 4,
+      "community": 2,
       "norm_label": "getcalendar()"
     },
     {
@@ -806,16 +959,16 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gcal\\index.js",
       "source_location": "L15",
       "id": "index_formatdatetime",
-      "community": 4,
+      "community": 2,
       "norm_label": "formatdatetime()"
     },
     {
       "label": "confirm()",
       "file_type": "code",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gmail\\index.js",
-      "source_location": "L27",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L34",
       "id": "index_confirm",
-      "community": 4,
+      "community": 1,
       "norm_label": "confirm()"
     },
     {
@@ -824,7 +977,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gdrive\\index.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_gdrive_index_js",
-      "community": 4,
+      "community": 2,
       "norm_label": "index.js"
     },
     {
@@ -833,7 +986,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gdrive\\index.js",
       "source_location": "L12",
       "id": "index_getdrive",
-      "community": 4,
+      "community": 2,
       "norm_label": "getdrive()"
     },
     {
@@ -842,7 +995,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gdrive\\index.js",
       "source_location": "L24",
       "id": "index_findfileid",
-      "community": 4,
+      "community": 2,
       "norm_label": "findfileid()"
     },
     {
@@ -851,7 +1004,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gmail\\index.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_gmail_index_js",
-      "community": 4,
+      "community": 2,
       "norm_label": "index.js"
     },
     {
@@ -860,7 +1013,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gmail\\index.js",
       "source_location": "L12",
       "id": "index_getgmail",
-      "community": 4,
+      "community": 2,
       "norm_label": "getgmail()"
     },
     {
@@ -869,7 +1022,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gmail\\index.js",
       "source_location": "L17",
       "id": "index_decodebody",
-      "community": 4,
+      "community": 2,
       "norm_label": "decodebody()"
     },
     {
@@ -878,7 +1031,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\gmail\\index.js",
       "source_location": "L23",
       "id": "index_getheader",
-      "community": 4,
+      "community": 2,
       "norm_label": "getheader()"
     },
     {
@@ -887,26 +1040,8 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\error.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
-      "community": 17,
+      "community": 9,
       "norm_label": "error.js"
-    },
-    {
-      "label": "handleError()",
-      "file_type": "code",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\error.js",
-      "source_location": "L3",
-      "id": "error_handleerror",
-      "community": 17,
-      "norm_label": "handleerror()"
-    },
-    {
-      "label": "notAuthenticated()",
-      "file_type": "code",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\error.js",
-      "source_location": "L13",
-      "id": "error_notauthenticated",
-      "community": 17,
-      "norm_label": "notauthenticated()"
     },
     {
       "label": "output.js",
@@ -914,44 +1049,422 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
-      "community": 11,
+      "community": 1,
       "norm_label": "output.js"
-    },
-    {
-      "label": "printTable()",
-      "file_type": "code",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
-      "source_location": "L4",
-      "id": "output_printtable",
-      "community": 11,
-      "norm_label": "printtable()"
-    },
-    {
-      "label": "printJson()",
-      "file_type": "code",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
-      "source_location": "L13",
-      "id": "output_printjson",
-      "community": 11,
-      "norm_label": "printjson()"
-    },
-    {
-      "label": "printSuccess()",
-      "file_type": "code",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
-      "source_location": "L17",
-      "id": "output_printsuccess",
-      "community": 11,
-      "norm_label": "printsuccess()"
     },
     {
       "label": "printInfo()",
       "file_type": "code",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
       "source_location": "L21",
       "id": "output_printinfo",
-      "community": 11,
+      "community": 1,
       "norm_label": "printinfo()"
+    },
+    {
+      "label": "youtube.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\tests\\youtube.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_tests_youtube_test_js",
+      "community": 31,
+      "norm_label": "youtube.test.js"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "community": 1,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "getYouTube()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L14",
+      "id": "index_getyoutube",
+      "community": 1,
+      "norm_label": "getyoutube()"
+    },
+    {
+      "label": "getYouTubeAnalytics()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L19",
+      "id": "index_getyoutubeanalytics",
+      "community": 1,
+      "norm_label": "getyoutubeanalytics()"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L15",
+      "id": "index_formatdate",
+      "community": 1,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "periodToDates()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L41",
+      "id": "index_periodtodates",
+      "community": 1,
+      "norm_label": "periodtodates()"
+    },
+    {
+      "label": "listVideos()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L52",
+      "id": "index_listvideos",
+      "community": 1,
+      "norm_label": "listvideos()"
+    },
+    {
+      "label": "uploadVideo()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L89",
+      "id": "index_uploadvideo",
+      "community": 1,
+      "norm_label": "uploadvideo()"
+    },
+    {
+      "label": "searchVideos()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L128",
+      "id": "index_searchvideos",
+      "community": 1,
+      "norm_label": "searchvideos()"
+    },
+    {
+      "label": "getAnalytics()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L165",
+      "id": "index_getanalytics",
+      "community": 1,
+      "norm_label": "getanalytics()"
+    },
+    {
+      "label": "listComments()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L199",
+      "id": "index_listcomments",
+      "community": 1,
+      "norm_label": "listcomments()"
+    },
+    {
+      "label": "replyToComment()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L243",
+      "id": "index_replytocomment",
+      "community": 1,
+      "norm_label": "replytocomment()"
+    },
+    {
+      "label": "deleteComment()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L259",
+      "id": "index_deletecomment",
+      "community": 1,
+      "norm_label": "deletecomment()"
+    },
+    {
+      "label": "runAuth()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L281",
+      "id": "index_runauth",
+      "community": 2,
+      "norm_label": "runauth()"
+    },
+    {
+      "label": "instagram.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "community": 12,
+      "norm_label": "instagram.js"
+    },
+    {
+      "label": "tokensPath()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L8",
+      "id": "instagram_tokenspath",
+      "community": 12,
+      "norm_label": "tokenspath()"
+    },
+    {
+      "label": "readTokens()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L13",
+      "id": "instagram_readtokens",
+      "community": 12,
+      "norm_label": "readtokens()"
+    },
+    {
+      "label": "saveToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L23",
+      "id": "instagram_savetoken",
+      "community": 12,
+      "norm_label": "savetoken()"
+    },
+    {
+      "label": "getToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L29",
+      "id": "instagram_gettoken",
+      "community": 12,
+      "norm_label": "gettoken()"
+    },
+    {
+      "label": "getAuthHeaders()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L34",
+      "id": "instagram_getauthheaders",
+      "community": 12,
+      "norm_label": "getauthheaders()"
+    },
+    {
+      "label": "tiktok.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "community": 2,
+      "norm_label": "tiktok.js"
+    },
+    {
+      "label": "tokensPath()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L8",
+      "id": "tiktok_tokenspath",
+      "community": 2,
+      "norm_label": "tokenspath()"
+    },
+    {
+      "label": "readTokens()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L13",
+      "id": "tiktok_readtokens",
+      "community": 2,
+      "norm_label": "readtokens()"
+    },
+    {
+      "label": "saveToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L23",
+      "id": "tiktok_savetoken",
+      "community": 2,
+      "norm_label": "savetoken()"
+    },
+    {
+      "label": "getToken()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L29",
+      "id": "tiktok_gettoken",
+      "community": 2,
+      "norm_label": "gettoken()"
+    },
+    {
+      "label": "getAuthHeaders()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L34",
+      "id": "tiktok_getauthheaders",
+      "community": 1,
+      "norm_label": "getauthheaders()"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "community": 1,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "igList()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L171",
+      "id": "index_iglist",
+      "community": 1,
+      "norm_label": "iglist()"
+    },
+    {
+      "label": "igAnalytics()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L223",
+      "id": "index_iganalytics",
+      "community": 1,
+      "norm_label": "iganalytics()"
+    },
+    {
+      "label": "igCommentsList()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L283",
+      "id": "index_igcommentslist",
+      "community": 1,
+      "norm_label": "igcommentslist()"
+    },
+    {
+      "label": "igCommentsReply()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L319",
+      "id": "index_igcommentsreply",
+      "community": 1,
+      "norm_label": "igcommentsreply()"
+    },
+    {
+      "label": "igCommentsDelete()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L344",
+      "id": "index_igcommentsdelete",
+      "community": 1,
+      "norm_label": "igcommentsdelete()"
+    },
+    {
+      "label": "error.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\error.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_error_js",
+      "community": 9,
+      "norm_label": "error.js"
+    },
+    {
+      "label": "output.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "community": 1,
+      "norm_label": "output.js"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "community": 1,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "ttList()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L74",
+      "id": "index_ttlist",
+      "community": 1,
+      "norm_label": "ttlist()"
+    },
+    {
+      "label": "ttAnalytics()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L116",
+      "id": "index_ttanalytics",
+      "community": 1,
+      "norm_label": "ttanalytics()"
+    },
+    {
+      "label": "ttCommentsList()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L185",
+      "id": "index_ttcommentslist",
+      "community": 1,
+      "norm_label": "ttcommentslist()"
+    },
+    {
+      "label": "ttCommentsReply()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L222",
+      "id": "index_ttcommentsreply",
+      "community": 1,
+      "norm_label": "ttcommentsreply()"
+    },
+    {
+      "label": "auth.instagram.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.instagram.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_instagram_test_js",
+      "community": 32,
+      "norm_label": "auth.instagram.test.js"
+    },
+    {
+      "label": "auth.tiktok.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.tiktok.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_tiktok_test_js",
+      "community": 33,
+      "norm_label": "auth.tiktok.test.js"
+    },
+    {
+      "label": "error.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\error.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_error_test_js",
+      "community": 34,
+      "norm_label": "error.test.js"
+    },
+    {
+      "label": "ig.list.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\ig.list.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_ig_list_test_js",
+      "community": 35,
+      "norm_label": "ig.list.test.js"
+    },
+    {
+      "label": "output.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\output.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_output_test_js",
+      "community": 36,
+      "norm_label": "output.test.js"
+    },
+    {
+      "label": "tt.list.test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\tt.list.test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_tt_list_test_js",
+      "community": 37,
+      "norm_label": "tt.list.test.js"
     },
     {
       "label": "AIOS Intake",
@@ -962,7 +1475,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "aios intake",
       "id": "aios_intake"
     },
@@ -975,7 +1488,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "claude.md project instructions",
       "id": "claude_md"
     },
@@ -988,7 +1501,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 27,
+      "community": 38,
       "norm_label": "claude.local.md local overrides",
       "id": "claude_local_md"
     },
@@ -1001,7 +1514,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "about rielcode business",
       "id": "ctx_about_business"
     },
@@ -1014,7 +1527,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "about azriel",
       "id": "ctx_about_me"
     },
@@ -1040,7 +1553,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "goals and milestones q2 2026",
       "id": "ctx_goals"
     },
@@ -1053,7 +1566,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "azriel personal profile",
       "id": "ctx_me"
     },
@@ -1066,7 +1579,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "priorities q2 2026",
       "id": "ctx_priorities"
     },
@@ -1079,7 +1592,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "team context",
       "id": "ctx_team"
     },
@@ -1092,7 +1605,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "work and business context",
       "id": "ctx_work"
     },
@@ -1118,7 +1631,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "leads archive",
       "id": "leads_archive"
     },
@@ -1157,7 +1670,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "azriel",
       "id": "entity_azriel"
     },
@@ -1170,7 +1683,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "rielcode",
       "id": "entity_rielcode"
     },
@@ -1183,7 +1696,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "parallaxnet canada",
       "id": "entity_parallaxnet"
     },
@@ -1235,7 +1748,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "skill: /audit-short",
       "id": "skill_audit_short"
     },
@@ -1300,7 +1813,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 6,
       "norm_label": "lead generation system",
       "id": "concept_lead_gen"
     },
@@ -1313,7 +1826,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 0,
       "norm_label": "repurpose per build pipeline",
       "id": "concept_repurpose_pipeline"
     },
@@ -1339,7 +1852,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "$0 to first website mini-course",
       "id": "concept_lead_magnet_course"
     },
@@ -1352,7 +1865,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "rielcode growth plan",
       "id": "project_rielcode_growth_plan"
     },
@@ -1365,7 +1878,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "youtube rielcode channel",
       "id": "project_youtube_rielcode"
     },
@@ -1378,7 +1891,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "youtube channel strategy",
       "id": "yt_strategy"
     },
@@ -1391,7 +1904,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 0,
       "norm_label": "learning log",
       "id": "references_learning_log"
     },
@@ -1404,7 +1917,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 28,
+      "community": 39,
       "norm_label": "session summary template",
       "id": "template_session_summary"
     },
@@ -1430,7 +1943,7 @@
       "captured_at": null,
       "author": "claudekit",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "skill: banner-design",
       "id": "skill_banner_design"
     },
@@ -1443,7 +1956,7 @@
       "captured_at": null,
       "author": "claudekit",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "skill: brand",
       "id": "skill_brand"
     },
@@ -1469,7 +1982,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "salatiga case study generator",
       "id": "concept_salatiga_audit_generator"
     },
@@ -1482,7 +1995,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "free website audit tool",
       "id": "concept_free_audit_tool"
     },
@@ -1495,7 +2008,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "build-with-me live streams",
       "id": "concept_build_live_streams"
     },
@@ -1508,7 +2021,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "youtube shorts production",
       "id": "concept_yt_shorts"
     },
@@ -1521,7 +2034,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "yt pillar: build showcases",
       "id": "concept_yt_pillar_builds"
     },
@@ -1534,7 +2047,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "yt pillar: smb website tips",
       "id": "concept_yt_pillar_tips"
     },
@@ -1547,7 +2060,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "yt pillar: process / behind-scenes",
       "id": "concept_yt_pillar_process"
     },
@@ -1560,7 +2073,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "yt pillar: hot takes / controversy",
       "id": "concept_yt_pillar_hottakes"
     },
@@ -1599,7 +2112,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "elevenlabs (ai voiceover)",
       "id": "tool_elevenlabs"
     },
@@ -1612,7 +2125,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "capcut desktop (video editor)",
       "id": "tool_capcut"
     },
@@ -1625,7 +2138,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "obs studio (screen recorder)",
       "id": "tool_obs"
     },
@@ -1638,7 +2151,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "canva (thumbnails)",
       "id": "tool_canva"
     },
@@ -1651,7 +2164,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "tubebuddy (keyword research)",
       "id": "tool_tubebuddy"
     },
@@ -1664,7 +2177,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "@rielcodeofficial youtube channel",
       "id": "entity_rielcodeofficial"
     },
@@ -1677,7 +2190,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 0,
       "norm_label": "parallaxnet canada (client project)",
       "id": "entity_parallaxnet_canada"
     },
@@ -1690,7 +2203,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "lead-gen funnel (yt to rielcode.com)",
       "id": "concept_lead_gen_funnel"
     },
@@ -1716,7 +2229,7 @@
       "captured_at": null,
       "author": "claudekit",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "banner art direction styles",
       "id": "concept_banner_art_direction"
     },
@@ -1729,7 +2242,7 @@
       "captured_at": null,
       "author": "claudekit",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "brand guidelines source of truth",
       "id": "concept_brand_guidelines"
     },
@@ -1742,7 +2255,7 @@
       "captured_at": "2026-04-27",
       "author": "Azriel",
       "contributor": null,
-      "community": 3,
+      "community": 0,
       "norm_label": "learning: build complete vs delivered distinction",
       "id": "concept_mistake_parallaxnet_delivered"
     },
@@ -1755,7 +2268,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "misael67 referral code",
       "id": "referral_misael67"
     },
@@ -1768,7 +2281,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "misael67 instagram caption",
       "id": "referral_misael67_ig"
     },
@@ -1781,7 +2294,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "misael67 whatsapp message",
       "id": "referral_misael67_wa"
     },
@@ -1794,7 +2307,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "misael67 info card",
       "id": "referral_misael67_infocard"
     },
@@ -1807,7 +2320,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "rielcode referral program",
       "id": "referral_program"
     },
@@ -1820,7 +2333,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "rielcode services",
       "id": "rielcode_services"
     },
@@ -1833,7 +2346,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "rielcode pricing packages",
       "id": "rielcode_pricing"
     },
@@ -1846,7 +2359,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "rielcode base instagram caption template",
       "id": "rielcode_ig_base_caption"
     },
@@ -1859,7 +2372,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "rielcode base whatsapp template",
       "id": "rielcode_wa_base_template"
     },
@@ -1872,7 +2385,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "daily priorities skill",
       "id": "skill_daily_priorities"
     },
@@ -1885,7 +2398,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "demo website skill",
       "id": "skill_demo_website"
     },
@@ -1898,7 +2411,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "design system skill",
       "id": "skill_design_system"
     },
@@ -1911,7 +2424,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "design skill",
       "id": "skill_design"
     },
@@ -1924,7 +2437,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "emil design engineer skill",
       "id": "skill_emil_design_eng"
     },
@@ -1937,7 +2450,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "follow-up skill",
       "id": "skill_follow_up"
     },
@@ -1950,7 +2463,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "frontend design skill",
       "id": "skill_frontend_design"
     },
@@ -1963,7 +2476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "google calendar mcp integration",
       "id": "gcal_integration"
     },
@@ -1976,7 +2489,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "ntfy phone notification system",
       "id": "ntfy_notification"
     },
@@ -1989,7 +2502,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "rielcode.com website",
       "id": "rielcode_com"
     },
@@ -2002,7 +2515,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "portfolio.rielcode.com",
       "id": "portfolio_rielcode_com"
     },
@@ -2015,7 +2528,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "logo design capability (55 styles)",
       "id": "design_logo_capability"
     },
@@ -2028,7 +2541,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "corporate identity program capability",
       "id": "design_cip_capability"
     },
@@ -2041,7 +2554,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "banner design capability (22 styles)",
       "id": "design_banner_capability"
     },
@@ -2054,7 +2567,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "ui ux pro max skill",
       "id": "skill_ui_ux_pro_max"
     },
@@ -2067,7 +2580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "ui styling skill",
       "id": "skill_ui_styling"
     },
@@ -2080,7 +2593,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 13,
       "norm_label": "whatsapp communication channel",
       "id": "whatsapp_channel"
     },
@@ -2093,7 +2606,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 13,
+      "community": 14,
       "norm_label": "tailwind css",
       "id": "tailwind_css"
     },
@@ -2106,7 +2619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "gemini ai image generation",
       "id": "gemini_ai"
     },
@@ -2158,7 +2671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "rielcode hero iterations (v1-v8)",
       "id": "rielcode_hero_versions"
     },
@@ -2171,7 +2684,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "rielcode site evolution (may 2026)",
       "id": "rielcode_site_evolution"
     },
@@ -2184,7 +2697,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "parallaxnet client site",
       "id": "parallaxnet_site"
     },
@@ -2197,7 +2710,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 15,
       "norm_label": "rielcode mobile views",
       "id": "rielcode_mobile_views"
     },
@@ -2210,7 +2723,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode mobile hero screenshot (v1)",
       "id": "screenshot_rielcode_mobile_top"
     },
@@ -2223,7 +2736,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode mobile hero screenshot (v2 with chatbot)",
       "id": "screenshot_rielcode_mobile_v2"
     },
@@ -2236,7 +2749,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode mobile hero screenshot (v3 with chatbot)",
       "id": "screenshot_rielcode_mobile_v3"
     },
@@ -2249,7 +2762,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode mobile hero screenshot (v4 with chatbot)",
       "id": "screenshot_rielcode_mobile_v4"
     },
@@ -2262,7 +2775,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode portfolio page screenshot",
       "id": "screenshot_rielcode_portfolio"
     },
@@ -2275,7 +2788,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 29,
+      "community": 40,
       "norm_label": "rielcode portfolio page screenshot v2",
       "id": "screenshot_rielcode_portfolio_v2"
     },
@@ -2288,7 +2801,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 30,
+      "community": 41,
       "norm_label": "rielcode portfolio page screenshot v3",
       "id": "screenshot_rielcode_portfolio_v3"
     },
@@ -2301,7 +2814,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode services page screenshot",
       "id": "screenshot_rielcode_services"
     },
@@ -2314,7 +2827,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 31,
+      "community": 42,
       "norm_label": "rielcode services page screenshot v2",
       "id": "screenshot_rielcode_services_v2"
     },
@@ -2327,7 +2840,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode testimonials page screenshot",
       "id": "screenshot_rielcode_testimonials"
     },
@@ -2340,7 +2853,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "google calendar schedule skill",
       "id": "skill_gcal_schedule"
     },
@@ -2353,7 +2866,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "git command skill",
       "id": "skill_git_command"
     },
@@ -2366,7 +2879,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "instagram content skill",
       "id": "skill_instagram_content"
     },
@@ -2379,7 +2892,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "lead tracker skill",
       "id": "skill_lead_tracker"
     },
@@ -2392,7 +2905,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "level up automation skill",
       "id": "skill_level_up"
     },
@@ -2405,7 +2918,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "new project skill",
       "id": "skill_new_project"
     },
@@ -2418,7 +2931,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "project completion document skill",
       "id": "skill_project_completion_doc"
     },
@@ -2431,7 +2944,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "project kickoff skill",
       "id": "skill_project_kickoff"
     },
@@ -2444,7 +2957,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "rielcode website (portfolio.rielcode.com)",
       "id": "concept_rielcode_website"
     },
@@ -2457,7 +2970,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "dark ui design theme",
       "id": "concept_dark_ui"
     },
@@ -2470,7 +2983,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "floating chatbot widget",
       "id": "concept_chatbot_widget"
     },
@@ -2483,7 +2996,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "free hosting and .com promotional banner",
       "id": "concept_free_hosting_banner"
     },
@@ -2496,7 +3009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "google calendar mcp integration",
       "id": "concept_google_calendar_mcp"
     },
@@ -2509,7 +3022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "ntfy.sh push notifications",
       "id": "concept_ntfy_notifications"
     },
@@ -2522,7 +3035,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "github repository integration",
       "id": "concept_github_integration"
     },
@@ -2535,7 +3048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "lead sales pipeline (cold to closed)",
       "id": "concept_lead_pipeline"
     },
@@ -2548,7 +3061,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "whatsapp deep links for lead communication",
       "id": "concept_whatsapp_links"
     },
@@ -2561,7 +3074,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "three ms of ai framework (mindset method machine)",
       "id": "concept_three_ms_framework"
     },
@@ -2574,7 +3087,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "dompdf pdf generation engine",
       "id": "concept_dompdf"
     },
@@ -2626,7 +3139,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "decisions log (decisions/log.md)",
       "id": "concept_decisions_log"
     },
@@ -2639,7 +3152,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 4,
       "norm_label": "leads crm file (leads/leads.md)",
       "id": "concept_leads_file"
     }
@@ -3620,8 +4133,596 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\figma\\index.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_figma_index_js",
+      "_tgt": "index_getheaders",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_figma_index_js",
+      "target": "index_getheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\figma\\index.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_figma_index_js",
+      "_tgt": "index_isnetworkerror",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_figma_index_js",
+      "target": "index_isnetworkerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\figma\\index.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "index_getheaders",
+      "_tgt": "error_notauthenticated",
+      "source": "index_getheaders",
+      "target": "error_notauthenticated"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "_tgt": "index_isnetworkerror",
+      "source": "index_isnetworkerror",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "_tgt": "index_isnetworkerror",
+      "source": "index_isnetworkerror",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "_tgt": "error_handleerror",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "target": "error_handleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "_tgt": "error_notauthenticated",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "target": "error_notauthenticated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
       "source_location": "L18",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "_tgt": "error_filenotfound",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "target": "error_filenotfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "_tgt": "error_noconnection",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "target": "error_noconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\error.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "_tgt": "error_badformat",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_error_js",
+      "target": "error_badformat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\error.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
+      "_tgt": "error_handleerror",
+      "source": "error_handleerror",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\error.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_error_js",
+      "_tgt": "error_handleerror",
+      "source": "error_handleerror",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\error.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
+      "_tgt": "error_notauthenticated",
+      "source": "error_notauthenticated",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\error.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_error_js",
+      "_tgt": "error_notauthenticated",
+      "source": "error_notauthenticated",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\output.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_output_js",
+      "_tgt": "output_printtable",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_output_js",
+      "target": "output_printtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\output.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_output_js",
+      "_tgt": "output_printjson",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_output_js",
+      "target": "output_printjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\lib\\output.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_output_js",
+      "_tgt": "output_printsuccess",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_figma_lib_output_js",
+      "target": "output_printsuccess",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
+      "_tgt": "output_printtable",
+      "source": "output_printtable",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "_tgt": "output_printtable",
+      "source": "output_printtable",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_listvideos",
+      "source": "output_printtable",
+      "target": "index_listvideos"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_searchvideos",
+      "source": "output_printtable",
+      "target": "index_searchvideos"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_getanalytics",
+      "source": "output_printtable",
+      "target": "index_getanalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L228",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_listcomments",
+      "source": "output_printtable",
+      "target": "index_listcomments"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_iglist",
+      "source": "output_printtable",
+      "target": "index_iglist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L240",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_iganalytics",
+      "source": "output_printtable",
+      "target": "index_iganalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L300",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_igcommentslist",
+      "source": "output_printtable",
+      "target": "index_igcommentslist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_ttlist",
+      "source": "output_printtable",
+      "target": "index_ttlist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_ttanalytics",
+      "source": "output_printtable",
+      "target": "index_ttanalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_src": "output_printtable",
+      "_tgt": "index_ttcommentslist",
+      "source": "output_printtable",
+      "target": "index_ttcommentslist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
+      "_tgt": "output_printjson",
+      "source": "output_printjson",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "_tgt": "output_printjson",
+      "source": "output_printjson",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_listvideos",
+      "source": "output_printjson",
+      "target": "index_listvideos"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_searchvideos",
+      "source": "output_printjson",
+      "target": "index_searchvideos"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_getanalytics",
+      "source": "output_printjson",
+      "target": "index_getanalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_listcomments",
+      "source": "output_printjson",
+      "target": "index_listcomments"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_iglist",
+      "source": "output_printjson",
+      "target": "index_iglist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L238",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_iganalytics",
+      "source": "output_printjson",
+      "target": "index_iganalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L297",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_igcommentslist",
+      "source": "output_printjson",
+      "target": "index_igcommentslist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_ttlist",
+      "source": "output_printjson",
+      "target": "index_ttlist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_ttanalytics",
+      "source": "output_printjson",
+      "target": "index_ttanalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_src": "output_printjson",
+      "_tgt": "index_ttcommentslist",
+      "source": "output_printjson",
+      "target": "index_ttcommentslist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
+      "_tgt": "output_printsuccess",
+      "source": "output_printsuccess",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "_tgt": "output_printsuccess",
+      "source": "output_printsuccess",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_src": "output_printsuccess",
+      "_tgt": "index_uploadvideo",
+      "source": "output_printsuccess",
+      "target": "index_uploadvideo"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L256",
+      "weight": 1.0,
+      "_src": "output_printsuccess",
+      "_tgt": "index_replytocomment",
+      "source": "output_printsuccess",
+      "target": "index_replytocomment"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L278",
+      "weight": 1.0,
+      "_src": "output_printsuccess",
+      "_tgt": "index_deletecomment",
+      "source": "output_printsuccess",
+      "target": "index_deletecomment"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L328",
+      "weight": 1.0,
+      "_src": "output_printsuccess",
+      "_tgt": "index_igcommentsreply",
+      "source": "output_printsuccess",
+      "target": "index_igcommentsreply"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L353",
+      "weight": 1.0,
+      "_src": "output_printsuccess",
+      "_tgt": "index_igcommentsdelete",
+      "source": "output_printsuccess",
+      "target": "index_igcommentsdelete"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "_src": "output_printsuccess",
+      "_tgt": "index_ttcommentsreply",
+      "source": "output_printsuccess",
+      "target": "index_ttcommentsreply"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
+      "source_location": "L19",
       "weight": 1.0,
       "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_auth_oauth_js",
       "_tgt": "oauth_loadconfig",
@@ -3633,7 +4734,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0,
       "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_auth_oauth_js",
       "_tgt": "oauth_createoauthclient",
@@ -3645,7 +4746,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_auth_oauth_js",
       "_tgt": "oauth_getauthenticatedclient",
@@ -3657,7 +4758,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0,
       "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_auth_oauth_js",
       "_tgt": "oauth_runauthflow",
@@ -3669,7 +4770,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "_src": "oauth_createoauthclient",
       "_tgt": "oauth_loadconfig",
@@ -3681,7 +4782,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0,
       "_src": "oauth_getauthenticatedclient",
       "_tgt": "oauth_createoauthclient",
@@ -3693,7 +4794,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
-      "source_location": "L57",
+      "source_location": "L58",
       "weight": 1.0,
       "_src": "oauth_runauthflow",
       "_tgt": "oauth_createoauthclient",
@@ -3736,6 +4837,54 @@
       "_tgt": "index_getgmail",
       "source": "oauth_getauthenticatedclient",
       "target": "index_getgmail"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "oauth_getauthenticatedclient",
+      "_tgt": "index_getyoutube",
+      "source": "oauth_getauthenticatedclient",
+      "target": "index_getyoutube"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_src": "oauth_getauthenticatedclient",
+      "_tgt": "index_getyoutubeanalytics",
+      "source": "oauth_getauthenticatedclient",
+      "target": "index_getyoutubeanalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_src": "oauth_runauthflow",
+      "_tgt": "tiktok_gettoken",
+      "source": "oauth_runauthflow",
+      "target": "tiktok_gettoken"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L282",
+      "weight": 1.0,
+      "_src": "oauth_runauthflow",
+      "_tgt": "index_runauth",
+      "source": "oauth_runauthflow",
+      "target": "index_runauth"
     },
     {
       "relation": "contains",
@@ -3795,6 +4944,42 @@
       "_tgt": "index_confirm",
       "source": "index_confirm",
       "target": "c_users_afw14_onedrive_documents_jarvis_tools_google_gmail_index_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_confirm",
+      "source": "index_confirm",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_src": "index_uploadvideo",
+      "_tgt": "index_confirm",
+      "source": "index_confirm",
+      "target": "index_uploadvideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L270",
+      "weight": 1.0,
+      "_src": "index_deletecomment",
+      "_tgt": "index_confirm",
+      "source": "index_confirm",
+      "target": "index_deletecomment",
       "confidence_score": 1.0
     },
     {
@@ -3860,66 +5045,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\error.js",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
-      "_tgt": "error_handleerror",
-      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
-      "target": "error_handleerror",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\error.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
-      "_tgt": "error_notauthenticated",
-      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_error_js",
-      "target": "error_notauthenticated",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
-      "_tgt": "output_printtable",
-      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
-      "target": "output_printtable",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
-      "_tgt": "output_printjson",
-      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
-      "target": "output_printjson",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
-      "_tgt": "output_printsuccess",
-      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
-      "target": "output_printsuccess",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\lib\\output.js",
       "source_location": "L21",
       "weight": 1.0,
@@ -3927,6 +5052,750 @@
       "_tgt": "output_printinfo",
       "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_lib_output_js",
       "target": "output_printinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\lib\\output.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "_tgt": "output_printinfo",
+      "source": "output_printinfo",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_src": "output_printinfo",
+      "_tgt": "index_uploadvideo",
+      "source": "output_printinfo",
+      "target": "index_uploadvideo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_getyoutube",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_getyoutubeanalytics",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_getyoutubeanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_formatdate",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_periodtodates",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_periodtodates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_listvideos",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_listvideos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_uploadvideo",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_uploadvideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_searchvideos",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_searchvideos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_getanalytics",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_getanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_listcomments",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_listcomments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L243",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_replytocomment",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_replytocomment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L259",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_deletecomment",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_deletecomment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L281",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "_tgt": "index_runauth",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_google_youtube_index_js",
+      "target": "index_runauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_src": "index_listvideos",
+      "_tgt": "index_getyoutube",
+      "source": "index_getyoutube",
+      "target": "index_listvideos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_src": "index_uploadvideo",
+      "_tgt": "index_getyoutube",
+      "source": "index_getyoutube",
+      "target": "index_uploadvideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_src": "index_searchvideos",
+      "_tgt": "index_getyoutube",
+      "source": "index_getyoutube",
+      "target": "index_searchvideos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "_src": "index_listcomments",
+      "_tgt": "index_getyoutube",
+      "source": "index_getyoutube",
+      "target": "index_listcomments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L244",
+      "weight": 1.0,
+      "_src": "index_replytocomment",
+      "_tgt": "index_getyoutube",
+      "source": "index_getyoutube",
+      "target": "index_replytocomment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_src": "index_deletecomment",
+      "_tgt": "index_getyoutube",
+      "source": "index_getyoutube",
+      "target": "index_deletecomment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "_src": "index_getanalytics",
+      "_tgt": "index_getyoutubeanalytics",
+      "source": "index_getyoutubeanalytics",
+      "target": "index_getanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "_tgt": "index_formatdate",
+      "source": "index_formatdate",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "_tgt": "index_formatdate",
+      "source": "index_formatdate",
+      "target": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\youtube\\index.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_src": "index_getanalytics",
+      "_tgt": "index_periodtodates",
+      "source": "index_periodtodates",
+      "target": "index_getanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "_tgt": "instagram_tokenspath",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "target": "instagram_tokenspath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "_tgt": "instagram_readtokens",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "target": "instagram_readtokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "_tgt": "instagram_savetoken",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "target": "instagram_savetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "_tgt": "instagram_gettoken",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "target": "instagram_gettoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "_tgt": "instagram_getauthheaders",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_instagram_js",
+      "target": "instagram_getauthheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "instagram_readtokens",
+      "_tgt": "instagram_tokenspath",
+      "source": "instagram_tokenspath",
+      "target": "instagram_readtokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_src": "instagram_savetoken",
+      "_tgt": "instagram_tokenspath",
+      "source": "instagram_tokenspath",
+      "target": "instagram_savetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "instagram_savetoken",
+      "_tgt": "instagram_readtokens",
+      "source": "instagram_readtokens",
+      "target": "instagram_savetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "instagram_gettoken",
+      "_tgt": "instagram_readtokens",
+      "source": "instagram_readtokens",
+      "target": "instagram_gettoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\instagram.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "instagram_getauthheaders",
+      "_tgt": "instagram_gettoken",
+      "source": "instagram_gettoken",
+      "target": "instagram_getauthheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "_tgt": "tiktok_tokenspath",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "target": "tiktok_tokenspath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "_tgt": "tiktok_readtokens",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "target": "tiktok_readtokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "_tgt": "tiktok_savetoken",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "target": "tiktok_savetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "_tgt": "tiktok_gettoken",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "target": "tiktok_gettoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "_tgt": "tiktok_getauthheaders",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_auth_tiktok_js",
+      "target": "tiktok_getauthheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "tiktok_readtokens",
+      "_tgt": "tiktok_tokenspath",
+      "source": "tiktok_tokenspath",
+      "target": "tiktok_readtokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_src": "tiktok_savetoken",
+      "_tgt": "tiktok_tokenspath",
+      "source": "tiktok_tokenspath",
+      "target": "tiktok_savetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "tiktok_savetoken",
+      "_tgt": "tiktok_readtokens",
+      "source": "tiktok_readtokens",
+      "target": "tiktok_savetoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "tiktok_gettoken",
+      "_tgt": "tiktok_readtokens",
+      "source": "tiktok_readtokens",
+      "target": "tiktok_gettoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\auth\\tiktok.js",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "tiktok_gettoken",
+      "source": "tiktok_gettoken",
+      "target": "tiktok_getauthheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L172",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_iglist",
+      "source": "tiktok_getauthheaders",
+      "target": "index_iglist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L224",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_iganalytics",
+      "source": "tiktok_getauthheaders",
+      "target": "index_iganalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L284",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_igcommentslist",
+      "source": "tiktok_getauthheaders",
+      "target": "index_igcommentslist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L320",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_igcommentsreply",
+      "source": "tiktok_getauthheaders",
+      "target": "index_igcommentsreply"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L345",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_igcommentsdelete",
+      "source": "tiktok_getauthheaders",
+      "target": "index_igcommentsdelete"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_ttlist",
+      "source": "tiktok_getauthheaders",
+      "target": "index_ttlist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_ttanalytics",
+      "source": "tiktok_getauthheaders",
+      "target": "index_ttanalytics"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_ttcommentslist",
+      "source": "tiktok_getauthheaders",
+      "target": "index_ttcommentslist"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_src": "tiktok_getauthheaders",
+      "_tgt": "index_ttcommentsreply",
+      "source": "tiktok_getauthheaders",
+      "target": "index_ttcommentsreply"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L171",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "_tgt": "index_iglist",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "target": "index_iglist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "_tgt": "index_iganalytics",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "target": "index_iganalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L283",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "_tgt": "index_igcommentslist",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "target": "index_igcommentslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L319",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "_tgt": "index_igcommentsreply",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "target": "index_igcommentsreply",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\instagram\\index.js",
+      "source_location": "L344",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "_tgt": "index_igcommentsdelete",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_instagram_index_js",
+      "target": "index_igcommentsdelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "_tgt": "index_ttlist",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "target": "index_ttlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "_tgt": "index_ttanalytics",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "target": "index_ttanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "_tgt": "index_ttcommentslist",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "target": "index_ttcommentslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\tiktok\\index.js",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "_tgt": "index_ttcommentsreply",
+      "source": "c_users_afw14_onedrive_documents_jarvis_tools_social_tiktok_index_js",
+      "target": "index_ttcommentsreply",
       "confidence_score": 1.0
     },
     {
