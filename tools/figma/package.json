@@ -6,7 +6,7 @@
     "figma": "./figma/index.js"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest --testPathPattern=tests/"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=tests/"
   },
   "dependencies": {
     "axios": "^1.6.0",
