@@ -5,7 +5,11 @@
   "bin": {
     "gcal": "./gcal/index.js",
     "gmail": "./gmail/index.js",
-    "gdrive": "./gdrive/index.js"
+    "gdrive": "./gdrive/index.js",
+    "yt": "./youtube/index.js"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --testPathPattern=tests/"
   },
   "dependencies": {
     "chalk": "^5.3.0",
@@ -13,5 +17,8 @@
     "commander": "^12.1.0",
     "googleapis": "^140.0.0",
     "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

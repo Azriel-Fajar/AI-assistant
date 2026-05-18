@@ -11,6 +11,6 @@ export function handleError(err, debug = false) {
 }
 
 export function notAuthenticated() {
-  console.error(chalk.yellow('Not authenticated.'), "Run: gcal auth");
+  console.error(chalk.yellow('Not authenticated.'), 'Run: yt auth (or gcal auth)');
   process.exit(1);
 }
