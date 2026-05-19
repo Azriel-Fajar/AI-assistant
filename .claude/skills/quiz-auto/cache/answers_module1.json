@@ -1,0 +1,169 @@
+[
+  {
+    "keyword": "peer-to-peer network",
+    "answer": "A network where each device can act as both client and server"
+  },
+  {
+    "keyword": "What is a Local Area Network",
+    "answer": "A network confined to a single geographical location"
+  },
+  { "keyword": "example of a LAN type", "answer": "SOHO" },
+  { "keyword": "SOHO stand for", "answer": "Small Office Home Office" },
+  {
+    "keyword": "client-server network model which device provides",
+    "answer": "The central server"
+  },
+  {
+    "keyword": "star topology what is the central device",
+    "answer": "Concentrator"
+  },
+  { "keyword": "point-to-point topology how many nodes", "answer": "Two" },
+  {
+    "keyword": "half-duplex communication",
+    "answer": "A node cannot transmit and receive at the same time"
+  },
+  {
+    "keyword": "significant disadvantage of a star topology",
+    "answer": "The concentrator is a single point of failure"
+  },
+  {
+    "keyword": "full-duplex communication",
+    "answer": "Nodes can transmit and receive simultaneously"
+  },
+  {
+    "keyword": "fully connected mesh network each node has a point-to-point link",
+    "answer": "Every other node"
+  },
+  {
+    "keyword": "partial mesh network",
+    "answer": "A network where only some nodes have point-to-point links to every other node"
+  },
+  {
+    "keyword": "overcome the maximum transmission distance",
+    "answer": "Repeater"
+  },
+  {
+    "keyword": "Ethernet hub do when it receives a signal",
+    "answer": "Repeats the signal to all nodes acting as a logical bus"
+  },
+  { "keyword": "number of required links is calculated", "answer": "n(n-1)/2" },
+  {
+    "keyword": "transmitting raw bits over the physical",
+    "answer": "Physical"
+  },
+  { "keyword": "How many layers does the OSI model", "answer": "7" },
+  {
+    "keyword": "correct order of the OSI model layers from bottom to top",
+    "answer": "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+  },
+  {
+    "keyword": "advantage does a mesh topology provide",
+    "answer": "Resilience if some nodes or links fail"
+  },
+  {
+    "keyword": "mnemonic is used to remember the OSI layers from bottom to top",
+    "answer": "Please Do Not Throw Sausage Pizza Away"
+  },
+  {
+    "keyword": "transfers data between nodes on the same logical segment using hardware addresses",
+    "answer": "Data Link"
+  },
+  {
+    "keyword": "Data Link layer use to identify host interfaces",
+    "answer": "MAC address"
+  },
+  {
+    "keyword": "Layer 2 that organizes a stream of bits",
+    "answer": "Encapsulation"
+  },
+  { "keyword": "example of a Data Link layer device", "answer": "Switch" },
+  { "keyword": "example of a Physical layer device", "answer": "Hub" },
+  {
+    "keyword": "moving data around a network of networks using network and host IDs",
+    "answer": "Network"
+  },
+  {
+    "keyword": "tracks communication between applications on source and destination hosts and segments data",
+    "answer": "Transport"
+  },
+  { "keyword": "example of a Network layer device", "answer": "Router" },
+  {
+    "keyword": "address is assigned to data at the Network layer",
+    "answer": "IP address"
+  },
+  {
+    "keyword": "example of a Transport layer device",
+    "answer": "Multilayer switch"
+  },
+  {
+    "keyword": "Session layer perform when two applications begin communicating",
+    "answer": "Authentication and session establishment"
+  },
+  { "keyword": "example of a Session layer protocol", "answer": "NetBIOS" },
+  {
+    "keyword": "Transport layer identify which application should receive incoming data",
+    "answer": "By port number"
+  },
+  {
+    "keyword": "data encryption/decryption and compression",
+    "answer": "Presentation"
+  },
+  {
+    "keyword": "establishes and manages connections between applications",
+    "answer": "Session"
+  },
+  {
+    "keyword": "interacts directly with end-user software applications",
+    "answer": "Application"
+  },
+  { "keyword": "example of an Application layer protocol", "answer": "SMTP" },
+  {
+    "keyword": "converts human-readable data into machine-readable",
+    "answer": "Application"
+  },
+  {
+    "keyword": "function of the WAN port on a SOHO router",
+    "answer": "Connect to the Internet Service Provider network"
+  },
+  { "keyword": "example of a Presentation layer standard", "answer": "MIME" },
+  {
+    "keyword": "DHCP server in a SOHO router perform",
+    "answer": "Provides each host with an IP address"
+  },
+  {
+    "keyword": "SOHO router's Ethernet switch function",
+    "answer": "Data Link"
+  },
+  {
+    "keyword": "binary representation of the decimal number 132",
+    "answer": "10000100"
+  },
+  {
+    "keyword": "identifies each host interface on a SOHO router at the Data Link layer",
+    "answer": "MAC address"
+  },
+  {
+    "keyword": "decimal equivalent of the binary number 11001101",
+    "answer": "205"
+  },
+  {
+    "keyword": "first step in CompTIA's troubleshooting methodology",
+    "answer": "Identify the problem"
+  },
+  {
+    "keyword": "final step in CompTIA's troubleshooting methodology",
+    "answer": "Document findings actions and outcomes"
+  },
+  {
+    "keyword": "When should escalation be considered",
+    "answer": "When the problem is beyond your knowledge, under warranty, or very large in scope"
+  },
+  {
+    "keyword": "troubleshooting question type invites a yes/no",
+    "answer": "Closed question"
+  },
+  {
+    "keyword": "troubleshooting approach starts from the Physical layer and moves upward",
+    "answer": "Bottom-up approach"
+  }
+]

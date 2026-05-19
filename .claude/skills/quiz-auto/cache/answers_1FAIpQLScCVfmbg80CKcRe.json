@@ -1,0 +1,61 @@
+[
+  {"keyword":"What is the purpose of CSMA/CD","answer":"To regulate communication in networks with shared transmission mediums"},
+  {"keyword":"What IEEE standard defines the physical layer","answer":"IEEE 802.3"},
+  {"keyword":"Which cable category is required for the 1000Base-T","answer":"Cat6 or higher"},
+  {"keyword":"what happens when two devices transmit simultaneously","answer":"A jam signal is sent and a backoff algorithm is used"},
+  {"keyword":"What is the data transfer rate of the 10Base-T","answer":"10 Mbps"},
+
+  {"keyword":"maximum speed supported by the 10GBase-T","answer":"10 Gbps"},
+  {"keyword":"Which fiber Ethernet standard uses Single Mode Fiber (SMF) and supports 10 Gbps over long distances","answer":"10GBase-LR"},
+  {"keyword":"described as cost-effective and popular for LANs with minimal EMI protection","answer":"Unshielded Twisted Pair (UTP)"},
+  {"keyword":"provides EMI protection and is suitable for high-interference environments","answer":"STP"},
+  {"keyword":"uses Multimode Fiber (MMF) OM2/OM3/OM4 for 10 Gbps","answer":"10GBase-SR"},
+
+  {"keyword":"What distinguishes riser-rated cable from plenum-rated cable","answer":"Riser-rated cable is used in vertical spaces between floors and is more cost-effective"},
+  {"keyword":"Which connector is used for telephone and modem connections","answer":"RJ11"},
+  {"keyword":"maximum bandwidth supported by an RJ45 connector over Ethernet","answer":"10 Gbps"},
+  {"keyword":"Where is plenum-rated cable typically installed","answer":"Plenum spaces with fire safety requirements"},
+  {"keyword":"What is the configuration of an RJ45 connector","answer":"8 positions 8 connectors"},
+
+  {"keyword":"uses two inner conductors in a twisted pair and is suited for 10 Gb Ethernet over very short ranges","answer":"Twinaxial"},
+  {"keyword":"function of the Work Area","answer":"Serves as the user connection point"},
+  {"keyword":"purpose of a patch panel in structured cabling","answer":"To facilitate cable management and enable easy reconfiguration of connections"},
+  {"keyword":"What connectors are used with coaxial cable","answer":"BNC TNC and SMA"},
+  {"keyword":"What does the backbone cabling in a structured cabling system provide","answer":"Vertical connections between floors"},
+
+  {"keyword":"correct sequence for structured cable installation","answer":"Prepare → Pull Cable → Terminate → Test → Document"},
+  {"keyword":"Which termination standard uses green/white-green wires in position 1 and 2","answer":"T568A"},
+  {"keyword":"tool is used to attach connectors to the ends of cables","answer":"Crimp Tool"},
+  {"keyword":"tool is used to terminate cable wires in punch down blocks","answer":"Punch-Down Tool"},
+  {"keyword":"tool is used to safely remove insulation from a cable without nicking the wires","answer":"Cable Stripper"},
+
+  {"keyword":"function of the cladding in a fiber optic cable","answer":"To reflect light back into the core"},
+  {"keyword":"key advantage of single mode fiber (SMF) over multimode fiber (MMF)","answer":"Suitable for longer distances with higher bandwidth"},
+  {"keyword":"What is the core of a fiber optic cable made of","answer":"Ultra-pure glass strands"},
+  {"keyword":"maximum data transmission speed achievable with fiber optic cables","answer":"800 Gbps"},
+  {"keyword":"uses a bayonet twist-lock mechanism and is older but still widely used","answer":"ST"},
+
+  {"keyword":"What does WDM stand for","answer":"Wavelength Division Multiplexing"},
+  {"keyword":"preferred for heavily populated patch panels due to its small 1.25 mm ferrule","answer":"LC"},
+  {"keyword":"What ferrule size does the SC (Subscriber Connector) use","answer":"2.5 mm"},
+  {"keyword":"Which WDM technology supports up to 160 channels","answer":"DWDM"},
+  {"keyword":"What wavelengths does BiDi WDM use for transmit (Tx) and receive (Rx)","answer":"1310 nm Tx and 1490 nm Rx"},
+
+  {"keyword":"role of a UPS (Uninterruptible Power Supply)","answer":"To provide system-level power continuity during outages"},
+  {"keyword":"Which fire suppression system uses a pre-action mechanism","answer":"Pre-action sprinkler"},
+  {"keyword":"type of fire extinguisher should be used for electrical fires","answer":"Class C"},
+  {"keyword":"What does PDU stand for","answer":"Power Distribution Unit"},
+  {"keyword":"What is the EIA standard rack width","answer":"48.26 cm"},
+
+  {"keyword":"What causes Near End Crosstalk (NEXT)","answer":"Excessive untwisting or faulty shields at the transmitter end"},
+  {"keyword":"What is alien crosstalk","answer":"Interference caused by signal overlap between adjacent cables"},
+  {"keyword":"measurement unit is used to express signal attenuation","answer":"dB (decibels)"},
+  {"keyword":"What does signal attenuation mean","answer":"Loss of signal strength in networking cables measured in decibels"},
+  {"keyword":"What is NEXT in cable troubleshooting terminology","answer":"Near End Crosstalk"},
+
+  {"keyword":"What is goodput","answer":"Throughput at the application layer accounting for packet loss"},
+  {"keyword":"tool is used to trace cables through walls or identify active cables in a bundle","answer":"Tone Generator (Fox and Hound)"},
+  {"keyword":"symptom of a cabling issue in a network","answer":"Random disconnections and reconnections"},
+  {"keyword":"What does a Wire Map Tester detect","answer":"Improper cable termination including open circuits shorts and incorrect pin-outs"},
+  {"keyword":"What layer is throughput measured at","answer":"Network/Transport Layer"}
+]

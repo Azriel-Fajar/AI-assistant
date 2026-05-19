@@ -1,0 +1,61 @@
+[
+  {"keyword":"symptom is commonly associated with a faulty NIC","answer":"Network connectivity failure"},
+  {"keyword":"characteristic of a NIC","answer":"It has a unique MAC address"},
+  {"keyword":"primary function of a Network Interface Card (NIC)","answer":"To connect the host to a transmission medium"},
+  {"keyword":"OSI layer does a NIC operate","answer":"Data Link layer"},
+  {"keyword":"distinguishes modular transceivers from NICs","answer":"Modular transceivers can terminate multiple types of cable and connector types"},
+
+  {"keyword":"Preamble field in an Ethernet frame provide","answer":"A synchronization sequence"},
+  {"keyword":"symptom of mismatched ports on a transceiver","answer":"No link"},
+  {"keyword":"symptom is related to signal strength issues on a transceiver","answer":"Packet loss"},
+  {"keyword":"OSI layer do modular transceivers operate","answer":"Data Link layer"},
+  {"keyword":"purpose of the SFD field in an Ethernet frame","answer":"It signals the start of the frame"},
+
+  {"keyword":"notation format is used to represent a MAC address","answer":"Pairs of hexadecimal digits separated by colons or hyphens"},
+  {"keyword":"FCS field in an Ethernet frame do","answer":"Provides an error-checking code"},
+  {"keyword":"Ether Type field in an Ethernet frame indicate","answer":"The protocol of the payload"},
+  {"keyword":"How many bits make up a MAC address","answer":"48 bits"},
+  {"keyword":"field in an Ethernet frame contains the address of the recipient device","answer":"Destination MAC"},
+
+  {"keyword":"portion of a MAC address represents the OUI","answer":"The first 3 bytes"},
+  {"keyword":"hub handle incoming network transmissions","answer":"It sends transmissions from one port to every other port"},
+  {"keyword":"receives a frame with an all-1s destination MAC address","answer":"All hosts on that network receive and process the packet"},
+  {"keyword":"destination MAC address is all 1s","answer":"Broadcast"},
+  {"keyword":"OUI stand for","answer":"Organizationally Unique Identifier"},
+
+  {"keyword":"type of Ethernet switch can be configured by an administrator","answer":"Managed switch"},
+  {"keyword":"mechanism does a switch use to forward data to a specific device","answer":"MAC address tables"},
+  {"keyword":"primary function of a bridge in networking","answer":"To separate physical network segments while keeping all nodes in the same logical network"},
+  {"keyword":"main difference between a hub and a switch in forwarding behavior","answer":"A switch sends traffic only to the destination port; a hub sends to all ports"},
+  {"keyword":"OSI layer does a bridge primarily operate","answer":"Data Link layer"},
+
+  {"keyword":"benefit of link aggregation","answer":"Redundancy"},
+  {"keyword":"Ethernet switch type comes with a preset number of ports that cannot be changed","answer":"Fixed switch"},
+  {"keyword":"switch form factor is designed to fit into networking racks","answer":"Rack-mounted switch"},
+  {"keyword":"Link Aggregation (NIC Teaming) combine","answer":"Two separate cabled links into a single logical channel"},
+  {"keyword":"key benefit of a stackable switch","answer":"Multiple switches can be connected and managed as a single unit"},
+
+  {"keyword":"standard MTU (Maximum Transmission Unit) size for Ethernet","answer":"1500 bytes"},
+  {"keyword":"Jumbo Frame in Ethernet networking","answer":"A frame with a payload larger than standard Ethernet MTU (up to 9216 bytes)"},
+  {"keyword":"limitation of using Jumbo Frames","answer":"They break Ethernet standards and have limited compatibility"},
+  {"keyword":"OSI layer does STP operate","answer":"Data Link layer (Layer 2)"},
+  {"keyword":"purpose of the Spanning Tree Protocol (STP)","answer":"To prevent bridge loops and provide fault tolerance"},
+
+  {"keyword":"Power over Ethernet (PoE) allow","answer":"One cable to transmit both data and electrical power to networked devices"},
+  {"keyword":"solid green port status indicator on a switch indicate","answer":"The link is connected but there is no traffic"},
+  {"keyword":"cable category is the minimum required for PoE","answer":"Cat 5e or better"},
+  {"keyword":"flickering green port status indicator mean","answer":"The link is operating normally with traffic"},
+  {"keyword":"conductor thickness is recommended for optimal PoE performance","answer":"23 AWG"},
+
+  {"keyword":"CLI command shows the active configuration currently used by a switch","answer":"show running-config"},
+  {"keyword":"blinking amber on a switch port indicate","answer":"A fault has been detected"},
+  {"keyword":"switch show command displays configuration the device will use upon next restart","answer":"show startup-config"},
+  {"keyword":"down/down\" interface status on a switch indicate","answer":"Both Layer 1 physical and Layer 2 data link connections are inactive"},
+  {"keyword":"solid amber port status indicator on a switch port indicate","answer":"The port is blocked by the spanning tree algorithm"},
+
+  {"keyword":"causes a CRC (Cyclic Redundancy Check) error","answer":"The frame's calculated checksum does not match the transmitted checksum due to noise or interference"},
+  {"keyword":"Runt Frame in Ethernet","answer":"A frame that is smaller than the minimum frame size"},
+  {"keyword":"administratively down/down\" status mean on a switch interface","answer":"The interface has been manually disabled by an administrator using the shutdown command"},
+  {"keyword":"causes Giant Frame errors","answer":"Misconfiguration or malfunctioning network devices causing frames to exceed the maximum allowed size"},
+  {"keyword":"cause of broadcast storms","answer":"Very large broadcast domains or DHCP issues"}
+]
