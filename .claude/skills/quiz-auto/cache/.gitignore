@@ -1,0 +1,6 @@
+# ignore runtime-generated files
+*.json
+*.pdf
+*.txt
+*.err
+archive/
