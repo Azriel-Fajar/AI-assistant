@@ -1,0 +1,2815 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "jest.config.js",
+      "file_type": "code",
+      "source_file": "jest.config.js",
+      "source_location": "L1",
+      "id": "jest_config_js",
+      "community": 8,
+      "norm_label": "jest.config.js"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 0,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "google_package_name",
+      "community": 0,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "google_package_version",
+      "community": 0,
+      "norm_label": "version"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "google_package_type",
+      "community": 0,
+      "norm_label": "type"
+    },
+    {
+      "label": "bin",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "google_package_bin",
+      "community": 0,
+      "norm_label": "bin"
+    },
+    {
+      "label": "gcal",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "google_package_bin_gcal",
+      "community": 0,
+      "norm_label": "gcal"
+    },
+    {
+      "label": "gmail",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "google_package_bin_gmail",
+      "community": 0,
+      "norm_label": "gmail"
+    },
+    {
+      "label": "gdrive",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "google_package_bin_gdrive",
+      "community": 0,
+      "norm_label": "gdrive"
+    },
+    {
+      "label": "yt",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "google_package_bin_yt",
+      "community": 0,
+      "norm_label": "yt"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "google_package_scripts",
+      "community": 0,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "id": "google_package_scripts_test",
+      "community": 0,
+      "norm_label": "test"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "google_package_dependencies",
+      "community": 0,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "chalk",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "google_package_dependencies_chalk",
+      "community": 0,
+      "norm_label": "chalk"
+    },
+    {
+      "label": "cli-table3",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "google_package_dependencies_cli_table3",
+      "community": 0,
+      "norm_label": "cli-table3"
+    },
+    {
+      "label": "commander",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "google_package_dependencies_commander",
+      "community": 0,
+      "norm_label": "commander"
+    },
+    {
+      "label": "googleapis",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "google_package_dependencies_googleapis",
+      "community": 0,
+      "norm_label": "googleapis"
+    },
+    {
+      "label": "open",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "google_package_dependencies_open",
+      "community": 6,
+      "norm_label": "open"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "id": "google_package_devdependencies",
+      "community": 0,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@jest/globals",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "id": "google_package_devdependencies_jest_globals",
+      "community": 0,
+      "norm_label": "@jest/globals"
+    },
+    {
+      "label": "jest",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "google_package_devdependencies_jest",
+      "community": 0,
+      "norm_label": "jest"
+    },
+    {
+      "label": "oauth.js",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L1",
+      "id": "auth_oauth_js",
+      "community": 6,
+      "norm_label": "oauth.js"
+    },
+    {
+      "label": "__dirname",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L8",
+      "id": "auth_oauth_dirname",
+      "community": 6,
+      "norm_label": "__dirname"
+    },
+    {
+      "label": "CONFIG_PATH",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L9",
+      "id": "auth_oauth_config_path",
+      "community": 6,
+      "norm_label": "config_path"
+    },
+    {
+      "label": "TOKEN_PATH",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L10",
+      "id": "auth_oauth_token_path",
+      "community": 6,
+      "norm_label": "token_path"
+    },
+    {
+      "label": "SCOPES",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L12",
+      "id": "auth_oauth_scopes",
+      "community": 6,
+      "norm_label": "scopes"
+    },
+    {
+      "label": "loadConfig()",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L19",
+      "id": "auth_oauth_loadconfig",
+      "community": 6,
+      "norm_label": "loadconfig()"
+    },
+    {
+      "label": "createOAuthClient()",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L27",
+      "id": "auth_oauth_createoauthclient",
+      "community": 6,
+      "norm_label": "createoauthclient()"
+    },
+    {
+      "label": "getAuthenticatedClient()",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L36",
+      "id": "auth_oauth_getauthenticatedclient",
+      "community": 5,
+      "norm_label": "getauthenticatedclient()"
+    },
+    {
+      "label": "runAuthFlow()",
+      "file_type": "code",
+      "source_file": "auth/oauth.js",
+      "source_location": "L57",
+      "id": "auth_oauth_runauthflow",
+      "community": 6,
+      "norm_label": "runauthflow()"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L1",
+      "id": "gcal_index_js",
+      "community": 4,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "getCalendar()",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L10",
+      "id": "gcal_index_getcalendar",
+      "community": 5,
+      "norm_label": "getcalendar()"
+    },
+    {
+      "label": "formatDateTime()",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L15",
+      "id": "gcal_index_formatdatetime",
+      "community": 4,
+      "norm_label": "formatdatetime()"
+    },
+    {
+      "label": "confirm()",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L21",
+      "id": "gcal_index_confirm",
+      "community": 4,
+      "norm_label": "confirm()"
+    },
+    {
+      "label": "now",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L41",
+      "id": "gcal_index_now",
+      "community": 4,
+      "norm_label": "now"
+    },
+    {
+      "label": "timeMin",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L42",
+      "id": "gcal_index_timemin",
+      "community": 4,
+      "norm_label": "timemin"
+    },
+    {
+      "label": "end",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L47",
+      "id": "gcal_index_end",
+      "community": 4,
+      "norm_label": "end"
+    },
+    {
+      "label": "d",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L50",
+      "id": "gcal_index_d",
+      "community": 4,
+      "norm_label": "d"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L76",
+      "id": "gcal_index_start",
+      "community": 4,
+      "norm_label": "start"
+    },
+    {
+      "label": "event",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L79",
+      "id": "gcal_index_event",
+      "community": 4,
+      "norm_label": "event"
+    },
+    {
+      "label": "currentStart",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L99",
+      "id": "gcal_index_currentstart",
+      "community": 4,
+      "norm_label": "currentstart"
+    },
+    {
+      "label": "newStart",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L102",
+      "id": "gcal_index_newstart",
+      "community": 4,
+      "norm_label": "newstart"
+    },
+    {
+      "label": "events",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L175",
+      "id": "gcal_index_events",
+      "community": 4,
+      "norm_label": "events"
+    },
+    {
+      "label": "freqMap",
+      "file_type": "code",
+      "source_file": "gcal/index.js",
+      "source_location": "L179",
+      "id": "gcal_index_freqmap",
+      "community": 4,
+      "norm_label": "freqmap"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L1",
+      "id": "gdrive_index_js",
+      "community": 5,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "getDrive()",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L12",
+      "id": "gdrive_index_getdrive",
+      "community": 5,
+      "norm_label": "getdrive()"
+    },
+    {
+      "label": "confirm()",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L17",
+      "id": "gdrive_index_confirm",
+      "community": 5,
+      "norm_label": "confirm()"
+    },
+    {
+      "label": "findFileId()",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L24",
+      "id": "gdrive_index_findfileid",
+      "community": 5,
+      "norm_label": "findfileid()"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L61",
+      "id": "gdrive_index_metadata",
+      "community": 5,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "writer",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L84",
+      "id": "gdrive_index_writer",
+      "community": 5,
+      "norm_label": "writer"
+    },
+    {
+      "label": "copyMeta",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L159",
+      "id": "gdrive_index_copymeta",
+      "community": 5,
+      "norm_label": "copymeta"
+    },
+    {
+      "label": "perm",
+      "file_type": "code",
+      "source_file": "gdrive/index.js",
+      "source_location": "L188",
+      "id": "gdrive_index_perm",
+      "community": 5,
+      "norm_label": "perm"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L1",
+      "id": "gmail_index_js",
+      "community": 3,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "getGmail()",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L12",
+      "id": "gmail_index_getgmail",
+      "community": 5,
+      "norm_label": "getgmail()"
+    },
+    {
+      "label": "decodeBody()",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L17",
+      "id": "gmail_index_decodebody",
+      "community": 3,
+      "norm_label": "decodebody()"
+    },
+    {
+      "label": "getHeader()",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L23",
+      "id": "gmail_index_getheader",
+      "community": 3,
+      "norm_label": "getheader()"
+    },
+    {
+      "label": "confirm()",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L27",
+      "id": "gmail_index_confirm",
+      "community": 3,
+      "norm_label": "confirm()"
+    },
+    {
+      "label": "rows",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L49",
+      "id": "gmail_index_rows",
+      "community": 3,
+      "norm_label": "rows"
+    },
+    {
+      "label": "msg",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L61",
+      "id": "gmail_index_msg",
+      "community": 3,
+      "norm_label": "msg"
+    },
+    {
+      "label": "raw",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L85",
+      "id": "gmail_index_raw",
+      "community": 3,
+      "norm_label": "raw"
+    },
+    {
+      "label": "to",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L111",
+      "id": "gmail_index_to",
+      "community": 3,
+      "norm_label": "to"
+    },
+    {
+      "label": "label",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L174",
+      "id": "gmail_index_label",
+      "community": 3,
+      "norm_label": "label"
+    },
+    {
+      "label": "data",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L227",
+      "id": "gmail_index_data",
+      "community": 3,
+      "norm_label": "data"
+    },
+    {
+      "label": "outPath",
+      "file_type": "code",
+      "source_file": "gmail/index.js",
+      "source_location": "L228",
+      "id": "gmail_index_outpath",
+      "community": 3,
+      "norm_label": "outpath"
+    },
+    {
+      "label": "error.js",
+      "file_type": "code",
+      "source_file": "lib/error.js",
+      "source_location": "L1",
+      "id": "lib_error_js",
+      "community": 3,
+      "norm_label": "error.js"
+    },
+    {
+      "label": "handleError()",
+      "file_type": "code",
+      "source_file": "lib/error.js",
+      "source_location": "L3",
+      "id": "lib_error_handleerror",
+      "community": 3,
+      "norm_label": "handleerror()"
+    },
+    {
+      "label": "notAuthenticated()",
+      "file_type": "code",
+      "source_file": "lib/error.js",
+      "source_location": "L13",
+      "id": "lib_error_notauthenticated",
+      "community": 3,
+      "norm_label": "notauthenticated()"
+    },
+    {
+      "label": "output.js",
+      "file_type": "code",
+      "source_file": "lib/output.js",
+      "source_location": "L1",
+      "id": "lib_output_js",
+      "community": 1,
+      "norm_label": "output.js"
+    },
+    {
+      "label": "printTable()",
+      "file_type": "code",
+      "source_file": "lib/output.js",
+      "source_location": "L4",
+      "id": "lib_output_printtable",
+      "community": 1,
+      "norm_label": "printtable()"
+    },
+    {
+      "label": "printJson()",
+      "file_type": "code",
+      "source_file": "lib/output.js",
+      "source_location": "L13",
+      "id": "lib_output_printjson",
+      "community": 1,
+      "norm_label": "printjson()"
+    },
+    {
+      "label": "printSuccess()",
+      "file_type": "code",
+      "source_file": "lib/output.js",
+      "source_location": "L17",
+      "id": "lib_output_printsuccess",
+      "community": 1,
+      "norm_label": "printsuccess()"
+    },
+    {
+      "label": "printInfo()",
+      "file_type": "code",
+      "source_file": "lib/output.js",
+      "source_location": "L21",
+      "id": "lib_output_printinfo",
+      "community": 1,
+      "norm_label": "printinfo()"
+    },
+    {
+      "label": "youtube.test.js",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L1",
+      "id": "tests_youtube_test_js",
+      "community": 2,
+      "norm_label": "youtube.test.js"
+    },
+    {
+      "label": "mockVideosList",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L7",
+      "id": "tests_youtube_test_mockvideoslist",
+      "community": 2,
+      "norm_label": "mockvideoslist"
+    },
+    {
+      "label": "mockVideosInsert",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L8",
+      "id": "tests_youtube_test_mockvideosinsert",
+      "community": 2,
+      "norm_label": "mockvideosinsert"
+    },
+    {
+      "label": "mockSearchList",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L9",
+      "id": "tests_youtube_test_mocksearchlist",
+      "community": 2,
+      "norm_label": "mocksearchlist"
+    },
+    {
+      "label": "mockReportsDimAndMetrics",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L10",
+      "id": "tests_youtube_test_mockreportsdimandmetrics",
+      "community": 2,
+      "norm_label": "mockreportsdimandmetrics"
+    },
+    {
+      "label": "mockCommentThreadsList",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L11",
+      "id": "tests_youtube_test_mockcommentthreadslist",
+      "community": 2,
+      "norm_label": "mockcommentthreadslist"
+    },
+    {
+      "label": "mockCommentsList",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L12",
+      "id": "tests_youtube_test_mockcommentslist",
+      "community": 2,
+      "norm_label": "mockcommentslist"
+    },
+    {
+      "label": "mockCommentsInsert",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L13",
+      "id": "tests_youtube_test_mockcommentsinsert",
+      "community": 2,
+      "norm_label": "mockcommentsinsert"
+    },
+    {
+      "label": "mockCommentsDelete",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L14",
+      "id": "tests_youtube_test_mockcommentsdelete",
+      "community": 2,
+      "norm_label": "mockcommentsdelete"
+    },
+    {
+      "label": "mockChannelsList",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L15",
+      "id": "tests_youtube_test_mockchannelslist",
+      "community": 2,
+      "norm_label": "mockchannelslist"
+    },
+    {
+      "label": "mockPlaylistItemsList",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L16",
+      "id": "tests_youtube_test_mockplaylistitemslist",
+      "community": 2,
+      "norm_label": "mockplaylistitemslist"
+    },
+    {
+      "label": "mockPrintTable",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L42",
+      "id": "tests_youtube_test_mockprinttable",
+      "community": 2,
+      "norm_label": "mockprinttable"
+    },
+    {
+      "label": "mockPrintJson",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L43",
+      "id": "tests_youtube_test_mockprintjson",
+      "community": 2,
+      "norm_label": "mockprintjson"
+    },
+    {
+      "label": "mockPrintSuccess",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L44",
+      "id": "tests_youtube_test_mockprintsuccess",
+      "community": 2,
+      "norm_label": "mockprintsuccess"
+    },
+    {
+      "label": "mockPrintInfo",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L45",
+      "id": "tests_youtube_test_mockprintinfo",
+      "community": 2,
+      "norm_label": "mockprintinfo"
+    },
+    {
+      "label": "mockExistsSync",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L60",
+      "id": "tests_youtube_test_mockexistssync",
+      "community": 2,
+      "norm_label": "mockexistssync"
+    },
+    {
+      "label": "mockCreateReadStream",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L61",
+      "id": "tests_youtube_test_mockcreatereadstream",
+      "community": 2,
+      "norm_label": "mockcreatereadstream"
+    },
+    {
+      "label": "mockExit",
+      "file_type": "code",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L78",
+      "id": "tests_youtube_test_mockexit",
+      "community": 2,
+      "norm_label": "mockexit"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L1",
+      "id": "youtube_index_js",
+      "community": 1,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "getYouTube()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L14",
+      "id": "youtube_index_getyoutube",
+      "community": 1,
+      "norm_label": "getyoutube()"
+    },
+    {
+      "label": "getYouTubeAnalytics()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L19",
+      "id": "youtube_index_getyoutubeanalytics",
+      "community": 1,
+      "norm_label": "getyoutubeanalytics()"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L24",
+      "id": "youtube_index_formatdate",
+      "community": 1,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "confirm()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L34",
+      "id": "youtube_index_confirm",
+      "community": 1,
+      "norm_label": "confirm()"
+    },
+    {
+      "label": "periodToDates()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L41",
+      "id": "youtube_index_periodtodates",
+      "community": 1,
+      "norm_label": "periodtodates()"
+    },
+    {
+      "label": "listVideos()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L52",
+      "id": "youtube_index_listvideos",
+      "community": 1,
+      "norm_label": "listvideos()"
+    },
+    {
+      "label": "uploadVideo()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L89",
+      "id": "youtube_index_uploadvideo",
+      "community": 1,
+      "norm_label": "uploadvideo()"
+    },
+    {
+      "label": "searchVideos()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L128",
+      "id": "youtube_index_searchvideos",
+      "community": 1,
+      "norm_label": "searchvideos()"
+    },
+    {
+      "label": "getAnalytics()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L165",
+      "id": "youtube_index_getanalytics",
+      "community": 1,
+      "norm_label": "getanalytics()"
+    },
+    {
+      "label": "listComments()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L199",
+      "id": "youtube_index_listcomments",
+      "community": 1,
+      "norm_label": "listcomments()"
+    },
+    {
+      "label": "replyToComment()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L243",
+      "id": "youtube_index_replytocomment",
+      "community": 1,
+      "norm_label": "replytocomment()"
+    },
+    {
+      "label": "deleteComment()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L259",
+      "id": "youtube_index_deletecomment",
+      "community": 1,
+      "norm_label": "deletecomment()"
+    },
+    {
+      "label": "runAuth()",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L281",
+      "id": "youtube_index_runauth",
+      "community": 6,
+      "norm_label": "runauth()"
+    },
+    {
+      "label": "comments",
+      "file_type": "code",
+      "source_file": "youtube/index.js",
+      "source_location": "L370",
+      "id": "youtube_index_comments",
+      "community": 1,
+      "norm_label": "comments"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 7,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Google CLI Tools",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "google_readme_google_cli_tools",
+      "community": 7,
+      "norm_label": "google cli tools"
+    },
+    {
+      "label": "Google Cloud Setup (one-time, ~5 min)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "google_readme_google_cloud_setup_one_time_5_min",
+      "community": 7,
+      "norm_label": "google cloud setup (one-time, ~5 min)"
+    },
+    {
+      "label": "Config",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "id": "google_readme_config",
+      "community": 7,
+      "norm_label": "config"
+    },
+    {
+      "label": "code:json ({)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "id": "google_readme_codeblock_1",
+      "community": 7,
+      "norm_label": "code:json ({)"
+    },
+    {
+      "label": "Install",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L29",
+      "id": "google_readme_install",
+      "community": 7,
+      "norm_label": "install"
+    },
+    {
+      "label": "code:powershell (cd tools/google)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "id": "google_readme_codeblock_2",
+      "community": 7,
+      "norm_label": "code:powershell (cd tools/google)"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L40",
+      "id": "google_readme_usage",
+      "community": 7,
+      "norm_label": "usage"
+    },
+    {
+      "label": "code:block3 (gcal list --date today)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "id": "google_readme_codeblock_3",
+      "community": 7,
+      "norm_label": "code:block3 (gcal list --date today)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "google_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "google_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "google_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "google_package_bin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "google_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "google_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "google_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "google_package_bin",
+      "target": "google_package_bin_gcal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "google_package_bin",
+      "target": "google_package_bin_gmail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "google_package_bin",
+      "target": "google_package_bin_gdrive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "google_package_bin",
+      "target": "google_package_bin_yt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "google_package_scripts",
+      "target": "google_package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "google_package_dependencies",
+      "target": "google_package_dependencies_chalk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "google_package_dependencies",
+      "target": "google_package_dependencies_cli_table3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "google_package_dependencies",
+      "target": "google_package_dependencies_commander",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "google_package_dependencies",
+      "target": "google_package_dependencies_googleapis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "google_package_dependencies",
+      "target": "google_package_dependencies_open",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "auth/oauth.js",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "auth_oauth_runauthflow",
+      "target": "google_package_dependencies_open"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "google_package_devdependencies",
+      "target": "google_package_devdependencies_jest_globals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "google_package_devdependencies",
+      "target": "google_package_devdependencies_jest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_dirname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_config_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_token_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_scopes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_loadconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_createoauthclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_getauthenticatedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "auth_oauth_js",
+      "target": "auth_oauth_runauthflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "auth_oauth_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "auth_oauth_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "auth_oauth_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "auth_oauth_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "auth_oauth_createoauthclient",
+      "target": "auth_oauth_loadconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "auth_oauth_getauthenticatedclient",
+      "target": "auth_oauth_createoauthclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "auth_oauth_runauthflow",
+      "target": "auth_oauth_createoauthclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "auth_oauth_getauthenticatedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "auth_oauth_getauthenticatedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "auth_oauth_getauthenticatedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "auth_oauth_getauthenticatedclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "gcal/index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "gcal_index_getcalendar",
+      "target": "auth_oauth_getauthenticatedclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "gdrive/index.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "gdrive_index_getdrive",
+      "target": "auth_oauth_getauthenticatedclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "gmail/index.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "gmail_index_getgmail",
+      "target": "auth_oauth_getauthenticatedclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "youtube_index_getyoutube",
+      "target": "auth_oauth_getauthenticatedclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "youtube_index_getyoutubeanalytics",
+      "target": "auth_oauth_getauthenticatedclient"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "auth_oauth_runauthflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "auth_oauth_runauthflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L282",
+      "weight": 1.0,
+      "source": "youtube_index_runauth",
+      "target": "auth_oauth_runauthflow"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "lib_output_printtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "lib_output_printjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "lib_output_printsuccess",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "lib_error_handleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_getcalendar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_formatdatetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_confirm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_now",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_timemin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_end",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_d",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_currentstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_newstart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_events",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gcal/index.js",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "gcal_index_js",
+      "target": "gcal_index_freqmap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "lib_output_printtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "lib_output_printjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "lib_output_printsuccess",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "lib_error_handleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "gdrive_index_getdrive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "gdrive_index_confirm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "gdrive_index_findfileid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "gdrive_index_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "gdrive_index_writer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "gdrive_index_copymeta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gdrive/index.js",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "gdrive_index_js",
+      "target": "gdrive_index_perm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "lib_output_printtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "lib_output_printjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "lib_output_printsuccess",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "lib_output_printinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "lib_error_handleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_getgmail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_decodebody",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_getheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_confirm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_rows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_msg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_raw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_to",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "gmail/index.js",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "gmail_index_js",
+      "target": "gmail_index_outpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/error.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_error_js",
+      "target": "lib_error_handleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/error.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_error_js",
+      "target": "lib_error_notauthenticated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "lib_error_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "lib_error_handleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/output.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "lib_output_js",
+      "target": "lib_output_printtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/output.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_output_js",
+      "target": "lib_output_printjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/output.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "lib_output_js",
+      "target": "lib_output_printsuccess",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/output.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "lib_output_js",
+      "target": "lib_output_printinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "lib_output_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "lib_output_printtable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "youtube_index_listvideos",
+      "target": "lib_output_printtable"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "youtube_index_searchvideos",
+      "target": "lib_output_printtable"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "youtube_index_getanalytics",
+      "target": "lib_output_printtable"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "youtube_index_listcomments",
+      "target": "lib_output_printtable"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "lib_output_printjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "youtube_index_listvideos",
+      "target": "lib_output_printjson"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "youtube_index_searchvideos",
+      "target": "lib_output_printjson"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "youtube_index_getanalytics",
+      "target": "lib_output_printjson"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "youtube_index_listcomments",
+      "target": "lib_output_printjson"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "lib_output_printsuccess",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "youtube_index_uploadvideo",
+      "target": "lib_output_printsuccess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L256",
+      "weight": 1.0,
+      "source": "youtube_index_replytocomment",
+      "target": "lib_output_printsuccess"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "youtube_index_deletecomment",
+      "target": "lib_output_printsuccess"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "lib_output_printinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "youtube/index.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "youtube_index_uploadvideo",
+      "target": "lib_output_printinfo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockvideoslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockvideosinsert",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mocksearchlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockreportsdimandmetrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockcommentthreadslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockcommentslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockcommentsinsert",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockcommentsdelete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockchannelslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockplaylistitemslist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockprinttable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockprintjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockprintsuccess",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockprintinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockexistssync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockcreatereadstream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/youtube.test.js",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "tests_youtube_test_js",
+      "target": "tests_youtube_test_mockexit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_getyoutubeanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_confirm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_periodtodates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_listvideos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_uploadvideo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_searchvideos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_getanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_listcomments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_replytocomment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L259",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_deletecomment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L281",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_runauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L370",
+      "weight": 1.0,
+      "source": "youtube_index_js",
+      "target": "youtube_index_comments",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "youtube_index_listvideos",
+      "target": "youtube_index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "youtube_index_uploadvideo",
+      "target": "youtube_index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "youtube_index_searchvideos",
+      "target": "youtube_index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "youtube_index_listcomments",
+      "target": "youtube_index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L244",
+      "weight": 1.0,
+      "source": "youtube_index_replytocomment",
+      "target": "youtube_index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "youtube_index_deletecomment",
+      "target": "youtube_index_getyoutube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "youtube_index_getanalytics",
+      "target": "youtube_index_getyoutubeanalytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "youtube_index_uploadvideo",
+      "target": "youtube_index_confirm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "youtube_index_deletecomment",
+      "target": "youtube_index_confirm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "youtube/index.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "youtube_index_getanalytics",
+      "target": "youtube_index_periodtodates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "google_readme_google_cli_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "google_readme_google_cli_tools",
+      "target": "google_readme_google_cloud_setup_one_time_5_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "google_readme_google_cli_tools",
+      "target": "google_readme_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "google_readme_google_cli_tools",
+      "target": "google_readme_install",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "google_readme_google_cli_tools",
+      "target": "google_readme_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "google_readme_config",
+      "target": "google_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "google_readme_install",
+      "target": "google_readme_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "google_readme_usage",
+      "target": "google_readme_codeblock_3",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "a5bf9ca701cd99ac207f64dbe7c709dee07a6fa2"
+}

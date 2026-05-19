@@ -1,0 +1,57 @@
+{
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\jest.config.js": {
+    "mtime": 1779156306.1224284,
+    "ast_hash": "1408fa3c640d2433b1fefe76d11cf2c5",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\package.json": {
+    "mtime": 1779156306.1255765,
+    "ast_hash": "6646b0c129012798e7c7acf78883c7d0",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\auth\\oauth.js": {
+    "mtime": 1779156306.121431,
+    "ast_hash": "28cbf77b94c1071148811e3305f27196",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\gcal\\index.js": {
+    "mtime": 1779075419.570345,
+    "ast_hash": "4718c74f9053a9d49e55fed70d16481b",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\gdrive\\index.js": {
+    "mtime": 1779075419.5713425,
+    "ast_hash": "8893e9a7892092727b2a6494f0cf3b70",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\gmail\\index.js": {
+    "mtime": 1779075419.5746162,
+    "ast_hash": "f4b122443bc10b11d48cb9c0cb2e4e65",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\lib\\error.js": {
+    "mtime": 1779156306.1224284,
+    "ast_hash": "be2c99c36b815cc19f1f54eb37a84e2a",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\lib\\output.js": {
+    "mtime": 1779075419.5771031,
+    "ast_hash": "2fac8eeb8bf30388e2542ee49e487d0e",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\tests\\youtube.test.js": {
+    "mtime": 1779156306.1255765,
+    "ast_hash": "3dfcb7847cd702cc52c9db17d73f17cc",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\youtube\\index.js": {
+    "mtime": 1779156306.127571,
+    "ast_hash": "2367baa5ff8ce3e4a091d5a2f3d291f9",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\README.md": {
+    "mtime": 1779075419.5679133,
+    "ast_hash": "e650f2da270fedba721ecc52a3cae0e5",
+    "semantic_hash": ""
+  }
+}
