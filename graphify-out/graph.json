@@ -648,6 +648,87 @@
       "norm_label": "gform-q1.js"
     },
     {
+      "label": "order-form-debug.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-debug.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_debug_js",
+      "community": 116,
+      "norm_label": "order-form-debug.js"
+    },
+    {
+      "label": "order-form-smtp-test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-smtp-test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_smtp_test_js",
+      "community": 117,
+      "norm_label": "order-form-smtp-test.js"
+    },
+    {
+      "label": "order-form-test.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test_js",
+      "community": 118,
+      "norm_label": "order-form-test.js"
+    },
+    {
+      "label": "order-form-test2.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test2.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test2_js",
+      "community": 119,
+      "norm_label": "order-form-test2.js"
+    },
+    {
+      "label": "order-form-test3.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test3.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test3_js",
+      "community": 120,
+      "norm_label": "order-form-test3.js"
+    },
+    {
+      "label": "order-form-test4.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test4.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test4_js",
+      "community": 121,
+      "norm_label": "order-form-test4.js"
+    },
+    {
+      "label": "order-form-test5.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test5.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test5_js",
+      "community": 122,
+      "norm_label": "order-form-test5.js"
+    },
+    {
+      "label": "order-form-verify-fix.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-verify-fix.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_verify_fix_js",
+      "community": 123,
+      "norm_label": "order-form-verify-fix.js"
+    },
+    {
+      "label": "order-form-verify.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-verify.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_verify_js",
+      "community": 124,
+      "norm_label": "order-form-verify.js"
+    },
+    {
       "label": "rielcode-audit.spec.js",
       "file_type": "code",
       "source_file": "tests\\playwright\\rielcode-audit.spec.js",
@@ -680,7 +761,7 @@
       "source_file": "tests\\playwright\\smoke.spec.js",
       "source_location": "L1",
       "id": "tests_playwright_smoke_spec_js",
-      "community": 116,
+      "community": 125,
       "norm_label": "smoke.spec.js"
     },
     {
@@ -779,7 +860,7 @@
       "source_file": "tools\\launch-widget.ps1",
       "source_location": "L1",
       "id": "tools_launch_widget_ps1",
-      "community": 117,
+      "community": 126,
       "norm_label": "launch-widget.ps1"
     },
     {
@@ -905,7 +986,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\error.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_error_test_js",
-      "community": 118,
+      "community": 127,
       "norm_label": "error.test.js"
     },
     {
@@ -914,7 +995,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\figma.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_figma_test_js",
-      "community": 119,
+      "community": 128,
       "norm_label": "figma.test.js"
     },
     {
@@ -923,7 +1004,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\output.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_output_test_js",
-      "community": 120,
+      "community": 129,
       "norm_label": "output.test.js"
     },
     {
@@ -932,7 +1013,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\jest.config.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_jest_config_js",
-      "community": 121,
+      "community": 130,
       "norm_label": "jest.config.js"
     },
     {
@@ -1112,7 +1193,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\tests\\youtube.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_tests_youtube_test_js",
-      "community": 122,
+      "community": 131,
       "norm_label": "youtube.test.js"
     },
     {
@@ -1463,7 +1544,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.instagram.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_instagram_test_js",
-      "community": 123,
+      "community": 132,
       "norm_label": "auth.instagram.test.js"
     },
     {
@@ -1472,7 +1553,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.tiktok.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_tiktok_test_js",
-      "community": 124,
+      "community": 133,
       "norm_label": "auth.tiktok.test.js"
     },
     {
@@ -1481,7 +1562,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\error.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_error_test_js",
-      "community": 125,
+      "community": 134,
       "norm_label": "error.test.js"
     },
     {
@@ -1490,7 +1571,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\ig.list.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_ig_list_test_js",
-      "community": 126,
+      "community": 135,
       "norm_label": "ig.list.test.js"
     },
     {
@@ -1499,7 +1580,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\output.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_output_test_js",
-      "community": 127,
+      "community": 136,
       "norm_label": "output.test.js"
     },
     {
@@ -1508,7 +1589,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\tt.list.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_tt_list_test_js",
-      "community": 128,
+      "community": 137,
       "norm_label": "tt.list.test.js"
     },
     {
@@ -1516,7 +1597,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot/homework_parser.py",
       "source_location": "L14",
-      "community": 129,
+      "community": 138,
       "norm_label": "parse a natural-language homework message.     returns {\"subject\": str, \"due_da",
       "id": "homework_bot_homework_parser_rationale_14"
     },
@@ -1525,7 +1606,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot/tests/conftest.py",
       "source_location": "L9",
-      "community": 130,
+      "community": 139,
       "norm_label": "set up dummy environment variables for testing.",
       "id": "tests_conftest_rationale_9"
     },
@@ -1534,7 +1615,7 @@
       "file_type": "rationale",
       "source_file": "tools/claude-widget.py",
       "source_location": "L70",
-      "community": 131,
+      "community": 140,
       "norm_label": "return branch, repo name, dirty flag for given path.",
       "id": "tools_claude_widget_rationale_70"
     },
@@ -1543,7 +1624,7 @@
       "file_type": "rationale",
       "source_file": "tools/claude-widget.py",
       "source_location": "L89",
-      "community": 132,
+      "community": 141,
       "norm_label": "scan $temp for claude-ctx-*.json files and return the most recently     modifie",
       "id": "tools_claude_widget_rationale_89"
     },
@@ -1903,7 +1984,7 @@
       "file_type": "document",
       "source_file": "_COMMUNITY_Community 5.md",
       "source_location": "L1",
-      "community": 133,
+      "community": 142,
       "norm_label": "_community_community 5.md",
       "id": "community_community_5_md"
     },
@@ -17724,7 +17805,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 134,
+      "community": 143,
       "norm_label": "claude.local.md local overrides",
       "id": "claude_local_md"
     },
@@ -18140,7 +18221,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 135,
+      "community": 144,
       "norm_label": "session summary template",
       "id": "template_session_summary"
     },
@@ -19011,7 +19092,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 136,
+      "community": 145,
       "norm_label": "rielcode portfolio page screenshot v2",
       "id": "screenshot_rielcode_portfolio_v2"
     },
@@ -19024,7 +19105,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 137,
+      "community": 146,
       "norm_label": "rielcode portfolio page screenshot v3",
       "id": "screenshot_rielcode_portfolio_v3"
     },
@@ -19050,7 +19131,7 @@
       "captured_at": "2026-05-11",
       "author": "Azriel",
       "contributor": null,
-      "community": 138,
+      "community": 147,
       "norm_label": "rielcode services page screenshot v2",
       "id": "screenshot_rielcode_services_v2"
     },
