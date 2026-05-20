@@ -73,6 +73,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/brand` -- brand voice, visual identity, messaging frameworks, asset management
 - `/banner-design` -- multi-format banners: social, ads, web hero, print; 22 art direction styles with AI visuals
 - `/slides` -- strategic HTML presentations with Chart.js, design tokens, copywriting formulas
+- `/client-brief [client-name]` -- parse a pasted client brief, ask follow-up questions, write `projects/[client-name]/spec.md`
 
 ---
 

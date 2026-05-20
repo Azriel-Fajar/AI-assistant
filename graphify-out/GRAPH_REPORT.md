@@ -1,11 +1,11 @@
 # Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-05-20)
 
 ## Corpus Check
-- 56 files · ~1,439,981 words
+- 57 files · ~1,440,949 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2080 nodes · 2142 edges · 148 communities detected
+- 2081 nodes · 2142 edges · 149 communities detected
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 81 edges (avg confidence: 0.81)
 - Token cost: 0 input · 0 output
 
@@ -158,6 +158,7 @@
 - [[_COMMUNITY_Community 145|Community 145]]
 - [[_COMMUNITY_Community 146|Community 146]]
 - [[_COMMUNITY_Community 147|Community 147]]
+- [[_COMMUNITY_Community 148|Community 148]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
@@ -756,41 +757,45 @@ Nodes (0):
 
 ### Community 138 - "Community 138"
 Cohesion: 1.0
-Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
+Nodes (0): 
 
 ### Community 139 - "Community 139"
 Cohesion: 1.0
-Nodes (1): Set up dummy environment variables for testing.
+Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
 
 ### Community 140 - "Community 140"
 Cohesion: 1.0
-Nodes (1): Return branch, repo name, dirty flag for given path.
+Nodes (1): Set up dummy environment variables for testing.
 
 ### Community 141 - "Community 141"
 Cohesion: 1.0
-Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
+Nodes (1): Return branch, repo name, dirty flag for given path.
 
 ### Community 142 - "Community 142"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
 
 ### Community 143 - "Community 143"
 Cohesion: 1.0
-Nodes (1): CLAUDE.local.md Local Overrides
+Nodes (0): 
 
 ### Community 144 - "Community 144"
 Cohesion: 1.0
-Nodes (1): Session Summary Template
+Nodes (1): CLAUDE.local.md Local Overrides
 
 ### Community 145 - "Community 145"
 Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v2
+Nodes (1): Session Summary Template
 
 ### Community 146 - "Community 146"
 Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v3
+Nodes (1): Rielcode Portfolio Page Screenshot v2
 
 ### Community 147 - "Community 147"
+Cohesion: 1.0
+Nodes (1): Rielcode Portfolio Page Screenshot v3
+
+### Community 148 - "Community 148"
 Cohesion: 1.0
 Nodes (1): Rielcode Services Page Screenshot v2
 
@@ -817,81 +822,83 @@ Nodes (1): Rielcode Services Page Screenshot v2
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 109`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 110`** (1 nodes): `fill-custom-plan-pro.js`
+- **Thin community `Community 110`** (1 nodes): `rielcode-review.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 111`** (1 nodes): `gform-answer-all.js`
+- **Thin community `Community 111`** (1 nodes): `fill-custom-plan-pro.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 112`** (1 nodes): `gform-answer.js`
+- **Thin community `Community 112`** (1 nodes): `gform-answer-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 113`** (1 nodes): `gform-login.js`
+- **Thin community `Community 113`** (1 nodes): `gform-answer.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 114`** (1 nodes): `gform-probe-all.js`
+- **Thin community `Community 114`** (1 nodes): `gform-login.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 115`** (1 nodes): `gform-q1.js`
+- **Thin community `Community 115`** (1 nodes): `gform-probe-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 116`** (1 nodes): `order-form-debug.js`
+- **Thin community `Community 116`** (1 nodes): `gform-q1.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 117`** (1 nodes): `order-form-smtp-test.js`
+- **Thin community `Community 117`** (1 nodes): `order-form-debug.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 118`** (1 nodes): `order-form-test.js`
+- **Thin community `Community 118`** (1 nodes): `order-form-smtp-test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 119`** (1 nodes): `order-form-test2.js`
+- **Thin community `Community 119`** (1 nodes): `order-form-test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 120`** (1 nodes): `order-form-test3.js`
+- **Thin community `Community 120`** (1 nodes): `order-form-test2.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 121`** (1 nodes): `order-form-test4.js`
+- **Thin community `Community 121`** (1 nodes): `order-form-test3.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 122`** (1 nodes): `order-form-test5.js`
+- **Thin community `Community 122`** (1 nodes): `order-form-test4.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 123`** (1 nodes): `order-form-verify-fix.js`
+- **Thin community `Community 123`** (1 nodes): `order-form-test5.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 124`** (1 nodes): `order-form-verify.js`
+- **Thin community `Community 124`** (1 nodes): `order-form-verify-fix.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 125`** (1 nodes): `smoke.spec.js`
+- **Thin community `Community 125`** (1 nodes): `order-form-verify.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 126`** (1 nodes): `launch-widget.ps1`
+- **Thin community `Community 126`** (1 nodes): `smoke.spec.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 127`** (1 nodes): `error.test.js`
+- **Thin community `Community 127`** (1 nodes): `launch-widget.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 128`** (1 nodes): `figma.test.js`
+- **Thin community `Community 128`** (1 nodes): `error.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 129`** (1 nodes): `output.test.js`
+- **Thin community `Community 129`** (1 nodes): `figma.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 130`** (1 nodes): `jest.config.js`
+- **Thin community `Community 130`** (1 nodes): `output.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 131`** (1 nodes): `youtube.test.js`
+- **Thin community `Community 131`** (1 nodes): `jest.config.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 132`** (1 nodes): `auth.instagram.test.js`
+- **Thin community `Community 132`** (1 nodes): `youtube.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 133`** (1 nodes): `auth.tiktok.test.js`
+- **Thin community `Community 133`** (1 nodes): `auth.instagram.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 134`** (1 nodes): `error.test.js`
+- **Thin community `Community 134`** (1 nodes): `auth.tiktok.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 135`** (1 nodes): `ig.list.test.js`
+- **Thin community `Community 135`** (1 nodes): `error.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 136`** (1 nodes): `output.test.js`
+- **Thin community `Community 136`** (1 nodes): `ig.list.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 137`** (1 nodes): `tt.list.test.js`
+- **Thin community `Community 137`** (1 nodes): `output.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 138`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
+- **Thin community `Community 138`** (1 nodes): `tt.list.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 139`** (1 nodes): `Set up dummy environment variables for testing.`
+- **Thin community `Community 139`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 140`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
+- **Thin community `Community 140`** (1 nodes): `Set up dummy environment variables for testing.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 141`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
+- **Thin community `Community 141`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 142`** (1 nodes): `_COMMUNITY_Community 5.md`
+- **Thin community `Community 142`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 143`** (1 nodes): `CLAUDE.local.md Local Overrides`
+- **Thin community `Community 143`** (1 nodes): `_COMMUNITY_Community 5.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 144`** (1 nodes): `Session Summary Template`
+- **Thin community `Community 144`** (1 nodes): `CLAUDE.local.md Local Overrides`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 145`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
+- **Thin community `Community 145`** (1 nodes): `Session Summary Template`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 146`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
+- **Thin community `Community 146`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 147`** (1 nodes): `Rielcode Services Page Screenshot v2`
+- **Thin community `Community 147`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 148`** (1 nodes): `Rielcode Services Page Screenshot v2`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
