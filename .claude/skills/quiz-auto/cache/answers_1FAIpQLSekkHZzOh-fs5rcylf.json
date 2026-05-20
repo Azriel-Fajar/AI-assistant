@@ -1,0 +1,61 @@
+[
+  {"keyword":"primary function of a subnet mask","answer":"Identify the network portion of an IP address"},
+  {"keyword":"How many octets does an IPv4","answer":"4"},
+  {"keyword":"total bit length of an IPv4","answer":"32 bits"},
+  {"keyword":"Network ID portion of an IP address identify","answer":"The common portion shared by all hosts on the same IP network"},
+  {"keyword":"Host ID portion of an IP address identify","answer":"The specific host within an IP network"},
+
+  {"keyword":"sends data to a specific group of host IP addresses","answer":"Multicast"},
+  {"keyword":"purpose of Address Resolution Protocol","answer":"Resolve IP addresses to MAC addresses"},
+  {"keyword":"sends data to all hosts on a network or subnet","answer":"Broadcast"},
+  {"keyword":"192.168.1.x with subnet mask 255.255.255.0 what is the broadcast address","answer":"192.168.1.255"},
+  {"keyword":"sends data only to a single destination host","answer":"Unicast"},
+
+  {"keyword":"decimal value of the binary number 11000011","answer":"195"},
+  {"keyword":"field indicates how long the packet is allowed to survive","answer":"Time to Live (TTL)"},
+  {"keyword":"private IP address range belongs to Class B","answer":"172.16.0.0 to 172.31.255.255"},
+  {"keyword":"private IP address range belongs to Class A","answer":"10.0.0.0 to 10.255.255.255"},
+  {"keyword":"IPv4 header field identifies which upper-layer protocol","answer":"Protocol"},
+
+  {"keyword":"What does CIDR stand for","answer":"Classless Inter-Domain Routing"},
+  {"keyword":"private IP address range belongs to Class C","answer":"192.168.0.0 to 192.168.255.255"},
+  {"keyword":"key feature of VLSM","answer":"It creates subnets of different sizes within the same network"},
+  {"keyword":"bits are borrowed from the host portion to give to the network","answer":"Available network addresses increase and usable host addresses in each subnet decrease"},
+  {"keyword":"Public IP addresses are assigned by","answer":"Internet Service Providers (ISPs)"},
+
+  {"keyword":"additional information does 'ipconfig /all' display","answer":"Complete TCP/IP configuration including DHCP server address and MAC address"},
+  {"keyword":"Windows command-line tool shows the IP address subnet mask and default gateway","answer":"ipconfig"},
+  {"keyword":"borrowing two bits from the host portion of 192.168.89.0/24","answer":"192.168.89.192"},
+  {"keyword":"CIDR prefix notation for a subnet mask of 255.255.255.128","answer":"/25"},
+  {"keyword":"borrowing one bit from the host portion of 192.168.89.0/24","answer":"255.255.255.128"},
+
+  {"keyword":"modern replacement for the legacy 'ifconfig'","answer":"ip addr"},
+  {"keyword":"shows the status of all network interfaces","answer":"ip link"},
+  {"keyword":"function of 'ipconfig /renew'","answer":"Renews the client's DHCP-leased IP address"},
+  {"keyword":"function of 'ipconfig /release'","answer":"Releases the client's DHCP-leased IP address"},
+  {"keyword":"enables or disables a network interface on Linux","answer":"\"ip link set eth0 up|down\""},
+
+  {"keyword":"command 'arp -d' do","answer":"Deletes all entries in the ARP cache"},
+  {"keyword":"primary purpose of the 'ping' command","answer":"Test connectivity with a given IP address"},
+  {"keyword":"function of 'arp -s IPAddress MACAddress'","answer":"Adds a static entry to the ARP cache"},
+  {"keyword":"command 'arp -a' display","answer":"The contents of the ARP cache"},
+  {"keyword":"ping error message indicates the router cannot find a path","answer":"Destination host unreachable"},
+
+  {"keyword":"notation format is used for IPv6 addresses","answer":"Hexadecimal"},
+  {"keyword":"How many bits does an IPv6 address contain","answer":"128 bits"},
+  {"keyword":"How many 16-bit groups are in an IPv6 address","answer":"8"},
+  {"keyword":"first 64 bits are used for which purpose","answer":"Network ID"},
+  {"keyword":"How many total addresses does IPv6 support","answer":"340 undecillion (3.4 x 10^38)"},
+
+  {"keyword":"IPv6 prefix is used for global unicast addresses","answer":"2000::/3"},
+  {"keyword":"link local address range for IPv6","answer":"fe80::/10"},
+  {"keyword":"IPv6 canonical notation for the address 2001:0db8:0000:0000:0abc:0000:def0:1234","answer":"2001:db8::abc:0:def0:1234"},
+  {"keyword":"globally scoped unicast addresses are the equivalent of which IPv4","answer":"Public IPv4 addresses"},
+  {"keyword":"IPv6 link local addresses are equivalent to which IPv4","answer":"IPv4 private addressing"},
+
+  {"keyword":"Dual Stack IPv4/IPv6 transition mechanism allow","answer":"Allows IPv4 and IPv6 to run simultaneously"},
+  {"keyword":"Tunneling IPv4/IPv6 transition mechanism do","answer":"Encapsulates IPv6 packets within IPv4 packets to traverse IPv4 networks"},
+  {"keyword":"used for load balancing by sending traffic to the closest device","answer":"Anycast"},
+  {"keyword":"IPv6 prefix is used for multicast addresses","answer":"ff00::/8"},
+  {"keyword":"purpose of NAT64 in IPv4/IPv6 transition","answer":"Translates IPv6 into IPv4 and vice versa"}
+]

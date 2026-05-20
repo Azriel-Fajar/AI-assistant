@@ -329,6 +329,7 @@ async function findNextOrSubmit(page) {
         console.log(`Probe written grouped → ${probePath}`);
       } catch (e) { console.error('Probe write failed:', e.message); }
       console.log(JSON.stringify(allQuestions, null, 2));
+      console.log('Probe complete — browser left open for reference browsing.');
     } else {
       try {
         const pagesGrouped = questionsByPage.map(pageQs =>
