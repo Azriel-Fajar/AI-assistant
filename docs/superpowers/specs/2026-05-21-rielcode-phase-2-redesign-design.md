@@ -168,20 +168,24 @@ Snapshot files deleted after Content Collections shipped.
 - Custom WebGL hero / cursor effects (motion budget tier 3, not chosen)
 - PHPMailer wiring on `/contact-submit.php` — separate ticket, doesn't block Phase 2
 
-## Execution Plan (preview, full plan via writing-plans next)
+## Execution Plan
 
-Track 2A — tokens + fonts + theme toggle
-Track 2B — global components (Nav, Footer, CTABand, ThemeToggle)
-Track 2C — `/` home redesign
-Track 2D — `/work` index + `/work/[slug]` template + Parallaxnet case study
+**Status (2026-05-21):** Tracks 2A → 2C shipped on `rielcode-astro` repo (`C:\xampp\htdocs\rielcode-astro`), branch `main`. Tags: `phase-2-2A-complete`, `phase-2-2B-complete`. Home (`/`) live on new design language. Remaining pages (`/contact`, `/portfolio`, `/packages`, `/faq`, `/privacy`, `/terms`, `/404`) still render Phase 1 snapshots — visible drift between `/` and the rest is expected until 2D-2G land.
+
+Track 2A — tokens + fonts + theme toggle ✅
+Track 2B — global components (Nav, Footer, CTABand, ThemeToggle, Button, Section, Card) ✅
+Track 2C — `/` home redesign ✅
+Track 2D — `/work` index + `/work/[slug]` template + Parallaxnet case study (stub content — fill when client materials ready)
 Track 2E — `/studio`
 Track 2F — `/services`
 Track 2G — `/contact` + utility pages (`/404`, `/privacy`, `/terms`) restyle
 Track 2H — motion layer (GSAP, ScrollTrigger, view transitions, reduced-motion)
 Track 2I — content collections migration + snapshot deletion + 301 redirects (`/portfolio` → `/work`, `/packages` → `/services`, `/faq` → `/studio#faq`)
-Track 2J — visual QA + Playwright screenshot diff vs Phase 1 baseline (expected to diverge — confirm intentional) + Lighthouse + accessibility pass
+Track 2J — visual QA + Playwright screenshot diff + Lighthouse + accessibility pass
 
 Tracks 2A → 2B sequential. 2C–2G parallel after 2B. 2H parallel with page tracks. 2I + 2J at end.
+
+**Next session:** pick up at Track 2D. Plan for 2A-2C: `docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2A-2C.md`. Baseline screenshot: `screenshots/phase-2/home-2C-baseline.png`.
 
 ## Success Criteria
 
