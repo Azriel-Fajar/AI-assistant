@@ -170,22 +170,22 @@ Snapshot files deleted after Content Collections shipped.
 
 ## Execution Plan
 
-**Status (2026-05-21):** Tracks 2A → 2C shipped on `rielcode-astro` repo (`C:\xampp\htdocs\rielcode-astro`), branch `main`. Tags: `phase-2-2A-complete`, `phase-2-2B-complete`. Home (`/`) live on new design language. Remaining pages (`/contact`, `/portfolio`, `/packages`, `/faq`, `/privacy`, `/terms`, `/404`) still render Phase 1 snapshots — visible drift between `/` and the rest is expected until 2D-2G land.
+**Status (2026-05-21):** Tracks 2A → 2G shipped on `rielcode-astro` repo (`C:\xampp\htdocs\rielcode-astro`), branch `main`. Tags: `phase-2-2A-complete` through `phase-2-2G-complete`. All 9 routes now on Phase 2 editorial design language. Remaining: motion layer (2H), content collections migration (2I), visual QA (2J).
 
 Track 2A — tokens + fonts + theme toggle ✅
 Track 2B — global components (Nav, Footer, CTABand, ThemeToggle, Button, Section, Card) ✅
 Track 2C — `/` home redesign ✅
-Track 2D — `/work` index + `/work/[slug]` template + Parallaxnet case study (stub content — fill when client materials ready)
-Track 2E — `/studio`
-Track 2F — `/services`
-Track 2G — `/contact` + utility pages (`/404`, `/privacy`, `/terms`) restyle
+Track 2D — `/work` index + `/work/parallaxnet-canada` case study + CaseStudySection component ✅
+Track 2E — `/studio` (process, values, FAQ accordion) + FAQAccordion component ✅
+Track 2F — `/services` (packages, add-ons table, FAQ snippet) ✅
+Track 2G — `/contact` + `/404` + `/privacy` + `/terms` restyle (terms migrated from snapshot) ✅
 Track 2H — motion layer (GSAP, ScrollTrigger, view transitions, reduced-motion)
 Track 2I — content collections migration + snapshot deletion + 301 redirects (`/portfolio` → `/work`, `/packages` → `/services`, `/faq` → `/studio#faq`)
 Track 2J — visual QA + Playwright screenshot diff + Lighthouse + accessibility pass
 
 Tracks 2A → 2B sequential. 2C–2G parallel after 2B. 2H parallel with page tracks. 2I + 2J at end.
 
-**Next session:** pick up at Track 2D. Plan for 2A-2C: `docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2A-2C.md`. Baseline screenshot: `screenshots/phase-2/home-2C-baseline.png`.
+**Next session:** pick up at Track 2H (motion) or 2I (content collections). Plan for 2A-2C: `docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2A-2C.md`. Plan for 2D-2G: `docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2D-2G.md`.
 
 ## Success Criteria
 
