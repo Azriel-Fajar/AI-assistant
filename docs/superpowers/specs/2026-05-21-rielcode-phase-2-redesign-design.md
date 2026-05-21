@@ -170,7 +170,7 @@ Snapshot files deleted after Content Collections shipped.
 
 ## Execution Plan
 
-**Status (2026-05-21):** Tracks 2A → 2G shipped on `rielcode-astro` repo (`C:\xampp\htdocs\rielcode-astro`), branch `main`. Tags: `phase-2-2A-complete` through `phase-2-2G-complete`. All 9 routes now on Phase 2 editorial design language. Remaining: motion layer (2H), content collections migration (2I), visual QA (2J).
+**Status (2026-05-21):** Tracks 2A → 2J shipped. Phase 2 complete. Tags: `phase-2-2A-complete` through `phase-2-2J-complete` on `rielcode-astro` (`C:\xampp\htdocs\rielcode-astro`), branch `phase-2-2H` (2I + 2H + 2J commits stacked). All 9 routes on Phase 2 editorial design language with motion layer, content collections, and visual + a11y QA baseline.
 
 Track 2A — tokens + fonts + theme toggle ✅
 Track 2B — global components (Nav, Footer, CTABand, ThemeToggle, Button, Section, Card) ✅
@@ -179,9 +179,9 @@ Track 2D — `/work` index + `/work/parallaxnet-canada` case study + CaseStudySe
 Track 2E — `/studio` (process, values, FAQ accordion) + FAQAccordion component ✅
 Track 2F — `/services` (packages, add-ons table, FAQ snippet) ✅
 Track 2G — `/contact` + `/404` + `/privacy` + `/terms` restyle (terms migrated from snapshot) ✅
-Track 2H — motion layer (GSAP, ScrollTrigger, view transitions, reduced-motion)
-Track 2I — content collections migration + snapshot deletion + 301 redirects (`/portfolio` → `/work`, `/packages` → `/services`, `/faq` → `/studio#faq`)
-Track 2J — visual QA + Playwright screenshot diff + Lighthouse + accessibility pass
+Track 2H — motion layer (GSAP, ScrollTrigger, view transitions, reduced-motion) ✅
+Track 2I — content collections migration + snapshot deletion + 301 redirects (`/portfolio` → `/work`, `/packages` → `/services`, `/faq` → `/studio#faq`) ✅
+Track 2J — visual QA + Playwright screenshot diff + Lighthouse + accessibility pass ✅
 
 Tracks 2A → 2B sequential. 2C–2G parallel after 2B. 2H parallel with page tracks. 2I + 2J at end.
 
