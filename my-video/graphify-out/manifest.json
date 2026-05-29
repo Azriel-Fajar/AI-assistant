@@ -1,0 +1,142 @@
+{
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\eslint.config.mjs": {
+    "mtime": 1771602668.0,
+    "ast_hash": "e20d59bb6b64567da14d80c3da2c6b15",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\package.json": {
+    "mtime": 1780064311.3248446,
+    "ast_hash": "e25658cbc0c8b0b288f77285d59ac5b8",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\remotion.config.ts": {
+    "mtime": 1771602668.0,
+    "ast_hash": "59c56da67f1bfdb377d7df8bd4fadc25",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\tsconfig.json": {
+    "mtime": 1771602668.0,
+    "ast_hash": "c3be8c3e7ded8023557fe8fb5c068f91",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld.tsx": {
+    "mtime": 1771602668.0,
+    "ast_hash": "14081c77573f559b33920fc5e4589425",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\index.ts": {
+    "mtime": 1771602668.0,
+    "ast_hash": "6c2ce436880cb16c98160769ed0f6150",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\Root.tsx": {
+    "mtime": 1780066868.843636,
+    "ast_hash": "2143b130e1bee96ceb489eece49680a2",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Arc.tsx": {
+    "mtime": 1771602668.0,
+    "ast_hash": "81c9128f01c7b242ea106b7d86496df5",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Atom.tsx": {
+    "mtime": 1771602668.0,
+    "ast_hash": "84d6d103c82561539bc9e4df504626a7",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\constants.ts": {
+    "mtime": 1771602668.0,
+    "ast_hash": "a6ffb7292e7a72b13013957085aebc2d",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Logo.tsx": {
+    "mtime": 1771602668.0,
+    "ast_hash": "0f0a447a7c985a0f1424aad1d2d83050",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Subtitle.tsx": {
+    "mtime": 1771602668.0,
+    "ast_hash": "a4a6f5bec7582a30b3d43db862a5acf7",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Title.tsx": {
+    "mtime": 1771602668.0,
+    "ast_hash": "c4d50786934a65d475e056772bf0c33f",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\AdBase.tsx": {
+    "mtime": 1780066270.5194902,
+    "ast_hash": "819f25606e5c4360e777439da37f5dbc",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\angles.ts": {
+    "mtime": 1780066046.1735227,
+    "ast_hash": "21fd226e7bb7dcda98c50d923eb1de4c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\PromoAd.tsx": {
+    "mtime": 1780067625.8327012,
+    "ast_hash": "2ddfe751e0b59abdc5d5b1527363466b",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\theme.ts": {
+    "mtime": 1780064994.5221453,
+    "ast_hash": "7f905d62e592e719cf936533cf413bcc",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\README.md": {
+    "mtime": 1780064311.2996974,
+    "ast_hash": "5cd430e1ceb471d6bd0b1d7525010046",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\parallaxnet-ca-20260529-210724.png": {
+    "mtime": 1780063646.723476,
+    "ast_hash": "17ffd4ad261ce3c1724e802fb5e6a61d",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\parallaxnet-id-20260529-210732.png": {
+    "mtime": 1780063656.281171,
+    "ast_hash": "3d8a06235e459575a5a7206e2a68b5b5",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\rielcode-logo.png": {
+    "mtime": 1759816534.0,
+    "ast_hash": "68f5c91c78153a3a8f6ef84b4827c534",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\music.mp3": {
+    "mtime": 1780067308.409644,
+    "ast_hash": "b9ed0740e94577588210ab6cfe840495",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\vo-angle1.mp3": {
+    "mtime": 1780065209.0671034,
+    "ast_hash": "607632e5d60d806a338bd6cd4dc4f9e1",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\vo-angle2.mp3": {
+    "mtime": 1780065328.0187466,
+    "ast_hash": "7986ef3136288a871659c44c382c1e9a",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\vo-angle3.mp3": {
+    "mtime": 1780065398.3771117,
+    "ast_hash": "484ae620a6fde1e3e5073c44fdf72673",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\vo-angle4.mp3": {
+    "mtime": 1780065931.6325028,
+    "ast_hash": "f08ac7366b111bc11d291e057ff67593",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\vo-angle5.mp3": {
+    "mtime": 1780065936.6125002,
+    "ast_hash": "b4d35ea01522b88afdc509a0818754ff",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\vo-promo.mp3": {
+    "mtime": 1780066804.0820332,
+    "ast_hash": "3779115f6ab3464a13841df2ba5f626b",
+    "semantic_hash": ""
+  }
+}

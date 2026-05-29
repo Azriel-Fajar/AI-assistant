@@ -92,7 +92,24 @@ Append to `decisions/log.md`:
 
 ---
 
-### 5. Offer a WhatsApp kickoff message
+### 5. Initialize the deployment pipeline
+
+Every project must enter the 7-stage deployment pipeline tracker.
+
+1. Read template `.claude/skills/deploy/templates/deployment.md`.
+2. Substitute tokens: `{{PROJECT}}` = slug, `{{STARTED}}` = today, `{{LAST_UPDATED}}` = today, `{{TARGET_LAUNCH}}` = the deadline gathered in Step 1 (or `TBD`).
+3. Write to `projects/<slug>/deployment.md`.
+4. Append a row to `deployments/index.md` (create the file with table header if missing):
+   ```
+   | <slug> | 1: QA | 0/28 | <today> | 0 | active |
+   ```
+5. Confirm in chat: "Deployment pipeline initialized. Run `/deploy next <slug>` when ready to start Stage 1 (QA)."
+
+Do not skip this step. The project-completion-doc skill will refuse to generate the handoff PDF unless this pipeline is completed.
+
+---
+
+### 6. Offer a WhatsApp kickoff message
 
 Ask: "Want me to draft a WhatsApp message to send the client to confirm the project details?"
 
@@ -110,6 +127,7 @@ Do not include emojis.
 
 - Always create the project folder and README -- do not skip this.
 - Always append to `decisions/log.md` -- do not skip this.
+- Always initialize the deployment pipeline (Step 5) -- do not skip this.
 - The checklist is shown in the conversation only, not saved to a file.
 - Use today's date from the `currentDate` context for the kickoff date.
 - If the user says "TBD" for deadline or budget, use "TBD" in the README.

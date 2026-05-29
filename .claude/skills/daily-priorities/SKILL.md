@@ -16,6 +16,7 @@ Read the following files silently (do not show the raw content to the user):
 - `context/current-priorities.md`
 - `context/goals.md`
 - All `README.md` files inside `projects/` subfolders
+- All `deployment.md` files inside `projects/` subfolders (for stuck-pipeline detection)
 
 Also check Google Calendar for today's events using `mcp__claude_ai_Google_Calendar__list_events` with:
 - `time_min`: start of today (UTC+7)
@@ -37,6 +38,31 @@ Based on what you read, generate a prioritized action list for today. Apply this
 Keep the list to 5-7 items max. Be specific -- not "work on client project" but "finish the homepage layout for the Canada client."
 
 If you don't have enough detail to be specific, note it and suggest the user update the relevant project README.
+
+---
+
+### 2b. Scan deployment pipelines
+
+For every `projects/*/deployment.md` found:
+
+1. Parse frontmatter: `current_stage`, `last_updated`, `target_launch`, `status`.
+2. Skip if `status: complete`.
+3. Compute `days_stuck = today - last_updated`.
+4. Flag as:
+   - **STUCK** if `status: active` AND `days_stuck >= 3`
+   - **URGENT** if `target_launch` within next 7 days AND `current_stage < 7`
+   - **BLOCKED** if `status: blocked`
+
+Include flagged pipelines in the action list (use HIGH or URGENT priority labels accordingly), and surface a short "Deployment Pipeline" section below the main table:
+
+```
+Deployment Pipeline
+| Project | Stage | Days Stuck | Flag |
+|---------|-------|------------|------|
+| pt-maju | 3: CI/CD | 5 | STUCK |
+```
+
+If no pipelines stuck/urgent, omit this section entirely.
 
 ---
 
@@ -70,7 +96,7 @@ Keep the Reason column short -- one clause, not a sentence.
 After outputting the priority list, send a phone notification:
 
 ```bash
-curl -s -o /dev/null -H "Title: Daily Priorities Ready" -d "Your ranked task list for today is ready. Open JARVIS to review." ntfy.sh/JARVIS
+curl -s -o /dev/null -H "Title: Daily Priorities Ready" -d "Your ranked task list for today is ready. [N] stuck deploy stage(s), [N] urgent. Open JARVIS to review." ntfy.sh/JARVIS
 ```
 
 ---

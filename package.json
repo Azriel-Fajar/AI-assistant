@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/Azriel-Fajar/AI-assistant#readme",
   "devDependencies": {
-    "@playwright/test": "^1.59.1"
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2",
+    "@playwright/test": "^1.59.1",
+    "youtube-transcript": "^1.3.1"
   }
 }

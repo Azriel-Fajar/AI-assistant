@@ -69,6 +69,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/brand` -- brand voice, visual identity, messaging frameworks, asset management
 - `/banner-design` -- multi-format banners: social, ads, web hero, print; 22 art direction styles with AI visuals
 - `/slides` -- strategic HTML presentations with Chart.js, design tokens, copywriting formulas
+- `/yt-transcript <youtube-url>` -- fetch a YouTube video's captions via yt-dlp, save cleaned transcript to `transcripts/<videoId>.md`
 
 ---
 
@@ -114,6 +115,39 @@ Don't delete -- archive instead. Move outdated material to `archives/`.
 - **Monthly:** Check `context/current-priorities.md`. Update if focus has shifted.
 - **Quarterly:** Update `context/goals.md` with new goals and milestones.
 - **As needed:** Log decisions in `decisions/log.md`. Add reference files. Build new skills.
+
+---
+
+## Behavioral Guidelines (Karpathy)
+
+**Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
+
+### 1. Think Before Coding
+- State assumptions explicitly. If uncertain, ask.
+- If multiple interpretations exist, present them — don't pick silently.
+- If a simpler approach exists, say so. Push back when warranted.
+- If something is unclear, stop. Name what's confusing. Ask.
+
+### 2. Simplicity First
+- Minimum code that solves the problem. Nothing speculative.
+- No features beyond what was asked.
+- No abstractions for single-use code.
+- No "flexibility" or "configurability" that wasn't requested.
+- No error handling for impossible scenarios.
+- If you write 200 lines and it could be 50, rewrite it.
+
+### 3. Surgical Changes
+- Touch only what you must. Clean up only your own mess.
+- Don't "improve" adjacent code, comments, or formatting.
+- Don't refactor things that aren't broken.
+- Match existing style, even if you'd do it differently.
+- If you notice unrelated dead code, mention it — don't delete it.
+- Remove only imports/variables/functions that YOUR changes made unused.
+- Every changed line should trace directly to the user's request.
+
+### 4. Goal-Driven Execution
+- Define success criteria. Loop until verified.
+- For multi-step tasks, state a brief plan with verification steps.
 
 ---
 

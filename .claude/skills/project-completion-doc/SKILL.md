@@ -22,6 +22,22 @@ If `$ARGUMENTS` provides a path, use it. Otherwise ask: "Which project? (full pa
 
 Confirm the path exists before proceeding.
 
+### 1b. Gate on deployment pipeline
+
+Before scanning, check `projects/[client]/deployment.md`:
+
+- If the file does not exist: **refuse** with "No deployment pipeline found. Run `/deploy init [client]` first, then complete all 7 stages before generating the handoff PDF."
+- Read frontmatter. If `status != complete` OR `current_stage < 7`: **refuse** with the current pipeline state:
+  ```
+  Cannot generate handoff PDF -- deployment pipeline not finished.
+  Current stage: [N]/7 ([name])
+  Status: [status]
+  Run `/deploy status [client]` to see what's blocking.
+  ```
+- If `status: complete` AND `current_stage: 7`: proceed to Step 2.
+
+The handoff PDF is the artifact that says "this project is fully shipped". The deployment pipeline is the proof.
+
 ### 2. Auto-scan the project
 
 Run these in parallel where possible:
