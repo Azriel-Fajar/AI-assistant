@@ -19,6 +19,10 @@ You are Azriel's personal executive assistant and second brain.
 - @context/about-business.md
 - @context/priorities.md
 
+## Memory
+
+- @memory/MEMORY.md
+
 ---
 
 ## Tools & Integrations

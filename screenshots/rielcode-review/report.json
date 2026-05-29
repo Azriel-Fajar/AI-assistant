@@ -1,0 +1,333 @@
+[
+  {
+    "viewport": "desktop",
+    "path": "/index.php",
+    "status": 200,
+    "navError": "page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://localhost/Rielcode/index.php\", waiting until \"networkidle\"\u001b[22m\n",
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/about.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/projects.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/testimonials.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/requirement.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/package.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/admin_login.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_CONNECTION_TIMED_OUT",
+      "Failed to load resource: net::ERR_CONNECTION_TIMED_OUT"
+    ],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/checkout/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/client-brief/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/client-brief/thanks.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/custom-plan/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/order-form/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/portfolio/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/progress/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/referrer/index.php",
+    "status": 404,
+    "navError": null,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "failedAssets": [
+      "404 http://localhost/Rielcode/referrer/index.php"
+    ]
+  },
+  {
+    "viewport": "desktop",
+    "path": "/terms&conditions/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/testimonials-app/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/testimonials-app/submit.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/testimonials-app/thank-you.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "desktop",
+    "path": "/packages/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/about.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/projects.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/testimonials.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/requirement.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/package.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/admin_login.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/checkout/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/client-brief/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/client-brief/thanks.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/custom-plan/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/order-form/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/portfolio/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/progress/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/referrer/index.php",
+    "status": 404,
+    "navError": null,
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "failedAssets": [
+      "404 http://localhost/Rielcode/referrer/index.php"
+    ]
+  },
+  {
+    "viewport": "mobile",
+    "path": "/terms&conditions/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/testimonials-app/index.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/testimonials-app/submit.php",
+    "status": 302,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/testimonials-app/thank-you.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  },
+  {
+    "viewport": "mobile",
+    "path": "/packages/index.php",
+    "status": 200,
+    "navError": null,
+    "consoleErrors": [],
+    "failedAssets": []
+  }
+]

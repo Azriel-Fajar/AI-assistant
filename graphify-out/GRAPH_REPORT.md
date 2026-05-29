@@ -351,6 +351,218 @@ Cohesion: 0.27
 Nodes (10): AIOS Intake, Lead Generation System, About Rielcode Business, About Azriel, Goals and Milestones Q2 2026, Azriel Personal Profile, Priorities Q2 2026, Work and Business Context (+2 more)
 
 ### Community 7 - "Community 7"
+Cohesion: 0.04
+Nodes (48): code:block1 (C:\xampp\htdocs\pay\), code:php (<?php), code:bash (git add connection.php), code:php (<?php), code:php (<?php), code:php (</div><!-- /.main-content -->), code:css (:root {), code:bash (git add inc/ CSS/) (+40 more)
+
+### Community 8 - "Community 8"
+Cohesion: 0.04
+Nodes (45): Banner Design (Built-in), Banner: Design Rules, Banner: Quick Size Reference, Banner: Top Art Styles, Banner: Workflow, CIP Design (Built-in), CIP: Generate Brief, CIP: Generate Mockups (+37 more)
+
+### Community 9 - "Community 9"
+Cohesion: 0.04
+Nodes (44): Architecture, Authentication, code:block1 (tools/), code:powershell (# 1. Google Cloud Console), code:powershell (# 1. Meta Developer Console), code:powershell (# 1. TikTok Developer Portal), code:powershell (# 1. Figma → Settings → Personal Access Tokens → Generate to), code:json ({) (+36 more)
+
+### Community 10 - "Community 10"
+Cohesion: 0.05
+Nodes (40): 6a. Lenis Smooth Scroll (MANDATORY), 6b. Frame Preloader, 6c. Canvas Renderer — Padded Cover Mode, 6d. Frame-to-Scroll Binding, 6e. Section Animation System, 6f. Counter Animations, 6g. Horizontal Text Marquee, 6h. Dark Overlay (+32 more)
+
+### Community 11 - "Community 11"
+Cohesion: 0.06
+Nodes (38): 10. Report the result, 1. Ensure git is initialized, 2. Resolve the target repository, 3. Stage all changes, 4. Generate the commit message, 5. Commit, 6. Determine target branch, 7. Pull rebase before push (+30 more)
+
+### Community 12 - "Community 12"
+Cohesion: 0.05
+Nodes (36): code:bash (git add -A), code:html (<!-- Landing Page Plan -->), code:bash (git add package.php), code:php ($aksiMap = [), code:bash (git add order-form/index.php), code:php (<?php), code:bash (git add order-form/success.php), code:php (require_once '../PHPMailer/src/PHPMailer.php';) (+28 more)
+
+### Community 13 - "Community 13"
+Cohesion: 0.05
+Nodes (36): Advanced Patterns, `allowed-tools` Syntax Guide, Arguments not being substituted, Claude doesn't see all skills, code:yaml (---), code:block10, code:yaml (---), code:block12 (# Add to deny rules:) (+28 more)
+
+### Community 14 - "Community 14"
+Cohesion: 0.05
+Nodes (35): code:php ($allowedTables = ['chat_logs', 'orders', 'packages', 'testim), code:php ($allowedTables = ['chat_logs', 'orders', 'packages', 'testim), code:php (// --- Invoices: handled below (CRUD via dedicated routes in), code:php (// --- Referrers: add ---), code:php (// --- Commissions: mark paid ---), code:php (case 'chat_logs':), code:php (case 'referrers':), code:php ($countTable = ($table === 'invoices') ? 'orders' : $table;) (+27 more)
+
+### Community 15 - "Community 15"
+Cohesion: 0.05
+Nodes (37): code:json ({), code:js (import chalk from 'chalk';), code:bash (git add tools/google/lib/output.js tools/google/lib/error.js), code:js (#!/usr/bin/env node), code:powershell (cd tools/google), code:powershell (gcal auth), code:powershell (gcal list --date today), code:bash (git add tools/google/gcal/index.js) (+29 more)
+
+### Community 16 - "Community 16"
+Cohesion: 0.06
+Nodes (34): Accessibility Patterns, Alternative: Tailwind-Only Setup, Best Practices, code:bash (npx shadcn@latest init), code:tsx (<div className="min-h-screen bg-white dark:bg-gray-900">), code:bash (npx shadcn@latest add button card dialog form), code:tsx (import { Button } from "@/components/ui/button"), code:bash (npm install -D tailwindcss @tailwindcss/vite) (+26 more)
+
+### Community 17 - "Community 17"
+Cohesion: 0.11
+Nodes (27): get_service_account_info(), build_service(), CalendarResult, create_homework_events(), _deadline_body(), _insert_event(), _study_block_body(), _clean_subject() (+19 more)
+
+### Community 18 - "Community 18"
+Cohesion: 0.06
+Nodes (33): Best Practices, Chart.js Integration, code:block1 (Primitive (raw values)), code:block10 (assets/designs/slides/claudekit-pitch-251223.html), code:bash (/slides:create "10-slide investor pitch for ClaudeKit Market), code:css (/* Primitive */), code:bash (node scripts/generate-tokens.cjs --config tokens.json -o tok), code:bash (node scripts/validate-tokens.cjs --dir src/) (+25 more)
+
+### Community 19 - "Community 19"
+Cohesion: 0.06
+Nodes (26): 1.1 New Package Plans, 1.2 Testimonials Section, 1.3 Order Form Flow Changes, 1.4 Design Update, 1. rielcode.com Changes, 2.1 Pages, 2.2 Invoice Creation (Azriel), 2.3 Client Invoice Page (+18 more)
+
+### Community 20 - "Community 20"
+Cohesion: 0.07
+Nodes (27): Architecture, Authentication, code:block1 (tools/google/), code:block10 (tools/google/auth/tokens.json), code:block2 (gcal auth                                          # OAuth s), code:block3 (gmail list [--unread] [--label <label>]), code:block4 (gdrive list [--folder <name>]), code:block5 (┌─────────────────────┬──────────────┬───────────┐) (+19 more)
+
+### Community 21 - "Community 21"
+Cohesion: 0.07
+Nodes (25): 1. Find the Constraint, 1. The Default Shift, 1. The Lego Principle, 2. EAD: Eliminate, Automate, Delegate, 2. The Assembly Line, 2. The Function Breakdown, 3. Map the Process, 3. The Curiosity Rule (+17 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.08
+Nodes (24): Asset Checklist (Tue May 19 morning), Banner Concepts, Bio Variations (under 1000 chars, but pick a short version), Channel Description (longer About-page version), Channel Name, code:block1 (I build websites for small businesses. Real builds, fast del), code:block2 (Background: Solid black (#0a0a0a)), code:block3 (Background: Dark gradient (black → dark blue)) (+16 more)
+
+### Community 23 - "Community 23"
+Cohesion: 0.09
+Nodes (20): 30-Day Launch Roadmap, Channel Identity, Channel Vision, Content Pillars, CTAs (rotate, never repeat in same batch), Decision Triggers (auto-pivot), Distribution Platforms, KPIs to Track (+12 more)
+
+### Community 24 - "Community 24"
+Cohesion: 0.1
+Nodes (20): 1. Resolve + download module PDF, 2. Read module, 3. Probe the form (read-only), 4. Answer, 5. Review + hand off, Account session, code:bash (curl -L -o ".claude/skills/quiz-auto/cache/module.pdf" "http), code:bash (cd "d:/Main Storage/Documents/JARVIS/tools/google" && npm in) (+12 more)
+
+### Community 25 - "Community 25"
+Cohesion: 0.1
+Nodes (19): Art Direction Styles (Top 10), Banner Design - Multi-Format Creative Banner System, Banner Size Quick Reference, code:block1 (Navigate to pinterest.com → search "[purpose] banner design ), code:bash (python3 .claude/skills/ai-artist/scripts/search.py "<banner ), code:bash (.claude/skills/.venv/bin/python3 .claude/skills/ai-multimoda), code:bash (.claude/skills/.venv/bin/python3 .claude/skills/ai-multimoda), code:bash (# Export banner to PNG at exact dimensions) (+11 more)
+
+### Community 26 - "Community 26"
+Cohesion: 0.12
+Nodes (18): code:block1 (You are a helpful assistant for [Project Name]. [Project pur), code:php (<?php), code:php (<?php), code:php (<?php), code:php (<?php include __DIR__ . '/../chatbot/chatbot-widget.php'; ?>), code:block6 (✅ Chatbot Integration Complete), Edge Cases, File 1: `chatbot/chatbot-config.php` (+10 more)
+
+### Community 27 - "Community 27"
+Cohesion: 0.1
+Nodes (17): Admin Panel, Architecture, Checkout Flow, code:sql (ALTER TABLE orders ADD COLUMN referral_code VARCHAR(20) DEFA), code:block3 (C:\xampp\htdocs\Rielcode\), Components, Context, Database (+9 more)
+
+### Community 28 - "Community 28"
+Cohesion: 0.1
+Nodes (18): Access Control, Approach, Asset Categories, code:block1 (dc_category: selection [power, cooling, electrical]), code:block2 (dc_work_order_no: char (auto-sequence)), code:block3 (equipment_id: many2one → dc_equipment), code:block4 (dc_maintenance/), Data Model (+10 more)
+
+### Community 29 - "Community 29"
+Cohesion: 0.12
+Nodes (17): Adding an Event, code:block1 (Title:      Team Sync), code:bash (curl -s -o /dev/null -H "Title: Event Created" -d "Calendar ), code:block3 (Updating: Team Sync (Mon Apr 28)), code:bash (curl -s -o /dev/null -H "Title: Event Updated" -d "Calendar ), code:block5 (1. Team Sync — Mon Apr 28 10:00 AM), code:bash (curl -s -o /dev/null -H "Title: Event Deleted" -d "Calendar ), code:block7 (Date         Time           Title) (+9 more)
+
+### Community 30 - "Community 30"
+Cohesion: 0.13
+Nodes (16): `add`, `close`, code:block1 (PIPELINE -- [date]), code:block2 (OVERDUE LEADS -- action needed), code:bash (curl -s -X POST https://ntfy.sh/rielcode-leads \), code:block4 (Halo, nama saya Azriel, web developer dari Salatiga. Saya me), code:bash (start opera "https://wa.me/[phone_digits_only]?text=[url-enc), code:block6 (WhatsApp link for [Business] ([Contact]):) (+8 more)
+
+### Community 31 - "Community 31"
+Cohesion: 0.13
+Nodes (16): 1. Get URL + intent, 2. Check pricing file, 3. Run site audit, 4. Calculate cost, 5. Upgrade suggestions, 6. Output by intent, 7. Save review, 8. Workflow upgrade scan (bonus) (+8 more)
+
+### Community 32 - "Community 32"
+Cohesion: 0.14
+Nodes (16): Build Phase, code:block1 (## Skill Summary: [name]), code:yaml (---), Complete Example, Content Audit, Discovery Interview, Frontmatter Audit, Important Notes (+8 more)
+
+### Community 33 - "Community 33"
+Cohesion: 0.12
+Nodes (16): AIS-OS Intake, code:block1 (I'm Azriel, an informatics engineering student running Rielc), code:block2 (Hey Ali, I wanted to follow up on the website I uploaded a c), code:block3 (selamat sore kak, hanya ingin memastikan, bagaimana dengan r), code:block4 (1. Update portfolio.rielcode.com -- add more features and pa), code:block5 (Bank transfer (Indonesian bank). No tracking system in place), code:block6 (WhatsApp (primary client communication). Instagram DMs (outr), code:block7 (No system currently. Wants to build one -- goals: note-takin) (+8 more)
+
+### Community 34 - "Community 34"
+Cohesion: 0.15
+Nodes (15): Cadence (25 pts), Capabilities (25 pts), code:block1 (# AIOS Audit — {date}), Connections (25 pts) — domain-aware, mechanism-agnostic, Context (25 pts), Execution, Notes, Step 1: Discover the project shape (+7 more)
+
+### Community 35 - "Community 35"
+Cohesion: 0.12
+Nodes (16): AIS-OS Intake, code:block1 (I'm Azriel, an informatics engineering student running Rielc), code:block2 (Hey Ali, I wanted to follow up on the website I uploaded a c), code:block3 (selamat sore kak, hanya ingin memastikan, bagaimana dengan r), code:block4 (1. Update portfolio.rielcode.com -- add more features and pa), code:block5 (Bank transfer (Indonesian bank). No tracking system in place), code:block6 (WhatsApp (primary client communication). Instagram DMs (outr), code:block7 (No system currently. Wants to build one -- goals: note-takin) (+8 more)
+
+### Community 36 - "Community 36"
+Cohesion: 0.12
+Nodes (15): 1. Koffietori, 2. Bragga Coffee, 3. Menepilah Cafe & Collaborative Space, 4. Waroeng Lada Hitam, 5. Secerca Coffee, Bragga Coffee, Cold Messages, Follow-up Log (+7 more)
+
+### Community 37 - "Community 37"
+Cohesion: 0.15
+Nodes (14): 1. Run site audit, 2. Write 60s Short script, 3. Draft IG tag-post caption, 4. Draft DM follow-up (send Day 3 after post), 5. Log in lead-tracker, 6. Output schedule, code:block1 (TITLE: I'd fix [Business Name]'s website. Here's how.), code:block2 ([Hook line: positive about the business]) (+6 more)
+
+### Community 38 - "Community 38"
+Cohesion: 0.14
+Nodes (14): 1. Resolve project path, 2. Auto-scan the project, 3. Ask only for gaps, 4. Resolve sections to omit, 5. Build HTML, 6. Generate the PDF, 7. Notify, 8. Report (+6 more)
+
+### Community 39 - "Community 39"
+Cohesion: 0.16
+Nodes (13): 1. Pull project context, 2. Generate YouTube Short script, 3. Generate Instagram carousel (5 slides), 4. Generate written case study, 5. Output checklist + next actions, code:block1 (TITLE: [client industry] gets a website. Watch it transform.), code:block2 (SLIDE 1 (Hook): "[Client name] needed a website. Here's what), code:block3 (# [Client Name] — [Industry] Website Build) (+5 more)
+
+### Community 40 - "Community 40"
+Cohesion: 0.13
+Nodes (13): 1. Create Telegram Bot, 2. Create Google Service Account, 3. Local Development, 4. Deploy to Railway, code:bash (cp .env.example .env), code:block2 (<subject> due <date>), code:bash (pytest tests/ -v), Environment Variables (+5 more)
+
+### Community 41 - "Community 41"
+Cohesion: 0.13
+Nodes (14): Auto-start with Windows Terminal, code:block1 (Claude 3.5 Sonnet | LOW | ctx:[######----] 62% | 5h:[##-----), code:powershell (pip install rich), code:powershell (python "C:\Users\afw14\OneDrive\Documents\JARVIS\tools\claud), code:powershell (& "C:\Users\afw14\OneDrive\Documents\JARVIS\tools\launch-wid), code:powershell (# Optional: auto-launch widget in background on terminal sta), Data Sources, Part 1: Claude Code statusLine (already active) (+6 more)
+
+### Community 42 - "Community 42"
+Cohesion: 0.14
+Nodes (13): Brand, Brand Sync Workflow, code:bash (node scripts/inject-brand-context.cjs), code:bash (node scripts/validate-asset.cjs <asset-path>), code:bash (node scripts/extract-colors.cjs --palette), code:bash (# 1. Edit docs/brand-guidelines.md (or use /brand update)), Quick Start, References (+5 more)
+
+### Community 43 - "Community 43"
+Cohesion: 0.16
+Nodes (12): 1. Gather project details, 2. Generate the proposal, 3. Suggest a price (if needed), 4. Send ntfy notification, 5. Offer a follow-up action, code:block1 (PROPOSAL -- <Project Type> for <Client Name>), code:bash (curl -s -o /dev/null -H "Title: Proposal Ready" -d "Proposal), Format A: WhatsApp-ready summary (short) (+4 more)
+
+### Community 44 - "Community 44"
+Cohesion: 0.22
+Nodes (12): code:markdown (---), Critical implementation rules, Execution — three phases, Inputs the skill reads, Output contract, Phase 1 — Mindset interview (find the candidate), Phase 2 — Method interview (scope one), Phase 3 — Machine handoff (build it) (+4 more)
+
+### Community 45 - "Community 45"
+Cohesion: 0.14
+Nodes (12): code:block1 (cd c:/Users/afw14/OneDrive/Documents/JARVIS && npx playwrigh), code:block2 (npx playwright codegen <url> --output tests/playwright/recor), code:js (const { chromium } = require('playwright');), code:bash (ls c:/Users/afw14/OneDrive/Documents/JARVIS/node_modules/@pl), Notes, /playwright, `/playwright codegen <url>`, `/playwright scrape <url> <task>` (+4 more)
+
+### Community 46 - "Community 46"
+Cohesion: 0.16
+Nodes (12): 1. Get topic input, 2. Write the script, 3. Shot list (no-face), 4. Voiceover — auto-generate via ElevenLabs MCP, 4b. Thumbnail — auto-generate via Canva MCP, 5. Hashtags + description, 6. Production checklist, code:block1 (TITLE: [under 60 chars, includes hook keyword]) (+4 more)
+
+### Community 47 - "Community 47"
+Cohesion: 0.14
+Nodes (12): Idea 1: Repurpose-Per-Build Pipeline, Idea 2: Salatiga Case Study Generator, Idea 3: Free Website Audit Tool, Idea 4: "$0 to First Website in 7 Days" Mini-Course, Idea 5: Build-with-me Live Streams, Master Rollout Calendar, Rielcode Growth Plan — Wild Ideas Bundle, Risks / Things to Kill Fast (+4 more)
+
+### Community 48 - "Community 48"
+Cohesion: 0.18
+Nodes (12): code:block1 (Flow                          chromium  firefox  webkit  mse), Notes, Step 1: Locate Project + Target URL, Step 2: Detect Critical Flows, Step 3: Decide Browser Set, Step 4: Locate or Install Playwright, Step 5: Generate the Test Script, Step 6: Run + Report (+4 more)
+
+### Community 49 - "Community 49"
+Cohesion: 0.15
+Nodes (11): After launch, /audit-tool-launch, Phase 1: UI + Form + Email Capture, Phase 2: Playwright Scraper + Score Logic, Phase 3: PDF Email Delivery + Tracking, Rollout timing (from growth plan), Score dimensions (0-100 total), Steps (+3 more)
+
+### Community 50 - "Community 50"
+Cohesion: 0.18
+Nodes (11): 1. Gather client details, 2. Plan the design, 3. Generate the project, 4. Screenshot and review, 5. Send ntfy notification, 6. Report to the user, code:block1 ([business-name-demo]/), code:bash (curl -s -o /dev/null -H "Title: Demo Site Ready" -d "Demo fo) (+3 more)
+
+### Community 51 - "Community 51"
+Cohesion: 0.15
+Nodes (12): After setup, Brevo automation setup, code:block1 (Subject: [Day X] [Curiosity hook — max 50 chars]), code:block2 (Subject: Day 7: When DIY breaks down (and what to do)), Curriculum (pre-defined), Day 7 email — special structure, /email-course-builder, Email structure (per email) (+4 more)
+
+### Community 52 - "Community 52"
+Cohesion: 0.18
+Nodes (11): 1. Gather project details, 2. Create the project folder, 3. Generate the kickoff checklist, 4. Log the new project, 5. Offer a WhatsApp kickoff message, code:markdown (# <Client Name> -- <Project Type>), code:block2 (Kickoff Checklist -- <Client Name>), code:block3 ([<today's date>] DECISION: Started project for <Client Name>) (+3 more)
+
+### Community 53 - "Community 53"
+Cohesion: 0.19
+Nodes (11): code:block1 ([project-name]/), code:markdown (# Design Breakdown: [Site Name]), code:css (:root {), code:html (<!DOCTYPE html>), css/custom.css, design-breakdown.md, Notes, Output Templates (+3 more)
+
+### Community 54 - "Community 54"
+Cohesion: 0.18
+Nodes (11): 1. Ask batch params, 2. Topic generation, 3. Full scripts (after approval) — MCP-batched, 4. Production schedule (MCP-compressed), 5. Save batch + calendar, 6. Track in priorities, code:block1 (=== SHORT [N] of [TOTAL] ===), code:block2 (BATCH DAY PLAN (with ElevenLabs + Canva MCPs):) (+3 more)
+
+### Community 55 - "Community 55"
+Cohesion: 0.15
+Nodes (12): Applied Learning, Archives, Azriel's Executive Assistant, Context, Decision Log, Keeping Context Current, Memory, Projects (+4 more)
+
+### Community 56 - "Community 56"
+Cohesion: 0.2
+Nodes (10): 1. Gather project details, 2. Create the project folder, 3. Output the setup checklist, 4. Log the new project, code:markdown (# <Project Name>), code:block2 (Personal Project Checklist -- <Project Name>), code:block3 ([<today's date>] DECISION: Started personal project -- <Proj), Rules (+2 more)
+
+### Community 57 - "Community 57"
+Cohesion: 0.23
+Nodes (10): code:block1 (✓ Day 1 done. Your AIOS knows who you are, what you sell, wh), Critical implementation rules, Execution, Step 1: Read the intake, Step 2: The interview (7 questions, hard cap), Step 3: Scaffold the Day-1 file set, Step 4: The closing screen, Verification (for the implementer) (+2 more)
+
+### Community 58 - "Community 58"
+Cohesion: 0.2
+Nodes (10): 1. Confirm or refresh inputs, 2. Define content pillars, 3. Posting cadence + batch plan, 4. Channel positioning, 5. 30-day launch roadmap, 6. Save strategy doc, 7. Next steps, Rules (+2 more)
+
+### Community 59 - "Community 59"
+Cohesion: 0.17
+Nodes (10): BASE PACKAGES (sale prices active), Custom Plan — from IDR 500k / $30, DETECTION → PACKAGE MAPPING (for /site-review), NOTES, PACKAGE FEATURES, Premium Plan — IDR 4.999jt / $295 (sale), Pro Plan — IDR 2.499jt / $148 (sale) ⭐ Most Popular, Rielcode Pricing Reference (+2 more)
+
+### Community 60 - "Community 60"
 Cohesion: 0.18
 Nodes (12): Banner Art Direction Styles, Brand Guidelines Source of Truth, Banner Design Capability (22 Styles), Corporate Identity Program Capability, Logo Design Capability (55 Styles), Gemini AI Image Generation, Skill: banner-design, Skill: brand (+4 more)
 
@@ -362,7 +574,7 @@ Nodes (12): Floating Chatbot Widget, Dark UI Design Theme, Free Hosting and .COM
 Cohesion: 0.04
 Nodes (44): Architecture, Authentication, code:block1 (tools/), code:powershell (# 1. Google Cloud Console), code:powershell (# 1. Meta Developer Console), code:powershell (# 1. TikTok Developer Portal), code:powershell (# 1. Figma → Settings → Personal Access Tokens → Generate to), code:json ({) (+36 more)
 
-### Community 10 - "Community 10"
+### Community 62 - "Community 62"
 Cohesion: 0.2
 Nodes (11): portfolio.rielcode.com, MISAEL67 Referral Code, MISAEL67 Instagram Caption, MISAEL67 Info Card, MISAEL67 WhatsApp Message, Rielcode Referral Program, rielcode.com Website, Rielcode Base Instagram Caption Template (+3 more)
 
@@ -370,19 +582,107 @@ Nodes (11): portfolio.rielcode.com, MISAEL67 Referral Code, MISAEL67 Instagram C
 Cohesion: 0.19
 Nodes (18): build_panel(), find_latest_session(), git_info(), main(), pct_bar(), pct_color(), Return branch, repo name, dirty flag for given path., Scan $TEMP for claude-ctx-*.json files and return the most recently     modified (+10 more)
 
-### Community 12 - "Community 12"
+### Community 64 - "Community 64"
+Cohesion: 0.24
+Nodes (3): handleError(), notAuthenticated(), getHeaders()
+
+### Community 65 - "Community 65"
+Cohesion: 0.24
+Nodes (8): 1. Identify the situation, 2. Draft the follow-up message, 3. Send ntfy notification, 4. Offer a variation, code:bash (curl -s -o /dev/null -H "Title: Follow-up Ready" -d "Follow-), Rules, Steps, What This Skill Does
+
+### Community 66 - "Community 66"
+Cohesion: 0.29
+Nodes (8): code:block1 (npm init -y), code:block2 (node "d:\Main Storage\Documents\JARVIS\.claude\skills\url-sc), code:block3 (Screenshots saved:), Context, Notes, Output Format, Steps, What This Skill Does
+
+### Community 67 - "Community 67"
+Cohesion: 0.28
+Nodes (7): 1. Gather content details, 2. Generate 3 caption options, 3. Generate hashtags, 4. Offer a variation, Rules, Steps, What This Skill Does
+
+### Community 68 - "Community 68"
+Cohesion: 0.22
+Nodes (7): Description, Files, Key Dates, Locked Choices, Next Action, Skills Used, YouTube Channel — Rielcode
+
+### Community 69 - "Community 69"
+Cohesion: 0.22
+Nodes (7): Broken Images, Console Errors, Form Behavior, Layout Issues, Misc Notes, Rielcode Site Audit Report, Screenshots
+
+### Community 70 - "Community 70"
+Cohesion: 0.22
+Nodes (8): code:json ({), code:powershell (cd tools/google), code:block3 (gcal list --date today), Config, Google CLI Tools, Google Cloud Setup (one-time, ~5 min), Install, Usage
+
+### Community 71 - "Community 71"
+Cohesion: 0.25
+Nodes (6): code:block1 (Hey Ali, I wanted to follow up on the website I uploaded a c), code:block2 (selamat sore kak, hanya ingin memastikan, bagaimana dengan r), Sample 1 -- English (client follow-up, WhatsApp), Sample 2 -- Indonesian (local lead follow-up, WhatsApp), Voice notes, Voice Reference
+
+### Community 72 - "Community 72"
+Cohesion: 0.29
+Nodes (6): EXPANSIONS — what to add as you grow, How to tell when it's time to add a folder, Suggested cadences, What NOT to add, What ships in the kit (don't remove), What to add as you grow
+
+### Community 73 - "Community 73"
+Cohesion: 0.29
+Nodes (6): EXPANSIONS — what to add as you grow, How to tell when it's time to add a folder, Suggested cadences, What NOT to add, What ships in the kit (don't remove), What to add as you grow
+
+### Community 74 - "Community 74"
+Cohesion: 0.29
+Nodes (5): Business, Core Pain Points, Revenue, Tools, Work & Business -- Rielcode
+
+### Community 75 - "Community 75"
+Cohesion: 0.29
+Nodes (5): Commission Table, Program Rules, Referral Code Registry, Rielcode Referral Program, Tracking
+
+### Community 76 - "Community 76"
+Cohesion: 0.29
+Nodes (5): Decisions Made, Memory Updates, Open Items / Next Steps, Session Summary, What Got Done
+
+### Community 77 - "Community 77"
+Cohesion: 0.29
+Nodes (6): Assets Needed, Batch Day Plan, SHORT 1 of 3, SHORT 2 of 3, SHORT 3 of 3, YouTube Batch — Week 21, 2026 (May 18-25)
+
+### Community 78 - "Community 78"
 Cohesion: 0.67
 Nodes (5): getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath()
 
-### Community 13 - "Community 13"
+### Community 79 - "Community 79"
+Cohesion: 0.33
+Nodes (4): Communication Style, Format, Rules, Tone
+
+### Community 80 - "Community 80"
+Cohesion: 0.33
+Nodes (4): Example Skill, Notes, Steps, When to use
+
+### Community 81 - "Community 81"
+Cohesion: 0.33
+Nodes (5): References (Knowledge Base), Routing, Slides, Subcommands, When to Use
+
+### Community 82 - "Community 82"
+Cohesion: 0.4
+Nodes (3): Goals & Milestones, Notes, Q2 2026 (April -- June)
+
+### Community 83 - "Community 83"
 Cohesion: 0.4
 Nodes (5): Google Calendar MCP Integration, ntfy Phone Notification System, Daily Priorities Skill, Follow-up Skill, WhatsApp Communication Channel
 
-### Community 14 - "Community 14"
+### Community 84 - "Community 84"
+Cohesion: 0.67
+Nodes (2): Design Thinking, Frontend Aesthetics Guidelines
+
+### Community 85 - "Community 85"
+Cohesion: 0.5
+Nodes (2): Active Projects, Current Priorities
+
+### Community 86 - "Community 86"
+Cohesion: 0.5
+Nodes (2): Current Clients, Team
+
+### Community 87 - "Community 87"
+Cohesion: 0.5
+Nodes (2): code:block1 (## YYYY-MM-DD — Short title), Decisions Log
+
+### Community 88 - "Community 88"
 Cohesion: 0.67
 Nodes (4): Demo Website Skill, Emil Design Engineer Skill, Frontend Design Skill, Tailwind CSS
 
-### Community 15 - "Community 15"
+### Community 89 - "Community 89"
 Cohesion: 0.5
 Nodes (4): Parallaxnet Client Site, Rielcode Hero Iterations (v1-v8), Rielcode Mobile Views, Rielcode Site Evolution (May 2026)
 
@@ -394,11 +694,51 @@ Nodes (4): Set up dummy environment variables for testing., setup_env_vars(), Se
 Cohesion: 0.09
 Nodes (36): about, addonCheckbox, attachConsoleListener(), burger, cards, chatbotIcon, chatbotToggle, closeBtn (+28 more)
 
-### Community 18 - "Community 18"
+### Community 92 - "Community 92"
+Cohesion: 0.67
+Nodes (1): About Rielcode
+
+### Community 93 - "Community 93"
+Cohesion: 0.67
+Nodes (1): About Azriel
+
+### Community 94 - "Community 94"
+Cohesion: 0.67
+Nodes (1): About Azriel
+
+### Community 95 - "Community 95"
+Cohesion: 0.67
+Nodes (1): Priorities -- Q2 2026 (April-June)
+
+### Community 96 - "Community 96"
+Cohesion: 0.67
+Nodes (1): Leads Archive
+
+### Community 97 - "Community 97"
+Cohesion: 0.67
+Nodes (1): Leads
+
+### Community 98 - "Community 98"
+Cohesion: 0.67
+Nodes (1): Memory Index
+
+### Community 99 - "Community 99"
+Cohesion: 0.67
+Nodes (1): Key Notes
+
+### Community 100 - "Community 100"
+Cohesion: 0.67
+Nodes (1): Parallaxnet Canada -- Website
+
+### Community 101 - "Community 101"
+Cohesion: 0.67
+Nodes (1): Learning Log
+
+### Community 102 - "Community 102"
 Cohesion: 0.67
 Nodes (3): Communication Style Rules, Client Proposal Format (WhatsApp + Full Doc), Skill: client-proposal
 
-### Community 19 - "Community 19"
+### Community 103 - "Community 103"
 Cohesion: 0.67
 Nodes (3): Checkout Confirmation Page (Step 2), Order Form Full Page (1280px), Order Form Package Section Crop
 

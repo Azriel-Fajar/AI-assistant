@@ -58,13 +58,15 @@ Run the probe to enumerate questions + options across all pages:
 node ".claude/skills/quiz-auto/run.js" --form-url "<URL>" --mode probe
 ```
 
-Output is JSON: `[{heading, options[]}]`. Cross-reference each question against the module knowledge to fill the answer map. For ambiguous questions, log uncertainty and skip — do not guess.
+Output is JSON: `[{heading, options[]}]`. Browser stays open after probe -- use it to browse reference material if needed. Cross-reference each question against the module knowledge to fill the answer map. For ambiguous questions, log uncertainty and skip — do not guess.
+
+**Immediately after probe finishes**, without waiting for user input, build answers and proceed to Step 4.
 
 ### 4. Answer
 
 **Per-form file only.** Never use a shared master answers.json. Filename: `answers_<formId>.json` where `<formId>` = first 24 chars of the `/forms/d/(e/)?<ID>` path. Each form gets its own file; never merge answers across forms.
 
-Answers grounded in THIS form's module PDF only. If a question is not covered by the PDF, leave it as a MISS — do not guess from general knowledge or first-option default. **Never click first option as a default in answer mode.** Probe mode is the only mode that clicks first option (to satisfy validation and advance pages); answer mode must match-or-miss.
+Answers grounded in THIS form's module PDF first. If a question is not covered by the PDF, mark as MISS — Step 5 will resolve via web search. **Never click first option as a default in answer mode.** Probe mode is the only mode that clicks first option (to satisfy validation and advance pages); answer mode must match-or-miss.
 
 Form Qs randomize per session → probe + answer must run back-to-back in the same browser profile session, or Qs in probe.json won't match the live form.
 
@@ -79,11 +81,31 @@ node ".claude/skills/quiz-auto/run.js" --form-url "<URL>" --mode answer --answer
 
 Expected: `N/M answered`, MISS list (if any), browser left open.
 
-### 5. Review + hand off
+### 5. Resolve MISSes via web search
 
-- Resolve any MISS: re-read module section, update `answers.json`, re-run `--mode answer`.
-- Report to user: total answered, any unresolved, link to open browser.
+For each MISS question output by answer mode:
+
+1. **Re-check module PDF first** — search for keywords from the question heading. If found, patch `answers.json` directly.
+2. **If still not found**, web-search for the answer:
+   - Query: `"<exact question heading text>" site:quizlet.com OR site:examtopics.com OR site:certmaster.com CompTIA`
+   - Fall back to: `CompTIA Network+ N10-009 "<key phrase from question>" answer`
+   - Read the top result(s) and extract the correct answer.
+   - Cross-reference the answer against the available `options[]` from probe — pick the option that matches.
+   - If web search finds a clear answer, add it to `answers.json`.
+   - If ambiguous or no credible source, log as UNRESOLVED — do not guess.
+3. After patching `answers.json`, re-run answer mode immediately (same browser session must still be open):
+   ```bash
+   node ".claude/skills/quiz-auto/run.js" --form-url "<URL>" --mode answer --answers ".claude/skills/quiz-auto/cache/answers_<formId>.json"
+   ```
+4. Report to user: total answered, any remaining unresolved, browser open for review.
 - **Do NOT submit.** User submits manually after visual review.
+
+### 6. Cleanup
+
+After answering is complete (all MISSes resolved or accepted), clear probe.json:
+```bash
+echo [] > ".claude/skills/quiz-auto/cache/probe.json"
+```
 
 ## Grouped output by page
 
