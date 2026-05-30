@@ -9,3 +9,4 @@
 - [Rielcode Testimonials System](project_testimonials_system.md) -- form at rielcode-testimonials/, admin panel in Rielcode/admin.php?table=testimonials, rebuilt after GitHub push loss
 - [Google CLI Preference](feedback_google_cli.md) -- use tools/google/ CLI via Bash (gcal/gmail/gdrive), NOT MCP
 - [Subnetting Reference](reference_subnetting.md) -- IPv4 prefix/mask/borrowing formulas, common prefix table, block size calculation
+- [Claude Code Mastery](reference_claude_code_mastery.md) -- Opus 4.8 prompting + agentic best practices; full guide in references/, coached via /claude-coach
