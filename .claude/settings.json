@@ -20,7 +20,7 @@
           {
             "type": "command",
             "shell": "powershell",
-            "command": "Set-Location 'C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS'; python -m graphify update . 2>&1 | Out-Null",
+            "command": "$proj = if ($env:CLAUDE_PROJECT_DIR) { $env:CLAUDE_PROJECT_DIR } else { (Get-Location).Path }; Set-Location $proj; python -m graphify update . 2>&1 | Out-Null",
             "statusMessage": "Updating graphify knowledge graph...",
             "async": true
           }

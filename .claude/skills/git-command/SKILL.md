@@ -56,8 +56,15 @@ git branch --show-current
 git pull --rebase origin <branch>
 ```
 
-If the rebase fails (exit code non-zero), stop and tell the user:
-> "Pull rebase failed due to conflicts. Resolve the conflicts manually, then try again."
+If the rebase fails (exit code non-zero), do NOT stop. Abort and fall back to a merge, which preserves all work:
+```bash
+git rebase --abort
+git pull --no-rebase origin <branch>
+```
+Only if the merge ALSO conflicts, stop and tell the user:
+> "Pull conflicts couldn't auto-merge. Resolve the conflicts manually, then try again."
+
+Never `--force`. Never delete existing work.
 
 ---
 
@@ -161,10 +168,15 @@ Before pushing, always run:
 git pull --rebase origin <branch> 2>/dev/null
 ```
 
-If the rebase fails (exit code non-zero), stop and tell the user:
-> "Rebase failed due to conflicts. Resolve the conflicts manually, then run `/git-command` again."
+If the rebase fails (exit code non-zero), do NOT stop. Abort and fall back to a merge, which preserves all work:
+```bash
+git rebase --abort
+git pull --no-rebase origin <branch>
+```
+Only if the merge ALSO conflicts, stop and tell the user:
+> "Conflicts couldn't auto-merge. Resolve the conflicts manually, then run `/git-command` again."
 
-Do not force-push. Never use `--force`.
+Do not force-push. Never use `--force`. Never delete existing work.
 
 ---
 

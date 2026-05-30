@@ -8,6 +8,24 @@ You are Azriel's personal executive assistant and second brain.
 
 ---
 
+## Environment & Machines
+
+- This setup runs across 2 machines with different usernames and drives: `C:\Users\afw14\OneDrive\Documents\JARVIS` and `D:\Main Storage\Documents\JARVIS`.
+- In hooks and config files, use `$env:CLAUDE_PROJECT_DIR` or relative paths. Never hardcode a username or absolute drive path.
+- Shell is PowerShell. When writing files other tools read, save UTF-8 with NO BOM (avoid mojibake). Double-check output paths before writing.
+
+## Verify Before Done
+
+- "Edit applied" and "tests pass" are not "verified working." Run it end-to-end and show output / exit code / rendered result before claiming done.
+- A non-zero exit code is a failure even if all assertions pass.
+
+## Scope Tracing
+
+- Before multi-file or destructive edits (removing columns, fields, shared code), enumerate every affected file first (blade, controller, migration, JS, seeder, CSS).
+- Show the impact map, then proceed.
+
+---
+
 ## Context
 
 - @context/me.md
