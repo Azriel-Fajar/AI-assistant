@@ -10,3 +10,4 @@
 - [Google CLI Preference](feedback_google_cli.md) -- use tools/google/ CLI via Bash (gcal/gmail/gdrive), NOT MCP
 - [Subnetting Reference](reference_subnetting.md) -- IPv4 prefix/mask/borrowing formulas, common prefix table, block size calculation
 - [Claude Code Mastery](reference_claude_code_mastery.md) -- Opus 4.8 prompting + agentic best practices; full guide in references/, coached via /claude-coach
+- [Meta Ads WA Lead Gen](project_meta_ads_wa_lead_gen.md) -- IDR 18k/day engagement campaign, 5 leads at IDR 5,484 CPL, all cold; auto-reply and follow-up fixes documented
