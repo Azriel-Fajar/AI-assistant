@@ -51,9 +51,9 @@ const ANSWERS = [
 ];
 ```
 
-### 3. Probe the form (read-only)
+### 3. Probe the form
 
-Run the probe to enumerate questions + options across all pages:
+Run the probe to enumerate questions + options across ALL pages in one pass. Probe force-clicks the first option per required question (verifying `aria-checked`) so every page passes validation and Next advances — it walks the entire multi-page form, then stops at Submit (never clicks it):
 ```bash
 node ".claude/skills/quiz-auto/run.js" --form-url "<URL>" --mode probe
 ```
@@ -68,7 +68,7 @@ Output is JSON: `[{heading, options[]}]`. Browser stays open after probe -- use 
 
 Answers grounded in THIS form's module PDF first. If a question is not covered by the PDF, mark as MISS — Step 5 will resolve via web search. **Never click first option as a default in answer mode.** Probe mode is the only mode that clicks first option (to satisfy validation and advance pages); answer mode must match-or-miss.
 
-Form Qs randomize per session → probe + answer must run back-to-back in the same browser profile session, or Qs in probe.json won't match the live form.
+Form Qs randomize per session, but matching is by question heading (not position), so probe.json from one session maps correctly onto the next. Build the full answer map from the single probe dump, then run answer mode once.
 
 ```json
 [{"keyword": "...", "answer": "..."}]
@@ -123,6 +123,12 @@ Forms with "Record <id>@student.uksw.edu as the email to be included with my res
 ## Watchdog
 
 Runner has 20s idle watchdog. No progress (no new question, no answer click, no Next nav) for 20s → browser auto-closes, exit code 3, prints state dump: page #, answers placed, current URL. Use for troubleshooting (selector drift, modal, hung nav). After answering each page, runner clicks Next explicitly and logs `Clicking Next → page N+1`. Stops at Submit button (never clicks).
+
+Probe walks all pages in one pass: it force-clicks the first option on every required question and verifies `aria-checked` before advancing (fixes an old click→state race that stalled probe on page 1). So one probe = full multi-page dump; expect ~2 runs total per form (probe + answer), not one run per page.
+
+## Concurrency
+
+ONE runner at a time. All runs share a single `.pw-profile` — launching a second run while one is open crashes both ("browser has been closed"). Never fire parallel runs; wait for one to finish before the next.
 
 ## Account session
 

@@ -268,6 +268,28 @@ async function findNextOrSubmit(page) {
         console.log('Submit button reached — stopping (will NOT click).');
         break;
       }
+      // In probe mode, force a selection on every still-unanswered required radio
+      // so the page passes validation and Next advances. This lets probe walk ALL
+      // pages in one pass (otherwise it stalls on page 1 due to aria-checked races).
+      if (MODE === 'probe') {
+        const lis = await page.$$('div[role="listitem"]');
+        for (const li of lis) {
+          const radios = await li.$$('div[role="radio"]');
+          if (radios.length === 0) continue;
+          let anyChecked = false;
+          for (const r of radios) {
+            if ((await r.getAttribute('aria-checked')) === 'true') { anyChecked = true; break; }
+          }
+          if (!anyChecked) {
+            await radios[0].scrollIntoViewIfNeeded().catch(() => {});
+            await radios[0].click().catch(() => {});
+            if ((await radios[0].getAttribute('aria-checked')) !== 'true') {
+              await radios[0].click({ force: true }).catch(() => {});
+            }
+            lastProgress = Date.now();
+          }
+        }
+      }
       const unanswered = await page.evaluate(() => {
         const out = [];
         document.querySelectorAll('div[role="listitem"]').forEach(li => {
