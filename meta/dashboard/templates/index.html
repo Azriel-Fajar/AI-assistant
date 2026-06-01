@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meta Dashboard - Rielcode</title>
+<style>
+  /* Semantic tokens, light + dark designed together. */
+  :root {
+    --bg: #f4f5f7; --surface: #ffffff; --surface-2: #fafbfc;
+    --ink: #14171f; --muted: #5b6470; --faint: #8a93a0;
+    --line: #e6e8ec; --line-strong: #d6dae0;
+    --accent: #2f6df6; --accent-soft: #e9f0ff;
+    --good: #0f9d58; --good-soft: #e6f5ec;
+    --warn-ink: #9a5b00; --warn-soft: #fff3df;
+    --you-ink: #2f6df6; --you-soft: #e9f0ff;
+    --them-ink: #4b525d; --them-soft: #eef0f3;
+    --shadow: 0 1px 2px rgba(20,23,31,.04), 0 4px 16px rgba(20,23,31,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1117; --surface: #171b22; --surface-2: #1c2128;
+      --ink: #e8eaed; --muted: #9aa3af; --faint: #6b7280;
+      --line: #262b33; --line-strong: #333a44;
+      --accent: #5b8cff; --accent-soft: #1a2740;
+      --good: #46c98a; --good-soft: #15301f;
+      --warn-ink: #f0b657; --warn-soft: #2e2410;
+      --you-ink: #7aa2ff; --you-soft: #1a2740;
+      --them-ink: #c2c9d2; --them-soft: #232831;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg); color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  .num { font-variant-numeric: tabular-nums; }
+
+  header {
+    position: sticky; top: 0; z-index: 20;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 14px 24px; background: color-mix(in srgb, var(--surface) 86%, transparent);
+    backdrop-filter: saturate(140%) blur(8px); border-bottom: 1px solid var(--line);
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .logo { width: 28px; height: 28px; border-radius: 8px; background: var(--accent);
+          display: grid; place-items: center; color: #fff; flex: none; }
+  .logo svg { width: 16px; height: 16px; }
+  h1 { font-size: 16px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
+  .sub { color: var(--muted); font-size: 12.5px; }
+  .hbtns { display: flex; align-items: center; gap: 8px; }
+  button {
+    font: inherit; cursor: pointer; border: 1px solid var(--line-strong); background: var(--surface);
+    color: var(--ink); border-radius: 9px; padding: 7px 13px; display: inline-flex; align-items: center; gap: 7px;
+    transition: border-color .15s ease, color .15s ease, background .15s ease;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button svg { width: 15px; height: 15px; }
+
+  main { max-width: 1180px; margin: 0 auto; padding: 22px 24px 56px;
+         display: grid; gap: 20px; grid-template-columns: 1.15fr 1fr; align-items: start; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+          box-shadow: var(--shadow); overflow: hidden; }
+  .card-head { display: flex; align-items: center; justify-content: space-between;
+               padding: 15px 18px; border-bottom: 1px solid var(--line); }
+  .card-head h2 { font-size: 14px; margin: 0; font-weight: 600; letter-spacing: -.005em;
+                  display: flex; align-items: center; gap: 8px; }
+  .card-head .ico { color: var(--muted); display: grid; place-items: center; }
+  .card-head .ico svg { width: 16px; height: 16px; }
+
+  /* KPI strip */
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+          background: var(--line); border-bottom: 1px solid var(--line); }
+  .kpi { background: var(--surface-2); padding: 13px 18px; }
+  .kpi .k-label { font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .kpi .k-val { font-size: 19px; font-weight: 650; margin-top: 3px; letter-spacing: -.01em; }
+  .kpi .k-val small { font-size: 12px; font-weight: 500; color: var(--faint); }
+
+  .tablewrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th, td { text-align: left; padding: 11px 18px; white-space: nowrap; }
+  th { color: var(--muted); font-weight: 550; font-size: 11.5px; text-transform: uppercase;
+       letter-spacing: .03em; border-bottom: 1px solid var(--line); }
+  tbody tr:not(:last-child) td { border-bottom: 1px solid var(--line); }
+  tbody tr:hover td { background: var(--surface-2); }
+  td.r { text-align: right; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
+          background: var(--good-soft); color: var(--good); }
+
+  .flags { padding: 12px 18px 4px; }
+  .flag { display: flex; gap: 8px; align-items: flex-start; background: var(--warn-soft); color: var(--warn-ink);
+          border-radius: 9px; padding: 8px 11px; font-size: 13px; margin-bottom: 8px; }
+  .flag svg { width: 15px; height: 15px; flex: none; margin-top: 1px; }
+
+  /* DM inbox */
+  .inbox { max-height: 560px; overflow-x: hidden; overflow-y: auto; }
+  .dm { display: flex; gap: 12px; width: 100%; max-width: 100%; text-align: left; background: none; border: 0;
+        border-bottom: 1px solid var(--line); border-radius: 0; padding: 13px 18px; cursor: pointer; }
+  .dm:hover { background: var(--surface-2); border-color: var(--line); color: inherit; }
+  .dm:last-child { border-bottom: 0; }
+  .avatar { width: 38px; height: 38px; border-radius: 50%; flex: none; display: grid; place-items: center;
+            font-weight: 650; font-size: 14px; color: #fff;
+            background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 60%, #9b5cff)); }
+  .dm-body { min-width: 0; flex: 1; overflow: hidden; }
+  .dm-row1 { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+  .name { font-weight: 600; font-size: 14px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .when { color: var(--faint); font-size: 12px; white-space: nowrap; flex: none; }
+  .dm-last { display: block; max-width: 100%; color: var(--muted); font-size: 13px; margin-top: 2px;
+             white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .dm-last .tag { white-space: nowrap; }
+  .tag { font-size: 10.5px; font-weight: 700; padding: 1px 5px; border-radius: 5px; margin-right: 6px;
+         vertical-align: 1px; }
+  .tag.you { background: var(--you-soft); color: var(--you-ink); }
+  .tag.them { background: var(--them-soft); color: var(--them-ink); }
+
+  .err { display: flex; gap: 9px; padding: 12px 14px; color: var(--warn-ink); background: var(--warn-soft);
+         margin: 14px 18px; border-radius: 10px; font-size: 13.5px; }
+  .err svg { width: 16px; height: 16px; flex: none; margin-top: 1px; }
+  .empty { padding: 28px 18px; color: var(--muted); text-align: center; font-size: 13.5px; }
+
+  /* Chat drawer (client-side, no reload) */
+  .scrim { position: fixed; inset: 0; background: rgba(0,0,0,.5); opacity: 0; pointer-events: none;
+           transition: opacity .2s ease; z-index: 40; }
+  .drawer {
+    position: fixed; top: 0; right: 0; height: 100dvh; width: min(440px, 100%);
+    background: var(--surface); border-left: 1px solid var(--line); z-index: 50;
+    display: flex; flex-direction: column; transform: translateX(100%);
+    transition: transform .26s cubic-bezier(.2,.8,.2,1); box-shadow: -8px 0 30px rgba(0,0,0,.18);
+  }
+  .open .scrim { opacity: 1; pointer-events: auto; }
+  .open .drawer { transform: translateX(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .scrim, .drawer { transition: none; }
+  }
+  .drawer-head { display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+                 border-bottom: 1px solid var(--line); }
+  .drawer-head .name { font-size: 15px; }
+  .drawer-head .sub { font-size: 12px; }
+  .drawer-head button { margin-left: auto; padding: 6px; border-radius: 8px; }
+  .chat { flex: 1; min-width: 0; overflow-x: hidden; overflow-y: auto; padding: 18px 16px;
+          display: flex; flex-direction: column; gap: 4px; background: var(--surface-2); }
+  .msg { max-width: 78%; padding: 8px 12px; border-radius: 14px; font-size: 13.5px; line-height: 1.45;
+         white-space: pre-wrap; overflow-wrap: anywhere; word-break: break-word; }
+  .msg.them { align-self: flex-start; background: var(--them-soft); color: var(--ink);
+              border-bottom-left-radius: 5px; }
+  .msg.you { align-self: flex-end; background: var(--accent); color: #fff;
+             border-bottom-right-radius: 5px; }
+  .msg-time { font-size: 10.5px; color: var(--faint); margin: 6px 4px 2px; align-self: flex-start; }
+  .msg.you + .msg-time { align-self: flex-end; }
+  .chat-state { color: var(--muted); text-align: center; padding: 40px 0; font-size: 13.5px; }
+  .spinner { width: 22px; height: 22px; border: 2.5px solid var(--line-strong); border-top-color: var(--accent);
+             border-radius: 50%; animation: spin .7s linear infinite; margin: 0 auto 10px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .spinner { animation-duration: 2s; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <span class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg>
+    </span>
+    <div>
+      <h1>Meta Dashboard</h1>
+      <div class="sub">Ads (last 7 days) &middot; Page Messenger</div>
+    </div>
+  </div>
+  <div class="hbtns">
+    <button onclick="location.reload()" aria-label="Refresh data">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+      Refresh
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- Ads -->
+  <section class="card">
+    <div class="card-head">
+      <h2><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 15l3-3 2 2 5-6"/></svg></span>Ad performance</h2>
+      <span class="sub num">{% if ads %}{{ ads.account }}{% endif %}</span>
+    </div>
+
+    {% if ads_err %}
+      <div class="err">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        {{ ads_err }}
+      </div>
+    {% elif not ads.campaigns %}
+      <div class="empty">No campaign data in the last 7 days.</div>
+    {% else %}
+      {% set total_impr = ads.campaigns | sum(attribute='impressions') %}
+      {% set total_clicks = ads.campaigns | sum(attribute='clicks') %}
+      <div class="kpis">
+        <div class="kpi">
+          <div class="k-label">Spend (7d)</div>
+          <div class="k-val num">Rp&nbsp;{{ '{:,.0f}'.format(ads.total_spend).replace(',', '.') }}</div>
+        </div>
+        <div class="kpi">
+          <div class="k-label">Impressions</div>
+          <div class="k-val num">{{ '{:,.0f}'.format(total_impr).replace(',', '.') }}</div>
+        </div>
+        <div class="kpi">
+          <div class="k-label">Clicks</div>
+          <div class="k-val num">{{ '{:,.0f}'.format(total_clicks).replace(',', '.') }}</div>
+        </div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr>
+            <th>Campaign</th><th class="r">Spend</th><th class="r">Impr</th>
+            <th class="r">Clicks</th><th class="r">CTR</th><th>Results</th>
+          </tr></thead>
+          <tbody>
+          {% for c in ads.campaigns %}
+            <tr>
+              <td>{{ c.campaign }}</td>
+              <td class="r num">Rp&nbsp;{{ '{:,.0f}'.format(c.spend).replace(',', '.') }}</td>
+              <td class="r num">{{ '{:,.0f}'.format(c.impressions).replace(',', '.') }}</td>
+              <td class="r num">{{ '{:,.0f}'.format(c.clicks).replace(',', '.') }}</td>
+              <td class="r num">{{ '%.2f'|format(c.ctr) }}%</td>
+              <td>{% if c.results != '-' %}<span class="pill">{{ c.results }}</span>{% else %}-{% endif %}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% if ads.flags %}
+        <div class="flags">
+          {% for f in ads.flags %}
+            <div class="flag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+              {{ f }}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endif %}
+  </section>
+
+  <!-- DMs -->
+  <section class="card">
+    <div class="card-head">
+      <h2><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>Messenger</h2>
+      <span class="sub num">{% if dms %}Page {{ dms.page }}{% endif %}</span>
+    </div>
+
+    {% if dms_err %}
+      <div class="err">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        {{ dms_err }}
+      </div>
+    {% elif not dms.threads %}
+      <div class="empty">No conversations found.</div>
+    {% else %}
+      <div class="inbox">
+        {% for t in dms.threads %}
+          <button class="dm" data-id="{{ t.id }}" data-name="{{ t.name }}">
+            <span class="avatar" aria-hidden="true">{{ t.name[:1] | upper }}</span>
+            <span class="dm-body">
+              <span class="dm-row1">
+                <span class="name">{{ t.name }}</span>
+                <span class="when num">{{ t.updated }}</span>
+              </span>
+              <span class="dm-last">
+                <span class="tag {{ 'you' if t.last_direction == '[You]' else 'them' }}">{{ 'You' if t.last_direction == '[You]' else 'Them' }}</span>{{ t.last_text }}
+              </span>
+            </span>
+          </button>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+</main>
+
+<!-- Chat drawer -->
+<div id="overlay">
+  <div class="scrim" data-close></div>
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-name">
+    <div class="drawer-head">
+      <span class="avatar" id="drawer-avatar" aria-hidden="true"></span>
+      <div>
+        <div class="name" id="drawer-name"></div>
+        <div class="sub">Conversation</div>
+      </div>
+      <button data-close aria-label="Close conversation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="chat" id="chat"></div>
+  </aside>
+</div>
+
+<script>
+  const overlay = document.getElementById('overlay');
+  const chat = document.getElementById('chat');
+  const dName = document.getElementById('drawer-name');
+  const dAvatar = document.getElementById('drawer-avatar');
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const cache = new Map(); // tid -> rendered messages html, so reopening a chat is instant
+
+  function openDrawer() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeDrawer() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (location.hash) history.pushState('', '', location.pathname);
+  }
+
+  function renderMessages(msgs) {
+    if (!msgs.length) return '<div class="chat-state">No messages.</div>';
+    return msgs.map(m => {
+      const cls = m.direction === '[You]' ? 'you' : 'them';
+      return `<div class="msg ${cls}">${esc(m.text)}</div><div class="msg-time">${esc(m.time)}</div>`;
+    }).join('');
+  }
+
+  async function loadThread(id, name) {
+    dName.textContent = name;
+    dAvatar.textContent = (name[0] || '?').toUpperCase();
+    openDrawer();
+
+    if (cache.has(id)) { chat.innerHTML = cache.get(id); chat.scrollTop = chat.scrollHeight; return; }
+    chat.innerHTML = '<div class="chat-state"><div class="spinner"></div>Loading conversation...</div>';
+    try {
+      const r = await fetch(`/api/thread?id=${encodeURIComponent(id)}&name=${encodeURIComponent(name)}`);
+      const data = await r.json();
+      if (!r.ok || data.error) throw new Error(data.error || 'Failed to load');
+      const html = renderMessages(data.messages || []);
+      cache.set(id, html);
+      chat.innerHTML = html;
+      chat.scrollTop = chat.scrollHeight;
+    } catch (e) {
+      chat.innerHTML = `<div class="chat-state">${esc(e.message)}</div>`;
+    }
+  }
+
+  document.querySelectorAll('.dm').forEach(btn => {
+    btn.addEventListener('click', () => loadThread(btn.dataset.id, btn.dataset.name));
+  });
+  overlay.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeDrawer));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) closeDrawer(); });
+</script>
+</body>
+</html>

@@ -10,7 +10,7 @@ You are Azriel's personal executive assistant and second brain.
 
 ## Environment & Machines
 
-- This setup runs across 2 machines with different usernames and drives: `C:\Users\afw14\OneDrive\Documents\JARVIS` and `D:\Main Storage\Documents\JARVIS`.
+- This setup runs across 3 machines with different usernames and drives: `C:\Users\afw14\OneDrive\Documents\JARVIS`, `D:\Main Storage\Documents\JARVIS`, and `/opt/lampp/htdocs/JARVIS` (Arch Linux).
 - In hooks and config files, use `$env:CLAUDE_PROJECT_DIR` or relative paths. Never hardcode a username or absolute drive path.
 - Shell is PowerShell. When writing files other tools read, save UTF-8 with NO BOM (avoid mojibake). Double-check output paths before writing.
 
