@@ -21,7 +21,6 @@ export type AdProps = {
   voiceover: string;
 };
 
-const TOTAL_FRAMES = 450;
 const EXIT_START = 400;
 
 export const AdBase: React.FC<AdProps> = ({
@@ -119,7 +118,7 @@ export const AdBase: React.FC<AdProps> = ({
   );
 
   return (
-    <AbsoluteFill style={{ background: theme.bg, overflow: "hidden", perspective: 800 }}>
+    <AbsoluteFill style={{ background: theme.green, overflow: "hidden", perspective: 800 }}>
       <Audio src={staticFile(voiceover)} />
 
       {/* Background portfolio panels — 3D slide in from sides */}
@@ -178,7 +177,7 @@ export const AdBase: React.FC<AdProps> = ({
           left: 0,
           width: 8,
           height: barHeight,
-          background: `linear-gradient(to bottom, ${theme.blue}, ${theme.blueDark})`,
+          background: `linear-gradient(to bottom, ${theme.bg}, ${theme.bg2})`,
         }}
       />
 
@@ -211,8 +210,8 @@ export const AdBase: React.FC<AdProps> = ({
           <span
             style={{
               display: "inline-block",
-              background: theme.blue,
-              color: "#fff",
+              background: theme.bg,
+              color: theme.green,
               fontSize: 22,
               fontWeight: 700,
               letterSpacing: 2,
@@ -262,7 +261,7 @@ export const AdBase: React.FC<AdProps> = ({
             fontFamily: "Segoe UI, Arial, sans-serif",
           }}
         >
-          <span style={{ color: theme.blue, fontSize: 72, fontWeight: 800, lineHeight: 1.1, letterSpacing: -1 }}>
+          <span style={{ color: theme.bg, fontSize: 72, fontWeight: 800, lineHeight: 1.1, letterSpacing: -1 }}>
             {headlineAccent}
           </span>
         </div>
@@ -295,8 +294,8 @@ export const AdBase: React.FC<AdProps> = ({
           <span
             style={{
               display: "inline-block",
-              background: theme.blue,
-              color: "#fff",
+              background: theme.bg,
+              color: theme.green,
               fontSize: 28,
               fontWeight: 700,
               padding: "22px 52px",

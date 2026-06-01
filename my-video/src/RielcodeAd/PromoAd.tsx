@@ -2,280 +2,267 @@ import React from "react";
 import {
   AbsoluteFill,
   Audio,
+  Easing,
   Img,
-  Sequence,
+  Series,
   interpolate,
   spring,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import { loadFont as loadSerif } from "@remotion/google-fonts/PlayfairDisplay";
+import { loadFont as loadSans } from "@remotion/google-fonts/Inter";
+import { theme, LOGO_PATH } from "./theme";
 
-const FONT = "Segoe UI, system-ui, sans-serif";
-const bg = "#0a0a0a";
-const blue = "#4f8ef7";
-const blueDark = "#1a5fd4";
-const white = "#ffffff";
+const { fontFamily: serif } = loadSerif("normal", { weights: ["500", "700"], subsets: ["latin"] });
+const { fontFamily: serifItalic } = loadSerif("italic", { weights: ["500", "700"], subsets: ["latin"] });
+const { fontFamily: sans } = loadSans("normal", { weights: ["400", "600", "700"], subsets: ["latin"] });
 
-const sp = (frame: number, fps: number, delay = 0) =>
-  spring({ frame: frame - delay, fps, config: { damping: 18, stiffness: 120 } });
+// Orientation drives layout. Same scenes, responsive sizing.
+export type Orientation = "portrait" | "square" | "landscape";
+export type PromoProps = { orientation: Orientation };
 
-// Animated gradient mesh + drifting blobs. Code-only, sits behind content.
-const BgMotion: React.FC<{ tint?: string }> = ({ tint = blue }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const t = frame / fps;
-  const blob = (x: number, y: number, ph: number, size: number, color: string) => ({
-    position: "absolute" as const,
-    width: size,
-    height: size,
-    borderRadius: "50%",
-    left: `${x + 6 * Math.sin(t * 0.7 + ph)}%`,
-    top: `${y + 6 * Math.cos(t * 0.5 + ph)}%`,
-    background: color,
-    filter: "blur(90px)",
-    opacity: 0.5,
-  });
-  return (
-    <AbsoluteFill style={{ overflow: "hidden" }}>
-      <div style={blob(10, 15, 0, 520, tint)} />
-      <div style={blob(60, 55, 2, 620, blueDark)} />
-      <div style={blob(35, 70, 4, 460, tint)} />
-    </AbsoluteFill>
-  );
-};
+const ease = Easing.bezier(0.16, 1, 0.3, 1);
 
-// CSS laptop mockup with auto-scrolling page inside the screen.
-const LaptopMockup: React.FC<{ src: string; scroll: number }> = ({ src, scroll }) => (
-  <div style={{ width: 560 }}>
-    <div
-      style={{
-        background: "#202028",
-        borderRadius: "18px 18px 6px 6px",
-        padding: 14,
-        boxShadow: "0 30px 70px rgba(0,0,0,0.55)",
-        border: "1px solid #33333d",
-      }}
-    >
-      <div
-        style={{
-          height: 330,
-          borderRadius: 8,
-          overflow: "hidden",
-          background: "#000",
-          position: "relative",
-        }}
-      >
-        <Img
-          src={src}
-          style={{
-            width: "100%",
-            display: "block",
-            position: "absolute",
-            top: 0,
-            transform: `translateY(${scroll}px)`,
-          }}
-        />
-      </div>
-    </div>
-    {/* laptop base */}
-    <div
-      style={{
-        width: 660,
-        height: 18,
-        marginLeft: -50,
-        background: "linear-gradient(#3a3a44,#1c1c22)",
-        borderRadius: "0 0 14px 14px",
-        boxShadow: "0 14px 24px rgba(0,0,0,0.5)",
-      }}
-    />
-  </div>
-);
-
-// CSS phone mockup with auto-scrolling page inside the screen.
-const PhoneMockup: React.FC<{ src: string; scroll: number }> = ({ src, scroll }) => (
-  <div
-    style={{
-      width: 200,
-      background: "#202028",
-      borderRadius: 34,
-      padding: 12,
-      boxShadow: "0 30px 70px rgba(0,0,0,0.55)",
-      border: "1px solid #33333d",
-    }}
-  >
-    <div
-      style={{
-        height: 400,
-        borderRadius: 24,
-        overflow: "hidden",
-        background: "#000",
-        position: "relative",
-      }}
-    >
-      <Img
-        src={src}
-        style={{
-          width: "100%",
-          display: "block",
-          position: "absolute",
-          top: 0,
-          transform: `translateY(${scroll}px)`,
-        }}
-      />
-      {/* notch */}
-      <div
-        style={{
-          position: "absolute",
-          top: 8,
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: 70,
-          height: 16,
-          borderRadius: 10,
-          background: "#000",
-        }}
-      />
-    </div>
-  </div>
-);
-
-const Scene1: React.FC = () => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const logoS = sp(frame, fps);
-  const logoOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: "clamp" });
-  const tagS = sp(frame, fps, 25);
-  const tagY = interpolate(tagS, [0, 1], [40, 0]);
-  const barH = interpolate(sp(frame, fps, 10), [0, 1], [0, 1080]);
-
-  return (
-    <AbsoluteFill style={{ background: bg, justifyContent: "center", alignItems: "center" }}>
-      <BgMotion />
-      <div style={{ position: "absolute", left: 0, top: 0, width: 12, height: barH, background: blue }} />
-      <Img
-        src={staticFile("rielcode-logo.png")}
-        style={{
-          width: 360,
-          transform: `scale(${logoS})`,
-          opacity: logoOpacity,
-          marginBottom: 36,
-        }}
-      />
-      <div
-        style={{
-          fontFamily: FONT,
-          color: white,
-          fontSize: 46,
-          fontWeight: 700,
-          opacity: tagS,
-          transform: `translateY(${tagY}px)`,
-          textAlign: "center",
-        }}
-      >
-        Professional Websites.
-        <br />
-        Built in 7 Days.
-      </div>
-    </AbsoluteFill>
-  );
-};
-
-const Scene2: React.FC = () => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const left = sp(frame, fps);
-  const right = sp(frame, fps, 8);
-  const textOpacity = interpolate(sp(frame, fps, 70), [0, 1], [0, 1]);
-
-  // Auto-scroll: ease through the page over the scene. CA tall ~ -560, ID tall ~ -700.
-  const prog = interpolate(frame, [20, 115], [0, 1], {
+// Premium reveal: fade + small rise, slow ease. No bouncy spring spam.
+const reveal = (frame: number, delay: number, dist = 28) => {
+  const t = interpolate(frame, [delay, delay + 22], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
+    easing: ease,
   });
-  // Cap scroll so image always covers the screen (no empty/black tail).
-  // CA img in 532px screen ≈ 532/1920*4655 ≈ 1290px tall → max scroll ≈ -758.
-  // ID img in 176px screen ≈ 176/1920*5826 ≈ 534px tall → max scroll ≈ -134.
-  const caScroll = interpolate(prog, [0, 1], [0, -420]);
-  const idScroll = interpolate(prog, [0, 1], [0, -120]);
+  return { opacity: t, y: interpolate(t, [0, 1], [dist, 0]) };
+};
+
+const sp = (frame: number, fps: number, delay = 0) =>
+  spring({ frame: frame - delay, fps, config: { damping: 22, stiffness: 90 }, durationInFrames: 30 });
+
+// Cream wordmark (transparent, lots of padding). Crop tight by scaling to width.
+// On cream scenes, sit it on a green pill so the cream mark stays visible.
+// On green scenes, render it bare.
+const LogoMark: React.FC<{ width?: number; bare?: boolean; opacity?: number }> = ({
+  width = 300,
+  bare = false,
+  opacity = 1,
+}) => {
+  const img = (
+    <Img src={LOGO_PATH} style={{ width, marginTop: -width * 0.18, marginBottom: -width * 0.18, display: "block" }} />
+  );
+  if (bare) return <div style={{ opacity }}>{img}</div>;
+  return (
+    <div
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        background: theme.green,
+        borderRadius: 8,
+        padding: "10px 22px",
+        opacity,
+      }}
+    >
+      {img}
+    </div>
+  );
+};
+
+// Thin growing rule — editorial accent.
+const Rule: React.FC<{ frame: number; delay: number; width: number }> = ({ frame, delay, width }) => {
+  const w = interpolate(frame, [delay, delay + 26], [0, width], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: ease,
+  });
+  return <div style={{ width: w, height: 3, background: theme.green, marginBottom: 28 }} />;
+};
+
+const layout = (o: Orientation) => {
+  switch (o) {
+    case "portrait":
+      return { pad: 96, h1: 96, body: 38, cta: 44, label: 28, stat: 96, statLabel: 24, dir: "column" as const, mockGap: 40 };
+    case "square":
+      return { pad: 88, h1: 92, body: 36, cta: 42, label: 26, stat: 88, statLabel: 24, dir: "column" as const, mockGap: 48 };
+    case "landscape":
+      return { pad: 110, h1: 84, body: 34, cta: 40, label: 24, stat: 80, statLabel: 22, dir: "row" as const, mockGap: 64 };
+  }
+};
+
+const Label: React.FC<{ children: React.ReactNode; frame: number; delay?: number }> = ({ children, frame, delay = 6 }) => {
+  const r = reveal(frame, delay, 14);
+  return (
+    <span
+      style={{
+        fontFamily: sans,
+        color: theme.green,
+        fontSize: 24,
+        fontWeight: 700,
+        letterSpacing: 4,
+        textTransform: "uppercase",
+        opacity: r.opacity,
+        transform: `translateY(${r.y}px)`,
+        marginBottom: 24,
+      }}
+    >
+      {children}
+    </span>
+  );
+};
+
+// SCENE 1 — Hook
+const Hook: React.FC<PromoProps> = ({ orientation }) => {
+  const frame = useCurrentFrame();
+  const L = layout(orientation);
+  const h1 = reveal(frame, 12);
+  const h2 = reveal(frame, 24);
+  const accent = reveal(frame, 40);
+  const logo = reveal(frame, 4, 10);
 
   return (
-    <AbsoluteFill style={{ background: bg, justifyContent: "center", alignItems: "center", perspective: 1400 }}>
-      <BgMotion />
-      <div style={{ display: "flex", gap: 60, alignItems: "center" }}>
-        <div
-          style={{
-            transform: `translateX(${interpolate(left, [0, 1], [-600, 0])}px) rotateY(${interpolate(left, [0, 1], [25, 6])}deg)`,
-            opacity: left,
-          }}
-        >
-          <LaptopMockup src={staticFile("parallaxnet-ca-20260529-210724.png")} scroll={caScroll} />
-        </div>
-        <div
-          style={{
-            transform: `translateX(${interpolate(right, [0, 1], [600, 0])}px) rotateY(${interpolate(right, [0, 1], [-25, -6])}deg)`,
-            opacity: right,
-          }}
-        >
-          <PhoneMockup src={staticFile("parallaxnet-id-20260529-210732.png")} scroll={idScroll} />
-        </div>
+    <AbsoluteFill style={{ background: theme.bg, justifyContent: "center", padding: L.pad }}>
+      <div style={{ opacity: logo.opacity, transform: `translateY(${logo.y}px)`, marginBottom: 44 }}>
+        <LogoMark width={240} />
       </div>
-      <div
-        style={{
-          fontFamily: FONT,
-          color: white,
-          fontSize: 44,
-          fontWeight: 700,
-          marginTop: 56,
-          opacity: textOpacity,
-        }}
-      >
-        Real clients. Real results.
+      <Label frame={frame}>Rielcode</Label>
+      <Rule frame={frame} delay={10} width={120} />
+      <div style={{ fontFamily: serif, color: theme.ink, fontSize: L.h1, fontWeight: 700, lineHeight: 1.05, letterSpacing: -1 }}>
+        <div style={{ opacity: h1.opacity, transform: `translateY(${h1.y}px)` }}>Your competitors</div>
+        <div style={{ opacity: h2.opacity, transform: `translateY(${h2.y}px)` }}>are online.</div>
+        <div
+          style={{
+            opacity: accent.opacity,
+            transform: `translateY(${accent.y}px)`,
+            fontFamily: serifItalic,
+            fontStyle: "italic",
+            color: theme.green,
+          }}
+        >
+          Are you?
+        </div>
       </div>
     </AbsoluteFill>
   );
 };
 
-const Scene3: React.FC = () => {
+// SCENE 2 — Proof (portfolio + stats)
+const StatBlock: React.FC<{ value: string; label: string; frame: number; delay: number; L: ReturnType<typeof layout> }> = ({
+  value,
+  label,
+  frame,
+  delay,
+  L,
+}) => {
+  const r = reveal(frame, delay, 20);
+  return (
+    <div style={{ opacity: r.opacity, transform: `translateY(${r.y}px)` }}>
+      <div style={{ fontFamily: serif, color: theme.green, fontSize: L.stat, fontWeight: 700, lineHeight: 1 }}>{value}</div>
+      <div style={{ fontFamily: sans, color: theme.muted, fontSize: L.statLabel, fontWeight: 600, letterSpacing: 1, marginTop: 8 }}>
+        {label}
+      </div>
+    </div>
+  );
+};
+
+const Proof: React.FC<PromoProps> = ({ orientation }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const items = ["Website in 7 days", "Mobile-ready & fast", "Free consultation"];
+  const L = layout(orientation);
+  const card = (delay: number) => {
+    const s = sp(frame, fps, delay);
+    return { opacity: s, transform: `translateY(${interpolate(s, [0, 1], [40, 0])}px)` };
+  };
+  // Browser-style preview cards: cap height, crop to top of the page.
+  const cardH = orientation === "portrait" ? 300 : orientation === "square" ? 240 : 300;
+  const Chrome: React.FC<{ src: string; style: React.CSSProperties }> = ({ src, style }) => (
+    <div style={{ ...style, borderRadius: 14, overflow: "hidden", border: `1px solid ${theme.border}`, background: theme.white }}>
+      <div style={{ height: 26, background: "#e3ddcf", display: "flex", alignItems: "center", gap: 6, paddingLeft: 14 }}>
+        {["#d98c7a", "#d9c47a", "#8fb98a"].map((c) => (
+          <div key={c} style={{ width: 10, height: 10, borderRadius: "50%", background: c }} />
+        ))}
+      </div>
+      <div style={{ height: cardH, overflow: "hidden" }}>
+        <Img src={src} style={{ width: "100%", display: "block", objectFit: "cover", objectPosition: "top" }} />
+      </div>
+    </div>
+  );
 
   return (
-    <AbsoluteFill style={{ background: bg, justifyContent: "center", alignItems: "center" }}>
-      <BgMotion />
-      <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+    <AbsoluteFill style={{ background: theme.bg2, justifyContent: "center", padding: L.pad }}>
+      <Label frame={frame}>Real Results</Label>
+      <Rule frame={frame} delay={8} width={120} />
+      <div
+        style={{
+          fontFamily: serif,
+          color: theme.ink,
+          fontSize: L.h1 * 0.62,
+          fontWeight: 700,
+          lineHeight: 1.1,
+          marginBottom: 40,
+          maxWidth: 900,
+        }}
+      >
+        Built for clients in <span style={{ fontFamily: serifItalic, fontStyle: "italic", color: theme.green }}>Canada</span> and{" "}
+        <span style={{ fontFamily: serifItalic, fontStyle: "italic", color: theme.green }}>Indonesia</span>.
+      </div>
+
+      <div style={{ display: "flex", gap: 24, marginBottom: 48 }}>
+        <Chrome src={staticFile("parallaxnet-ca-20260529-210724.png")} style={{ ...card(10), flex: 1 }} />
+        <Chrome src={staticFile("parallaxnet-id-20260529-210732.png")} style={{ ...card(20), flex: 1 }} />
+      </div>
+
+      <div style={{ display: "flex", gap: 64 }}>
+        <StatBlock value="5+" label="PROJECTS" frame={frame} delay={40} L={L} />
+        <StatBlock value="100%" label="DELIVERED" frame={frame} delay={50} L={L} />
+        <StatBlock value="<24h" label="REPLY TIME" frame={frame} delay={60} L={L} />
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// SCENE 3 — Offer (checklist)
+const Offer: React.FC<PromoProps> = ({ orientation }) => {
+  const frame = useCurrentFrame();
+  const L = layout(orientation);
+  const items = ["Website in 7 days", "Mobile-ready and fast", "Honest, affordable pricing"];
+  return (
+    <AbsoluteFill style={{ background: theme.bg, justifyContent: "center", padding: L.pad }}>
+      <Label frame={frame}>Why Rielcode</Label>
+      <Rule frame={frame} delay={8} width={120} />
+      <div
+        style={{
+          fontFamily: serif,
+          color: theme.ink,
+          fontSize: L.h1 * 0.62,
+          fontWeight: 700,
+          lineHeight: 1.1,
+          marginBottom: 52,
+        }}
+      >
+        Websites with <span style={{ fontFamily: serifItalic, fontStyle: "italic", color: theme.green }}>uncommon polish.</span>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 36 }}>
         {items.map((t, i) => {
-          const s = sp(frame, fps, i * 18);
+          const r = reveal(frame, 24 + i * 14, 30);
           return (
-            <div
-              key={t}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 24,
-                opacity: s,
-                transform: `translateX(${interpolate(s, [0, 1], [-60, 0])}px)`,
-              }}
-            >
+            <div key={t} style={{ display: "flex", alignItems: "center", gap: 26, opacity: r.opacity, transform: `translateX(${r.y}px)` }}>
               <div
                 style={{
-                  width: 52,
-                  height: 52,
+                  width: 56,
+                  height: 56,
                   borderRadius: "50%",
-                  background: blue,
-                  color: white,
+                  background: theme.green,
+                  color: theme.white,
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   fontSize: 30,
+                  fontFamily: sans,
                   fontWeight: 700,
-                  fontFamily: FONT,
+                  flexShrink: 0,
                 }}
               >
                 ✓
               </div>
-              <div style={{ fontFamily: FONT, color: white, fontSize: 40, fontWeight: 600 }}>{t}</div>
+              <div style={{ fontFamily: sans, color: theme.ink, fontSize: L.body + 6, fontWeight: 600 }}>{t}</div>
             </div>
           );
         })}
@@ -284,60 +271,95 @@ const Scene3: React.FC = () => {
   );
 };
 
-const Scene4: React.FC = () => {
+// SCENE 4 — CTA (green block, like site hero)
+const Cta: React.FC<PromoProps> = ({ orientation }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const L = layout(orientation);
   const s = sp(frame, fps);
-  const pulse = 1 + 0.03 * Math.sin((frame / fps) * Math.PI * 2 * 1.2);
+  const head = reveal(frame, 6);
+  const pulse = frame > 40 ? 1 + 0.02 * Math.sin((frame / fps) * Math.PI * 2) : 1;
 
   return (
     <AbsoluteFill
       style={{
-        background: `linear-gradient(135deg, ${blueDark} 0%, ${blue} 100%)`,
+        background: `linear-gradient(160deg, ${theme.green} 0%, ${theme.greenDark} 100%)`,
         justifyContent: "center",
-        alignItems: "center",
+        padding: L.pad,
       }}
     >
+      <div style={{ opacity: head.opacity, transform: `translateY(${head.y}px)`, marginBottom: 40 }}>
+        <LogoMark width={300} bare />
+      </div>
       <div
         style={{
-          fontFamily: FONT,
-          color: white,
-          fontSize: 80,
-          fontWeight: 800,
-          textAlign: "center",
-          opacity: s,
-          transform: `scale(${interpolate(s, [0, 1], [0.6, 1]) * pulse})`,
-          maxWidth: 880,
-          lineHeight: 1.1,
+          fontFamily: serif,
+          color: theme.white,
+          fontSize: L.h1,
+          fontWeight: 700,
+          lineHeight: 1.05,
+          letterSpacing: -1,
+          opacity: head.opacity,
+          transform: `translateY(${head.y}px)`,
+          marginBottom: 44,
         }}
       >
-        Get Your Free Consultation
+        Let&apos;s build it <span style={{ fontFamily: serifItalic, fontStyle: "italic" }}>well.</span>
       </div>
-      <Img
-        src={staticFile("rielcode-logo.png")}
-        style={{ position: "absolute", right: 48, bottom: 48, width: 180, opacity: s }}
-      />
+      <div style={{ transform: `scale(${interpolate(s, [0, 1], [0.85, 1]) * pulse})`, transformOrigin: "left center" }}>
+        <span
+          style={{
+            display: "inline-block",
+            background: theme.bg,
+            color: theme.green,
+            fontFamily: sans,
+            fontSize: L.cta,
+            fontWeight: 700,
+            padding: "22px 56px",
+            borderRadius: 8,
+          }}
+        >
+          Get your free consultation
+        </span>
+      </div>
+      <div
+        style={{
+          fontFamily: sans,
+          color: theme.white,
+          fontSize: L.label + 4,
+          fontWeight: 600,
+          letterSpacing: 1,
+          marginTop: 36,
+          opacity: interpolate(frame, [30, 50], [0, 0.9], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
+        }}
+      >
+        rielcode.com
+      </div>
     </AbsoluteFill>
   );
 };
 
-export const PromoAd: React.FC = () => {
+export const PROMO_DURATION = 420;
+
+export const PromoAd: React.FC<PromoProps> = ({ orientation }) => {
   return (
-    <AbsoluteFill style={{ background: bg }}>
+    <AbsoluteFill style={{ background: theme.bg }}>
       <Audio src={staticFile("vo-promo.mp3")} />
-      <Audio src={staticFile("music.mp3")} volume={0.18} />
-      <Sequence from={0} durationInFrames={90}>
-        <Scene1 />
-      </Sequence>
-      <Sequence from={90} durationInFrames={120}>
-        <Scene2 />
-      </Sequence>
-      <Sequence from={210} durationInFrames={130}>
-        <Scene3 />
-      </Sequence>
-      <Sequence from={340} durationInFrames={110}>
-        <Scene4 />
-      </Sequence>
+      <Audio src={staticFile("music.mp3")} volume={0.14} />
+      <Series>
+        <Series.Sequence durationInFrames={90} premountFor={30}>
+          <Hook orientation={orientation} />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={130} premountFor={30}>
+          <Proof orientation={orientation} />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={110} premountFor={30}>
+          <Offer orientation={orientation} />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={90} premountFor={30}>
+          <Cta orientation={orientation} />
+        </Series.Sequence>
+      </Series>
     </AbsoluteFill>
   );
 };
