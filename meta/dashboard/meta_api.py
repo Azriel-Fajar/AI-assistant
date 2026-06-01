@@ -70,7 +70,10 @@ def _fmt(iso, with_year=True):
         dt = datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone()
     except (ValueError, AttributeError):
         return iso or ""
-    return dt.strftime("%b %-d, %Y, %-I:%M %p" if with_year else "%b %-d, %-I:%M %p")
+    fmt = "%b {d}, %Y, {t}:%M %p" if with_year else "%b {d}, {t}:%M %p"
+    d = dt.day
+    h = dt.hour % 12 or 12
+    return dt.strftime(fmt).format(d=d, t=h)
 
 
 # --- Ads ---
