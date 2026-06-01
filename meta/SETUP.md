@@ -45,7 +45,7 @@ The token only offers permissions the System User actually has. Skip either step
 
 ## 6. Put the values in .env (NOT committed)
 
-Add to `/opt/lampp/htdocs/rielcode-laravel/.env` (already gitignored):
+Add to the JARVIS root `.env` (already gitignored). Copy `.env.example` and fill it in:
 
 ```
 META_ACCESS_TOKEN=your-system-user-token-here
@@ -66,6 +66,54 @@ You should see a table of campaigns with spend, impressions, clicks, CTR, and re
 ## Security
 - The token is a password to your ad account. It lives only in `.env`, which git ignores. Never paste it into chat, commit it, or share a screenshot of it.
 - If a token ever leaks, regenerate it in Business Settings -> System Users (step 4); the old one dies.
+
+## 8. The dashboard (ads + Messenger in one web page)
+
+`meta/dashboard/` is a small Flask app showing the ads table plus Facebook Page Messenger DMs.
+
+DMs need two extra keys in `.env`:
+
+```
+META_PAGE_ACCESS_TOKEN=your-page-access-token-here
+META_PAGE_ID=123456789
+```
+
+Page token needs `pages_messaging` + `pages_manage_metadata`. `META_PAGE_ID` is your numeric Facebook Page ID.
+
+Run it:
+
+```
+cd meta/dashboard
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+bash run.sh          # serves http://localhost:5000
+```
+
+Note: `run.sh` runs Flask without auto-reload. After editing a template or .py, restart it to see changes.
+
+## Setting up on another device (after git pull)
+
+`.env` and the Python `.venv/` are NOT in git. On a fresh clone:
+
+```
+git pull
+
+# 1. secrets
+cp .env.example .env
+# then edit .env and paste your real token values
+
+# 2. dashboard deps
+cd meta/dashboard
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+
+# 3. run
+bash run.sh                          # dashboard -> localhost:5000
+# the node scripts need no install (built-in modules only):
+cd ../.. && node meta/ads-report.mjs
+```
+
+That's it. The node scripts (`ads-report.mjs`, `dms-report.mjs`) have zero npm dependencies, so only `node` itself is required.
 
 Refs:
 - Insights API: https://developers.facebook.com/docs/marketing-api/insights/

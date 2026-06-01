@@ -36,7 +36,23 @@ def api_dms():
     return (jsonify(error=err), 502) if err else jsonify(dms)
 
 
+@app.route("/api/thread")
+def api_thread():
+    """Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,
+    falls back to name lookup for direct links."""
+    from flask import request
+
+    tid = request.args.get("id")
+    name = request.args.get("name", "")
+    if tid:
+        data, err = _safe(lambda: meta_api.get_thread_by_id(tid, name))
+    else:
+        data, err = _safe(lambda: meta_api.get_thread(name))
+    return (jsonify(error=err), 502) if err else jsonify(data)
+
+
 @app.route("/thread/<path:name>")
 def thread(name):
+    """Server-rendered fallback for shared/direct links (no id available)."""
     data, err = _safe(lambda: meta_api.get_thread(name))
     return render_template("thread.html", thread=data, error=err, name=name)

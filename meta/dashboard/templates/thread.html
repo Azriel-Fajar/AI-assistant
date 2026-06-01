@@ -5,8 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ name }} - Meta Dashboard</title>
 <style>
-  :root { --bg:#f7f7f5; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e6e6e2;
-          --accent:#2563eb; --you:#e7efff; --them:#fff; }
+  :root { --bg:#f4f5f7; --card:#fff; --ink:#14171f; --muted:#5b6470; --line:#e6e8ec;
+          --accent:#2f6df6; --you:#2f6df6; --you-ink:#fff; --them:#eef0f3; --them-ink:#14171f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e1117; --card:#171b22; --ink:#e8eaed; --muted:#9aa3af; --line:#262b33;
+            --accent:#5b8cff; --you:#2f6df6; --you-ink:#fff; --them:#232831; --them-ink:#e8eaed; }
+  }
   * { box-sizing: border-box; }
   body { margin:0; font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
          background:var(--bg); color:var(--ink); }
@@ -19,8 +23,9 @@
   .msg { max-width:78%; padding:9px 13px; border-radius:14px; margin:8px 0; border:1px solid var(--line);
          font-size:14px; }
   .msg .t { display:block; color:var(--muted); font-size:11px; margin-top:4px; }
-  .them { background:var(--them); margin-right:auto; border-top-left-radius:4px; }
-  .you  { background:var(--you); margin-left:auto; border-top-right-radius:4px; }
+  .them { background:var(--them); color:var(--them-ink); margin-right:auto; border-top-left-radius:4px; }
+  .you  { background:var(--you); color:var(--you-ink); border-color:transparent; margin-left:auto; border-top-right-radius:4px; }
+  .you .t { color:rgba(255,255,255,.75); }
   .err { background:#fff4e5; color:#92400e; padding:16px; border-radius:10px; }
 </style>
 </head>

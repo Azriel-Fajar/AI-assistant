@@ -1,5 +1,6 @@
 """Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms-report.mjs."""
 import json
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -8,6 +9,21 @@ from datetime import datetime
 from . import config
 
 BASE = "https://graph.facebook.com"
+
+# In-memory TTL cache. Graph data changes slowly; serving cached results makes
+# back-navigation and repeat chat clicks instant instead of a fresh API round-trip.
+CACHE_TTL = 60  # seconds
+_cache = {}  # key -> (expires_at, value)
+
+
+def _cached(key, ttl, produce):
+    now = time.time()
+    hit = _cache.get(key)
+    if hit and hit[0] > now:
+        return hit[1]
+    value = produce()
+    _cache[key] = (now + ttl, value)
+    return value
 
 
 class MetaError(Exception):
@@ -76,6 +92,10 @@ def _results(actions):
 
 
 def get_ads():
+    return _cached("ads", CACHE_TTL, _get_ads)
+
+
+def _get_ads():
     if not config.TOKEN:
         _missing("META_ACCESS_TOKEN", "Follow meta/SETUP.md to create a System User token.")
     if not config.ACCOUNT_ID or config.ACCOUNT_ID == "act_":
@@ -129,6 +149,10 @@ def _require_page():
 
 
 def get_dms(limit=20):
+    return _cached("dms", CACHE_TTL, lambda: _get_dms(limit))
+
+
+def _get_dms(limit):
     _require_page()
     convo = _get(
         _url(
@@ -160,6 +184,7 @@ def get_dms(limit=20):
 
         threads.append(
             {
+                "id": t["id"],
                 "name": sender,
                 "updated": _fmt(t.get("updated_time")),
                 "msg_count": t.get("message_count") or 0,
@@ -170,8 +195,40 @@ def get_dms(limit=20):
     return {"threads": threads, "page": config.PAGE_ID}
 
 
+def _fetch_messages(tid, sender):
+    """Ordered (oldest-first) message history for a known conversation id."""
+    raw = _get(
+        _url(
+            f"{tid}/messages",
+            {"fields": "message,from,created_time,attachments", "limit": 50, "access_token": config.PAGE_TOKEN},
+        )
+    ).get("data", [])
+    messages = []
+    for m in reversed(raw):  # oldest first
+        from_name = (m.get("from") or {}).get("name") or ""
+        messages.append(
+            {
+                "time": _fmt(m.get("created_time"), with_year=False),
+                "direction": "[Them]" if from_name == sender else "[You]",
+                "text": m.get("message") or ("(attachment)" if m.get("attachments") else "(empty)"),
+            }
+        )
+    return messages
+
+
+def get_thread_by_id(tid, name):
+    """Fast path: messages for a conversation id already known from the inbox list.
+    Skips the re-fetch-all-conversations scan that get_thread(name) needs."""
+    return _cached(
+        f"thread:{tid}",
+        CACHE_TTL,
+        lambda: (_require_page(), {"name": name, "messages": _fetch_messages(tid, name)})[1],
+    )
+
+
 def get_thread(name):
-    """Full ordered (oldest-first) message history for the first thread matching `name`."""
+    """Full ordered (oldest-first) message history for the first thread matching `name`.
+    Fallback for direct/shared links that carry no conversation id."""
     _require_page()
     needle = (name or "").lower()
     convo = _get(
@@ -185,21 +242,5 @@ def get_thread(name):
         sender = next((p.get("name") for p in parts if p.get("id") != config.PAGE_ID), None) or "(unknown)"
         if needle not in sender.lower():
             continue
-        raw = _get(
-            _url(
-                f"{t['id']}/messages",
-                {"fields": "message,from,created_time,attachments", "limit": 50, "access_token": config.PAGE_TOKEN},
-            )
-        ).get("data", [])
-        messages = []
-        for m in reversed(raw):  # oldest first
-            from_name = (m.get("from") or {}).get("name") or ""
-            messages.append(
-                {
-                    "time": _fmt(m.get("created_time"), with_year=False),
-                    "direction": "[Them]" if from_name == sender else "[You]",
-                    "text": m.get("message") or ("(attachment)" if m.get("attachments") else "(empty)"),
-                }
-            )
-        return {"name": sender, "updated": _fmt(t.get("updated_time")), "messages": messages}
+        return {"name": sender, "updated": _fmt(t.get("updated_time")), "messages": _fetch_messages(t["id"], sender)}
     raise MetaError(f'No conversation found matching "{name}".')
