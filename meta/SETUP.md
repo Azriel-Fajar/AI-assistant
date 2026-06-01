@@ -91,6 +91,22 @@ bash run.sh          # serves http://localhost:5000
 
 Note: `run.sh` runs Flask without auto-reload. After editing a template or .py, restart it to see changes.
 
+## 9. Sync Messenger conversations to client files
+
+`node meta/dms-sync.mjs` writes one markdown file per client to `meta/clients/`
+(full message history, oldest-first) plus an `index.md` roster. Re-run any time
+to refresh; new clients get new files automatically. These files are committed so
+the assistant can read your past conversations on any device.
+
+```
+node meta/dms-sync.mjs
+```
+
+Token note: the conversations endpoint needs a **Page** access token, not a User
+token. If you only have a User token, the script will error with "must be called
+with a Page Access Token". Get the Page token from `/me/accounts` (the System User
+token route in steps 2-4 above gives a non-expiring Page token directly).
+
 ## Setting up on another device (after git pull)
 
 `.env` and the Python `.venv/` are NOT in git. On a fresh clone:

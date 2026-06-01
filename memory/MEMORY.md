@@ -11,3 +11,4 @@
 - [Subnetting Reference](reference_subnetting.md) -- IPv4 prefix/mask/borrowing formulas, common prefix table, block size calculation
 - [Claude Code Mastery](reference_claude_code_mastery.md) -- Opus 4.8 prompting + agentic best practices; full guide in references/, coached via /claude-coach
 - [Meta Ads WA Lead Gen](project_meta_ads_wa_leadgen.md) -- active campaign in learning, don't edit till ~Jun 5; objective mismatch (clicks vs WA msgs), fix = new campaign
+- [Messenger Client History](project_messenger_client_history.md) -- client DMs synced to meta/clients/; read them when asked about a lead, refresh via node meta/dms-sync.mjs
