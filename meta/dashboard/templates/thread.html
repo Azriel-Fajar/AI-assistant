@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ name }} - Meta Dashboard</title>
+<style>
+  :root { --bg:#f7f7f5; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e6e6e2;
+          --accent:#2563eb; --you:#e7efff; --them:#fff; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         background:var(--bg); color:var(--ink); }
+  header { max-width:760px; margin:0 auto; padding:20px 24px; display:flex; align-items:baseline;
+           justify-content:space-between; gap:12px; }
+  h1 { font-size:18px; margin:0; }
+  a.back { color:var(--accent); text-decoration:none; font-size:14px; }
+  .sub { color:var(--muted); font-size:13px; }
+  main { max-width:760px; margin:0 auto; padding:0 24px 48px; }
+  .msg { max-width:78%; padding:9px 13px; border-radius:14px; margin:8px 0; border:1px solid var(--line);
+         font-size:14px; }
+  .msg .t { display:block; color:var(--muted); font-size:11px; margin-top:4px; }
+  .them { background:var(--them); margin-right:auto; border-top-left-radius:4px; }
+  .you  { background:var(--you); margin-left:auto; border-top-right-radius:4px; }
+  .err { background:#fff4e5; color:#92400e; padding:16px; border-radius:10px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>{% if thread %}{{ thread.name }}{% else %}{{ name }}{% endif %}</h1>
+    {% if thread %}<div class="sub">Last active {{ thread.updated }}</div>{% endif %}
+  </div>
+  <a class="back" href="{{ url_for('index') }}">&larr; Back</a>
+</header>
+<main>
+  {% if error %}
+    <div class="err">{{ error }}</div>
+  {% else %}
+    {% for m in thread.messages %}
+      <div class="msg {{ 'you' if m.direction == '[You]' else 'them' }}">
+        {{ m.text }}
+        <span class="t">{{ m.time }}</span>
+      </div>
+    {% endfor %}
+  {% endif %}
+</main>
+</body>
+</html>

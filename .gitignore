@@ -7,3 +7,5 @@ playwright-report/
 test-results/
 .claude/worktrees/
 .pw-profile/
+meta/dashboard/.venv/
+__pycache__/
