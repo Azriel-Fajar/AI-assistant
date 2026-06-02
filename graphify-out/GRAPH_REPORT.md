@@ -1,13 +1,18 @@
-# Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-01)
+# Graph Report - JARVIS  (2026-06-02)
 
 ## Corpus Check
-- 94 files · ~2,548,165 words
+- 414 files · ~3,659,447 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2356 nodes · 2434 edges · 197 communities detected
-- Extraction: 95% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 107 edges (avg confidence: 0.79)
+- 4410 nodes · 4685 edges · 500 communities (438 shown, 62 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 109 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `1f237d07`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
@@ -118,7 +123,6 @@
 - [[_COMMUNITY_Community 105|Community 105]]
 - [[_COMMUNITY_Community 106|Community 106]]
 - [[_COMMUNITY_Community 107|Community 107]]
-- [[_COMMUNITY_Community 108|Community 108]]
 - [[_COMMUNITY_Community 109|Community 109]]
 - [[_COMMUNITY_Community 110|Community 110]]
 - [[_COMMUNITY_Community 111|Community 111]]
@@ -133,73 +137,19 @@
 - [[_COMMUNITY_Community 120|Community 120]]
 - [[_COMMUNITY_Community 121|Community 121]]
 - [[_COMMUNITY_Community 122|Community 122]]
-- [[_COMMUNITY_Community 123|Community 123]]
-- [[_COMMUNITY_Community 124|Community 124]]
-- [[_COMMUNITY_Community 125|Community 125]]
 - [[_COMMUNITY_Community 126|Community 126]]
-- [[_COMMUNITY_Community 127|Community 127]]
-- [[_COMMUNITY_Community 128|Community 128]]
 - [[_COMMUNITY_Community 129|Community 129]]
 - [[_COMMUNITY_Community 130|Community 130]]
 - [[_COMMUNITY_Community 131|Community 131]]
 - [[_COMMUNITY_Community 132|Community 132]]
 - [[_COMMUNITY_Community 133|Community 133]]
-- [[_COMMUNITY_Community 134|Community 134]]
-- [[_COMMUNITY_Community 135|Community 135]]
-- [[_COMMUNITY_Community 136|Community 136]]
-- [[_COMMUNITY_Community 137|Community 137]]
-- [[_COMMUNITY_Community 138|Community 138]]
-- [[_COMMUNITY_Community 139|Community 139]]
-- [[_COMMUNITY_Community 140|Community 140]]
-- [[_COMMUNITY_Community 141|Community 141]]
-- [[_COMMUNITY_Community 142|Community 142]]
-- [[_COMMUNITY_Community 143|Community 143]]
-- [[_COMMUNITY_Community 144|Community 144]]
-- [[_COMMUNITY_Community 145|Community 145]]
 - [[_COMMUNITY_Community 146|Community 146]]
-- [[_COMMUNITY_Community 147|Community 147]]
-- [[_COMMUNITY_Community 148|Community 148]]
-- [[_COMMUNITY_Community 149|Community 149]]
-- [[_COMMUNITY_Community 150|Community 150]]
-- [[_COMMUNITY_Community 151|Community 151]]
-- [[_COMMUNITY_Community 152|Community 152]]
-- [[_COMMUNITY_Community 153|Community 153]]
-- [[_COMMUNITY_Community 154|Community 154]]
-- [[_COMMUNITY_Community 155|Community 155]]
-- [[_COMMUNITY_Community 156|Community 156]]
-- [[_COMMUNITY_Community 157|Community 157]]
-- [[_COMMUNITY_Community 158|Community 158]]
-- [[_COMMUNITY_Community 159|Community 159]]
-- [[_COMMUNITY_Community 160|Community 160]]
-- [[_COMMUNITY_Community 161|Community 161]]
-- [[_COMMUNITY_Community 162|Community 162]]
-- [[_COMMUNITY_Community 163|Community 163]]
-- [[_COMMUNITY_Community 164|Community 164]]
-- [[_COMMUNITY_Community 165|Community 165]]
-- [[_COMMUNITY_Community 166|Community 166]]
-- [[_COMMUNITY_Community 167|Community 167]]
-- [[_COMMUNITY_Community 168|Community 168]]
-- [[_COMMUNITY_Community 169|Community 169]]
 - [[_COMMUNITY_Community 170|Community 170]]
-- [[_COMMUNITY_Community 171|Community 171]]
-- [[_COMMUNITY_Community 172|Community 172]]
-- [[_COMMUNITY_Community 173|Community 173]]
-- [[_COMMUNITY_Community 174|Community 174]]
-- [[_COMMUNITY_Community 175|Community 175]]
-- [[_COMMUNITY_Community 176|Community 176]]
-- [[_COMMUNITY_Community 177|Community 177]]
-- [[_COMMUNITY_Community 178|Community 178]]
-- [[_COMMUNITY_Community 179|Community 179]]
-- [[_COMMUNITY_Community 180|Community 180]]
-- [[_COMMUNITY_Community 181|Community 181]]
-- [[_COMMUNITY_Community 182|Community 182]]
 - [[_COMMUNITY_Community 183|Community 183]]
 - [[_COMMUNITY_Community 184|Community 184]]
 - [[_COMMUNITY_Community 185|Community 185]]
 - [[_COMMUNITY_Community 186|Community 186]]
 - [[_COMMUNITY_Community 187|Community 187]]
-- [[_COMMUNITY_Community 188|Community 188]]
-- [[_COMMUNITY_Community 189|Community 189]]
 - [[_COMMUNITY_Community 190|Community 190]]
 - [[_COMMUNITY_Community 191|Community 191]]
 - [[_COMMUNITY_Community 192|Community 192]]
@@ -207,30 +157,301 @@
 - [[_COMMUNITY_Community 194|Community 194]]
 - [[_COMMUNITY_Community 195|Community 195]]
 - [[_COMMUNITY_Community 196|Community 196]]
+- [[_COMMUNITY_Community 197|Community 197]]
+- [[_COMMUNITY_Community 198|Community 198]]
+- [[_COMMUNITY_Community 199|Community 199]]
+- [[_COMMUNITY_Community 200|Community 200]]
+- [[_COMMUNITY_Community 201|Community 201]]
+- [[_COMMUNITY_Community 202|Community 202]]
+- [[_COMMUNITY_Community 203|Community 203]]
+- [[_COMMUNITY_Community 204|Community 204]]
+- [[_COMMUNITY_Community 205|Community 205]]
+- [[_COMMUNITY_Community 206|Community 206]]
+- [[_COMMUNITY_Community 207|Community 207]]
+- [[_COMMUNITY_Community 208|Community 208]]
+- [[_COMMUNITY_Community 209|Community 209]]
+- [[_COMMUNITY_Community 210|Community 210]]
+- [[_COMMUNITY_Community 211|Community 211]]
+- [[_COMMUNITY_Community 212|Community 212]]
+- [[_COMMUNITY_Community 213|Community 213]]
+- [[_COMMUNITY_Community 214|Community 214]]
+- [[_COMMUNITY_Community 215|Community 215]]
+- [[_COMMUNITY_Community 216|Community 216]]
+- [[_COMMUNITY_Community 217|Community 217]]
+- [[_COMMUNITY_Community 218|Community 218]]
+- [[_COMMUNITY_Community 219|Community 219]]
+- [[_COMMUNITY_Community 220|Community 220]]
+- [[_COMMUNITY_Community 221|Community 221]]
+- [[_COMMUNITY_Community 222|Community 222]]
+- [[_COMMUNITY_Community 223|Community 223]]
+- [[_COMMUNITY_Community 224|Community 224]]
+- [[_COMMUNITY_Community 225|Community 225]]
+- [[_COMMUNITY_Community 226|Community 226]]
+- [[_COMMUNITY_Community 227|Community 227]]
+- [[_COMMUNITY_Community 228|Community 228]]
+- [[_COMMUNITY_Community 229|Community 229]]
+- [[_COMMUNITY_Community 230|Community 230]]
+- [[_COMMUNITY_Community 231|Community 231]]
+- [[_COMMUNITY_Community 232|Community 232]]
+- [[_COMMUNITY_Community 233|Community 233]]
+- [[_COMMUNITY_Community 234|Community 234]]
+- [[_COMMUNITY_Community 235|Community 235]]
+- [[_COMMUNITY_Community 236|Community 236]]
+- [[_COMMUNITY_Community 237|Community 237]]
+- [[_COMMUNITY_Community 238|Community 238]]
+- [[_COMMUNITY_Community 239|Community 239]]
+- [[_COMMUNITY_Community 240|Community 240]]
+- [[_COMMUNITY_Community 241|Community 241]]
+- [[_COMMUNITY_Community 242|Community 242]]
+- [[_COMMUNITY_Community 243|Community 243]]
+- [[_COMMUNITY_Community 244|Community 244]]
+- [[_COMMUNITY_Community 245|Community 245]]
+- [[_COMMUNITY_Community 246|Community 246]]
+- [[_COMMUNITY_Community 247|Community 247]]
+- [[_COMMUNITY_Community 248|Community 248]]
+- [[_COMMUNITY_Community 249|Community 249]]
+- [[_COMMUNITY_Community 250|Community 250]]
+- [[_COMMUNITY_Community 251|Community 251]]
+- [[_COMMUNITY_Community 252|Community 252]]
+- [[_COMMUNITY_Community 253|Community 253]]
+- [[_COMMUNITY_Community 254|Community 254]]
+- [[_COMMUNITY_Community 255|Community 255]]
+- [[_COMMUNITY_Community 256|Community 256]]
+- [[_COMMUNITY_Community 257|Community 257]]
+- [[_COMMUNITY_Community 258|Community 258]]
+- [[_COMMUNITY_Community 259|Community 259]]
+- [[_COMMUNITY_Community 260|Community 260]]
+- [[_COMMUNITY_Community 261|Community 261]]
+- [[_COMMUNITY_Community 262|Community 262]]
+- [[_COMMUNITY_Community 263|Community 263]]
+- [[_COMMUNITY_Community 264|Community 264]]
+- [[_COMMUNITY_Community 265|Community 265]]
+- [[_COMMUNITY_Community 266|Community 266]]
+- [[_COMMUNITY_Community 267|Community 267]]
+- [[_COMMUNITY_Community 268|Community 268]]
+- [[_COMMUNITY_Community 269|Community 269]]
+- [[_COMMUNITY_Community 270|Community 270]]
+- [[_COMMUNITY_Community 271|Community 271]]
+- [[_COMMUNITY_Community 272|Community 272]]
+- [[_COMMUNITY_Community 273|Community 273]]
+- [[_COMMUNITY_Community 274|Community 274]]
+- [[_COMMUNITY_Community 275|Community 275]]
+- [[_COMMUNITY_Community 276|Community 276]]
+- [[_COMMUNITY_Community 277|Community 277]]
+- [[_COMMUNITY_Community 278|Community 278]]
+- [[_COMMUNITY_Community 279|Community 279]]
+- [[_COMMUNITY_Community 280|Community 280]]
+- [[_COMMUNITY_Community 281|Community 281]]
+- [[_COMMUNITY_Community 282|Community 282]]
+- [[_COMMUNITY_Community 283|Community 283]]
+- [[_COMMUNITY_Community 284|Community 284]]
+- [[_COMMUNITY_Community 285|Community 285]]
+- [[_COMMUNITY_Community 286|Community 286]]
+- [[_COMMUNITY_Community 287|Community 287]]
+- [[_COMMUNITY_Community 288|Community 288]]
+- [[_COMMUNITY_Community 289|Community 289]]
+- [[_COMMUNITY_Community 290|Community 290]]
+- [[_COMMUNITY_Community 291|Community 291]]
+- [[_COMMUNITY_Community 292|Community 292]]
+- [[_COMMUNITY_Community 293|Community 293]]
+- [[_COMMUNITY_Community 294|Community 294]]
+- [[_COMMUNITY_Community 295|Community 295]]
+- [[_COMMUNITY_Community 296|Community 296]]
+- [[_COMMUNITY_Community 297|Community 297]]
+- [[_COMMUNITY_Community 298|Community 298]]
+- [[_COMMUNITY_Community 299|Community 299]]
+- [[_COMMUNITY_Community 300|Community 300]]
+- [[_COMMUNITY_Community 301|Community 301]]
+- [[_COMMUNITY_Community 302|Community 302]]
+- [[_COMMUNITY_Community 303|Community 303]]
+- [[_COMMUNITY_Community 304|Community 304]]
+- [[_COMMUNITY_Community 305|Community 305]]
+- [[_COMMUNITY_Community 306|Community 306]]
+- [[_COMMUNITY_Community 307|Community 307]]
+- [[_COMMUNITY_Community 308|Community 308]]
+- [[_COMMUNITY_Community 309|Community 309]]
+- [[_COMMUNITY_Community 310|Community 310]]
+- [[_COMMUNITY_Community 311|Community 311]]
+- [[_COMMUNITY_Community 312|Community 312]]
+- [[_COMMUNITY_Community 313|Community 313]]
+- [[_COMMUNITY_Community 314|Community 314]]
+- [[_COMMUNITY_Community 315|Community 315]]
+- [[_COMMUNITY_Community 316|Community 316]]
+- [[_COMMUNITY_Community 317|Community 317]]
+- [[_COMMUNITY_Community 318|Community 318]]
+- [[_COMMUNITY_Community 319|Community 319]]
+- [[_COMMUNITY_Community 320|Community 320]]
+- [[_COMMUNITY_Community 321|Community 321]]
+- [[_COMMUNITY_Community 322|Community 322]]
+- [[_COMMUNITY_Community 323|Community 323]]
+- [[_COMMUNITY_Community 324|Community 324]]
+- [[_COMMUNITY_Community 325|Community 325]]
+- [[_COMMUNITY_Community 326|Community 326]]
+- [[_COMMUNITY_Community 327|Community 327]]
+- [[_COMMUNITY_Community 328|Community 328]]
+- [[_COMMUNITY_Community 329|Community 329]]
+- [[_COMMUNITY_Community 330|Community 330]]
+- [[_COMMUNITY_Community 331|Community 331]]
+- [[_COMMUNITY_Community 332|Community 332]]
+- [[_COMMUNITY_Community 333|Community 333]]
+- [[_COMMUNITY_Community 334|Community 334]]
+- [[_COMMUNITY_Community 335|Community 335]]
+- [[_COMMUNITY_Community 336|Community 336]]
+- [[_COMMUNITY_Community 337|Community 337]]
+- [[_COMMUNITY_Community 338|Community 338]]
+- [[_COMMUNITY_Community 339|Community 339]]
+- [[_COMMUNITY_Community 340|Community 340]]
+- [[_COMMUNITY_Community 341|Community 341]]
+- [[_COMMUNITY_Community 342|Community 342]]
+- [[_COMMUNITY_Community 343|Community 343]]
+- [[_COMMUNITY_Community 344|Community 344]]
+- [[_COMMUNITY_Community 345|Community 345]]
+- [[_COMMUNITY_Community 346|Community 346]]
+- [[_COMMUNITY_Community 347|Community 347]]
+- [[_COMMUNITY_Community 348|Community 348]]
+- [[_COMMUNITY_Community 349|Community 349]]
+- [[_COMMUNITY_Community 350|Community 350]]
+- [[_COMMUNITY_Community 351|Community 351]]
+- [[_COMMUNITY_Community 352|Community 352]]
+- [[_COMMUNITY_Community 353|Community 353]]
+- [[_COMMUNITY_Community 354|Community 354]]
+- [[_COMMUNITY_Community 355|Community 355]]
+- [[_COMMUNITY_Community 356|Community 356]]
+- [[_COMMUNITY_Community 357|Community 357]]
+- [[_COMMUNITY_Community 358|Community 358]]
+- [[_COMMUNITY_Community 359|Community 359]]
+- [[_COMMUNITY_Community 360|Community 360]]
+- [[_COMMUNITY_Community 361|Community 361]]
+- [[_COMMUNITY_Community 362|Community 362]]
+- [[_COMMUNITY_Community 363|Community 363]]
+- [[_COMMUNITY_Community 364|Community 364]]
+- [[_COMMUNITY_Community 365|Community 365]]
+- [[_COMMUNITY_Community 366|Community 366]]
+- [[_COMMUNITY_Community 367|Community 367]]
+- [[_COMMUNITY_Community 368|Community 368]]
+- [[_COMMUNITY_Community 369|Community 369]]
+- [[_COMMUNITY_Community 370|Community 370]]
+- [[_COMMUNITY_Community 371|Community 371]]
+- [[_COMMUNITY_Community 372|Community 372]]
+- [[_COMMUNITY_Community 373|Community 373]]
+- [[_COMMUNITY_Community 374|Community 374]]
+- [[_COMMUNITY_Community 375|Community 375]]
+- [[_COMMUNITY_Community 376|Community 376]]
+- [[_COMMUNITY_Community 377|Community 377]]
+- [[_COMMUNITY_Community 378|Community 378]]
+- [[_COMMUNITY_Community 379|Community 379]]
+- [[_COMMUNITY_Community 380|Community 380]]
+- [[_COMMUNITY_Community 381|Community 381]]
+- [[_COMMUNITY_Community 382|Community 382]]
+- [[_COMMUNITY_Community 383|Community 383]]
+- [[_COMMUNITY_Community 384|Community 384]]
+- [[_COMMUNITY_Community 385|Community 385]]
+- [[_COMMUNITY_Community 386|Community 386]]
+- [[_COMMUNITY_Community 387|Community 387]]
+- [[_COMMUNITY_Community 388|Community 388]]
+- [[_COMMUNITY_Community 389|Community 389]]
+- [[_COMMUNITY_Community 390|Community 390]]
+- [[_COMMUNITY_Community 391|Community 391]]
+- [[_COMMUNITY_Community 392|Community 392]]
+- [[_COMMUNITY_Community 393|Community 393]]
+- [[_COMMUNITY_Community 394|Community 394]]
+- [[_COMMUNITY_Community 395|Community 395]]
+- [[_COMMUNITY_Community 396|Community 396]]
+- [[_COMMUNITY_Community 397|Community 397]]
+- [[_COMMUNITY_Community 398|Community 398]]
+- [[_COMMUNITY_Community 399|Community 399]]
+- [[_COMMUNITY_Community 400|Community 400]]
+- [[_COMMUNITY_Community 401|Community 401]]
+- [[_COMMUNITY_Community 402|Community 402]]
+- [[_COMMUNITY_Community 403|Community 403]]
+- [[_COMMUNITY_Community 404|Community 404]]
+- [[_COMMUNITY_Community 405|Community 405]]
+- [[_COMMUNITY_Community 406|Community 406]]
+- [[_COMMUNITY_Community 407|Community 407]]
+- [[_COMMUNITY_Community 408|Community 408]]
+- [[_COMMUNITY_Community 409|Community 409]]
+- [[_COMMUNITY_Community 410|Community 410]]
+- [[_COMMUNITY_Community 411|Community 411]]
+- [[_COMMUNITY_Community 412|Community 412]]
+- [[_COMMUNITY_Community 413|Community 413]]
+- [[_COMMUNITY_Community 414|Community 414]]
+- [[_COMMUNITY_Community 415|Community 415]]
+- [[_COMMUNITY_Community 416|Community 416]]
+- [[_COMMUNITY_Community 417|Community 417]]
+- [[_COMMUNITY_Community 418|Community 418]]
+- [[_COMMUNITY_Community 419|Community 419]]
+- [[_COMMUNITY_Community 420|Community 420]]
+- [[_COMMUNITY_Community 421|Community 421]]
+- [[_COMMUNITY_Community 422|Community 422]]
+- [[_COMMUNITY_Community 423|Community 423]]
+- [[_COMMUNITY_Community 424|Community 424]]
+- [[_COMMUNITY_Community 425|Community 425]]
+- [[_COMMUNITY_Community 426|Community 426]]
+- [[_COMMUNITY_Community 427|Community 427]]
+- [[_COMMUNITY_Community 428|Community 428]]
+- [[_COMMUNITY_Community 429|Community 429]]
+- [[_COMMUNITY_Community 430|Community 430]]
+- [[_COMMUNITY_Community 431|Community 431]]
+- [[_COMMUNITY_Community 432|Community 432]]
+- [[_COMMUNITY_Community 433|Community 433]]
+- [[_COMMUNITY_Community 434|Community 434]]
+- [[_COMMUNITY_Community 435|Community 435]]
+- [[_COMMUNITY_Community 436|Community 436]]
+- [[_COMMUNITY_Community 437|Community 437]]
+- [[_COMMUNITY_Community 438|Community 438]]
+- [[_COMMUNITY_Community 439|Community 439]]
+- [[_COMMUNITY_Community 440|Community 440]]
+- [[_COMMUNITY_Community 441|Community 441]]
+- [[_COMMUNITY_Community 442|Community 442]]
+- [[_COMMUNITY_Community 443|Community 443]]
+- [[_COMMUNITY_Community 444|Community 444]]
+- [[_COMMUNITY_Community 445|Community 445]]
+- [[_COMMUNITY_Community 446|Community 446]]
+- [[_COMMUNITY_Community 447|Community 447]]
+- [[_COMMUNITY_Community 448|Community 448]]
+- [[_COMMUNITY_Community 449|Community 449]]
+- [[_COMMUNITY_Community 450|Community 450]]
+- [[_COMMUNITY_Community 451|Community 451]]
+- [[_COMMUNITY_Community 452|Community 452]]
+- [[_COMMUNITY_Community 453|Community 453]]
+- [[_COMMUNITY_Community 454|Community 454]]
+- [[_COMMUNITY_Community 455|Community 455]]
+- [[_COMMUNITY_Community 456|Community 456]]
+- [[_COMMUNITY_Community 457|Community 457]]
+- [[_COMMUNITY_Community 458|Community 458]]
+- [[_COMMUNITY_Community 459|Community 459]]
+- [[_COMMUNITY_Community 491|Community 491]]
+- [[_COMMUNITY_Community 492|Community 492]]
+- [[_COMMUNITY_Community 493|Community 493]]
+- [[_COMMUNITY_Community 494|Community 494]]
+- [[_COMMUNITY_Community 495|Community 495]]
+- [[_COMMUNITY_Community 496|Community 496]]
+- [[_COMMUNITY_Community 497|Community 497]]
+- [[_COMMUNITY_Community 498|Community 498]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
-2. `Design Engineering` - 17 edges
-3. `UI Styling Skill` - 17 edges
-4. `get()` - 16 edges
+2. `Azriel's Executive Assistant` - 17 edges
+3. `Design Engineering` - 17 edges
+4. `UI Styling Skill` - 17 edges
 5. `Figma CLI Implementation Plan` - 16 edges
-6. `create_homework_events()` - 15 edges
+6. `get()` - 16 edges
 7. `pay.rielcode.com Implementation Plan` - 15 edges
-8. `Design` - 14 edges
-9. `YouTube CLI Implementation Plan` - 14 edges
-10. `Google CLI Design Spec` - 14 edges
+8. `create_homework_events()` - 15 edges
+9. `Subnet Mask and Prefix: How They Work` - 14 edges
+10. `Design` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Instagram Content Skill` --references--> `Rielcode Website (portfolio.rielcode.com)`  [EXTRACTED]
   .claude/skills/instagram-content/SKILL.md → screenshots/rielcode-mobile-top-20260511.png
-- `_insert_event()` --calls--> `get()`  [INFERRED]
-  homework-bot\gcal.py → C:\Users\afw14\OneDrive\Documents\JARVIS\scripts\playwright\yt-transcript-auth.js
-- `parse_homework()` --calls--> `test_parse_day_name()`  [INFERRED]
-  homework-bot\homework_parser.py → homework-bot\tests\test_parser.py
-- `parse_homework()` --calls--> `test_parse_next_monday()`  [INFERRED]
-  homework-bot\homework_parser.py → homework-bot\tests\test_parser.py
-- `parse_homework()` --calls--> `test_parse_explicit_date()`  [INFERRED]
-  homework-bot\homework_parser.py → homework-bot\tests\test_parser.py
+- `Rielcode` --rationale_for--> `Lead Generation System`  [INFERRED]
+  context/about-business.md → projects/rielcode-growth-plan/plan.md
+- `Salatiga Cafe Leads` --conceptually_related_to--> `Skill: /audit-short`  [INFERRED]
+  context/current-priorities.md → projects/rielcode-growth-plan/plan.md
+- `Skill: /repurpose-project` --references--> `Instagram Content Skill`  [EXTRACTED]
+  projects/rielcode-growth-plan/plan.md → .claude/skills/instagram-content/SKILL.md
+- `Skill: /site-review` --references--> `Project Completion Document Skill`  [INFERRED]
+  decisions/log.md → .claude/skills/project-completion-doc/SKILL.md
 
 ## Hyperedges (group relationships)
 - **Rielcode Growth Plan System** — entity_rielcode, entity_yt_rielcode, entity_salatiga_leads, concept_repurpose_pipeline, concept_audit_tool, concept_lead_magnet_course, concept_lead_gen [INFERRED 0.85]
@@ -249,39 +470,39 @@
 - **Skills Using Ntfy.sh Push Notifications** — skill_gcal_schedule, skill_git_command, skill_lead_tracker, skill_project_completion_doc [EXTRACTED 1.00]
 - **Skills That Write to Decisions Log** — skill_new_project, skill_project_kickoff, skill_level_up [EXTRACTED 1.00]
 
-## Communities
+## Communities (500 total, 62 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.02
-Nodes (108): code:powershell (New-Item -ItemType Directory -Force -Path "c:\Users\afw14\On), code:powershell (npm test -- --testPathPattern="output.test"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:js (import chalk from 'chalk';), code:powershell (npm test -- --testPathPattern="error.test"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS") (+100 more)
+Cohesion: 0.22
+Nodes (9): code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (ig --help), code:block76 (Usage: ig [options] [command]), code:powershell (tt --help), code:block78 (Usage: tt [options] [command]), code:powershell (ig list), code:powershell (tt list), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS") (+1 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.02
-Nodes (102): code:json ({), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS), code:js (// videos.list with forMine:true returns the authenticated u), code:js (// Step 1: get the uploads playlist id from channel), code:js (const mockChannelsList = jest.fn();), code:js (jest.mock('googleapis', () => ({), code:js (import { listVideos } from '../youtube/index.js';), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google) (+94 more)
+Cohesion: 0.18
+Nodes (11): code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google), code:block80 (PASS tests/youtube.test.js), code:js (#!/usr/bin/env node), code:powershell (Get-Content C:\Users\afw14\OneDrive\Documents\JARVIS\tools\g), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google), code:powershell (yt --help), code:block85 (Usage: yt [options] [command]), code:powershell (yt auth) (+3 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.02
-Nodes (89): 1. Should this animate at all?, 2. What is the purpose?, 3. What easing should it use?, 3D transforms for depth, 4. How fast should it be?, Accessibility, Animate enter states with @starting-style, Asymmetric enter/exit timing (+81 more)
+Cohesion: 0.12
+Nodes (16): Animate enter states with @starting-style, Buttons must feel responsive, code:css (/* Interruptible - good for UI */), code:css (.button {), code:css (.toast {), code:jsx (// Legacy pattern (still works everywhere)), code:css (.button {), code:css (/* Bad */) (+8 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.02
-Nodes (85): code:powershell (New-Item -ItemType Directory -Force "c:\Users\afw14\OneDrive), code:powershell (npm test -- --testPathPattern=output), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), code:js (import { jest } from '@jest/globals';), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:js (import chalk from 'chalk';), code:powershell (npm test -- --testPathPattern=error), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS") (+77 more)
+Cohesion: 0.22
+Nodes (9): code:block62 (#!/usr/bin/env node), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:powershell (figma --help), code:block66 (Usage: figma [options] [command]), code:powershell (figma auth --token figd_YOUR_REAL_TOKEN), code:powershell (figma files --team YOUR_TEAM_ID), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS") (+1 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.03
-Nodes (80): AIOS Intake, Free Website Audit Tool, Build-with-me Live Streams, Canva MCP Integration, Floating Chatbot Widget, Dark UI Design Theme, Decisions Log (decisions/log.md), DomPDF PDF Generation Engine (+72 more)
+Cohesion: 0.15
+Nodes (15): Lead-Gen Funnel (YT to rielcode.com), YT Pillar: Build Showcases, YT Pillar: Hot Takes / Controversy, YT Pillar: Process / Behind-Scenes, YT Pillar: SMB Website Tips, YouTube Shorts Production, @rielcodeofficial YouTube Channel, YouTube Rielcode Channel (+7 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.03
-Nodes (64): 10. Charts & Data (LOW), 1. Accessibility (CRITICAL), 2. Touch & Interaction (CRITICAL), 3. Performance (HIGH), 4. Style Selection (HIGH), 5. Layout & Responsive (HIGH), 6. Typography & Color (MEDIUM), 7. Animation (MEDIUM) (+56 more)
+Cohesion: 0.15
+Nodes (13): code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "<keyword>" -), code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "<keyword>" -), code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "<product_typ), code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "beauty spa w), code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "<query>" --d), code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "<query>" --d), code:block9 (I am building the [Page Name] page. Please read design-syste), How to Use This Skill (+5 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.07
-Nodes (43): apiFetch(), fail(), fetchAllMessages(), fmt(), confirm(), deleteComment(), formatDate(), getAnalytics() (+35 more)
+Cohesion: 0.06
+Nodes (46): apiFetch(), fail(), fetchAllMessages(), fmt(), handleError(), notAuthenticated(), confirm(), deleteComment() (+38 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.04
-Nodes (48): code:block1 (C:\xampp\htdocs\pay\), code:php (<?php), code:bash (git add connection.php), code:php (<?php), code:php (<?php), code:php (</div><!-- /.main-content -->), code:css (:root {), code:bash (git add inc/ CSS/) (+40 more)
+Cohesion: 0.25
+Nodes (5): code:block1 (C:\xampp\htdocs\pay\), code:bash (git add -A), File Map, pay.rielcode.com Implementation Plan, Task 2: DB tables
 
 ### Community 8 - "Community 8"
 Cohesion: 0.04
@@ -300,8 +521,8 @@ Cohesion: 0.05
 Nodes (40): 6a. Lenis Smooth Scroll (MANDATORY), 6b. Frame Preloader, 6c. Canvas Renderer — Padded Cover Mode, 6d. Frame-to-Scroll Binding, 6e. Section Animation System, 6f. Counter Animations, 6g. Horizontal Text Marquee, 6h. Dark Overlay (+32 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.06
-Nodes (38): 10. Report the result, 1. Ensure git is initialized, 2. Resolve the target repository, 3. Stage all changes, 4. Generate the commit message, 5. Commit, 6. Determine target branch, 7. Pull rebase before push (+30 more)
+Cohesion: 0.07
+Nodes (40): 10. Report the result, 1. Ensure git is initialized, 2. Resolve the target repository, 3. Stage all changes, 4. Generate the commit message, 5. Commit, 6. Determine target branch, 7. Pull rebase before push (+32 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.05
@@ -320,8 +541,8 @@ Cohesion: 0.05
 Nodes (37): code:json ({), code:js (import chalk from 'chalk';), code:bash (git add tools/google/lib/output.js tools/google/lib/error.js), code:js (#!/usr/bin/env node), code:powershell (cd tools/google), code:powershell (gcal auth), code:powershell (gcal list --date today), code:bash (git add tools/google/gcal/index.js) (+29 more)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.09
-Nodes (29): get_service_account_info(), Exception, build_service(), CalendarResult, create_homework_events(), _deadline_body(), _insert_event(), _study_block_body() (+21 more)
+Cohesion: 0.12
+Nodes (32): get_service_account_info(), build_service(), CalendarResult, create_homework_events(), _deadline_body(), _insert_event(), _study_block_body(), get_service_account_info() (+24 more)
 
 ### Community 18 - "Community 18"
 Cohesion: 0.06
@@ -356,8 +577,8 @@ Cohesion: 0.09
 Nodes (20): 30-Day Launch Roadmap, Channel Identity, Channel Vision, Content Pillars, CTAs (rotate, never repeat in same batch), Decision Triggers (auto-pivot), Distribution Platforms, KPIs to Track (+12 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.1
-Nodes (20): 1. Resolve + download module PDF, 2. Read module, 3. Probe the form (read-only), 4. Answer, 5. Review + hand off, Account session, code:bash (curl -L -o ".claude/skills/quiz-auto/cache/module.pdf" "http), code:bash (cd "d:/Main Storage/Documents/JARVIS/tools/google" && npm in) (+12 more)
+Cohesion: 0.08
+Nodes (31): 1. Download PDF, 1. Resolve + download module PDF, 2. Read module, 3. Probe form, 3. Probe the form, 3. Probe the form (read-only), 4. Answer, 5. Resolve MISSes (+23 more)
 
 ### Community 27 - "Community 27"
 Cohesion: 0.1
@@ -417,7 +638,7 @@ Nodes (15): 1. Koffietori, 2. Bragga Coffee, 3. Menepilah Cafe & Collaborative S
 
 ### Community 41 - "Community 41"
 Cohesion: 0.12
-Nodes (17): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Applied Learning, Archives, Azriel's Executive Assistant, Behavioral Guidelines (Karpathy) (+9 more)
+Nodes (16): Applied Learning, Archives, Azriel's Executive Assistant, Context, Decision Log, Environment & Machines, Keeping Context Current, Memory (+8 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.15
@@ -544,12 +765,12 @@ Cohesion: 0.2
 Nodes (11): portfolio.rielcode.com, MISAEL67 Referral Code, MISAEL67 Instagram Caption, MISAEL67 Info Card, MISAEL67 WhatsApp Message, Rielcode Referral Program, rielcode.com Website, Rielcode Base Instagram Caption Template (+3 more)
 
 ### Community 73 - "Community 73"
-Cohesion: 0.36
-Nodes (9): build_panel(), find_latest_session(), git_info(), main(), pct_bar(), pct_color(), Return branch, repo name, dirty flag for given path., Scan $TEMP for claude-ctx-*.json files and return the most recently     modified (+1 more)
+Cohesion: 0.19
+Nodes (18): build_panel(), find_latest_session(), git_info(), main(), pct_bar(), pct_color(), Return branch, repo name, dirty flag for given path., Scan $TEMP for claude-ctx-*.json files and return the most recently     modified (+10 more)
 
 ### Community 74 - "Community 74"
-Cohesion: 0.24
-Nodes (3): handleError(), notAuthenticated(), getHeaders()
+Cohesion: 0.04
+Nodes (37): allQuestions, answers, ANSWERS_PATH, anyChecked, archiveDir, archivePath, archivePayload, { chromium } (+29 more)
 
 ### Community 75 - "Community 75"
 Cohesion: 0.2
@@ -635,10 +856,6 @@ Nodes (4): Example Skill, Notes, Steps, When to use
 Cohesion: 0.33
 Nodes (5): References (Knowledge Base), Routing, Slides, Subcommands, When to Use
 
-### Community 96 - "Community 96"
-Cohesion: 0.5
-Nodes (2): scaleEnterExit(), spr()
-
 ### Community 97 - "Community 97"
 Cohesion: 0.4
 Nodes (3): Goals & Milestones, Notes, Q2 2026 (April -- June)
@@ -646,30 +863,6 @@ Nodes (3): Goals & Milestones, Notes, Q2 2026 (April -- June)
 ### Community 98 - "Community 98"
 Cohesion: 0.4
 Nodes (5): Google Calendar MCP Integration, ntfy Phone Notification System, Daily Priorities Skill, Follow-up Skill, WhatsApp Communication Channel
-
-### Community 99 - "Community 99"
-Cohesion: 0.67
-Nodes (2): apiFetch(), fail()
-
-### Community 100 - "Community 100"
-Cohesion: 0.67
-Nodes (2): card(), sp()
-
-### Community 101 - "Community 101"
-Cohesion: 0.67
-Nodes (2): Design Thinking, Frontend Aesthetics Guidelines
-
-### Community 102 - "Community 102"
-Cohesion: 0.5
-Nodes (2): Active Projects, Current Priorities
-
-### Community 103 - "Community 103"
-Cohesion: 0.5
-Nodes (2): Current Clients, Team
-
-### Community 104 - "Community 104"
-Cohesion: 0.5
-Nodes (2): code:block1 (## YYYY-MM-DD — Short title), Decisions Log
 
 ### Community 105 - "Community 105"
 Cohesion: 0.67
@@ -680,60 +873,12 @@ Cohesion: 0.5
 Nodes (4): Parallaxnet Client Site, Rielcode Hero Iterations (v1-v8), Rielcode Mobile Views, Rielcode Site Evolution (May 2026)
 
 ### Community 107 - "Community 107"
-Cohesion: 0.67
-Nodes (2): Set up dummy environment variables for testing., setup_env_vars()
-
-### Community 108 - "Community 108"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 109 - "Community 109"
-Cohesion: 1.0
-Nodes (2): get(), getCaptionUrl()
+Cohesion: 0.33
+Nodes (4): Set up dummy environment variables for testing., setup_env_vars(), Set up dummy environment variables for testing., setup_env_vars()
 
 ### Community 110 - "Community 110"
-Cohesion: 0.67
-Nodes (0): 
-
-### Community 111 - "Community 111"
-Cohesion: 0.67
-Nodes (1): About Rielcode
-
-### Community 112 - "Community 112"
-Cohesion: 0.67
-Nodes (1): About Azriel
-
-### Community 113 - "Community 113"
-Cohesion: 0.67
-Nodes (1): About Azriel
-
-### Community 114 - "Community 114"
-Cohesion: 0.67
-Nodes (1): Priorities -- Q2 2026 (April-June)
-
-### Community 115 - "Community 115"
-Cohesion: 0.67
-Nodes (1): Leads Archive
-
-### Community 116 - "Community 116"
-Cohesion: 0.67
-Nodes (1): Leads
-
-### Community 117 - "Community 117"
-Cohesion: 0.67
-Nodes (1): Memory Index
-
-### Community 118 - "Community 118"
-Cohesion: 0.67
-Nodes (1): Key Notes
-
-### Community 119 - "Community 119"
-Cohesion: 0.67
-Nodes (1): Parallaxnet Canada -- Website
-
-### Community 120 - "Community 120"
-Cohesion: 0.67
-Nodes (1): Learning Log
+Cohesion: 0.09
+Nodes (36): about, addonCheckbox, attachConsoleListener(), burger, cards, chatbotIcon, chatbotToggle, closeBtn (+28 more)
 
 ### Community 121 - "Community 121"
 Cohesion: 0.67
@@ -743,301 +888,993 @@ Nodes (3): Communication Style Rules, Client Proposal Format (WhatsApp + Full Do
 Cohesion: 0.67
 Nodes (3): Checkout Confirmation Page (Step 2), Order Form Full Page (1280px), Order Form Package Section Crop
 
-### Community 123 - "Community 123"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 124 - "Community 124"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 125 - "Community 125"
-Cohesion: 1.0
-Nodes (0): 
-
 ### Community 126 - "Community 126"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 127 - "Community 127"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 128 - "Community 128"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 129 - "Community 129"
-Cohesion: 1.0
-Nodes (1): Connections
-
-### Community 130 - "Community 130"
-Cohesion: 1.0
-Nodes (1): Connections
-
-### Community 131 - "Community 131"
-Cohesion: 1.0
-Nodes (1): Deployments Index
-
-### Community 132 - "Community 132"
-Cohesion: 1.0
-Nodes (2): Four Cs AIOS Audit Framework, Skill: audit (Four Cs AIOS Audit)
-
-### Community 133 - "Community 133"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 134 - "Community 134"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 135 - "Community 135"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 136 - "Community 136"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 137 - "Community 137"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 138 - "Community 138"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 139 - "Community 139"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 140 - "Community 140"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 141 - "Community 141"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 142 - "Community 142"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 143 - "Community 143"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 144 - "Community 144"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 145 - "Community 145"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.23
+Nodes (13): all, anyFail, BROWSERS, cell, flowNames, FLOWS, fs, path (+5 more)
 
 ### Community 146 - "Community 146"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 147 - "Community 147"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 148 - "Community 148"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 149 - "Community 149"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 150 - "Community 150"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 151 - "Community 151"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 152 - "Community 152"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 153 - "Community 153"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 154 - "Community 154"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 155 - "Community 155"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 156 - "Community 156"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 157 - "Community 157"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 158 - "Community 158"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 159 - "Community 159"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 160 - "Community 160"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 161 - "Community 161"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 162 - "Community 162"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 163 - "Community 163"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 164 - "Community 164"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 165 - "Community 165"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 166 - "Community 166"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 167 - "Community 167"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 168 - "Community 168"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 169 - "Community 169"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 170 - "Community 170"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 171 - "Community 171"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 172 - "Community 172"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 173 - "Community 173"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 174 - "Community 174"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 175 - "Community 175"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 176 - "Community 176"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 177 - "Community 177"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 178 - "Community 178"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 179 - "Community 179"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 180 - "Community 180"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 181 - "Community 181"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 182 - "Community 182"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 183 - "Community 183"
-Cohesion: 1.0
-Nodes (1): Ordered (oldest-first) message history for a known conversation id.
-
-### Community 184 - "Community 184"
-Cohesion: 1.0
-Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
-
-### Community 185 - "Community 185"
-Cohesion: 1.0
-Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
+Cohesion: 0.6
+Nodes (3): cb, { chromium }, r
 
 ### Community 186 - "Community 186"
-Cohesion: 1.0
-Nodes (1): Return branch, repo name, dirty flag for given path.
+Cohesion: 0.04
+Nodes (48): 3D content, Advanced audio, Advanced compositions, Advanced Images, Advanced sequencing, Advanced timing, Advanced Videos, Audio visualization (+40 more)
 
 ### Community 187 - "Community 187"
-Cohesion: 1.0
-Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
-
-### Community 188 - "Community 188"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 189 - "Community 189"
-Cohesion: 1.0
-Nodes (0): 
+Cohesion: 0.04
+Nodes (46): code:block1 (## Module X — [Module Title]), Group 1, Group 10, Group 10, Group 10, Group 10, Group 1, Group 1 (+38 more)
 
 ### Community 190 - "Community 190"
-Cohesion: 1.0
-Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
+Cohesion: 0.09
+Nodes (25): Exception, _clean_subject(), parse_homework(), Parse a natural-language homework message.     Returns {"subject": str, "due_da, handle_message(), main(), _clean_subject(), parse_homework() (+17 more)
 
 ### Community 191 - "Community 191"
-Cohesion: 1.0
-Nodes (1): Set up dummy environment variables for testing.
+Cohesion: 0.08
+Nodes (35): api_ads(), api_dms(), api_thread(), index(), Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap, Return (data, error_message). Never raises to the view layer., Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,, Server-rendered fallback for shared/direct links (no id available). (+27 more)
 
-### Community 192 - "Community 192"
-Cohesion: 1.0
-Nodes (1): CLAUDE.local.md Local Overrides
+### Community 197 - "Community 197"
+Cohesion: 0.12
+Nodes (31): audio-recorder, backlink, bases, bookmarks, canvas, command-palette, daily-notes, editor-status (+23 more)
 
-### Community 193 - "Community 193"
-Cohesion: 1.0
-Nodes (1): Session Summary Template
+### Community 198 - "Community 198"
+Cohesion: 0.11
+Nodes (24): AdBase(), AdProps, angles, Cta(), ease, { fontFamily: sans }, { fontFamily: serif }, { fontFamily: serifItalic } (+16 more)
 
-### Community 194 - "Community 194"
-Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v2
+### Community 199 - "Community 199"
+Cohesion: 0.08
+Nodes (29): active, bases:Create new base, canvas:Create new canvas, command-palette:Open command palette, daily-notes:Open today's daily note, graph:Open graph view, switcher:Open quick switcher, templates:Insert template (+21 more)
 
-### Community 195 - "Community 195"
-Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v3
+### Community 200 - "Community 200"
+Cohesion: 0.07
+Nodes (26): dependencies, react, react-dom, remotion, @remotion/cli, @remotion/google-fonts, @remotion/zod-types, zod (+18 more)
 
-### Community 196 - "Community 196"
-Cohesion: 1.0
-Nodes (1): Rielcode Services Page Screenshot v2
+### Community 201 - "Community 201"
+Cohesion: 0.14
+Nodes (11): currentStart, d, end, event, events, freqMap, getCalendar(), newStart (+3 more)
+
+### Community 202 - "Community 202"
+Cohesion: 0.08
+Nodes (23): author, bugs, url, description, devDependencies, @ffmpeg-installer/ffmpeg, @ffprobe-installer/ffprobe, @playwright/test (+15 more)
+
+### Community 203 - "Community 203"
+Cohesion: 0.08
+Nodes (23): Animated flight route example, Basic map example, Camera guidance, code:ts (const zurich: [number, number] = [8.5417, 47.3769];), code:ts (const target = turf.along(targetRoute, targetDistance * prog), code:ts (const line = greatCircleLine(start, end);), code:tsx (mapInstance.addSource('markers', {), code:ts (style: 'https://demotiles.maplibre.org/style.json') (+15 more)
+
+### Community 204 - "Community 204"
+Cohesion: 0.08
+Nodes (23): 10. Reusable snippet library (copy-paste), 11. How Azriel uses this, 1. Effort and thinking (the biggest lever), 2. Verbosity and literal instruction following, 3. Core prompt rules, 4. Long context (20k+ tokens), 5. Make it act, not just suggest, 6. Frontend defaults trap (matters for Rielcode client work) (+15 more)
+
+### Community 205 - "Community 205"
+Cohesion: 0.09
+Nodes (22): code:bash (npx remotion add @remotion/media), code:tsx (<Audio src={staticFile("audio.mp3")} loop />), code:tsx (<Audio), code:tsx (<Audio), code:tsx (import { Audio } from "@remotion/media";), code:tsx (<Audio src="https://remotion.media/audio.mp3" />), code:tsx (const { fps } = useVideoConfig();), code:tsx (import { Sequence, staticFile } from "remotion";) (+14 more)
+
+### Community 206 - "Community 206"
+Cohesion: 0.09
+Nodes (22): Available transition types, Calculating total composition duration, code:bash (npx remotion add @remotion/transitions), code:tsx (import { TransitionSeries, linearTiming } from "@remotion/tr), code:tsx (import { TransitionSeries } from "@remotion/transitions";), code:tsx (import { TransitionSeries, linearTiming } from "@remotion/tr), code:tsx (import { fade } from "@remotion/transitions/fade";), code:tsx (import { slide } from "@remotion/transitions/slide";) (+14 more)
+
+### Community 207 - "Community 207"
+Cohesion: 0.09
+Nodes (22): code:bash (npx remotion add @remotion/media # If project uses npm), code:tsx (<Video src={staticFile("video.mp4")} playbackRate={2} /> {/*), code:tsx (<Video src={staticFile("video.mp4")} loop />), code:tsx (<Video), code:tsx (<Video), code:tsx (import { Video } from "@remotion/media";), code:tsx (<Video src="https://remotion.media/video.mp4" />), code:tsx (const { fps } = useVideoConfig();) (+14 more)
+
+### Community 208 - "Community 208"
+Cohesion: 0.13
+Nodes (13): __dirname, getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath(), caption, comments (+5 more)
+
+### Community 209 - "Community 209"
+Cohesion: 0.17
+Nodes (20): centerStrength, close, collapse-color-groups, collapse-display, collapse-filter, collapse-forces, colorGroups, hideUnresolved (+12 more)
+
+### Community 210 - "Community 210"
+Cohesion: 0.09
+Nodes (21): bin, ig, tt, dependencies, axios, chalk, cli-table3, commander (+13 more)
+
+### Community 211 - "Community 211"
+Cohesion: 0.1
+Nodes (20): author, bugs, url, description, devDependencies, @playwright/test, directories, doc (+12 more)
+
+### Community 212 - "Community 212"
+Cohesion: 0.1
+Nodes (20): 0. Register as a Meta developer (first time only), 1. Create a Business app, 2. Create the System User, 3. IMPORTANT - do BOTH grants BEFORE generating the token, 4. Generate the token (read-only), 5. Find your Ad Account ID, 6. Put the values in .env (NOT committed), 7. Test (+12 more)
+
+### Community 213 - "Community 213"
+Cohesion: 0.1
+Nodes (19): code:css (/* Phase 1 had: --rc-bg: dark-navy, --rc-accent: blue */), Component System, `/contact` — Inquiry, Data / Content Migration, Execution Plan, Goal, `/` — Home, Information Architecture (+11 more)
+
+### Community 214 - "Community 214"
+Cohesion: 0.1
+Nodes (19): bin, gcal, gdrive, gmail, yt, dependencies, chalk, cli-table3 (+11 more)
+
+### Community 215 - "Community 215"
+Cohesion: 0.1
+Nodes (19): Alternative, Basic usage, code:tsx (import { AnimatedImage, staticFile } from "remotion";), code:bash (npx remotion add @remotion/gif # If project uses npm), code:tsx (import { Gif } from "@remotion/gif";), code:tsx (<AnimatedImage), code:tsx (// Stretch to fill (default)), code:tsx (<AnimatedImage src={staticFile("animation.gif")} width={500}) (+11 more)
+
+### Community 216 - "Community 216"
+Cohesion: 0.14
+Nodes (10): Arc(), arcLength, Atom(), Logo(), myCompSchema2, codeStyle, subtitle, title (+2 more)
+
+### Community 217 - "Community 217"
+Cohesion: 0.18
+Nodes (11): code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/visual.spec.ts scripts/qa/visual.spec.ts-), code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/axe.spec.ts), code:markdown (# Phase 2 — QA Report), code:bash (git add docs/qa/phase-2-report.md), Self-Review, Task 2J.2: Visual screenshot diff spec (+3 more)
+
+### Community 218 - "Community 218"
+Cohesion: 0.29
+Nodes (7): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/work/index.astro), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/services.astro), Task 2I.5: Convert `/work` index page to read from collection, Task 2I.7: Convert `/services` page to read from collections, TRACK 2I — Content Collections + Redirects
+
+### Community 219 - "Community 219"
+Cohesion: 0.11
+Nodes (17): mockChannelsList, mockCommentsDelete, mockCommentsInsert, mockCommentsList, mockCommentThreadsList, mockCreateReadStream, mockExistsSync, mockExit (+9 more)
+
+### Community 220 - "Community 220"
+Cohesion: 0.18
+Nodes (9): __dirname, getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath(), comments, dms (+1 more)
+
+### Community 221 - "Community 221"
+Cohesion: 0.14
+Nodes (13): apiFetch(), env, fail(), fetchAllMessages(), file, idx, lines, OUT_DIR (+5 more)
+
+### Community 222 - "Community 222"
+Cohesion: 0.12
+Nodes (15): Audio Visualization in Remotion, Bass-Reactive Effects, code:bash (npx remotion add @remotion/media-utils), code:tsx (import { useWindowedAudioData } from "@remotion/media-utils"), code:tsx (import { useWindowedAudioData, visualizeAudio } from "@remot), code:tsx (import {), code:tsx (const frequencies = visualizeAudio({), code:tsx (import { getWaveformPortion } from "@remotion/media-utils";) (+7 more)
+
+### Community 223 - "Community 223"
+Cohesion: 0.12
+Nodes (15): code:bash (npx remotion add @remotion/captions), code:tsx (import { useState, useEffect, useCallback } from "react";), code:tsx (import { useMemo } from "react";), code:tsx (import { Sequence, useVideoConfig, AbsoluteFill } from "remo), code:tsx (import { AbsoluteFill, useCurrentFrame, useVideoConfig } fro), code:tsx (<AbsoluteFill>), Creating pages, Display captions alongside video content (+7 more)
+
+### Community 224 - "Community 224"
+Cohesion: 0.12
+Nodes (16): code:astro (---), code:bash (git add src/components/EditorialHero.astro), code:astro (---), code:bash (git add src/components/WorkCard.astro), code:astro (---), code:bash (git add src/components/ServiceCard.astro), code:markdown (## Execution Plan), code:bash (cd c:/Users/afw14/OneDrive/Documents/JARVIS) (+8 more)
+
+### Community 225 - "Community 225"
+Cohesion: 0.26
+Nodes (13): { chromium, devices }, contextOpts, filepath, fs, normalizeUrl(), opts, OUTPUT_DIR, parseArgs() (+5 more)
+
+### Community 226 - "Community 226"
+Cohesion: 0.27
+Nodes (13): args, captureOne(), { chromium }, fails, fs, normalizeUrl(), oks, OUTPUT_DIR (+5 more)
+
+### Community 227 - "Community 227"
+Cohesion: 0.13
+Nodes (14): bin, figma, dependencies, axios, chalk, cli-table3, commander, devDependencies (+6 more)
+
+### Community 228 - "Community 228"
+Cohesion: 0.16
+Nodes (12): data, getGmail(), label, msg, outPath, raw, rows, to (+4 more)
+
+### Community 229 - "Community 229"
+Cohesion: 0.13
+Nodes (14): Best practices, Checking text overflow, code:bash (npx remotion add @remotion/layout-utils), code:tsx (import { measureText } from "@remotion/layout-utils";), code:tsx (import { fitText } from "@remotion/layout-utils";), code:tsx (import { fillTextBox } from "@remotion/layout-utils";), code:tsx (import { loadFont } from "@remotion/google-fonts/Inter";), code:tsx (measureText({) (+6 more)
+
+### Community 230 - "Community 230"
+Cohesion: 0.13
+Nodes (14): code:tsx (import { Sequence } from "remotion";), code:tsx (<Sequence layout="none">), code:tsx (<Sequence premountFor={1 * fps}>), code:tsx (import { Series } from "remotion";), code:tsx (<Series>), code:tsx (<Sequence from={60} durationInFrames={30}>), code:tsx (<Sequence from={0} durationInFrames={120}>), code:tsx (<AbsoluteFill>) (+6 more)
+
+### Community 231 - "Community 231"
+Cohesion: 0.13
+Nodes (15): code:bash (cat C:/xampp/htdocs/rielcode-astro/src/components/Card.astro), code:astro (---), code:bash (git add src/components/Card.astro), code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/components/Nav.astro), code:astro (---), code:bash (git add src/components/CTABand.astro) (+7 more)
+
+### Community 232 - "Community 232"
+Cohesion: 0.17
+Nodes (12): code:bash (npm install gsap), code:bash (git add package.json package-lock.json), code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), code:css ([data-nav] {), code:bash (git add src/components/Nav.astro) (+4 more)
+
+### Community 233 - "Community 233"
+Cohesion: 0.24
+Nodes (12): author, dependencies, playwright, description, keywords, license, main, name (+4 more)
+
+### Community 234 - "Community 234"
+Cohesion: 0.16
+Nodes (12): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+4 more)
+
+### Community 235 - "Community 235"
+Cohesion: 0.14
+Nodes (14): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+6 more)
+
+### Community 236 - "Community 236"
+Cohesion: 0.14
+Nodes (13): code:tsx (<Composition), code:tsx (import { CalculateMetadataFunction } from "remotion";), code:tsx (import { CalculateMetadataFunction } from "remotion";), code:tsx (const calculateMetadata: CalculateMetadataFunction<Props> = ), code:tsx (const calculateMetadata: CalculateMetadataFunction<Props> = ), code:tsx (const calculateMetadata: CalculateMetadataFunction<Props> = ), Matching dimensions of a video, Return value (+5 more)
+
+### Community 237 - "Community 237"
+Cohesion: 0.14
+Nodes (13): 2D effect with `onPaint`, Async `onPaint`, Basic usage, code:block1 (<HtmlInCanvas> effects cannot be nested together. Chrome wil), code:bash (npx remotion render --gl=angle), code:ts (import { Config } from "@remotion/cli/config";), code:tsx (import { HtmlInCanvas } from "remotion";), code:tsx (import {) (+5 more)
+
+### Community 238 - "Community 238"
+Cohesion: 0.14
+Nodes (12): Bézier easing, code:ts (import { interpolate } from "remotion";), code:ts (const opacity = interpolate(frame, [0, 100], [0, 1], {), code:ts (import { interpolate, Easing } from "remotion";), code:tsx (const enter = interpolate(frame, [0, 45], [0, 1], {), code:tsx (const progress = interpolate(frame, [0, 90], [0, 1], {), code:tsx (const pop = interpolate(frame, [0, 30], [0, 1], {), code:ts (import { interpolate, Easing } from "remotion";) (+4 more)
+
+### Community 239 - "Community 239"
+Cohesion: 0.23
+Nodes (13): fmt(), comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments() (+5 more)
+
+### Community 240 - "Community 240"
+Cohesion: 0.15
+Nodes (12): 1. Read the knowledge source, 2. Route by args, code:block1 (Score: X/5), code:block2 (Use: /skill-a  then  /skill-b), code:block3 (1. /effort xhigh + /model Opus 4.8 before heavy coding), Mode A -- Grade and rewrite a prompt, Mode B -- Route to the right skill, Mode C -- Teach a technique (+4 more)
+
+### Community 241 - "Community 241"
+Cohesion: 0.15
+Nodes (11): code:block1 (Before: transition: all 300ms), code:css (.item {), Debugging Animations, Design Engineering, Frame-by-frame inspection, Initial Response, Review Checklist, Review Format (Required) (+3 more)
+
+### Community 242 - "Community 242"
+Cohesion: 0.15
+Nodes (12): compilerOptions, esModuleInterop, forceConsistentCasingInFileNames, jsx, lib, module, noEmit, noUnusedLocals (+4 more)
+
+### Community 243 - "Community 243"
+Cohesion: 0.23
+Nodes (12): Free Website Audit Tool, Rielcode Pricing Reference, Current Priorities, Decisions Log, Salatiga Cafe Leads, YouTube Rielcode Channel, Rielcode Growth Plan Detail, Rielcode Growth Plan README (+4 more)
+
+### Community 244 - "Community 244"
+Cohesion: 0.17
+Nodes (12): Build-with-me Live Streams, Free Website Audit Tool, $0 to First Website Mini-Course, Learning: Build Complete vs Delivered Distinction, Repurpose Per Build Pipeline, Salatiga Case Study Generator, Team Context, Parallaxnet Canada (+4 more)
+
+### Community 245 - "Community 245"
+Cohesion: 0.2
+Nodes (12): Floating Chatbot Widget, Dark UI Design Theme, Free Hosting and .COM Promotional Banner, Rielcode Website (portfolio.rielcode.com), Rielcode Mobile Hero Screenshot (v1), Rielcode Mobile Hero Screenshot (v2 with chatbot), Rielcode Mobile Hero Screenshot (v3 with chatbot), Rielcode Mobile Hero Screenshot (v4 with chatbot) (+4 more)
+
+### Community 246 - "Community 246"
+Cohesion: 0.17
+Nodes (11): code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (ls C:/xampp/htdocs/rielcode-astro/dist/fonts/), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:css (:root {), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/styles/tokens.css), File Structure, Rielcode Phase 2 — Tracks 2A → 2C Implementation Plan (+3 more)
+
+### Community 247 - "Community 247"
+Cohesion: 0.27
+Nodes (10): AIOS Intake, Lead Generation System, About Rielcode Business, About Azriel, Goals and Milestones Q2 2026, Azriel Personal Profile, Priorities Q2 2026, Work and Business Context (+2 more)
+
+### Community 248 - "Community 248"
+Cohesion: 0.18
+Nodes (10): Animate using `useCurrentFrame()`, code:bash (npx remotion add @remotion/three # If project uses npm), code:tsx (import { ThreeCanvas } from "@remotion/three";), code:tsx (const frame = useCurrentFrame();), code:tsx (import { Sequence } from "remotion";), No animations not driven by `useCurrentFrame()`, Prerequisites, Using `<Sequence>` inside `<ThreeCanvas>` (+2 more)
+
+### Community 249 - "Community 249"
+Cohesion: 0.18
+Nodes (10): Calculate Metadata, code:tsx (import { Composition } from "remotion";), code:tsx (import { Composition, Folder } from "remotion";), code:tsx (import { Still } from "remotion";), code:tsx (import { Composition, CalculateMetadataFunction } from "remo), code:tsx (<AbsoluteFill>), Default Props, Folders (+2 more)
+
+### Community 250 - "Community 250"
+Cohesion: 0.18
+Nodes (10): Basic usage with TransitionSeries, code:bash (npx remotion add @remotion/light-leaks), code:tsx (import { TransitionSeries } from "@remotion/transitions";), code:tsx (import { LightLeak } from "@remotion/light-leaks";), code:tsx (import { AbsoluteFill } from "remotion";), Customizing the look, Light Leaks, Prerequisites (+2 more)
+
+### Community 251 - "Community 251"
+Cohesion: 0.18
+Nodes (10): code:bash (npm i zod), code:bash (bun i zod), code:bash (yarn add zod), code:bash (pnpm i zod), code:tsx (import { z } from "zod";), code:tsx (import { Composition } from "remotion";), code:bash (npx remotion add @remotion/zod-types # If project uses npm), code:tsx (import { zColor } from "@remotion/zod-types";) (+2 more)
+
+### Community 252 - "Community 252"
+Cohesion: 0.18
+Nodes (10): Adaptive Silence Detection, code:bash (npx remotion ffmpeg -i public/video.mov -map 0:a -af loudnor), code:bash (npx remotion ffmpeg -i public/video.mov -map 0:a -af "silenc), code:block3 ([silencedetect] silence_start: 0), code:tsx (import { Video } from "@remotion/media";), Identifying leading and trailing silence, Interpreting the output, Step 1: Measure loudness with `loudnorm` (+2 more)
+
+### Community 253 - "Community 253"
+Cohesion: 0.18
+Nodes (11): code:js (// videos.list with forMine:true returns the authenticated u), code:js (// Step 1: get the uploads playlist id from channel), code:js (const mockChannelsList = jest.fn();), code:js (jest.mock('googleapis', () => ({), code:js (import { listVideos } from '../youtube/index.js';), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google), code:js (#!/usr/bin/env node), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google) (+3 more)
+
+### Community 254 - "Community 254"
+Cohesion: 0.18
+Nodes (10): errSpy, exitSpy, headers, logSpy, mockComments, mockFile, mockNode, mockVersions (+2 more)
+
+### Community 255 - "Community 255"
+Cohesion: 0.18
+Nodes (11): 10. Charts & Data (LOW), 1. Accessibility (CRITICAL), 2. Touch & Interaction (CRITICAL), 3. Performance (HIGH), 4. Style Selection (HIGH), 5. Layout & Responsive (HIGH), 6. Typography & Color (MEDIUM), 7. Animation (MEDIUM) (+3 more)
+
+### Community 256 - "Community 256"
+Cohesion: 0.22
+Nodes (10): Canva MCP Integration, DomPDF PDF Generation Engine, ElevenLabs MCP Voiceover Generation, GitHub Repository Integration, Google Calendar MCP Integration, Ntfy.sh Push Notifications, Google Calendar Schedule Skill, Git Command Skill (+2 more)
+
+### Community 257 - "Community 257"
+Cohesion: 0.2
+Nodes (9): Deleted files (Track 2I), File Structure, Modified files (Track 2H), Modified files (Track 2I), New files (Track 2H — motion), New files (Track 2I — content collections), New files (Track 2J — QA), Rielcode Phase 2 — Tracks 2H + 2I + 2J Implementation Plan (+1 more)
+
+### Community 258 - "Community 258"
+Cohesion: 0.22
+Nodes (8): apiFetch(), env, fail(), msgs, ROOT, threadArg, time, updated
+
+### Community 259 - "Community 259"
+Cohesion: 0.2
+Nodes (9): code:tsx (import { Input, ALL_FORMATS, UrlSource } from "mediabunny";), code:tsx (const duration = await getAudioDuration("https://remotion.me), code:tsx (import { staticFile } from "remotion";), code:tsx (import { Input, ALL_FORMATS, FileSource } from "mediabunny";), Getting audio duration, Getting audio duration with Mediabunny, In Node.js and Bun, Usage (+1 more)
+
+### Community 260 - "Community 260"
+Cohesion: 0.2
+Nodes (9): code:tsx (import { Input, ALL_FORMATS, UrlSource } from "mediabunny";), code:tsx (const dimensions = await getVideoDimensions("https://remotio), code:tsx (import { Input, ALL_FORMATS, FileSource } from "mediabunny";), code:tsx (import { staticFile } from "remotion";), Getting video dimensions, Getting video dimensions with Mediabunny, Usage, Using with local files (+1 more)
+
+### Community 261 - "Community 261"
+Cohesion: 0.2
+Nodes (9): code:tsx (import { Input, ALL_FORMATS, UrlSource } from "mediabunny";), code:tsx (const duration = await getVideoDuration("https://remotion.me), code:tsx (import { staticFile } from "remotion";), code:tsx (import { Input, ALL_FORMATS, FileSource } from "mediabunny";), Getting video duration, Getting video duration with Mediabunny, In Node.js and Bun, Usage (+1 more)
+
+### Community 262 - "Community 262"
+Cohesion: 0.2
+Nodes (9): code:bash (npx remotion render --image-format=png --pixel-format=yuva44), code:ts (// remotion.config.ts), code:tsx (import { CalculateMetadataFunction } from "remotion";), code:bash (npx remotion render --image-format=png --pixel-format=yuva42), code:ts (// remotion.config.ts), code:tsx (import { CalculateMetadataFunction } from "remotion";), Rendering Transparent Videos, Transparent ProRes (+1 more)
+
+### Community 263 - "Community 263"
+Cohesion: 0.2
+Nodes (8): Adding AI voiceover to a Remotion composition, code:bash (node --strip-types generate-voiceover.ts), code:tsx (import { CalculateMetadataFunction, staticFile } from "remot), Delaying audio start, Dynamic composition duration with calculateMetadata, Generating audio with ElevenLabs, Prerequisites, Rendering audio in the component
+
+### Community 264 - "Community 264"
+Cohesion: 0.2
+Nodes (10): code:js (import { listVideos, uploadVideo } from '../youtube/index.js), code:js (import { existsSync } from 'fs';), code:powershell (npm test), code:js (import { existsSync, createReadStream, statSync } from 'fs';), code:js (export async function uploadVideo(opts) {), code:js (program), code:powershell (npm test), code:block28 (PASS tests/youtube.test.js) (+2 more)
+
+### Community 265 - "Community 265"
+Cohesion: 0.2
+Nodes (10): code:js (import { listVideos, uploadVideo, searchVideos, getAnalytics), code:js (describe('yt analytics', () => {), code:powershell (npm test), code:js (function periodToDates(period) {), code:js (export async function getAnalytics(opts) {), code:js (program), code:powershell (npm test), code:block45 (PASS tests/youtube.test.js) (+2 more)
+
+### Community 266 - "Community 266"
+Cohesion: 0.2
+Nodes (10): code:markdown (---), code:bash (git add src/content/faq/), code:markdown (---), code:markdown (---), code:markdown (---), code:markdown (---), code:markdown (---), code:markdown (---) (+2 more)
+
+### Community 267 - "Community 267"
+Cohesion: 0.2
+Nodes (9): { chromium, devices }, consoleErrors, failedAssets, fs, md, OUT, PAGES, path (+1 more)
+
+### Community 268 - "Community 268"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 269 - "Community 269"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 270 - "Community 270"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 271 - "Community 271"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 272 - "Community 272"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 273 - "Community 273"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 274 - "Community 274"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 275 - "Community 275"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 276 - "Community 276"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 277 - "Community 277"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 278 - "Community 278"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 279 - "Community 279"
+Cohesion: 0.22
+Nodes (8): Available Domains, Available Stacks, code:bash (# ASCII box (default) - best for terminal display), How to Use, Output Formats, Rule Categories by Priority, Search Reference, UI/UX Pro Max - Design Intelligence
+
+### Community 280 - "Community 280"
+Cohesion: 0.22
+Nodes (9): Decisions Log (decisions/log.md), Lead Sales Pipeline (cold to closed), Leads CRM File (leads/leads.md), Three Ms of AI Framework (Mindset Method Machine), WhatsApp Deep Links for Lead Communication, Lead Tracker Skill, Level Up Automation Skill, New Project Skill (+1 more)
+
+### Community 281 - "Community 281"
+Cohesion: 0.22
+Nodes (8): code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS), code:js (// tools/google/tests/youtube.test.js), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google), code:block9 (PASS tests/youtube.test.js), Error Handling Reference, File Map, Task 2: Test scaffold -- mocked googleapis setup, YouTube CLI Implementation Plan
+
+### Community 282 - "Community 282"
+Cohesion: 0.22
+Nodes (8): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (npm run build), code:bash (git add -A), File Structure, Rielcode Phase 2 — Tracks 2D–2G Implementation Plan, Task 8: Create `src/pages/services.astro`, Track 2F — `/services`
+
+### Community 283 - "Community 283"
+Cohesion: 0.22
+Nodes (9): code:js (// Bad: triggers recalc on all children), code:jsx (// NOT hardware accelerated (convenient but drops frames und), code:js (element.animate([{ clipPath: 'inset(0 0 100% 0)' }, { clipPa), CSS animations beat JS under load, CSS variables are inheritable, Framer Motion hardware acceleration caveat, Only animate transform and opacity, Performance Rules (+1 more)
+
+### Community 284 - "Community 284"
+Cohesion: 0.22
+Nodes (8): code:bash (npx remotion add @remotion/google-fonts # If project uses np), code:tsx (import { loadFont } from "@remotion/google-fonts/Lobster";), code:tsx (import { loadFont } from "@remotion/google-fonts/Roboto";), code:tsx (import { loadFont } from "@remotion/google-fonts/Montserrat"), Google Fonts with @remotion/google-fonts, Prerequisites, Using fonts in Remotion, Using in components
+
+### Community 285 - "Community 285"
+Cohesion: 0.22
+Nodes (8): Available options, code:bash (npx remotion add @remotion/fonts # If project uses npm), code:tsx (import { loadFont } from "@remotion/fonts";), code:tsx (import { loadFont } from "@remotion/fonts";), code:tsx (loadFont({), Loading a local font, Loading multiple weights, Prerequisites
+
+### Community 286 - "Community 286"
+Cohesion: 0.22
+Nodes (9): code:js (import { listVideos, uploadVideo, searchVideos } from '../yo), code:js (describe('yt search', () => {), code:powershell (npm test), code:js (export async function searchVideos(opts) {), code:js (program), code:powershell (npm test), code:block36 (PASS tests/youtube.test.js), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS) (+1 more)
+
+### Community 287 - "Community 287"
+Cohesion: 0.22
+Nodes (9): code:js (import { listVideos, uploadVideo, searchVideos, getAnalytics), code:js (describe('yt comments list', () => {), code:powershell (npm test), code:js (export async function listComments(opts) {), code:js (const comments = program.command('comments').description('Ma), code:powershell (npm test), code:block53 (PASS tests/youtube.test.js), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS) (+1 more)
+
+### Community 288 - "Community 288"
+Cohesion: 0.22
+Nodes (9): code:js (import { listVideos, uploadVideo, searchVideos, getAnalytics), code:js (describe('yt comments reply', () => {), code:powershell (npm test), code:js (export async function replyToComment(opts) {), code:js (comments), code:powershell (npm test), code:block61 (PASS tests/youtube.test.js), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS) (+1 more)
+
+### Community 289 - "Community 289"
+Cohesion: 0.22
+Nodes (9): code:js (import { listVideos, uploadVideo, searchVideos, getAnalytics), code:js (describe('yt comments delete', () => {), code:powershell (npm test), code:js (export async function deleteComment(opts) {), code:js (comments), code:powershell (npm test), code:block69 (PASS tests/youtube.test.js), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS) (+1 more)
+
+### Community 290 - "Community 290"
+Cohesion: 0.22
+Nodes (9): code:js (import { listVideos, uploadVideo, searchVideos, getAnalytics), code:js (export async function runAuth() {), code:js (import { runAuthFlow } from '../auth/oauth.js';), code:powershell (Select-String "youtube" C:\Users\afw14\OneDrive\Documents\JA), code:block75 (https://www.googleapis.com/auth/youtube), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google), code:block77 (PASS tests/youtube.test.js), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS) (+1 more)
+
+### Community 291 - "Community 291"
+Cohesion: 0.22
+Nodes (9): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/pages/contact.astro), code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), Self-Review, Task 10: Rewrite `src/pages/404.astro`, Task 9: Rewrite `src/pages/contact.astro` (+1 more)
+
+### Community 292 - "Community 292"
+Cohesion: 0.22
+Nodes (8): { chromium }, cs, slider, sliderRect, slides, tcs, track, trackRect
+
+### Community 293 - "Community 293"
+Cohesion: 0.22
+Nodes (7): captionUrl, COOKIES, https, idx, lines, snippet, urlMatch
+
+### Community 294 - "Community 294"
+Cohesion: 0.22
+Nodes (8): desktop, [desktop] /admin_login.php, [desktop] /index.php, [desktop] /referrer/index.php, Details (issues only), mobile, [mobile] /referrer/index.php, Rielcode Page Review
+
+### Community 295 - "Community 295"
+Cohesion: 0.29
+Nodes (6): hooks, PostToolUse, Stop, permissions, allow, defaultMode
+
+### Community 296 - "Community 296"
+Cohesion: 0.25
+Nodes (7): Error Handling Reference, File Map, Instagram (Meta Graph API), OAuth Notes, Reference: tools/google/ Patterns to Follow, Social CLI (Instagram + TikTok) Implementation Plan, TikTok
+
+### Community 297 - "Community 297"
+Cohesion: 0.25
+Nodes (8): code:js (const timeTaken = new Date().getTime() - dragStartTime.curre), code:js (function onPress() {), Damping at boundaries, Friction instead of hard stops, Gesture and Drag Interactions, Momentum-based dismissal, Multi-touch protection, Pointer capture for drag
+
+### Community 298 - "Community 298"
+Cohesion: 0.25
+Nodes (8): code:jsx (import { useSpring } from 'framer-motion';), code:js ({ type: "spring", duration: 0.5, bounce: 0.2 }), code:js ({ type: "spring", mass: 1, stiffness: 100, damping: 10 }), Interruptibility advantage, Spring Animations, Spring-based mouse interactions, Spring configuration, When to use springs
+
+### Community 299 - "Community 299"
+Cohesion: 0.25
+Nodes (7): 11. Important notes for AI, 13. Simple summary, 4. Common prefix and subnet mask values, 6. How many subnets are created?, code:text (Number of subnets = 2^borrowed bits), code:text (2^2 = 4 subnets), Subnet Mask and Prefix: How They Work
+
+### Community 300 - "Community 300"
+Cohesion: 0.25
+Nodes (7): code:tsx (<Img), code:tsx (import { Img, staticFile, useCurrentFrame } from "remotion";), code:tsx (import { getImageDimensions, staticFile } from "remotion";), code:tsx (import {), Dynamic image paths, Getting image dimensions, Sizing and positioning
+
+### Community 301 - "Community 301"
+Cohesion: 0.25
+Nodes (6): code:bash (npx remotion add @remotion/lottie # If project uses npm), code:tsx (import { Lottie, LottieAnimationData } from "@remotion/lotti), Displaying a Lottie file, Prerequisites, Styling and animating, Using Lottie Animations in Remotion
+
+### Community 302 - "Community 302"
+Cohesion: 0.25
+Nodes (7): computedHash, skillPath, source, sourceType, skills, remotion-best-practices, version
+
+### Community 303 - "Community 303"
+Cohesion: 0.25
+Nodes (8): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (npm run build), code:bash (git add -A), code:bash (cd C:/xampp/htdocs/rielcode-astro), Task 1: Create `CaseStudySection.astro`, Task 4: Delete legacy `portfolio.astro` + build verify + tag, Track 2D — `/work` index + `/work/[slug]` case study template
+
+### Community 304 - "Community 304"
+Cohesion: 0.25
+Nodes (8): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (npm run build), code:bash (git add -A), Task 5: Create `FAQAccordion.astro`, Task 7: Delete legacy `faq.astro` + tag 2E, Track 2E — `/studio`
+
+### Community 305 - "Community 305"
+Cohesion: 0.25
+Nodes (7): { chromium }, domain, form, hosting, invalid, pkg, promoWrap
+
+### Community 306 - "Community 306"
+Cohesion: 0.25
+Nodes (7): cb, { chromium }, invalid, navPromise, responses, short, starter
+
+### Community 307 - "Community 307"
+Cohesion: 0.25
+Nodes (6): captionUrl, https, idx, lines, snippet, urlMatch
+
+### Community 308 - "Community 308"
+Cohesion: 0.25
+Nodes (7): After learning phase (Jun 5+) — branch on CPL + volume, Budget rules, Campaign expansion ladder (months), Funnel fixes (from the 5 cold-lead post-mortem), Meta Ads Playbook — Rielcode, Phase gate — learning phase (until ~2026-06-05), When the video ad is ready
+
+### Community 309 - "Community 309"
+Cohesion: 0.25
+Nodes (7): data, errSpy, exitSpy, headers, tmpDir, token, tokensPath
+
+### Community 310 - "Community 310"
+Cohesion: 0.25
+Nodes (7): data, errSpy, exitSpy, headers, tmpDir, token, tokensPath
+
+### Community 311 - "Community 311"
+Cohesion: 0.25
+Nodes (8): code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "AI search to), code:bash (# Get style options for a modern tool product), code:bash (python3 skills/ui-ux-pro-max/scripts/search.py "list perform), Example Workflow, Step 1: Analyze Requirements, Step 2: Generate Design System (REQUIRED), Step 3: Supplement with Detailed Searches (as needed), Step 4: Stack Guidelines
+
+### Community 313 - "Community 313"
+Cohesion: 0.48
+Nodes (5): alwaysUpdateLinks, attachmentFolderPath, defaultViewMode, newFileLocation, showUnsupportedFiles
+
+### Community 314 - "Community 314"
+Cohesion: 0.29
+Nodes (7): 1. Should this animate at all?, 2. What is the purpose?, 3. What easing should it use?, 4. How fast should it be?, code:css (/* Strong ease-out for UI interactions */), Perceived performance, The Animation Decision Framework
+
+### Community 315 - "Community 315"
+Cohesion: 0.29
+Nodes (7): 3D transforms for depth, code:css (/* Works regardless of drawer height */), code:css (.wrapper {), CSS Transform Mastery, scale() scales children too, transform-origin, translateY with percentages
+
+### Community 316 - "Community 316"
+Cohesion: 0.29
+Nodes (7): clip-path for Animation, code:css (/* Fully hidden from right */), Comparison sliders, Hold-to-delete pattern, Image reveals on scroll, Tabs with perfect color transitions, The inset shape
+
+### Community 317 - "Community 317"
+Cohesion: 0.29
+Nodes (7): 10. How to answer multiple-choice questions, code:text (When borrowing two bits from the host portion of 192.168.89.), code:text (192.168.89.192), code:text (192.168.89.0), code:text (192.168.89.64), code:text (192.168.89.64), code:text (192.168.89.0)
+
+### Community 318 - "Community 318"
+Cohesion: 0.29
+Nodes (7): 12. Quick formulas, code:text (New prefix = original prefix + borrowed bits), code:text (Host bits = 32 - prefix), code:text (Number of subnets = 2^borrowed bits), code:text (Total addresses per subnet = 2^host bits), code:text (Usable hosts per subnet = 2^host bits - 2), code:text (Block size = 256 - subnet mask value in changed octet)
+
+### Community 319 - "Community 319"
+Cohesion: 0.29
+Nodes (6): code:block1 (New prefix       = original prefix + borrowed bits), Common Prefixes, Core Formulas, Example: 192.168.89.0/24 borrow 2 bits -> /26, IPv4 Subnetting Reference, Key Concepts
+
+### Community 320 - "Community 320"
+Cohesion: 0.29
+Nodes (6): code:bash (npx remotion add @remotion/captions # If project uses npm), code:tsx (import { useState, useEffect, useCallback } from "react";), Importing .srt subtitles into Remotion, Prerequisites, Reading an .srt file, Using imported captions
+
+### Community 321 - "Community 321"
+Cohesion: 0.29
+Nodes (6): code:tsx (import { Sequence, useVideoConfig } from "remotion";), code:tsx (<Sequence durationInFrames={1.5 * fps}>), code:tsx (<Sequence from={30}>), Trim and Delay, Trim the Beginning, Trim the End
+
+### Community 322 - "Community 322"
+Cohesion: 0.29
+Nodes (7): code:powershell (New-Item -ItemType Directory -Force "c:\Users\afw14\OneDrive), code:json ({), code:block3 (node_modules/), code:json ({), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 1: Package Scaffold
+
+### Community 323 - "Community 323"
+Cohesion: 0.29
+Nodes (7): code:powershell (New-Item -ItemType Directory -Force -Path "c:\Users\afw14\On), code:json ({), code:block3 (node_modules/), code:json ({), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 1: Package Scaffold
+
+### Community 324 - "Community 324"
+Cohesion: 0.29
+Nodes (7): code:json ({), code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:js (import axios from 'axios';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 4: auth/instagram.js
+
+### Community 325 - "Community 325"
+Cohesion: 0.29
+Nodes (7): code:json ({), code:js (const SCOPES = [), code:js (const SCOPES = [), code:js (export function notAuthenticated() {), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS), Task 1: Scaffold -- package.json + oauth.js scope
+
+### Community 326 - "Community 326"
+Cohesion: 0.29
+Nodes (7): code:bash (mkdir -p C:/xampp/htdocs/rielcode-astro/public/fonts), code:bash (curl -sL -A "Mozilla/5.0" "https://fonts.googleapis.com/css2), code:bash (curl -sL -A "Mozilla/5.0" "https://fonts.googleapis.com/css2), code:bash (curl -sL -A "Mozilla/5.0" "https://fonts.googleapis.com/css2), code:bash (ls -la C:/xampp/htdocs/rielcode-astro/public/fonts/), code:bash (cd C:/xampp/htdocs/rielcode-astro), Task 1: Download Fraunces + Inter variable WOFF2 files
+
+### Community 327 - "Community 327"
+Cohesion: 0.29
+Nodes (7): code:astro (<head>), code:bash (grep -n "CSS/" C:/xampp/htdocs/rielcode-astro/src/layouts/Ba), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:js (document.documentElement.setAttribute('data-theme', 'dark');), code:js (document.documentElement.setAttribute('data-theme', 'light')), code:bash (git add src/layouts/BaseLayout.astro), Task 4: Strip legacy CSS + add font preload + theme script in `BaseLayout.astro`
+
+### Community 328 - "Community 328"
+Cohesion: 0.29
+Nodes (6): checkboxes, { chromium }, heading, path, profile, radios
+
+### Community 329 - "Community 329"
+Cohesion: 0.29
+Nodes (6): btn, cb, { chromium }, el, form, invalid
+
+### Community 330 - "Community 330"
+Cohesion: 0.29
+Nodes (6): { chromium }, fs, outDir, outPath, pages, path
+
+### Community 331 - "Community 331"
+Cohesion: 0.33
+Nodes (6): fs, get(), getCaptionUrl(), H, https, lines
+
+### Community 332 - "Community 332"
+Cohesion: 0.29
+Nodes (6): { chromium }, decoded, idx, lines, m, snippet
+
+### Community 333 - "Community 333"
+Cohesion: 0.33
+Nodes (5): code:bash (bash meta/dashboard/run.sh), Credentials, Meta Dashboard, Run, What it shows
+
+### Community 334 - "Community 334"
+Cohesion: 0.33
+Nodes (6): Accessibility, code:css (@media (prefers-reduced-motion: reduce) {), code:jsx (const shouldReduceMotion = useReducedMotion();), code:css (@media (hover: hover) and (pointer: fine) {), prefers-reduced-motion, Touch device hover states
+
+### Community 335 - "Community 335"
+Cohesion: 0.33
+Nodes (6): Asymmetric enter/exit timing, code:css (/* Release: fast */), Cohesion matters, Review your work the next day, The opacity + height combination, The Sonner Principles (Building Loved Components)
+
+### Community 336 - "Community 336"
+Cohesion: 0.33
+Nodes (6): 9. Example: 192.168.89.0/24 borrowing 2 bits, code:text (192.168.89.0/24), code:text (/24 + 2 = /26), code:text (255.255.255.192), code:text (256 - 192 = 64), code:text (192.168.89.0)
+
+### Community 337 - "Community 337"
+Cohesion: 0.33
+Nodes (5): code:bash (npx remotion ffmpeg -i input.mp4 output.mp3), code:tsx (import {Video} from '@remotion/media';), code:bash (# Re-encodes from the exact frame), FFmpeg in Remotion, Trimming videos
+
+### Community 338 - "Community 338"
+Cohesion: 0.33
+Nodes (5): code:ts (import type { Caption } from "@remotion/captions";), code:ts (type Caption = {), Displaying captions, Generating captions, Importing captions
+
+### Community 339 - "Community 339"
+Cohesion: 0.33
+Nodes (5): code:bash (npx remotion add @remotion/install-whisper-cpp), code:ts (import path from "path";), Prerequisites, Transcribing, Transcribing audio
+
+### Community 340 - "Community 340"
+Cohesion: 0.33
+Nodes (6): code:php (<?php), code:php (<?php), code:php (</div><!-- /.main-content -->), code:css (:root {), code:bash (git add inc/ CSS/), Task 4: Auth helpers and shared layout
+
+### Community 341 - "Community 341"
+Cohesion: 0.33
+Nodes (6): code:bash (mkdir C:\xampp\htdocs\pay), code:json ({), code:bash (cd C:\xampp\htdocs\pay), code:block5 (vendor/), code:bash (cd C:\xampp\htdocs\pay), Task 1: Bootstrap project + install dependencies
+
+### Community 342 - "Community 342"
+Cohesion: 0.33
+Nodes (6): code:powershell (npm test -- --testPathPattern=output), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), code:js (import { jest } from '@jest/globals';), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:js (import chalk from 'chalk';), Task 2: lib/output.js
+
+### Community 343 - "Community 343"
+Cohesion: 0.33
+Nodes (6): code:js (import { jest } from '@jest/globals';), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:js (import chalk from 'chalk';), code:powershell (npm test -- --testPathPattern=error), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 3: lib/error.js
+
+### Community 344 - "Community 344"
+Cohesion: 0.33
+Nodes (6): code:js (import { jest } from '@jest/globals';), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:js (import fs from 'fs';), code:powershell (npm test -- --testPathPattern=token), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 4: auth/token.js
+
+### Community 345 - "Community 345"
+Cohesion: 0.33
+Nodes (6): code:js (/**), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:js (#!/usr/bin/env node), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 5: `figma auth` command + CLI entry point
+
+### Community 346 - "Community 346"
+Cohesion: 0.33
+Nodes (6): code:js (// ---- figma files ----), code:powershell (npm test -- --testPathPattern=figma), code:js (// ---- files ----), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 6: `figma files` command
+
+### Community 347 - "Community 347"
+Cohesion: 0.33
+Nodes (6): code:js (// ---- figma export ----), code:powershell (npm test -- --testPathPattern=figma), code:js (// ---- export ----), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 7: `figma export` command
+
+### Community 348 - "Community 348"
+Cohesion: 0.33
+Nodes (6): code:js (// ---- figma inspect ----), code:powershell (npm test -- --testPathPattern=figma), code:js (// ---- inspect ----), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 8: `figma inspect` command
+
+### Community 349 - "Community 349"
+Cohesion: 0.33
+Nodes (6): code:js (// ---- figma download ----), code:powershell (npm test -- --testPathPattern=figma), code:js (// ---- download ----), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 9: `figma download` command
+
+### Community 350 - "Community 350"
+Cohesion: 0.33
+Nodes (6): code:js (// ---- figma comments list ----), code:powershell (npm test -- --testPathPattern=figma), code:js (// ---- comments ----), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 10: `figma comments list` command
+
+### Community 351 - "Community 351"
+Cohesion: 0.33
+Nodes (6): code:js (// ---- figma comments add ----), code:powershell (npm test -- --testPathPattern=figma), code:js (comments), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 11: `figma comments add` command
+
+### Community 352 - "Community 352"
+Cohesion: 0.33
+Nodes (6): code:js (// ---- figma versions ----), code:powershell (npm test -- --testPathPattern=figma), code:js (// ---- versions ----), code:powershell (npm test -- --testPathPattern=figma), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 12: `figma versions` command
+
+### Community 353 - "Community 353"
+Cohesion: 0.33
+Nodes (6): code:powershell (npm test -- --testPathPattern="output.test"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:js (import chalk from 'chalk';), Task 2: lib/output.js
+
+### Community 354 - "Community 354"
+Cohesion: 0.33
+Nodes (6): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:js (import chalk from 'chalk';), code:powershell (npm test -- --testPathPattern="error.test"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 3: lib/error.js
+
+### Community 355 - "Community 355"
+Cohesion: 0.33
+Nodes (6): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:js (import axios from 'axios';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 5: auth/tiktok.js
+
+### Community 356 - "Community 356"
+Cohesion: 0.33
+Nodes (6): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:js (#!/usr/bin/env node), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 6: ig list
+
+### Community 357 - "Community 357"
+Cohesion: 0.33
+Nodes (6): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:js (#!/usr/bin/env node), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 14: tt list
+
+### Community 358 - "Community 358"
+Cohesion: 0.33
+Nodes (6): code:astro (---), code:astro (import ThemeToggle from '../components/ThemeToggle.astro';), code:astro (<div style="position:fixed; top:12px; right:12px; z-index:99), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/components/ThemeToggle.astro), Task 5: Create `ThemeToggle.astro`
+
+### Community 359 - "Community 359"
+Cohesion: 0.33
+Nodes (6): code:markdown (---), code:markdown (---), code:markdown (---), code:markdown (---), code:bash (git add src/content/services/), Task 2I.3: Author services + addons collection entries
+
+### Community 360 - "Community 360"
+Cohesion: 0.33
+Nodes (5): ANSWERS, { chromium }, match, path, profile
+
+### Community 361 - "Community 361"
+Cohesion: 0.33
+Nodes (5): { chromium }, errors, invalidStateErrors, radio, yesBtn
+
+### Community 362 - "Community 362"
+Cohesion: 0.33
+Nodes (5): { chromium }, lines, m, matches, scripts
+
+### Community 363 - "Community 363"
+Cohesion: 0.33
+Nodes (5): How to log each week, Log, Meta Ads Monitor — Rielcode, Week of 2026-06-01 (7-day pull), Week of YYYY-MM-DD
+
+### Community 364 - "Community 364"
+Cohesion: 0.33
+Nodes (6): Accessibility, Interaction, Layout, Light/Dark Mode, Pre-Delivery Checklist, Visual Quality
+
+### Community 365 - "Community 365"
+Cohesion: 0.6
+Nodes (3): child, path, { spawn }
+
+### Community 366 - "Community 366"
+Cohesion: 0.4
+Nodes (5): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Behavioral Guidelines (Karpathy)
+
+### Community 367 - "Community 367"
+Cohesion: 0.4
+Nodes (5): 5. What does borrowing bits mean?, code:text (192.168.89.0/24), code:text (/24 + 2 = /26), code:text (/26), code:text (255.255.255.192)
+
+### Community 368 - "Community 368"
+Cohesion: 0.4
+Nodes (5): 8. How to find the block size, code:text (Block size = 256 - subnet mask value in the changed octet), code:text (255.255.255.192), code:text (256 - 192 = 64), code:text (64)
+
+### Community 369 - "Community 369"
+Cohesion: 0.4
+Nodes (5): code:php (<?php), code:php (<?php), code:php (<?php), code:bash (git add index.php login.php logout.php), Task 5: Login, logout, and index redirect
+
+### Community 370 - "Community 370"
+Cohesion: 0.4
+Nodes (5): code:bash (cat C:/xampp/htdocs/rielcode-astro/src/styles/global.css), code:css (/* =========================================================), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/styles/global.css), Task 3: Rewrite `global.css` with font-face + new resets
+
+### Community 371 - "Community 371"
+Cohesion: 0.4
+Nodes (5): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (npm run build), code:bash (git add src/pages/index.astro), Task 17: Rewrite `src/pages/index.astro` — editorial home
+
+### Community 372 - "Community 372"
+Cohesion: 0.4
+Nodes (5): code:bash (mkdir C:/xampp/htdocs/rielcode-astro/src/pages/work), code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/pages/work/index.astro), Task 2: Create `/work/index.astro` — case study index
+
+### Community 373 - "Community 373"
+Cohesion: 0.4
+Nodes (5): code:bash (cat C:/xampp/htdocs/rielcode-astro/src/snapshots/terms.html), code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/pages/terms.astro src/pages/privacy.astro src/pa), Task 12: Rewrite `src/pages/terms.astro` (migrate from snapshot)
+
+### Community 374 - "Community 374"
+Cohesion: 0.4
+Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/index.astro), Task 2I.9: Home page reads featured work + rotating testimonial
+
+### Community 375 - "Community 375"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 376 - "Community 376"
+Cohesion: 0.4
+Nodes (5): code:ts (// src/scripts/motion.ts), code:css ([data-reveal] {), code:astro (<script>), code:bash (git add src/scripts/motion.ts src/styles/global.css src/layo), Task 2H.3: Build the IntersectionObserver reveal module
+
+### Community 377 - "Community 377"
+Cohesion: 0.4
+Nodes (4): anchors, { chromium }, url, urls
+
+### Community 378 - "Community 378"
+Cohesion: 0.4
+Nodes (4): { chromium }, staleNo, url1, url2
+
+### Community 379 - "Community 379"
+Cohesion: 0.4
+Nodes (4): { chromium }, form, invalid, starter
+
+### Community 380 - "Community 380"
+Cohesion: 0.4
+Nodes (4): cb, { chromium }, inp, starter
+
+### Community 381 - "Community 381"
+Cohesion: 0.4
+Nodes (4): { chromium }, errs, pages, path
+
+### Community 382 - "Community 382"
+Cohesion: 0.4
+Nodes (4): { chromium }, COOKIES, fs, lines
+
+### Community 383 - "Community 383"
+Cohesion: 0.6
+Nodes (3): err, errSpy, exitSpy
+
+### Community 384 - "Community 384"
+Cohesion: 0.4
+Nodes (5): code:bash (python3 --version || python --version), code:bash (brew install python3), code:bash (sudo apt update && sudo apt install python3), code:powershell (winget install Python.Python.3.12), Prerequisites
+
+### Community 385 - "Community 385"
+Cohesion: 0.4
+Nodes (5): Common Rules for Professional UI, Icons & Visual Elements, Interaction (App), Layout & Spacing, Light/Dark Mode Contrast
+
+### Community 390 - "Community 390"
+Cohesion: 0.5
+Nodes (3): Figma CLI Implementation Plan, File Map, Summary
+
+### Community 391 - "Community 391"
+Cohesion: 0.5
+Nodes (4): Beauty is leverage, Core Philosophy, Taste is trained, not innate, Unseen details compound
+
+### Community 392 - "Community 392"
+Cohesion: 0.5
+Nodes (4): 1. What is an IP address?, code:text (192.168.89.0), code:text (192        .168        .89         .0), code:text (8 + 8 + 8 + 8 = 32 bits)
+
+### Community 393 - "Community 393"
+Cohesion: 0.5
+Nodes (4): 2. What is a prefix?, code:text (192.168.89.0/24), code:text (24 bits are for the network), code:text (32 - 24 = 8 host bits)
+
+### Community 394 - "Community 394"
+Cohesion: 0.5
+Nodes (4): 3. What is a subnet mask?, code:text (11111111.11111111.11111111.00000000), code:text (255.255.255.0), code:text (/24 = 255.255.255.0)
+
+### Community 395 - "Community 395"
+Cohesion: 0.5
+Nodes (4): 7. How many hosts per subnet?, code:text (Usable hosts = 2^host bits - 2), code:text (32 - 26 = 6 host bits), code:text (2^6 - 2 = 64 - 2 = 62 usable hosts)
+
+### Community 396 - "Community 396"
+Cohesion: 0.5
+Nodes (3): Claude Code Mastery (Opus 4.8), Effort cheat sheet, Top reminders
+
+### Community 397 - "Community 397"
+Cohesion: 0.5
+Nodes (3): code:tsx (import { useCurrentScale } from "remotion";), Measuring DOM nodes in Remotion, Measuring element dimensions
+
+### Community 398 - "Community 398"
+Cohesion: 0.5
+Nodes (3): Text animations, Typewriter Effect, Word Highlighting
+
+### Community 399 - "Community 399"
+Cohesion: 0.5
+Nodes (4): code:php (<?php), code:bash (git add connection.php), code:php (<?php), Task 3: Config and connection files
+
+### Community 400 - "Community 400"
+Cohesion: 0.5
+Nodes (4): code:bash (cd C:\xampp\htdocs\pay), code:bash (git clone git@github.com:Azriel-Fajar/rielcode-pay.git ~/pay), code:php (<?php), Task 12: Deploy to cPanel subdomain
+
+### Community 401 - "Community 401"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 7: ig post (confirmation + publish)
+
+### Community 402 - "Community 402"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 8: ig reels
+
+### Community 403 - "Community 403"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 9: ig stories
+
+### Community 404 - "Community 404"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 10: ig analytics
+
+### Community 405 - "Community 405"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 11: ig comments list/reply/delete
+
+### Community 406 - "Community 406"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 12: ig dms list/read/send
+
+### Community 407 - "Community 407"
+Cohesion: 0.5
+Nodes (4): code:powershell (Get-Content "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 13: ig auth command wiring + shebang check
+
+### Community 408 - "Community 408"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 15: tt upload with confirmation
+
+### Community 409 - "Community 409"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 16: tt analytics
+
+### Community 410 - "Community 410"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 17: tt comments list/reply
+
+### Community 411 - "Community 411"
+Cohesion: 0.5
+Nodes (4): code:js (import { jest } from '@jest/globals';), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 18: tt dms list/read/send
+
+### Community 412 - "Community 412"
+Cohesion: 0.5
+Nodes (4): code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS\tools\social"), code:block72 (Test Suites: 13 passed, 13 total), code:powershell (cd "c:\Users\afw14\OneDrive\Documents\JARVIS"), Task 19: tt auth command wiring + full suite
+
+### Community 413 - "Community 413"
+Cohesion: 0.5
+Nodes (4): code:bash (cat C:/xampp/htdocs/rielcode-astro/src/components/Button.ast), code:astro (---), code:bash (git add src/components/Button.astro), Task 7: Rewrite `Button.astro` with forest fill + underline variants
+
+### Community 414 - "Community 414"
+Cohesion: 0.5
+Nodes (4): code:bash (cat C:/xampp/htdocs/rielcode-astro/src/components/Section.as), code:astro (---), code:bash (git add src/components/Section.astro), Task 8: Update `Section.astro` to use new spacing tokens
+
+### Community 415 - "Community 415"
+Cohesion: 0.5
+Nodes (4): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/components/Footer.astro), Task 11: Rewrite `Footer.astro` with theme toggle + studio number
+
+### Community 416 - "Community 416"
+Cohesion: 0.5
+Nodes (4): code:bash (cd C:/xampp/htdocs/rielcode-astro), code:block58 (/url-screenshot http://localhost:4321/), code:bash (cd c:/Users/afw14/OneDrive/Documents/JARVIS), Task 18: Take baseline screenshot for spec record
+
+### Community 417 - "Community 417"
+Cohesion: 0.5
+Nodes (4): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/pages/studio.astro), Task 6: Create `src/pages/studio.astro`
+
+### Community 418 - "Community 418"
+Cohesion: 0.5
+Nodes (4): code:bash (cat C:/xampp/htdocs/rielcode-astro/src/pages/privacy.astro), code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), Task 11: Rewrite `src/pages/privacy.astro`
+
+### Community 419 - "Community 419"
+Cohesion: 0.5
+Nodes (4): code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/pages/work/parallaxnet-canada.astro), Task 3: Create `/work/parallaxnet-canada.astro` — first case study
+
+### Community 420 - "Community 420"
+Cohesion: 0.5
+Nodes (4): code:markdown (---), code:markdown (---), code:bash (git add src/content/work/ src/content/testimonials/), Task 2I.4: Author work case study + testimonial entries
+
+### Community 421 - "Community 421"
+Cohesion: 0.5
+Nodes (4): code:astro (---), code:bash (git rm src/pages/work/parallaxnet-canada.astro), code:bash (git add src/pages/work/[...slug].astro), Task 2I.6: Replace static case-study route with dynamic `[...slug].astro`
+
+### Community 422 - "Community 422"
+Cohesion: 0.5
+Nodes (4): code:bash (grep -r "snapshots" src/ astro.config.mjs 2>&1), code:bash (git rm -r src/snapshots/), code:bash (git commit -m "chore(2I): delete obsolete src/snapshots/ — c), Task 2I.11: Delete `src/snapshots/` directory
+
+### Community 423 - "Community 423"
+Cohesion: 0.5
+Nodes (4): code:bash (npm install --save-dev @playwright/test @axe-core/playwright), code:ts (import { defineConfig, devices } from '@playwright/test';), code:bash (git add package.json package-lock.json scripts/qa/playwright), Task 2J.1: Install Playwright + axe + Lighthouse CI
+
+### Community 424 - "Community 424"
+Cohesion: 0.5
+Nodes (3): { chromium }, path, profile
+
+### Community 425 - "Community 425"
+Cohesion: 0.5
+Nodes (3): { chromium }, path, profile
+
+### Community 426 - "Community 426"
+Cohesion: 0.5
+Nodes (3): cb, { chromium }, starter
+
+### Community 427 - "Community 427"
+Cohesion: 0.5
+Nodes (4): Common Sticking Points, Pre-Delivery Checklist, Query Strategy, Tips for Better Results
+
+### Community 428 - "Community 428"
+Cohesion: 0.5
+Nodes (4): Must Use, Recommended, Skip, When to Apply
+
+### Community 429 - "Community 429"
+Cohesion: 0.67
+Nodes (3): code:php (<?php), code:bash (git add inc/invoice_number.php), Task 6: Invoice number generator helper
+
+### Community 430 - "Community 430"
+Cohesion: 0.67
+Nodes (3): code:php (<?php), code:bash (git add dashboard.php), Task 7: Dashboard
+
+### Community 431 - "Community 431"
+Cohesion: 0.67
+Nodes (3): code:php (<?php), code:bash (git add invoice/create.php), Task 8: Create invoice page
+
+### Community 432 - "Community 432"
+Cohesion: 0.67
+Nodes (3): code:php (<?php), code:bash (git add invoice/edit.php), Task 9: Edit invoice + generate shareable URL + QR code
+
+### Community 433 - "Community 433"
+Cohesion: 0.67
+Nodes (3): code:php (<?php), code:bash (git add invoice/view.php), Task 10: Public client invoice page
+
+### Community 434 - "Community 434"
+Cohesion: 0.67
+Nodes (3): code:php (<?php), code:bash (git add invoice-pdf.php), Task 11: PDF generation
+
+### Community 491 - "Community 491"
+Cohesion: 0.22
+Nodes (8): answered, answersByPage, formUrl, label, miss, questionsByPage, runAt, total
+
+### Community 492 - "Community 492"
+Cohesion: 0.4
+Nodes (5): code:block33 (/portfolio          /work             301), code:astro (---), code:bash (ls dist/_redirects dist/portfolio/index.html dist/packages/i), code:bash (git add public/_redirects src/pages/portfolio.astro src/page), Task 2I.10: Add 301 redirects for legacy Phase 1 URLs
+
+### Community 493 - "Community 493"
+Cohesion: 0.4
+Nodes (5): code:js (// scripts/qa/lighthouse.mjs), code:bash (npm run build && npm run preview -- --port 4321), code:bash (node scripts/qa/lighthouse.mjs), code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse), Task 2J.4: Lighthouse runner script
+
+### Community 494 - "Community 494"
+Cohesion: 0.5
+Nodes (4): code:astro (<h1 class="rc-hero__title">), code:css (.rc-hero__word {), code:bash (git add src/components/EditorialHero.astro), Task 2H.5: EditorialHero staggered word reveal
+
+### Community 495 - "Community 495"
+Cohesion: 0.5
+Nodes (4): code:ts (// src/scripts/gsap-scenes.ts), code:astro (<script>), code:bash (git add src/scripts/gsap-scenes.ts src/pages/work/[...slug].), Task 2H.6: GSAP pinned-image scene for case study route
+
+### Community 496 - "Community 496"
+Cohesion: 0.67
+Nodes (3): code:ts (// src/content.config.ts), code:bash (git add src/content.config.ts), Task 2I.1: Define Content Collection schemas
+
+### Community 497 - "Community 497"
+Cohesion: 0.67
+Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/studio.astro), Task 2I.8: Convert `/studio` FAQ section to read from collection
+
+### Community 498 - "Community 498"
+Cohesion: 0.67
+Nodes (3): code:block71 (Track 2H — motion layer (GSAP, ScrollTrigger, view transitio), code:bash (cd C:\Users\afw14\OneDrive\Documents\JARVIS), Task 2J.6: Update the Phase 2 spec to mark all tracks complete
 
 ## Ambiguous Edges - Review These
 - `Rielcode Portfolio Page Screenshot` → `Rielcode Website (portfolio.rielcode.com)`  [AMBIGUOUS]
@@ -1048,156 +1885,9 @@ Nodes (1): Rielcode Services Page Screenshot v2
   screenshots/rielcode-testimonials-20260511.png · relation: references
 
 ## Knowledge Gaps
-- **1274 isolated node(s):** `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)`, `Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms`, `Friendly, user-facing API/config error (token missing, expired, no permission).` (+1269 more)
+- **2389 isolated node(s):** `name`, `version`, `description`, `main`, `doc` (+2384 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 123`** (2 nodes): `Atom()`, `Atom.tsx`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 124`** (2 nodes): `Logo.tsx`, `Logo()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 125`** (2 nodes): `Subtitle.tsx`, `Subtitle()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 126`** (2 nodes): `runBrowser()`, `cross-browser-template.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 127`** (2 nodes): `yt-check.js`, `get()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 128`** (2 nodes): `yt-transcript-api.js`, `get()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 129`** (2 nodes): `connections.md`, `Connections`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 130`** (2 nodes): `connections.md`, `Connections`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 131`** (2 nodes): `Deployments Index`, `index.md`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 132`** (2 nodes): `Four Cs AIOS Audit Framework`, `Skill: audit (Four Cs AIOS Audit)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 133`** (1 nodes): `playwright.config.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 134`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 135`** (1 nodes): `eslint.config.mjs`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 136`** (1 nodes): `remotion.config.ts`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 137`** (1 nodes): `HelloWorld.tsx`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 138`** (1 nodes): `index.ts`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 139`** (1 nodes): `Root.tsx`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 140`** (1 nodes): `constants.ts`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 141`** (1 nodes): `angles.ts`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 142`** (1 nodes): `theme.ts`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 143`** (1 nodes): `rielcode-review.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 144`** (1 nodes): `check-slider.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 145`** (1 nodes): `discover-pages.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 146`** (1 nodes): `fill-custom-plan-pro.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 147`** (1 nodes): `gform-answer-all.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 148`** (1 nodes): `gform-answer.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 149`** (1 nodes): `gform-login.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 150`** (1 nodes): `gform-probe-all.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 151`** (1 nodes): `gform-q1.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 152`** (1 nodes): `inspect-padding.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 153`** (1 nodes): `order-form-debug.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 154`** (1 nodes): `order-form-smtp-test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 155`** (1 nodes): `order-form-test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 156`** (1 nodes): `order-form-test2.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 157`** (1 nodes): `order-form-test3.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 158`** (1 nodes): `order-form-test4.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 159`** (1 nodes): `order-form-test5.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 160`** (1 nodes): `order-form-verify-fix.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 161`** (1 nodes): `order-form-verify.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 162`** (1 nodes): `screenshot-all.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 163`** (1 nodes): `track1c-screenshots.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 164`** (1 nodes): `yt-debug.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 165`** (1 nodes): `yt-dump.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 166`** (1 nodes): `yt-transcript-browser.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 167`** (1 nodes): `yt-transcript-pkg.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 168`** (1 nodes): `yt-transcript.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 169`** (1 nodes): `yt-transcript2.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 170`** (1 nodes): `smoke.spec.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 171`** (1 nodes): `launch-widget.ps1`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 172`** (1 nodes): `error.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 173`** (1 nodes): `figma.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 174`** (1 nodes): `output.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 175`** (1 nodes): `jest.config.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 176`** (1 nodes): `youtube.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 177`** (1 nodes): `auth.instagram.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 178`** (1 nodes): `auth.tiktok.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 179`** (1 nodes): `error.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 180`** (1 nodes): `ig.list.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 181`** (1 nodes): `output.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 182`** (1 nodes): `tt.list.test.js`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 183`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 184`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 185`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 186`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 187`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 188`** (1 nodes): `_COMMUNITY_Community 5.md`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 189`** (1 nodes): `vaBxYgZ7MAU.md`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 190`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 191`** (1 nodes): `Set up dummy environment variables for testing.`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 192`** (1 nodes): `CLAUDE.local.md Local Overrides`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 193`** (1 nodes): `Session Summary Template`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 194`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 195`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 196`** (1 nodes): `Rielcode Services Page Screenshot v2`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **62 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1209,10 +1899,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Rielcode Testimonials Page Screenshot` and `Rielcode Website (portfolio.rielcode.com)`?**
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **Why does `get()` connect `Community 10` to `Community 73`, `Community 17`, `Community 6`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Are the 15 inferred relationships involving `get()` (e.g. with `_insert_event()` and `api_thread()`) actually correct?**
-  _`get()` has 15 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)` to the rest of the system?**
-  _1274 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.02 - nodes in this community are weakly interconnected._
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `create_homework_events()` connect `Community 17` to `Community 190`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `handle_message()` connect `Community 190` to `Community 17`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `name`, `version`, `description` to the rest of the system?**
+  _2416 weakly-connected nodes found - possible documentation gaps or missing edges._
