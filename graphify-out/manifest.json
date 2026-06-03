@@ -1,47 +1,47 @@
 {
   "D:\\Main Storage\\Documents\\JARVIS\\.graphify_analysis.json": {
-    "mtime": 1780367138.6413705,
+    "mtime": 1780528925.0689354,
     "ast_hash": "fb7852dabd353eacd6404d992638006d",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.graphify_ast.json": {
-    "mtime": 1780366966.1970968,
+    "mtime": 1780528925.071028,
     "ast_hash": "e9982d441c980fe90c21e3d589e4e689",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.graphify_detect.json": {
-    "mtime": 1780366941.3472104,
+    "mtime": 1780528925.071028,
     "ast_hash": "33a0fa3d2151672136f98a01671b4a02",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.graphify_extract.json": {
-    "mtime": 1780367115.0582,
+    "mtime": 1780528925.0742748,
     "ast_hash": "69949cdd1e67dc92d63e34836c537091",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.graphify_semantic.json": {
-    "mtime": 1780367102.56923,
+    "mtime": 1780528925.0772686,
     "ast_hash": "8648077e5d21ec37f084e0f8bf7c1d3d",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\graphify_merge.py": {
-    "mtime": 1780367097.3756275,
-    "ast_hash": "51b9675e50effaf2bdf46520114c9e88",
+    "mtime": 1780528925.1043444,
+    "ast_hash": "3996c6eda9d2b2b0c53d34c78bee8913",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\graphify_partc.py": {
-    "mtime": 1780367108.5963812,
-    "ast_hash": "8f064db81d168bc062a2466d84e9a19a",
+    "mtime": 1780528925.1043444,
+    "ast_hash": "a6b50683ec2df4a9e52c899cbadaf796",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\graphify_step3.py": {
-    "mtime": 1780366798.878747,
-    "ast_hash": "fa18dc70c3e8c3b1594c6a654a29272f",
+    "mtime": 1780528925.1052356,
+    "ast_hash": "8436a9f672b49b940cbe332ac367d039",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\graphify_step4.py": {
-    "mtime": 1780367133.281516,
-    "ast_hash": "80590a4676c68e9f7c1af9801b8acb2e",
+    "mtime": 1780528925.1052356,
+    "ast_hash": "fd77a4986754cbbd820fa0defa289239",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\package.json": {
@@ -340,13 +340,13 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\graph.json": {
-    "mtime": 1780367114.617,
-    "ast_hash": "ab371afd0f27b142a671ceb2a61d9b6c",
+    "mtime": 1780528932.4586415,
+    "ast_hash": "7cc0ee0496e7dee3dfcacfb62b96ff28",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\workspace.json": {
-    "mtime": 1780367109.659116,
-    "ast_hash": "99b1296d949188b5ef684b6b9d7ec698",
+    "mtime": 1780528932.4596007,
+    "ast_hash": "b6543031530a7334b353d33aa8a4ea3b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.pw-profile\\component_crx_cache\\metadata.json": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\meta\\dashboard\\meta_api.py": {
-    "mtime": 1780363348.8823311,
-    "ast_hash": "3c150e61d244abeacd0e029c7e0b7b25",
+    "mtime": 1780528918.9706361,
+    "ast_hash": "fed975f76a3d5be890105e233d1c9061",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\meta\\dashboard\\run.sh": {
@@ -490,8 +490,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\Root.tsx": {
-    "mtime": 1780363348.9204345,
-    "ast_hash": "c4fba352e7f1ceca4d71a8f4c63cfe29",
+    "mtime": 1780528918.9733229,
+    "ast_hash": "8b03cb718e57796d6a3903d8b2f067be",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Arc.tsx": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\PromoAd.tsx": {
-    "mtime": 1780363348.919223,
-    "ast_hash": "2dfc905fe9d2ae7feabee7e8a8584fb9",
+    "mtime": 1780528918.9723258,
+    "ast_hash": "4a66dc85ca8d92e9ac0365b83ace5ae0",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\theme.ts": {
@@ -557,6 +557,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\cross-browser-check\\references\\cross-browser-template.js": {
     "mtime": 1778942848.4620273,
     "ast_hash": "a0d5bdda311cc8a866ccb8e59b2d2d69",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\audit-stress-test.js": {
+    "mtime": 1780528919.178946,
+    "ast_hash": "13cd32f4253259ed34c573fca988fae5",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\check-slider.js": {
@@ -647,6 +652,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\order-form-verify.js": {
     "mtime": 1780074081.7886603,
     "ast_hash": "f3b0d8478927f638d9c357d704278275",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\screenshot-all-mobile.js": {
+    "mtime": 1780528919.178946,
+    "ast_hash": "5cf05beede3ce82b91c9b557cddebf95",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\screenshot-all.js": {
@@ -780,8 +790,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\gcal\\index.js": {
-    "mtime": 1779075419.570345,
-    "ast_hash": "4718c74f9053a9d49e55fed70d16481b",
+    "mtime": 1780528919.1809387,
+    "ast_hash": "e2f89fb944a9ff432e1bb913ab6c67b5",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\gdrive\\index.js": {
@@ -880,7 +890,7 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.graphify_uncached.txt": {
-    "mtime": 1780366966.3220146,
+    "mtime": 1780528924.8914168,
     "ast_hash": "d05f3c8bb2b60ed3fc53e26d3d162f6e",
     "semantic_hash": ""
   },
@@ -890,8 +900,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\CLAUDE.md": {
-    "mtime": 1780363348.8047183,
-    "ast_hash": "fc1c689ed4167dba8bae2b3c02720264",
+    "mtime": 1780528918.91529,
+    "ast_hash": "17fabf05efafb86823774e3cf6aeb5ba",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\connections.md": {
@@ -1122,6 +1132,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\repurpose-project\\SKILL.md": {
     "mtime": 1778869703.4088807,
     "ast_hash": "51164b0992e7135ba21cc5807bf9524c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\session-memory\\SKILL.md": {
+    "mtime": 1780528918.9132948,
+    "ast_hash": "10145d1d60ba01b383665b9da4e511d5",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\site-cloner\\SKILL.md": {
@@ -1670,8 +1685,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\about-business.md": {
-    "mtime": 1777962312.8514946,
-    "ast_hash": "d05d7f39dafafa7bd050686b03a82a38",
+    "mtime": 1780528918.91529,
+    "ast_hash": "026469f7b2629c57a2bf1ca7d4e9b043",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\about-me.md": {
@@ -1680,7 +1695,7 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\current-priorities.md": {
-    "mtime": 1780366864.6790795,
+    "mtime": 1780528924.8944094,
     "ast_hash": "e6707e22bf3f9894b46adcaf4374f7ef",
     "semantic_hash": ""
   },
@@ -1824,6 +1839,11 @@
     "ast_hash": "725d66e60f786904ae94c229e18c3e31",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_flask_run_command.md": {
+    "mtime": 1780528918.965344,
+    "ast_hash": "41499c10bc7f2d11e43faf6c13c7441a",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_google_cli.md": {
     "mtime": 1780074081.673847,
     "ast_hash": "20358da7ce0eea335e104fc4474736d7",
@@ -1834,14 +1854,24 @@
     "ast_hash": "7cd0954810b5fd2ea6867bad4e371770",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_powershell_python_utf8.md": {
+    "mtime": 1780528918.9663415,
+    "ast_hash": "c4dc8cf4a9f2add8b5cce93557d40080",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_projects_layout.md": {
     "mtime": 1780074081.673847,
     "ast_hash": "5a2ed75923d93880711f6a7a11a88e99",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\MEMORY.md": {
-    "mtime": 1780363348.8680274,
-    "ast_hash": "73de2d01c4a63335370f07034c383f47",
+    "mtime": 1780528918.965344,
+    "ast_hash": "39155be6a628b3633e133bb27c2165f3",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_audit_tool.md": {
+    "mtime": 1780528918.9663415,
+    "ast_hash": "885519d1ed2c2b524aed826c83c5a46b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_messenger_client_history.md": {
@@ -1850,8 +1880,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_meta_ads_wa_leadgen.md": {
-    "mtime": 1780363348.8691394,
-    "ast_hash": "f1ce8d6981c465f08bb1faa44da2baaa",
+    "mtime": 1780528918.9673388,
+    "ast_hash": "a0ec22ae3c2aad0a8c5e6e87db1b2e56",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_meta_ads_wa_lead_gen.md": {
@@ -1874,6 +1904,11 @@
     "ast_hash": "441910aa12d918f641f2f40949b65035",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_rielcode_laravel_app.md": {
+    "mtime": 1780528918.9673388,
+    "ast_hash": "9343156f8171decc521626223364d44b",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_rielcode_outreach.md": {
     "mtime": 1780074081.674844,
     "ast_hash": "ecfaedde95b59ee2f4b41ccf0d8abb12",
@@ -1894,9 +1929,24 @@
     "ast_hash": "52edb8be9186997e8fd0705bffd3f0d0",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_meta_dashboard.md": {
+    "mtime": 1780528918.9684956,
+    "ast_hash": "07176d806319098e08a6ee7fde5a741c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_rielcode_rebrand_assets.md": {
+    "mtime": 1780528918.968916,
+    "ast_hash": "362f2318bed5090931f4cf5e8baefe2c",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_subnetting.md": {
     "mtime": 1780074081.6758416,
     "ast_hash": "6c75b63959d0080a7bb8aa4c0558cf84",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\meta\\ads-algorithm-context.md": {
+    "mtime": 1780528918.9693332,
+    "ast_hash": "54b63370b80034a3cec6205d52c40286",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\meta\\SETUP.md": {
@@ -1980,8 +2030,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\meta\\dashboard\\templates\\index.html": {
-    "mtime": 1780363348.8843262,
-    "ast_hash": "0b4b11e00627e968e9976aae96faa3bc",
+    "mtime": 1780528918.971328,
+    "ast_hash": "f8621198aa1f669069a4fb8bed605768",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\meta\\dashboard\\templates\\thread.html": {
@@ -2190,12 +2240,12 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\README.md": {
-    "mtime": 1780366823.2769234,
-    "ast_hash": "6c32a3f59482bf54fa89dda6b26d74e1",
+    "mtime": 1780528924.9708366,
+    "ast_hash": "d4c4c37a56cc98e4cfc36e668730003e",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-outreach\\salatiga-cafes.md": {
-    "mtime": 1780366829.5347273,
+    "mtime": 1780528924.971836,
     "ast_hash": "919fb5a52ec6c466fe50a986bda4b970",
     "semantic_hash": ""
   },
@@ -2305,8 +2355,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\youtube-rielcode\\channel-branding.md": {
-    "mtime": 1780366846.5141933,
-    "ast_hash": "874a2df996518666a8352dcb78c716d8",
+    "mtime": 1780528924.9728322,
+    "ast_hash": "ff2243ac59e8c4919baf7525a6fdef8c",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\youtube-rielcode\\README.md": {
@@ -2315,8 +2365,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\youtube-rielcode\\strategy.md": {
-    "mtime": 1780366840.9324808,
-    "ast_hash": "3eb3335214d7d013233ebf7431b2e3dd",
+    "mtime": 1780528924.974827,
+    "ast_hash": "4e706e4329315d4b43a9cecc69438436",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\youtube-rielcode\\batches\\2026-W21.md": {
@@ -2354,11 +2404,6 @@
     "ast_hash": "7c7cd70084b34a18bf544c38b27eff25",
     "semantic_hash": ""
   },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\ad-card.html": {
-    "mtime": 1780074061.200217,
-    "ast_hash": "7e840bb549f583bdc827f6a795c98e61",
-    "semantic_hash": ""
-  },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-review\\REPORT.md": {
     "mtime": 1780074081.772106,
     "ast_hash": "c3f164644365f1821c70f17deb601216",
@@ -2392,6 +2437,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\README.md": {
     "mtime": 1779075419.5679133,
     "ast_hash": "e650f2da270fedba721ecc52a3cae0e5",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\transcripts\\JMw6SmRdYQY.txt": {
+    "mtime": 1780528919.1869245,
+    "ast_hash": "580ba142522419cfc4d39a80a0b9e81a",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\transcripts\\vaBxYgZ7MAU.md": {
@@ -2644,91 +2694,6 @@
     "ast_hash": "86fe7b7cd7f7877f4dcf42fb07ece047",
     "semantic_hash": ""
   },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-1440x900-20260530-165340.png": {
-    "mtime": 1780134820.1849182,
-    "ast_hash": "c4185f3ee4ca5a1b126b3505f6dd07ce",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-1440x900-20260530-165441.png": {
-    "mtime": 1780134881.1224954,
-    "ast_hash": "c4185f3ee4ca5a1b126b3505f6dd07ce",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-1440x900-20260530-165539.png": {
-    "mtime": 1780134939.8458073,
-    "ast_hash": "b3f3b143f5bb6566eec89b82ace1b68f",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-20260525-163758.png": {
-    "mtime": 1780074061.1631546,
-    "ast_hash": "115fa36ac12430169d14a864feff9550",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-20260528-203310.png": {
-    "mtime": 1780074061.1736474,
-    "ast_hash": "df70ecab400c5b91ffcde85cbd45e3f0",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-checkout-success-20260525-163816.png": {
-    "mtime": 1780074061.174248,
-    "ast_hash": "cc5d4e8ce5660bdbddb116c499519ee3",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-el--testimonials-section-testimon-20260530-165221.png": {
-    "mtime": 1780134741.9655304,
-    "ast_hash": "9070cb855f3031b023444ab8c39de41c",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-progress-20260525-163744.png": {
-    "mtime": 1780074061.1752446,
-    "ast_hash": "e9ffcf62433a154d46db6ee24f049248",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-progress-20260525-164037.png": {
-    "mtime": 1780074061.177215,
-    "ast_hash": "bcb387c2b743cb7462b86907df4ed1db",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-progress-20260525-164719.png": {
-    "mtime": 1780074061.178443,
-    "ast_hash": "099393738a0993cccf27f11fd93ea40c",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-services-20260527-232224.png": {
-    "mtime": 1780074061.1811297,
-    "ast_hash": "4c130ccd24e654e476afda3d8aaf67f8",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-services-20260528-203306.png": {
-    "mtime": 1780074061.1836855,
-    "ast_hash": "c9a1744c3266e14cad056a44fe18ea68",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-services-20260528-221027.png": {
-    "mtime": 1780074061.1857715,
-    "ast_hash": "50060dbd5e39480b2afe2b8fb6cc7e8b",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-work-20260528-203314.png": {
-    "mtime": 1780074061.1992202,
-    "ast_hash": "3acf7f715d3b3f512360cb6572bd15fa",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-work-parallaxnet-siber-indonesia-20260530-181229.png": {
-    "mtime": 1780139550.2256327,
-    "ast_hash": "3e6b92a181b26ebbd5a22d0826170c35",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-work-parallaxnet-siber-indonesia-20260530-181304.png": {
-    "mtime": 1780139584.8562846,
-    "ast_hash": "e66501cf4790cf421ac7d45200da1243",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\127-0-0-1-work-parallaxnet-siber-indonesia-20260530-181511.png": {
-    "mtime": 1780139711.7220852,
-    "ast_hash": "5cc6fbf80becf869337544f9ff806741",
-    "semantic_hash": ""
-  },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\checkout-confirmation-real.png": {
     "mtime": 1778556682.0259528,
     "ast_hash": "1121c25da789a965c276785bdf96a41d",
@@ -2764,151 +2729,6 @@
     "ast_hash": "9aca17a9295ca85d566914ccd840771c",
     "semantic_hash": ""
   },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\custom-after.png": {
-    "mtime": 1780074061.200522,
-    "ast_hash": "18caae1cfe41a30a37d121f61f1a5982",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\custom-card.png": {
-    "mtime": 1780074061.2015193,
-    "ast_hash": "018366d34b6b2b98898ba5201550842e",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\custom-final.png": {
-    "mtime": 1780074061.2016017,
-    "ast_hash": "8072c3f6874dc609d26928d43b134419",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\custom-right.png": {
-    "mtime": 1780074061.2025993,
-    "ast_hash": "1210d6ccd80c9249fe4199a7b3cd873d",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\devices-crop.png": {
-    "mtime": 1780139734.469601,
-    "ast_hash": "9227f1245d260d0b2c1830608dcc3cc7",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\devices-crop2.png": {
-    "mtime": 1780139805.3924804,
-    "ast_hash": "a287de41c7d76b68893cf0391328d6c8",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\devices-crop3.png": {
-    "mtime": 1780139943.6140115,
-    "ast_hash": "1dcf960031342445657a235245440240",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\example-com-el-h1-20260511-124239.png": {
-    "mtime": 1778556682.0446184,
-    "ast_hash": "9782f352abe44ce6e9c632812394ad62",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\gform-q1.png": {
-    "mtime": 1779172395.505631,
-    "ast_hash": "044303eb6b8aab0c0e706ca95ba3ad6a",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\grid-fixed.png": {
-    "mtime": 1780074081.6816964,
-    "ast_hash": "7bb95e5815e493fcbcef637451426223",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\grid-v2.png": {
-    "mtime": 1780074081.6875613,
-    "ast_hash": "d4fde550eef61f2c4fa63448cf7bb3d9",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\grid-v3.png": {
-    "mtime": 1780074081.6885583,
-    "ast_hash": "885af74d54dc159b70200c5fcc377d67",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\home-grid.png": {
-    "mtime": 1780074081.6934924,
-    "ast_hash": "67fea45a485aacd0182cb72da08ee1fb",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\home-grid2.png": {
-    "mtime": 1780074081.6944897,
-    "ast_hash": "309898cffc6e7966c296e106047ccae8",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-1280x900-20260520-170056.png": {
-    "mtime": 1780074081.7004488,
-    "ast_hash": "15b099a54bd4d913b73cac051605771e",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-parallaxnet-20id-public-20260515-204350.png": {
-    "mtime": 1778852631.985611,
-    "ast_hash": "2ddae3ddd670601ae7eb829d022d3ff6",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-parallaxnet-20id-public-20260515-204553.png": {
-    "mtime": 1778852754.6162033,
-    "ast_hash": "3eb60708def3350ad7a62accd15467bc",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-parallaxnet-20id-public-galeri-20260515-204344.png": {
-    "mtime": 1778852625.5076578,
-    "ast_hash": "f295bb68a05b1223b50539095c2513e1",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-parallaxnet-20id-public-galeri-20260515-204547.png": {
-    "mtime": 1778852748.721274,
-    "ast_hash": "8b579d690721ca75a9779b4eb09cb499",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-parallaxnet-20id-public-galeri-20260515-204805.png": {
-    "mtime": 1778852886.513223,
-    "ast_hash": "565c1178d02f396d67427a95c670a141",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-portfolio-20260507-102615.png": {
-    "mtime": 1778556682.0595324,
-    "ast_hash": "613dd27213bb7c5a7e6dbf85c9ab6616",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-20260507-100715.png": {
-    "mtime": 1778556682.083302,
-    "ast_hash": "4473ac1dc2b81b580e1af898326693f4",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-20260507-101024.png": {
-    "mtime": 1778556682.1050274,
-    "ast_hash": "bd471344cbe7b1a0263ffb04e4e2dc67",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-custom-plan-20260507-101618.png": {
-    "mtime": 1778556682.1086211,
-    "ast_hash": "63f784af6f4a31d1c0ec4409bcfe453b",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-order-form-20260507-101614.png": {
-    "mtime": 1778556682.1272202,
-    "ast_hash": "acae6b01ff3255cf7fa5ff5b0ffda546",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-terms-conditions-20260507-101621.png": {
-    "mtime": 1778556682.1292517,
-    "ast_hash": "5e506adb2ded2d4342fd747b5deb5c2f",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-testimonials-index-php-20260507-120534.png": {
-    "mtime": 1778556682.1583922,
-    "ast_hash": "99fdb279d0d2a777d5d1180f156a662a",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-testimonials-thank-you-php-20260507-120515.png": {
-    "mtime": 1778556682.1842015,
-    "ast_hash": "9d63c56dfa2c8188ec00d222c15ac8c5",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\localhost-rielcode-testimonials-thank-you-php-20260507-121414.png": {
-    "mtime": 1778556682.2084694,
-    "ast_hash": "63cf12522842ccd699b7bd03ba95ca8b",
-    "semantic_hash": ""
-  },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\order-01-after-promo.png": {
     "mtime": 1780074081.7032933,
     "ast_hash": "34e1b932db918b37387137d9e3b94ba8",
@@ -2929,69 +2749,9 @@
     "ast_hash": "3bd53519edd9c97175b678c5ecc886e3",
     "semantic_hash": ""
   },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\parallaxnet-ca-20260529-210724.png": {
-    "mtime": 1780074061.2173533,
-    "ast_hash": "17ffd4ad261ce3c1724e802fb5e6a61d",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\parallaxnet-id-20260529-210732.png": {
-    "mtime": 1780074061.2520952,
-    "ast_hash": "3d8a06235e459575a5a7206e2a68b5b5",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\plans-after.png": {
-    "mtime": 1780074061.2544253,
-    "ast_hash": "279871b7aec0c777b727d1e4126f9276",
-    "semantic_hash": ""
-  },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-ad-angle1.png": {
     "mtime": 1780074061.258081,
     "ast_hash": "5f196e7b6c224e337e72977f776b0ab5",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-mobile-390-20260511.png": {
-    "mtime": 1778556682.3045428,
-    "ast_hash": "4c04bb35b1cdca4279194b8e7cf953db",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-mobile-fixed-20260511.png": {
-    "mtime": 1778556682.307283,
-    "ast_hash": "12a93185a1b51923eaed71311089fb94",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-mobile-top-20260511.png": {
-    "mtime": 1778556682.3094897,
-    "ast_hash": "5dd323b44b74c90708ac6cc9a9fab0c3",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-mobile-v2-20260511.png": {
-    "mtime": 1778556682.3115091,
-    "ast_hash": "f9d5c052cd771388c0392827fd1142d6",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-mobile-v3-20260511.png": {
-    "mtime": 1778556682.3135436,
-    "ast_hash": "f9d5c052cd771388c0392827fd1142d6",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\rielcode-mobile-v4-20260511.png": {
-    "mtime": 1778556682.315022,
-    "ast_hash": "f9d5c052cd771388c0392827fd1142d6",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\stack-dark.png": {
-    "mtime": 1780140588.6320717,
-    "ast_hash": "6217334c8eabba29f9ddfe24ae1ab562",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\stack-section.png": {
-    "mtime": 1780140127.5543685,
-    "ast_hash": "f1a9abeb9291d6d51ea0d8dd581facd2",
-    "semantic_hash": ""
-  },
-  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\stack-tags.png": {
-    "mtime": 1780140559.3070366,
-    "ast_hash": "6217334c8eabba29f9ddfe24ae1ab562",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\t3-01-promo-claimed.png": {
@@ -3027,6 +2787,56 @@
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\www-rumahweb-com-hosting-murah-20260528-200717.png": {
     "mtime": 1780074061.2617307,
     "ast_hash": "83c2509c729aea586aefc5d6be35b0bf",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\contact.png": {
+    "mtime": 1780528918.9797914,
+    "ast_hash": "7bd13b0dd804f10f345ddf8e62b10dc8",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\home.png": {
+    "mtime": 1780528919.0251095,
+    "ast_hash": "9b5904197912697a7fc8cc1794e40835",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\order.png": {
+    "mtime": 1780528919.0390177,
+    "ast_hash": "fbef7b5be08d28d0330579ed6423c329",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\privacy.png": {
+    "mtime": 1780528919.0593817,
+    "ast_hash": "19db7f2768504ac960ab4f654a7e6637",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\services.png": {
+    "mtime": 1780528919.0867136,
+    "ast_hash": "e3b613337b8105a04151fd220e9c5f09",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\studio.png": {
+    "mtime": 1780528919.1025858,
+    "ast_hash": "463dd8d39df41f01395e80eabb9b1d63",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\terms.png": {
+    "mtime": 1780528919.1196022,
+    "ast_hash": "1b2121f679822217227045513924e35a",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\work-parallaxnet-canada.png": {
+    "mtime": 1780528919.135061,
+    "ast_hash": "ae07d2d3710fae9f0ff6bae8482b8d1e",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\work-parallaxnet-siber-indonesia.png": {
+    "mtime": 1780528919.149024,
+    "ast_hash": "bbe04619c54be71cdac41718f7bce8b3",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\work.png": {
+    "mtime": 1780528919.1769495,
+    "ast_hash": "43c80a4e3cb12d45546418f8e0176847",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\phase-2\\home-2C-baseline.png": {

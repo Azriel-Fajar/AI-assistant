@@ -1,16 +1,16 @@
-# Graph Report - JARVIS  (2026-06-02)
+# Graph Report - JARVIS  (2026-06-04)
 
 ## Corpus Check
-- 423 files · ~3,677,464 words
+- 433 files · ~2,641,167 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4168 nodes · 4302 edges · 440 communities (384 shown, 56 thin omitted)
+- 4225 nodes · 4349 edges · 450 communities (392 shown, 58 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3b6c2a1d`
+- Built from commit: `53715ca4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -415,12 +415,18 @@
 - [[_COMMUNITY_Community 434|Community 434]]
 - [[_COMMUNITY_Community 435|Community 435]]
 - [[_COMMUNITY_Community 436|Community 436]]
+- [[_COMMUNITY_Community 440|Community 440]]
+- [[_COMMUNITY_Community 441|Community 441]]
+- [[_COMMUNITY_Community 442|Community 442]]
+- [[_COMMUNITY_Community 443|Community 443]]
+- [[_COMMUNITY_Community 444|Community 444]]
+- [[_COMMUNITY_Community 445|Community 445]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `communities` - 31 edges
 2. `cohesion` - 31 edges
 3. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
-4. `Azriel's Executive Assistant` - 17 edges
+4. `Azriel's Executive Assistant` - 18 edges
 5. `Design Engineering` - 17 edges
 6. `UI Styling Skill` - 17 edges
 7. `Figma CLI Implementation Plan` - 16 edges
@@ -431,12 +437,12 @@
 ## Surprising Connections (you probably didn't know these)
 - `periodToDates()` --calls--> `fmt()`  [INFERRED]
   tools/google/youtube/index.js → meta/dms-sync.mjs
-- `getCalendar()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
-  tools/google/gcal/index.js → tools/google/auth/oauth.js
 - `getGmail()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
   tools/google/gmail/index.js → tools/google/auth/oauth.js
 - `Rielcode Web Development Business` --references--> `Rielcode Salatiga Outreach Campaign`  [INFERRED]
   projects/rielcode-growth-plan/README.md → projects/rielcode-outreach/README.md
+- `getCalendar()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
+  tools/google/gcal/index.js → tools/google/auth/oauth.js
 - `getDrive()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
   tools/google/gdrive/index.js → tools/google/auth/oauth.js
 
@@ -448,7 +454,7 @@
 - **Referral Program Components** — rielcode_referral_program, rielcode_referral_commission, rielcode_referral_codes, rielcode_packages [EXTRACTED 1.00]
 - **YouTube Channel Strategy Components** — youtube_rielcode_strategy, yt_channel_rielcodeofficial, yt_content_pillars, yt_production_stack, yt_kpis [EXTRACTED 1.00]
 
-## Communities (440 total, 56 thin omitted)
+## Communities (450 total, 58 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.31
@@ -479,8 +485,8 @@ Cohesion: 0.04
 Nodes (45): Banner Design (Built-in), Banner: Design Rules, Banner: Quick Size Reference, Banner: Top Art Styles, Banner: Workflow, CIP Design (Built-in), CIP: Generate Brief, CIP: Generate Mockups (+37 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.08
-Nodes (36): api_ads(), api_dms(), api_thread(), index(), Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap, Return (data, error_message). Never raises to the view layer., Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,, Server-rendered fallback for shared/direct links (no id available). (+28 more)
+Cohesion: 0.07
+Nodes (39): api_ads(), api_dms(), api_thread(), index(), Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap, Return (data, error_message). Never raises to the view layer., Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,, Server-rendered fallback for shared/direct links (no id available). (+31 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.04
@@ -588,7 +594,7 @@ Nodes (13): __dirname, getAuthHeaders(), getToken(), readTokens(), saveToken(), 
 
 ### Community 38 - "Community 38"
 Cohesion: 0.09
-Nodes (21): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Applied Learning, Archives, Azriel's Executive Assistant, Behavioral Guidelines (Karpathy) (+13 more)
+Nodes (22): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Applied Learning, Archives, Azriel's Executive Assistant, Behavioral Guidelines (Karpathy) (+14 more)
 
 ### Community 39 - "Community 39"
 Cohesion: 0.17
@@ -663,8 +669,8 @@ Cohesion: 0.18
 Nodes (11): code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/visual.spec.ts scripts/qa/visual.spec.ts-), code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/axe.spec.ts), code:markdown (# Phase 2 — QA Report), code:bash (git add docs/qa/phase-2-report.md), Self-Review, Task 2J.2: Visual screenshot diff spec (+3 more)
 
 ### Community 57 - "Community 57"
-Cohesion: 0.14
-Nodes (14): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+6 more)
+Cohesion: 0.13
+Nodes (15): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+7 more)
 
 ### Community 58 - "Community 58"
 Cohesion: 0.13
@@ -827,8 +833,8 @@ Cohesion: 0.18
 Nodes (12): code:block1 (Flow                          chromium  firefox  webkit  mse), Notes, Step 1: Locate Project + Target URL, Step 2: Detect Critical Flows, Step 3: Decide Browser Set, Step 4: Locate or Install Playwright, Step 5: Generate the Test Script, Step 6: Run + Report (+4 more)
 
 ### Community 98 - "Community 98"
-Cohesion: 0.14
-Nodes (11): currentStart, d, end, event, events, freqMap, getCalendar(), newStart (+3 more)
+Cohesion: 0.15
+Nodes (10): currentStart, d, end, event, events, freqMap, newStart, now (+2 more)
 
 ### Community 99 - "Community 99"
 Cohesion: 0.14
@@ -1826,10 +1832,26 @@ Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (
 Cohesion: 0.67
 Nodes (3): code:block71 (Track 2H — motion layer (GSAP, ScrollTrigger, view transitio), code:bash (cd C:\Users\afw14\OneDrive\Documents\JARVIS), Task 2J.6: Update the Phase 2 spec to mark all tracks complete
 
+### Community 440 - "Community 440"
+Cohesion: 0.12
+Nodes (15): { chromium }, consoleErrors, fails, fs, hasError, hasReq, inputs, invalid (+7 more)
+
+### Community 441 - "Community 441"
+Cohesion: 0.15
+Nodes (12): 3 Core Takeaways, Bidding Strategies, Creative Diversity (Post-Andromeda), How the Game Really Works (Off the Books), Learning Phase -- Reality vs Theory, Meta Ads Algorithm -- Context Notes, Practical targeting approach post-Andromeda:, Signal Quality / EMQ / Conversions API (+4 more)
+
+### Community 442 - "Community 442"
+Cohesion: 0.29
+Nodes (6): code:markdown (---), code:block2 (- [Title](file.md) -- one-line hook), Memory System (reuse exactly), Notes / Guardrails, Steps, What This Skill Does
+
+### Community 443 - "Community 443"
+Cohesion: 0.29
+Nodes (6): { chromium, devices }, fs, outDir, outPath, pages, path
+
 ## Knowledge Gaps
-- **2437 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2432 more)
+- **2475 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2470 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **56 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **58 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1838,10 +1860,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `Design Engineering` connect `Community 107` to `Community 192`, `Community 73`, `Community 171`, `Community 237`, `Community 302`, `Community 238`, `Community 213`, `Community 214`, `Community 215`, `Community 191`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `UI/UX Pro Max - Design Intelligence` connect `Community 165` to `Community 289`, `Community 290`, `Community 132`, `Community 267`, `Community 205`, `Community 112`, `Community 338`, `Community 339`?**
+- **Why does `YouTube CLI Implementation Plan` connect `Community 169` to `Community 225`, `Community 129`, `Community 130`, `Community 177`, `Community 145`, `Community 146`, `Community 178`, `Community 179`, `Community 180`, `Community 181`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `0`, `1`, `2` to the rest of the system?**
-  _2451 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2492 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

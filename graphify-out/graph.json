@@ -5965,7 +5965,7 @@
       "label": "_require_page()",
       "file_type": "code",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L147",
+      "source_location": "L162",
       "id": "dashboard_meta_api_require_page",
       "community": 7,
       "norm_label": "_require_page()"
@@ -5974,7 +5974,7 @@
       "label": "get_dms()",
       "file_type": "code",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L154",
+      "source_location": "L169",
       "id": "dashboard_meta_api_get_dms",
       "community": 7,
       "norm_label": "get_dms()"
@@ -5983,7 +5983,7 @@
       "label": "_fetch_messages()",
       "file_type": "code",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L201",
+      "source_location": "L216",
       "id": "dashboard_meta_api_fetch_messages",
       "community": 7,
       "norm_label": "_fetch_messages()"
@@ -5992,7 +5992,7 @@
       "label": "get_thread_by_id()",
       "file_type": "code",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L222",
+      "source_location": "L237",
       "id": "dashboard_meta_api_get_thread_by_id",
       "community": 7,
       "norm_label": "get_thread_by_id()"
@@ -6001,7 +6001,7 @@
       "label": "get_thread()",
       "file_type": "code",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L232",
+      "source_location": "L247",
       "id": "dashboard_meta_api_get_thread",
       "community": 7,
       "norm_label": "get_thread()"
@@ -6028,8 +6028,8 @@
       "label": "Ordered (oldest-first) message history for a known conversation id.",
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L202",
-      "id": "dashboard_meta_api_rationale_202",
+      "source_location": "L217",
+      "id": "dashboard_meta_api_rationale_217",
       "community": 7,
       "norm_label": "ordered (oldest-first) message history for a known conversation id."
     },
@@ -6037,8 +6037,8 @@
       "label": "Fast path: messages for a conversation id already known from the inbox list.",
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L223",
-      "id": "dashboard_meta_api_rationale_223",
+      "source_location": "L238",
+      "id": "dashboard_meta_api_rationale_238",
       "community": 7,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list."
     },
@@ -6046,8 +6046,8 @@
       "label": "Full ordered (oldest-first) message history for the first thread matching `name`",
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
-      "source_location": "L233",
-      "id": "dashboard_meta_api_rationale_233",
+      "source_location": "L248",
+      "id": "dashboard_meta_api_rationale_248",
       "community": 7,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`"
     },
@@ -6721,7 +6721,7 @@
       "label": "RemotionRoot()",
       "file_type": "code",
       "source_file": "my-video/src/Root.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "src_root_remotionroot",
       "community": 24,
       "norm_label": "remotionroot()"
@@ -7027,7 +7027,7 @@
       "label": "Label()",
       "file_type": "code",
       "source_file": "my-video/src/RielcodeAd/PromoAd.tsx",
-      "source_location": "L90",
+      "source_location": "L92",
       "id": "rielcodead_promoad_label",
       "community": 24,
       "norm_label": "label()"
@@ -7036,7 +7036,7 @@
       "label": "Hook()",
       "file_type": "code",
       "source_file": "my-video/src/RielcodeAd/PromoAd.tsx",
-      "source_location": "L112",
+      "source_location": "L114",
       "id": "rielcodead_promoad_hook",
       "community": 24,
       "norm_label": "hook()"
@@ -7045,7 +7045,7 @@
       "label": "StatBlock()",
       "file_type": "code",
       "source_file": "my-video/src/RielcodeAd/PromoAd.tsx",
-      "source_location": "L147",
+      "source_location": "L149",
       "id": "rielcodead_promoad_statblock",
       "community": 24,
       "norm_label": "statblock()"
@@ -7054,7 +7054,7 @@
       "label": "Proof()",
       "file_type": "code",
       "source_file": "my-video/src/RielcodeAd/PromoAd.tsx",
-      "source_location": "L165",
+      "source_location": "L167",
       "id": "rielcodead_promoad_proof",
       "community": 24,
       "norm_label": "proof()"
@@ -7063,7 +7063,7 @@
       "label": "Offer()",
       "file_type": "code",
       "source_file": "my-video/src/RielcodeAd/PromoAd.tsx",
-      "source_location": "L222",
+      "source_location": "L224",
       "id": "rielcodead_promoad_offer",
       "community": 24,
       "norm_label": "offer()"
@@ -7072,7 +7072,7 @@
       "label": "Cta()",
       "file_type": "code",
       "source_file": "my-video/src/RielcodeAd/PromoAd.tsx",
-      "source_location": "L275",
+      "source_location": "L277",
       "id": "rielcodead_promoad_cta",
       "community": 24,
       "norm_label": "cta()"
@@ -7081,7 +7081,7 @@
       "label": "PromoAd()",
       "file_type": "code",
       "source_file": "my-video/src/RielcodeAd/PromoAd.tsx",
-      "source_location": "L344",
+      "source_location": "L346",
       "id": "rielcodead_promoad_promoad",
       "community": 24,
       "norm_label": "promoad()"
@@ -7220,6 +7220,159 @@
       "id": "scripts_cross_browser_check_references_cross_browser_template_js",
       "community": 82,
       "norm_label": "cross-browser-template.js"
+    },
+    {
+      "label": "audit-stress-test.js",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L1",
+      "id": "scripts_playwright_audit_stress_test_js",
+      "community": 440,
+      "norm_label": "audit-stress-test.js"
+    },
+    {
+      "label": "{ chromium }",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L1",
+      "id": "playwright_audit_stress_test_chromium",
+      "community": 440,
+      "norm_label": "{ chromium }"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L2",
+      "id": "playwright_audit_stress_test_fs",
+      "community": 440,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L3",
+      "id": "playwright_audit_stress_test_path",
+      "community": 440,
+      "norm_label": "path"
+    },
+    {
+      "label": "SCREENSHOTS_DIR",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L6",
+      "id": "playwright_audit_stress_test_screenshots_dir",
+      "community": 440,
+      "norm_label": "screenshots_dir"
+    },
+    {
+      "label": "results",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L10",
+      "id": "playwright_audit_stress_test_results",
+      "community": 440,
+      "norm_label": "results"
+    },
+    {
+      "label": "log()",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L12",
+      "id": "playwright_audit_stress_test_log",
+      "community": 440,
+      "norm_label": "log()"
+    },
+    {
+      "label": "consoleErrors",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L25",
+      "id": "playwright_audit_stress_test_consoleerrors",
+      "community": 440,
+      "norm_label": "consoleerrors"
+    },
+    {
+      "label": "t0",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L30",
+      "id": "playwright_audit_stress_test_t0",
+      "community": 440,
+      "norm_label": "t0"
+    },
+    {
+      "label": "inputs",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L40",
+      "id": "playwright_audit_stress_test_inputs",
+      "community": 440,
+      "norm_label": "inputs"
+    },
+    {
+      "label": "invalid",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L51",
+      "id": "playwright_audit_stress_test_invalid",
+      "community": 440,
+      "norm_label": "invalid"
+    },
+    {
+      "label": "t1",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L69",
+      "id": "playwright_audit_stress_test_t1",
+      "community": 440,
+      "norm_label": "t1"
+    },
+    {
+      "label": "hasError",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L102",
+      "id": "playwright_audit_stress_test_haserror",
+      "community": 440,
+      "norm_label": "haserror"
+    },
+    {
+      "label": "hasReq",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L116",
+      "id": "playwright_audit_stress_test_hasreq",
+      "community": 440,
+      "norm_label": "hasreq"
+    },
+    {
+      "label": "status",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L129",
+      "id": "playwright_audit_stress_test_status",
+      "community": 440,
+      "norm_label": "status"
+    },
+    {
+      "label": "fails",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L153",
+      "id": "playwright_audit_stress_test_fails",
+      "community": 440,
+      "norm_label": "fails"
+    },
+    {
+      "label": "warns",
+      "file_type": "code",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L154",
+      "id": "playwright_audit_stress_test_warns",
+      "community": 440,
+      "norm_label": "warns"
     },
     {
       "label": "check-slider.js",
@@ -8057,6 +8210,69 @@
       "id": "playwright_order_form_verify_cb",
       "community": 337,
       "norm_label": "cb"
+    },
+    {
+      "label": "screenshot-all-mobile.js",
+      "file_type": "code",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L1",
+      "id": "scripts_playwright_screenshot_all_mobile_js",
+      "community": 443,
+      "norm_label": "screenshot-all-mobile.js"
+    },
+    {
+      "label": "{ chromium, devices }",
+      "file_type": "code",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L1",
+      "id": "playwright_screenshot_all_mobile_chromium_devices",
+      "community": 443,
+      "norm_label": "{ chromium, devices }"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L2",
+      "id": "playwright_screenshot_all_mobile_path",
+      "community": 443,
+      "norm_label": "path"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L3",
+      "id": "playwright_screenshot_all_mobile_fs",
+      "community": 443,
+      "norm_label": "fs"
+    },
+    {
+      "label": "pages",
+      "file_type": "code",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L7",
+      "id": "playwright_screenshot_all_mobile_pages",
+      "community": 443,
+      "norm_label": "pages"
+    },
+    {
+      "label": "outDir",
+      "file_type": "code",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L20",
+      "id": "playwright_screenshot_all_mobile_outdir",
+      "community": 443,
+      "norm_label": "outdir"
+    },
+    {
+      "label": "outPath",
+      "file_type": "code",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L30",
+      "id": "playwright_screenshot_all_mobile_outpath",
+      "community": 443,
+      "norm_label": "outpath"
     },
     {
       "label": "screenshot-all.js",
@@ -9522,7 +9738,7 @@
       "source_file": "tools/google/gcal/index.js",
       "source_location": "L10",
       "id": "gcal_index_getcalendar",
-      "community": 98,
+      "community": 57,
       "norm_label": "getcalendar()"
     },
     {
@@ -9619,7 +9835,7 @@
       "label": "events",
       "file_type": "code",
       "source_file": "tools/google/gcal/index.js",
-      "source_location": "L175",
+      "source_location": "L176",
       "id": "gcal_index_events",
       "community": 98,
       "norm_label": "events"
@@ -9628,7 +9844,7 @@
       "label": "freqMap",
       "file_type": "code",
       "source_file": "tools/google/gcal/index.js",
-      "source_location": "L179",
+      "source_location": "L180",
       "id": "gcal_index_freqmap",
       "community": 98,
       "norm_label": "freqmap"
@@ -11095,7 +11311,7 @@
       "label": "Memory",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L40",
+      "source_location": "L41",
       "id": "jarvis_claude_memory",
       "community": 38,
       "norm_label": "memory"
@@ -11104,7 +11320,7 @@
       "label": "Tools & Integrations",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L46",
+      "source_location": "L47",
       "id": "jarvis_claude_tools_integrations",
       "community": 38,
       "norm_label": "tools & integrations"
@@ -11113,7 +11329,7 @@
       "label": "Skills",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L54",
+      "source_location": "L55",
       "id": "jarvis_claude_skills",
       "community": 38,
       "norm_label": "skills"
@@ -11122,7 +11338,7 @@
       "label": "Decision Log",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L99",
+      "source_location": "L101",
       "id": "jarvis_claude_decision_log",
       "community": 38,
       "norm_label": "decision log"
@@ -11131,8 +11347,8 @@
       "label": "Memory",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L106",
-      "id": "jarvis_claude_memory_106",
+      "source_location": "L108",
+      "id": "jarvis_claude_memory_108",
       "community": 38,
       "norm_label": "memory"
     },
@@ -11140,7 +11356,7 @@
       "label": "Projects",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L116",
+      "source_location": "L118",
       "id": "jarvis_claude_projects",
       "community": 38,
       "norm_label": "projects"
@@ -11149,7 +11365,7 @@
       "label": "Templates & References",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L122",
+      "source_location": "L124",
       "id": "jarvis_claude_templates_references",
       "community": 38,
       "norm_label": "templates & references"
@@ -11158,7 +11374,7 @@
       "label": "Archives",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L130",
+      "source_location": "L132",
       "id": "jarvis_claude_archives",
       "community": 38,
       "norm_label": "archives"
@@ -11167,7 +11383,7 @@
       "label": "Keeping Context Current",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L136",
+      "source_location": "L138",
       "id": "jarvis_claude_keeping_context_current",
       "community": 38,
       "norm_label": "keeping context current"
@@ -11176,7 +11392,7 @@
       "label": "Behavioral Guidelines (Karpathy)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L144",
+      "source_location": "L146",
       "id": "jarvis_claude_behavioral_guidelines_karpathy",
       "community": 38,
       "norm_label": "behavioral guidelines (karpathy)"
@@ -11185,7 +11401,7 @@
       "label": "1. Think Before Coding",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L148",
+      "source_location": "L150",
       "id": "jarvis_claude_1_think_before_coding",
       "community": 38,
       "norm_label": "1. think before coding"
@@ -11194,7 +11410,7 @@
       "label": "2. Simplicity First",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L154",
+      "source_location": "L156",
       "id": "jarvis_claude_2_simplicity_first",
       "community": 38,
       "norm_label": "2. simplicity first"
@@ -11203,7 +11419,7 @@
       "label": "3. Surgical Changes",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L162",
+      "source_location": "L164",
       "id": "jarvis_claude_3_surgical_changes",
       "community": 38,
       "norm_label": "3. surgical changes"
@@ -11212,7 +11428,7 @@
       "label": "4. Goal-Driven Execution",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L171",
+      "source_location": "L173",
       "id": "jarvis_claude_4_goal_driven_execution",
       "community": 38,
       "norm_label": "4. goal-driven execution"
@@ -11221,7 +11437,7 @@
       "label": "Applied Learning",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L177",
+      "source_location": "L179",
       "id": "jarvis_claude_applied_learning",
       "community": 38,
       "norm_label": "applied learning"
@@ -11230,7 +11446,7 @@
       "label": "Self-Learning Protocol",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "source_location": "L185",
+      "source_location": "L187",
       "id": "jarvis_claude_self_learning_protocol",
       "community": 38,
       "norm_label": "self-learning protocol"
@@ -18137,6 +18353,69 @@
       "id": "repurpose_project_skill_rules",
       "community": 79,
       "norm_label": "rules"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L1",
+      "id": "claude_skills_session_memory_skill_md",
+      "community": 442,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "What This Skill Does",
+      "file_type": "document",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L7",
+      "id": "session_memory_skill_what_this_skill_does",
+      "community": 442,
+      "norm_label": "what this skill does"
+    },
+    {
+      "label": "Memory System (reuse exactly)",
+      "file_type": "document",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L18",
+      "id": "session_memory_skill_memory_system_reuse_exactly",
+      "community": 442,
+      "norm_label": "memory system (reuse exactly)"
+    },
+    {
+      "label": "code:markdown (---)",
+      "file_type": "document",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L25",
+      "id": "session_memory_skill_codeblock_1",
+      "community": 442,
+      "norm_label": "code:markdown (---)"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L39",
+      "id": "session_memory_skill_steps",
+      "community": 442,
+      "norm_label": "steps"
+    },
+    {
+      "label": "code:block2 (- [Title](file.md) -- one-line hook)",
+      "file_type": "document",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L65",
+      "id": "session_memory_skill_codeblock_2",
+      "community": 442,
+      "norm_label": "code:block2 (- [title](file.md) -- one-line hook)"
+    },
+    {
+      "label": "Notes / Guardrails",
+      "file_type": "document",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L83",
+      "id": "session_memory_skill_notes_guardrails",
+      "community": 442,
+      "norm_label": "notes / guardrails"
     },
     {
       "label": "SKILL.md",
@@ -31387,6 +31666,24 @@
       "norm_label": "leads.md"
     },
     {
+      "label": "feedback_flask_run_command.md",
+      "file_type": "document",
+      "source_file": "memory/feedback_flask_run_command.md",
+      "source_location": "L1",
+      "id": "memory_feedback_flask_run_command_md",
+      "community": 445,
+      "norm_label": "feedback_flask_run_command.md"
+    },
+    {
+      "label": "code:block1 (python -m flask --app meta.dashboard.app run)",
+      "file_type": "document",
+      "source_file": "memory/feedback_flask_run_command.md",
+      "source_location": "L13",
+      "id": "memory_feedback_flask_run_command_codeblock_1",
+      "community": 445,
+      "norm_label": "code:block1 (python -m flask --app meta.dashboard.app run)"
+    },
+    {
       "label": "feedback_google_cli.md",
       "file_type": "document",
       "source_file": "memory/feedback_google_cli.md",
@@ -31405,6 +31702,15 @@
       "norm_label": "feedback_lead_message_opera.md"
     },
     {
+      "label": "feedback_powershell_python_utf8.md",
+      "file_type": "document",
+      "source_file": "memory/feedback_powershell_python_utf8.md",
+      "source_location": "L1",
+      "id": "memory_feedback_powershell_python_utf8_md",
+      "community": 446,
+      "norm_label": "feedback_powershell_python_utf8.md"
+    },
+    {
       "label": "feedback_projects_layout.md",
       "file_type": "document",
       "source_file": "memory/feedback_projects_layout.md",
@@ -31421,6 +31727,15 @@
       "id": "memory_memory_md",
       "community": 347,
       "norm_label": "memory.md"
+    },
+    {
+      "label": "project_audit_tool.md",
+      "file_type": "document",
+      "source_file": "memory/project_audit_tool.md",
+      "source_location": "L1",
+      "id": "memory_project_audit_tool_md",
+      "community": 447,
+      "norm_label": "project_audit_tool.md"
     },
     {
       "label": "project_messenger_client_history.md",
@@ -31475,6 +31790,15 @@
       "id": "memory_project_rielcode_invoice_currency_md",
       "community": 408,
       "norm_label": "project_rielcode_invoice_currency.md"
+    },
+    {
+      "label": "project_rielcode_laravel_app.md",
+      "file_type": "document",
+      "source_file": "memory/project_rielcode_laravel_app.md",
+      "source_location": "L1",
+      "id": "memory_project_rielcode_laravel_app_md",
+      "community": 448,
+      "norm_label": "project_rielcode_laravel_app.md"
     },
     {
       "label": "project_rielcode_outreach.md",
@@ -31540,6 +31864,42 @@
       "norm_label": "top reminders"
     },
     {
+      "label": "reference_meta_dashboard.md",
+      "file_type": "document",
+      "source_file": "memory/reference_meta_dashboard.md",
+      "source_location": "L1",
+      "id": "memory_reference_meta_dashboard_md",
+      "community": 444,
+      "norm_label": "reference_meta_dashboard.md"
+    },
+    {
+      "label": "code:block1 (python -m flask --app meta.dashboard.app run)",
+      "file_type": "document",
+      "source_file": "memory/reference_meta_dashboard.md",
+      "source_location": "L11",
+      "id": "memory_reference_meta_dashboard_codeblock_1",
+      "community": 444,
+      "norm_label": "code:block1 (python -m flask --app meta.dashboard.app run)"
+    },
+    {
+      "label": "code:powershell (Get-NetTCPConnection -LocalPort 5000 -State Listen | Select-)",
+      "file_type": "document",
+      "source_file": "memory/reference_meta_dashboard.md",
+      "source_location": "L18",
+      "id": "memory_reference_meta_dashboard_codeblock_2",
+      "community": 444,
+      "norm_label": "code:powershell (get-nettcpconnection -localport 5000 -state listen | select-)"
+    },
+    {
+      "label": "reference_rielcode_rebrand_assets.md",
+      "file_type": "document",
+      "source_file": "memory/reference_rielcode_rebrand_assets.md",
+      "source_location": "L1",
+      "id": "memory_reference_rielcode_rebrand_assets_md",
+      "community": 449,
+      "norm_label": "reference_rielcode_rebrand_assets.md"
+    },
+    {
       "label": "reference_subnetting.md",
       "file_type": "document",
       "source_file": "memory/reference_subnetting.md",
@@ -31601,6 +31961,123 @@
       "id": "memory_reference_subnetting_key_concepts",
       "community": 219,
       "norm_label": "key concepts"
+    },
+    {
+      "label": "ads-algorithm-context.md",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L1",
+      "id": "meta_ads_algorithm_context_md",
+      "community": 441,
+      "norm_label": "ads-algorithm-context.md"
+    },
+    {
+      "label": "Meta Ads Algorithm -- Context Notes",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L1",
+      "id": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "community": 441,
+      "norm_label": "meta ads algorithm -- context notes"
+    },
+    {
+      "label": "The 4-Step Ad Selection Process (200ms window)",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L8",
+      "id": "meta_ads_algorithm_context_the_4_step_ad_selection_process_200ms_window",
+      "community": 441,
+      "norm_label": "the 4-step ad selection process (200ms window)"
+    },
+    {
+      "label": "The Value Equation (Heavy Ranking)",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L19",
+      "id": "meta_ads_algorithm_context_the_value_equation_heavy_ranking",
+      "community": 441,
+      "norm_label": "the value equation (heavy ranking)"
+    },
+    {
+      "label": "What this means practically:",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L30",
+      "id": "meta_ads_algorithm_context_what_this_means_practically",
+      "community": 441,
+      "norm_label": "what this means practically:"
+    },
+    {
+      "label": "The Andromeda Update",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L38",
+      "id": "meta_ads_algorithm_context_the_andromeda_update",
+      "community": 441,
+      "norm_label": "the andromeda update"
+    },
+    {
+      "label": "Practical targeting approach post-Andromeda:",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L46",
+      "id": "meta_ads_algorithm_context_practical_targeting_approach_post_andromeda",
+      "community": 441,
+      "norm_label": "practical targeting approach post-andromeda:"
+    },
+    {
+      "label": "Learning Phase -- Reality vs Theory",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L54",
+      "id": "meta_ads_algorithm_context_learning_phase_reality_vs_theory",
+      "community": 441,
+      "norm_label": "learning phase -- reality vs theory"
+    },
+    {
+      "label": "Signal Quality / EMQ / Conversions API",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L67",
+      "id": "meta_ads_algorithm_context_signal_quality_emq_conversions_api",
+      "community": 441,
+      "norm_label": "signal quality / emq / conversions api"
+    },
+    {
+      "label": "Creative Diversity (Post-Andromeda)",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L78",
+      "id": "meta_ads_algorithm_context_creative_diversity_post_andromeda",
+      "community": 441,
+      "norm_label": "creative diversity (post-andromeda)"
+    },
+    {
+      "label": "Bidding Strategies",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L91",
+      "id": "meta_ads_algorithm_context_bidding_strategies",
+      "community": 441,
+      "norm_label": "bidding strategies"
+    },
+    {
+      "label": "How the Game Really Works (Off the Books)",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L103",
+      "id": "meta_ads_algorithm_context_how_the_game_really_works_off_the_books",
+      "community": 441,
+      "norm_label": "how the game really works (off the books)"
+    },
+    {
+      "label": "3 Core Takeaways",
+      "file_type": "document",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L116",
+      "id": "meta_ads_algorithm_context_3_core_takeaways",
+      "community": 441,
+      "norm_label": "3 core takeaways"
     },
     {
       "label": "SETUP.md",
@@ -37237,6 +37714,42 @@
       "norm_label": "vabxygz7mau.md"
     },
     {
+      "label": "Ordered (oldest-first) message history for a known conversation id.",
+      "file_type": "rationale",
+      "source_file": "meta/dashboard/meta_api.py",
+      "source_location": "L202",
+      "community": 7,
+      "norm_label": "ordered (oldest-first) message history for a known conversation id.",
+      "id": "dashboard_meta_api_rationale_202"
+    },
+    {
+      "label": "Fast path: messages for a conversation id already known from the inbox list.",
+      "file_type": "rationale",
+      "source_file": "meta/dashboard/meta_api.py",
+      "source_location": "L223",
+      "community": 7,
+      "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
+      "id": "dashboard_meta_api_rationale_223"
+    },
+    {
+      "label": "Full ordered (oldest-first) message history for the first thread matching `name`",
+      "file_type": "rationale",
+      "source_file": "meta/dashboard/meta_api.py",
+      "source_location": "L233",
+      "community": 7,
+      "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
+      "id": "dashboard_meta_api_rationale_233"
+    },
+    {
+      "label": "Memory",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L106",
+      "community": 38,
+      "norm_label": "memory",
+      "id": "jarvis_claude_memory_106"
+    },
+    {
       "label": "Rielcode Growth Plan",
       "file_type": "document",
       "source_file": "projects/rielcode-growth-plan/README.md",
@@ -37777,9 +38290,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_analysis_json",
-      "target": "jarvis_graphify_analysis_communities",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities"
     },
     {
       "relation": "contains",
@@ -37787,9 +38300,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L327",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_analysis_json",
-      "target": "jarvis_graphify_analysis_cohesion",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion"
     },
     {
       "relation": "contains",
@@ -37797,9 +38310,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L359",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_analysis_json",
-      "target": "jarvis_graphify_analysis_gods",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_gods"
     },
     {
       "relation": "contains",
@@ -37807,9 +38320,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L411",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_analysis_json",
-      "target": "jarvis_graphify_analysis_surprises",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_surprises"
     },
     {
       "relation": "contains",
@@ -37817,9 +38330,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L468",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_analysis_json",
-      "target": "jarvis_graphify_analysis_questions",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_questions"
     },
     {
       "relation": "contains",
@@ -37827,9 +38340,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_0",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_0"
     },
     {
       "relation": "contains",
@@ -37837,9 +38350,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_1",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_1"
     },
     {
       "relation": "contains",
@@ -37847,9 +38360,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_2",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_2"
     },
     {
       "relation": "contains",
@@ -37857,9 +38370,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_3",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_3"
     },
     {
       "relation": "contains",
@@ -37867,9 +38380,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_4",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_4"
     },
     {
       "relation": "contains",
@@ -37877,9 +38390,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_5",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_5"
     },
     {
       "relation": "contains",
@@ -37887,9 +38400,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_6",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_6"
     },
     {
       "relation": "contains",
@@ -37897,9 +38410,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_7",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_7"
     },
     {
       "relation": "contains",
@@ -37907,9 +38420,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_8",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_8"
     },
     {
       "relation": "contains",
@@ -37917,9 +38430,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_9",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_9"
     },
     {
       "relation": "contains",
@@ -37927,9 +38440,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_10",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_10"
     },
     {
       "relation": "contains",
@@ -37937,9 +38450,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_11",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_11"
     },
     {
       "relation": "contains",
@@ -37947,9 +38460,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_12",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_12"
     },
     {
       "relation": "contains",
@@ -37957,9 +38470,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_13",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_13"
     },
     {
       "relation": "contains",
@@ -37967,9 +38480,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_14",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_14"
     },
     {
       "relation": "contains",
@@ -37977,9 +38490,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L235",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_15",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_15"
     },
     {
       "relation": "contains",
@@ -37987,9 +38500,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L246",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_16",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_16"
     },
     {
       "relation": "contains",
@@ -37997,9 +38510,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L257",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_17",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_17"
     },
     {
       "relation": "contains",
@@ -38007,9 +38520,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_18",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_18"
     },
     {
       "relation": "contains",
@@ -38017,9 +38530,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L279",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_19",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_19"
     },
     {
       "relation": "contains",
@@ -38027,9 +38540,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L288",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_20",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_20"
     },
     {
       "relation": "contains",
@@ -38037,9 +38550,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L296",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_21",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_21"
     },
     {
       "relation": "contains",
@@ -38047,9 +38560,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L302",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_22",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_22"
     },
     {
       "relation": "contains",
@@ -38057,9 +38570,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L305",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_23",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_23"
     },
     {
       "relation": "contains",
@@ -38067,9 +38580,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L308",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_24",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_24"
     },
     {
       "relation": "contains",
@@ -38077,9 +38590,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L311",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_25",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_25"
     },
     {
       "relation": "contains",
@@ -38087,9 +38600,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L314",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_26",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_26"
     },
     {
       "relation": "contains",
@@ -38097,9 +38610,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L317",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_27",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_27"
     },
     {
       "relation": "contains",
@@ -38107,9 +38620,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L320",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_28",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_28"
     },
     {
       "relation": "contains",
@@ -38117,9 +38630,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L323",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_communities",
-      "target": "jarvis_graphify_analysis_communities_29",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_communities_29"
     },
     {
       "relation": "contains",
@@ -38127,9 +38640,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L328",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_0",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_0"
     },
     {
       "relation": "contains",
@@ -38137,9 +38650,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L329",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_1",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_1"
     },
     {
       "relation": "contains",
@@ -38147,9 +38660,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L330",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_2",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_2"
     },
     {
       "relation": "contains",
@@ -38157,9 +38670,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L331",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_3",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_3"
     },
     {
       "relation": "contains",
@@ -38167,9 +38680,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L332",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_4",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_4"
     },
     {
       "relation": "contains",
@@ -38177,9 +38690,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L333",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_5",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_5"
     },
     {
       "relation": "contains",
@@ -38187,9 +38700,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L334",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_6",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_6"
     },
     {
       "relation": "contains",
@@ -38197,9 +38710,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L335",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_7",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_7"
     },
     {
       "relation": "contains",
@@ -38207,9 +38720,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L336",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_8",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_8"
     },
     {
       "relation": "contains",
@@ -38217,9 +38730,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L337",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_9",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_9"
     },
     {
       "relation": "contains",
@@ -38227,9 +38740,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L338",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_10",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_10"
     },
     {
       "relation": "contains",
@@ -38237,9 +38750,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L339",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_11",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_11"
     },
     {
       "relation": "contains",
@@ -38247,9 +38760,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L340",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_12",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_12"
     },
     {
       "relation": "contains",
@@ -38257,9 +38770,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L341",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_13",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_13"
     },
     {
       "relation": "contains",
@@ -38267,9 +38780,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L342",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_14",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_14"
     },
     {
       "relation": "contains",
@@ -38277,9 +38790,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L343",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_15",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_15"
     },
     {
       "relation": "contains",
@@ -38287,9 +38800,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L344",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_16",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_16"
     },
     {
       "relation": "contains",
@@ -38297,9 +38810,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L345",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_17",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_17"
     },
     {
       "relation": "contains",
@@ -38307,9 +38820,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L346",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_18",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_18"
     },
     {
       "relation": "contains",
@@ -38317,9 +38830,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L347",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_19",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_19"
     },
     {
       "relation": "contains",
@@ -38327,9 +38840,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L348",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_20",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_20"
     },
     {
       "relation": "contains",
@@ -38337,9 +38850,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L349",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_21",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_21"
     },
     {
       "relation": "contains",
@@ -38347,9 +38860,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L350",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_22",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_22"
     },
     {
       "relation": "contains",
@@ -38357,9 +38870,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L351",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_23",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_23"
     },
     {
       "relation": "contains",
@@ -38367,9 +38880,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L352",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_24",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_24"
     },
     {
       "relation": "contains",
@@ -38377,9 +38890,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L353",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_25",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_25"
     },
     {
       "relation": "contains",
@@ -38387,9 +38900,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L354",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_26",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_26"
     },
     {
       "relation": "contains",
@@ -38397,9 +38910,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L355",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_27",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_27"
     },
     {
       "relation": "contains",
@@ -38407,9 +38920,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L356",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_28",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_28"
     },
     {
       "relation": "contains",
@@ -38417,9 +38930,9 @@
       "source_file": ".graphify_analysis.json",
       "source_location": "L357",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_graphify_analysis_cohesion",
-      "target": "jarvis_graphify_analysis_cohesion_29",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_analysis_cohesion_29"
     },
     {
       "relation": "contains",
@@ -38587,9 +39100,9 @@
       "source_file": ".graphify_extract.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_extract_json",
-      "target": "jarvis_graphify_extract_nodes",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_extract_nodes"
     },
     {
       "relation": "contains",
@@ -38597,9 +39110,9 @@
       "source_file": ".graphify_extract.json",
       "source_location": "L2021",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_extract_json",
-      "target": "jarvis_graphify_extract_edges",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_extract_edges"
     },
     {
       "relation": "contains",
@@ -38607,9 +39120,9 @@
       "source_file": ".graphify_extract.json",
       "source_location": "L4489",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_extract_json",
-      "target": "jarvis_graphify_extract_hyperedges",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_extract_hyperedges"
     },
     {
       "relation": "contains",
@@ -38617,9 +39130,9 @@
       "source_file": ".graphify_extract.json",
       "source_location": "L4581",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_extract_json",
-      "target": "jarvis_graphify_extract_input_tokens",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_extract_input_tokens"
     },
     {
       "relation": "contains",
@@ -38627,9 +39140,9 @@
       "source_file": ".graphify_extract.json",
       "source_location": "L4582",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_extract_json",
-      "target": "jarvis_graphify_extract_output_tokens",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_extract_output_tokens"
     },
     {
       "relation": "contains",
@@ -38637,9 +39150,9 @@
       "source_file": ".graphify_semantic.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_semantic_json",
-      "target": "jarvis_graphify_semantic_nodes",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_semantic_nodes"
     },
     {
       "relation": "contains",
@@ -38647,9 +39160,9 @@
       "source_file": ".graphify_semantic.json",
       "source_location": "L488",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_semantic_json",
-      "target": "jarvis_graphify_semantic_edges",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_semantic_edges"
     },
     {
       "relation": "contains",
@@ -38657,9 +39170,9 @@
       "source_file": ".graphify_semantic.json",
       "source_location": "L1020",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_semantic_json",
-      "target": "jarvis_graphify_semantic_hyperedges",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_semantic_hyperedges"
     },
     {
       "relation": "contains",
@@ -38667,9 +39180,9 @@
       "source_file": ".graphify_semantic.json",
       "source_location": "L1112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_semantic_json",
-      "target": "jarvis_graphify_semantic_input_tokens",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_semantic_input_tokens"
     },
     {
       "relation": "contains",
@@ -38677,9 +39190,9 @@
       "source_file": ".graphify_semantic.json",
       "source_location": "L1113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_semantic_json",
-      "target": "jarvis_graphify_semantic_output_tokens",
-      "confidence_score": 1.0
+      "target": "jarvis_graphify_semantic_output_tokens"
     },
     {
       "relation": "contains",
@@ -45971,6 +46484,16 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "meta/dashboard/meta_api.py",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "dashboard_meta_api_rationale_217",
+      "target": "dashboard_meta_api_fetch_messages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L202",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -45981,11 +46504,31 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "meta/dashboard/meta_api.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "dashboard_meta_api_rationale_238",
+      "target": "dashboard_meta_api_get_thread_by_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L223",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "dashboard_meta_api_rationale_223",
       "target": "dashboard_meta_api_get_thread_by_id"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/dashboard/meta_api.py",
+      "source_location": "L248",
+      "weight": 1.0,
+      "source": "dashboard_meta_api_rationale_248",
+      "target": "dashboard_meta_api_get_thread",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -47480,6 +48023,166 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_chromium",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_screenshots_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_consoleerrors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_t0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_inputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_invalid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_t1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_haserror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_hasreq",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_fails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/audit-stress-test.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "scripts_playwright_audit_stress_test_js",
+      "target": "playwright_audit_stress_test_warns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/playwright/check-slider.js",
       "source_location": "L1",
       "weight": 1.0,
@@ -48226,6 +48929,66 @@
       "confidence_score": 1.0,
       "source": "scripts_playwright_order_form_verify_js",
       "target": "playwright_order_form_verify_cb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_playwright_screenshot_all_mobile_js",
+      "target": "playwright_screenshot_all_mobile_chromium_devices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "scripts_playwright_screenshot_all_mobile_js",
+      "target": "playwright_screenshot_all_mobile_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_playwright_screenshot_all_mobile_js",
+      "target": "playwright_screenshot_all_mobile_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "scripts_playwright_screenshot_all_mobile_js",
+      "target": "playwright_screenshot_all_mobile_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_playwright_screenshot_all_mobile_js",
+      "target": "playwright_screenshot_all_mobile_outdir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/screenshot-all-mobile.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_playwright_screenshot_all_mobile_js",
+      "target": "playwright_screenshot_all_mobile_outpath",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -52467,11 +53230,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CLAUDE.md",
-      "source_location": "L106",
+      "source_location": "L108",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "jarvis_claude_azriel_s_executive_assistant",
-      "target": "jarvis_claude_memory_106"
+      "target": "jarvis_claude_memory_108",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -52542,6 +53305,16 @@
       "confidence_score": 1.0,
       "source": "jarvis_claude_azriel_s_executive_assistant",
       "target": "jarvis_claude_self_learning_protocol"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jarvis_claude_azriel_s_executive_assistant",
+      "target": "jarvis_claude_memory_106"
     },
     {
       "relation": "contains",
@@ -60702,6 +61475,66 @@
       "confidence_score": 1.0,
       "source": "claude_worktrees_vigilant_sinoussi_806708_claude_skills_repurpose_project_skill_md",
       "target": "repurpose_project_skill_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "claude_skills_session_memory_skill_md",
+      "target": "session_memory_skill_what_this_skill_does",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "claude_skills_session_memory_skill_md",
+      "target": "session_memory_skill_memory_system_reuse_exactly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "claude_skills_session_memory_skill_md",
+      "target": "session_memory_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "claude_skills_session_memory_skill_md",
+      "target": "session_memory_skill_notes_guardrails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "session_memory_skill_memory_system_reuse_exactly",
+      "target": "session_memory_skill_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/session-memory/SKILL.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "session_memory_skill_steps",
+      "target": "session_memory_skill_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -74986,6 +75819,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "memory/feedback_flask_run_command.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "memory_feedback_flask_run_command_md",
+      "target": "memory_feedback_flask_run_command_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "memory/reference_claude_code_mastery.md",
       "source_location": "L8",
       "weight": 1.0,
@@ -75012,6 +75855,26 @@
       "confidence_score": 1.0,
       "source": "memory_reference_claude_code_mastery_claude_code_mastery_opus_4_8",
       "target": "memory_reference_claude_code_mastery_top_reminders"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "memory/reference_meta_dashboard.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "memory_reference_meta_dashboard_md",
+      "target": "memory_reference_meta_dashboard_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "memory/reference_meta_dashboard.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "memory_reference_meta_dashboard_md",
+      "target": "memory_reference_meta_dashboard_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -75072,6 +75935,126 @@
       "confidence_score": 1.0,
       "source": "memory_reference_subnetting_core_formulas",
       "target": "memory_reference_subnetting_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_md",
+      "target": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_the_4_step_ad_selection_process_200ms_window",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_the_value_equation_heavy_ranking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_the_andromeda_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_learning_phase_reality_vs_theory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_signal_quality_emq_conversions_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_creative_diversity_post_andromeda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_bidding_strategies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_how_the_game_really_works_off_the_books",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
+      "target": "meta_ads_algorithm_context_3_core_takeaways",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_the_value_equation_heavy_ranking",
+      "target": "meta_ads_algorithm_context_what_this_means_practically",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "meta/ads-algorithm-context.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "meta_ads_algorithm_context_the_andromeda_update",
+      "target": "meta_ads_algorithm_context_practical_targeting_approach_post_andromeda",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -81083,5 +82066,5 @@
       "source_file": "projects/youtube-rielcode/strategy.md"
     }
   ],
-  "built_at_commit": "3b6c2a1df0a8f41fd9ec9adbbe52f14bb304d491"
+  "built_at_commit": "53715ca4042e4816da9790423513be9df699fbe1"
 }
