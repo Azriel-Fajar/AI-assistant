@@ -13,3 +13,4 @@
 - [Meta Ads WA Lead Gen](project_meta_ads_wa_lead_gen.md) -- IDR 18k/day engagement campaign, 5 leads at IDR 5,484 CPL, all cold; auto-reply and follow-up fixes documented
 - [Meta Ads WA Lead Gen](project_meta_ads_wa_leadgen.md) -- active campaign in learning, don't edit till ~Jun 5; objective mismatch (clicks vs WA msgs), fix = new campaign
 - [Messenger Client History](project_messenger_client_history.md) -- client DMs synced to meta/clients/; read them when asked about a lead, refresh via node meta/dms-sync.mjs
+- [Rielcode Audit Tool](project_audit_tool.md) -- free audit lead tool at rielcode.com/audit, 3 phases built 2026-06-03, pure-PHP scoring (no Node), admin tab + PDF email

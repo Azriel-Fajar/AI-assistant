@@ -94,6 +94,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/slides` -- strategic HTML presentations with Chart.js, design tokens, copywriting formulas
 - `/yt-transcript <youtube-url>` -- fetch a YouTube video's captions via yt-dlp, save cleaned transcript to `transcripts/<videoId>.md`
 - `/claude-coach` -- coach for efficient Claude Code use: grade/rewrite prompts, route to the right skill, recommend effort, teach Opus 4.8 techniques (knowledge: `references/claude-code-mastery.md`)
+- `/session-memory` -- save durable facts from the current session into persistent memory
 
 ---
 
