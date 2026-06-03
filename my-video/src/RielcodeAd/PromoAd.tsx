@@ -20,7 +20,7 @@ const { fontFamily: serifItalic } = loadSerif("italic", { weights: ["500", "700"
 const { fontFamily: sans } = loadSans("normal", { weights: ["400", "600", "700"], subsets: ["latin"] });
 
 // Orientation drives layout. Same scenes, responsive sizing.
-export type Orientation = "portrait" | "square" | "landscape";
+export type Orientation = "portrait" | "portrait45" | "square" | "landscape";
 export type PromoProps = { orientation: Orientation };
 
 const ease = Easing.bezier(0.16, 1, 0.3, 1);
@@ -80,6 +80,8 @@ const layout = (o: Orientation) => {
   switch (o) {
     case "portrait":
       return { pad: 96, h1: 96, body: 38, cta: 44, label: 28, stat: 96, statLabel: 24, dir: "column" as const, mockGap: 40 };
+    case "portrait45":
+      return { pad: 88, h1: 86, body: 36, cta: 42, label: 26, stat: 86, statLabel: 22, dir: "column" as const, mockGap: 36 };
     case "square":
       return { pad: 88, h1: 92, body: 36, cta: 42, label: 26, stat: 88, statLabel: 24, dir: "column" as const, mockGap: 48 };
     case "landscape":

@@ -14,6 +14,7 @@ const ids = [
 
 const promoSizes: { id: string; w: number; h: number; orientation: Orientation }[] = [
   { id: "Promo-9x16", w: 1080, h: 1920, orientation: "portrait" },
+  { id: "Promo-4x5", w: 1080, h: 1350, orientation: "portrait45" },
   { id: "Promo-1x1", w: 1080, h: 1080, orientation: "square" },
   { id: "Promo-16x9", w: 1920, h: 1080, orientation: "landscape" },
 ];

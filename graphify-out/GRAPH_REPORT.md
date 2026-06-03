@@ -1,7 +1,7 @@
-# Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-01)
+# Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-03)
 
 ## Corpus Check
-- 94 files · ~2,548,165 words
+- 94 files · ~2,548,190 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -1209,10 +1209,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Rielcode Testimonials Page Screenshot` and `Rielcode Website (portfolio.rielcode.com)`?**
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **Why does `get()` connect `Community 10` to `Community 73`, `Community 17`, `Community 6`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `_insert_event()` connect `Community 17` to `Community 10`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Are the 15 inferred relationships involving `get()` (e.g. with `_insert_event()` and `api_thread()`) actually correct?**
   _`get()` has 15 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)` to the rest of the system?**
   _1274 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.02 - nodes in this community are weakly interconnected._
