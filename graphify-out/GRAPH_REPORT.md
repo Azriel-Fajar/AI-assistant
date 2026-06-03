@@ -1,11 +1,11 @@
 # Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-03)
 
 ## Corpus Check
-- 95 files · ~2,645,147 words
+- 95 files · ~2,653,911 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2359 nodes · 2452 edges · 197 communities detected
+- 2362 nodes · 2452 edges · 200 communities detected
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 123 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
@@ -207,6 +207,9 @@
 - [[_COMMUNITY_Community 194|Community 194]]
 - [[_COMMUNITY_Community 195|Community 195]]
 - [[_COMMUNITY_Community 196|Community 196]]
+- [[_COMMUNITY_Community 197|Community 197]]
+- [[_COMMUNITY_Community 198|Community 198]]
+- [[_COMMUNITY_Community 199|Community 199]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
@@ -997,45 +1000,57 @@ Nodes (1): Full ordered (oldest-first) message history for the first thread matc
 
 ### Community 186 - "Community 186"
 Cohesion: 1.0
-Nodes (1): Return branch, repo name, dirty flag for given path.
+Nodes (1): Ordered (oldest-first) message history for a known conversation id.
 
 ### Community 187 - "Community 187"
 Cohesion: 1.0
-Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
+Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
 
 ### Community 188 - "Community 188"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
 
 ### Community 189 - "Community 189"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Return branch, repo name, dirty flag for given path.
 
 ### Community 190 - "Community 190"
 Cohesion: 1.0
-Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
+Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
 
 ### Community 191 - "Community 191"
 Cohesion: 1.0
-Nodes (1): Set up dummy environment variables for testing.
+Nodes (0): 
 
 ### Community 192 - "Community 192"
 Cohesion: 1.0
-Nodes (1): CLAUDE.local.md Local Overrides
+Nodes (0): 
 
 ### Community 193 - "Community 193"
 Cohesion: 1.0
-Nodes (1): Session Summary Template
+Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
 
 ### Community 194 - "Community 194"
 Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v2
+Nodes (1): Set up dummy environment variables for testing.
 
 ### Community 195 - "Community 195"
 Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v3
+Nodes (1): CLAUDE.local.md Local Overrides
 
 ### Community 196 - "Community 196"
+Cohesion: 1.0
+Nodes (1): Session Summary Template
+
+### Community 197 - "Community 197"
+Cohesion: 1.0
+Nodes (1): Rielcode Portfolio Page Screenshot v2
+
+### Community 198 - "Community 198"
+Cohesion: 1.0
+Nodes (1): Rielcode Portfolio Page Screenshot v3
+
+### Community 199 - "Community 199"
 Cohesion: 1.0
 Nodes (1): Rielcode Services Page Screenshot v2
 
@@ -1048,7 +1063,7 @@ Nodes (1): Rielcode Services Page Screenshot v2
   screenshots/rielcode-testimonials-20260511.png · relation: references
 
 ## Knowledge Gaps
-- **1274 isolated node(s):** `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)`, `Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms`, `Friendly, user-facing API/config error (token missing, expired, no permission).` (+1269 more)
+- **1277 isolated node(s):** `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)`, `Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms`, `Friendly, user-facing API/config error (token missing, expired, no permission).` (+1272 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 123`** (2 nodes): `Root.tsx`, `RemotionRoot()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -1176,27 +1191,33 @@ Nodes (1): Rielcode Services Page Screenshot v2
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 185`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 186`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
+- **Thin community `Community 186`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 187`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
+- **Thin community `Community 187`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 188`** (1 nodes): `_COMMUNITY_Community 5.md`
+- **Thin community `Community 188`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 189`** (1 nodes): `vaBxYgZ7MAU.md`
+- **Thin community `Community 189`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 190`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
+- **Thin community `Community 190`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 191`** (1 nodes): `Set up dummy environment variables for testing.`
+- **Thin community `Community 191`** (1 nodes): `_COMMUNITY_Community 5.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 192`** (1 nodes): `CLAUDE.local.md Local Overrides`
+- **Thin community `Community 192`** (1 nodes): `vaBxYgZ7MAU.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 193`** (1 nodes): `Session Summary Template`
+- **Thin community `Community 193`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 194`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
+- **Thin community `Community 194`** (1 nodes): `Set up dummy environment variables for testing.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 195`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
+- **Thin community `Community 195`** (1 nodes): `CLAUDE.local.md Local Overrides`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 196`** (1 nodes): `Rielcode Services Page Screenshot v2`
+- **Thin community `Community 196`** (1 nodes): `Session Summary Template`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 197`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 198`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 199`** (1 nodes): `Rielcode Services Page Screenshot v2`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
@@ -1215,4 +1236,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 15 inferred relationships involving `get()` (e.g. with `_insert_event()` and `api_thread()`) actually correct?**
   _`get()` has 15 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)` to the rest of the system?**
-  _1274 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1277 weakly-connected nodes found - possible documentation gaps or missing edges._

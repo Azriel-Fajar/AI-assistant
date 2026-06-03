@@ -169,7 +169,7 @@
     </span>
     <div>
       <h1>Meta Dashboard</h1>
-      <div class="sub">Ads (last 7 days) &middot; Page Messenger</div>
+      <div class="sub">Ads (last 30 days) &middot; Page Messenger</div>
     </div>
   </div>
   <div class="hbtns">
@@ -200,7 +200,7 @@
       {% set total_clicks = ads.campaigns | sum(attribute='clicks') %}
       <div class="kpis">
         <div class="kpi">
-          <div class="k-label">Spend (7d)</div>
+          <div class="k-label">Spend (30d)</div>
           <div class="k-val num">Rp&nbsp;{{ '{:,.0f}'.format(ads.total_spend).replace(',', '.') }}</div>
         </div>
         <div class="kpi">
@@ -215,13 +215,14 @@
       <div class="tablewrap">
         <table>
           <thead><tr>
-            <th>Campaign</th><th class="r">Spend</th><th class="r">Impr</th>
+            <th>Campaign</th><th>Status</th><th class="r">Spend (30d)</th><th class="r">Impr</th>
             <th class="r">Clicks</th><th class="r">CTR</th><th>Results</th>
           </tr></thead>
           <tbody>
           {% for c in ads.campaigns %}
             <tr>
               <td>{{ c.campaign }}</td>
+              <td><span class="pill" style="{% if c.status == 'ACTIVE' %}background:var(--good-soft);color:var(--good){% else %}background:var(--line);color:var(--muted){% endif %}">{{ c.status }}</span></td>
               <td class="r num">Rp&nbsp;{{ '{:,.0f}'.format(c.spend).replace(',', '.') }}</td>
               <td class="r num">{{ '{:,.0f}'.format(c.impressions).replace(',', '.') }}</td>
               <td class="r num">{{ '{:,.0f}'.format(c.clicks).replace(',', '.') }}</td>

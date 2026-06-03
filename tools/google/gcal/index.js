@@ -116,8 +116,9 @@ program.command('delete')
   .action(async (opts) => {
     try {
       const cal = await getCalendar();
-      const list = await cal.events.list({ calendarId: 'primary', maxResults: 100, singleEvents: true });
-      const event = list.data.items.find(e => e.id.startsWith(opts.id));
+      const timeMin = new Date(); timeMin.setDate(timeMin.getDate() - 1);
+      const list = await cal.events.list({ calendarId: 'primary', maxResults: 200, singleEvents: true, timeMin: timeMin.toISOString() });
+      const event = list.data.items.find(e => e.id === opts.id || e.id.startsWith(opts.id));
       if (!event) return console.error('Event not found.');
       if (!opts.yolo) {
         const ok = await confirm(`Delete "${event.summary}"?`);

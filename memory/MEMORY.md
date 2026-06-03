@@ -14,3 +14,6 @@
 - [Meta Ads WA Lead Gen](project_meta_ads_wa_leadgen.md) -- active campaign in learning, don't edit till ~Jun 5; objective mismatch (clicks vs WA msgs), fix = new campaign
 - [Messenger Client History](project_messenger_client_history.md) -- client DMs synced to meta/clients/; read them when asked about a lead, refresh via node meta/dms-sync.mjs
 - [Rielcode Audit Tool](project_audit_tool.md) -- free audit lead tool at rielcode.com/audit, 3 phases built 2026-06-03, pure-PHP scoring (no Node), admin tab + PDF email
+- [Meta Ads Dashboard](reference_meta_dashboard.md) -- Flask app; run via `python -m flask --app meta.dashboard.app run` from project root; shows all campaigns + 30d insights
+- [Flask Module Run Command](feedback_flask_run_command.md) -- apps with relative imports must use `python -m flask --app ...`, not `python app.py`
+- [Rielcode Rebrand Assets](reference_rielcode_rebrand_assets.md) -- rebrand logos at C:\xampp\htdocs\Rielcode-laravel\public\brand\ (PNG+SVG, all variants)

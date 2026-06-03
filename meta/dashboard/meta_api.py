@@ -104,28 +104,43 @@ def _get_ads():
     if not config.ACCOUNT_ID or config.ACCOUNT_ID == "act_":
         _missing("META_AD_ACCOUNT_ID", "Should be act_<digits> from Ads Manager.")
 
-    url = _url(
-        f"{config.ACCOUNT_ID}/insights",
+    # Fetch all campaigns (includes paused/no-spend ones)
+    camp_url = _url(
+        f"{config.ACCOUNT_ID}/campaigns",
         {
-            "level": "campaign",
-            "date_preset": "last_7d",
+            "fields": "id,name,status,effective_status",
             "limit": 100,
-            "fields": "campaign_name,spend,impressions,clicks,ctr,actions",
             "access_token": config.TOKEN,
         },
     )
-    rows = _get(url).get("data", [])
+    all_campaigns = {c["id"]: c for c in _get(camp_url).get("data", [])}
+
+    # Fetch insights for last 30 days (campaigns with no delivery won't appear here)
+    insights_url = _url(
+        f"{config.ACCOUNT_ID}/insights",
+        {
+            "level": "campaign",
+            "date_preset": "last_30d",
+            "limit": 100,
+            "fields": "campaign_id,campaign_name,spend,impressions,clicks,ctr,actions",
+            "access_token": config.TOKEN,
+        },
+    )
+    insights_by_id = {r["campaign_id"]: r for r in _get(insights_url).get("data", [])}
 
     campaigns, flags, total = [], [], 0.0
-    for r in rows:
+    for cid, c in all_campaigns.items():
+        r = insights_by_id.get(cid, {})
         spend = float(r.get("spend") or 0)
         impr = int(float(r.get("impressions") or 0))
         clicks = int(float(r.get("clicks") or 0))
         total += spend
-        name = r.get("campaign_name") or "(unnamed)"
+        name = c.get("name") or r.get("campaign_name") or "(unnamed)"
+        status = c.get("effective_status", "UNKNOWN")
         campaigns.append(
             {
                 "campaign": name,
+                "status": status,
                 "spend": round(spend, 2),
                 "impressions": impr,
                 "clicks": clicks,
