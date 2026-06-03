@@ -1,11 +1,11 @@
 # Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-03)
 
 ## Corpus Check
-- 94 files · ~2,548,190 words
+- 94 files · ~2,553,612 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2356 nodes · 2434 edges · 197 communities detected
+- 2357 nodes · 2435 edges · 196 communities detected
 - Extraction: 95% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 107 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
@@ -206,7 +206,6 @@
 - [[_COMMUNITY_Community 193|Community 193]]
 - [[_COMMUNITY_Community 194|Community 194]]
 - [[_COMMUNITY_Community 195|Community 195]]
-- [[_COMMUNITY_Community 196|Community 196]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
@@ -260,16 +259,16 @@ Cohesion: 0.02
 Nodes (102): code:json ({), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS), code:js (// videos.list with forMine:true returns the authenticated u), code:js (// Step 1: get the uploads playlist id from channel), code:js (const mockChannelsList = jest.fn();), code:js (jest.mock('googleapis', () => ({), code:js (import { listVideos } from '../youtube/index.js';), code:powershell (cd C:\Users\afw14\OneDrive\Documents\JARVIS\tools\google) (+94 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.02
-Nodes (89): 1. Should this animate at all?, 2. What is the purpose?, 3. What easing should it use?, 3D transforms for depth, 4. How fast should it be?, Accessibility, Animate enter states with @starting-style, Asymmetric enter/exit timing (+81 more)
+Cohesion: 0.03
+Nodes (92): AIOS Intake, Free Website Audit Tool, Banner Art Direction Styles, Brand Guidelines Source of Truth, Build-with-me Live Streams, Canva MCP Integration, Floating Chatbot Widget, Dark UI Design Theme (+84 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.02
-Nodes (85): code:powershell (New-Item -ItemType Directory -Force "c:\Users\afw14\OneDrive), code:powershell (npm test -- --testPathPattern=output), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), code:js (import { jest } from '@jest/globals';), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:js (import chalk from 'chalk';), code:powershell (npm test -- --testPathPattern=error), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS") (+77 more)
+Nodes (89): 1. Should this animate at all?, 2. What is the purpose?, 3. What easing should it use?, 3D transforms for depth, 4. How fast should it be?, Accessibility, Animate enter states with @starting-style, Asymmetric enter/exit timing (+81 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.03
-Nodes (80): AIOS Intake, Free Website Audit Tool, Build-with-me Live Streams, Canva MCP Integration, Floating Chatbot Widget, Dark UI Design Theme, Decisions Log (decisions/log.md), DomPDF PDF Generation Engine (+72 more)
+Cohesion: 0.02
+Nodes (85): code:powershell (New-Item -ItemType Directory -Force "c:\Users\afw14\OneDrive), code:powershell (npm test -- --testPathPattern=output), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS"), code:js (import { jest } from '@jest/globals';), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:js (import chalk from 'chalk';), code:powershell (npm test -- --testPathPattern=error), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS") (+77 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.03
@@ -404,20 +403,20 @@ Cohesion: 0.12
 Nodes (16): AIS-OS Intake, code:block1 (I'm Azriel, an informatics engineering student running Rielc), code:block2 (Hey Ali, I wanted to follow up on the website I uploaded a c), code:block3 (selamat sore kak, hanya ingin memastikan, bagaimana dengan r), code:block4 (1. Update portfolio.rielcode.com -- add more features and pa), code:block5 (Bank transfer (Indonesian bank). No tracking system in place), code:block6 (WhatsApp (primary client communication). Instagram DMs (outr), code:block7 (No system currently. Wants to build one -- goals: note-takin) (+8 more)
 
 ### Community 38 - "Community 38"
+Cohesion: 0.12
+Nodes (17): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Applied Learning, Archives, Azriel's Executive Assistant, Behavioral Guidelines (Karpathy) (+9 more)
+
+### Community 39 - "Community 39"
 Cohesion: 0.15
 Nodes (15): Cadence (25 pts), Capabilities (25 pts), code:block1 (# AIOS Audit — {date}), Connections (25 pts) — domain-aware, mechanism-agnostic, Context (25 pts), Execution, Notes, Step 1: Discover the project shape (+7 more)
 
-### Community 39 - "Community 39"
+### Community 40 - "Community 40"
 Cohesion: 0.12
 Nodes (16): AIS-OS Intake, code:block1 (I'm Azriel, an informatics engineering student running Rielc), code:block2 (Hey Ali, I wanted to follow up on the website I uploaded a c), code:block3 (selamat sore kak, hanya ingin memastikan, bagaimana dengan r), code:block4 (1. Update portfolio.rielcode.com -- add more features and pa), code:block5 (Bank transfer (Indonesian bank). No tracking system in place), code:block6 (WhatsApp (primary client communication). Instagram DMs (outr), code:block7 (No system currently. Wants to build one -- goals: note-takin) (+8 more)
 
-### Community 40 - "Community 40"
-Cohesion: 0.12
-Nodes (15): 1. Koffietori, 2. Bragga Coffee, 3. Menepilah Cafe & Collaborative Space, 4. Waroeng Lada Hitam, 5. Secerca Coffee, Bragga Coffee, Cold Messages, Follow-up Log (+7 more)
-
 ### Community 41 - "Community 41"
 Cohesion: 0.12
-Nodes (17): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Applied Learning, Archives, Azriel's Executive Assistant, Behavioral Guidelines (Karpathy) (+9 more)
+Nodes (15): 1. Koffietori, 2. Bragga Coffee, 3. Menepilah Cafe & Collaborative Space, 4. Waroeng Lada Hitam, 5. Secerca Coffee, Bragga Coffee, Cold Messages, Follow-up Log (+7 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.15
@@ -448,20 +447,20 @@ Cohesion: 0.14
 Nodes (13): Brand, Brand Sync Workflow, code:bash (node scripts/inject-brand-context.cjs), code:bash (node scripts/validate-asset.cjs <asset-path>), code:bash (node scripts/extract-colors.cjs --palette), code:bash (# 1. Edit docs/brand-guidelines.md (or use /brand update)), Quick Start, References (+5 more)
 
 ### Community 49 - "Community 49"
-Cohesion: 0.16
-Nodes (12): 1. Gather project details, 2. Generate the proposal, 3. Suggest a price (if needed), 4. Send ntfy notification, 5. Offer a follow-up action, code:block1 (PROPOSAL -- <Project Type> for <Client Name>), code:bash (curl -s -o /dev/null -H "Title: Proposal Ready" -d "Proposal), Format A: WhatsApp-ready summary (short) (+4 more)
-
-### Community 50 - "Community 50"
 Cohesion: 0.22
 Nodes (12): code:markdown (---), Critical implementation rules, Execution — three phases, Inputs the skill reads, Output contract, Phase 1 — Mindset interview (find the candidate), Phase 2 — Method interview (scope one), Phase 3 — Machine handoff (build it) (+4 more)
 
-### Community 51 - "Community 51"
+### Community 50 - "Community 50"
 Cohesion: 0.14
 Nodes (12): code:block1 (cd c:/Users/afw14/OneDrive/Documents/JARVIS && npx playwrigh), code:block2 (npx playwright codegen <url> --output tests/playwright/recor), code:js (const { chromium } = require('playwright');), code:bash (ls c:/Users/afw14/OneDrive/Documents/JARVIS/node_modules/@pl), Notes, /playwright, `/playwright codegen <url>`, `/playwright scrape <url> <task>` (+4 more)
 
-### Community 52 - "Community 52"
+### Community 51 - "Community 51"
 Cohesion: 0.16
 Nodes (12): 1. Get topic input, 2. Write the script, 3. Shot list (no-face), 4. Voiceover — auto-generate via ElevenLabs MCP, 4b. Thumbnail — auto-generate via Canva MCP, 5. Hashtags + description, 6. Production checklist, code:block1 (TITLE: [under 60 chars, includes hook keyword]) (+4 more)
+
+### Community 52 - "Community 52"
+Cohesion: 0.16
+Nodes (12): 1. Gather project details, 2. Generate the proposal, 3. Suggest a price (if needed), 4. Send ntfy notification, 5. Offer a follow-up action, code:block1 (PROPOSAL -- <Project Type> for <Client Name>), code:bash (curl -s -o /dev/null -H "Title: Proposal Ready" -d "Proposal), Format A: WhatsApp-ready summary (short) (+4 more)
 
 ### Community 53 - "Community 53"
 Cohesion: 0.14
@@ -500,16 +499,16 @@ Cohesion: 0.15
 Nodes (12): Applied Learning, Archives, Azriel's Executive Assistant, Context, Decision Log, Keeping Context Current, Memory, Projects (+4 more)
 
 ### Community 62 - "Community 62"
+Cohesion: 0.2
+Nodes (10): 1. Gather project details, 2. Create the project folder, 3. Output the setup checklist, 4. Log the new project, code:markdown (# <Project Name>), code:block2 (Personal Project Checklist -- <Project Name>), code:block3 ([<today's date>] DECISION: Started personal project -- <Proj), Rules (+2 more)
+
+### Community 63 - "Community 63"
 Cohesion: 0.23
 Nodes (10): code:block1 (✓ Day 1 done. Your AIOS knows who you are, what you sell, wh), Critical implementation rules, Execution, Step 1: Read the intake, Step 2: The interview (7 questions, hard cap), Step 3: Scaffold the Day-1 file set, Step 4: The closing screen, Verification (for the implementer) (+2 more)
 
-### Community 63 - "Community 63"
-Cohesion: 0.2
-Nodes (10): 1. Confirm or refresh inputs, 2. Define content pillars, 3. Posting cadence + batch plan, 4. Channel positioning, 5. 30-day launch roadmap, 6. Save strategy doc, 7. Next steps, Rules (+2 more)
-
 ### Community 64 - "Community 64"
 Cohesion: 0.2
-Nodes (10): 1. Gather project details, 2. Create the project folder, 3. Output the setup checklist, 4. Log the new project, code:markdown (# <Project Name>), code:block2 (Personal Project Checklist -- <Project Name>), code:block3 ([<today's date>] DECISION: Started personal project -- <Proj), Rules (+2 more)
+Nodes (10): 1. Confirm or refresh inputs, 2. Define content pillars, 3. Posting cadence + batch plan, 4. Channel positioning, 5. 30-day launch roadmap, 6. Save strategy doc, 7. Next steps, Rules (+2 more)
 
 ### Community 65 - "Community 65"
 Cohesion: 0.17
@@ -517,83 +516,83 @@ Nodes (10): BASE PACKAGES (sale prices active), Custom Plan — from IDR 500k / 
 
 ### Community 66 - "Community 66"
 Cohesion: 0.18
-Nodes (12): Banner Art Direction Styles, Brand Guidelines Source of Truth, Banner Design Capability (22 Styles), Corporate Identity Program Capability, Logo Design Capability (55 Styles), Gemini AI Image Generation, Skill: banner-design, Skill: brand (+4 more)
+Nodes (10): 1. Set up staging that mirrors production, 2. Test all features end-to-end, 3. Edge cases, 4. Cross-browser, 5. Fix priorities, Done when, Related skills, Stage 1: Quality Assurance (QA) (+2 more)
 
 ### Community 67 - "Community 67"
 Cohesion: 0.18
-Nodes (10): 1. Set up staging that mirrors production, 2. Test all features end-to-end, 3. Edge cases, 4. Cross-browser, 5. Fix priorities, Done when, Related skills, Stage 1: Quality Assurance (QA) (+2 more)
+Nodes (10): 1. Automated vulnerability scan, 2. Secrets out of source, 3. HTTPS-only, 4. Indonesian data privacy + GDPR/CCPA, 5. Input sanitization, Done when, Related skills, Stage 2: Security & Compliance (+2 more)
 
 ### Community 68 - "Community 68"
 Cohesion: 0.18
-Nodes (10): 1. Automated vulnerability scan, 2. Secrets out of source, 3. HTTPS-only, 4. Indonesian data privacy + GDPR/CCPA, 5. Input sanitization, Done when, Related skills, Stage 2: Security & Compliance (+2 more)
+Nodes (10): 1. Deploy to production, 2. Smoke test on live URL, 3. Phased / canary rollout (for high-traffic sites only), 4. Rollback plan ready, 5. Announce go-live to client, Done when, Related skills, Stage 6: Deployment & Rollout (+2 more)
 
 ### Community 69 - "Community 69"
 Cohesion: 0.18
-Nodes (10): 1. Deploy to production, 2. Smoke test on live URL, 3. Phased / canary rollout (for high-traffic sites only), 4. Rollback plan ready, 5. Announce go-live to client, Done when, Related skills, Stage 6: Deployment & Rollout (+2 more)
+Nodes (10): 1. APM / error tracking, 2. Uptime monitoring, 3. Analytics, 4. Alert thresholds, 5. 7-day post-launch review, Done when, Related skills, Stage 7: Post-Launch Monitoring (+2 more)
 
 ### Community 70 - "Community 70"
 Cohesion: 0.18
-Nodes (10): 1. APM / error tracking, 2. Uptime monitoring, 3. Analytics, 4. Alert thresholds, 5. 7-day post-launch review, Done when, Related skills, Stage 7: Post-Launch Monitoring (+2 more)
-
-### Community 71 - "Community 71"
-Cohesion: 0.18
 Nodes (10): code:console (npm i), code:console (npm run dev), code:console (npx remotion render), code:console (npx remotion upgrade), Commands, Docs, Help, Issues (+2 more)
 
-### Community 72 - "Community 72"
+### Community 71 - "Community 71"
 Cohesion: 0.2
 Nodes (11): portfolio.rielcode.com, MISAEL67 Referral Code, MISAEL67 Instagram Caption, MISAEL67 Info Card, MISAEL67 WhatsApp Message, Rielcode Referral Program, rielcode.com Website, Rielcode Base Instagram Caption Template (+3 more)
 
-### Community 73 - "Community 73"
+### Community 72 - "Community 72"
 Cohesion: 0.36
 Nodes (9): build_panel(), find_latest_session(), git_info(), main(), pct_bar(), pct_color(), Return branch, repo name, dirty flag for given path., Scan $TEMP for claude-ctx-*.json files and return the most recently     modified (+1 more)
 
-### Community 74 - "Community 74"
+### Community 73 - "Community 73"
 Cohesion: 0.24
 Nodes (3): handleError(), notAuthenticated(), getHeaders()
 
-### Community 75 - "Community 75"
+### Community 74 - "Community 74"
 Cohesion: 0.2
 Nodes (9): 1. Continuous Integration (run tests on push), 2. Continuous Deployment to staging, 3. Production deployment, 4. Rollback procedure, Done when, Related skills, Stage 3: CI/CD Automation, Steps (+1 more)
 
-### Community 76 - "Community 76"
+### Community 75 - "Community 75"
 Cohesion: 0.2
 Nodes (9): 1. Lighthouse / PageSpeed audit, 2. Image optimization, 3. Minify & compress, 4. Database profiling, 5. Server resource baseline, Done when, Stage 4: Performance Optimization, Steps (+1 more)
 
-### Community 77 - "Community 77"
+### Community 76 - "Community 76"
 Cohesion: 0.2
 Nodes (9): 1. Point domain to server / hosting, 2. SSL certificate, 3. www <-> non-www redirect, 4. Email DNS (only if domain sends email), 5. Verify propagation, Done when, Stage 5: Domain & DNS Setup, Steps (+1 more)
+
+### Community 77 - "Community 77"
+Cohesion: 0.29
+Nodes (8): code:block1 (npm init -y), code:block2 (node "d:\Main Storage\Documents\JARVIS\.claude\skills\url-sc), code:block3 (Screenshots saved:), Context, Notes, Output Format, Steps, What This Skill Does
 
 ### Community 78 - "Community 78"
 Cohesion: 0.24
 Nodes (8): 1. Identify the situation, 2. Draft the follow-up message, 3. Send ntfy notification, 4. Offer a variation, code:bash (curl -s -o /dev/null -H "Title: Follow-up Ready" -d "Follow-), Rules, Steps, What This Skill Does
 
 ### Community 79 - "Community 79"
-Cohesion: 0.29
-Nodes (8): code:block1 (npm init -y), code:block2 (node "d:\Main Storage\Documents\JARVIS\.claude\skills\url-sc), code:block3 (Screenshots saved:), Context, Notes, Output Format, Steps, What This Skill Does
-
-### Community 80 - "Community 80"
 Cohesion: 0.22
 Nodes (8): Deployment Pipeline -- {{PROJECT}}, Stage 1: QA, Stage 2: Security & Compliance, Stage 3: CI/CD Automation, Stage 4: Performance Optimization, Stage 5: Domain & DNS Setup, Stage 6: Deployment & Rollout, Stage 7: Post-Launch Monitoring
 
-### Community 81 - "Community 81"
+### Community 80 - "Community 80"
 Cohesion: 0.28
 Nodes (7): 1. Gather content details, 2. Generate 3 caption options, 3. Generate hashtags, 4. Offer a variation, Rules, Steps, What This Skill Does
 
-### Community 82 - "Community 82"
+### Community 81 - "Community 81"
 Cohesion: 0.22
 Nodes (7): Description, Files, Key Dates, Locked Choices, Next Action, Skills Used, YouTube Channel — Rielcode
 
-### Community 83 - "Community 83"
+### Community 82 - "Community 82"
 Cohesion: 0.22
 Nodes (7): Broken Images, Console Errors, Form Behavior, Layout Issues, Misc Notes, Rielcode Site Audit Report, Screenshots
 
-### Community 84 - "Community 84"
+### Community 83 - "Community 83"
 Cohesion: 0.22
 Nodes (8): code:json ({), code:powershell (cd tools/google), code:block3 (gcal list --date today), Config, Google CLI Tools, Google Cloud Setup (one-time, ~5 min), Install, Usage
 
-### Community 85 - "Community 85"
+### Community 84 - "Community 84"
 Cohesion: 0.25
 Nodes (6): code:block1 (Hey Ali, I wanted to follow up on the website I uploaded a c), code:block2 (selamat sore kak, hanya ingin memastikan, bagaimana dengan r), Sample 1 -- English (client follow-up, WhatsApp), Sample 2 -- Indonesian (local lead follow-up, WhatsApp), Voice notes, Voice Reference
+
+### Community 85 - "Community 85"
+Cohesion: 0.29
+Nodes (6): EXPANSIONS — what to add as you grow, How to tell when it's time to add a folder, Suggested cadences, What NOT to add, What ships in the kit (don't remove), What to add as you grow
 
 ### Community 86 - "Community 86"
 Cohesion: 0.29
@@ -601,103 +600,103 @@ Nodes (6): EXPANSIONS — what to add as you grow, How to tell when it's time to
 
 ### Community 87 - "Community 87"
 Cohesion: 0.29
-Nodes (6): EXPANSIONS — what to add as you grow, How to tell when it's time to add a folder, Suggested cadences, What NOT to add, What ships in the kit (don't remove), What to add as you grow
+Nodes (5): Business, Core Pain Points, Revenue, Tools, Work & Business -- Rielcode
 
 ### Community 88 - "Community 88"
 Cohesion: 0.29
-Nodes (5): Business, Core Pain Points, Revenue, Tools, Work & Business -- Rielcode
+Nodes (5): Commission Table, Program Rules, Referral Code Registry, Rielcode Referral Program, Tracking
 
 ### Community 89 - "Community 89"
 Cohesion: 0.29
-Nodes (5): Commission Table, Program Rules, Referral Code Registry, Rielcode Referral Program, Tracking
+Nodes (5): Decisions Made, Memory Updates, Open Items / Next Steps, Session Summary, What Got Done
 
 ### Community 90 - "Community 90"
 Cohesion: 0.29
-Nodes (5): Decisions Made, Memory Updates, Open Items / Next Steps, Session Summary, What Got Done
-
-### Community 91 - "Community 91"
-Cohesion: 0.29
 Nodes (6): Assets Needed, Batch Day Plan, SHORT 1 of 3, SHORT 2 of 3, SHORT 3 of 3, YouTube Batch — Week 21, 2026 (May 18-25)
 
-### Community 92 - "Community 92"
+### Community 91 - "Community 91"
 Cohesion: 0.67
 Nodes (5): getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath()
 
-### Community 93 - "Community 93"
+### Community 92 - "Community 92"
 Cohesion: 0.33
 Nodes (4): Communication Style, Format, Rules, Tone
 
-### Community 94 - "Community 94"
+### Community 93 - "Community 93"
 Cohesion: 0.33
 Nodes (4): Example Skill, Notes, Steps, When to use
 
-### Community 95 - "Community 95"
+### Community 94 - "Community 94"
 Cohesion: 0.33
 Nodes (5): References (Knowledge Base), Routing, Slides, Subcommands, When to Use
 
-### Community 96 - "Community 96"
+### Community 95 - "Community 95"
 Cohesion: 0.5
 Nodes (2): scaleEnterExit(), spr()
 
-### Community 97 - "Community 97"
+### Community 96 - "Community 96"
 Cohesion: 0.4
 Nodes (3): Goals & Milestones, Notes, Q2 2026 (April -- June)
 
-### Community 98 - "Community 98"
+### Community 97 - "Community 97"
 Cohesion: 0.4
 Nodes (5): Google Calendar MCP Integration, ntfy Phone Notification System, Daily Priorities Skill, Follow-up Skill, WhatsApp Communication Channel
 
-### Community 99 - "Community 99"
+### Community 98 - "Community 98"
 Cohesion: 0.67
 Nodes (2): apiFetch(), fail()
 
-### Community 100 - "Community 100"
+### Community 99 - "Community 99"
 Cohesion: 0.67
 Nodes (2): card(), sp()
 
-### Community 101 - "Community 101"
+### Community 100 - "Community 100"
 Cohesion: 0.67
 Nodes (2): Design Thinking, Frontend Aesthetics Guidelines
 
-### Community 102 - "Community 102"
+### Community 101 - "Community 101"
 Cohesion: 0.5
 Nodes (2): Active Projects, Current Priorities
 
-### Community 103 - "Community 103"
+### Community 102 - "Community 102"
 Cohesion: 0.5
 Nodes (2): Current Clients, Team
 
-### Community 104 - "Community 104"
+### Community 103 - "Community 103"
 Cohesion: 0.5
 Nodes (2): code:block1 (## YYYY-MM-DD — Short title), Decisions Log
 
-### Community 105 - "Community 105"
+### Community 104 - "Community 104"
 Cohesion: 0.67
 Nodes (4): Demo Website Skill, Emil Design Engineer Skill, Frontend Design Skill, Tailwind CSS
 
-### Community 106 - "Community 106"
+### Community 105 - "Community 105"
 Cohesion: 0.5
 Nodes (4): Parallaxnet Client Site, Rielcode Hero Iterations (v1-v8), Rielcode Mobile Views, Rielcode Site Evolution (May 2026)
 
-### Community 107 - "Community 107"
+### Community 106 - "Community 106"
 Cohesion: 0.67
 Nodes (2): Set up dummy environment variables for testing., setup_env_vars()
 
-### Community 108 - "Community 108"
+### Community 107 - "Community 107"
 Cohesion: 0.67
 Nodes (0): 
 
-### Community 109 - "Community 109"
+### Community 108 - "Community 108"
 Cohesion: 1.0
 Nodes (2): get(), getCaptionUrl()
 
-### Community 110 - "Community 110"
+### Community 109 - "Community 109"
 Cohesion: 0.67
 Nodes (0): 
 
-### Community 111 - "Community 111"
+### Community 110 - "Community 110"
 Cohesion: 0.67
 Nodes (1): About Rielcode
+
+### Community 111 - "Community 111"
+Cohesion: 0.67
+Nodes (1): About Azriel
 
 ### Community 112 - "Community 112"
 Cohesion: 0.67
@@ -705,43 +704,43 @@ Nodes (1): About Azriel
 
 ### Community 113 - "Community 113"
 Cohesion: 0.67
-Nodes (1): About Azriel
+Nodes (1): Priorities -- Q2 2026 (April-June)
 
 ### Community 114 - "Community 114"
 Cohesion: 0.67
-Nodes (1): Priorities -- Q2 2026 (April-June)
+Nodes (1): Leads Archive
 
 ### Community 115 - "Community 115"
 Cohesion: 0.67
-Nodes (1): Leads Archive
+Nodes (1): Leads
 
 ### Community 116 - "Community 116"
 Cohesion: 0.67
-Nodes (1): Leads
+Nodes (1): Memory Index
 
 ### Community 117 - "Community 117"
 Cohesion: 0.67
-Nodes (1): Memory Index
+Nodes (1): Key Notes
 
 ### Community 118 - "Community 118"
 Cohesion: 0.67
-Nodes (1): Key Notes
+Nodes (1): Parallaxnet Canada -- Website
 
 ### Community 119 - "Community 119"
 Cohesion: 0.67
-Nodes (1): Parallaxnet Canada -- Website
+Nodes (1): Learning Log
 
 ### Community 120 - "Community 120"
 Cohesion: 0.67
-Nodes (1): Learning Log
+Nodes (3): Communication Style Rules, Client Proposal Format (WhatsApp + Full Doc), Skill: client-proposal
 
 ### Community 121 - "Community 121"
 Cohesion: 0.67
-Nodes (3): Communication Style Rules, Client Proposal Format (WhatsApp + Full Doc), Skill: client-proposal
+Nodes (3): Checkout Confirmation Page (Step 2), Order Form Full Page (1280px), Order Form Package Section Crop
 
 ### Community 122 - "Community 122"
-Cohesion: 0.67
-Nodes (3): Checkout Confirmation Page (Step 2), Order Form Full Page (1280px), Order Form Package Section Crop
+Cohesion: 1.0
+Nodes (0): 
 
 ### Community 123 - "Community 123"
 Cohesion: 1.0
@@ -981,27 +980,27 @@ Nodes (0):
 
 ### Community 182 - "Community 182"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Ordered (oldest-first) message history for a known conversation id.
 
 ### Community 183 - "Community 183"
 Cohesion: 1.0
-Nodes (1): Ordered (oldest-first) message history for a known conversation id.
+Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
 
 ### Community 184 - "Community 184"
 Cohesion: 1.0
-Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
+Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
 
 ### Community 185 - "Community 185"
 Cohesion: 1.0
-Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
+Nodes (1): Return branch, repo name, dirty flag for given path.
 
 ### Community 186 - "Community 186"
 Cohesion: 1.0
-Nodes (1): Return branch, repo name, dirty flag for given path.
+Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
 
 ### Community 187 - "Community 187"
 Cohesion: 1.0
-Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
+Nodes (0): 
 
 ### Community 188 - "Community 188"
 Cohesion: 1.0
@@ -1009,33 +1008,29 @@ Nodes (0):
 
 ### Community 189 - "Community 189"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
 
 ### Community 190 - "Community 190"
 Cohesion: 1.0
-Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
+Nodes (1): Set up dummy environment variables for testing.
 
 ### Community 191 - "Community 191"
 Cohesion: 1.0
-Nodes (1): Set up dummy environment variables for testing.
+Nodes (1): CLAUDE.local.md Local Overrides
 
 ### Community 192 - "Community 192"
 Cohesion: 1.0
-Nodes (1): CLAUDE.local.md Local Overrides
+Nodes (1): Session Summary Template
 
 ### Community 193 - "Community 193"
 Cohesion: 1.0
-Nodes (1): Session Summary Template
+Nodes (1): Rielcode Portfolio Page Screenshot v2
 
 ### Community 194 - "Community 194"
 Cohesion: 1.0
-Nodes (1): Rielcode Portfolio Page Screenshot v2
-
-### Community 195 - "Community 195"
-Cohesion: 1.0
 Nodes (1): Rielcode Portfolio Page Screenshot v3
 
-### Community 196 - "Community 196"
+### Community 195 - "Community 195"
 Cohesion: 1.0
 Nodes (1): Rielcode Services Page Screenshot v2
 
@@ -1050,6 +1045,8 @@ Nodes (1): Rielcode Services Page Screenshot v2
 ## Knowledge Gaps
 - **1274 isolated node(s):** `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)`, `Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms`, `Friendly, user-facing API/config error (token missing, expired, no permission).` (+1269 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **Thin community `Community 122`** (2 nodes): `Root.tsx`, `RemotionRoot()`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 123`** (2 nodes): `Atom()`, `Atom.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 124`** (2 nodes): `Logo.tsx`, `Logo()`
@@ -1082,121 +1079,119 @@ Nodes (1): Rielcode Services Page Screenshot v2
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 138`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 139`** (1 nodes): `Root.tsx`
+- **Thin community `Community 139`** (1 nodes): `constants.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 140`** (1 nodes): `constants.ts`
+- **Thin community `Community 140`** (1 nodes): `angles.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 141`** (1 nodes): `angles.ts`
+- **Thin community `Community 141`** (1 nodes): `theme.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 142`** (1 nodes): `theme.ts`
+- **Thin community `Community 142`** (1 nodes): `rielcode-review.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 143`** (1 nodes): `rielcode-review.js`
+- **Thin community `Community 143`** (1 nodes): `check-slider.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 144`** (1 nodes): `check-slider.js`
+- **Thin community `Community 144`** (1 nodes): `discover-pages.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 145`** (1 nodes): `discover-pages.js`
+- **Thin community `Community 145`** (1 nodes): `fill-custom-plan-pro.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 146`** (1 nodes): `fill-custom-plan-pro.js`
+- **Thin community `Community 146`** (1 nodes): `gform-answer-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 147`** (1 nodes): `gform-answer-all.js`
+- **Thin community `Community 147`** (1 nodes): `gform-answer.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 148`** (1 nodes): `gform-answer.js`
+- **Thin community `Community 148`** (1 nodes): `gform-login.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 149`** (1 nodes): `gform-login.js`
+- **Thin community `Community 149`** (1 nodes): `gform-probe-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 150`** (1 nodes): `gform-probe-all.js`
+- **Thin community `Community 150`** (1 nodes): `gform-q1.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 151`** (1 nodes): `gform-q1.js`
+- **Thin community `Community 151`** (1 nodes): `inspect-padding.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 152`** (1 nodes): `inspect-padding.js`
+- **Thin community `Community 152`** (1 nodes): `order-form-debug.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 153`** (1 nodes): `order-form-debug.js`
+- **Thin community `Community 153`** (1 nodes): `order-form-smtp-test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 154`** (1 nodes): `order-form-smtp-test.js`
+- **Thin community `Community 154`** (1 nodes): `order-form-test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 155`** (1 nodes): `order-form-test.js`
+- **Thin community `Community 155`** (1 nodes): `order-form-test2.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 156`** (1 nodes): `order-form-test2.js`
+- **Thin community `Community 156`** (1 nodes): `order-form-test3.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 157`** (1 nodes): `order-form-test3.js`
+- **Thin community `Community 157`** (1 nodes): `order-form-test4.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 158`** (1 nodes): `order-form-test4.js`
+- **Thin community `Community 158`** (1 nodes): `order-form-test5.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 159`** (1 nodes): `order-form-test5.js`
+- **Thin community `Community 159`** (1 nodes): `order-form-verify-fix.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 160`** (1 nodes): `order-form-verify-fix.js`
+- **Thin community `Community 160`** (1 nodes): `order-form-verify.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 161`** (1 nodes): `order-form-verify.js`
+- **Thin community `Community 161`** (1 nodes): `screenshot-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 162`** (1 nodes): `screenshot-all.js`
+- **Thin community `Community 162`** (1 nodes): `track1c-screenshots.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 163`** (1 nodes): `track1c-screenshots.js`
+- **Thin community `Community 163`** (1 nodes): `yt-debug.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 164`** (1 nodes): `yt-debug.js`
+- **Thin community `Community 164`** (1 nodes): `yt-dump.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 165`** (1 nodes): `yt-dump.js`
+- **Thin community `Community 165`** (1 nodes): `yt-transcript-browser.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 166`** (1 nodes): `yt-transcript-browser.js`
+- **Thin community `Community 166`** (1 nodes): `yt-transcript-pkg.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 167`** (1 nodes): `yt-transcript-pkg.js`
+- **Thin community `Community 167`** (1 nodes): `yt-transcript.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 168`** (1 nodes): `yt-transcript.js`
+- **Thin community `Community 168`** (1 nodes): `yt-transcript2.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 169`** (1 nodes): `yt-transcript2.js`
+- **Thin community `Community 169`** (1 nodes): `smoke.spec.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 170`** (1 nodes): `smoke.spec.js`
+- **Thin community `Community 170`** (1 nodes): `launch-widget.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 171`** (1 nodes): `launch-widget.ps1`
+- **Thin community `Community 171`** (1 nodes): `error.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 172`** (1 nodes): `error.test.js`
+- **Thin community `Community 172`** (1 nodes): `figma.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 173`** (1 nodes): `figma.test.js`
+- **Thin community `Community 173`** (1 nodes): `output.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 174`** (1 nodes): `output.test.js`
+- **Thin community `Community 174`** (1 nodes): `jest.config.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 175`** (1 nodes): `jest.config.js`
+- **Thin community `Community 175`** (1 nodes): `youtube.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 176`** (1 nodes): `youtube.test.js`
+- **Thin community `Community 176`** (1 nodes): `auth.instagram.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 177`** (1 nodes): `auth.instagram.test.js`
+- **Thin community `Community 177`** (1 nodes): `auth.tiktok.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 178`** (1 nodes): `auth.tiktok.test.js`
+- **Thin community `Community 178`** (1 nodes): `error.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 179`** (1 nodes): `error.test.js`
+- **Thin community `Community 179`** (1 nodes): `ig.list.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 180`** (1 nodes): `ig.list.test.js`
+- **Thin community `Community 180`** (1 nodes): `output.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 181`** (1 nodes): `output.test.js`
+- **Thin community `Community 181`** (1 nodes): `tt.list.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 182`** (1 nodes): `tt.list.test.js`
+- **Thin community `Community 182`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 183`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
+- **Thin community `Community 183`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 184`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
+- **Thin community `Community 184`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 185`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
+- **Thin community `Community 185`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 186`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
+- **Thin community `Community 186`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 187`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
+- **Thin community `Community 187`** (1 nodes): `_COMMUNITY_Community 5.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 188`** (1 nodes): `_COMMUNITY_Community 5.md`
+- **Thin community `Community 188`** (1 nodes): `vaBxYgZ7MAU.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 189`** (1 nodes): `vaBxYgZ7MAU.md`
+- **Thin community `Community 189`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 190`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
+- **Thin community `Community 190`** (1 nodes): `Set up dummy environment variables for testing.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 191`** (1 nodes): `Set up dummy environment variables for testing.`
+- **Thin community `Community 191`** (1 nodes): `CLAUDE.local.md Local Overrides`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 192`** (1 nodes): `CLAUDE.local.md Local Overrides`
+- **Thin community `Community 192`** (1 nodes): `Session Summary Template`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 193`** (1 nodes): `Session Summary Template`
+- **Thin community `Community 193`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 194`** (1 nodes): `Rielcode Portfolio Page Screenshot v2`
+- **Thin community `Community 194`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 195`** (1 nodes): `Rielcode Portfolio Page Screenshot v3`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 196`** (1 nodes): `Rielcode Services Page Screenshot v2`
+- **Thin community `Community 195`** (1 nodes): `Rielcode Services Page Screenshot v2`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
@@ -1208,10 +1203,10 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **What is the exact relationship between `Rielcode Testimonials Page Screenshot` and `Rielcode Website (portfolio.rielcode.com)`?**
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
-- **Why does `get()` connect `Community 10` to `Community 73`, `Community 17`, `Community 6`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `_insert_event()` connect `Community 17` to `Community 10`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `get()` connect `Community 10` to `Community 72`, `Community 17`, `Community 6`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `MetaError` connect `Community 10` to `Community 17`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Are the 15 inferred relationships involving `get()` (e.g. with `_insert_event()` and `api_thread()`) actually correct?**
   _`get()` has 15 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)` to the rest of the system?**

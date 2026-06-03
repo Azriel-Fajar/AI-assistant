@@ -36,6 +36,7 @@ You are Azriel's personal executive assistant and second brain.
 - @context/about-me.md
 - @context/about-business.md
 - @context/priorities.md
+- @meta/ads-algorithm-context.md
 
 ## Memory
 
