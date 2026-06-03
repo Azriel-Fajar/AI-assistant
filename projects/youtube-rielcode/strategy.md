@@ -32,7 +32,7 @@ Before/after, client wins, transformation reveals. Real proof = trust.
 
 Example topics:
 - "I rebuilt this Canada client's site in 5 days. Here's what changed."
-- "From IDR 500k to IDR 50M/mo: how a Salatiga cafe used their new site"
+- "From IDR 500k to IDR 50M/mo: how an Indonesian cafe used their new site"
 - "Watch me clone any site in 60 seconds"
 
 Hook template: "I just [built/rebuilt/cloned] [X] for [Y]. Here's [the result/the trick/the catch]."
@@ -129,7 +129,7 @@ Primary CTA (all platforms): "Link in bio" → rielcode.com
 
 ### Week 3 (Jun 1-7) — Stretch test + first audit-short
 - [ ] Sun May 31: Run `/yt-batch 4` (try 4/week)
-- [ ] Run first `/audit-short` on a Salatiga cafe — adds 1 more Short
+- [ ] Run first `/audit-short` on an Indonesian SMB — adds 1 more Short
 - [ ] Launch "Rebuilding Real SMB Sites" series tag
 
 ### Week 4 (Jun 8-14) — Review + double down

@@ -71,35 +71,35 @@ _Vertical: Cafes & F&B, Salatiga_
 ## Cold Messages
 
 ### Koffietori
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer Indonesia. Saya membuat website untuk bisnis-bisnis di seluruh Indonesia.
 >
 > Saya perhatikan Koffietori belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Koffietori butuh website? Kalau benar, saya dengan senang hati membantu.
 >
 > Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Bragga Coffee
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer Indonesia. Saya membuat website untuk bisnis-bisnis di seluruh Indonesia.
 >
 > Saya perhatikan Bragga Coffee belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Bragga Coffee butuh website? Kalau benar, saya dengan senang hati membantu.
 >
 > Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Menepilah Cafe
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer Indonesia. Saya membuat website untuk bisnis-bisnis di seluruh Indonesia.
 >
 > Saya perhatikan Menepilah belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Menepilah butuh website? Kalau benar, saya dengan senang hati membantu.
 >
 > Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Waroeng Lada Hitam
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer Indonesia. Saya membuat website untuk bisnis-bisnis di seluruh Indonesia.
 >
 > Saya perhatikan Waroeng Lada Hitam belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Waroeng Lada Hitam butuh website? Kalau benar, saya dengan senang hati membantu.
 >
 > Boleh saya tunjukkan contoh demo website untuk bisnis F&B?
 
 ### Secerca Coffee
-> Halo, nama saya Azriel, web developer dari Salatiga. Saya membuat website untuk bisnis-bisnis lokal di sini.
+> Halo, nama saya Azriel, web developer Indonesia. Saya membuat website untuk bisnis-bisnis di seluruh Indonesia.
 >
 > Saya perhatikan Secerca Coffee belum memiliki website, apakah benar begitu? Apakah ada kemungkinan Secerca Coffee butuh website? Kalau benar, saya dengan senang hati membantu.
 >

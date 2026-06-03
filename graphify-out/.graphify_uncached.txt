@@ -1,0 +1,17 @@
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-05-pay-subdomain.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-05-rielcode-main-site.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-12-referral-system.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-17-google-cli.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-18-figma-cli.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-18-social-cli.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-18-youtube-cli.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-21-rielcode-phase-2-tracks-2A-2C.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-21-rielcode-phase-2-tracks-2D-2G.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\plans\2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-05-rielcode-upgrade-design.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-12-referral-system-design.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-13-dc-maintenance-odoo-design.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-17-google-cli-design.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-17-platforms-cli-design.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-21-rielcode-phase-2-redesign-design.md
+D:\Main Storage\Documents\JARVIS\docs\superpowers\specs\2026-05-27-client-acquisition-design.md

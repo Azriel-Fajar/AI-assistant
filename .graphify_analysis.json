@@ -1,0 +1,495 @@
+{
+  "communities": {
+    "0": [
+      "quiz_auto_run_allquestions",
+      "quiz_auto_run_answers",
+      "quiz_auto_run_answers_path",
+      "quiz_auto_run_anychecked",
+      "quiz_auto_run_archivedir",
+      "quiz_auto_run_archivepath",
+      "quiz_auto_run_archivepayload",
+      "quiz_auto_run_arg",
+      "quiz_auto_run_chromium",
+      "quiz_auto_run_cookiepatha",
+      "quiz_auto_run_cookiepathb",
+      "quiz_auto_run_enumerate",
+      "quiz_auto_run_findnextorsubmit",
+      "quiz_auto_run_form_url",
+      "quiz_auto_run_formidfromurl",
+      "quiz_auto_run_fs",
+      "quiz_auto_run_grouped",
+      "quiz_auto_run_groupedjson",
+      "quiz_auto_run_h",
+      "quiz_auto_run_headingsbefore",
+      "quiz_auto_run_js",
+      "quiz_auto_run_label",
+      "quiz_auto_run_lastprogress",
+      "quiz_auto_run_lbl",
+      "quiz_auto_run_loadplaywright",
+      "quiz_auto_run_match",
+      "quiz_auto_run_miss",
+      "quiz_auto_run_mode",
+      "quiz_auto_run_orphans",
+      "quiz_auto_run_os",
+      "quiz_auto_run_out",
+      "quiz_auto_run_outdir",
+      "quiz_auto_run_pagesgrouped",
+      "quiz_auto_run_path",
+      "quiz_auto_run_probepath",
+      "quiz_auto_run_profile",
+      "quiz_auto_run_questionsbypage",
+      "quiz_auto_run_radios",
+      "quiz_auto_run_readline",
+      "quiz_auto_run_resolveprofile",
+      "quiz_auto_run_safelabel",
+      "quiz_auto_run_scrapeerrors",
+      "quiz_auto_run_seenheadings",
+      "quiz_auto_run_thispageqs",
+      "quiz_auto_run_tickemailcheckbox",
+      "quiz_auto_run_tsstamp",
+      "quiz_auto_run_usedkeywords",
+      "quiz_auto_run_waitenter",
+      "quiz_auto_run_watchdog"
+    ],
+    "1": [
+      "crossbrowsercheck_skill",
+      "orderformdump_html",
+      "orderformtest5_script",
+      "orderformverify_script",
+      "orderformverifyfix_script",
+      "playwright_chromium",
+      "rielcode_orderform",
+      "rielcode_site_local",
+      "screenshotall_script",
+      "track1cscreenshots_script",
+      "youtube_transcript_concept",
+      "ytcheck_script",
+      "ytdebug_script",
+      "ytdump_script",
+      "ytgeturl_script",
+      "yttranscript2_script",
+      "yttranscript_script",
+      "yttranscriptapi_script",
+      "yttranscriptauth_script",
+      "yttranscriptbrowser_script",
+      "yttranscriptpkg_script"
+    ],
+    "2": [
+      "playwright_screenshot_chromium_devices",
+      "playwright_screenshot_contextopts",
+      "playwright_screenshot_filepath",
+      "playwright_screenshot_fs",
+      "playwright_screenshot_js",
+      "playwright_screenshot_normalizeurl",
+      "playwright_screenshot_opts",
+      "playwright_screenshot_output_dir",
+      "playwright_screenshot_parseargs",
+      "playwright_screenshot_path",
+      "playwright_screenshot_root",
+      "playwright_screenshot_slugify",
+      "playwright_screenshot_tag",
+      "playwright_screenshot_timestamp"
+    ],
+    "3": [
+      "url_screenshot_capture_args",
+      "url_screenshot_capture_captureone",
+      "url_screenshot_capture_chromium",
+      "url_screenshot_capture_fails",
+      "url_screenshot_capture_fs",
+      "url_screenshot_capture_js",
+      "url_screenshot_capture_normalizeurl",
+      "url_screenshot_capture_oks",
+      "url_screenshot_capture_output_dir",
+      "url_screenshot_capture_path",
+      "url_screenshot_capture_results",
+      "url_screenshot_capture_slugify",
+      "url_screenshot_capture_timestamp",
+      "url_screenshot_capture_viewport"
+    ],
+    "4": [
+      "url_screenshot_package_author",
+      "url_screenshot_package_dependencies",
+      "url_screenshot_package_dependencies_playwright",
+      "url_screenshot_package_description",
+      "url_screenshot_package_json",
+      "url_screenshot_package_keywords",
+      "url_screenshot_package_license",
+      "url_screenshot_package_main",
+      "url_screenshot_package_name",
+      "url_screenshot_package_scripts",
+      "url_screenshot_package_scripts_test",
+      "url_screenshot_package_type",
+      "url_screenshot_package_version"
+    ],
+    "5": [
+      "playwright_fill-custom-plan-pro",
+      "playwright_order-form-debug",
+      "playwright_order-form-smtp-test",
+      "playwright_order-form-test",
+      "playwright_order-form-test2",
+      "playwright_order-form-test3",
+      "playwright_order-form-test4",
+      "rielcode_checkout",
+      "rielcode_custom-plan",
+      "rielcode_order-form"
+    ],
+    "6": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1540_json"
+    ],
+    "7": [
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_answered",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_answersbypage",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_formurl",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_label",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_miss",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_questionsbypage",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_runat",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_total",
+      "quiz_auto_cache_archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0859_json"
+    ],
+    "8": [
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_answered",
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_answersbypage",
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_formurl",
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_label",
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_miss",
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_questionsbypage",
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_runat",
+      "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_total",
+      "quiz_auto_cache_archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_json"
+    ],
+    "9": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1523_json"
+    ],
+    "10": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1524_json"
+    ],
+    "11": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1526_json"
+    ],
+    "12": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1528_json"
+    ],
+    "13": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1532_json"
+    ],
+    "14": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1546_json"
+    ],
+    "15": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1554_json"
+    ],
+    "16": [
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_answered",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_answersbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_formurl",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_label",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_miss",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_questionsbypage",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_runat",
+      "archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_total",
+      "quiz_auto_cache_archive_1faipqlsdeufz_lxh6gi2muy_comptia_full_tc533_module05_quiz_20260531_1600_json"
+    ],
+    "17": [
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_answered",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_answersbypage",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_formurl",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_label",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_miss",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_questionsbypage",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_runat",
+      "archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_total",
+      "quiz_auto_cache_archive_1faipqlsdu83_qjraj8sfyxn_comptia_full_tc533_module06_quiz_20260602_0901_json"
+    ],
+    "18": [
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_answered",
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_answersbypage",
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_formurl",
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_label",
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_miss",
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_questionsbypage",
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_runat",
+      "archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_total",
+      "quiz_auto_cache_archive_1faipqlsfwe2pc0jomr6zqjg_comptia_full_tc533_module03_quiz_20260519_1633_json"
+    ],
+    "19": [
+      "gform_networking_quiz",
+      "playwright_gform-answer",
+      "playwright_gform-answer-all",
+      "playwright_gform-login",
+      "playwright_gform-probe-all",
+      "playwright_gform-q1",
+      "pw_profile_dir"
+    ],
+    "20": [
+      "cross_browser_template_cross-browser-template",
+      "playwright_check-slider",
+      "playwright_discover-pages",
+      "playwright_inspect-padding",
+      "rielcode_review_rielcode-review",
+      "rielcode_site"
+    ],
+    "21": [
+      "playwright_scrape_runner_child",
+      "playwright_scrape_runner_js",
+      "playwright_scrape_runner_path",
+      "playwright_scrape_runner_spawn"
+    ],
+    "22": [
+      "project_completion_doc_generate_php"
+    ],
+    "23": [
+      "quiz_auto_cache_answers_module1_json"
+    ],
+    "24": [
+      "quiz_auto_cache_answers_module2_json"
+    ],
+    "25": [
+      "quiz_auto_cache_answers_module3_json"
+    ],
+    "26": [
+      "quiz_auto_cache_answers_module4_json"
+    ],
+    "27": [
+      "quiz_auto_cache_answers_module5_json"
+    ],
+    "28": [
+      "quiz_auto_cache_answers_module6_json"
+    ],
+    "29": [
+      "quiz_auto_cache_probe_json"
+    ]
+  },
+  "cohesion": {
+    "0": 0.04,
+    "1": 0.11,
+    "2": 0.15,
+    "3": 0.16,
+    "4": 0.15,
+    "5": 0.29,
+    "6": 0.22,
+    "7": 0.22,
+    "8": 0.22,
+    "9": 0.22,
+    "10": 0.22,
+    "11": 0.22,
+    "12": 0.22,
+    "13": 0.22,
+    "14": 0.22,
+    "15": 0.22,
+    "16": 0.22,
+    "17": 0.22,
+    "18": 0.22,
+    "19": 0.57,
+    "20": 0.33,
+    "21": 0.5,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0
+  },
+  "gods": [
+    {
+      "id": "youtube_transcript_concept",
+      "label": "YouTube Transcript Extraction",
+      "degree": 10
+    },
+    {
+      "id": "rielcode_order-form",
+      "label": "Rielcode Order Form PHP Page",
+      "degree": 6
+    },
+    {
+      "id": "playwright_chromium",
+      "label": "Playwright Chromium",
+      "degree": 6
+    },
+    {
+      "id": "playwright_gform-answer-all",
+      "label": "Google Form Answer All Questions",
+      "degree": 5
+    },
+    {
+      "id": "gform_networking_quiz",
+      "label": "Google Form Networking Quiz",
+      "degree": 5
+    },
+    {
+      "id": "rielcode_site",
+      "label": "Rielcode Local Site PHP",
+      "degree": 4
+    },
+    {
+      "id": "pw_profile_dir",
+      "label": "Playwright Persistent Profile Directory",
+      "degree": 4
+    },
+    {
+      "id": "rielcode_orderform",
+      "label": "Rielcode Order Form",
+      "degree": 4
+    },
+    {
+      "id": "url_screenshot_capture_captureone",
+      "label": "captureOne()",
+      "degree": 3
+    },
+    {
+      "id": "playwright_gform-answer",
+      "label": "Google Form Answer Single Question",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Order Form Test 5 (Playwright)",
+      "target": "Order Form Dump HTML",
+      "source_files": [
+        "scripts/playwright/order-form-test5.js",
+        "scripts/playwright/order-form-dump.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "shares_data_with",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc)"
+    },
+    {
+      "source": "Cross-Browser Check Skill",
+      "target": "Playwright Chromium",
+      "source_files": [
+        "scripts/cross-browser-check/SKILL.md",
+        "scripts/playwright/order-form-test5.js"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc \u2194 code); peripheral node `Cross-Browser Check Skill` unexpectedly reaches hub `Playwright Chromium`"
+    },
+    {
+      "source": "Order Form Dump HTML",
+      "target": "Rielcode Order Form",
+      "source_files": [
+        "scripts/playwright/order-form-dump.html",
+        "scripts/playwright/order-form-test5.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code)"
+    },
+    {
+      "source": "Google Form Answer Single Question",
+      "target": "Google Form Answer All Questions",
+      "source_files": [
+        "scripts/playwright/gform-answer.js",
+        "scripts/playwright/gform-answer-all.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Order Form Test v1",
+      "target": "Order Form Test v2",
+      "source_files": [
+        "scripts/playwright/order-form-test.js",
+        "scripts/playwright/order-form-test2.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    }
+  ],
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 9 inferred relationships involving `YouTube Transcript Extraction` (e.g. with `YouTube Transcript v2 Playwright` and `YouTube Transcript via Browser`) actually correct?",
+      "why": "`YouTube Transcript Extraction` has 9 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 3 inferred relationships involving `Google Form Answer All Questions` (e.g. with `Google Form Login Session` and `Google Form Probe All Pages`) actually correct?",
+      "why": "`Google Form Answer All Questions` has 3 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `{ spawn }`, `path`, `child` to the rest of the system?",
+      "why": "188 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.04 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

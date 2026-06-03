@@ -11,6 +11,6 @@ _Last updated: 2026-05-16_
 ## Active Projects
 
 - Parallaxnet Canada -- DONE. Delivered 2026-05-05, payment processing (~5 business days).
-- Rielcode outreach -- 5 Salatiga cafe leads ready, cold messages written, reminder set for 2026-04-28 10:00 AM
+- Rielcode outreach -- 5 Salatiga cafe leads ready (scope expanded to all Indonesia), cold messages updated, reminder set for 2026-04-28 10:00 AM
 - YouTube Rielcode -- Week W21 batch scripted (3 shorts). Post Wed May 20, Fri May 22, Mon May 25. See projects/youtube-rielcode/batches/2026-W21.md.
-- Rielcode Growth Plan -- 4 wild ideas master plan (repurpose pipeline, Salatiga audit, Audit Tool, lead magnet). See projects/rielcode-growth-plan/.
+- Rielcode Growth Plan -- 4 wild ideas master plan (repurpose pipeline, Indonesia SMB audit, Audit Tool, lead magnet). See projects/rielcode-growth-plan/.

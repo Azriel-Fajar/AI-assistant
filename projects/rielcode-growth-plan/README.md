@@ -14,7 +14,7 @@ Single-channel promo (affiliates + inactive IG) caps growth. This plan stacks 4 
 | # | Idea | Effort | Expected payoff | Priority |
 |---|---|---|---|---|
 | 1 | Repurpose-per-build pipeline (3x content per project) | LOW (1 day setup) | High — every project = 3 assets | NOW |
-| 2 | Salatiga "case study generator" (audit + Short + DM) | LOW-MED (recurring) | Med-High — warm leads, free content | NOW (parallel) |
+| 2 | Indonesia SMB "case study generator" (audit + Short + DM) | LOW-MED (recurring) | Med-High — warm leads, free content | NOW (parallel) |
 | 3 | Free Website Audit tool on rielcode.com | HIGH (1 week build) | High (compounding) | Week 3 |
 | 4 | "$0 to first website in 7 days" lead-magnet course | MED (3-5 days) | Med (slow burn, 6mo payoff) | Month 2 |
 | 5 | Build-with-me live streams (1-2hr monthly) | MED (recurring) | Med-High — long+Short algo boost | Month 2-3 |
@@ -54,9 +54,9 @@ Single-channel promo (affiliates + inactive IG) caps growth. This plan stacks 4 
 
 ---
 
-## Idea 2: Salatiga Case Study Generator
+## Idea 2: Indonesia SMB Case Study Generator
 
-**What:** Pick 5-10 weakest cafe/SMB sites in Salatiga monthly. Audit publicly. Tag them. DM follow-up.
+**What:** Pick 5-10 weakest SMB sites across Indonesia monthly. Audit publicly. Tag them. DM follow-up.
 
 **Workflow (per target):**
 1. Use `/site-review [url]` (intent 3 = competitor benchmark) on prospect
@@ -72,10 +72,10 @@ Single-channel promo (affiliates + inactive IG) caps growth. This plan stacks 4 
 - Free content engine (you produce 5+ Shorts/mo from this alone)
 - Warm leads (they already saw their name)
 - Portfolio expansion (mockups become demos)
-- Local SEO play (Salatiga-tagged content)
+- Local SEO play (Indonesia-tagged content)
 
 **Rollout:**
-- Week 2: Target list of 10 Salatiga cafes (use existing lead-tracker list)
+- Week 2: Target list of 10 SMBs across Indonesia (cafes, F&B, retail, services)
 - Week 3: First 3 audit-Shorts live
 - Ongoing: 2-3 audit-Shorts per week (fits YT batch flow)
 
@@ -162,12 +162,12 @@ Single-channel promo (affiliates + inactive IG) caps growth. This plan stacks 4 
 | Week | Date Range | Focus |
 |---|---|---|
 | 1 | May 18-24 | Channel live (@rielcodeofficial). First 3 shorts posted (Wed/Fri/Sat-or-Mon). Test repurpose pipeline on Parallaxnet. |
-| 2 | May 25-31 | Mon/Wed/Fri cadence locked. Build Salatiga target list (5-10 cafes). |
+| 2 | May 25-31 | Mon/Wed/Fri cadence locked. Build Indonesia SMB target list (5-10 businesses). |
 | 3 | Jun 1-7 | First /audit-short Short live. Stretch to 4/week. Start Audit Tool build (Phase 1). |
 | 4 | Jun 8-14 | YT 30-day review. Audit Tool Phase 2-3 build. First lead attribution check. |
 | 5 | Jun 15-21 | Audit Tool soft launch + 3 promo Shorts. |
 | 6-7 | Jun 22 - Jul 5 | Lead magnet course writing (7 emails). |
-| 8 | Jul 6-12 | Lead magnet live. First Salatiga DM-from-audit conversions evaluated. |
+| 8 | Jul 6-12 | Lead magnet live. First Indonesia DM-from-audit conversions evaluated. |
 | 9-12 | Jul 13 - Aug 9 | Optimize winners. Plan first Build-with-me stream. |
 
 ## Success Metrics (90 days)
@@ -176,14 +176,14 @@ Single-channel promo (affiliates + inactive IG) caps growth. This plan stacks 4 
 - 200+ YT subscribers
 - 30+ YT-attributed visits to rielcode.com
 - 50+ audit tool runs
-- 10+ leads from Salatiga audit pipeline
+- 10+ leads from Indonesia audit pipeline
 - 3-5 lead-magnet course signups/week
 - 1-2 new clients attributed to this whole plan
 
 ## Skills to Build (in order)
 
 1. `/repurpose-project` — auto-generate 3 assets from a delivered project
-2. `/audit-short` — Salatiga pipeline (audit → 60s script → DM draft)
+2. `/audit-short` — Indonesia SMB pipeline (audit → 60s script → DM draft)
 3. `/audit-tool-launch` — guided build of the public Audit tool
 4. `/email-course-builder` — turn course outline into 7 ready-to-send emails
 
@@ -194,7 +194,7 @@ Each gets built when its rollout week arrives — not before.
 ## Risks / Things to Kill Fast
 
 - **YT no traction by Day 60:** kill no-face stack, force one face-cam Short/week (buy webcam IDR ~500k).
-- **Salatiga DMs flagged as spam:** switch to email outreach instead.
+- **Indonesia DMs flagged as spam:** switch to email outreach instead.
 - **Audit Tool brings 0 leads after 30 days:** strip gated email, make it 100% public + add WhatsApp CTA at top of report.
 - **Repurpose pipeline feels like a chore:** automate it inside `/project-completion-doc` so it's auto-triggered.
 

@@ -90,7 +90,7 @@ Why: Looks pro instantly. No design skill needed. Reads on mobile. Matches site'
 ```
 Background: Dark gradient (black → dark blue)
 Left half: bold text "I BUILD SITES." with smaller "for small businesses that need to convert."
-Right half: 3 small thumbnails (Parallaxnet, Salatiga client, portfolio) arranged in tilted stack
+Right half: 3 small thumbnails (Parallaxnet, Indonesian client, portfolio) arranged in tilted stack
 Bottom-right: rielcode.com badge
 ```
 
