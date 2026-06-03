@@ -17,3 +17,5 @@
 - [Meta Ads Dashboard](reference_meta_dashboard.md) -- Flask app; run via `python -m flask --app meta.dashboard.app run` from project root; shows all campaigns + 30d insights
 - [Flask Module Run Command](feedback_flask_run_command.md) -- apps with relative imports must use `python -m flask --app ...`, not `python app.py`
 - [Rielcode Rebrand Assets](reference_rielcode_rebrand_assets.md) -- rebrand logos at C:\xampp\htdocs\Rielcode-laravel\public\brand\ (PNG+SVG, all variants)
+- [Rielcode Laravel App](project_rielcode_laravel_app.md) -- business app MVP is Laravel+Filament at C:\xampp\htdocs\Rielcode-laravel; god nodes Package/AuditLogger/OrderPayment
+- [PowerShell Python UTF-8 Pitfalls](feedback_powershell_python_utf8.md) -- PS > redirect = UTF-16 BOM breaks JSON; write .py files not python -c; set PYTHONIOENCODING=utf-8
