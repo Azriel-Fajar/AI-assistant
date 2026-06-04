@@ -84,6 +84,11 @@
     "ast_hash": "4c42a361a25a606fb99e3e36e6eb356b",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\answers_module07.json": {
+    "mtime": 1780559386.6756687,
+    "ast_hash": "795fc0b4ac28ee53f69427fea15877cd",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\answers_module1.json": {
     "mtime": 1779185596.4512897,
     "ast_hash": "c7adbc3fc518fad7e65b6da8524c0eea",
@@ -115,13 +120,18 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\probe.json": {
-    "mtime": 1780365448.4908478,
-    "ast_hash": "eafea526b74f14c4f7790a0f127a48e1",
+    "mtime": 1780559409.6526265,
+    "ast_hash": "58e0494c51d30eb3494f7c9198986bb9",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\archive\\1FAIpQLScCVfmbg80CKcRedG_CompTIA_FULL_-_TC533_-_Module02_Quiz_20260519-1540.json": {
     "mtime": 1779180046.1058676,
     "ast_hash": "adfd5bbf5e42c5f0ac7a3104ffd5c3cd",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\archive\\1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json": {
+    "mtime": 1780559386.6834612,
+    "ast_hash": "38af0138f1c2780b187cf2dfcaff51e7",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\archive\\1FAIpQLSdEUFz-LXh6GI2MUy_CompTIA_FULL_-_TC533_-_Module05_Quiz_20260531-1523.json": {
@@ -919,6 +929,11 @@
     "ast_hash": "a4933071acb8a0d5aa1a39daba1b4cce",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\stats-presentation.html": {
+    "mtime": 1780557847.624853,
+    "ast_hash": "c32e96850991ca0849f633dbd26daa2b",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\subnet_mask_and_prefix_explanation.md": {
     "mtime": 1780074081.7896576,
     "ast_hash": "93fb72f037bb431939833361858f5445",
@@ -1125,8 +1140,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\module.txt": {
-    "mtime": 1780215743.3398523,
-    "ast_hash": "70ec3f13295c31946ef306be257a1242",
+    "mtime": 1780559247.2826052,
+    "ast_hash": "8623ba1915e245a8b8d4205d667dfdbe",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\repurpose-project\\SKILL.md": {
@@ -1865,8 +1880,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\MEMORY.md": {
-    "mtime": 1780528918.965344,
-    "ast_hash": "39155be6a628b3633e133bb27c2165f3",
+    "mtime": 1780558466.3036609,
+    "ast_hash": "4b4ca97750f28d81eed39cb4cd54698a",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_audit_tool.md": {
@@ -1942,6 +1957,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_subnetting.md": {
     "mtime": 1780074081.6758416,
     "ast_hash": "6c75b63959d0080a7bb8aa4c0558cf84",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\user_academic_credentials.md": {
+    "mtime": 1780558456.8741066,
+    "ast_hash": "d45b6c7cfe167ea47cf03ed8ee7268f3",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\meta\\ads-algorithm-context.md": {
@@ -2449,9 +2469,14 @@
     "ast_hash": "53d75bc731a5dbe21de50f75c5b2791d",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\stats-presentation.pdf": {
+    "mtime": 1780557854.6772676,
+    "ast_hash": "1b8d2b1aa73a9ca330f47cba0126cd68",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\module.pdf": {
-    "mtime": 1780364857.3528268,
-    "ast_hash": "df2c01fc4d2e03697065ad9fdd41868e",
+    "mtime": 1780559229.3642516,
+    "ast_hash": "6359f7ca69aa3bb99336680b57fcdd9a",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\worktrees\\vigilant-sinoussi-806708\\projects\\Parallaxnet Canada\\Project Completion Document for Parallaxnet Canada.pdf": {

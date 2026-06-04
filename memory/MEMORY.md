@@ -1,5 +1,6 @@
 # Memory Index
 
+- [Academic Credentials](user_academic_credentials.md) -- name Azriel Fajar Wicaksono, NIM 672025121, use on college work
 - [Projects Layout Grid](feedback_projects_layout.md) -- rc-prj__side is 2-tile grid; adding a 3rd tile breaks layout
 - [Parallaxnet Canada Client](project_parallaxnet_client.md) -- client name is Ali, communicates via WhatsApp
 - [Rielcode Outreach Campaign](project_rielcode_outreach.md) -- 5 Salatiga cafe leads, no website, cold messages ready, not yet contacted (2026-04-25)

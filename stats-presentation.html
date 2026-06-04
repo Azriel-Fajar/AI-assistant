@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; color:#1a2433; }
+  .page {
+    width:210mm; min-height:297mm; padding:18mm 16mm;
+    page-break-after:always; position:relative;
+  }
+  .page:last-child { page-break-after:auto; }
+  h1 { font-size:30px; color:#0d3b66; margin-bottom:4px; }
+  .sub { font-size:14px; color:#5b6b80; margin-bottom:6px; }
+  .creds { font-size:14px; font-weight:bold; color:#0d3b66; background:#eaf1f8; display:inline-block; padding:6px 14px; border-radius:6px; margin-bottom:20px; }
+  h2 { font-size:21px; color:#0d3b66; margin:22px 0 12px; border-left:6px solid #ee964b; padding-left:10px; }
+  p { font-size:14px; line-height:1.55; margin-bottom:10px; }
+  .grid { display:grid; grid-template-columns:repeat(8,1fr); gap:5px; margin:14px 0; }
+  .grid span { background:#f0f4f8; text-align:center; padding:8px 0; font-size:13px; border-radius:4px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:13px; }
+  th { background:#0d3b66; color:#fff; padding:9px 6px; }
+  td { padding:8px 6px; text-align:center; border-bottom:1px solid #dde4ec; }
+  tr:nth-child(even) td { background:#f6f9fc; }
+  .total td { font-weight:bold; background:#fbe9d8; }
+  .box { background:#f0f4f8; border-radius:8px; padding:14px 18px; margin:12px 0; }
+  .formula { font-family:'Courier New',monospace; font-size:15px; color:#0d3b66; background:#eaf1f8; padding:8px 12px; border-radius:6px; display:inline-block; margin:4px 0; }
+  .step { font-size:14px; line-height:1.7; }
+  .step b { color:#ee964b; }
+  .footer { position:absolute; bottom:10mm; left:16mm; right:16mm; font-size:11px; color:#9aa7b8; border-top:1px solid #e0e6ee; padding-top:6px; display:flex; justify-content:space-between; }
+  canvas { margin:10px 0; }
+  .chart-wrap { width:100%; height:300px; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <h1>Frequency Distribution</h1>
+  <div class="sub">Weight Data of 40 Adults (pounds) - Table, Histogram, Frequency Polygon, Ogive</div>
+  <div class="creds">Azriel Fajar Wicaksono &nbsp;|&nbsp; NIM 672025121</div>
+
+  <h2>The Raw Data</h2>
+  <p>Weight (in pounds) of 40 adults, collected with no order. Raw data must be organized numerically before it can be analyzed.</p>
+  <div class="grid">
+    <span>138</span><span>164</span><span>150</span><span>132</span><span>144</span><span>125</span><span>149</span><span>157</span>
+    <span>146</span><span>158</span><span>140</span><span>147</span><span>136</span><span>148</span><span>152</span><span>144</span>
+    <span>168</span><span>126</span><span>138</span><span>176</span><span>163</span><span>119</span><span>154</span><span>165</span>
+    <span>146</span><span>173</span><span>142</span><span>147</span><span>135</span><span>153</span><span>140</span><span>135</span>
+    <span>161</span><span>145</span><span>135</span><span>142</span><span>150</span><span>156</span><span>145</span><span>128</span>
+  </div>
+
+  <h2>Step 1 - Range</h2>
+  <div class="box step">
+    Highest value = <b>176</b> &nbsp;&bull;&nbsp; Lowest value = <b>119</b> &nbsp;&bull;&nbsp; n = <b>40</b><br>
+    Range = 176 &minus; 119 = <b>57 pounds</b>
+  </div>
+
+  <h2>Step 2 - Number of Classes (Sturges)</h2>
+  <div class="box step">
+    <span class="formula">k = 1 + 3.322 log n</span><br>
+    k = 1 + 3.322 &times; log 40 = 1 + 3.322 &times; 1.602 = 1 + 5.32 = 6.32 &rarr; round up to <b>7 classes</b>
+  </div>
+
+  <h2>Step 3 - Class Width</h2>
+  <div class="box step">
+    <span class="formula">c = (highest &minus; lowest) / k</span><br>
+    c = 57 / 7 = 8.14 &rarr; round up to <b>9</b><br>
+    Lowest class limit = lowest value = <b>119</b>. Width 9 guarantees all data fits (including 176).
+  </div>
+
+  <div class="footer"><span>Statistics - Frequency Distribution</span><span>Page 1</span></div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <h2>Step 4 - Frequency Distribution Table</h2>
+  <p>Each value is tallied into its class. <b>Class limits</b> are real boundaries (limit &plusmn; 0.5) so no value falls into two classes. <b>Middle value</b> = (lower + upper)/2. <b>Cumulative frequency</b> = running total.</p>
+  <table>
+    <tr><th>Class Interval</th><th>Class Limits</th><th>Middle Value</th><th>Frequency (f)</th><th>Cumulative f</th></tr>
+    <tr><td>119 &ndash; 127</td><td>118.5 &ndash; 127.5</td><td>123</td><td>3</td><td>3</td></tr>
+    <tr><td>128 &ndash; 136</td><td>127.5 &ndash; 136.5</td><td>132</td><td>6</td><td>9</td></tr>
+    <tr><td>137 &ndash; 145</td><td>136.5 &ndash; 145.5</td><td>141</td><td>10</td><td>19</td></tr>
+    <tr><td>146 &ndash; 154</td><td>145.5 &ndash; 154.5</td><td>150</td><td>11</td><td>30</td></tr>
+    <tr><td>155 &ndash; 163</td><td>154.5 &ndash; 163.5</td><td>159</td><td>5</td><td>35</td></tr>
+    <tr><td>164 &ndash; 172</td><td>163.5 &ndash; 172.5</td><td>168</td><td>3</td><td>38</td></tr>
+    <tr><td>173 &ndash; 181</td><td>172.5 &ndash; 181.5</td><td>177</td><td>2</td><td>40</td></tr>
+    <tr class="total"><td colspan="3">Total</td><td>40</td><td></td></tr>
+  </table>
+
+  <h2>Histogram</h2>
+  <p>Bars: x = middle value of each class, y = frequency. No gaps between bars (continuous data).</p>
+  <div class="chart-wrap"><canvas id="hist"></canvas></div>
+
+  <div class="footer"><span>Statistics - Frequency Distribution</span><span>Page 2</span></div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+  <h2>Frequency Polygon (Frequency Diagram)</h2>
+  <p>Line graph connecting the middle value of each class against its frequency.</p>
+  <div class="chart-wrap"><canvas id="poly"></canvas></div>
+
+  <h2>Histogram + Polygon Combined</h2>
+  <div class="chart-wrap"><canvas id="combo"></canvas></div>
+
+  <div class="footer"><span>Statistics - Frequency Distribution</span><span>Page 3</span></div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+  <h2>Ogive (Cumulative Frequency Curve)</h2>
+  <p>Plots cumulative frequency against the <b>upper class limit</b> of each class. Shows how many adults weigh below a given value.</p>
+  <div class="chart-wrap"><canvas id="ogive"></canvas></div>
+
+  <h2>Reading the Ogive</h2>
+  <div class="box step">
+    &bull; 30 of 40 adults weigh under <b>154.5 lb</b><br>
+    &bull; Median weight (20th value) falls in the <b>146&ndash;154</b> class<br>
+    &bull; Curve always rises, ending at n = <b>40</b>
+  </div>
+
+  <h2>Summary</h2>
+  <div class="box step">
+    1. Find range &rarr; 2. Sturges for class count (7) &rarr; 3. Width (9) &rarr; 4. Tally into table &rarr; 5. Draw histogram, polygon, ogive.<br>
+    The distribution peaks at the <b>146&ndash;154</b> class, most adults cluster around 150 lb.
+  </div>
+
+  <div class="footer"><span>Statistics - Frequency Distribution</span><span>Page 4</span></div>
+</div>
+
+<script>
+const mids=[123,132,141,150,159,168,177];
+const freq=[3,6,10,11,5,3,2];
+const upper=[127.5,136.5,145.5,154.5,163.5,172.5,181.5];
+const cum=[3,9,19,30,35,38,40];
+const NAV='#0d3b66', OR='#ee964b';
+const noAnim={animation:false,responsive:true,maintainAspectRatio:false};
+const axes={x:{title:{display:true,text:'Middle Value (Weight, lb)'}},y:{title:{display:true,text:'Frequency'},beginAtZero:true}};
+
+new Chart(hist,{type:'bar',data:{labels:mids,datasets:[{data:freq,backgroundColor:'#8ab4d8',borderColor:NAV,borderWidth:1,barPercentage:1,categoryPercentage:1}]},options:{...noAnim,plugins:{legend:{display:false}},scales:axes}});
+
+new Chart(poly,{type:'line',data:{labels:mids,datasets:[{data:freq,borderColor:NAV,backgroundColor:NAV,tension:0,pointRadius:4}]},options:{...noAnim,plugins:{legend:{display:false}},scales:axes}});
+
+new Chart(combo,{type:'bar',data:{labels:mids,datasets:[{type:'bar',data:freq,backgroundColor:'#8ab4d8',borderColor:NAV,borderWidth:1,barPercentage:1,categoryPercentage:1},{type:'line',data:freq,borderColor:OR,backgroundColor:OR,tension:0,pointRadius:4}]},options:{...noAnim,plugins:{legend:{display:false}},scales:axes}});
+
+new Chart(ogive,{type:'line',data:{labels:upper,datasets:[{data:cum,borderColor:NAV,backgroundColor:NAV,tension:0.2,pointRadius:4,fill:false}]},options:{...noAnim,plugins:{legend:{display:false}},scales:{x:{title:{display:true,text:'Upper Class Limit (lb)'}},y:{title:{display:true,text:'Cumulative Frequency'},beginAtZero:true}}}});
+</script>
+</body>
+</html>

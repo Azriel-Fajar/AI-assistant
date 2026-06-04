@@ -1930,6 +1930,15 @@
       "norm_label": "archivepayload"
     },
     {
+      "label": "answers_module07.json",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/answers_module07.json",
+      "source_location": "L1",
+      "id": "claude_skills_quiz_auto_cache_answers_module07_json",
+      "community": 452,
+      "norm_label": "answers_module07.json"
+    },
+    {
       "label": "answers_module1.json",
       "file_type": "code",
       "source_file": ".claude/skills/quiz-auto/cache/answers_module1.json",
@@ -2071,6 +2080,87 @@
       "source_location": "L480",
       "id": "archive_1faipqlsccvfmbg80ckcredg_comptia_full_tc533_module02_quiz_20260519_1540_answersbypage",
       "community": 150,
+      "norm_label": "answersbypage"
+    },
+    {
+      "label": "1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L1",
+      "id": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "community": 451,
+      "norm_label": "1faipqlsdej9yii2pqji1skv_comptia_full_-_tc533_-_module07_quiz_20260604-1449.json"
+    },
+    {
+      "label": "formUrl",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L2",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_formurl",
+      "community": 451,
+      "norm_label": "formurl"
+    },
+    {
+      "label": "label",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L3",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_label",
+      "community": 451,
+      "norm_label": "label"
+    },
+    {
+      "label": "runAt",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L4",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_runat",
+      "community": 451,
+      "norm_label": "runat"
+    },
+    {
+      "label": "answered",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L5",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_answered",
+      "community": 451,
+      "norm_label": "answered"
+    },
+    {
+      "label": "total",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L6",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_total",
+      "community": 451,
+      "norm_label": "total"
+    },
+    {
+      "label": "miss",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L7",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_miss",
+      "community": 451,
+      "norm_label": "miss"
+    },
+    {
+      "label": "questionsByPage",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L8",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_questionsbypage",
+      "community": 451,
+      "norm_label": "questionsbypage"
+    },
+    {
+      "label": "answersByPage",
+      "file_type": "code",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L470",
+      "id": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_answersbypage",
+      "community": 451,
       "norm_label": "answersbypage"
     },
     {
@@ -9738,7 +9828,7 @@
       "source_file": "tools/google/gcal/index.js",
       "source_location": "L10",
       "id": "gcal_index_getcalendar",
-      "community": 57,
+      "community": 98,
       "norm_label": "getcalendar()"
     },
     {
@@ -31963,6 +32053,15 @@
       "norm_label": "key concepts"
     },
     {
+      "label": "user_academic_credentials.md",
+      "file_type": "document",
+      "source_file": "memory/user_academic_credentials.md",
+      "source_location": "L1",
+      "id": "memory_user_academic_credentials_md",
+      "community": 450,
+      "norm_label": "user_academic_credentials.md"
+    },
+    {
       "label": "ads-algorithm-context.md",
       "file_type": "document",
       "source_file": "meta/ads-algorithm-context.md",
@@ -40449,6 +40548,86 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_formurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_runat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_answered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_total",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_miss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_questionsbypage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEj9yiI2PQji1skV_CompTIA_FULL_-_TC533_-_Module07_Quiz_20260604-1449.json",
+      "source_location": "L470",
+      "weight": 1.0,
+      "source": "claude_skills_quiz_auto_cache_archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_json",
+      "target": "archive_1faipqlsdej9yii2pqji1skv_comptia_full_tc533_module07_quiz_20260604_1449_answersbypage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/quiz-auto/cache/archive/1FAIpQLSdEUFz-LXh6GI2MUy_CompTIA_FULL_-_TC533_-_Module05_Quiz_20260531-1523.json",
       "source_location": "L2",
       "weight": 1.0,
@@ -46486,9 +46665,9 @@
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dashboard_meta_api_rationale_217",
-      "target": "dashboard_meta_api_fetch_messages",
-      "confidence_score": 1.0
+      "target": "dashboard_meta_api_fetch_messages"
     },
     {
       "relation": "rationale_for",
@@ -46506,9 +46685,9 @@
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L238",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dashboard_meta_api_rationale_238",
-      "target": "dashboard_meta_api_get_thread_by_id",
-      "confidence_score": 1.0
+      "target": "dashboard_meta_api_get_thread_by_id"
     },
     {
       "relation": "rationale_for",
@@ -46526,9 +46705,9 @@
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L248",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dashboard_meta_api_rationale_248",
-      "target": "dashboard_meta_api_get_thread",
-      "confidence_score": 1.0
+      "target": "dashboard_meta_api_get_thread"
     },
     {
       "relation": "rationale_for",
@@ -48026,9 +48205,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_chromium",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_chromium"
     },
     {
       "relation": "contains",
@@ -48036,9 +48215,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_fs",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_fs"
     },
     {
       "relation": "contains",
@@ -48046,9 +48225,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_path",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_path"
     },
     {
       "relation": "contains",
@@ -48056,9 +48235,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_screenshots_dir",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_screenshots_dir"
     },
     {
       "relation": "contains",
@@ -48066,9 +48245,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_results",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_results"
     },
     {
       "relation": "contains",
@@ -48076,9 +48255,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_log",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_log"
     },
     {
       "relation": "contains",
@@ -48086,9 +48265,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_consoleerrors",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_consoleerrors"
     },
     {
       "relation": "contains",
@@ -48096,9 +48275,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_t0",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_t0"
     },
     {
       "relation": "contains",
@@ -48106,9 +48285,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_inputs",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_inputs"
     },
     {
       "relation": "contains",
@@ -48116,9 +48295,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_invalid",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_invalid"
     },
     {
       "relation": "contains",
@@ -48126,9 +48305,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_t1",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_t1"
     },
     {
       "relation": "contains",
@@ -48136,9 +48315,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_haserror",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_haserror"
     },
     {
       "relation": "contains",
@@ -48146,9 +48325,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_hasreq",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_hasreq"
     },
     {
       "relation": "contains",
@@ -48156,9 +48335,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_status",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_status"
     },
     {
       "relation": "contains",
@@ -48166,9 +48345,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_fails",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_fails"
     },
     {
       "relation": "contains",
@@ -48176,9 +48355,9 @@
       "source_file": "scripts/playwright/audit-stress-test.js",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_audit_stress_test_js",
-      "target": "playwright_audit_stress_test_warns",
-      "confidence_score": 1.0
+      "target": "playwright_audit_stress_test_warns"
     },
     {
       "relation": "contains",
@@ -48936,9 +49115,9 @@
       "source_file": "scripts/playwright/screenshot-all-mobile.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_screenshot_all_mobile_js",
-      "target": "playwright_screenshot_all_mobile_chromium_devices",
-      "confidence_score": 1.0
+      "target": "playwright_screenshot_all_mobile_chromium_devices"
     },
     {
       "relation": "contains",
@@ -48946,9 +49125,9 @@
       "source_file": "scripts/playwright/screenshot-all-mobile.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_screenshot_all_mobile_js",
-      "target": "playwright_screenshot_all_mobile_path",
-      "confidence_score": 1.0
+      "target": "playwright_screenshot_all_mobile_path"
     },
     {
       "relation": "contains",
@@ -48956,9 +49135,9 @@
       "source_file": "scripts/playwright/screenshot-all-mobile.js",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_screenshot_all_mobile_js",
-      "target": "playwright_screenshot_all_mobile_fs",
-      "confidence_score": 1.0
+      "target": "playwright_screenshot_all_mobile_fs"
     },
     {
       "relation": "contains",
@@ -48966,9 +49145,9 @@
       "source_file": "scripts/playwright/screenshot-all-mobile.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_screenshot_all_mobile_js",
-      "target": "playwright_screenshot_all_mobile_pages",
-      "confidence_score": 1.0
+      "target": "playwright_screenshot_all_mobile_pages"
     },
     {
       "relation": "contains",
@@ -48976,9 +49155,9 @@
       "source_file": "scripts/playwright/screenshot-all-mobile.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_screenshot_all_mobile_js",
-      "target": "playwright_screenshot_all_mobile_outdir",
-      "confidence_score": 1.0
+      "target": "playwright_screenshot_all_mobile_outdir"
     },
     {
       "relation": "contains",
@@ -48986,9 +49165,9 @@
       "source_file": "scripts/playwright/screenshot-all-mobile.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_screenshot_all_mobile_js",
-      "target": "playwright_screenshot_all_mobile_outpath",
-      "confidence_score": 1.0
+      "target": "playwright_screenshot_all_mobile_outpath"
     },
     {
       "relation": "contains",
@@ -53232,9 +53411,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_claude_azriel_s_executive_assistant",
-      "target": "jarvis_claude_memory_108",
-      "confidence_score": 1.0
+      "target": "jarvis_claude_memory_108"
     },
     {
       "relation": "contains",
@@ -61482,9 +61661,9 @@
       "source_file": ".claude/skills/session-memory/SKILL.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_session_memory_skill_md",
-      "target": "session_memory_skill_what_this_skill_does",
-      "confidence_score": 1.0
+      "target": "session_memory_skill_what_this_skill_does"
     },
     {
       "relation": "contains",
@@ -61492,9 +61671,9 @@
       "source_file": ".claude/skills/session-memory/SKILL.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_session_memory_skill_md",
-      "target": "session_memory_skill_memory_system_reuse_exactly",
-      "confidence_score": 1.0
+      "target": "session_memory_skill_memory_system_reuse_exactly"
     },
     {
       "relation": "contains",
@@ -61502,9 +61681,9 @@
       "source_file": ".claude/skills/session-memory/SKILL.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_session_memory_skill_md",
-      "target": "session_memory_skill_steps",
-      "confidence_score": 1.0
+      "target": "session_memory_skill_steps"
     },
     {
       "relation": "contains",
@@ -61512,9 +61691,9 @@
       "source_file": ".claude/skills/session-memory/SKILL.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_skills_session_memory_skill_md",
-      "target": "session_memory_skill_notes_guardrails",
-      "confidence_score": 1.0
+      "target": "session_memory_skill_notes_guardrails"
     },
     {
       "relation": "contains",
@@ -61522,9 +61701,9 @@
       "source_file": ".claude/skills/session-memory/SKILL.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "session_memory_skill_memory_system_reuse_exactly",
-      "target": "session_memory_skill_codeblock_1",
-      "confidence_score": 1.0
+      "target": "session_memory_skill_codeblock_1"
     },
     {
       "relation": "contains",
@@ -61532,9 +61711,9 @@
       "source_file": ".claude/skills/session-memory/SKILL.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "session_memory_skill_steps",
-      "target": "session_memory_skill_codeblock_2",
-      "confidence_score": 1.0
+      "target": "session_memory_skill_codeblock_2"
     },
     {
       "relation": "contains",
@@ -75822,9 +76001,9 @@
       "source_file": "memory/feedback_flask_run_command.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_feedback_flask_run_command_md",
-      "target": "memory_feedback_flask_run_command_codeblock_1",
-      "confidence_score": 1.0
+      "target": "memory_feedback_flask_run_command_codeblock_1"
     },
     {
       "relation": "contains",
@@ -75862,9 +76041,9 @@
       "source_file": "memory/reference_meta_dashboard.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_reference_meta_dashboard_md",
-      "target": "memory_reference_meta_dashboard_codeblock_1",
-      "confidence_score": 1.0
+      "target": "memory_reference_meta_dashboard_codeblock_1"
     },
     {
       "relation": "contains",
@@ -75872,9 +76051,9 @@
       "source_file": "memory/reference_meta_dashboard.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_reference_meta_dashboard_md",
-      "target": "memory_reference_meta_dashboard_codeblock_2",
-      "confidence_score": 1.0
+      "target": "memory_reference_meta_dashboard_codeblock_2"
     },
     {
       "relation": "contains",
@@ -75942,9 +76121,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_md",
-      "target": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes"
     },
     {
       "relation": "contains",
@@ -75952,9 +76131,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_the_4_step_ad_selection_process_200ms_window",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_the_4_step_ad_selection_process_200ms_window"
     },
     {
       "relation": "contains",
@@ -75962,9 +76141,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_the_value_equation_heavy_ranking",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_the_value_equation_heavy_ranking"
     },
     {
       "relation": "contains",
@@ -75972,9 +76151,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_the_andromeda_update",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_the_andromeda_update"
     },
     {
       "relation": "contains",
@@ -75982,9 +76161,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_learning_phase_reality_vs_theory",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_learning_phase_reality_vs_theory"
     },
     {
       "relation": "contains",
@@ -75992,9 +76171,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_signal_quality_emq_conversions_api",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_signal_quality_emq_conversions_api"
     },
     {
       "relation": "contains",
@@ -76002,9 +76181,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_creative_diversity_post_andromeda",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_creative_diversity_post_andromeda"
     },
     {
       "relation": "contains",
@@ -76012,9 +76191,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_bidding_strategies",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_bidding_strategies"
     },
     {
       "relation": "contains",
@@ -76022,9 +76201,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_how_the_game_really_works_off_the_books",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_how_the_game_really_works_off_the_books"
     },
     {
       "relation": "contains",
@@ -76032,9 +76211,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_meta_ads_algorithm_context_notes",
-      "target": "meta_ads_algorithm_context_3_core_takeaways",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_3_core_takeaways"
     },
     {
       "relation": "contains",
@@ -76042,9 +76221,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_the_value_equation_heavy_ranking",
-      "target": "meta_ads_algorithm_context_what_this_means_practically",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_what_this_means_practically"
     },
     {
       "relation": "contains",
@@ -76052,9 +76231,9 @@
       "source_file": "meta/ads-algorithm-context.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "meta_ads_algorithm_context_the_andromeda_update",
-      "target": "meta_ads_algorithm_context_practical_targeting_approach_post_andromeda",
-      "confidence_score": 1.0
+      "target": "meta_ads_algorithm_context_practical_targeting_approach_post_andromeda"
     },
     {
       "relation": "contains",
@@ -82066,5 +82245,5 @@
       "source_file": "projects/youtube-rielcode/strategy.md"
     }
   ],
-  "built_at_commit": "53715ca4042e4816da9790423513be9df699fbe1"
+  "built_at_commit": "5e27cc3448c1a8f52c826411dc7c6094bf3fcb15"
 }
