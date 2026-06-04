@@ -13,11 +13,25 @@ You are Azriel's personal executive assistant and second brain.
 - This setup runs across 3 machines with different usernames and drives: `C:\Users\afw14\OneDrive\Documents\JARVIS`, `D:\Main Storage\Documents\JARVIS`, and `/opt/lampp/htdocs/JARVIS` (Arch Linux).
 - In hooks and config files, use `$env:CLAUDE_PROJECT_DIR` or relative paths. Never hardcode a username or absolute drive path.
 - Shell is PowerShell. When writing files other tools read, save UTF-8 with NO BOM (avoid mojibake). Double-check output paths before writing.
+- Never use `>` or `>>` to write JSON/text files in PowerShell -- it emits UTF-16/BOM and corrupts them. Use the Write tool or Python `open(..., encoding='utf-8')`.
+- Avoid Linux-only code on Windows: `strftime` `%-d`/`%-m`, `pail`, POSIX signal handling. Use cross-platform equivalents.
 
 ## Verify Before Done
 
 - "Edit applied" and "tests pass" are not "verified working." Run it end-to-end and show output / exit code / rendered result before claiming done.
 - A non-zero exit code is a failure even if all assertions pass.
+- For bug fixes: reproduce the failing step and confirm the error is gone before saying fixed. "Should be fixed" is not fixed.
+
+## Git Workflow
+
+- Before committing, list exactly which files will be staged. Confirm with Azriel before any deletion or discard.
+- Never run `git checkout --`, `git reset --hard`, or discard uncommitted changes without explicit confirmation -- these are unrecoverable (lost uncommitted CSS once this way).
+- Default flow when asked to commit: stage, write a descriptive message, push.
+
+## Local Servers / Dashboards
+
+- Before starting a Flask/dev server, kill any stale process on the target port. Stale processes keep serving old code.
+- After restart, verify the new code is actually live (check a known marker via curl/Playwright) before declaring done.
 
 ## Scope Tracing
 
@@ -95,6 +109,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/yt-transcript <youtube-url>` -- fetch a YouTube video's captions via yt-dlp, save cleaned transcript to `transcripts/<videoId>.md`
 - `/claude-coach` -- coach for efficient Claude Code use: grade/rewrite prompts, route to the right skill, recommend effort, teach Opus 4.8 techniques (knowledge: `references/claude-code-mastery.md`)
 - `/session-memory` -- save durable facts from the current session into persistent memory
+- `/caption` -- generate Rielcode promo captions (IG, TikTok, WhatsApp Status, Facebook) in ID + EN; one best per platform, brand or friend-referral voice; knowledge in `.claude/skills/caption/references/caption-playbook.md`
 
 ---
 
