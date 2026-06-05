@@ -1741,7 +1741,7 @@ Nodes (1): YouTube Batch Week 17 2026
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `get()` connect `Community 9` to `Community 22`, `Community 6`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Are the 16 inferred relationships involving `log()` (e.g. with `printTable()` and `printJSON()`) actually correct?**
   _`log()` has 16 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)` to the rest of the system?**

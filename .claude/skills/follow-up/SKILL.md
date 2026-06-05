@@ -95,3 +95,14 @@ After presenting the message, ask:
 - If the user provides the client's name, use it in the greeting.
 - If asked for Bahasa Indonesia, rewrite naturally -- do not translate word-for-word.
 - Do not invent details about the project -- use only what the user tells you.
+
+## Tone (Bahasa Indonesia leads)
+
+See full guide: `references/tone-guide.md`
+
+- Lowercase throughout, including sentence starts
+- Short genuine reaction ("wah keren kak") + one open question = ideal opener for new leads
+- Never list services unprompted -- ask what the lead needs first
+- "kak" not "Kak" mid-sentence
+- No company name or service pitch at early stage
+- Model example: "wah keren kak, kira kira website seperti apa yang bisa kamu bantu untuk bisnis kakak?"
