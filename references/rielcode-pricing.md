@@ -1,70 +1,90 @@
 # Rielcode Pricing Reference
 
-Last updated: 2026-05-16
-Source: `C:\xampp\htdocs\Rielcode\packages\index.php` (live site)
-All prices: IDR (sale) / USD (sale) — 50% launch discount active.
+Last updated: 2026-06-05
+Source: `http://127.0.0.1:8000/services` (Laravel app)
+All prices: IDR / USD — current live prices.
 
 Edit anytime. Used by `/site-review`, `/client-proposal`, `/follow-up` skills.
 
 ---
 
-## BASE PACKAGES (sale prices active)
+## BASE PACKAGES
 
-| Package | Sale (IDR) | Sale (USD) | Reg (IDR) | Reg (USD) | Delivery |
-|---|---|---|---|---|---|
-| Student Plan | 499,000 | 30 | 998,000 | 59 | 2-3 days |
-| Starter Plan | 999,000 | 59 | 1,998,000 | 118 | 3-5 days |
-| Pro Plan (Most Popular) | 2,499,000 | 148 | 4,998,000 | 296 | 7-10 days |
-| Premium Plan | 4,999,000 | 295 | 9,998,000 | 589 | 10-14 days |
-| Custom Plan | from 500,000 | from 30 | — | — | quote per scope |
+| Package | IDR | USD | Delivery |
+|---|---|---|---|
+| Student Plan | 500,000 | 29 | 1-3 days |
+| Starter Plan | 1,000,000 | 58 | 3-5 days |
+| Pro Plan (Most Popular) | 2,000,000 | 116 | 7-10 days |
+| Premium Plan (Best Choice) | 5,000,000 | 290 | 10-14 days |
+| Custom Plan | from 500,000 | from 29 | quote per scope |
 
 ## PACKAGE FEATURES
 
-### Student Plan — IDR 499k / $30 (sale)
+### Student Plan — IDR 500k / $29
 Personal/academic projects. NO free hosting/domain.
-- 1 page website (single page)
-- Responsive design
-- Contact form + CTA section
-- Basic SEO setup
-- Social media + WhatsApp integration
-- 1x minor revision
-
-### Starter Plan — IDR 999k / $59 (sale)
-Landing page launch. Free hosting + .COM included.
-- Landing page (1 page)
+- 1 page website
 - Responsive layout
-- Modern + clean design
-- Social media links integration
-- Basic SEO setup
-- 1 design revision
-- Free hosting + .COM domain
-
-### Pro Plan — IDR 2.499jt / $148 (sale) ⭐ Most Popular
-Multi-page business site with CMS.
-- All in Starter, plus:
-- Up to 5 custom pages
 - Custom UI/UX design
-- Content Management System (CMS)
-- Advanced SEO setup
+- Basic SEO
+- CTA + Contact Form
+- Social media + WhatsApp integration
+- 1 minor revision
+
+### Starter Plan — IDR 1jt / $58
+Landing page launch. Free hosting + domain included.
+- 1-2 pages
+- Responsive layout
+- Custom UI/UX design
+- Basic SEO
+- SSL & Security
+- Free Domain (.com, .id, etc.)
+- Hosting included (1 year)
+- 1 design revision
+
+### Pro Plan — IDR 2jt / $116 ⭐ Most Popular
+Multi-page business site with CMS.
+- Up to 5 pages
+- Custom UI/UX design
+- Advanced SEO
+- SSL & Security
+- CMS / Admin Panel (Basic)
+- Google Analytics + Search Console
+- Free Domain + Hosting (1 year)
 - 2 design revisions
-- 1 month technical support
+- 1 month support
 
-### Premium Plan — IDR 4.999jt / $295 (sale)
-Full platform: custom admin panel + AI chatbot.
-- All in Pro, plus:
-- Up to 10 custom pages
-- AI Chatbot Integration
-- Advanced custom-coded Admin Panel
-- Complete SEO setup
-- 5 design revisions
-- 2 months technical support
+### Premium Plan — IDR 5jt / $290 ⭐ Best Choice
+Full-scale platform with e-commerce and admin tooling.
+- Up to 10 pages
+- Custom UI/UX design
+- Advanced SEO
+- SSL & Security
+- CMS / Admin Panel (Standard)
+- Google Analytics + Search Console
 - Performance optimization
+- AI Chatbot
+- E-commerce
+- Free Domain + Hosting (1 year)
+- 5 design revisions
+- 2 months support
 
-### Custom Plan — from IDR 500k / $30
+### Custom Plan — from IDR 500k / $29
 Defined per scope after consult.
-- Copy Website preset — from IDR 1jt (clone reference site)
-- E-Commerce preset — from IDR 1.5jt (catalog + cart + checkout)
-- Free hosting + domain from IDR 1jt
+
+## ADD-ONS
+
+| Add-on | Type | IDR | USD |
+|---|---|---|---|
+| CMS / Admin Panel | one time | from 600k | from $36 |
+| AI Chatbot | one time | 1,000k | $58 |
+| Google Analytics + Search Console | one time | 300k | $18 |
+| Advanced SEO | one time | 200k | $12 |
+| Login / Member System | one time | 500k | $30 |
+| E-Commerce | one time | from 1,000k | from $58 |
+| Blog / News Section | one time | 400k | $24 |
+| Extra Page | per page | 85k | $5 |
+| Maintenance Support | monthly | 300k | $18 |
+| Priority Delivery (50% faster) | one time | 300k | $18 |
 
 ## DETECTION → PACKAGE MAPPING (for /site-review)
 
@@ -77,13 +97,11 @@ When auditing a site, map detected features to the closest package:
 | 2-5 pages, no CMS | Pro (lower end) | upsell CMS |
 | 3-5 pages + CMS/blog | Pro | core offering |
 | 6-10 pages, admin, chatbot | Premium | full platform |
-| E-commerce / cart / checkout | Custom (E-Commerce preset) | from 1.5jt + scope |
-| Direct clone of another site | Custom (Copy Website preset) | from 1jt |
+| E-commerce / cart / checkout | Pro or Premium + E-Commerce add-on | from 1jt add-on |
 
 ## NOTES
 
-- 50% OFF launch sale is active on all packages — quote sale prices to leads.
 - International clients can pay USD directly.
-- Custom integrations beyond preset = add-on, quote per item.
-- Rush jobs (under listed delivery) = +25%.
+- Custom integrations beyond package = add-on, quote per item.
+- Rush jobs (under listed delivery) = Priority Delivery add-on (+IDR 300k / $18).
 - Maintenance/hosting renewals priced separately per project.

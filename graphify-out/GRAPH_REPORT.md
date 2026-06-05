@@ -1,7 +1,7 @@
-# Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-04)
+# Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-05)
 
 ## Corpus Check
-- 100 files · ~1,570,603 words
+- 100 files · ~1,576,926 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

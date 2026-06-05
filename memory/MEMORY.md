@@ -20,3 +20,5 @@
 - [Rielcode Rebrand Assets](reference_rielcode_rebrand_assets.md) -- rebrand logos at C:\xampp\htdocs\Rielcode-laravel\public\brand\ (PNG+SVG, all variants)
 - [Rielcode Laravel App](project_rielcode_laravel_app.md) -- business app MVP is Laravel+Filament at C:\xampp\htdocs\Rielcode-laravel; god nodes Package/AuditLogger/OrderPayment
 - [PowerShell Python UTF-8 Pitfalls](feedback_powershell_python_utf8.md) -- PS > redirect = UTF-16 BOM breaks JSON; write .py files not python -c; set PYTHONIOENCODING=utf-8
+- [Follow-up No Em Dashes](feedback_follow_up_no_em_dashes.md) -- follow-up and WA messages must never use em dashes, rewrite with commas or periods
+- [Meta Ads WA Quick Replies](project_meta_ads_wa_quick_replies.md) -- 6 WA Business presets + greeting for Meta Ads leads; pricing from references/rielcode-pricing.md
