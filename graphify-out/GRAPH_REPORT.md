@@ -1,16 +1,16 @@
-# Graph Report - JARVIS  (2026-06-06)
+# Graph Report - JARVIS  (2026-06-08)
 
 ## Corpus Check
-- 449 files · ~2,674,496 words
+- 452 files · ~2,708,009 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4569 nodes · 4799 edges · 530 communities (466 shown, 64 thin omitted)
+- 4583 nodes · 4810 edges · 527 communities (462 shown, 65 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 111 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f58c88f8`
+- Built from commit: `552ef49e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -423,9 +423,6 @@
 - [[_COMMUNITY_Community 482|Community 482]]
 - [[_COMMUNITY_Community 483|Community 483]]
 - [[_COMMUNITY_Community 484|Community 484]]
-- [[_COMMUNITY_Community 485|Community 485]]
-- [[_COMMUNITY_Community 486|Community 486]]
-- [[_COMMUNITY_Community 487|Community 487]]
 - [[_COMMUNITY_Community 488|Community 488]]
 - [[_COMMUNITY_Community 489|Community 489]]
 - [[_COMMUNITY_Community 490|Community 490]]
@@ -455,13 +452,13 @@
 ## Surprising Connections (you probably didn't know these)
 - `periodToDates()` --calls--> `fmt()`  [INFERRED]
   tools/google/youtube/index.js → meta/dms-sync.mjs
-- `getCalendar()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
-  tools/google/gcal/index.js → tools/google/auth/oauth.js
-- `getGmail()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
-  tools/google/gmail/index.js → tools/google/auth/oauth.js
 - `create_homework_events()` --calls--> `handle_message()`  [INFERRED]
   homework-bot/gcal.py → homework-bot/main.py
 - `parse_homework()` --calls--> `test_parse_day_name()`  [INFERRED]
+  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
+- `parse_homework()` --calls--> `test_parse_next_monday()`  [INFERRED]
+  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
+- `parse_homework()` --calls--> `test_parse_explicit_date()`  [INFERRED]
   homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
 
 ## Hyperedges (group relationships)
@@ -472,7 +469,7 @@
 - **Referral Program Components** — rielcode_referral_program, rielcode_referral_commission, rielcode_referral_codes, rielcode_packages [EXTRACTED 1.00]
 - **YouTube Channel Strategy Components** — youtube_rielcode_strategy, yt_channel_rielcodeofficial, yt_content_pillars, yt_production_stack, yt_kpis [EXTRACTED 1.00]
 
-## Communities (530 total, 64 thin omitted)
+## Communities (527 total, 65 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.22
@@ -491,8 +488,8 @@ Cohesion: 0.22
 Nodes (9): code:block62 (#!/usr/bin/env node), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS\tools), code:powershell (figma --help), code:block66 (Usage: figma [options] [command]), code:powershell (figma auth --token figd_YOUR_REAL_TOKEN), code:powershell (figma files --team YOUR_TEAM_ID), code:powershell (Set-Location "c:\Users\afw14\OneDrive\Documents\JARVIS") (+1 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.17
-Nodes (12): code:bash (npm install gsap), code:bash (git add package.json package-lock.json), code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), code:css ([data-nav] {), code:bash (git add src/components/Nav.astro) (+4 more)
+Cohesion: 0.13
+Nodes (15): code:bash (npm install gsap), code:bash (git add package.json package-lock.json), code:css ([data-nav] {), code:bash (git add src/components/Nav.astro), code:astro (<h1 class="rc-hero__title">), code:css (.rc-hero__word {), code:bash (git add src/components/EditorialHero.astro), code:ts (// src/scripts/gsap-scenes.ts) (+7 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.15
@@ -611,8 +608,8 @@ Cohesion: 0.08
 Nodes (25): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Applied Learning, Archives, Azriel's Executive Assistant, Behavioral Guidelines (Karpathy) (+17 more)
 
 ### Community 34 - "Community 34"
-Cohesion: 0.18
-Nodes (11): code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/visual.spec.ts scripts/qa/visual.spec.ts-), code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/axe.spec.ts), code:markdown (# Phase 2 — QA Report), code:bash (git add docs/qa/phase-2-report.md), Self-Review, Task 2J.2: Visual screenshot diff spec (+3 more)
+Cohesion: 0.11
+Nodes (19): code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/visual.spec.ts scripts/qa/visual.spec.ts-), code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/axe.spec.ts), code:js (// scripts/qa/lighthouse.mjs), code:bash (npm run build && npm run preview -- --port 4321), code:bash (node scripts/qa/lighthouse.mjs), code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse) (+11 more)
 
 ### Community 35 - "Community 35"
 Cohesion: 0.09
@@ -1147,12 +1144,12 @@ Cohesion: 0.1
 Nodes (19): bin, gcal, gdrive, gmail, yt, dependencies, chalk, cli-table3 (+11 more)
 
 ### Community 292 - "Community 292"
-Cohesion: 0.14
-Nodes (14): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+6 more)
+Cohesion: 0.23
+Nodes (8): copyMeta, metadata, perm, writer, printInfo(), printJSON(), printSuccess(), printTable()
 
 ### Community 293 - "Community 293"
-Cohesion: 0.16
-Nodes (12): data, getGmail(), label, msg, outPath, raw, rows, to (+4 more)
+Cohesion: 0.15
+Nodes (9): data, label, msg, outPath, raw, rows, to, handleError() (+1 more)
 
 ### Community 294 - "Community 294"
 Cohesion: 0.14
@@ -1163,8 +1160,8 @@ Cohesion: 0.11
 Nodes (18): Aufa, Bryan, code:block1 (Bisnis kamu belum punya website?), code:block2 (Bisnis kamu belum punya website?), code:block3 (Bisnis kamu belum punya website?), code:block4 (Bisnis kamu belum punya website?), code:block5 (Bisnis kamu belum punya website?), code:block6 (Bisnis kamu belum punya website?) (+10 more)
 
 ### Community 296 - "Community 296"
-Cohesion: 0.16
-Nodes (12): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+4 more)
+Cohesion: 0.18
+Nodes (10): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+2 more)
 
 ### Community 297 - "Community 297"
 Cohesion: 0.11
@@ -1179,8 +1176,8 @@ Cohesion: 0.12
 Nodes (15): { chromium }, consoleErrors, fails, fs, hasError, hasReq, inputs, invalid (+7 more)
 
 ### Community 300 - "Community 300"
-Cohesion: 0.14
-Nodes (13): apiFetch(), env, fail(), fetchAllMessages(), file, idx, lines, OUT_DIR (+5 more)
+Cohesion: 0.13
+Nodes (14): apiFetch(), env, fail(), fetchAllMessages(), file, fmt(), idx, lines (+6 more)
 
 ### Community 301 - "Community 301"
 Cohesion: 0.26
@@ -1195,8 +1192,8 @@ Cohesion: 0.13
 Nodes (14): bin, figma, dependencies, axios, chalk, cli-table3, commander, devDependencies (+6 more)
 
 ### Community 304 - "Community 304"
-Cohesion: 0.23
-Nodes (13): fmt(), comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments() (+5 more)
+Cohesion: 0.25
+Nodes (12): comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments(), listVideos() (+4 more)
 
 ### Community 305 - "Community 305"
 Cohesion: 0.13
@@ -1215,8 +1212,8 @@ Cohesion: 0.15
 Nodes (11): code:block1 (Before: transition: all 300ms), code:css (.item {), Debugging Animations, Design Engineering, Frame-by-frame inspection, Initial Response, Review Checklist, Review Format (Required) (+3 more)
 
 ### Community 309 - "Community 309"
-Cohesion: 0.14
-Nodes (11): currentStart, d, end, event, events, freqMap, getCalendar(), newStart (+3 more)
+Cohesion: 0.1
+Nodes (22): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+14 more)
 
 ### Community 310 - "Community 310"
 Cohesion: 0.15
@@ -1475,8 +1472,8 @@ Cohesion: 0.29
 Nodes (7): code:astro (<head>), code:bash (grep -n "CSS/" C:/xampp/htdocs/rielcode-astro/src/layouts/Ba), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:js (document.documentElement.setAttribute('data-theme', 'dark');), code:js (document.documentElement.setAttribute('data-theme', 'light')), code:bash (git add src/layouts/BaseLayout.astro), Task 4: Strip legacy CSS + add font preload + theme script in `BaseLayout.astro`
 
 ### Community 375 - "Community 375"
-Cohesion: 0.29
-Nodes (7): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/work/index.astro), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/services.astro), Task 2I.5: Convert `/work` index page to read from collection, Task 2I.7: Convert `/services` page to read from collections, TRACK 2I — Content Collections + Redirects
+Cohesion: 0.11
+Nodes (18): code:ts (// src/content.config.ts), code:bash (git add src/content.config.ts), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/work/index.astro), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/services.astro), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/studio.astro) (+10 more)
 
 ### Community 376 - "Community 376"
 Cohesion: 0.29
@@ -1675,8 +1672,8 @@ Cohesion: 0.4
 Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/index.astro), Task 2I.9: Home page reads featured work + rotating testimonial
 
 ### Community 425 - "Community 425"
-Cohesion: 0.4
-Nodes (5): code:block33 (/portfolio          /work             301), code:astro (---), code:bash (ls dist/_redirects dist/portfolio/index.html dist/packages/i), code:bash (git add public/_redirects src/pages/portfolio.astro src/page), Task 2I.10: Add 301 redirects for legacy Phase 1 URLs
+Cohesion: 0.33
+Nodes (5): { chromium, devices }, cookie, outPath, pages, path
 
 ### Community 426 - "Community 426"
 Cohesion: 0.4
@@ -1684,7 +1681,7 @@ Nodes (5): code:ts (// src/scripts/motion.ts), code:css ([data-reveal] {), code:
 
 ### Community 427 - "Community 427"
 Cohesion: 0.4
-Nodes (5): code:js (// scripts/qa/lighthouse.mjs), code:bash (npm run build && npm run preview -- --port 4321), code:bash (node scripts/qa/lighthouse.mjs), code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse), Task 2J.4: Lighthouse runner script
+Nodes (5): code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), Task 2H.2: Enable Astro `<ClientRouter />` (view transitions) + reduced-motion CSS
 
 ### Community 428 - "Community 428"
 Cohesion: 0.4
@@ -1847,12 +1844,8 @@ Cohesion: 0.5
 Nodes (4): code:bash (grep -r "snapshots" src/ astro.config.mjs 2>&1), code:bash (git rm -r src/snapshots/), code:bash (git commit -m "chore(2I): delete obsolete src/snapshots/ — c), Task 2I.11: Delete `src/snapshots/` directory
 
 ### Community 471 - "Community 471"
-Cohesion: 0.5
-Nodes (4): code:astro (<h1 class="rc-hero__title">), code:css (.rc-hero__word {), code:bash (git add src/components/EditorialHero.astro), Task 2H.5: EditorialHero staggered word reveal
-
-### Community 472 - "Community 472"
-Cohesion: 0.5
-Nodes (4): code:ts (// src/scripts/gsap-scenes.ts), code:astro (<script>), code:bash (git add src/scripts/gsap-scenes.ts src/pages/work/[...slug].), Task 2H.6: GSAP pinned-image scene for case study route
+Cohesion: 0.4
+Nodes (4): { chromium, devices }, fs, outPath, path
 
 ### Community 473 - "Community 473"
 Cohesion: 0.5
@@ -1902,37 +1895,25 @@ Nodes (3): code:php (<?php), code:bash (git add invoice/view.php), Task 10: Publ
 Cohesion: 0.67
 Nodes (3): code:php (<?php), code:bash (git add invoice-pdf.php), Task 11: PDF generation
 
-### Community 485 - "Community 485"
-Cohesion: 0.67
-Nodes (3): code:ts (// src/content.config.ts), code:bash (git add src/content.config.ts), Task 2I.1: Define Content Collection schemas
-
-### Community 486 - "Community 486"
-Cohesion: 0.67
-Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/studio.astro), Task 2I.8: Convert `/studio` FAQ section to read from collection
-
-### Community 487 - "Community 487"
-Cohesion: 0.67
-Nodes (3): code:block71 (Track 2H — motion layer (GSAP, ScrollTrigger, view transitio), code:bash (cd C:\Users\afw14\OneDrive\Documents\JARVIS), Task 2J.6: Update the Phase 2 spec to mark all tracks complete
-
 ## Knowledge Gaps
-- **2539 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2534 more)
+- **2550 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2545 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **64 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **65 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `get()` connect `Community 9` to `Community 6`, `Community 22`, `Community 262`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `MetaError` connect `Community 252` to `Community 250`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `Design Engineering` connect `Community 308` to `Community 2`, `Community 382`, `Community 364`, `Community 365`, `Community 366`, `Community 338`, `Community 441`, `Community 349`, `Community 350`, `Community 383`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `MetaError` connect `Community 9` to `Community 250`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `0`, `1`, `2` to the rest of the system?**
-  _2566 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2577 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
 - **Should `Community 6` be split into smaller, more focused modules?**
   _Cohesion score 0.06 - nodes in this community are weakly interconnected._
-- **Should `Community 8` be split into smaller, more focused modules?**
-  _Cohesion score 0.12 - nodes in this community are weakly interconnected._

@@ -584,9 +584,24 @@
     "ast_hash": "13cd32f4253259ed34c573fca988fae5",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\brief-fill.js": {
+    "mtime": 1780889805.6890872,
+    "ast_hash": "14e2e6c9f22f11d7b164232368a44798",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\brief-progress-mobile-screenshots.js": {
+    "mtime": 1780745119.7388625,
+    "ast_hash": "7c841900cac6956b11f32af5f1ecca38",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\check-slider.js": {
     "mtime": 1780134900.9901125,
     "ast_hash": "3e49258a514180904ca26074a68a5849",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\custom-plan-mobile.js": {
+    "mtime": 1780889805.6911225,
+    "ast_hash": "f1281dea5604b89085cf68f307855f0b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\discover-pages.js": {
@@ -2899,6 +2914,16 @@
     "ast_hash": "83c2509c729aea586aefc5d6be35b0bf",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\brief-mobile.png": {
+    "mtime": 1780745149.667236,
+    "ast_hash": "de7ea6aca5273a11dfd867ed0ba9a695",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\brief-thank-you.png": {
+    "mtime": 1780889805.6528866,
+    "ast_hash": "943b857d41a70720491d9baf641e9673",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\brief.png": {
     "mtime": 1780716953.2896526,
     "ast_hash": "45dd11abad9a61a5fe17ea41aca85c80",
@@ -2929,6 +2954,11 @@
     "ast_hash": "36a14e764d68360eb9710cdad114670f",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\mobile-custom-plan.png": {
+    "mtime": 1780889805.6874783,
+    "ast_hash": "89c864da95903667f0c6c9a4bff5c8e2",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\order.png": {
     "mtime": 1780528919.0390177,
     "ast_hash": "fbef7b5be08d28d0330579ed6423c329",
@@ -2937,6 +2967,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\privacy.png": {
     "mtime": 1780528919.0593817,
     "ast_hash": "19db7f2768504ac960ab4f654a7e6637",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\progress-mobile.png": {
+    "mtime": 1780745154.4697332,
+    "ast_hash": "bdb9f8e618e45c686b8ed484cb09a9f4",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\mobile\\progress.png": {

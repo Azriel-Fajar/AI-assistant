@@ -5778,7 +5778,7 @@
       "source_file": "meta/dms-sync.mjs",
       "source_location": "L67",
       "id": "meta_dms_sync_fmt",
-      "community": 304,
+      "community": 300,
       "norm_label": "fmt()"
     },
     {
@@ -7546,6 +7546,87 @@
       "norm_label": "warns"
     },
     {
+      "label": "brief-fill.js",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-fill.js",
+      "source_location": "L1",
+      "id": "scripts_playwright_brief_fill_js",
+      "community": 472,
+      "norm_label": "brief-fill.js"
+    },
+    {
+      "label": "{ chromium, devices }",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-fill.js",
+      "source_location": "L1",
+      "id": "playwright_brief_fill_chromium_devices",
+      "community": 472,
+      "norm_label": "{ chromium, devices }"
+    },
+    {
+      "label": "answers",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-fill.js",
+      "source_location": "L6",
+      "id": "playwright_brief_fill_answers",
+      "community": 472,
+      "norm_label": "answers"
+    },
+    {
+      "label": "brief-progress-mobile-screenshots.js",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L1",
+      "id": "scripts_playwright_brief_progress_mobile_screenshots_js",
+      "community": 425,
+      "norm_label": "brief-progress-mobile-screenshots.js"
+    },
+    {
+      "label": "{ chromium, devices }",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L1",
+      "id": "playwright_brief_progress_mobile_screenshots_chromium_devices",
+      "community": 425,
+      "norm_label": "{ chromium, devices }"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L2",
+      "id": "playwright_brief_progress_mobile_screenshots_path",
+      "community": 425,
+      "norm_label": "path"
+    },
+    {
+      "label": "pages",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L8",
+      "id": "playwright_brief_progress_mobile_screenshots_pages",
+      "community": 425,
+      "norm_label": "pages"
+    },
+    {
+      "label": "cookie",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L23",
+      "id": "playwright_brief_progress_mobile_screenshots_cookie",
+      "community": 425,
+      "norm_label": "cookie"
+    },
+    {
+      "label": "outPath",
+      "file_type": "code",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L29",
+      "id": "playwright_brief_progress_mobile_screenshots_outpath",
+      "community": 425,
+      "norm_label": "outpath"
+    },
+    {
       "label": "check-slider.js",
       "file_type": "code",
       "source_file": "scripts/playwright/check-slider.js",
@@ -7625,6 +7706,51 @@
       "id": "playwright_check_slider_tcs",
       "community": 345,
       "norm_label": "tcs"
+    },
+    {
+      "label": "custom-plan-mobile.js",
+      "file_type": "code",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L1",
+      "id": "scripts_playwright_custom_plan_mobile_js",
+      "community": 471,
+      "norm_label": "custom-plan-mobile.js"
+    },
+    {
+      "label": "{ chromium, devices }",
+      "file_type": "code",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L1",
+      "id": "playwright_custom_plan_mobile_chromium_devices",
+      "community": 471,
+      "norm_label": "{ chromium, devices }"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L2",
+      "id": "playwright_custom_plan_mobile_path",
+      "community": 471,
+      "norm_label": "path"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L3",
+      "id": "playwright_custom_plan_mobile_fs",
+      "community": 471,
+      "norm_label": "fs"
+    },
+    {
+      "label": "outPath",
+      "file_type": "code",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L25",
+      "id": "playwright_custom_plan_mobile_outpath",
+      "community": 471,
+      "norm_label": "outpath"
     },
     {
       "label": "discover-pages.js",
@@ -9522,7 +9648,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L3",
       "id": "lib_error_handleerror",
-      "community": 296,
+      "community": 293,
       "norm_label": "handleerror()"
     },
     {
@@ -9531,7 +9657,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L16",
       "id": "lib_error_notauthenticated",
-      "community": 296,
+      "community": 293,
       "norm_label": "notauthenticated()"
     },
     {
@@ -9567,7 +9693,7 @@
       "source_file": "tools/figma/lib/output.js",
       "source_location": "L1",
       "id": "tools_figma_lib_output_js",
-      "community": 293,
+      "community": 292,
       "norm_label": "output.js"
     },
     {
@@ -9576,7 +9702,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L4",
       "id": "lib_output_printtable",
-      "community": 293,
+      "community": 292,
       "norm_label": "printtable()"
     },
     {
@@ -9585,7 +9711,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L13",
       "id": "lib_output_printjson",
-      "community": 293,
+      "community": 292,
       "norm_label": "printjson()"
     },
     {
@@ -9594,7 +9720,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L17",
       "id": "lib_output_printsuccess",
-      "community": 293,
+      "community": 292,
       "norm_label": "printsuccess()"
     },
     {
@@ -9954,7 +10080,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L1",
       "id": "tools_google_auth_oauth_js",
-      "community": 292,
+      "community": 309,
       "norm_label": "oauth.js"
     },
     {
@@ -9963,7 +10089,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L8",
       "id": "auth_oauth_dirname",
-      "community": 292,
+      "community": 309,
       "norm_label": "__dirname"
     },
     {
@@ -9972,7 +10098,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L9",
       "id": "auth_oauth_config_path",
-      "community": 292,
+      "community": 309,
       "norm_label": "config_path"
     },
     {
@@ -9981,7 +10107,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L10",
       "id": "auth_oauth_token_path",
-      "community": 292,
+      "community": 309,
       "norm_label": "token_path"
     },
     {
@@ -9990,7 +10116,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L12",
       "id": "auth_oauth_scopes",
-      "community": 292,
+      "community": 309,
       "norm_label": "scopes"
     },
     {
@@ -9999,7 +10125,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L19",
       "id": "auth_oauth_loadconfig",
-      "community": 292,
+      "community": 309,
       "norm_label": "loadconfig()"
     },
     {
@@ -10008,7 +10134,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L27",
       "id": "auth_oauth_createoauthclient",
-      "community": 292,
+      "community": 309,
       "norm_label": "createoauthclient()"
     },
     {
@@ -10017,7 +10143,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L36",
       "id": "auth_oauth_getauthenticatedclient",
-      "community": 292,
+      "community": 309,
       "norm_label": "getauthenticatedclient()"
     },
     {
@@ -10026,7 +10152,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L57",
       "id": "auth_oauth_runauthflow",
-      "community": 292,
+      "community": 309,
       "norm_label": "runauthflow()"
     },
     {
@@ -10170,7 +10296,7 @@
       "source_file": "tools/google/gdrive/index.js",
       "source_location": "L12",
       "id": "gdrive_index_getdrive",
-      "community": 292,
+      "community": 309,
       "norm_label": "getdrive()"
     },
     {
@@ -10242,7 +10368,7 @@
       "source_file": "tools/google/gmail/index.js",
       "source_location": "L12",
       "id": "gmail_index_getgmail",
-      "community": 293,
+      "community": 309,
       "norm_label": "getgmail()"
     },
     {
@@ -10341,7 +10467,7 @@
       "source_file": "tools/google/lib/error.js",
       "source_location": "L1",
       "id": "tools_google_lib_error_js",
-      "community": 296,
+      "community": 293,
       "norm_label": "error.js"
     },
     {
@@ -10350,7 +10476,7 @@
       "source_file": "tools/google/lib/output.js",
       "source_location": "L1",
       "id": "tools_google_lib_output_js",
-      "community": 293,
+      "community": 292,
       "norm_label": "output.js"
     },
     {
@@ -10359,7 +10485,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L21",
       "id": "lib_output_printinfo",
-      "community": 293,
+      "community": 292,
       "norm_label": "printinfo()"
     },
     {
@@ -10647,7 +10773,7 @@
       "source_file": "tools/google/youtube/index.js",
       "source_location": "L281",
       "id": "youtube_index_runauth",
-      "community": 292,
+      "community": 309,
       "norm_label": "runauth()"
     },
     {
@@ -11124,7 +11250,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L1",
       "id": "tools_social_lib_error_js",
-      "community": 296,
+      "community": 293,
       "norm_label": "error.js"
     },
     {
@@ -11133,7 +11259,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L1",
       "id": "tools_social_lib_output_js",
-      "community": 293,
+      "community": 292,
       "norm_label": "output.js"
     },
     {
@@ -30339,7 +30465,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L85",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_1_define_content_collection_schemas",
-      "community": 485,
+      "community": 375,
       "norm_label": "task 2i.1: define content collection schemas"
     },
     {
@@ -30348,7 +30474,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L92",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_1",
-      "community": 485,
+      "community": 375,
       "norm_label": "code:ts (// src/content.config.ts)"
     },
     {
@@ -30357,7 +30483,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L164",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_2",
-      "community": 485,
+      "community": 375,
       "norm_label": "code:bash (git add src/content.config.ts)"
     },
     {
@@ -30636,7 +30762,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L687",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_8_convert_studio_faq_section_to_read_from_collection",
-      "community": 486,
+      "community": 375,
       "norm_label": "task 2i.8: convert `/studio` faq section to read from collection"
     },
     {
@@ -30645,7 +30771,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L694",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_27",
-      "community": 486,
+      "community": 375,
       "norm_label": "code:ts (import { getcollection } from 'astro:content';)"
     },
     {
@@ -30654,7 +30780,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L713",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_28",
-      "community": 486,
+      "community": 375,
       "norm_label": "code:bash (git add src/pages/studio.astro)"
     },
     {
@@ -30708,7 +30834,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L797",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_10_add_301_redirects_for_legacy_phase_1_urls",
-      "community": 425,
+      "community": 375,
       "norm_label": "task 2i.10: add 301 redirects for legacy phase 1 urls"
     },
     {
@@ -30717,7 +30843,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L807",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_33",
-      "community": 425,
+      "community": 375,
       "norm_label": "code:block33 (/portfolio          /work             301)"
     },
     {
@@ -30726,7 +30852,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L819",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_34",
-      "community": 425,
+      "community": 375,
       "norm_label": "code:astro (---)"
     },
     {
@@ -30735,7 +30861,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L848",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_35",
-      "community": 425,
+      "community": 375,
       "norm_label": "code:bash (ls dist/_redirects dist/portfolio/index.html dist/packages/i)"
     },
     {
@@ -30744,7 +30870,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L854",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_36",
-      "community": 425,
+      "community": 375,
       "norm_label": "code:bash (git add public/_redirects src/pages/portfolio.astro src/page)"
     },
     {
@@ -30825,7 +30951,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L917",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_2_enable_astro_clientrouter_view_transitions_reduced_motion_css",
-      "community": 4,
+      "community": 427,
       "norm_label": "task 2h.2: enable astro `<clientrouter />` (view transitions) + reduced-motion css"
     },
     {
@@ -30834,7 +30960,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L927",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_42",
-      "community": 4,
+      "community": 427,
       "norm_label": "code:ts (import { clientrouter } from 'astro:transitions';)"
     },
     {
@@ -30843,7 +30969,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L933",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_43",
-      "community": 4,
+      "community": 427,
       "norm_label": "code:astro (<clientrouter />)"
     },
     {
@@ -30852,7 +30978,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L941",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_44",
-      "community": 4,
+      "community": 427,
       "norm_label": "code:css (@media (prefers-reduced-motion: reduce) {)"
     },
     {
@@ -30861,7 +30987,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L960",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_45",
-      "community": 4,
+      "community": 427,
       "norm_label": "code:bash (git add src/layouts/baselayout.astro src/styles/global.css)"
     },
     {
@@ -30942,7 +31068,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1122",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_5_editorialhero_staggered_word_reveal",
-      "community": 471,
+      "community": 4,
       "norm_label": "task 2h.5: editorialhero staggered word reveal"
     },
     {
@@ -30951,7 +31077,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1131",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_52",
-      "community": 471,
+      "community": 4,
       "norm_label": "code:astro (<h1 class=\"rc-hero__title\">)"
     },
     {
@@ -30960,7 +31086,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1150",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_53",
-      "community": 471,
+      "community": 4,
       "norm_label": "code:css (.rc-hero__word {)"
     },
     {
@@ -30969,7 +31095,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1185",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_54",
-      "community": 471,
+      "community": 4,
       "norm_label": "code:bash (git add src/components/editorialhero.astro)"
     },
     {
@@ -30978,7 +31104,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1192",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_6_gsap_pinned_image_scene_for_case_study_route",
-      "community": 472,
+      "community": 4,
       "norm_label": "task 2h.6: gsap pinned-image scene for case study route"
     },
     {
@@ -30987,7 +31113,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1200",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_55",
-      "community": 472,
+      "community": 4,
       "norm_label": "code:ts (// src/scripts/gsap-scenes.ts)"
     },
     {
@@ -30996,7 +31122,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1243",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_56",
-      "community": 472,
+      "community": 4,
       "norm_label": "code:astro (<script>)"
     },
     {
@@ -31005,7 +31131,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1256",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_57",
-      "community": 472,
+      "community": 4,
       "norm_label": "code:bash (git add src/scripts/gsap-scenes.ts src/pages/work/[...slug].)"
     },
     {
@@ -31113,7 +31239,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1420",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2j_4_lighthouse_runner_script",
-      "community": 427,
+      "community": 34,
       "norm_label": "task 2j.4: lighthouse runner script"
     },
     {
@@ -31122,7 +31248,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1428",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_65",
-      "community": 427,
+      "community": 34,
       "norm_label": "code:js (// scripts/qa/lighthouse.mjs)"
     },
     {
@@ -31131,7 +31257,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1489",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_66",
-      "community": 427,
+      "community": 34,
       "norm_label": "code:bash (npm run build && npm run preview -- --port 4321)"
     },
     {
@@ -31140,7 +31266,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1497",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_67",
-      "community": 427,
+      "community": 34,
       "norm_label": "code:bash (node scripts/qa/lighthouse.mjs)"
     },
     {
@@ -31149,7 +31275,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1505",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_68",
-      "community": 427,
+      "community": 34,
       "norm_label": "code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse)"
     },
     {
@@ -31185,7 +31311,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1578",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2j_6_update_the_phase_2_spec_to_mark_all_tracks_complete",
-      "community": 487,
+      "community": 34,
       "norm_label": "task 2j.6: update the phase 2 spec to mark all tracks complete"
     },
     {
@@ -31194,7 +31320,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1587",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_71",
-      "community": 487,
+      "community": 34,
       "norm_label": "code:block71 (track 2h \u2014 motion layer (gsap, scrolltrigger, view transitio)"
     },
     {
@@ -31203,7 +31329,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1597",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_72",
-      "community": 487,
+      "community": 34,
       "norm_label": "code:bash (cd c:\\users\\afw14\\onedrive\\documents\\jarvis)"
     },
     {
@@ -51742,6 +51868,76 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/brief-fill.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_playwright_brief_fill_js",
+      "target": "playwright_brief_fill_chromium_devices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/brief-fill.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scripts_playwright_brief_fill_js",
+      "target": "playwright_brief_fill_answers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_playwright_brief_progress_mobile_screenshots_js",
+      "target": "playwright_brief_progress_mobile_screenshots_chromium_devices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "scripts_playwright_brief_progress_mobile_screenshots_js",
+      "target": "playwright_brief_progress_mobile_screenshots_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scripts_playwright_brief_progress_mobile_screenshots_js",
+      "target": "playwright_brief_progress_mobile_screenshots_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_playwright_brief_progress_mobile_screenshots_js",
+      "target": "playwright_brief_progress_mobile_screenshots_cookie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/brief-progress-mobile-screenshots.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "scripts_playwright_brief_progress_mobile_screenshots_js",
+      "target": "playwright_brief_progress_mobile_screenshots_outpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/playwright/check-slider.js",
       "source_location": "L1",
       "weight": 1.0,
@@ -51818,6 +52014,46 @@
       "confidence_score": 1.0,
       "source": "scripts_playwright_check_slider_js",
       "target": "playwright_check_slider_tcs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_playwright_custom_plan_mobile_js",
+      "target": "playwright_custom_plan_mobile_chromium_devices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "scripts_playwright_custom_plan_mobile_js",
+      "target": "playwright_custom_plan_mobile_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scripts_playwright_custom_plan_mobile_js",
+      "target": "playwright_custom_plan_mobile_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/playwright/custom-plan-mobile.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_playwright_custom_plan_mobile_js",
+      "target": "playwright_custom_plan_mobile_outpath",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -89666,5 +89902,5 @@
       "source_file": "projects/youtube-rielcode/strategy.md"
     }
   ],
-  "built_at_commit": "f58c88f8e9bd1aeab1b8a26e44634821e3f40962"
+  "built_at_commit": "552ef49e227d19318d558626169ba3f129699b8c"
 }
