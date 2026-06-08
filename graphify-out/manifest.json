@@ -89,11 +89,6 @@
     "ast_hash": "4c42a361a25a606fb99e3e36e6eb356b",
     "semantic_hash": ""
   },
-  "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\answers_module07.json": {
-    "mtime": 1780559386.6756687,
-    "ast_hash": "795fc0b4ac28ee53f69427fea15877cd",
-    "semantic_hash": ""
-  },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\answers_module1.json": {
     "mtime": 1779185596.4512897,
     "ast_hash": "c7adbc3fc518fad7e65b6da8524c0eea",
@@ -124,9 +119,19 @@
     "ast_hash": "ea01238ae5c37fd0c2ac46375c2b1daf",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\answers_module7.json": {
+    "mtime": 1780934914.829262,
+    "ast_hash": "290ac1092ed84eab7234b52175431a46",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\answers_module8.json": {
+    "mtime": 1780934914.829262,
+    "ast_hash": "da54c9008d09add84234356e044a0466",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\probe.json": {
-    "mtime": 1780559409.6526265,
-    "ast_hash": "58e0494c51d30eb3494f7c9198986bb9",
+    "mtime": 1780934914.8302789,
+    "ast_hash": "8c48a17ae60ec53c44c40e1078fad655",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\archive\\1FAIpQLScCVfmbg80CKcRedG_CompTIA_FULL_-_TC533_-_Module02_Quiz_20260519-1540.json": {
@@ -564,6 +569,46 @@
     "ast_hash": "16e5417415b973a0e40e01a79b3b7b4a",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\install-ad-skills.ps1": {
+    "mtime": 1780934914.8798685,
+    "ast_hash": "84c9faefe94422bdb098b4969f70d066",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\install-ad-skills.sh": {
+    "mtime": 1780934914.8808784,
+    "ast_hash": "5a3f55aa300353f437eafe0a17b0e35e",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\meta-audit-pull.py": {
+    "mtime": 1780934914.8808784,
+    "ast_hash": "04fd55cbf219e17ff6adeb0f35ded73a",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\meta-check-budget.py": {
+    "mtime": 1780934914.8818638,
+    "ast_hash": "66dba1ae1210945521ce3c436bbbaf02",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\meta-check-destination.py": {
+    "mtime": 1780934914.8818638,
+    "ast_hash": "fc56e7889bf0f5767d96730b317251b6",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\meta-preflight.py": {
+    "mtime": 1780934914.8828611,
+    "ast_hash": "6bd0809261d1ab1c7e2b4395efffa44f",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\meta-set-budget.py": {
+    "mtime": 1780934914.8828611,
+    "ast_hash": "7235ca8808937ce9f7112905c4c53c4c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\meta-verify-state.py": {
+    "mtime": 1780934914.8838584,
+    "ast_hash": "83dadad23973abf67d213a012fcad664",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\rielcode-review.js": {
     "mtime": 1780074081.7896576,
     "ast_hash": "778a26ead324d1eaf1d1a063e147d8de",
@@ -604,6 +649,11 @@
     "ast_hash": "f1281dea5604b89085cf68f307855f0b",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\debug-chat.js": {
+    "mtime": 1780934914.8848572,
+    "ast_hash": "01a42620e8fe470d812027974423fc0d",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\discover-pages.js": {
     "mtime": 1780363348.97141,
     "ast_hash": "d925b7d5b0f213ade081089e19ccdbe2",
@@ -642,6 +692,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\inspect-padding.js": {
     "mtime": 1780074081.7866657,
     "ast_hash": "18f5a8fa8e58e82db4e1556a066ab425",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\live-chat-pill.js": {
+    "mtime": 1780934914.8848572,
+    "ast_hash": "f964f09566be4f2dedd73b006f464fae",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\order-form-debug.js": {
@@ -714,9 +769,19 @@
     "ast_hash": "dc2ce76f82475892ee73dac5396f7c81",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\shot-chat-pill.js": {
+    "mtime": 1780934914.8858535,
+    "ast_hash": "5d691e714a6b78ba1ded1f38cbc11aec",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\track1c-screenshots.js": {
     "mtime": 1780074081.7886603,
     "ast_hash": "ce8eb14e0c77767f8f9c446a1195a28c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\verify-chat-pill.js": {
+    "mtime": 1780934914.8858535,
+    "ast_hash": "70fc276e38f85af4e5c636c20fe3b4d5",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\yt-check.js": {
@@ -2334,6 +2399,16 @@
     "ast_hash": "8c4b05761945803d55d32bf405906121",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\launch-2026-06-10-redesign.md": {
+    "mtime": 1780937129.8951209,
+    "ast_hash": "6f90bf50a756352e1f98fb11b55a8fc5",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\META-ADS-REPORT.md": {
+    "mtime": 1780934914.8798685,
+    "ast_hash": "b746a94336b66fa61762ae6861cd83d1",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\README.md": {
     "mtime": 1780528924.9708366,
     "ast_hash": "d4c4c37a56cc98e4cfc36e668730003e",
@@ -2567,6 +2642,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\Parallaxnet Canada\\Project Completion Document for Parallaxnet Canada.pdf": {
     "mtime": 1777962312.860904,
     "ast_hash": "1f8cf466d2cbdabe3072e83038ef6822",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\tools\\google\\CertMaster Network+ (N10-009) Module 08_Presentation Slides.pdf": {
+    "mtime": 1780934914.8988202,
+    "ast_hash": "fc2ee09c1bdbe36ddcabafa8df3f4fa9",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\worktrees\\vigilant-sinoussi-806708\\screenshots\\checkout-confirmation-real.png": {
