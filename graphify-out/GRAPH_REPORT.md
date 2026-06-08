@@ -1,7 +1,7 @@
 # Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-08)
 
 ## Corpus Check
-- 107 files · ~1,635,187 words
+- 107 files · ~1,635,269 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -1831,7 +1831,7 @@ Nodes (1): YouTube Batch Week 17 2026
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `get()` connect `Community 9` to `Community 4`, `Community 23`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Are the 17 inferred relationships involving `log()` (e.g. with `shot()` and `printTable()`) actually correct?**
   _`log()` has 17 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Parse a natural-language homework message.     Returns {"subject": str, "due_da`, `Set up dummy environment variables for testing.`, `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)` to the rest of the system?**
