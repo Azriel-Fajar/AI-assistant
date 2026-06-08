@@ -1291,12 +1291,21 @@
       "norm_label": "brief-fill.js"
     },
     {
+      "label": "brief-progress-mobile-screenshots.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\brief-progress-mobile-screenshots.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_brief_progress_mobile_screenshots_js",
+      "community": 216,
+      "norm_label": "brief-progress-mobile-screenshots.js"
+    },
+    {
       "label": "check-slider.js",
       "file_type": "code",
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\check-slider.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_check_slider_js",
-      "community": 216,
+      "community": 217,
       "norm_label": "check-slider.js"
     },
     {
@@ -1305,7 +1314,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\custom-plan-mobile.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_custom_plan_mobile_js",
-      "community": 217,
+      "community": 218,
       "norm_label": "custom-plan-mobile.js"
     },
     {
@@ -1314,7 +1323,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\discover-pages.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_discover_pages_js",
-      "community": 218,
+      "community": 219,
       "norm_label": "discover-pages.js"
     },
     {
@@ -1323,7 +1332,7 @@
       "source_file": "scripts\\playwright\\fill-custom-plan-pro.js",
       "source_location": "L1",
       "id": "scripts_playwright_fill_custom_plan_pro_js",
-      "community": 219,
+      "community": 220,
       "norm_label": "fill-custom-plan-pro.js"
     },
     {
@@ -1332,7 +1341,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-answer-all.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_answer_all_js",
-      "community": 220,
+      "community": 221,
       "norm_label": "gform-answer-all.js"
     },
     {
@@ -1341,7 +1350,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-answer.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_answer_js",
-      "community": 221,
+      "community": 222,
       "norm_label": "gform-answer.js"
     },
     {
@@ -1350,7 +1359,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-login.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_login_js",
-      "community": 222,
+      "community": 223,
       "norm_label": "gform-login.js"
     },
     {
@@ -1359,7 +1368,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-probe-all.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_probe_all_js",
-      "community": 223,
+      "community": 224,
       "norm_label": "gform-probe-all.js"
     },
     {
@@ -1368,7 +1377,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-q1.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_q1_js",
-      "community": 224,
+      "community": 225,
       "norm_label": "gform-q1.js"
     },
     {
@@ -1377,7 +1386,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\inspect-padding.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_inspect_padding_js",
-      "community": 225,
+      "community": 226,
       "norm_label": "inspect-padding.js"
     },
     {
@@ -1386,7 +1395,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-debug.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_debug_js",
-      "community": 226,
+      "community": 227,
       "norm_label": "order-form-debug.js"
     },
     {
@@ -1395,7 +1404,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-smtp-test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_smtp_test_js",
-      "community": 227,
+      "community": 228,
       "norm_label": "order-form-smtp-test.js"
     },
     {
@@ -1404,7 +1413,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test_js",
-      "community": 228,
+      "community": 229,
       "norm_label": "order-form-test.js"
     },
     {
@@ -1413,7 +1422,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test2.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test2_js",
-      "community": 229,
+      "community": 230,
       "norm_label": "order-form-test2.js"
     },
     {
@@ -1422,7 +1431,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test3.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test3_js",
-      "community": 230,
+      "community": 231,
       "norm_label": "order-form-test3.js"
     },
     {
@@ -1431,7 +1440,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test4.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test4_js",
-      "community": 231,
+      "community": 232,
       "norm_label": "order-form-test4.js"
     },
     {
@@ -1440,7 +1449,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test5.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test5_js",
-      "community": 232,
+      "community": 233,
       "norm_label": "order-form-test5.js"
     },
     {
@@ -1449,7 +1458,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-verify-fix.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_verify_fix_js",
-      "community": 233,
+      "community": 234,
       "norm_label": "order-form-verify-fix.js"
     },
     {
@@ -1458,7 +1467,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-verify.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_verify_js",
-      "community": 234,
+      "community": 235,
       "norm_label": "order-form-verify.js"
     },
     {
@@ -1494,7 +1503,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\rielcode-fake-order-progress.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_rielcode_fake_order_progress_js",
-      "community": 235,
+      "community": 236,
       "norm_label": "rielcode-fake-order-progress.js"
     },
     {
@@ -1503,7 +1512,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\rielcode-progress-only.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_rielcode_progress_only_js",
-      "community": 236,
+      "community": 237,
       "norm_label": "rielcode-progress-only.js"
     },
     {
@@ -1512,7 +1521,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\screenshot-all-mobile.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_screenshot_all_mobile_js",
-      "community": 237,
+      "community": 238,
       "norm_label": "screenshot-all-mobile.js"
     },
     {
@@ -1521,7 +1530,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\screenshot-all.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_screenshot_all_js",
-      "community": 238,
+      "community": 239,
       "norm_label": "screenshot-all.js"
     },
     {
@@ -1530,7 +1539,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\track1c-screenshots.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_track1c_screenshots_js",
-      "community": 239,
+      "community": 240,
       "norm_label": "track1c-screenshots.js"
     },
     {
@@ -1557,7 +1566,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-debug.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_debug_js",
-      "community": 240,
+      "community": 241,
       "norm_label": "yt-debug.js"
     },
     {
@@ -1566,7 +1575,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-dump.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_dump_js",
-      "community": 241,
+      "community": 242,
       "norm_label": "yt-dump.js"
     },
     {
@@ -1638,7 +1647,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript-browser.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript_browser_js",
-      "community": 242,
+      "community": 243,
       "norm_label": "yt-transcript-browser.js"
     },
     {
@@ -1647,7 +1656,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript-pkg.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript_pkg_js",
-      "community": 243,
+      "community": 244,
       "norm_label": "yt-transcript-pkg.js"
     },
     {
@@ -1656,7 +1665,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript_js",
-      "community": 244,
+      "community": 245,
       "norm_label": "yt-transcript.js"
     },
     {
@@ -1665,7 +1674,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript2.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript2_js",
-      "community": 245,
+      "community": 246,
       "norm_label": "yt-transcript2.js"
     },
     {
@@ -1701,7 +1710,7 @@
       "source_file": "tests\\playwright\\smoke.spec.js",
       "source_location": "L1",
       "id": "tests_playwright_smoke_spec_js",
-      "community": 246,
+      "community": 247,
       "norm_label": "smoke.spec.js"
     },
     {
@@ -1800,7 +1809,7 @@
       "source_file": "tools\\launch-widget.ps1",
       "source_location": "L1",
       "id": "tools_launch_widget_ps1",
-      "community": 247,
+      "community": 248,
       "norm_label": "launch-widget.ps1"
     },
     {
@@ -1926,7 +1935,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\error.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_error_test_js",
-      "community": 248,
+      "community": 249,
       "norm_label": "error.test.js"
     },
     {
@@ -1935,7 +1944,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\figma.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_figma_test_js",
-      "community": 249,
+      "community": 250,
       "norm_label": "figma.test.js"
     },
     {
@@ -1944,7 +1953,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\output.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_output_test_js",
-      "community": 250,
+      "community": 251,
       "norm_label": "output.test.js"
     },
     {
@@ -1953,7 +1962,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\jest.config.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_jest_config_js",
-      "community": 251,
+      "community": 252,
       "norm_label": "jest.config.js"
     },
     {
@@ -2133,7 +2142,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\tests\\youtube.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_tests_youtube_test_js",
-      "community": 252,
+      "community": 253,
       "norm_label": "youtube.test.js"
     },
     {
@@ -2484,7 +2493,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.instagram.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_instagram_test_js",
-      "community": 253,
+      "community": 254,
       "norm_label": "auth.instagram.test.js"
     },
     {
@@ -2493,7 +2502,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.tiktok.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_tiktok_test_js",
-      "community": 254,
+      "community": 255,
       "norm_label": "auth.tiktok.test.js"
     },
     {
@@ -2502,7 +2511,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\error.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_error_test_js",
-      "community": 255,
+      "community": 256,
       "norm_label": "error.test.js"
     },
     {
@@ -2511,7 +2520,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\ig.list.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_ig_list_test_js",
-      "community": 256,
+      "community": 257,
       "norm_label": "ig.list.test.js"
     },
     {
@@ -2520,7 +2529,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\output.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_output_test_js",
-      "community": 257,
+      "community": 258,
       "norm_label": "output.test.js"
     },
     {
@@ -2529,7 +2538,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\tt.list.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_tt_list_test_js",
-      "community": 258,
+      "community": 259,
       "norm_label": "tt.list.test.js"
     },
     {
@@ -2537,7 +2546,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot/homework_parser.py",
       "source_location": "L14",
-      "community": 259,
+      "community": 260,
       "norm_label": "parse a natural-language homework message.     returns {\"subject\": str, \"due_da",
       "id": "homework_bot_homework_parser_rationale_14"
     },
@@ -2546,7 +2555,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot/tests/conftest.py",
       "source_location": "L9",
-      "community": 260,
+      "community": 261,
       "norm_label": "set up dummy environment variables for testing.",
       "id": "tests_conftest_rationale_9"
     },
@@ -2555,7 +2564,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L1",
-      "community": 261,
+      "community": 262,
       "norm_label": "flask dashboard for meta ads + messenger dms. run: flask --app meta.dashboard.ap",
       "id": "dashboard_app_rationale_1"
     },
@@ -2564,7 +2573,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L11",
-      "community": 262,
+      "community": 263,
       "norm_label": "return (data, error_message). never raises to the view layer.",
       "id": "dashboard_app_rationale_11"
     },
@@ -2573,7 +2582,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L41",
-      "community": 263,
+      "community": 264,
       "norm_label": "client-side chat fetch. prefers conversation id (fast path) from the inbox list,",
       "id": "dashboard_app_rationale_41"
     },
@@ -2582,7 +2591,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L56",
-      "community": 264,
+      "community": 265,
       "norm_label": "server-rendered fallback for shared/direct links (no id available).",
       "id": "dashboard_app_rationale_56"
     },
@@ -2591,7 +2600,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/config.py",
       "source_location": "L1",
-      "community": 265,
+      "community": 266,
       "norm_label": "tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)",
       "id": "dashboard_config_rationale_1"
     },
@@ -2600,7 +2609,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L1",
-      "community": 266,
+      "community": 267,
       "norm_label": "read-only meta graph api client. ports the logic of ../ads-report.mjs and ../dms",
       "id": "dashboard_meta_api_rationale_1"
     },
@@ -2609,7 +2618,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L30",
-      "community": 267,
+      "community": 268,
       "norm_label": "friendly, user-facing api/config error (token missing, expired, no permission).",
       "id": "dashboard_meta_api_rationale_30"
     },
@@ -2618,7 +2627,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L217",
-      "community": 268,
+      "community": 269,
       "norm_label": "ordered (oldest-first) message history for a known conversation id.",
       "id": "dashboard_meta_api_rationale_217"
     },
@@ -2627,7 +2636,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L238",
-      "community": 269,
+      "community": 270,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
       "id": "dashboard_meta_api_rationale_238"
     },
@@ -2636,7 +2645,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L248",
-      "community": 270,
+      "community": 271,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
       "id": "dashboard_meta_api_rationale_248"
     },
@@ -2645,7 +2654,7 @@
       "file_type": "rationale",
       "source_file": "tools/claude-widget.py",
       "source_location": "L70",
-      "community": 271,
+      "community": 272,
       "norm_label": "return branch, repo name, dirty flag for given path.",
       "id": "tools_claude_widget_rationale_70"
     },
@@ -2654,7 +2663,7 @@
       "file_type": "rationale",
       "source_file": "tools/claude-widget.py",
       "source_location": "L89",
-      "community": 272,
+      "community": 273,
       "norm_label": "scan $temp for claude-ctx-*.json files and return the most recently     modifie",
       "id": "tools_claude_widget_rationale_89"
     },
@@ -4022,7 +4031,7 @@
       "file_type": "document",
       "source_file": "_COMMUNITY_Community 5.md",
       "source_location": "L1",
-      "community": 273,
+      "community": 274,
       "norm_label": "_community_community 5.md",
       "id": "community_community_5_md"
     },
@@ -23525,7 +23534,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_follow_up_no_em_dashes.md",
       "source_location": "L1",
-      "community": 274,
+      "community": 275,
       "norm_label": "feedback_follow_up_no_em_dashes.md",
       "id": "memory_feedback_follow_up_no_em_dashes_md"
     },
@@ -23534,7 +23543,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_google_cli.md",
       "source_location": "L1",
-      "community": 275,
+      "community": 276,
       "norm_label": "feedback_google_cli.md",
       "id": "memory_feedback_google_cli_md"
     },
@@ -23543,7 +23552,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_lead_message_opera.md",
       "source_location": "L1",
-      "community": 276,
+      "community": 277,
       "norm_label": "feedback_lead_message_opera.md",
       "id": "memory_feedback_lead_message_opera_md"
     },
@@ -23552,7 +23561,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_powershell_python_utf8.md",
       "source_location": "L1",
-      "community": 277,
+      "community": 278,
       "norm_label": "feedback_powershell_python_utf8.md",
       "id": "memory_feedback_powershell_python_utf8_md"
     },
@@ -23561,7 +23570,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_projects_layout.md",
       "source_location": "L1",
-      "community": 278,
+      "community": 279,
       "norm_label": "feedback_projects_layout.md",
       "id": "memory_feedback_projects_layout_md"
     },
@@ -23570,7 +23579,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_static_trailing_slash.md",
       "source_location": "L1",
-      "community": 279,
+      "community": 280,
       "norm_label": "feedback_static_trailing_slash.md",
       "id": "memory_feedback_static_trailing_slash_md"
     },
@@ -23588,7 +23597,7 @@
       "file_type": "document",
       "source_file": "memory/project_audit_tool.md",
       "source_location": "L1",
-      "community": 280,
+      "community": 281,
       "norm_label": "project_audit_tool.md",
       "id": "memory_project_audit_tool_md"
     },
@@ -23597,7 +23606,7 @@
       "file_type": "document",
       "source_file": "memory/project_demo_sites.md",
       "source_location": "L1",
-      "community": 281,
+      "community": 282,
       "norm_label": "project_demo_sites.md",
       "id": "memory_project_demo_sites_md"
     },
@@ -23606,7 +23615,7 @@
       "file_type": "document",
       "source_file": "memory/project_messenger_client_history.md",
       "source_location": "L1",
-      "community": 282,
+      "community": 283,
       "norm_label": "project_messenger_client_history.md",
       "id": "memory_project_messenger_client_history_md"
     },
@@ -23615,7 +23624,7 @@
       "file_type": "document",
       "source_file": "memory/project_meta_ads_wa_leadgen.md",
       "source_location": "L1",
-      "community": 283,
+      "community": 284,
       "norm_label": "project_meta_ads_wa_leadgen.md",
       "id": "memory_project_meta_ads_wa_leadgen_md"
     },
@@ -23624,7 +23633,7 @@
       "file_type": "document",
       "source_file": "memory/project_meta_ads_wa_lead_gen.md",
       "source_location": "L1",
-      "community": 284,
+      "community": 285,
       "norm_label": "project_meta_ads_wa_lead_gen.md",
       "id": "memory_project_meta_ads_wa_lead_gen_md"
     },
@@ -23633,7 +23642,7 @@
       "file_type": "document",
       "source_file": "memory/project_meta_ads_wa_quick_replies.md",
       "source_location": "L1",
-      "community": 285,
+      "community": 286,
       "norm_label": "project_meta_ads_wa_quick_replies.md",
       "id": "memory_project_meta_ads_wa_quick_replies_md"
     },
@@ -23642,7 +23651,7 @@
       "file_type": "document",
       "source_file": "memory/project_parallaxnet_client.md",
       "source_location": "L1",
-      "community": 286,
+      "community": 287,
       "norm_label": "project_parallaxnet_client.md",
       "id": "memory_project_parallaxnet_client_md"
     },
@@ -23651,7 +23660,7 @@
       "file_type": "document",
       "source_file": "memory/project_portfolio_site.md",
       "source_location": "L1",
-      "community": 287,
+      "community": 288,
       "norm_label": "project_portfolio_site.md",
       "id": "memory_project_portfolio_site_md"
     },
@@ -23660,7 +23669,7 @@
       "file_type": "document",
       "source_file": "memory/project_rielcode_invoice_currency.md",
       "source_location": "L1",
-      "community": 288,
+      "community": 289,
       "norm_label": "project_rielcode_invoice_currency.md",
       "id": "memory_project_rielcode_invoice_currency_md"
     },
@@ -23669,7 +23678,7 @@
       "file_type": "document",
       "source_file": "memory/project_rielcode_laravel_app.md",
       "source_location": "L1",
-      "community": 289,
+      "community": 290,
       "norm_label": "project_rielcode_laravel_app.md",
       "id": "memory_project_rielcode_laravel_app_md"
     },
@@ -23678,7 +23687,7 @@
       "file_type": "document",
       "source_file": "memory/project_rielcode_outreach.md",
       "source_location": "L1",
-      "community": 290,
+      "community": 291,
       "norm_label": "project_rielcode_outreach.md",
       "id": "memory_project_rielcode_outreach_md"
     },
@@ -23687,7 +23696,7 @@
       "file_type": "document",
       "source_file": "memory/project_testimonials_system.md",
       "source_location": "L1",
-      "community": 291,
+      "community": 292,
       "norm_label": "project_testimonials_system.md",
       "id": "memory_project_testimonials_system_md"
     },
@@ -23768,7 +23777,7 @@
       "file_type": "document",
       "source_file": "memory/reference_rielcode_rebrand_assets.md",
       "source_location": "L1",
-      "community": 292,
+      "community": 293,
       "norm_label": "reference_rielcode_rebrand_assets.md",
       "id": "memory_reference_rielcode_rebrand_assets_md"
     },
@@ -23840,7 +23849,7 @@
       "file_type": "document",
       "source_file": "memory/user_academic_credentials.md",
       "source_location": "L1",
-      "community": 293,
+      "community": 294,
       "norm_label": "user_academic_credentials.md",
       "id": "memory_user_academic_credentials_md"
     },
@@ -27692,7 +27701,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/tailwind.md",
       "source_location": "L1",
-      "community": 294,
+      "community": 295,
       "norm_label": "tailwind.md",
       "id": "my_video_agents_skills_remotion_best_practices_rules_tailwind_md"
     },
@@ -29825,7 +29834,7 @@
       "file_type": "document",
       "source_file": "transcripts/vaBxYgZ7MAU.md",
       "source_location": "L1",
-      "community": 295,
+      "community": 296,
       "norm_label": "vabxygz7mau.md",
       "id": "transcripts_vabxygz7mau_md"
     },
@@ -29843,7 +29852,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L202",
-      "community": 296,
+      "community": 297,
       "norm_label": "ordered (oldest-first) message history for a known conversation id.",
       "id": "dashboard_meta_api_rationale_202"
     },
@@ -29852,7 +29861,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L223",
-      "community": 297,
+      "community": 298,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
       "id": "dashboard_meta_api_rationale_223"
     },
@@ -29861,7 +29870,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L233",
-      "community": 298,
+      "community": 299,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
       "id": "dashboard_meta_api_rationale_233"
     },
@@ -30234,7 +30243,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 299,
+      "community": 300,
       "norm_label": "youtube batch week 20 2026",
       "id": "youtube_batch_w20"
     },
@@ -30247,7 +30256,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 300,
+      "community": 301,
       "norm_label": "youtube batch week 19 2026",
       "id": "youtube_batch_w19"
     },
@@ -30260,7 +30269,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 301,
+      "community": 302,
       "norm_label": "youtube batch week 18 2026",
       "id": "youtube_batch_w18"
     },
@@ -30273,7 +30282,7 @@
       "captured_at": null,
       "author": "Azriel",
       "contributor": null,
-      "community": 302,
+      "community": 303,
       "norm_label": "youtube batch week 17 2026",
       "id": "youtube_batch_w17"
     },
@@ -32624,8 +32633,8 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\rielcode-cookie-pages-shots.js",
       "source_location": "L22",
       "weight": 1.0,
-      "_src": "rielcode_cookie_pages_shots_shot",
-      "_tgt": "audit_stress_test_log",
+      "_src": "audit_stress_test_log",
+      "_tgt": "rielcode_cookie_pages_shots_shot",
       "source": "audit_stress_test_log",
       "target": "rielcode_cookie_pages_shots_shot"
     },

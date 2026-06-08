@@ -1,11 +1,11 @@
 # Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-08)
 
 ## Corpus Check
-- 106 files · ~1,703,127 words
+- 107 files · ~1,635,187 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3350 nodes · 3326 edges · 303 communities detected
+- 3351 nodes · 3326 edges · 304 communities detected
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 108 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
@@ -313,6 +313,7 @@
 - [[_COMMUNITY_Community 300|Community 300]]
 - [[_COMMUNITY_Community 301|Community 301]]
 - [[_COMMUNITY_Community 302|Community 302]]
+- [[_COMMUNITY_Community 303|Community 303]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
@@ -1386,63 +1387,63 @@ Nodes (0):
 
 ### Community 259 - "Community 259"
 Cohesion: 1.0
-Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
+Nodes (0): 
 
 ### Community 260 - "Community 260"
 Cohesion: 1.0
-Nodes (1): Set up dummy environment variables for testing.
+Nodes (1): Parse a natural-language homework message.     Returns {"subject": str, "due_da
 
 ### Community 261 - "Community 261"
 Cohesion: 1.0
-Nodes (1): Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap
+Nodes (1): Set up dummy environment variables for testing.
 
 ### Community 262 - "Community 262"
 Cohesion: 1.0
-Nodes (1): Return (data, error_message). Never raises to the view layer.
+Nodes (1): Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap
 
 ### Community 263 - "Community 263"
 Cohesion: 1.0
-Nodes (1): Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,
+Nodes (1): Return (data, error_message). Never raises to the view layer.
 
 ### Community 264 - "Community 264"
 Cohesion: 1.0
-Nodes (1): Server-rendered fallback for shared/direct links (no id available).
+Nodes (1): Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,
 
 ### Community 265 - "Community 265"
 Cohesion: 1.0
-Nodes (1): Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)
+Nodes (1): Server-rendered fallback for shared/direct links (no id available).
 
 ### Community 266 - "Community 266"
 Cohesion: 1.0
-Nodes (1): Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms
+Nodes (1): Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)
 
 ### Community 267 - "Community 267"
 Cohesion: 1.0
-Nodes (1): Friendly, user-facing API/config error (token missing, expired, no permission).
+Nodes (1): Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms
 
 ### Community 268 - "Community 268"
 Cohesion: 1.0
-Nodes (1): Ordered (oldest-first) message history for a known conversation id.
+Nodes (1): Friendly, user-facing API/config error (token missing, expired, no permission).
 
 ### Community 269 - "Community 269"
 Cohesion: 1.0
-Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
+Nodes (1): Ordered (oldest-first) message history for a known conversation id.
 
 ### Community 270 - "Community 270"
 Cohesion: 1.0
-Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
+Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
 
 ### Community 271 - "Community 271"
 Cohesion: 1.0
-Nodes (1): Return branch, repo name, dirty flag for given path.
+Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
 
 ### Community 272 - "Community 272"
 Cohesion: 1.0
-Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
+Nodes (1): Return branch, repo name, dirty flag for given path.
 
 ### Community 273 - "Community 273"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie
 
 ### Community 274 - "Community 274"
 Cohesion: 1.0
@@ -1534,29 +1535,33 @@ Nodes (0):
 
 ### Community 296 - "Community 296"
 Cohesion: 1.0
-Nodes (1): Ordered (oldest-first) message history for a known conversation id.
+Nodes (0): 
 
 ### Community 297 - "Community 297"
 Cohesion: 1.0
-Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
+Nodes (1): Ordered (oldest-first) message history for a known conversation id.
 
 ### Community 298 - "Community 298"
 Cohesion: 1.0
-Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
+Nodes (1): Fast path: messages for a conversation id already known from the inbox list.
 
 ### Community 299 - "Community 299"
 Cohesion: 1.0
-Nodes (1): YouTube Batch Week 20 2026
+Nodes (1): Full ordered (oldest-first) message history for the first thread matching `name`
 
 ### Community 300 - "Community 300"
 Cohesion: 1.0
-Nodes (1): YouTube Batch Week 19 2026
+Nodes (1): YouTube Batch Week 20 2026
 
 ### Community 301 - "Community 301"
 Cohesion: 1.0
-Nodes (1): YouTube Batch Week 18 2026
+Nodes (1): YouTube Batch Week 19 2026
 
 ### Community 302 - "Community 302"
+Cohesion: 1.0
+Nodes (1): YouTube Batch Week 18 2026
+
+### Community 303 - "Community 303"
 Cohesion: 1.0
 Nodes (1): YouTube Batch Week 17 2026
 
@@ -1645,187 +1650,187 @@ Nodes (1): YouTube Batch Week 17 2026
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 215`** (1 nodes): `brief-fill.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 216`** (1 nodes): `check-slider.js`
+- **Thin community `Community 216`** (1 nodes): `brief-progress-mobile-screenshots.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 217`** (1 nodes): `custom-plan-mobile.js`
+- **Thin community `Community 217`** (1 nodes): `check-slider.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 218`** (1 nodes): `discover-pages.js`
+- **Thin community `Community 218`** (1 nodes): `custom-plan-mobile.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 219`** (1 nodes): `fill-custom-plan-pro.js`
+- **Thin community `Community 219`** (1 nodes): `discover-pages.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 220`** (1 nodes): `gform-answer-all.js`
+- **Thin community `Community 220`** (1 nodes): `fill-custom-plan-pro.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 221`** (1 nodes): `gform-answer.js`
+- **Thin community `Community 221`** (1 nodes): `gform-answer-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 222`** (1 nodes): `gform-login.js`
+- **Thin community `Community 222`** (1 nodes): `gform-answer.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 223`** (1 nodes): `gform-probe-all.js`
+- **Thin community `Community 223`** (1 nodes): `gform-login.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 224`** (1 nodes): `gform-q1.js`
+- **Thin community `Community 224`** (1 nodes): `gform-probe-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 225`** (1 nodes): `inspect-padding.js`
+- **Thin community `Community 225`** (1 nodes): `gform-q1.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 226`** (1 nodes): `order-form-debug.js`
+- **Thin community `Community 226`** (1 nodes): `inspect-padding.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 227`** (1 nodes): `order-form-smtp-test.js`
+- **Thin community `Community 227`** (1 nodes): `order-form-debug.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 228`** (1 nodes): `order-form-test.js`
+- **Thin community `Community 228`** (1 nodes): `order-form-smtp-test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 229`** (1 nodes): `order-form-test2.js`
+- **Thin community `Community 229`** (1 nodes): `order-form-test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 230`** (1 nodes): `order-form-test3.js`
+- **Thin community `Community 230`** (1 nodes): `order-form-test2.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 231`** (1 nodes): `order-form-test4.js`
+- **Thin community `Community 231`** (1 nodes): `order-form-test3.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 232`** (1 nodes): `order-form-test5.js`
+- **Thin community `Community 232`** (1 nodes): `order-form-test4.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 233`** (1 nodes): `order-form-verify-fix.js`
+- **Thin community `Community 233`** (1 nodes): `order-form-test5.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 234`** (1 nodes): `order-form-verify.js`
+- **Thin community `Community 234`** (1 nodes): `order-form-verify-fix.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 235`** (1 nodes): `rielcode-fake-order-progress.js`
+- **Thin community `Community 235`** (1 nodes): `order-form-verify.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 236`** (1 nodes): `rielcode-progress-only.js`
+- **Thin community `Community 236`** (1 nodes): `rielcode-fake-order-progress.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 237`** (1 nodes): `screenshot-all-mobile.js`
+- **Thin community `Community 237`** (1 nodes): `rielcode-progress-only.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 238`** (1 nodes): `screenshot-all.js`
+- **Thin community `Community 238`** (1 nodes): `screenshot-all-mobile.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 239`** (1 nodes): `track1c-screenshots.js`
+- **Thin community `Community 239`** (1 nodes): `screenshot-all.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 240`** (1 nodes): `yt-debug.js`
+- **Thin community `Community 240`** (1 nodes): `track1c-screenshots.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 241`** (1 nodes): `yt-dump.js`
+- **Thin community `Community 241`** (1 nodes): `yt-debug.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 242`** (1 nodes): `yt-transcript-browser.js`
+- **Thin community `Community 242`** (1 nodes): `yt-dump.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 243`** (1 nodes): `yt-transcript-pkg.js`
+- **Thin community `Community 243`** (1 nodes): `yt-transcript-browser.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 244`** (1 nodes): `yt-transcript.js`
+- **Thin community `Community 244`** (1 nodes): `yt-transcript-pkg.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 245`** (1 nodes): `yt-transcript2.js`
+- **Thin community `Community 245`** (1 nodes): `yt-transcript.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 246`** (1 nodes): `smoke.spec.js`
+- **Thin community `Community 246`** (1 nodes): `yt-transcript2.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 247`** (1 nodes): `launch-widget.ps1`
+- **Thin community `Community 247`** (1 nodes): `smoke.spec.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 248`** (1 nodes): `error.test.js`
+- **Thin community `Community 248`** (1 nodes): `launch-widget.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 249`** (1 nodes): `figma.test.js`
+- **Thin community `Community 249`** (1 nodes): `error.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 250`** (1 nodes): `output.test.js`
+- **Thin community `Community 250`** (1 nodes): `figma.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 251`** (1 nodes): `jest.config.js`
+- **Thin community `Community 251`** (1 nodes): `output.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 252`** (1 nodes): `youtube.test.js`
+- **Thin community `Community 252`** (1 nodes): `jest.config.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 253`** (1 nodes): `auth.instagram.test.js`
+- **Thin community `Community 253`** (1 nodes): `youtube.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 254`** (1 nodes): `auth.tiktok.test.js`
+- **Thin community `Community 254`** (1 nodes): `auth.instagram.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 255`** (1 nodes): `error.test.js`
+- **Thin community `Community 255`** (1 nodes): `auth.tiktok.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 256`** (1 nodes): `ig.list.test.js`
+- **Thin community `Community 256`** (1 nodes): `error.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 257`** (1 nodes): `output.test.js`
+- **Thin community `Community 257`** (1 nodes): `ig.list.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 258`** (1 nodes): `tt.list.test.js`
+- **Thin community `Community 258`** (1 nodes): `output.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 259`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
+- **Thin community `Community 259`** (1 nodes): `tt.list.test.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 260`** (1 nodes): `Set up dummy environment variables for testing.`
+- **Thin community `Community 260`** (1 nodes): `Parse a natural-language homework message.     Returns {"subject": str, "due_da`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 261`** (1 nodes): `Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap`
+- **Thin community `Community 261`** (1 nodes): `Set up dummy environment variables for testing.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 262`** (1 nodes): `Return (data, error_message). Never raises to the view layer.`
+- **Thin community `Community 262`** (1 nodes): `Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 263`** (1 nodes): `Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,`
+- **Thin community `Community 263`** (1 nodes): `Return (data, error_message). Never raises to the view layer.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 264`** (1 nodes): `Server-rendered fallback for shared/direct links (no id available).`
+- **Thin community `Community 264`** (1 nodes): `Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 265`** (1 nodes): `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)`
+- **Thin community `Community 265`** (1 nodes): `Server-rendered fallback for shared/direct links (no id available).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 266`** (1 nodes): `Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms`
+- **Thin community `Community 266`** (1 nodes): `Tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 267`** (1 nodes): `Friendly, user-facing API/config error (token missing, expired, no permission).`
+- **Thin community `Community 267`** (1 nodes): `Read-only Meta Graph API client. Ports the logic of ../ads-report.mjs and ../dms`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 268`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
+- **Thin community `Community 268`** (1 nodes): `Friendly, user-facing API/config error (token missing, expired, no permission).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 269`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
+- **Thin community `Community 269`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 270`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
+- **Thin community `Community 270`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 271`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
+- **Thin community `Community 271`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 272`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
+- **Thin community `Community 272`** (1 nodes): `Return branch, repo name, dirty flag for given path.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 273`** (1 nodes): `_COMMUNITY_Community 5.md`
+- **Thin community `Community 273`** (1 nodes): `Scan $TEMP for claude-ctx-*.json files and return the most recently     modifie`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 274`** (1 nodes): `feedback_follow_up_no_em_dashes.md`
+- **Thin community `Community 274`** (1 nodes): `_COMMUNITY_Community 5.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 275`** (1 nodes): `feedback_google_cli.md`
+- **Thin community `Community 275`** (1 nodes): `feedback_follow_up_no_em_dashes.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 276`** (1 nodes): `feedback_lead_message_opera.md`
+- **Thin community `Community 276`** (1 nodes): `feedback_google_cli.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 277`** (1 nodes): `feedback_powershell_python_utf8.md`
+- **Thin community `Community 277`** (1 nodes): `feedback_lead_message_opera.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 278`** (1 nodes): `feedback_projects_layout.md`
+- **Thin community `Community 278`** (1 nodes): `feedback_powershell_python_utf8.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 279`** (1 nodes): `feedback_static_trailing_slash.md`
+- **Thin community `Community 279`** (1 nodes): `feedback_projects_layout.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 280`** (1 nodes): `project_audit_tool.md`
+- **Thin community `Community 280`** (1 nodes): `feedback_static_trailing_slash.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 281`** (1 nodes): `project_demo_sites.md`
+- **Thin community `Community 281`** (1 nodes): `project_audit_tool.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 282`** (1 nodes): `project_messenger_client_history.md`
+- **Thin community `Community 282`** (1 nodes): `project_demo_sites.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 283`** (1 nodes): `project_meta_ads_wa_leadgen.md`
+- **Thin community `Community 283`** (1 nodes): `project_messenger_client_history.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 284`** (1 nodes): `project_meta_ads_wa_lead_gen.md`
+- **Thin community `Community 284`** (1 nodes): `project_meta_ads_wa_leadgen.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 285`** (1 nodes): `project_meta_ads_wa_quick_replies.md`
+- **Thin community `Community 285`** (1 nodes): `project_meta_ads_wa_lead_gen.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 286`** (1 nodes): `project_parallaxnet_client.md`
+- **Thin community `Community 286`** (1 nodes): `project_meta_ads_wa_quick_replies.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 287`** (1 nodes): `project_portfolio_site.md`
+- **Thin community `Community 287`** (1 nodes): `project_parallaxnet_client.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 288`** (1 nodes): `project_rielcode_invoice_currency.md`
+- **Thin community `Community 288`** (1 nodes): `project_portfolio_site.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 289`** (1 nodes): `project_rielcode_laravel_app.md`
+- **Thin community `Community 289`** (1 nodes): `project_rielcode_invoice_currency.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 290`** (1 nodes): `project_rielcode_outreach.md`
+- **Thin community `Community 290`** (1 nodes): `project_rielcode_laravel_app.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 291`** (1 nodes): `project_testimonials_system.md`
+- **Thin community `Community 291`** (1 nodes): `project_rielcode_outreach.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 292`** (1 nodes): `reference_rielcode_rebrand_assets.md`
+- **Thin community `Community 292`** (1 nodes): `project_testimonials_system.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 293`** (1 nodes): `user_academic_credentials.md`
+- **Thin community `Community 293`** (1 nodes): `reference_rielcode_rebrand_assets.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 294`** (1 nodes): `tailwind.md`
+- **Thin community `Community 294`** (1 nodes): `user_academic_credentials.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 295`** (1 nodes): `vaBxYgZ7MAU.md`
+- **Thin community `Community 295`** (1 nodes): `tailwind.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 296`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
+- **Thin community `Community 296`** (1 nodes): `vaBxYgZ7MAU.md`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 297`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
+- **Thin community `Community 297`** (1 nodes): `Ordered (oldest-first) message history for a known conversation id.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 298`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
+- **Thin community `Community 298`** (1 nodes): `Fast path: messages for a conversation id already known from the inbox list.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 299`** (1 nodes): `YouTube Batch Week 20 2026`
+- **Thin community `Community 299`** (1 nodes): `Full ordered (oldest-first) message history for the first thread matching `name``
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 300`** (1 nodes): `YouTube Batch Week 19 2026`
+- **Thin community `Community 300`** (1 nodes): `YouTube Batch Week 20 2026`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 301`** (1 nodes): `YouTube Batch Week 18 2026`
+- **Thin community `Community 301`** (1 nodes): `YouTube Batch Week 19 2026`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 302`** (1 nodes): `YouTube Batch Week 17 2026`
+- **Thin community `Community 302`** (1 nodes): `YouTube Batch Week 18 2026`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 303`** (1 nodes): `YouTube Batch Week 17 2026`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `get()` connect `Community 9` to `Community 4`, `Community 23`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `_insert_event()` connect `Community 23` to `Community 9`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Are the 17 inferred relationships involving `log()` (e.g. with `shot()` and `printTable()`) actually correct?**
   _`log()` has 17 INFERRED edges - model-reasoned connections that need verification._
@@ -1836,4 +1841,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.02 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.02 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.02 - nodes in this community are weakly interconnected._
