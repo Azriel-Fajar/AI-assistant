@@ -1,16 +1,16 @@
-# Graph Report - JARVIS  (2026-06-08)
+# Graph Report - JARVIS  (2026-06-09)
 
 ## Corpus Check
-- 467 files · ~2,716,401 words
+- 476 files · ~2,821,801 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4669 nodes · 4865 edges · 559 communities (492 shown, 67 thin omitted)
+- 4728 nodes · 4937 edges · 568 communities (501 shown, 67 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 112 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `155a454e`
+- Built from commit: `d1985d92`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -442,6 +442,11 @@
 - [[_COMMUNITY_Community 522|Community 522]]
 - [[_COMMUNITY_Community 523|Community 523]]
 - [[_COMMUNITY_Community 524|Community 524]]
+- [[_COMMUNITY_Community 559|Community 559]]
+- [[_COMMUNITY_Community 560|Community 560]]
+- [[_COMMUNITY_Community 564|Community 564]]
+- [[_COMMUNITY_Community 565|Community 565]]
+- [[_COMMUNITY_Community 566|Community 566]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `communities` - 31 edges
@@ -458,13 +463,13 @@
 ## Surprising Connections (you probably didn't know these)
 - `periodToDates()` --calls--> `fmt()`  [INFERRED]
   tools/google/youtube/index.js → meta/dms-sync.mjs
+- `getCalendar()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
+  tools/google/gcal/index.js → tools/google/auth/oauth.js
+- `getGmail()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
+  tools/google/gmail/index.js → tools/google/auth/oauth.js
 - `create_homework_events()` --calls--> `handle_message()`  [INFERRED]
   homework-bot/gcal.py → homework-bot/main.py
 - `parse_homework()` --calls--> `test_parse_day_name()`  [INFERRED]
-  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
-- `parse_homework()` --calls--> `test_parse_next_monday()`  [INFERRED]
-  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
-- `parse_homework()` --calls--> `test_parse_explicit_date()`  [INFERRED]
   homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
 
 ## Hyperedges (group relationships)
@@ -475,7 +480,7 @@
 - **Referral Program Components** — rielcode_referral_program, rielcode_referral_commission, rielcode_referral_codes, rielcode_packages [EXTRACTED 1.00]
 - **YouTube Channel Strategy Components** — youtube_rielcode_strategy, yt_channel_rielcodeofficial, yt_content_pillars, yt_production_stack, yt_kpis [EXTRACTED 1.00]
 
-## Communities (559 total, 67 thin omitted)
+## Communities (568 total, 67 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.22
@@ -1114,8 +1119,8 @@ Cohesion: 0.13
 Nodes (28): api_ads(), api_dms(), api_thread(), index(), Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap, Return (data, error_message). Never raises to the view layer., Client-side chat fetch. Prefers conversation id (fast path) from the inbox list,, Server-rendered fallback for shared/direct links (no id available). (+20 more)
 
 ### Community 273 - "Community 273"
-Cohesion: 0.11
-Nodes (24): AdBase(), AdProps, angles, Cta(), ease, { fontFamily: sans }, { fontFamily: serif }, { fontFamily: serifItalic } (+16 more)
+Cohesion: 0.06
+Nodes (44): AdBase(), AdProps, angles, CodeBadge(), CodeScene(), Cta(), ease, { fontFamily: sans } (+36 more)
 
 ### Community 274 - "Community 274"
 Cohesion: 0.08
@@ -1134,8 +1139,8 @@ Cohesion: 0.07
 Nodes (26): dependencies, react, react-dom, remotion, @remotion/cli, @remotion/google-fonts, @remotion/zod-types, zod (+18 more)
 
 ### Community 279 - "Community 279"
-Cohesion: 0.1
-Nodes (22): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+14 more)
+Cohesion: 0.14
+Nodes (11): currentStart, d, end, event, events, freqMap, getCalendar(), newStart (+3 more)
 
 ### Community 280 - "Community 280"
 Cohesion: 0.08
@@ -1178,8 +1183,8 @@ Cohesion: 0.18
 Nodes (9): __dirname, getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath(), comments, dms (+1 more)
 
 ### Community 320 - "Community 320"
-Cohesion: 0.13
-Nodes (14): apiFetch(), env, fail(), fetchAllMessages(), file, fmt(), idx, lines (+6 more)
+Cohesion: 0.14
+Nodes (13): apiFetch(), env, fail(), fetchAllMessages(), file, idx, lines, OUT_DIR (+5 more)
 
 ### Community 321 - "Community 321"
 Cohesion: 0.12
@@ -1198,8 +1203,8 @@ Cohesion: 0.13
 Nodes (14): bin, figma, dependencies, axios, chalk, cli-table3, commander, devDependencies (+6 more)
 
 ### Community 325 - "Community 325"
-Cohesion: 0.15
-Nodes (9): data, label, msg, outPath, raw, rows, to, handleError() (+1 more)
+Cohesion: 0.16
+Nodes (12): data, getGmail(), label, msg, outPath, raw, rows, to (+4 more)
 
 ### Community 326 - "Community 326"
 Cohesion: 0.13
@@ -1214,20 +1219,20 @@ Cohesion: 0.24
 Nodes (12): author, dependencies, playwright, description, keywords, license, main, name (+4 more)
 
 ### Community 329 - "Community 329"
-Cohesion: 0.18
-Nodes (10): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+2 more)
+Cohesion: 0.16
+Nodes (12): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+4 more)
 
 ### Community 330 - "Community 330"
-Cohesion: 0.23
-Nodes (8): copyMeta, metadata, perm, writer, printInfo(), printJSON(), printSuccess(), printTable()
+Cohesion: 0.14
+Nodes (14): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+6 more)
 
 ### Community 331 - "Community 331"
-Cohesion: 0.25
-Nodes (12): comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments(), listVideos() (+4 more)
+Cohesion: 0.23
+Nodes (13): fmt(), comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments() (+5 more)
 
 ### Community 332 - "Community 332"
-Cohesion: 0.15
-Nodes (11): code:block1 (Before: transition: all 300ms), code:css (.item {), Debugging Animations, Design Engineering, Frame-by-frame inspection, Initial Response, Review Checklist, Review Format (Required) (+3 more)
+Cohesion: 0.22
+Nodes (7): code:block1 (Before: transition: all 300ms), code:css (.item {), Design Engineering, Initial Response, Review Checklist, Review Format (Required), Stagger Animations
 
 ### Community 333 - "Community 333"
 Cohesion: 0.15
@@ -1694,8 +1699,8 @@ Cohesion: 0.4
 Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/index.astro), Task 2I.9: Home page reads featured work + rotating testimonial
 
 ### Community 450 - "Community 450"
-Cohesion: 0.4
-Nodes (5): code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), Task 2H.2: Enable Astro `<ClientRouter />` (view transitions) + reduced-motion CSS
+Cohesion: 0.25
+Nodes (7): Captions, code:block1 (cd my-video), Files, Launch Assets — Rielcode Redesign (2026-06-10), Optional, Re-render, Source footage
 
 ### Community 451 - "Community 451"
 Cohesion: 0.4
@@ -1917,8 +1922,28 @@ Nodes (3): code:php (<?php), code:bash (git add invoice/view.php), Task 10: Publ
 Cohesion: 0.67
 Nodes (3): code:php (<?php), code:bash (git add invoice-pdf.php), Task 11: PDF generation
 
+### Community 559 - "Community 559"
+Cohesion: 0.33
+Nodes (5): Facebook — brand voice, Instagram / Facebook Story — brand voice, Instagram feed — brand voice, Rielcode Redesign Launch — Captions, WhatsApp Status — brand voice
+
+### Community 560 - "Community 560"
+Cohesion: 0.18
+Nodes (10): Facebook — brand voice, Facebook — friend voice, Instagram / Facebook Story — brand voice, Instagram / Facebook Story — friend voice, Instagram feed — brand voice, Instagram feed — friend voice, Rielcode Referral Captions — Brand Voice, Rielcode Referral Captions — Friend Voice (+2 more)
+
+### Community 564 - "Community 564"
+Cohesion: 0.33
+Nodes (5): ASSETS, CODES, dir, out, props
+
+### Community 565 - "Community 565"
+Cohesion: 0.4
+Nodes (5): code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), Task 2H.2: Enable Astro `<ClientRouter />` (view transitions) + reduced-motion CSS
+
+### Community 566 - "Community 566"
+Cohesion: 0.5
+Nodes (4): Debugging Animations, Frame-by-frame inspection, Slow motion testing, Test on real devices
+
 ## Knowledge Gaps
-- **2581 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2576 more)
+- **2610 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2605 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **67 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1926,15 +1951,15 @@ Nodes (3): code:php (<?php), code:bash (git add invoice-pdf.php), Task 11: PDF g
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `get()` connect `Community 9` to `Community 282`, `Community 22`, `Community 6`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `MetaError` connect `Community 272` to `Community 270`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `MetaError` connect `Community 9` to `Community 270`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Are the 17 inferred relationships involving `log()` (e.g. with `shot()` and `printTable()`) actually correct?**
   _`log()` has 17 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `0`, `1`, `2` to the rest of the system?**
-  _2608 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2637 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**

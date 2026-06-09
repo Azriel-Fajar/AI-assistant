@@ -3,6 +3,14 @@ import { Composition, Folder } from "remotion";
 import { AdBase, AdProps } from "./RielcodeAd/AdBase";
 import { angles } from "./RielcodeAd/angles";
 import { PromoAd, PROMO_DURATION, Orientation } from "./RielcodeAd/PromoAd";
+import {
+  LaunchReel,
+  LaunchFeed,
+  LaunchStory,
+  LaunchWA,
+  LAUNCH_DURATION,
+  CODE,
+} from "./RielcodeAd/LaunchAd";
 
 const ids = [
   "Angle1-NoOnlinePresence",
@@ -22,6 +30,44 @@ const promoSizes: { id: string; w: number; h: number; orientation: Orientation }
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Folder name="Launch">
+        <Composition
+          id="Launch-Reel-9x16"
+          component={LaunchReel}
+          durationInFrames={LAUNCH_DURATION}
+          fps={30}
+          width={1080}
+          height={1920}
+          defaultProps={{ orientation: "portrait" as Orientation, code: CODE }}
+        />
+        <Composition
+          id="Launch-Feed-4x5"
+          component={LaunchFeed}
+          durationInFrames={150}
+          fps={30}
+          width={1080}
+          height={1350}
+          defaultProps={{ code: CODE }}
+        />
+        <Composition
+          id="Launch-Story-9x16"
+          component={LaunchStory}
+          durationInFrames={150}
+          fps={30}
+          width={1080}
+          height={1920}
+          defaultProps={{ code: CODE }}
+        />
+        <Composition
+          id="Launch-WA-9x16"
+          component={LaunchWA}
+          durationInFrames={150}
+          fps={30}
+          width={1080}
+          height={1920}
+          defaultProps={{ code: CODE }}
+        />
+      </Folder>
       <Folder name="Promo">
         {promoSizes.map((s) => (
           <Composition

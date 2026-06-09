@@ -24,3 +24,7 @@
 - [Meta Ads WA Quick Replies](project_meta_ads_wa_quick_replies.md) -- 6 WA Business presets + greeting for Meta Ads leads; pricing from references/rielcode-pricing.md
 - [Rielcode Demo Sites](project_demo_sites.md) -- 8 niche static demo sites at public/demos/ in rielcode-laravel, hub + 3 pages each, for demo.rielcode.com/{niche}
 - [Static Demo Trailing Slash](feedback_static_trailing_slash.md) -- open /demos with trailing slash or relative CSS/JS 404s; no npm build needed
+- [Remotion Video Project](reference_remotion_video_project.md) -- my-video/ builds all Rielcode video/ad assets; reuse theme + helpers, render from there
+- [Video Voiceover Workflow](feedback_video_voiceover.md) -- Azriel supplies AI VO mp3s externally (no TTS key); wire per-scene clips into Remotion
+- [Rielcode Redesign Launch](project_redesign_launch.md) -- rielcode.com redesign launch 2026-06-10, brand + 7 referral video sets built, LAUNCH10 promo, gate = discount feature live
+- [Serialize Remotion Renders](feedback_remotion_serialize_renders.md) -- never run two Remotion renders at once; concurrent collide, silently kill one mid-batch (exit 0 lies); verify file counts
