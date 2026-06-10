@@ -6196,6 +6196,24 @@
       "norm_label": "__init__.py"
     },
     {
+      "label": "add-backsound.ps1",
+      "file_type": "code",
+      "source_file": "my-video/add-backsound.ps1",
+      "source_location": "L1",
+      "id": "my_video_add_backsound_ps1",
+      "community": 566,
+      "norm_label": "add-backsound.ps1"
+    },
+    {
+      "label": "Get-Dur()",
+      "file_type": "code",
+      "source_file": "my-video/add-backsound.ps1",
+      "source_location": "L19",
+      "id": "my_video_add_backsound_get_dur",
+      "community": 566,
+      "norm_label": "get-dur()"
+    },
+    {
       "label": "eslint.config.mjs",
       "file_type": "code",
       "source_file": "my-video/eslint.config.mjs",
@@ -17649,7 +17667,7 @@
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/emil-design-eng/SKILL.md",
       "source_location": "L642",
       "id": "emil_design_eng_skill_debugging_animations",
-      "community": 566,
+      "community": 332,
       "norm_label": "debugging animations"
     },
     {
@@ -17658,7 +17676,7 @@
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/emil-design-eng/SKILL.md",
       "source_location": "L644",
       "id": "emil_design_eng_skill_slow_motion_testing",
-      "community": 566,
+      "community": 332,
       "norm_label": "slow motion testing"
     },
     {
@@ -17667,7 +17685,7 @@
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/emil-design-eng/SKILL.md",
       "source_location": "L655",
       "id": "emil_design_eng_skill_frame_by_frame_inspection",
-      "community": 566,
+      "community": 332,
       "norm_label": "frame-by-frame inspection"
     },
     {
@@ -17676,7 +17694,7 @@
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/emil-design-eng/SKILL.md",
       "source_location": "L659",
       "id": "emil_design_eng_skill_test_on_real_devices",
-      "community": 566,
+      "community": 332,
       "norm_label": "test on real devices"
     },
     {
@@ -51469,6 +51487,16 @@
       "confidence_score": 1.0,
       "source": "dashboard_meta_api_rationale_248",
       "target": "dashboard_meta_api_get_thread"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/add-backsound.ps1",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "my_video_add_backsound_ps1",
+      "target": "my_video_add_backsound_get_dur",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -92499,5 +92527,5 @@
       "source_file": "projects/youtube-rielcode/strategy.md"
     }
   ],
-  "built_at_commit": "d1985d92eeca8412d9a60d0ceac99937989c138c"
+  "built_at_commit": "cabf6401d93f3891c1299d664b8b86f771710a30"
 }

@@ -459,6 +459,11 @@
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\my-video\\add-backsound.ps1": {
+    "mtime": 1781061858.693555,
+    "ast_hash": "af58fa28deda9819056084312d68809a",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\my-video\\eslint.config.mjs": {
     "mtime": 1780074060.7814317,
     "ast_hash": "5b4b3b604653eee6840b152f3b9b4b53",
@@ -3445,23 +3450,23 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\launch-assets\\launch-feed-4x5.mp4": {
-    "mtime": 1781000287.805114,
-    "ast_hash": "fc1612713d944fec92e2570c34c38218",
+    "mtime": 1781061865.080662,
+    "ast_hash": "81be5ecf733cdc286b79bcd3befd4cee",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\launch-assets\\launch-reel-9x16.mp4": {
-    "mtime": 1781000263.6834416,
-    "ast_hash": "1c8a07105be16bc790b852372c93988a",
+    "mtime": 1781061867.1445467,
+    "ast_hash": "d0caf1d19db9234babc358471eac614f",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\launch-assets\\launch-story-9x16.mp4": {
-    "mtime": 1781000307.2981896,
-    "ast_hash": "acff2302aa9aabd7a578565f593efa01",
+    "mtime": 1781061868.300926,
+    "ast_hash": "a02174e1edba4cd755f730435e4d8fea",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\launch-assets\\launch-wa-9x16.mp4": {
-    "mtime": 1781000327.7976236,
-    "ast_hash": "0e15e2eb38725dcacd52ba6859a42e34",
+    "mtime": 1781061869.3153348,
+    "ast_hash": "55c78acc05ab89d52d95abb6c1fd667f",
     "semantic_hash": ""
   }
 }

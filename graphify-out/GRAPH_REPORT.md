@@ -1,16 +1,16 @@
-# Graph Report - JARVIS  (2026-06-09)
+# Graph Report - JARVIS  (2026-06-10)
 
 ## Corpus Check
-- 476 files · ~2,821,801 words
+- 477 files · ~2,822,063 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4728 nodes · 4937 edges · 568 communities (501 shown, 67 thin omitted)
+- 4730 nodes · 4938 edges · 568 communities (501 shown, 67 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 112 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d1985d92`
+- Built from commit: `cabf6401`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -446,7 +446,6 @@
 - [[_COMMUNITY_Community 560|Community 560]]
 - [[_COMMUNITY_Community 564|Community 564]]
 - [[_COMMUNITY_Community 565|Community 565]]
-- [[_COMMUNITY_Community 566|Community 566]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `communities` - 31 edges
@@ -1231,8 +1230,8 @@ Cohesion: 0.23
 Nodes (13): fmt(), comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments() (+5 more)
 
 ### Community 332 - "Community 332"
-Cohesion: 0.22
-Nodes (7): code:block1 (Before: transition: all 300ms), code:css (.item {), Design Engineering, Initial Response, Review Checklist, Review Format (Required), Stagger Animations
+Cohesion: 0.15
+Nodes (11): code:block1 (Before: transition: all 300ms), code:css (.item {), Debugging Animations, Design Engineering, Frame-by-frame inspection, Initial Response, Review Checklist, Review Format (Required) (+3 more)
 
 ### Community 333 - "Community 333"
 Cohesion: 0.15
@@ -1937,10 +1936,6 @@ Nodes (5): ASSETS, CODES, dir, out, props
 ### Community 565 - "Community 565"
 Cohesion: 0.4
 Nodes (5): code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), Task 2H.2: Enable Astro `<ClientRouter />` (view transitions) + reduced-motion CSS
-
-### Community 566 - "Community 566"
-Cohesion: 0.5
-Nodes (4): Debugging Animations, Frame-by-frame inspection, Slow motion testing, Test on real devices
 
 ## Knowledge Gaps
 - **2610 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2605 more)
