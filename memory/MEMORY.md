@@ -28,3 +28,6 @@
 - [Video Voiceover Workflow](feedback_video_voiceover.md) -- Azriel supplies AI VO mp3s externally (no TTS key); wire per-scene clips into Remotion
 - [Rielcode Redesign Launch](project_redesign_launch.md) -- rielcode.com redesign launch 2026-06-10, brand + 7 referral video sets built, LAUNCH10 promo, gate = discount feature live
 - [Serialize Remotion Renders](feedback_remotion_serialize_renders.md) -- never run two Remotion renders at once; concurrent collide, silently kill one mid-batch (exit 0 lies); verify file counts
+- [Close Gap Not Lead Gen](feedback_close_gap_not_leadgen.md) -- Rielcode bottleneck is follow-up/closing not lead-gen; don't suggest new channels, fix the close
+- [Cold Outreach Central Java Jun 2026](project_coldoutreach_centraljava_2026-06.md) -- 10 leads (cafe/salon/dental/gym/real-estate) with IG + demo links + locked ID message tone
+- [Meta Ads v3 WhatsApp Finding Jun 2026](project_meta_ads_v3_finding.md) -- v3 WA convos cost Rp39k (7x Messenger) but real buyers; keep running, fix close with demos not channel
