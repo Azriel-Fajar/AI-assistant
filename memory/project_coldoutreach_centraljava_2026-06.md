@@ -43,7 +43,7 @@ Follow-up template (no-reply nudge):
 |---|---|---|---|---|
 | 2 | Koffiegoen | yes (without promo) | "terimakasih atas penawarannya" (polite brush-off) | Replied, door left open |
 | 3 | KenKei Salon | yes (without promo) | none | Follow-up sent with LAUNCH10 |
-| 4 | Moiss Salon | yes (without promo) | none | Follow-up sent with LAUNCH10 |
+| ~~4~~ | ~~Moiss Salon~~ | yes | "Nda dulu" | Closed, door left open |
 | 5 | Denticare | yes (without promo) | none | Follow-up sent with LAUNCH10 |
 | 6 | Tito Dental Care | yes (without promo) | none | Follow-up sent with LAUNCH10 |
 | 7 | Young Gym Salatiga | yes (with promo) | none | Sent |
