@@ -1,0 +1,5 @@
+nama;kampus;fakultas;program;tgl_enroll;status_belajar;sertifikasi;status_bayar;jumlah_bayar;kendala
+Test Import Satu;Universitas Mataram;Teknik;Intro to Python;15/01/2026;sedang;tidak;sebagian;500000;Menunggu jadwal
+Test Import Dua;Kampus Baru Import;Ekonomi;Techpreneur;2026-02-01;belum;tidak;belum;;
+Test Import Tiga;Universitas Mataram;MIPA;Cyber Security Basic;01/03/2026;selesai;ya;lunas;1500000;
+;Universitas Mataram;;;;;;;;baris rusak tanpa nama

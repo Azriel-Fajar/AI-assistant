@@ -33,3 +33,6 @@
 - [Meta Ads v3 WhatsApp Finding Jun 2026](project_meta_ads_v3_finding.md) -- v3 WA convos cost Rp39k (7x Messenger) but real buyers; keep running, fix close with demos not channel
 - [Probability & Statistics Course](reference_stats_course.md) -- lecturer Radius Tanone (UKSW), assignments emailed with PDF attached, Ch2 freq dist + Ch3 center/dispersion
 - [Stats Assignment Build](reference_stats_assignment.md) -- stats-presentation.html renders to PDF via Playwright chromium; .compact class avoids A4 overflow, .ovl span for x-bar
+- [Parallaxnet Siber Indonesia Research](reference_parallaxnet_indonesia.md) -- report at research/parallaxnet-siber-indonesia.md; PT Parallaxnet Siber Indonesia = Indonesian EdTech arm of US Parallaxnet, Canada entity unverified
+- [Parallaxnet AIOS Project](project_parallaxnet_aios.md) -- AIOS workspace at Documents\Parallaxnet AI + PHP dashboard at xampp; waiting on Yurika data + subdomain name
+- [Faster-Whisper Local Setup](reference_faster_whisper.md) -- use python3.13 not python; nvidia pip wheels + add_dll_directory for GPU; ID/EN mix OK
