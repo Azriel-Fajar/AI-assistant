@@ -110,6 +110,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/claude-coach` -- coach for efficient Claude Code use: grade/rewrite prompts, route to the right skill, recommend effort, teach Opus 4.8 techniques (knowledge: `references/claude-code-mastery.md`)
 - `/session-memory` -- save durable facts from the current session into persistent memory
 - `/caption` -- generate Rielcode promo captions (IG, TikTok, WhatsApp Status, Facebook) in ID + EN; one best per platform, brand or friend-referral voice; knowledge in `.claude/skills/caption/references/caption-playbook.md`
+- `/grill-me [topic]` -- stress-test a plan via relentless interview; answers from context/memory/codebase first, then AskUserQuestion with recommended options; logs decisions to `decisions/log.md`, saves durable facts to memory
 
 ---
 
