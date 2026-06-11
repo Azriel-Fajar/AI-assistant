@@ -1030,8 +1030,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\CLAUDE.md": {
-    "mtime": 1780660549.981289,
-    "ast_hash": "b97cd3aae72308f28cddb8e745310586",
+    "mtime": 1781159344.6765306,
+    "ast_hash": "872a87fba39d645048cca2b4f87e8d28",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\connections.md": {
@@ -1050,8 +1050,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\stats-presentation.html": {
-    "mtime": 1780557847.624853,
-    "ast_hash": "c32e96850991ca0849f633dbd26daa2b",
+    "mtime": 1781161264.1203485,
+    "ast_hash": "303b14c9bc072500ea4c9d534b6c577f",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\subnet_mask_and_prefix_explanation.md": {
@@ -1222,6 +1222,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\git-command\\SKILL.md": {
     "mtime": 1780131533.521767,
     "ast_hash": "f10bad7e4fb7b284c8f2d874b1b17afe",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\grill-me\\SKILL.md": {
+    "mtime": 1781159344.6734486,
+    "ast_hash": "31769030735802d7309cd0f125e1d8e0",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\instagram-content\\SKILL.md": {
@@ -1875,8 +1880,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\decisions\\log.md": {
-    "mtime": 1780131621.1022453,
-    "ast_hash": "b6123362160a6a10e93a842c3e6656c4",
+    "mtime": 1781159344.678147,
+    "ast_hash": "fb02d7c8b13c176a23db01b75f59ee6a",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\deployments\\index.md": {
@@ -1985,8 +1990,13 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\leads\\leads.md": {
-    "mtime": 1780123480.2237809,
-    "ast_hash": "725d66e60f786904ae94c229e18c3e31",
+    "mtime": 1781159344.692789,
+    "ast_hash": "3f6fc7c30c9fd4c618516386317782b1",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_close_gap_not_leadgen.md": {
+    "mtime": 1781159344.6947842,
+    "ast_hash": "88559743d2912ca4712aeb663d7975ea",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_flask_run_command.md": {
@@ -2035,13 +2045,18 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\MEMORY.md": {
-    "mtime": 1781003046.274958,
-    "ast_hash": "97e7314c22afd905f8c8ff119f08a108",
+    "mtime": 1781162755.310793,
+    "ast_hash": "b9321b8942cbae028917af74342e6778",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_audit_tool.md": {
     "mtime": 1780528918.9663415,
     "ast_hash": "885519d1ed2c2b524aed826c83c5a46b",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_coldoutreach_centraljava_2026-06.md": {
+    "mtime": 1781162725.6090727,
+    "ast_hash": "98df4ce8fbc11a0c36e0e11346a7797e",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_demo_sites.md": {
@@ -2052,6 +2067,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_messenger_client_history.md": {
     "mtime": 1780363348.8680274,
     "ast_hash": "72b5847955cb800f95345268cd5ad899",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_meta_ads_v3_finding.md": {
+    "mtime": 1781159344.6957839,
+    "ast_hash": "70ee8b241e1a957e4b970133c59d8579",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_meta_ads_wa_leadgen.md": {
@@ -2127,6 +2147,16 @@
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_rielcode_rebrand_assets.md": {
     "mtime": 1780528918.968916,
     "ast_hash": "362f2318bed5090931f4cf5e8baefe2c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_stats_assignment.md": {
+    "mtime": 1781162742.1717412,
+    "ast_hash": "d574f66fc694d927c53e4a0ea9b2ee09",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_stats_course.md": {
+    "mtime": 1781162730.8965695,
+    "ast_hash": "52d3efdf02d8271884cf39588eccba3b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\reference_subnetting.md": {
@@ -2674,9 +2704,9 @@
     "ast_hash": "53d75bc731a5dbe21de50f75c5b2791d",
     "semantic_hash": ""
   },
-  "D:\\Main Storage\\Documents\\JARVIS\\stats-presentation.pdf": {
-    "mtime": 1780557854.6772676,
-    "ast_hash": "1b8d2b1aa73a9ca330f47cba0126cd68",
+  "D:\\Main Storage\\Documents\\JARVIS\\DISTRIBUTION_FREQUENCY_672025121.pdf": {
+    "mtime": 1781161285.1217818,
+    "ast_hash": "5c16b213287f28d8e75485f7a93dfc93",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\module.pdf": {
@@ -3067,6 +3097,36 @@
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\t5-02-after-submit.png": {
     "mtime": 1780074081.7840757,
     "ast_hash": "36c2806eb73e24772b56b689fa28f367",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\testimonial-rielcode-com-mobile-20260610-004414.png": {
+    "mtime": 1781159344.7007208,
+    "ast_hash": "b528a2ba99f3ea60d90ca91848922313",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\ts-full.png": {
+    "mtime": 1781159344.7109654,
+    "ast_hash": "284597e2fa3ede9f7e1238bd5da19e5e",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\ts-sec-0.png": {
+    "mtime": 1781159344.7130187,
+    "ast_hash": "b528a2ba99f3ea60d90ca91848922313",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\ts-sec-1.png": {
+    "mtime": 1781159344.7169943,
+    "ast_hash": "e06c9b6f4867ee10c6f9b12f706f9242",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\ts-sec-2.png": {
+    "mtime": 1781159344.7204409,
+    "ast_hash": "bb587df23693dff501f1f4e5002a9a80",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\ts-sec-3.png": {
+    "mtime": 1781159344.7258103,
+    "ast_hash": "2531889f63e280e5452f2fe85550a798",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\verify-fix.png": {

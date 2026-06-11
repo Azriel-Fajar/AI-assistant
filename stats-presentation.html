@@ -30,6 +30,17 @@
   .footer { position:absolute; bottom:10mm; left:16mm; right:16mm; font-size:11px; color:#9aa7b8; border-top:1px solid #e0e6ee; padding-top:6px; display:flex; justify-content:space-between; }
   canvas { margin:10px 0; }
   .chart-wrap { width:100%; height:300px; }
+  .page.compact { padding:12mm 16mm; }
+  .compact h2 { margin:12px 0 8px; }
+  .compact p { margin-bottom:6px; }
+  .compact table { margin:8px 0; font-size:12px; }
+  .compact th, .compact td { padding:5px 4px; }
+  .compact .box { margin:8px 0; padding:10px 14px; }
+  .compact .step { line-height:1.5; }
+  .compact h1 { margin-bottom:2px; }
+  .compact .creds { margin-bottom:12px; }
+  .compact .chart-wrap { height:240px; }
+  .ovl { text-decoration:overline; }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
@@ -130,6 +141,99 @@
   <div class="footer"><span>Statistics - Frequency Distribution</span><span>Page 4</span></div>
 </div>
 
+<!-- PAGE 5 -->
+<div class="page compact">
+  <h2>Center &amp; Dispersion - Setup</h2>
+  <p>Using the frequency table from Chapter 2 (n = 40, class width c = 9). Grouped formulas use the class middle value and cumulative frequency.</p>
+  <table>
+    <tr><th>Class Interval</th><th>Class Limits</th><th>Middle Value (x)</th><th>Frequency (f)</th><th>f &middot; x</th><th>Cumulative f</th></tr>
+    <tr><td>119 &ndash; 127</td><td>118.5 &ndash; 127.5</td><td>123</td><td>3</td><td>369</td><td>3</td></tr>
+    <tr><td>128 &ndash; 136</td><td>127.5 &ndash; 136.5</td><td>132</td><td>6</td><td>792</td><td>9</td></tr>
+    <tr><td>137 &ndash; 145</td><td>136.5 &ndash; 145.5</td><td>141</td><td>10</td><td>1410</td><td>19</td></tr>
+    <tr><td>146 &ndash; 154</td><td>145.5 &ndash; 154.5</td><td>150</td><td>11</td><td>1650</td><td>30</td></tr>
+    <tr><td>155 &ndash; 163</td><td>154.5 &ndash; 163.5</td><td>159</td><td>5</td><td>795</td><td>35</td></tr>
+    <tr><td>164 &ndash; 172</td><td>163.5 &ndash; 172.5</td><td>168</td><td>3</td><td>504</td><td>38</td></tr>
+    <tr><td>173 &ndash; 181</td><td>172.5 &ndash; 181.5</td><td>177</td><td>2</td><td>354</td><td>40</td></tr>
+    <tr class="total"><td colspan="3">Total</td><td>40</td><td>5874</td><td></td></tr>
+  </table>
+
+  <h2>Mean</h2>
+  <div class="box step">
+    <span class="formula"><span class="ovl">x</span> = &Sigma;(f &middot; x) / &Sigma;f</span><br>
+    <span class="ovl">x</span> = 5874 / 40 = <b>146.85</b>
+  </div>
+
+  <h2>Median</h2>
+  <div class="box step">
+    <span class="formula">Md = L + ((n/2 &minus; F) / f) &middot; c</span><br>
+    20th value falls in class <b>146&ndash;154</b>. L = 145.5, F = 19, f = 11, c = 9.<br>
+    Md = 145.5 + ((20 &minus; 19) / 11) &middot; 9 = 145.5 + 0.82 = <b>146.32</b>
+  </div>
+
+  <h2>Mode</h2>
+  <div class="box step">
+    <span class="formula">Mo = L + (a / (a + b)) &middot; c</span><br>
+    Highest frequency is class <b>146&ndash;154</b> (f = 11). L = 145.5, a = 11 &minus; 10 = 1, b = 11 &minus; 5 = 6, c = 9.<br>
+    Mo = 145.5 + (1 / 7) &middot; 9 = 145.5 + 1.29 = <b>146.79</b>
+  </div>
+
+  <div class="footer"><span>Statistics - Center &amp; Dispersion</span><span>Page 5</span></div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page compact">
+  <h2>Quartile (Q1)</h2>
+  <p>Position of Q<sub>1</sub> is the (n / 4)-th value. <span class="formula">Q&#8321; = L + ((n/4 &minus; F) / f) &middot; c</span></p>
+  <div class="box step">
+    <b>Q1</b> &rarr; pos = 40 / 4 = 10 &rarr; class <b>137&ndash;145</b> (L = 136.5, F = 9, f = 10, c = 9)<br>
+    Q1 = 136.5 + ((10 &minus; 9) / 10) &middot; 9 = 136.5 + 0.9 = <b>137.40</b><br>
+    Lower quarter of adults weigh below 137.4 lb.
+  </div>
+
+  <h2>Decile &amp; Percentile</h2>
+  <p>Position of D<sub>x</sub> is (n&middot;x/10), of P<sub>x</sub> is (n&middot;x/100). (The brief lists "15th decile" but only D1&ndash;D9 exist; D5 is shown, which equals the median.)</p>
+  <div class="box step">
+    <span class="formula">D&#8339; = L + ((n&middot;x/10 &minus; F) / f) &middot; c</span><br>
+    <b>D5</b> &rarr; pos = 40&times;5/10 = 20 &rarr; class <b>146&ndash;154</b><br>
+    D5 = 145.5 + ((20 &minus; 19) / 11) &middot; 9 = <b>146.32</b><br><br>
+    <span class="formula">P&#8339; = L + ((n&middot;x/100 &minus; F) / f) &middot; c</span><br>
+    <b>P10</b> &rarr; pos = 40&times;10/100 = 4 &rarr; class <b>128&ndash;136</b> (L = 127.5, F = 3, f = 6)<br>
+    P10 = 127.5 + ((4 &minus; 3) / 6) &middot; 9 = <b>129.00</b>
+  </div>
+
+  <div class="footer"><span>Statistics - Center &amp; Dispersion</span><span>Page 6</span></div>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page compact">
+  <h2>Variance &amp; Standard Deviation</h2>
+  <p>Spread of the data around the mean (146.85). Sample variance divides by n &minus; 1.</p>
+  <table>
+    <tr><th>x</th><th>f</th><th>x &minus; <span class="ovl">x</span></th><th>(x &minus; <span class="ovl">x</span>)&sup2;</th><th>f(x &minus; <span class="ovl">x</span>)&sup2;</th></tr>
+    <tr><td>123</td><td>3</td><td>&minus;23.85</td><td>568.82</td><td>1706.47</td></tr>
+    <tr><td>132</td><td>6</td><td>&minus;14.85</td><td>220.52</td><td>1323.13</td></tr>
+    <tr><td>141</td><td>10</td><td>&minus;5.85</td><td>34.22</td><td>342.22</td></tr>
+    <tr><td>150</td><td>11</td><td>3.15</td><td>9.92</td><td>109.15</td></tr>
+    <tr><td>159</td><td>5</td><td>12.15</td><td>147.62</td><td>738.11</td></tr>
+    <tr><td>168</td><td>3</td><td>21.15</td><td>447.32</td><td>1341.97</td></tr>
+    <tr><td>177</td><td>2</td><td>30.15</td><td>909.02</td><td>1818.05</td></tr>
+    <tr class="total"><td colspan="4">&Sigma; f(x &minus; <span class="ovl">x</span>)&sup2;</td><td>7379.10</td></tr>
+  </table>
+  <div class="box step">
+    <span class="formula">s&sup2; = &Sigma;f(x &minus; <span class="ovl">x</span>)&sup2; / (n &minus; 1)</span><br>
+    s&sup2; = 7379.10 / 39 = <b>189.21</b><br>
+    <span class="formula">s = &radic;s&sup2;</span> = &radic;189.21 = <b>13.76</b>
+  </div>
+
+  <h2>Summary of Measures</h2>
+  <div class="chart-wrap"><canvas id="centers"></canvas></div>
+  <div class="box step">
+    Mean 146.85, Median 146.32, Mode 146.79 are nearly equal &rarr; distribution is close to symmetric, centered around <b>147 lb</b>. Standard deviation 13.76 lb shows typical spread from the mean.
+  </div>
+
+  <div class="footer"><span>Statistics - Center &amp; Dispersion</span><span>Page 7</span></div>
+</div>
+
 <script>
 const mids=[123,132,141,150,159,168,177];
 const freq=[3,6,10,11,5,3,2];
@@ -146,6 +250,8 @@ new Chart(poly,{type:'line',data:{labels:mids,datasets:[{data:freq,borderColor:N
 new Chart(combo,{type:'bar',data:{labels:mids,datasets:[{type:'bar',data:freq,backgroundColor:'#8ab4d8',borderColor:NAV,borderWidth:1,barPercentage:1,categoryPercentage:1},{type:'line',data:freq,borderColor:OR,backgroundColor:OR,tension:0,pointRadius:4}]},options:{...noAnim,plugins:{legend:{display:false}},scales:axes}});
 
 new Chart(ogive,{type:'line',data:{labels:upper,datasets:[{data:cum,borderColor:NAV,backgroundColor:NAV,tension:0.2,pointRadius:4,fill:false}]},options:{...noAnim,plugins:{legend:{display:false}},scales:{x:{title:{display:true,text:'Upper Class Limit (lb)'}},y:{title:{display:true,text:'Cumulative Frequency'},beginAtZero:true}}}});
+
+new Chart(centers,{type:'bar',data:{labels:['Mean','Median','Mode','Q1','P10'],datasets:[{data:[146.85,146.32,146.79,137.40,129.00],backgroundColor:['#0d3b66','#3f7cac','#8ab4d8','#ee964b','#f3b07a']}]},options:{...noAnim,plugins:{legend:{display:false}},scales:{y:{title:{display:true,text:'Weight (lb)'},beginAtZero:false,min:120}}}});
 </script>
 </body>
 </html>

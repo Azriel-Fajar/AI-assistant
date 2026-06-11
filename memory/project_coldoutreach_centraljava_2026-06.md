@@ -27,9 +27,28 @@ Batch gathered 2026-06-11 for Rielcode cold outreach. 10 leads, Central Java, ni
 ## Message tone (locked by Azriel 2026-06-11)
 Casual "kak", "aku bisa bantu", "desain bebas sesuai yang kakak mau", soft close "boleh banget untuk tanya tanya dulu". No em dashes [[feedback_follow_up_no_em_dashes]]. Warm, no hype, no fake urgency [[feedback_azriel_message_tone]].
 
-Template:
-> Halo kak, aku Azriel dari Rielcode. Aku liat [bisnis] keren tapi belum punya website sendiri. Aku bisa bantu bikin website untuk bisnis kayak gini, ini contohnya: rielcode.com/demos/[niche]/
+Template (with LAUNCH10 promo, updated 2026-06-11):
+> Halo kak! 👋 Aku Azriel dari Rielcode. Aku liat [bisnis] keren tapi belum punya website sendiri nih.
 >
-> Itu cuma contoh kasar buat ngasih ide ya kak. Punya kakak nanti dibikin custom, desain bebas sesuai yang kakak mau. Kalau tertarik boleh banget untuk tanya tanya dulu.
+> Aku bisa bantu bikin website buat bisnis kayak gini, ini contohnya: rielcode.com/demos/[niche]/ ✨
+>
+> Itu cuma contoh kasar buat ngasih ide ya kak, punya kakak nanti dibikin custom, desain bebas sesuai yang kakak mau. Oh iya, sekarang lagi ada promo juga, pakai kode LAUNCH10 dapet diskon 10% 🎉 Kalau tertarik boleh banget tanya tanya dulu 😊
 
-Related: [[project_demo_sites]] [[project_rielcode_outreach]]
+Follow-up template (no-reply nudge):
+> Halo kak, mau follow up pesan sebelumnya 😊 Kalau tertarik, sekarang lagi ada promo, pakai kode LAUNCH10 bisa dapet diskon 10%. Boleh banget tanya tanya dulu kak!
+
+## Outreach Status (as of 2026-06-11)
+
+| # | Business | Sent | Reply | Status |
+|---|---|---|---|---|
+| 2 | Koffiegoen | yes (without promo) | "terimakasih atas penawarannya" (polite brush-off) | Replied, door left open |
+| 3 | KenKei Salon | yes (without promo) | none | Follow-up sent with LAUNCH10 |
+| 4 | Moiss Salon | yes (without promo) | none | Follow-up sent with LAUNCH10 |
+| 5 | Denticare | yes (without promo) | none | Follow-up sent with LAUNCH10 |
+| 6 | Tito Dental Care | yes (without promo) | none | Follow-up sent with LAUNCH10 |
+| 7 | Young Gym Salatiga | yes (with promo) | none | Sent |
+| 8 | TwinFit Gym | yes (with promo) | none | Sent |
+| 9 | Enny C21 Platinum | yes (with promo) | none | Sent |
+| 10 | Info Rumah Solo | yes (with promo) | none | Sent |
+
+Related: [[project_demo_sites]] [[project_rielcode_outreach]] [[project_redesign_launch]]
