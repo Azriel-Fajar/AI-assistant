@@ -1,6 +1,6 @@
 ---
 name: Rielcode Demo Sites
-description: 8 niche demo websites for prospects, static, at public/demos/ in rielcode-laravel, served at demo.rielcode.com/{niche}
+description: 8 niche demo websites for prospects, static, at public/demos/ in rielcode-laravel, served at http://127.0.0.1:8000/demos/{niche}/
 metadata:
   type: project
 ---

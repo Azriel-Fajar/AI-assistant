@@ -49,8 +49,8 @@ You are Azriel's personal executive assistant and second brain.
 - @context/goals.md
 - @context/about-me.md
 - @context/about-business.md
-- @context/priorities.md
-- @meta/ads-algorithm-context.md
+
+Read on demand (not auto-loaded): `meta/ads-algorithm-context.md` (Meta Ads algorithm notes), `context/priorities.md` (merged into current-priorities.md).
 
 ## Memory
 
@@ -88,6 +88,7 @@ Custom skills live in `.claude/skills/`. Each skill: `.claude/skills/skill-name/
 - `/audit` -- Four-Cs gap report on AIOS setup. Run weekly to track improvement.
 - `/level-up` -- weekly review to find one automation, scope it, ship it.
 - `/skill-builder` -- build a new custom skill from scratch
+- `/agent-builder [task]` -- interview-then-build a custom subagent for a repeated workflow; writes to ~/.claude/agents/, suggests ideas from current context
 - `/video-to-website` -- convert a video into a website section or landing page
 - `/url-screenshot <url> [url2 ...]` -- full-page PNG screenshot of one or more URLs via Playwright (output: `screenshots/`)
 - `/playwright` -- browser automation: `test`, `codegen`, `screenshot` (element/viewport), `scrape` (uses root-installed @playwright/test)

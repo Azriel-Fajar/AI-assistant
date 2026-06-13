@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1423384889_3890155767_223132457.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_2229197065_109685265.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_807188262_199381397.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_2383390243_3589703429.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_592781649_887801614.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_3729131706_730313291.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_891910075_2930535754.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_3748340636_3640459844.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_1269872927_691969773.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_2877126443_3275417317.mp4'
+file 'file:C:/Users/afw14/OneDrive/Documents/JARVIS/manim-ads/media/videos/rielcode_ad/480p15/partial_movie_files/RielcodeAd/1460604495_1754310298_145087156.mp4'

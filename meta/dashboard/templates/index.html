@@ -62,9 +62,8 @@
   button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   button svg { width: 15px; height: 15px; }
 
-  main { max-width: 1180px; margin: 0 auto; padding: 22px 24px 56px;
-         display: grid; gap: 20px; grid-template-columns: 1.15fr 1fr; align-items: start; }
-  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+  main { max-width: 900px; margin: 0 auto; padding: 22px 24px 56px;
+         display: grid; gap: 20px; align-items: start; }
 
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
           box-shadow: var(--shadow); overflow: hidden; }
@@ -82,6 +81,22 @@
   .kpi .k-label { font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
   .kpi .k-val { font-size: 19px; font-weight: 650; margin-top: 3px; letter-spacing: -.01em; }
   .kpi .k-val small { font-size: 12px; font-weight: 500; color: var(--faint); }
+
+  /* Level toggle tabs */
+  .level-tabs { display: flex; gap: 0; border-bottom: 1px solid var(--line); }
+  .level-tab { font-size: 13px; font-weight: 550; padding: 10px 18px; cursor: pointer;
+               border: none; border-bottom: 2px solid transparent; background: none;
+               color: var(--muted); border-radius: 0; transition: color .15s, border-color .15s; }
+  .level-tab:hover { color: var(--ink); border-color: var(--line-strong); }
+  .level-tab.active { color: var(--accent); border-color: var(--accent); }
+
+  /* Range toggle */
+  .ranges { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 18px; border-bottom: 1px solid var(--line); }
+  .range-btn { font-size: 12.5px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line-strong);
+               background: var(--surface); color: var(--muted); text-decoration: none; white-space: nowrap;
+               transition: border-color .15s ease, color .15s ease, background .15s ease; }
+  .range-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .range-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
   .tablewrap { overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
@@ -169,7 +184,7 @@
     </span>
     <div>
       <h1>Meta Dashboard</h1>
-      <div class="sub">Ads (last 30 days) &middot; Page Messenger</div>
+      <div class="sub">{% if ads %}Ads ({{ ads.range_label | lower }}){% else %}Ads{% endif %}</div>
     </div>
   </div>
   <div class="hbtns">
@@ -188,34 +203,48 @@
       <span class="sub num">{% if ads %}{{ ads.account }}{% endif %}</span>
     </div>
 
+    <div class="level-tabs">
+      <button class="level-tab active" data-level="campaign" onclick="switchLevel('campaign', this)">Campaigns</button>
+      <button class="level-tab" data-level="ad" onclick="switchLevel('ad', this)">Ads</button>
+    </div>
+
+    <div class="ranges">
+      {% for key, label in [
+        ('today','Today'), ('last_7d','7 days'), ('last_30d','30 days'),
+        ('last_90d','3 months'), ('last_180d','6 months'), ('last_365d','12 months')] %}
+        <a class="range-btn {{ 'active' if range_key == key else '' }}" href="?range={{ key }}">{{ label }}</a>
+      {% endfor %}
+    </div>
+
+    <div id="ads-body">
     {% if ads_err %}
       <div class="err">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
         {{ ads_err }}
       </div>
     {% elif not ads.campaigns %}
-      <div class="empty">No campaign data in the last 7 days.</div>
+      <div class="empty">No campaign data for {{ ads.range_label | lower }}.</div>
     {% else %}
       {% set total_impr = ads.campaigns | sum(attribute='impressions') %}
       {% set total_clicks = ads.campaigns | sum(attribute='clicks') %}
       <div class="kpis">
         <div class="kpi">
-          <div class="k-label">Spend (30d)</div>
-          <div class="k-val num">Rp&nbsp;{{ '{:,.0f}'.format(ads.total_spend).replace(',', '.') }}</div>
+          <div class="k-label">Spend ({{ ads.range_label }})</div>
+          <div class="k-val num" id="kpi-spend">Rp&nbsp;{{ '{:,.0f}'.format(ads.total_spend).replace(',', '.') }}</div>
         </div>
         <div class="kpi">
           <div class="k-label">Impressions</div>
-          <div class="k-val num">{{ '{:,.0f}'.format(total_impr).replace(',', '.') }}</div>
+          <div class="k-val num" id="kpi-impr">{{ '{:,.0f}'.format(total_impr).replace(',', '.') }}</div>
         </div>
         <div class="kpi">
           <div class="k-label">Clicks</div>
-          <div class="k-val num">{{ '{:,.0f}'.format(total_clicks).replace(',', '.') }}</div>
+          <div class="k-val num" id="kpi-clicks">{{ '{:,.0f}'.format(total_clicks).replace(',', '.') }}</div>
         </div>
       </div>
-      <div class="tablewrap">
-        <table>
+      <div class="tablewrap" id="ads-table-wrap">
+        <table id="ads-table">
           <thead><tr>
-            <th>Campaign</th><th>Status</th><th class="r">Spend (30d)</th><th class="r">Impr</th>
+            <th>Campaign</th><th>Status</th><th class="r">Spend</th><th class="r">Impr</th>
             <th class="r">Clicks</th><th class="r">CTR</th><th>Results</th>
           </tr></thead>
           <tbody>
@@ -234,7 +263,7 @@
         </table>
       </div>
       {% if ads.flags %}
-        <div class="flags">
+        <div class="flags" id="ads-flags">
           {% for f in ads.flags %}
             <div class="flag">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
@@ -244,109 +273,89 @@
         </div>
       {% endif %}
     {% endif %}
-  </section>
-
-  <!-- DMs -->
-  <section class="card">
-    <div class="card-head">
-      <h2><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>Messenger</h2>
-      <span class="sub num">{% if dms %}Page {{ dms.page }}{% endif %}</span>
     </div>
-
-    {% if dms_err %}
-      <div class="err">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-        {{ dms_err }}
-      </div>
-    {% elif not dms.threads %}
-      <div class="empty">No conversations found.</div>
-    {% else %}
-      <div class="inbox">
-        {% for t in dms.threads %}
-          <button class="dm" data-id="{{ t.id }}" data-name="{{ t.name }}">
-            <span class="avatar" aria-hidden="true">{{ t.name[:1] | upper }}</span>
-            <span class="dm-body">
-              <span class="dm-row1">
-                <span class="name">{{ t.name }}</span>
-                <span class="when num">{{ t.updated }}</span>
-              </span>
-              <span class="dm-last">
-                <span class="tag {{ 'you' if t.last_direction == '[You]' else 'them' }}">{{ 'You' if t.last_direction == '[You]' else 'Them' }}</span>{{ t.last_text }}
-              </span>
-            </span>
-          </button>
-        {% endfor %}
-      </div>
-    {% endif %}
   </section>
 </main>
 
-<!-- Chat drawer -->
-<div id="overlay">
-  <div class="scrim" data-close></div>
-  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-name">
-    <div class="drawer-head">
-      <span class="avatar" id="drawer-avatar" aria-hidden="true"></span>
-      <div>
-        <div class="name" id="drawer-name"></div>
-        <div class="sub">Conversation</div>
-      </div>
-      <button data-close aria-label="Close conversation">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></svg>
-      </button>
-    </div>
-    <div class="chat" id="chat"></div>
-  </aside>
-</div>
-
 <script>
-  const overlay = document.getElementById('overlay');
-  const chat = document.getElementById('chat');
-  const dName = document.getElementById('drawer-name');
-  const dAvatar = document.getElementById('drawer-avatar');
-  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const cache = new Map(); // tid -> rendered messages html, so reopening a chat is instant
+const rangeKey = new URLSearchParams(location.search).get('range') || 'last_30d';
 
-  function openDrawer() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-  function closeDrawer() {
-    overlay.classList.remove('open');
-    document.body.style.overflow = '';
-    if (location.hash) history.pushState('', '', location.pathname);
+function fmtRp(n) {
+  return 'Rp ' + Math.round(n).toLocaleString('id-ID');
+}
+function fmtNum(n) {
+  return Math.round(n).toLocaleString('id-ID');
+}
+function statusStyle(s) {
+  return s === 'ACTIVE'
+    ? 'background:var(--good-soft);color:var(--good)'
+    : 'background:var(--line);color:var(--muted)';
+}
+
+function renderTable(data) {
+  const isAd = data.level === 'ad';
+  const rows = data.campaigns;
+  const totalImpr = rows.reduce((s, r) => s + r.impressions, 0);
+  const totalClicks = rows.reduce((s, r) => s + r.clicks, 0);
+
+  document.getElementById('kpi-spend').innerHTML = fmtRp(data.total_spend);
+  document.getElementById('kpi-impr').innerHTML = fmtNum(totalImpr);
+  document.getElementById('kpi-clicks').innerHTML = fmtNum(totalClicks);
+
+  const firstCol = isAd ? '<th>Ad</th><th>Campaign</th>' : '<th>Campaign</th>';
+  let tbody = '';
+  for (const r of rows) {
+    const nameCol = isAd
+      ? `<td>${r.ad}</td><td style="color:var(--muted);font-size:12.5px">${r.campaign}</td>`
+      : `<td>${r.campaign}</td>`;
+    const result = r.results && r.results !== '-'
+      ? `<span class="pill">${r.results}</span>` : '-';
+    tbody += `<tr>
+      ${nameCol}
+      <td><span class="pill" style="${statusStyle(r.status)}">${r.status}</span></td>
+      <td class="r num">${fmtRp(r.spend)}</td>
+      <td class="r num">${fmtNum(r.impressions)}</td>
+      <td class="r num">${fmtNum(r.clicks)}</td>
+      <td class="r num">${r.ctr.toFixed(2)}%</td>
+      <td>${result}</td>
+    </tr>`;
   }
 
-  function renderMessages(msgs) {
-    if (!msgs.length) return '<div class="chat-state">No messages.</div>';
-    return msgs.map(m => {
-      const cls = m.direction === '[You]' ? 'you' : 'them';
-      return `<div class="msg ${cls}">${esc(m.text)}</div><div class="msg-time">${esc(m.time)}</div>`;
-    }).join('');
+  document.getElementById('ads-table').innerHTML = `
+    <thead><tr>${firstCol}<th>Status</th><th class="r">Spend</th><th class="r">Impr</th>
+      <th class="r">Clicks</th><th class="r">CTR</th><th>Results</th></tr></thead>
+    <tbody>${tbody || '<tr><td colspan="8" class="empty">No data.</td></tr>'}</tbody>`;
+
+  const flagsEl = document.getElementById('ads-flags');
+  if (flagsEl) {
+    flagsEl.innerHTML = (data.flags || []).map(f => `
+      <div class="flag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        ${f}
+      </div>`).join('');
   }
+}
 
-  async function loadThread(id, name) {
-    dName.textContent = name;
-    dAvatar.textContent = (name[0] || '?').toUpperCase();
-    openDrawer();
+async function switchLevel(level, btn) {
+  document.querySelectorAll('.level-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
 
-    if (cache.has(id)) { chat.innerHTML = cache.get(id); chat.scrollTop = chat.scrollHeight; return; }
-    chat.innerHTML = '<div class="chat-state"><div class="spinner"></div>Loading conversation...</div>';
-    try {
-      const r = await fetch(`/api/thread?id=${encodeURIComponent(id)}&name=${encodeURIComponent(name)}`);
-      const data = await r.json();
-      if (!r.ok || data.error) throw new Error(data.error || 'Failed to load');
-      const html = renderMessages(data.messages || []);
-      cache.set(id, html);
-      chat.innerHTML = html;
-      chat.scrollTop = chat.scrollHeight;
-    } catch (e) {
-      chat.innerHTML = `<div class="chat-state">${esc(e.message)}</div>`;
-    }
+  const wrap = document.getElementById('ads-table-wrap');
+  if (wrap) wrap.style.opacity = '0.4';
+
+  try {
+    const res = await fetch(`/api/ads?range=${rangeKey}&level=${level}`);
+    if (!res.ok) throw new Error(await res.text());
+    const data = await res.json();
+    renderTable(data);
+  } catch (e) {
+    document.getElementById('ads-body').innerHTML =
+      `<div class="err"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>${e.message}</div>`;
+  } finally {
+    const w = document.getElementById('ads-table-wrap');
+    if (w) w.style.opacity = '1';
   }
-
-  document.querySelectorAll('.dm').forEach(btn => {
-    btn.addEventListener('click', () => loadThread(btn.dataset.id, btn.dataset.name));
-  });
-  overlay.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeDrawer));
-  document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) closeDrawer(); });
+}
 </script>
 </body>
 </html>

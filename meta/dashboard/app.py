@@ -1,5 +1,5 @@
 """Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.app run"""
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 
 from . import meta_api
 from .meta_api import MetaError
@@ -19,14 +19,16 @@ def _safe(fetch):
 
 @app.route("/")
 def index():
-    ads, ads_err = _safe(meta_api.get_ads)
-    dms, dms_err = _safe(meta_api.get_dms)
-    return render_template("index.html", ads=ads, ads_err=ads_err, dms=dms, dms_err=dms_err)
+    range_key = request.args.get("range", "last_30d")
+    ads, ads_err = _safe(lambda: meta_api.get_ads(range_key, "campaign"))
+    return render_template("index.html", ads=ads, ads_err=ads_err, range_key=range_key)
 
 
 @app.route("/api/ads")
 def api_ads():
-    ads, err = _safe(meta_api.get_ads)
+    range_key = request.args.get("range", "last_30d")
+    level = request.args.get("level", "campaign")
+    ads, err = _safe(lambda: meta_api.get_ads(range_key, level))
     return (jsonify(error=err), 502) if err else jsonify(ads)
 
 

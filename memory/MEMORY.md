@@ -1,6 +1,8 @@
 # Memory Index
 
 - [Academic Credentials](user_academic_credentials.md) -- name Azriel Fajar Wicaksono, NIM 672025121, use on college work
+- [Viral Ad System](project_viral_ad_system.md) -- meta/creative/ 8-step ad SOP + swipe database (thumbnails/titles) + hook bank; "log swipes" reads folders
+- [Reddit Blocked Indonesia](feedback_reddit_blocked_indonesia.md) -- Reddit blocked in ID; never use for ID market research, use TikTok/IG/FB/Kaskus instead
 - [Projects Layout Grid](feedback_projects_layout.md) -- rc-prj__side is 2-tile grid; adding a 3rd tile breaks layout
 - [Parallaxnet Canada Client](project_parallaxnet_client.md) -- client name is Ali, communicates via WhatsApp
 - [Rielcode Outreach Campaign](project_rielcode_outreach.md) -- 5 Salatiga cafe leads, no website, cold messages ready, not yet contacted (2026-04-25)
@@ -36,3 +38,8 @@
 - [Parallaxnet Siber Indonesia Research](reference_parallaxnet_indonesia.md) -- report at research/parallaxnet-siber-indonesia.md; PT Parallaxnet Siber Indonesia = Indonesian EdTech arm of US Parallaxnet, Canada entity unverified
 - [Parallaxnet AIOS Project](project_parallaxnet_aios.md) -- AIOS workspace at Documents\Parallaxnet AI + PHP dashboard at xampp; waiting on Yurika data + subdomain name
 - [Faster-Whisper Local Setup](reference_faster_whisper.md) -- use python3.13 not python; nvidia pip wheels + add_dll_directory for GPU; ID/EN mix OK
+- [Never Revert to v1 Messenger](feedback_never_suggest_revert_v1_messenger.md) -- v1=Messenger paused on purpose, v3=WhatsApp correct; never suggest un-pausing v1 over cheaper CPL
+- [WA Greeting Short Ask Need First](feedback_wa_greeting_short_ask_need.md) -- WA auto-greeting short, ask need first, no price/demo dump on first message
+- [Remotion Fast Paced 3s Frame](feedback_remotion_fast_paced_3s_frame.md) -- ad renders fast-paced, max 3s (90 frames) per scene, use new redesign theme.ts not old design
+- [Ad Script Customer POV](feedback_ad_script_customer_pov.md) -- ad VO/scripts from customer POV (what THEY get), not seller POV (aku buat/kami bantu)
+- [Manim Setup](reference_manim_setup.md) -- Manim v0.20.1 global uv tool on py3.13 + FFmpeg; SAC disabled for PyAV DLLs; ad starter at manim-ads/rielcode_ad.py

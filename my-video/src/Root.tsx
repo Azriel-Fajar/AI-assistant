@@ -11,6 +11,7 @@ import {
   LAUNCH_DURATION,
   CODE,
 } from "./RielcodeAd/LaunchAd";
+import { V3AngleA, V3AngleB } from "./RielcodeAd/V3Ads";
 
 const ids = [
   "Angle1-NoOnlinePresence",
@@ -67,6 +68,32 @@ export const RemotionRoot: React.FC = () => {
           height={1920}
           defaultProps={{ code: CODE }}
         />
+      </Folder>
+      <Folder name="V3">
+        <Composition
+          id="V3-AngleA-9x16"
+          component={V3AngleA}
+          durationInFrames={550}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        <Composition
+          id="V3-AngleB-9x16"
+          component={V3AngleB}
+          durationInFrames={480}
+          fps={30}
+          width={1080}
+          height={1920}
+        />
+        {/* Angle A other ratios */}
+        <Composition id="V3-AngleA-1x1" component={V3AngleA} durationInFrames={550} fps={30} width={1080} height={1080} />
+        <Composition id="V3-AngleA-4x5" component={V3AngleA} durationInFrames={550} fps={30} width={1080} height={1350} />
+        <Composition id="V3-AngleA-16x9" component={V3AngleA} durationInFrames={550} fps={30} width={1920} height={1080} />
+        {/* Angle B other ratios */}
+        <Composition id="V3-AngleB-1x1" component={V3AngleB} durationInFrames={480} fps={30} width={1080} height={1080} />
+        <Composition id="V3-AngleB-4x5" component={V3AngleB} durationInFrames={480} fps={30} width={1080} height={1350} />
+        <Composition id="V3-AngleB-16x9" component={V3AngleB} durationInFrames={480} fps={30} width={1920} height={1080} />
       </Folder>
       <Folder name="Promo">
         {promoSizes.map((s) => (

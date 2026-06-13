@@ -34,7 +34,7 @@ def _missing(name, hint):
     raise MetaError(f"Missing {name} in .env. {hint}")
 
 
-def _get(url):
+def _get(url, _tries=3):
     try:
         with urllib.request.urlopen(url, timeout=30) as resp:
             payload = json.loads(resp.read().decode("utf-8"))
@@ -50,6 +50,10 @@ def _get(url):
     if isinstance(payload, dict) and payload.get("error"):
         err = payload["error"]
         code = err.get("code")
+        # Code 2 is Meta's transient "unexpected error, retry later" - back off and retry.
+        if code == 2 and _tries > 1:
+            time.sleep(1.5)
+            return _get(url, _tries - 1)
         hint = ""
         if code == 190:
             hint = " -> Token invalid or expired. Regenerate it (see meta/SETUP.md)."
@@ -94,17 +98,45 @@ def _results(actions):
     return "-"
 
 
-def get_ads():
-    return _cached("ads", CACHE_TTL, _get_ads)
+# UI range key -> (label, Meta insights params). Meta has presets up to 90d;
+# 6mo/12mo need an explicit time_range computed from today.
+def _range_params(key):
+    from datetime import date, timedelta
+
+    presets = {
+        "today": ("Today", {"date_preset": "today"}),
+        "last_7d": ("Last 7 days", {"date_preset": "last_7d"}),
+        "last_30d": ("Last 30 days", {"date_preset": "last_30d"}),
+        "last_90d": ("Last 3 months", {"date_preset": "last_90d"}),
+    }
+    if key in presets:
+        return presets[key]
+    days = {"last_180d": 180, "last_365d": 365}.get(key)
+    if days:
+        label = "Last 6 months" if days == 180 else "Last 12 months"
+        until = date.today()
+        since = until - timedelta(days=days)
+        tr = json.dumps({"since": since.isoformat(), "until": until.isoformat()})
+        return label, {"time_range": tr}
+    return _range_params("last_30d")  # unknown key -> safe default
 
 
-def _get_ads():
+def get_ads(range_key="last_30d", level="campaign"):
+    return _cached(f"ads:{range_key}:{level}", CACHE_TTL, lambda: _get_ads(range_key, level))
+
+
+def _get_ads(range_key="last_30d", level="campaign"):
     if not config.TOKEN:
         _missing("META_ACCESS_TOKEN", "Follow meta/SETUP.md to create a System User token.")
     if not config.ACCOUNT_ID or config.ACCOUNT_ID == "act_":
         _missing("META_AD_ACCOUNT_ID", "Should be act_<digits> from Ads Manager.")
 
-    # Fetch all campaigns (includes paused/no-spend ones)
+    range_label, range_params = _range_params(range_key)
+
+    if level == "ad":
+        return _get_ads_ad_level(range_key, range_label, range_params)
+
+    # --- campaign level ---
     camp_url = _url(
         f"{config.ACCOUNT_ID}/campaigns",
         {
@@ -115,15 +147,14 @@ def _get_ads():
     )
     all_campaigns = {c["id"]: c for c in _get(camp_url).get("data", [])}
 
-    # Fetch insights for last 30 days (campaigns with no delivery won't appear here)
     insights_url = _url(
         f"{config.ACCOUNT_ID}/insights",
         {
             "level": "campaign",
-            "date_preset": "last_30d",
             "limit": 100,
             "fields": "campaign_id,campaign_name,spend,impressions,clicks,ctr,actions",
             "access_token": config.TOKEN,
+            **range_params,
         },
     )
     insights_by_id = {r["campaign_id"]: r for r in _get(insights_url).get("data", [])}
@@ -153,7 +184,64 @@ def _get_ads():
         if spend > 0 and clicks == 0:
             flags.append(f"spend with zero clicks: {name}")
 
-    return {"campaigns": campaigns, "total_spend": round(total, 2), "flags": flags, "account": config.ACCOUNT_ID}
+    return {"campaigns": campaigns, "total_spend": round(total, 2), "flags": flags,
+            "account": config.ACCOUNT_ID, "range_key": range_key, "range_label": range_label,
+            "level": "campaign"}
+
+
+def _get_ads_ad_level(range_key, range_label, range_params):
+    # Fetch all ads (includes paused/no-spend ones)
+    ads_url = _url(
+        f"{config.ACCOUNT_ID}/ads",
+        {
+            "fields": "id,name,status,effective_status,campaign{name}",
+            "limit": 200,
+            "access_token": config.TOKEN,
+        },
+    )
+    all_ads = {a["id"]: a for a in _get(ads_url).get("data", [])}
+
+    insights_url = _url(
+        f"{config.ACCOUNT_ID}/insights",
+        {
+            "level": "ad",
+            "limit": 200,
+            "fields": "ad_id,ad_name,campaign_name,spend,impressions,clicks,ctr,actions",
+            "access_token": config.TOKEN,
+            **range_params,
+        },
+    )
+    insights_by_id = {r["ad_id"]: r for r in _get(insights_url).get("data", [])}
+
+    rows, flags, total = [], [], 0.0
+    for aid, a in all_ads.items():
+        r = insights_by_id.get(aid, {})
+        spend = float(r.get("spend") or 0)
+        impr = int(float(r.get("impressions") or 0))
+        clicks = int(float(r.get("clicks") or 0))
+        total += spend
+        ad_name = a.get("name") or r.get("ad_name") or "(unnamed)"
+        campaign_name = (a.get("campaign") or {}).get("name") or r.get("campaign_name") or "-"
+        status = a.get("effective_status", "UNKNOWN")
+        rows.append(
+            {
+                "ad": ad_name,
+                "campaign": campaign_name,
+                "status": status,
+                "spend": round(spend, 2),
+                "impressions": impr,
+                "clicks": clicks,
+                "ctr": round(float(r.get("ctr") or 0), 2),
+                "results": _results(r.get("actions")),
+            }
+        )
+        if spend > 0 and impr == 0:
+            flags.append(f"spending but not delivering: {ad_name}")
+
+    rows.sort(key=lambda x: x["spend"], reverse=True)
+    return {"campaigns": rows, "total_spend": round(total, 2), "flags": flags,
+            "account": config.ACCOUNT_ID, "range_key": range_key, "range_label": range_label,
+            "level": "ad"}
 
 
 # --- DMs ---
