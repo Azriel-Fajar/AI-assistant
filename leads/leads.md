@@ -19,3 +19,12 @@
 | 016 | TwinFit Gym | @twinfit_gym | - | cold-outreach | ready | 2026-06-11 | DM now (gym-fitness demo) | Gym, Salatiga. Verified: no website, no bio link |
 | 017 | Enny C21 Platinum | @ennyc21platinum | - | cold-outreach | ready | 2026-06-11 | DM now (real-estate demo) | Real estate, Semarang. Verified: no website, only ctcin.bio link-in-bio |
 | 018 | Info Rumah Solo | @jual_rumahsolo | - | cold-outreach | ready | 2026-06-11 | DM now (real-estate demo) | Real estate, Solo. Verified: no website, only wa.me |
+
+## Active Potential Customers (proposal stage)
+
+| Cust | Business | Industry | Stage | Last Contact | Next Action | Notes |
+|------|----------|----------|-------|--------------|-------------|-------|
+| 1 | Jatra Scale Indonesia | Industrial weighing & calibration | proposal sent | 2026-06-14 | Present Pro+Blog (2.4jt) vs Starter-landing (1jt) w/ ranking caveat | PT Kargo Jatra Muliatua, jatrascale.com. Wants SEO ranking. Brief: projects/Jatra Scale Indonesia/ |
+| 2 | - | - | awaiting call | - | Wait for customer call | Placeholder, details pending |
+| 3 | - | - | awaiting call | - | Wait for customer call | Placeholder, details pending |
+| 4 | CNProject Waterproofing | Waterproofing / epoxy contractor | proposal sent | 2026-06-15 | Send 1-page landing spec (1jt); wait for pick A (8-page 2.255jt) or B (1-page 1jt) | Chemkon Nusantara Perkasa, Jakarta/PIK2. Brief: projects/CNProject Waterproofing/ |

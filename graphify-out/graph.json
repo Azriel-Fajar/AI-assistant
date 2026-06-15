@@ -10539,7 +10539,7 @@
       "source_file": "tools/figma/lib/output.js",
       "source_location": "L1",
       "id": "tools_figma_lib_output_js",
-      "community": 346,
+      "community": 343,
       "norm_label": "output.js"
     },
     {
@@ -10548,7 +10548,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L4",
       "id": "lib_output_printtable",
-      "community": 346,
+      "community": 343,
       "norm_label": "printtable()"
     },
     {
@@ -10557,7 +10557,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L13",
       "id": "lib_output_printjson",
-      "community": 346,
+      "community": 343,
       "norm_label": "printjson()"
     },
     {
@@ -10566,7 +10566,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L17",
       "id": "lib_output_printsuccess",
-      "community": 346,
+      "community": 343,
       "norm_label": "printsuccess()"
     },
     {
@@ -10926,7 +10926,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L1",
       "id": "tools_google_auth_oauth_js",
-      "community": 343,
+      "community": 346,
       "norm_label": "oauth.js"
     },
     {
@@ -10935,7 +10935,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L8",
       "id": "auth_oauth_dirname",
-      "community": 343,
+      "community": 346,
       "norm_label": "__dirname"
     },
     {
@@ -10944,7 +10944,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L9",
       "id": "auth_oauth_config_path",
-      "community": 343,
+      "community": 346,
       "norm_label": "config_path"
     },
     {
@@ -10953,7 +10953,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L10",
       "id": "auth_oauth_token_path",
-      "community": 343,
+      "community": 346,
       "norm_label": "token_path"
     },
     {
@@ -10962,7 +10962,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L12",
       "id": "auth_oauth_scopes",
-      "community": 343,
+      "community": 346,
       "norm_label": "scopes"
     },
     {
@@ -10971,7 +10971,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L19",
       "id": "auth_oauth_loadconfig",
-      "community": 343,
+      "community": 346,
       "norm_label": "loadconfig()"
     },
     {
@@ -10980,7 +10980,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L27",
       "id": "auth_oauth_createoauthclient",
-      "community": 343,
+      "community": 346,
       "norm_label": "createoauthclient()"
     },
     {
@@ -10989,7 +10989,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L36",
       "id": "auth_oauth_getauthenticatedclient",
-      "community": 343,
+      "community": 346,
       "norm_label": "getauthenticatedclient()"
     },
     {
@@ -10998,7 +10998,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L57",
       "id": "auth_oauth_runauthflow",
-      "community": 359,
+      "community": 346,
       "norm_label": "runauthflow()"
     },
     {
@@ -11322,7 +11322,7 @@
       "source_file": "tools/google/lib/output.js",
       "source_location": "L1",
       "id": "tools_google_lib_output_js",
-      "community": 346,
+      "community": 343,
       "norm_label": "output.js"
     },
     {
@@ -11331,7 +11331,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L21",
       "id": "lib_output_printinfo",
-      "community": 346,
+      "community": 343,
       "norm_label": "printinfo()"
     },
     {
@@ -11619,7 +11619,7 @@
       "source_file": "tools/google/youtube/index.js",
       "source_location": "L281",
       "id": "youtube_index_runauth",
-      "community": 359,
+      "community": 346,
       "norm_label": "runauth()"
     },
     {
@@ -12105,7 +12105,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L1",
       "id": "tools_social_lib_output_js",
-      "community": 346,
+      "community": 343,
       "norm_label": "output.js"
     },
     {
@@ -32373,7 +32373,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L85",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_1_define_content_collection_schemas",
-      "community": 622,
+      "community": 12,
       "norm_label": "task 2i.1: define content collection schemas"
     },
     {
@@ -32382,7 +32382,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L92",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_1",
-      "community": 622,
+      "community": 12,
       "norm_label": "code:ts (// src/content.config.ts)"
     },
     {
@@ -32391,7 +32391,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L164",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_2",
-      "community": 622,
+      "community": 12,
       "norm_label": "code:bash (git add src/content.config.ts)"
     },
     {
@@ -32670,7 +32670,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L687",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_8_convert_studio_faq_section_to_read_from_collection",
-      "community": 623,
+      "community": 12,
       "norm_label": "task 2i.8: convert `/studio` faq section to read from collection"
     },
     {
@@ -32679,7 +32679,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L694",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_27",
-      "community": 623,
+      "community": 12,
       "norm_label": "code:ts (import { getcollection } from 'astro:content';)"
     },
     {
@@ -32688,7 +32688,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L713",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_28",
-      "community": 623,
+      "community": 12,
       "norm_label": "code:bash (git add src/pages/studio.astro)"
     },
     {
@@ -32742,7 +32742,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L797",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_10_add_301_redirects_for_legacy_phase_1_urls",
-      "community": 495,
+      "community": 12,
       "norm_label": "task 2i.10: add 301 redirects for legacy phase 1 urls"
     },
     {
@@ -32751,7 +32751,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L807",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_33",
-      "community": 495,
+      "community": 12,
       "norm_label": "code:block33 (/portfolio          /work             301)"
     },
     {
@@ -32760,7 +32760,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L819",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_34",
-      "community": 495,
+      "community": 12,
       "norm_label": "code:astro (---)"
     },
     {
@@ -32769,7 +32769,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L848",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_35",
-      "community": 495,
+      "community": 12,
       "norm_label": "code:bash (ls dist/_redirects dist/portfolio/index.html dist/packages/i)"
     },
     {
@@ -32778,7 +32778,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L854",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_36",
-      "community": 495,
+      "community": 12,
       "norm_label": "code:bash (git add public/_redirects src/pages/portfolio.astro src/page)"
     },
     {
@@ -32859,7 +32859,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L917",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_2_enable_astro_clientrouter_view_transitions_reduced_motion_css",
-      "community": 361,
+      "community": 620,
       "norm_label": "task 2h.2: enable astro `<clientrouter />` (view transitions) + reduced-motion css"
     },
     {
@@ -32868,7 +32868,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L927",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_42",
-      "community": 361,
+      "community": 620,
       "norm_label": "code:ts (import { clientrouter } from 'astro:transitions';)"
     },
     {
@@ -32877,7 +32877,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L933",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_43",
-      "community": 361,
+      "community": 620,
       "norm_label": "code:astro (<clientrouter />)"
     },
     {
@@ -32886,7 +32886,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L941",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_44",
-      "community": 361,
+      "community": 620,
       "norm_label": "code:css (@media (prefers-reduced-motion: reduce) {)"
     },
     {
@@ -32895,7 +32895,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L960",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_45",
-      "community": 361,
+      "community": 620,
       "norm_label": "code:bash (git add src/layouts/baselayout.astro src/styles/global.css)"
     },
     {
@@ -32976,7 +32976,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1122",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_5_editorialhero_staggered_word_reveal",
-      "community": 620,
+      "community": 361,
       "norm_label": "task 2h.5: editorialhero staggered word reveal"
     },
     {
@@ -32985,7 +32985,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1131",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_52",
-      "community": 620,
+      "community": 361,
       "norm_label": "code:astro (<h1 class=\"rc-hero__title\">)"
     },
     {
@@ -32994,7 +32994,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1150",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_53",
-      "community": 620,
+      "community": 361,
       "norm_label": "code:css (.rc-hero__word {)"
     },
     {
@@ -33003,7 +33003,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1185",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_54",
-      "community": 620,
+      "community": 361,
       "norm_label": "code:bash (git add src/components/editorialhero.astro)"
     },
     {
@@ -33012,7 +33012,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1192",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_6_gsap_pinned_image_scene_for_case_study_route",
-      "community": 621,
+      "community": 361,
       "norm_label": "task 2h.6: gsap pinned-image scene for case study route"
     },
     {
@@ -33021,7 +33021,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1200",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_55",
-      "community": 621,
+      "community": 361,
       "norm_label": "code:ts (// src/scripts/gsap-scenes.ts)"
     },
     {
@@ -33030,7 +33030,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1243",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_56",
-      "community": 621,
+      "community": 361,
       "norm_label": "code:astro (<script>)"
     },
     {
@@ -33039,7 +33039,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1256",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_57",
-      "community": 621,
+      "community": 361,
       "norm_label": "code:bash (git add src/scripts/gsap-scenes.ts src/pages/work/[...slug].)"
     },
     {
@@ -33147,7 +33147,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1420",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2j_4_lighthouse_runner_script",
-      "community": 619,
+      "community": 6,
       "norm_label": "task 2j.4: lighthouse runner script"
     },
     {
@@ -33156,7 +33156,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1428",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_65",
-      "community": 619,
+      "community": 6,
       "norm_label": "code:js (// scripts/qa/lighthouse.mjs)"
     },
     {
@@ -33165,7 +33165,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1489",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_66",
-      "community": 619,
+      "community": 6,
       "norm_label": "code:bash (npm run build && npm run preview -- --port 4321)"
     },
     {
@@ -33174,7 +33174,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1497",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_67",
-      "community": 619,
+      "community": 6,
       "norm_label": "code:bash (node scripts/qa/lighthouse.mjs)"
     },
     {
@@ -33183,7 +33183,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1505",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_68",
-      "community": 619,
+      "community": 6,
       "norm_label": "code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse)"
     },
     {
@@ -33219,7 +33219,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1578",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2j_6_update_the_phase_2_spec_to_mark_all_tracks_complete",
-      "community": 624,
+      "community": 6,
       "norm_label": "task 2j.6: update the phase 2 spec to mark all tracks complete"
     },
     {
@@ -33228,7 +33228,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1587",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_71",
-      "community": 624,
+      "community": 6,
       "norm_label": "code:block71 (track 2h \u2014 motion layer (gsap, scrolltrigger, view transitio)"
     },
     {
@@ -33237,7 +33237,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1597",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_72",
-      "community": 624,
+      "community": 6,
       "norm_label": "code:bash (cd c:\\users\\afw14\\onedrive\\documents\\jarvis)"
     },
     {
@@ -34267,6 +34267,78 @@
       "norm_label": "readme.md"
     },
     {
+      "label": "active-customers.md",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L1",
+      "id": "leads_active_customers_md",
+      "community": 619,
+      "norm_label": "active-customers.md"
+    },
+    {
+      "label": "Active Potential Customers \u2014 Context Hub",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L1",
+      "id": "leads_active_customers_active_potential_customers_context_hub",
+      "community": 619,
+      "norm_label": "active potential customers \u2014 context hub"
+    },
+    {
+      "label": "Cust 1 \u2014 Jatra Scale Indonesia",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L11",
+      "id": "leads_active_customers_cust_1_jatra_scale_indonesia",
+      "community": 619,
+      "norm_label": "cust 1 \u2014 jatra scale indonesia"
+    },
+    {
+      "label": "Cust 2 \u2014 (awaiting call)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L20",
+      "id": "leads_active_customers_cust_2_awaiting_call",
+      "community": 619,
+      "norm_label": "cust 2 \u2014 (awaiting call)"
+    },
+    {
+      "label": "Cust 3 \u2014 (awaiting call)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L23",
+      "id": "leads_active_customers_cust_3_awaiting_call",
+      "community": 619,
+      "norm_label": "cust 3 \u2014 (awaiting call)"
+    },
+    {
+      "label": "Cust 4 \u2014 CNProject Waterproofing",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L26",
+      "id": "leads_active_customers_cust_4_cnproject_waterproofing",
+      "community": 619,
+      "norm_label": "cust 4 \u2014 cnproject waterproofing"
+    },
+    {
+      "label": "Cust 5 \u2014 (new WA lead)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L36",
+      "id": "leads_active_customers_cust_5_new_wa_lead",
+      "community": 619,
+      "norm_label": "cust 5 \u2014 (new wa lead)"
+    },
+    {
+      "label": "Cross-cust patterns",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L44",
+      "id": "leads_active_customers_cross_cust_patterns",
+      "community": 619,
+      "norm_label": "cross-cust patterns"
+    },
+    {
       "label": "archive.md",
       "file_type": "document",
       "source_file": "leads/archive.md",
@@ -34283,6 +34355,15 @@
       "id": "leads_leads_md",
       "community": 177,
       "norm_label": "leads.md"
+    },
+    {
+      "label": "Active Potential Customers (proposal stage)",
+      "file_type": "document",
+      "source_file": "leads/leads.md",
+      "source_location": "L23",
+      "id": "leads_leads_active_potential_customers_proposal_stage",
+      "community": 177,
+      "norm_label": "active potential customers (proposal stage)"
     },
     {
       "label": "feedback_ad_script_customer_pov.md",
@@ -34364,6 +34445,15 @@
       "id": "memory_feedback_powershell_python_utf8_md",
       "community": 311,
       "norm_label": "feedback_powershell_python_utf8.md"
+    },
+    {
+      "label": "feedback_price_by_templates_not_pages.md",
+      "file_type": "document",
+      "source_file": "memory/feedback_price_by_templates_not_pages.md",
+      "source_location": "L1",
+      "id": "memory_feedback_price_by_templates_not_pages_md",
+      "community": 627,
+      "norm_label": "feedback_price_by_templates_not_pages.md"
     },
     {
       "label": "feedback_projects_layout.md",
@@ -34481,6 +34571,24 @@
       "id": "memory_project_coldoutreach_centraljava_2026_06_outreach_status_as_of_2026_06_11",
       "community": 163,
       "norm_label": "outreach status (as of 2026-06-11)"
+    },
+    {
+      "label": "project_cust2_call.md",
+      "file_type": "document",
+      "source_file": "memory/project_cust2_call.md",
+      "source_location": "L1",
+      "id": "memory_project_cust2_call_md",
+      "community": 628,
+      "norm_label": "project_cust2_call.md"
+    },
+    {
+      "label": "project_cust3_frontiersin_clone.md",
+      "file_type": "document",
+      "source_file": "memory/project_cust3_frontiersin_clone.md",
+      "source_location": "L1",
+      "id": "memory_project_cust3_frontiersin_clone_md",
+      "community": 629,
+      "norm_label": "project_cust3_frontiersin_clone.md"
     },
     {
       "label": "project_demo_sites.md",
@@ -40106,6 +40214,285 @@
       "id": "rules_voiceover_delaying_audio_start",
       "community": 115,
       "norm_label": "delaying audio start"
+    },
+    {
+      "label": "client-brief.md",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L1",
+      "id": "projects_cnproject_waterproofing_client_brief_md",
+      "community": 495,
+      "norm_label": "client-brief.md"
+    },
+    {
+      "label": "CNProject Waterproofing \u2014 Client Brief",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L1",
+      "id": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief",
+      "community": 495,
+      "norm_label": "cnproject waterproofing \u2014 client brief"
+    },
+    {
+      "label": "Business",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L6",
+      "id": "cnproject_waterproofing_client_brief_business",
+      "community": 495,
+      "norm_label": "business"
+    },
+    {
+      "label": "Goal",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L15",
+      "id": "cnproject_waterproofing_client_brief_goal",
+      "community": 495,
+      "norm_label": "goal"
+    },
+    {
+      "label": "Assets status",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L20",
+      "id": "cnproject_waterproofing_client_brief_assets_status",
+      "community": 495,
+      "norm_label": "assets status"
+    },
+    {
+      "label": "REFERENCE SITE SPEC (8-page version, scraped 2026-06-15)",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L25",
+      "id": "cnproject_waterproofing_client_brief_reference_site_spec_8_page_version_scraped_2026_06_15",
+      "community": 495,
+      "norm_label": "reference site spec (8-page version, scraped 2026-06-15)"
+    },
+    {
+      "label": "PRICING (Rielcode price list)",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L38",
+      "id": "cnproject_waterproofing_client_brief_pricing_rielcode_price_list",
+      "community": 495,
+      "norm_label": "pricing (rielcode price list)"
+    },
+    {
+      "label": "Option A \u2014 8-page multi-page site: IDR 2.255.000",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L40",
+      "id": "cnproject_waterproofing_client_brief_option_a_8_page_multi_page_site_idr_2_255_000",
+      "community": 495,
+      "norm_label": "option a \u2014 8-page multi-page site: idr 2.255.000"
+    },
+    {
+      "label": "Option B \u2014 1 landing page (customer's current lean): IDR 1.000.000",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L47",
+      "id": "cnproject_waterproofing_client_brief_option_b_1_landing_page_customer_s_current_lean_idr_1_000_000",
+      "community": 495,
+      "norm_label": "option b \u2014 1 landing page (customer's current lean): idr 1.000.000"
+    },
+    {
+      "label": "STATUS / NEXT STEP",
+      "file_type": "document",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L52",
+      "id": "cnproject_waterproofing_client_brief_status_next_step",
+      "community": 495,
+      "norm_label": "status / next step"
+    },
+    {
+      "label": "site-review-2026-06-13.md",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L1",
+      "id": "projects_imi_interskala_site_review_2026_06_13_md",
+      "community": 626,
+      "norm_label": "site-review-2026-06-13.md"
+    },
+    {
+      "label": "Site Review \u2014 imi.interskala.com",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L1",
+      "id": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com",
+      "community": 626,
+      "norm_label": "site review \u2014 imi.interskala.com"
+    },
+    {
+      "label": "What the Site Is",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L8",
+      "id": "imi_interskala_site_review_2026_06_13_what_the_site_is",
+      "community": 626,
+      "norm_label": "what the site is"
+    },
+    {
+      "label": "Feature Audit",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L14",
+      "id": "imi_interskala_site_review_2026_06_13_feature_audit",
+      "community": 626,
+      "norm_label": "feature audit"
+    },
+    {
+      "label": "Cost to Build at Rielcode Rates",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L40",
+      "id": "imi_interskala_site_review_2026_06_13_cost_to_build_at_rielcode_rates",
+      "community": 626,
+      "norm_label": "cost to build at rielcode rates"
+    },
+    {
+      "label": "Recommended: Pro Plan + Add-ons (leaner quote)",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L42",
+      "id": "imi_interskala_site_review_2026_06_13_recommended_pro_plan_add_ons_leaner_quote",
+      "community": 626,
+      "norm_label": "recommended: pro plan + add-ons (leaner quote)"
+    },
+    {
+      "label": "Alternative: Premium Plan (closer to full scale)",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L53",
+      "id": "imi_interskala_site_review_2026_06_13_alternative_premium_plan_closer_to_full_scale",
+      "community": 626,
+      "norm_label": "alternative: premium plan (closer to full scale)"
+    },
+    {
+      "label": "Recommended Quote Range",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L63",
+      "id": "imi_interskala_site_review_2026_06_13_recommended_quote_range",
+      "community": 626,
+      "norm_label": "recommended quote range"
+    },
+    {
+      "label": "Missing Features to Suggest as Upgrades",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L72",
+      "id": "imi_interskala_site_review_2026_06_13_missing_features_to_suggest_as_upgrades",
+      "community": 626,
+      "norm_label": "missing features to suggest as upgrades"
+    },
+    {
+      "label": "Sources Used",
+      "file_type": "document",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L83",
+      "id": "imi_interskala_site_review_2026_06_13_sources_used",
+      "community": 626,
+      "norm_label": "sources used"
+    },
+    {
+      "label": "client-brief.md",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L1",
+      "id": "projects_jatra_scale_indonesia_client_brief_md",
+      "community": 625,
+      "norm_label": "client-brief.md"
+    },
+    {
+      "label": "Jatra Scale Indonesia \u2014 Client Brief",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L1",
+      "id": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief",
+      "community": 625,
+      "norm_label": "jatra scale indonesia \u2014 client brief"
+    },
+    {
+      "label": "Business",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L5",
+      "id": "jatra_scale_indonesia_client_brief_business",
+      "community": 625,
+      "norm_label": "business"
+    },
+    {
+      "label": "Goal",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L13",
+      "id": "jatra_scale_indonesia_client_brief_goal",
+      "community": 625,
+      "norm_label": "goal"
+    },
+    {
+      "label": "Assets status",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L18",
+      "id": "jatra_scale_indonesia_client_brief_assets_status",
+      "community": 625,
+      "norm_label": "assets status"
+    },
+    {
+      "label": "CAUTION FLAGS",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L24",
+      "id": "jatra_scale_indonesia_client_brief_caution_flags",
+      "community": 625,
+      "norm_label": "caution flags"
+    },
+    {
+      "label": "PRICING DECISION",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L30",
+      "id": "jatra_scale_indonesia_client_brief_pricing_decision",
+      "community": 625,
+      "norm_label": "pricing decision"
+    },
+    {
+      "label": "Recommended: Pro Plan + Blog add-on = IDR 2.4jt",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L34",
+      "id": "jatra_scale_indonesia_client_brief_recommended_pro_plan_blog_add_on_idr_2_4jt",
+      "community": 625,
+      "norm_label": "recommended: pro plan + blog add-on = idr 2.4jt"
+    },
+    {
+      "label": "Why Starter cannot be compressed to fit",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L42",
+      "id": "jatra_scale_indonesia_client_brief_why_starter_cannot_be_compressed_to_fit",
+      "community": 625,
+      "norm_label": "why starter cannot be compressed to fit"
+    },
+    {
+      "label": "Only real Starter option (if budget is hard cap)",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L56",
+      "id": "jatra_scale_indonesia_client_brief_only_real_starter_option_if_budget_is_hard_cap",
+      "community": 625,
+      "norm_label": "only real starter option (if budget is hard cap)"
+    },
+    {
+      "label": "NEXT STEP",
+      "file_type": "document",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L60",
+      "id": "jatra_scale_indonesia_client_brief_next_step",
+      "community": 625,
+      "norm_label": "next step"
     },
     {
       "label": "README.md",
@@ -57136,9 +57523,9 @@
       "source_file": "scripts/playwright/scrape-artifact.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_playwright_scrape_artifact_js",
-      "target": "playwright_scrape_artifact_inner",
-      "confidence_score": 1.0
+      "target": "playwright_scrape_artifact_inner"
     },
     {
       "relation": "contains",
@@ -77059,6 +77446,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "leads/leads.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_leads_leads",
+      "target": "leads_leads_active_potential_customers_proposal_stage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/memory/MEMORY.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -85739,6 +86136,76 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_md",
+      "target": "leads_active_customers_active_potential_customers_context_hub"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_1_jatra_scale_indonesia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_2_awaiting_call"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_3_awaiting_call"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_4_cnproject_waterproofing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_5_new_wa_lead",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cross_cust_patterns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "memory/feedback_flask_run_command.md",
       "source_location": "L13",
       "weight": 1.0,
@@ -91169,6 +91636,286 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_cnproject_waterproofing_client_brief_md",
+      "target": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief",
+      "target": "cnproject_waterproofing_client_brief_business"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief",
+      "target": "cnproject_waterproofing_client_brief_goal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief",
+      "target": "cnproject_waterproofing_client_brief_assets_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief",
+      "target": "cnproject_waterproofing_client_brief_reference_site_spec_8_page_version_scraped_2026_06_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief",
+      "target": "cnproject_waterproofing_client_brief_pricing_rielcode_price_list"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_cnproject_waterproofing_client_brief",
+      "target": "cnproject_waterproofing_client_brief_status_next_step"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_pricing_rielcode_price_list",
+      "target": "cnproject_waterproofing_client_brief_option_a_8_page_multi_page_site_idr_2_255_000"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/CNProject Waterproofing/client-brief.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "cnproject_waterproofing_client_brief_pricing_rielcode_price_list",
+      "target": "cnproject_waterproofing_client_brief_option_b_1_landing_page_customer_s_current_lean_idr_1_000_000"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_imi_interskala_site_review_2026_06_13_md",
+      "target": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com",
+      "target": "imi_interskala_site_review_2026_06_13_what_the_site_is"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com",
+      "target": "imi_interskala_site_review_2026_06_13_feature_audit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com",
+      "target": "imi_interskala_site_review_2026_06_13_cost_to_build_at_rielcode_rates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com",
+      "target": "imi_interskala_site_review_2026_06_13_recommended_quote_range"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com",
+      "target": "imi_interskala_site_review_2026_06_13_missing_features_to_suggest_as_upgrades"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_site_review_imi_interskala_com",
+      "target": "imi_interskala_site_review_2026_06_13_sources_used"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_cost_to_build_at_rielcode_rates",
+      "target": "imi_interskala_site_review_2026_06_13_recommended_pro_plan_add_ons_leaner_quote"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/imi-interskala/site-review-2026-06-13.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "imi_interskala_site_review_2026_06_13_cost_to_build_at_rielcode_rates",
+      "target": "imi_interskala_site_review_2026_06_13_alternative_premium_plan_closer_to_full_scale"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_jatra_scale_indonesia_client_brief_md",
+      "target": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief",
+      "target": "jatra_scale_indonesia_client_brief_business"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief",
+      "target": "jatra_scale_indonesia_client_brief_goal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief",
+      "target": "jatra_scale_indonesia_client_brief_assets_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief",
+      "target": "jatra_scale_indonesia_client_brief_caution_flags"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief",
+      "target": "jatra_scale_indonesia_client_brief_pricing_decision"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_jatra_scale_indonesia_client_brief",
+      "target": "jatra_scale_indonesia_client_brief_next_step"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_pricing_decision",
+      "target": "jatra_scale_indonesia_client_brief_recommended_pro_plan_blog_add_on_idr_2_4jt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_pricing_decision",
+      "target": "jatra_scale_indonesia_client_brief_why_starter_cannot_be_compressed_to_fit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/Jatra Scale Indonesia/client-brief.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jatra_scale_indonesia_client_brief_pricing_decision",
+      "target": "jatra_scale_indonesia_client_brief_only_real_starter_option_if_budget_is_hard_cap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/rielcode-growth-plan/ads-monitor.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -96458,5 +97205,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "26b0f489d86be88a11fdaf69ab61ce0838bda06a"
+  "built_at_commit": "29cbf792c111815f921be1af7c0f1d36bb3d68fe"
 }

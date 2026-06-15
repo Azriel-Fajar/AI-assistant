@@ -345,27 +345,27 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\app.json": {
-    "mtime": 1780969564.4341972,
+    "mtime": 1781506159.3538547,
     "ast_hash": "d90332cf08a918e5be717487e8b892fe",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\appearance.json": {
-    "mtime": 1780969565.5050116,
+    "mtime": 1781506159.9592206,
     "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\core-plugins.json": {
-    "mtime": 1780969563.7634704,
+    "mtime": 1781506158.6297007,
     "ast_hash": "7c877bea49eaeabb100563bd157b9051",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\graph.json": {
-    "mtime": 1780969566.214,
+    "mtime": 1781506161.137,
     "ast_hash": "ab371afd0f27b142a671ceb2a61d9b6c",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\workspace.json": {
-    "mtime": 1780969565.5243087,
+    "mtime": 1781506160.0740724,
     "ast_hash": "99b1296d949188b5ef684b6b9d7ec698",
     "semantic_hash": ""
   },
@@ -795,8 +795,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\scrape-artifact.js": {
-    "mtime": 1781504274.8301847,
-    "ast_hash": "8d63cfb2de3690b0989ddc6a55d1cfb0",
+    "mtime": 1781505841.169725,
+    "ast_hash": "0029e2ff9c4ef95d9ae47bf0440e4be5",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\scripts\\playwright\\screenshot-all-mobile.js": {
@@ -2024,14 +2024,19 @@
     "ast_hash": "2f1ea1c5832649eac134e31bb49e5dc5",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\leads\\active-customers.md": {
+    "mtime": 1781507321.5301168,
+    "ast_hash": "d613e3796ca4b7ea941ff97e8542b291",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\leads\\archive.md": {
     "mtime": 1777962312.859905,
     "ast_hash": "c12d50aedb99f3dfaa448c19f7e9f603",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\leads\\leads.md": {
-    "mtime": 1781159344.692789,
-    "ast_hash": "3f6fc7c30c9fd4c618516386317782b1",
+    "mtime": 1781506101.0360012,
+    "ast_hash": "bfcdfd5d8a27f77eef897fd8beae411b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\manim-ads\\media\\videos\\rielcode_ad\\480p15\\partial_movie_files\\RielcodeAd\\partial_movie_file_list.txt": {
@@ -2079,6 +2084,11 @@
     "ast_hash": "c4dc8cf4a9f2add8b5cce93557d40080",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_price_by_templates_not_pages.md": {
+    "mtime": 1781505847.9503522,
+    "ast_hash": "7cd722a69e0396ccae1a867cd26a283f",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\feedback_projects_layout.md": {
     "mtime": 1780074081.673847,
     "ast_hash": "5a2ed75923d93880711f6a7a11a88e99",
@@ -2115,8 +2125,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\MEMORY.md": {
-    "mtime": 1781397207.6959674,
-    "ast_hash": "0786a458994ebef361f8f91651379d65",
+    "mtime": 1781505847.9494052,
+    "ast_hash": "a6fc9049ce40c0736867a03a5262d142",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_audit_tool.md": {
@@ -2127,6 +2137,16 @@
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_coldoutreach_centraljava_2026-06.md": {
     "mtime": 1781397207.7018912,
     "ast_hash": "3dd16684b296107712dd6f004989f33d",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_cust2_call.md": {
+    "mtime": 1781505847.951354,
+    "ast_hash": "85266e269a9217b85e8be10a9206765e",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_cust3_frontiersin_clone.md": {
+    "mtime": 1781505847.953341,
+    "ast_hash": "b713f8e00c1638c7b7f352a824399830",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\project_demo_sites.md": {
@@ -2572,6 +2592,21 @@
   "D:\\Main Storage\\Documents\\JARVIS\\my-video\\.agents\\skills\\remotion-best-practices\\rules\\voiceover.md": {
     "mtime": 1780363348.9107938,
     "ast_hash": "91f4e8178256beafb915deb316adf9fb",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\CNProject Waterproofing\\client-brief.md": {
+    "mtime": 1781506089.263753,
+    "ast_hash": "85af4ac5ba7b25605f5be13fe1264185",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\imi-interskala\\site-review-2026-06-13.md": {
+    "mtime": 1781505847.9577506,
+    "ast_hash": "c9e91c22b5234c79d6e9b27a2508037c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\Jatra Scale Indonesia\\client-brief.md": {
+    "mtime": 1781505847.955436,
+    "ast_hash": "0961984a8d955141e9e383b3220ad318",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\Parallaxnet Canada\\README.md": {
