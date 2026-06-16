@@ -20,16 +20,18 @@
 | 017 | Enny C21 Platinum | @ennyc21platinum | - | cold-outreach | ready | 2026-06-11 | DM now (real-estate demo) | Real estate, Semarang. Verified: no website, only ctcin.bio link-in-bio |
 | 018 | Info Rumah Solo | @jual_rumahsolo | - | cold-outreach | ready | 2026-06-11 | DM now (real-estate demo) | Real estate, Solo. Verified: no website, only wa.me |
 | 019 | Fire extinguisher / safety equipment seller | Cust 6 | - | meta-ads | replied | 2026-06-15 | Ask for website reference/wanted features (already asked); send F&B-style demo for safety-equipment niche if no ref | Meta Ads WA lead. Sells alat pemadam api ringan + equipment. No website yet. Asked for reference site/features 2026-06-15. |
-| 020 | - | Cust 7 | - | meta-ads | replied | 2026-06-15 | Ask what kind of simple site (already asked); scope + quote Starter/landing | Meta Ads WA lead. Wants simple website. Asked type 2026-06-15. WA business acct since Jul 2021. |
+| 020 | Jasa Branding + Homestay | Cust 7 | - | meta-ads | replied | 2026-06-16 | Scope 2 separate sites; quote each (branding profile site + homestay landing) | Meta Ads WA lead. Wants 2 SEPARATE sites: (1) jasa branding (company profile, logo, deck, pitching, video edit), (2) homestay. Confirmed separate 2026-06-16. |
 
 ## Active Potential Customers (proposal stage)
 
 | Cust | Business | Industry | Stage | Last Contact | Next Action | Notes |
 |------|----------|----------|-------|--------------|-------------|-------|
-| 1 | Jatra Scale Indonesia | Industrial weighing & calibration | proposal sent | 2026-06-14 | Present Pro+Blog (2.4jt) vs Starter-landing (1jt) w/ ranking caveat | PT Kargo Jatra Muliatua, jatrascale.com. Wants SEO ranking. Brief: projects/Jatra Scale Indonesia/ |
-| 2 | Furniture company | Furniture | call done, awaiting confirm | 2026-06-15 | Wait for his reply 2026-06-16; quote Starter plan | Wants simple + attractive site. Leaning Starter plan. Called 2026-06-15 21:00. Will notify tomorrow. |
-| 3 | - | - | awaiting call | - | Wait for customer call | Placeholder, details pending |
-| 4 | CNProject Waterproofing | Waterproofing / epoxy contractor | proposal sent | 2026-06-15 | Send 1-page landing spec (1jt); wait for pick A (8-page 2.255jt) or B (1-page 1jt) | Chemkon Nusantara Perkasa, Jakarta/PIK2. Brief: projects/CNProject Waterproofing/ |
-| 5 | Pelatihan Craft (craft training) | Craft training / workshop | qualifying | 2026-06-15 | Wait for features reply; scope multi-language + Android-friendly build | Meta Ads WA lead. Wants Android-friendly site + many foreign-language options. Niche: craft training. Asked for wanted features 2026-06-15. |
-| 6 | Fire extinguisher / safety equipment seller | Safety equipment (alat pemadam api ringan) | qualifying | 2026-06-15 | Wait for reference site/wanted features reply; offer demo if none | Meta Ads WA lead (= lead ID 019). No website yet. Asked for reference/features 2026-06-15. |
-| 7 | - | Unknown (simple website) | qualifying | 2026-06-15 | Wait for site-type reply; scope + quote Starter/landing | Meta Ads WA lead (= lead ID 020). Wants simple website. Asked type 2026-06-15. |
+| 1 | Jatra Scale Indonesia | Industrial weighing & calibration | follow-up sent | 2026-06-16 | Wait for reply; follow up again if no response by 2026-06-19 | PT Kargo Jatra Muliatua, jatrascale.com. Wants SEO ranking. Follow-up sent 2026-06-16, no reply yet. Brief: projects/Jatra Scale Indonesia/ |
+| 2 | Furniture company | Furniture | awaiting details | 2026-06-15 | Wait for details; follow up 2026-06-18 if no reply | Called 2026-06-15. Leaning Starter plan. Has not sent details yet. |
+| 3 | - | - | follow-up sent | 2026-06-16 | Wait for reply | Follow-up sent, no reply yet. Details pending. |
+| 4 | CNProject Waterproofing | Waterproofing / epoxy contractor | follow-up sent | 2026-06-16 | Wait for reply (pick A 2.255jt or B 1jt) | Chemkon Nusantara Perkasa, Jakarta/PIK2. Follow-up sent, no reply yet. Brief: projects/CNProject Waterproofing/ |
+| 5 | Pelatihan Craft (craft training) | Craft training / workshop | on hold | 2026-06-15 | Contact again next week when back in town | Out of town this week, will message next week. |
+| 6 | Fire extinguisher / safety equipment seller | Safety equipment (alat pemadam api ringan) | follow-up sent | 2026-06-16 | Wait for reply; send demo link tomorrow if no response | Follow-up sent 2026-06-16. No reply yet. |
+| 7 | Jasa Branding (company profile) | Branding services | qualifying | 2026-06-16 | Wait for pages/features reply | One site (branding company profile). Follow-up sent asking pages + reference. No reply yet. |
+| 8 | Jersey Custom | Apparel / custom jersey | follow-up sent | 2026-06-16 | Wait for reply; send demo tomorrow if no response | Wants landing page + catalog. Asked for reference/design. No reply yet. |
+| 9 | SaaS Digital Menu (Bukamenu clone) | SaaS / F&B tech | follow-up sent | 2026-06-16 | Wait for reply; push for call tomorrow if no response | Sent SaaS scope + quote (MVP 8-12jt, full 25-40jt) + call request. No reply yet. |
