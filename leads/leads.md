@@ -27,7 +27,7 @@
 | Cust | Business | Industry | Stage | Last Contact | Next Action | Notes |
 |------|----------|----------|-------|--------------|-------------|-------|
 | 1 | Jatra Scale Indonesia | Industrial weighing & calibration | follow-up sent | 2026-06-16 | Wait for reply; follow up again if no response by 2026-06-19 | PT Kargo Jatra Muliatua, jatrascale.com. Wants SEO ranking. Follow-up sent 2026-06-16, no reply yet. Brief: projects/Jatra Scale Indonesia/ |
-| 2 | Furniture company | Furniture | awaiting details | 2026-06-15 | Wait for details; follow up 2026-06-18 if no reply | Called 2026-06-15. Leaning Starter plan. Has not sent details yet. |
+| 2 | Furniture company | Furniture | verbal yes, not ready | 2026-06-17 | Wait for kakak to confirm ready; do not chase | Verbal yes to Starter (Rp1jt, furniture galeri). Gathering funds. Reassured scope fits + offered LAUNCH10 10% off. Will ping when ready. |
 | 3 | - | - | follow-up sent | 2026-06-16 | Wait for reply | Follow-up sent, no reply yet. Details pending. |
 | 4 | CNProject Waterproofing | Waterproofing / epoxy contractor | follow-up sent | 2026-06-16 | Wait for reply (pick A 2.255jt or B 1jt) | Chemkon Nusantara Perkasa, Jakarta/PIK2. Follow-up sent, no reply yet. Brief: projects/CNProject Waterproofing/ |
 | 5 | Pelatihan Craft (craft training) | Craft training / workshop | on hold | 2026-06-15 | Contact again next week when back in town | Out of town this week, will message next week. |
