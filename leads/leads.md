@@ -35,3 +35,4 @@
 | 7 | Jasa Branding (company profile) | Branding services | qualifying | 2026-06-16 | Wait for pages/features reply | One site (branding company profile). Follow-up sent asking pages + reference. No reply yet. |
 | 8 | Jersey Custom | Apparel / custom jersey | follow-up sent | 2026-06-16 | Wait for reply; send demo tomorrow if no response | Wants landing page + catalog. Asked for reference/design. No reply yet. |
 | 9 | SaaS Digital Menu (Bukamenu clone) | SaaS / F&B tech | follow-up sent | 2026-06-16 | Wait for reply; push for call tomorrow if no response | Sent SaaS scope + quote (MVP 8-12jt, full 25-40jt) + call request. No reply yet. |
+| 10 | Pesantren | Islamic boarding school | quoting | 2026-06-17 | Send WA quote draft | Reference: nurulishlahiyyah.id. Wants 5-page pesantren site + pendaftaran form to admin panel. No blog. Quote: Pro Plan IDR 1,800,000 after LAUNCH10. Brief: projects/cust-10-pesantren/ |
