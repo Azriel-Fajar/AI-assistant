@@ -10,9 +10,14 @@ $ErrorActionPreference = 'Stop'
 $repoRoot = $PSScriptRoot
 $repoMem  = Join-Path $repoRoot 'memory\global'
 
-# Encode cwd the way Claude names project dirs: lowercase, drop ':', '\' and '/' -> '-'
-$encoded = $repoRoot.ToLower() -replace ':','' -replace '[\\/]','-'
-$globalMem = Join-Path $env:USERPROFILE ".claude\projects\$encoded\memory"
+# Claude names project dirs by replacing ':', '\', '/' with '-' (case preserved).
+# Match the existing dir by glob first; fall back to constructing the name.
+$projects = Join-Path $env:USERPROFILE ".claude\projects"
+$encoded  = ($repoRoot -replace '[:\\/]','-')
+$found = Get-ChildItem -Path $projects -Directory -ErrorAction SilentlyContinue |
+         Where-Object { $_.Name -ieq $encoded } | Select-Object -First 1
+$globalMem = if ($found) { Join-Path $found.FullName 'memory' }
+             else        { Join-Path $projects "$encoded\memory" }
 
 if (-not (Test-Path $repoMem))   { New-Item -ItemType Directory -Force -Path $repoMem   | Out-Null }
 if (-not (Test-Path $globalMem)) { New-Item -ItemType Directory -Force -Path $globalMem | Out-Null }
