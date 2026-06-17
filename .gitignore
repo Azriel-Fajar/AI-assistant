@@ -9,3 +9,5 @@ test-results/
 .pw-profile/
 meta/dashboard/.venv/
 __pycache__/
+
+chats/
