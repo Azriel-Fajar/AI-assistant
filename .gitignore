@@ -2,6 +2,7 @@
 CLAUDE.local.md
 .claude/settings.local.json
 node_modules/
+graphify-out/cache/
 .claude/skills/project-completion-doc/.tmp/
 playwright-report/
 test-results/

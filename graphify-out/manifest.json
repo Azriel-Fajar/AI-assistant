@@ -54,6 +54,21 @@
     "ast_hash": "40e700ca092d8b58e11e77a565e16c1d",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\sync-memory-load.ps1": {
+    "mtime": 1781687729.5969076,
+    "ast_hash": "476b88ecfb9a095866102fc5528d047e",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\sync-memory-save.ps1": {
+    "mtime": 1781687729.5990326,
+    "ast_hash": "a0cbfc8b0a4e59822fa5bd7b05f03039",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\sync-memory.ps1": {
+    "mtime": 1781687729.6009767,
+    "ast_hash": "f0bacccb184da12a7f466f4e18820369",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\settings.json": {
     "mtime": 1780131519.459504,
     "ast_hash": "ee24e636f3f0898973d8779e3e01ebdd",
@@ -360,8 +375,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\graph.json": {
-    "mtime": 1781506161.137,
-    "ast_hash": "ab371afd0f27b142a671ceb2a61d9b6c",
+    "mtime": 1781763379.4022071,
+    "ast_hash": "a1f9492490ee8fdd3517fb69adb733c6",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.obsidian\\workspace.json": {
@@ -1052,6 +1067,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\aios-intake.md": {
     "mtime": 1777962312.8504984,
     "ast_hash": "e7c32393a238647c59b3f2857ad50dcf",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\andrej-karpathy-teks.md": {
+    "mtime": 1781763379.403374,
+    "ast_hash": "5152eb2699651465f347dcc592a4168b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\CLAUDE.md": {
@@ -1879,6 +1899,11 @@
     "ast_hash": "484f41fa91be936104ed1d80e8c9da0a",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\archives\\priorities-q2-2026.md": {
+    "mtime": 1777962312.8524923,
+    "ast_hash": "ddb8cca063de13361808878d90674e07",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\about-business.md": {
     "mtime": 1780528918.91529,
     "ast_hash": "026469f7b2629c57a2bf1ca7d4e9b043",
@@ -1890,13 +1915,13 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\current-priorities.md": {
-    "mtime": 1781397207.4631004,
-    "ast_hash": "e5223b18a0fbc9d2bb3e35580157d84b",
+    "mtime": 1781763675.8293824,
+    "ast_hash": "c0dd23658317813110f5fb2a8d518371",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\goals.md": {
-    "mtime": 1777339491.733733,
-    "ast_hash": "eb83e2b90044aa60312da6f8a84a62d9",
+    "mtime": 1781763693.972203,
+    "ast_hash": "42370eb47ce9fa8e51652dcd7a03113b",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\me.md": {
@@ -1904,14 +1929,14 @@
     "ast_hash": "8f93ed58433b75336db0a0f33c4c6ba1",
     "semantic_hash": ""
   },
-  "D:\\Main Storage\\Documents\\JARVIS\\context\\priorities.md": {
-    "mtime": 1777962312.8524923,
-    "ast_hash": "ddb8cca063de13361808878d90674e07",
+  "D:\\Main Storage\\Documents\\JARVIS\\context\\rielcode-site-pages.md": {
+    "mtime": 1781763379.4036088,
+    "ast_hash": "92bed5f0fa61cc1f68e461dad5963bd7",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\team.md": {
-    "mtime": 1779156306.085187,
-    "ast_hash": "9d12c841b90dd927cb22eae3ede6526e",
+    "mtime": 1781763682.5880587,
+    "ast_hash": "f055f3a978efad33b8c37ecc8c7dc9e1",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\context\\work.md": {
@@ -2035,8 +2060,8 @@
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\leads\\leads.md": {
-    "mtime": 1781666827.5815275,
-    "ast_hash": "7002480347f4205072cee46052ebe890",
+    "mtime": 1781763379.484272,
+    "ast_hash": "b7e5b9c7c415c1c3eb54069cd4628861",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\manim-ads\\media\\videos\\rielcode_ad\\480p15\\partial_movie_files\\RielcodeAd\\partial_movie_file_list.txt": {
@@ -2287,6 +2312,131 @@
   "D:\\Main Storage\\Documents\\JARVIS\\memory\\user_academic_credentials.md": {
     "mtime": 1780558456.8741066,
     "ast_hash": "d45b6c7cfe167ea47cf03ed8ee7268f3",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_azriel_message_tone.md": {
+    "mtime": 1781687729.5588996,
+    "ast_hash": "62000dc222fee268b5906da493d6f7ff",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_demo_url_base.md": {
+    "mtime": 1781687729.5614395,
+    "ast_hash": "9af6cd4f37639c4301fca8f2338ebb6f",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_followup_saya_tone.md": {
+    "mtime": 1781687729.5637653,
+    "ast_hash": "5616c1093efb017476adf048c619e427",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_follow_up_no_em_dashes.md": {
+    "mtime": 1781687729.56276,
+    "ast_hash": "8b078aad6a671f9d9a666384900c8384",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_google_cli.md": {
+    "mtime": 1781687729.565559,
+    "ast_hash": "4f7db68acf5fe78340050704ad3bec0c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_lead_message_opera.md": {
+    "mtime": 1781687729.5670357,
+    "ast_hash": "7cd0954810b5fd2ea6867bad4e371770",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_meta_ads_objective_rule.md": {
+    "mtime": 1781687729.569083,
+    "ast_hash": "3f212a2f92af669ac3aa7f7bb15e6c8f",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_projects_layout.md": {
+    "mtime": 1781687729.5710833,
+    "ast_hash": "f9d3f1e98028033e958501aeb2cf3209",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_wa_client_tone.md": {
+    "mtime": 1781687729.5720842,
+    "ast_hash": "e87b6815c9de4bcf12552c791f315cbb",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\feedback_wa_funds_objection_tone.md": {
+    "mtime": 1781687729.574077,
+    "ast_hash": "2a96bc4984fa3b6cfa6048c552ae9904",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\MEMORY.md": {
+    "mtime": 1781687729.5576177,
+    "ast_hash": "a6b2d0e381cbb0193d9793b67eddd824",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_jatra_scale.md": {
+    "mtime": 1781687729.5760634,
+    "ast_hash": "4cc5dbac737eae141cf5521974f07394",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_meta_ads_v1_v3_channels.md": {
+    "mtime": 1781687729.5773814,
+    "ast_hash": "34d580930f56a09375714ba1d582af30",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_meta_ads_v3_whatsapp.md": {
+    "mtime": 1781687729.5792005,
+    "ast_hash": "5a046466ff2f8eba8c1306ba6a54e1d7",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_parallaxnet_aios.md": {
+    "mtime": 1781687729.5802498,
+    "ast_hash": "3be9bc69988710da92328a8721dc07e0",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_parallaxnet_client.md": {
+    "mtime": 1781687729.5820026,
+    "ast_hash": "694365fd95abf793cfc1836572b9cf6c",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_portfolio_site.md": {
+    "mtime": 1781687729.5834541,
+    "ast_hash": "69f634efd9dc921883e4a765db233d44",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_rielcode_figma_redesign.md": {
+    "mtime": 1781687729.5856597,
+    "ast_hash": "6f0c512c23c2aa7ee23587225991e7db",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_rielcode_invoice_currency.md": {
+    "mtime": 1781687729.5870135,
+    "ast_hash": "290251e7732e4be6cc9a27a33465a118",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_rielcode_outreach.md": {
+    "mtime": 1781687729.588016,
+    "ast_hash": "22511a5b1e3ed7a641e585c6e3ae0496",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\project_testimonials_system.md": {
+    "mtime": 1781687729.5902324,
+    "ast_hash": "32eb75d831456786eced1092ce4deb27",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\reference_meta_dashboard.md": {
+    "mtime": 1781687729.5908823,
+    "ast_hash": "8db347ecf6d12d9169f92fd6e431a265",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\reference_rielcode_pricing.md": {
+    "mtime": 1781687729.5928745,
+    "ast_hash": "903d9052e67c77036458d26fec04e146",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\reference_rumahweb_hosting.md": {
+    "mtime": 1781687729.5949132,
+    "ast_hash": "04df34a4b4ff205e3716913018af53a6",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\memory\\global\\reference_subnetting.md": {
+    "mtime": 1781687729.5959098,
+    "ast_hash": "4973b964440ce29a367fbb115af04b92",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\meta\\ads-algorithm-context.md": {
@@ -2604,6 +2754,11 @@
     "ast_hash": "85af4ac5ba7b25605f5be13fe1264185",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\cust-10-pesantren\\site-review-2026-06-17.md": {
+    "mtime": 1781763379.4853027,
+    "ast_hash": "e8fb9b68071abe4faf480940a8b09740",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\imi-interskala\\site-review-2026-06-13.md": {
     "mtime": 1781505847.9577506,
     "ast_hash": "c9e91c22b5234c79d6e9b27a2508037c",
@@ -2822,6 +2977,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\references\\voice.md": {
     "mtime": 1777962312.863137,
     "ast_hash": "7c7cd70084b34a18bf544c38b27eff25",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\references\\wa-close-scripts.md": {
+    "mtime": 1781763379.4864306,
+    "ast_hash": "b78e826d015ac3fd8c55543b63cbeca2",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\research\\parallaxnet-siber-indonesia.md": {
