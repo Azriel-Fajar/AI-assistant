@@ -43,11 +43,12 @@ Landing page launch. Free hosting + domain included.
 
 ### Pro Plan — IDR 2jt / $116 ⭐ Most Popular
 Multi-page business site with CMS.
+ALWAYS INCLUDES CMS — when quoting/pitching Pro, you MUST name "CMS / Admin Panel (Basic)" as a feature. Never omit it.
 - Up to 5 pages
 - Custom UI/UX design
 - Advanced SEO
 - SSL & Security
-- CMS / Admin Panel (Basic)
+- CMS / Admin Panel (Basic) ← included by default, do not drop from any quote
 - Google Analytics + Search Console
 - Free Domain + Hosting (1 year)
 - 2 design revisions
@@ -101,6 +102,7 @@ When auditing a site, map detected features to the closest package:
 
 ## NOTES
 
+- PRO PLAN ALWAYS INCLUDES BASIC CMS / ADMIN PANEL. Every Pro quote, proposal, follow-up, WA message, and site-review estimate must list CMS as a Pro feature. Do not list Pro features from memory; read this file each time.
 - International clients can pay USD directly.
 - Custom integrations beyond package = add-on, quote per item.
 - Rush jobs (under listed delivery) = Priority Delivery add-on (+IDR 300k / $18).

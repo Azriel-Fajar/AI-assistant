@@ -21,14 +21,15 @@
 | 018 | Info Rumah Solo | @jual_rumahsolo | - | cold-outreach | ready | 2026-06-11 | DM now (real-estate demo) | Real estate, Solo. Verified: no website, only wa.me |
 | 019 | Fire extinguisher / safety equipment seller | Cust 6 | - | meta-ads | replied | 2026-06-15 | Ask for website reference/wanted features (already asked); send F&B-style demo for safety-equipment niche if no ref | Meta Ads WA lead. Sells alat pemadam api ringan + equipment. No website yet. Asked for reference site/features 2026-06-15. |
 | 020 | Jasa Branding + Homestay | Cust 7 | - | meta-ads | replied | 2026-06-16 | Scope 2 separate sites; quote each (branding profile site + homestay landing) | Meta Ads WA lead. Wants 2 SEPARATE sites: (1) jasa branding (company profile, logo, deck, pitching, video edit), (2) homestay. Confirmed separate 2026-06-16. |
+| 021 | Tour & Travel (Cust 11) | Cust 11 | - | meta-ads | replied | 2026-06-18 | Wait for reply; lead said will inform if proceeding. Follow up if no reply by 2026-06-21 | Tour and travel biz. Sent tour-and-travel demo (rielcode.com/demos/tour-travel/). Quoted mulai 2jt. Replied "Ok nanti kalo jadi saya infokan" 2026-06-18. |
+| 022 | General Contractor (Cust 12) | Cust 12 | - | meta-ads | replied | 2026-06-18 | Wait for landing-page reference/scope reply | General Contractor / Supplier / Trans / Rent. Wants landing page. Sent demos hub (rielcode.com/demos/). Quoted mulai 500rb. |
+| 023 | Hijab Brand (Cust 13) | Cust 13 | - | meta-ads | replied | 2026-06-18 | Review reference (The Olive), scope + quote | Hijab products. Has reference brand "The Olive" (sent box photo). Asked for ref website, replied with product/brand image 2026-06-18. |
 
 ## Active Potential Customers (proposal stage)
 
 | Cust | Business | Industry | Stage | Last Contact | Next Action | Notes |
 |------|----------|----------|-------|--------------|-------------|-------|
-| 1 | Jatra Scale Indonesia | Industrial weighing & calibration | follow-up sent | 2026-06-16 | Wait for reply; follow up again if no response by 2026-06-19 | PT Kargo Jatra Muliatua, jatrascale.com. Wants SEO ranking. Follow-up sent 2026-06-16, no reply yet. Brief: projects/Jatra Scale Indonesia/ |
 | 2 | Furniture company | Furniture | verbal yes, not ready | 2026-06-17 | Wait for kakak to confirm ready; do not chase | Verbal yes to Starter (Rp1jt, furniture galeri). Gathering funds. Reassured scope fits + offered LAUNCH10 10% off. Will ping when ready. |
-| 3 | - | - | follow-up sent | 2026-06-16 | Wait for reply | Follow-up sent, no reply yet. Details pending. |
 | 4 | CNProject Waterproofing | Waterproofing / epoxy contractor | follow-up sent | 2026-06-16 | Wait for reply (pick A 2.255jt or B 1jt) | Chemkon Nusantara Perkasa, Jakarta/PIK2. Follow-up sent, no reply yet. Brief: projects/CNProject Waterproofing/ |
 | 5 | Pelatihan Craft (craft training) | Craft training / workshop | on hold | 2026-06-15 | Contact again next week when back in town | Out of town this week, will message next week. |
 | 6 | Fire extinguisher / safety equipment seller | Safety equipment (alat pemadam api ringan) | follow-up sent | 2026-06-16 | Wait for reply; send demo link tomorrow if no response | Follow-up sent 2026-06-16. No reply yet. |

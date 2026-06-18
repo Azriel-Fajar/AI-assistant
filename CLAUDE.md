@@ -198,6 +198,7 @@ Don't delete -- archive instead. Move outdated material to `archives/`.
 When something fails repeatedly or a workaround is found, add a one-line bullet here (under 15 words).
 
 - New skills need validation step before rendering. First runs have data gaps.
+- Pro plan always includes Basic CMS. Re-read pricing file before quoting; never list Pro features from memory.
 
 ---
 
