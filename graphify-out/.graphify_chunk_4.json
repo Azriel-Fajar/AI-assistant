@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    {
+      "id": "checkout_fixed_checkout_confirmation",
+      "label": "Checkout Confirmation Page (Step 2)",
+      "file_type": "image",
+      "source_file": "screenshots/checkout-fixed.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "checkout_full_1280_order_form",
+      "label": "Order Form Full Page (1280px)",
+      "file_type": "image",
+      "source_file": "screenshots/checkout-full-1280.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "checkout_package_section_order_form_crop",
+      "label": "Order Form Package Section Crop",
+      "file_type": "image",
+      "source_file": "screenshots/checkout-package-section.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "rielcode_hero_versions",
+      "label": "Rielcode Hero Iterations (v1-v8)",
+      "file_type": "image",
+      "source_file": "screenshots/rielcode-hero-20260511.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "rielcode_site_evolution",
+      "label": "Rielcode Site Evolution (May 2026)",
+      "file_type": "image",
+      "source_file": "screenshots/rielcode-full-1280-20260511.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "parallaxnet_site",
+      "label": "Parallaxnet Client Site",
+      "file_type": "image",
+      "source_file": "screenshots/parallaxnet-full-1280.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "rielcode_mobile_views",
+      "label": "Rielcode Mobile Views",
+      "file_type": "image",
+      "source_file": "screenshots/rielcode-mobile-20260509.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "checkout_fixed_checkout_confirmation",
+      "target": "checkout_full_1280_order_form",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "screenshots/checkout-fixed.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "checkout_full_1280_order_form",
+      "target": "checkout_package_section_order_form_crop",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "screenshots/checkout-full-1280.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "rielcode_hero_versions",
+      "target": "rielcode_site_evolution",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "screenshots/rielcode-hero-20260511.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "parallaxnet_site",
+      "target": "rielcode_site_evolution",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "screenshots/parallaxnet-full-1280.png",
+      "source_location": null,
+      "weight": 0.6
+    },
+    {
+      "source": "rielcode_mobile_views",
+      "target": "rielcode_site_evolution",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "screenshots/rielcode-mobile-20260509.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
