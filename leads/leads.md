@@ -24,6 +24,7 @@
 | 021 | Tour & Travel (Cust 11) | Cust 11 | - | meta-ads | replied | 2026-06-18 | Wait for reply; lead said will inform if proceeding. Follow up if no reply by 2026-06-21 | Tour and travel biz. Sent tour-and-travel demo (rielcode.com/demos/tour-travel/). Quoted mulai 2jt. Replied "Ok nanti kalo jadi saya infokan" 2026-06-18. |
 | 022 | General Contractor (Cust 12) | Cust 12 | - | meta-ads | replied | 2026-06-18 | Wait for landing-page reference/scope reply | General Contractor / Supplier / Trans / Rent. Wants landing page. Sent demos hub (rielcode.com/demos/). Quoted mulai 500rb. |
 | 023 | Hijab Brand (Cust 13) | Cust 13 | - | meta-ads | replied | 2026-06-18 | Review reference (The Olive), scope + quote | Hijab products. Has reference brand "The Olive" (sent box photo). Asked for ref website, replied with product/brand image 2026-06-18. |
+| 024 | Marketplace Seller (Cust 14) | Cust 14 (Ronald) | - | meta-ads | replied | 2026-06-18 | Confirm catalog vs order/checkout site, then scope + quote | Meta Ads WA lead. Sells on marketplaces (Shopee etc). Asked for website suggestions. Asked whether wants product catalog or marketplace-style ordering. Awaiting reply. |
 
 ## Active Potential Customers (proposal stage)
 
@@ -37,3 +38,7 @@
 | 8 | Jersey Custom | Apparel / custom jersey | follow-up sent | 2026-06-16 | Wait for reply; send demo tomorrow if no response | Wants landing page + catalog. Asked for reference/design. No reply yet. |
 | 9 | SaaS Digital Menu (Bukamenu clone) | SaaS / F&B tech | follow-up sent | 2026-06-16 | Wait for reply; push for call tomorrow if no response | Sent SaaS scope + quote (MVP 8-12jt, full 25-40jt) + call request. No reply yet. |
 | 10 | Pesantren | Islamic boarding school | quoting | 2026-06-17 | Send WA quote draft | Reference: nurulishlahiyyah.id. Wants 5-page pesantren site + pendaftaran form to admin panel. No blog. Quote: Pro Plan IDR 1,800,000 after LAUNCH10. Brief: projects/cust-10-pesantren/ |
+| 11 | Tour & Travel | Tour and travel | quoted, waiting | 2026-06-18 | Follow up if no reply by 2026-06-21 | Sent tour-and-travel demo (rielcode.com/demos/tour-travel/). Quoted mulai 2jt. Replied "Ok nanti kalo jadi saya infokan". |
+| 12 | General Contractor | Contractor / supplier / rent | qualifying | 2026-06-18 | Wait for landing-page reference/scope reply | Wants landing page. Sent demos hub (rielcode.com/demos/). Quoted mulai 500rb. |
+| 13 | Hijab Brand | Apparel / hijab | scoping | 2026-06-18 | Review reference (The Olive), scope + quote | Hijab products. Reference brand "The Olive" (sent box photo). Replied with product/brand image. |
+| 14 | Marketplace Seller (Ronald) | Retail / e-commerce | discovery | 2026-06-18 | Confirm need: catalog vs order/checkout site; then suggest scope + quote | Meta Ads WA lead. Sells on marketplaces (Shopee etc). Asked for website suggestions. Asked whether wants product catalog or marketplace-style ordering. Awaiting reply. |

@@ -1,27 +1,19 @@
 # Active Potential Customers — Context Hub
 
-_Last updated: 2026-06-15_
-_All 5 are POTENTIAL clients. None closed yet. This file = single source of truth for cust context._
+_Last updated: 2026-06-18_
+_All are POTENTIAL clients. None closed yet. This file = single source of truth for cust context._
+_Source of truth for who's active = `leads/leads.md` "Active Potential Customers" table._
 
 Pricing source: `references/rielcode-pricing.md`. Always quote real prices, never guess.
 Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, customer POV.
 
 ---
 
-## Cust 1 — Jatra Scale Indonesia
-- **Brief:** `projects/Jatra Scale Indonesia/client-brief.md`
-- **Entity:** PT Kargo Jatra Muliatua | **Domain:** jatrascale.com
-- **Industry:** Industrial weighing & calibration (kalibrasi timbangan, jembatan timbang, load cell)
-- **Goal:** Google ranking (SEO), NOT paid ads.
-- **Quote:** Pro + Blog add-on = **IDR 2.4jt** (recommended for ranking). Budget fallback: 1-page landing **IDR 1jt** (won't rank well).
-- **Caution:** SEO takes 2-4 months + needs blog content. ChatGPT set his scope expectation, not us. Real photos/testimonials not ready.
-- **Stage:** proposal sent (2026-06-14). Next: present 2.4jt vs 1jt with ranking caveat.
-
-## Cust 2 — (awaiting call)
-- Placeholder. Details pending. Waiting on customer call.
-
-## Cust 3 — (awaiting call)
-- Placeholder. Details pending. Waiting on customer call.
+## Cust 2 — Furniture company
+- **Industry:** Furniture
+- **Quote:** Verbal yes to Starter (Rp1jt, furniture galeri). Offered LAUNCH10 (10% off).
+- **Stage:** verbal yes, not ready (2026-06-17). Gathering funds. Reassured scope fits.
+- **Next:** Wait for kakak to confirm ready. Do not chase.
 
 ## Cust 4 — CNProject Waterproofing
 - **Brief:** `projects/CNProject Waterproofing/client-brief.md`
@@ -29,19 +21,94 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Industry:** Waterproofing / epoxy / PU concrete contractor (specialist positioning)
 - **Goal:** Website like the Claude artifact mockup he sent (8-page waterproofing site).
 - **Reference scraped 2026-06-15:** 8 pages (Home + 6 services + Konsultasi), portfolio grid, testimonials, form→WhatsApp. No e-comm/DB.
-- **Quote:** Option A 8-page = **IDR 2.255jt** (Pro + 3 extra pages). Option B 1-page landing = **IDR 1jt** (his current lean).
-- **Caution:** Real project photos not ready (customer supplies). Confirm if 3 mockup testimonials are real.
-- **Stage:** proposal sent (2026-06-15). Customer leaning 1-page. Next: send 1jt landing spec, wait for A vs B pick.
+- **Quote:** Option A 8-page = **IDR 2.255jt** (Pro + 3 extra pages). Option B 1-page landing = **IDR 1jt**.
+- **Stage:** follow-up sent (2026-06-16). No reply yet. Customer leaning 1-page.
+- **Next:** Wait for A vs B pick.
 
-## Cust 5 — (new WA lead)
-- **Industry:** Unknown
-- **Request:** Mobile-friendly website + multi-language support (banyak pilihan bahasa asing)
-- **Stage:** Active chat (2026-06-15). Asked "websitenya tentang apa kak" -- awaiting their answer.
-- **Next:** Wait for site topic/industry reply, then scope and quote.
+## Cust 5 — Pelatihan Craft (craft training)
+- **Industry:** Craft training / workshop
+- **Stage:** on hold (2026-06-15). Out of town this week.
+- **Next:** Contact again next week when back in town.
+
+## Cust 6 — Fire extinguisher / safety equipment seller
+- **Industry:** Safety equipment (alat pemadam api ringan + equipment)
+- **Request:** No website yet. Asked for reference site / wanted features.
+- **Stage:** follow-up sent (2026-06-16). No reply yet.
+- **Next:** Wait for reply; send F&B-style demo for safety-equipment niche if no response.
+
+## Cust 7 — Jasa Branding + Homestay
+- **Industry:** Branding services + hospitality
+- **Request:** 2 SEPARATE sites — (1) jasa branding (company profile, logo, deck, pitching, video edit), (2) homestay landing. Confirmed separate 2026-06-16.
+- **Stage:** qualifying (2026-06-16). Follow-up sent asking pages + reference. No reply yet.
+- **Next:** Scope 2 separate sites; quote each.
+
+## Cust 8 — Jersey Custom
+- **Industry:** Apparel / custom jersey
+- **Request:** Landing page + catalog. Asked for reference/design.
+- **Stage:** follow-up sent (2026-06-16). No reply yet.
+- **Next:** Wait for reply; send demo tomorrow if no response.
+
+## Cust 9 — SaaS Digital Menu (Bukamenu clone)
+- **Industry:** SaaS / F&B tech
+- **Quote:** MVP 8-12jt, full 25-40jt. Sent scope + call request.
+- **Stage:** follow-up sent (2026-06-16). No reply yet.
+- **Next:** Wait for reply; push for call if no response.
+
+## Cust 10 — Pesantren
+- **Brief:** `projects/cust-10-pesantren/`
+- **Industry:** Islamic boarding school
+- **Reference:** nurulishlahiyyah.id
+- **Request:** 5-page pesantren site + pendaftaran form to admin panel. No blog.
+- **Quote:** Pro Plan **IDR 1,800,000** after LAUNCH10.
+- **Stage:** quoting (2026-06-17).
+- **Next:** Send WA quote draft.
+
+## Cust 11 — Tour & Travel
+- **Source:** Meta Ads WA lead (2026-06-18)
+- **Industry:** Tour and travel
+- **Demo sent:** rielcode.com/demos/tour-travel/
+- **Quote:** mulai 2jt.
+- **Stage:** quoted, waiting (2026-06-18). Replied "Ok nanti kalo jadi saya infokan".
+- **Next:** Follow up if no reply by 2026-06-21.
+
+## Cust 12 — General Contractor
+- **Source:** Meta Ads WA lead (2026-06-18)
+- **Industry:** General Contractor / Supplier / Trans / Rent
+- **Request:** Landing page.
+- **Demo sent:** rielcode.com/demos/ (hub)
+- **Quote:** mulai 500rb.
+- **Stage:** qualifying (2026-06-18).
+- **Next:** Wait for landing-page reference/scope reply.
+
+## Cust 13 — Hijab Brand
+- **Source:** Meta Ads WA lead (2026-06-18)
+- **Industry:** Apparel / hijab products
+- **Reference:** brand "The Olive" (sent box photo). Replied with product/brand image.
+- **Stage:** scoping (2026-06-18).
+- **Next:** Review reference, scope + quote.
+
+## Cust 14 — Marketplace Seller (Ronald)
+- **Source:** Meta Ads WA lead (2026-06-18)
+- **Industry:** Retail / e-commerce. Sells on marketplaces (Shopee, etc).
+- **Request:** Asked for website suggestions. Open-ended.
+- **Asked:** product catalog site vs marketplace-style ordering/checkout.
+- **Stage:** discovery (2026-06-18). Awaiting reply on need.
+- **Next:** Confirm catalog vs order/checkout, then scope + quote.
+
+---
+
+## Deleted from potential customers
+
+## ~~Cust 1 — Jatra Scale Indonesia~~ (DELETED)
+- **Industry:** Industrial weighing & calibration. Goal: Google ranking (SEO).
+- **Last quote:** Pro + Blog = IDR 2.4jt. Removed from active pipeline.
+
+## ~~Cust 3~~ (DELETED)
+- Placeholder, was awaiting call. Removed from active pipeline.
 
 ---
 
 ## Cross-cust patterns
-- Both Jatra + CNProject used AI (ChatGPT/Claude) to draft an oversized spec, then anchor to budget price. Reframe to real tiers.
-- Both lack real photos/testimonials at proposal stage. Launch on placeholders, swap real content later.
-- Both have a 1jt landing fallback vs ~2.3-2.4jt Pro option. The fork is always: simple-1-page vs multi-page-with-SEO.
+- Many leads use AI (ChatGPT/Claude) to draft an oversized spec, then anchor to budget price. Reframe to real tiers.
+- Most lack real photos/testimonials at proposal stage. Launch on placeholders, swap real content later.
+- Common fork: simple 1-page landing (~1jt) vs multi-page Pro with SEO (~2.3-2.4jt).

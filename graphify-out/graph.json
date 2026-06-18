@@ -9,7 +9,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\graphify_merge.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_graphify_merge_py",
-      "community": 236,
+      "community": 237,
       "norm_label": "graphify_merge.py"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\graphify_partc.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_graphify_partc_py",
-      "community": 237,
+      "community": 238,
       "norm_label": "graphify_partc.py"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\graphify_step3.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_graphify_step3_py",
-      "community": 238,
+      "community": 239,
       "norm_label": "graphify_step3.py"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\graphify_step4.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_graphify_step4_py",
-      "community": 239,
+      "community": 240,
       "norm_label": "graphify_step4.py"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "playwright.config.js",
       "source_location": "L1",
       "id": "playwright_config_js",
-      "community": 240,
+      "community": 241,
       "norm_label": "playwright.config.js"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\sync-memory-load.ps1",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_sync_memory_load_ps1",
-      "community": 241,
+      "community": 242,
       "norm_label": "sync-memory-load.ps1"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\sync-memory-save.ps1",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_sync_memory_save_ps1",
-      "community": 242,
+      "community": 243,
       "norm_label": "sync-memory-save.ps1"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\sync-memory.ps1",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_sync_memory_ps1",
-      "community": 243,
+      "community": 244,
       "norm_label": "sync-memory.ps1"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "homework-bot\\tests\\conftest.py",
       "source_location": "L1",
       "id": "homework_bot_tests_conftest_py",
-      "community": 185,
+      "community": 186,
       "norm_label": "conftest.py"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "homework-bot\\tests\\conftest.py",
       "source_location": "L8",
       "id": "conftest_setup_env_vars",
-      "community": 185,
+      "community": 186,
       "norm_label": "setup_env_vars()"
     },
     {
@@ -242,7 +242,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot/tests/conftest.py",
       "source_location": "L9",
-      "community": 185,
+      "community": 186,
       "norm_label": "set up dummy environment variables for testing.",
       "id": "conftest_rationale_9"
     },
@@ -414,7 +414,7 @@
       "source_file": "homework-bot\\tests\\__init__.py",
       "source_location": "L1",
       "id": "homework_bot_tests_init_py",
-      "community": 244,
+      "community": 245,
       "norm_label": "__init__.py"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\meta\\dms-report.mjs",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_meta_dms_report_mjs",
-      "community": 172,
+      "community": 173,
       "norm_label": "dms-report.mjs"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\meta\\dms-report.mjs",
       "source_location": "L12",
       "id": "dms_report_loadenv",
-      "community": 172,
+      "community": 173,
       "norm_label": "loadenv()"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\meta\\dms-report.mjs",
       "source_location": "L29",
       "id": "dms_report_fail",
-      "community": 172,
+      "community": 173,
       "norm_label": "fail()"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\meta\\dms-report.mjs",
       "source_location": "L49",
       "id": "dms_report_apifetch",
-      "community": 172,
+      "community": 173,
       "norm_label": "apifetch()"
     },
     {
@@ -972,7 +972,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\add-backsound.ps1",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_add_backsound_ps1",
-      "community": 200,
+      "community": 201,
       "norm_label": "add-backsound.ps1"
     },
     {
@@ -981,7 +981,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\add-backsound.ps1",
       "source_location": "L19",
       "id": "add_backsound_get_dur",
-      "community": 200,
+      "community": 201,
       "norm_label": "get-dur()"
     },
     {
@@ -990,7 +990,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\eslint.config.mjs",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_eslint_config_mjs",
-      "community": 245,
+      "community": 246,
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -999,7 +999,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\remotion.config.ts",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_remotion_config_ts",
-      "community": 246,
+      "community": 247,
       "norm_label": "remotion.config.ts"
     },
     {
@@ -1008,7 +1008,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\render-referrals.mjs",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_render_referrals_mjs",
-      "community": 247,
+      "community": 248,
       "norm_label": "render-referrals.mjs"
     },
     {
@@ -1017,7 +1017,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\shoot-demos.mjs",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_shoot_demos_mjs",
-      "community": 248,
+      "community": 249,
       "norm_label": "shoot-demos.mjs"
     },
     {
@@ -1026,7 +1026,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_helloworld_tsx",
-      "community": 249,
+      "community": 250,
       "norm_label": "helloworld.tsx"
     },
     {
@@ -1035,7 +1035,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\index.ts",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_index_ts",
-      "community": 250,
+      "community": 251,
       "norm_label": "index.ts"
     },
     {
@@ -1044,7 +1044,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\Root.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_root_tsx",
-      "community": 251,
+      "community": 252,
       "norm_label": "root.tsx"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Arc.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_helloworld_arc_tsx",
-      "community": 186,
+      "community": 187,
       "norm_label": "arc.tsx"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Arc.tsx",
       "source_location": "L4",
       "id": "arc_getcircumferenceofarc",
-      "community": 186,
+      "community": 187,
       "norm_label": "getcircumferenceofarc()"
     },
     {
@@ -1071,7 +1071,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Arc.tsx",
       "source_location": "L15",
       "id": "arc_arc",
-      "community": 186,
+      "community": 187,
       "norm_label": "arc()"
     },
     {
@@ -1080,7 +1080,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Atom.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_helloworld_atom_tsx",
-      "community": 201,
+      "community": 202,
       "norm_label": "atom.tsx"
     },
     {
@@ -1089,7 +1089,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Atom.tsx",
       "source_location": "L4",
       "id": "atom_atom",
-      "community": 201,
+      "community": 202,
       "norm_label": "atom()"
     },
     {
@@ -1098,7 +1098,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\constants.ts",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_helloworld_constants_ts",
-      "community": 252,
+      "community": 253,
       "norm_label": "constants.ts"
     },
     {
@@ -1107,7 +1107,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Logo.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_helloworld_logo_tsx",
-      "community": 202,
+      "community": 203,
       "norm_label": "logo.tsx"
     },
     {
@@ -1116,7 +1116,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Logo.tsx",
       "source_location": "L18",
       "id": "logo_logo",
-      "community": 202,
+      "community": 203,
       "norm_label": "logo()"
     },
     {
@@ -1125,7 +1125,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Subtitle.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_helloworld_subtitle_tsx",
-      "community": 203,
+      "community": 204,
       "norm_label": "subtitle.tsx"
     },
     {
@@ -1134,7 +1134,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\HelloWorld\\Subtitle.tsx",
       "source_location": "L18",
       "id": "subtitle_subtitle",
-      "community": 203,
+      "community": 204,
       "norm_label": "subtitle()"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\angles.ts",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_rielcodead_angles_ts",
-      "community": 253,
+      "community": 254,
       "norm_label": "angles.ts"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\LaunchAd.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_rielcodead_launchad_tsx",
-      "community": 173,
+      "community": 174,
       "norm_label": "launchad.tsx"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\LaunchAd.tsx",
       "source_location": "L38",
       "id": "launchad_reveal",
-      "community": 173,
+      "community": 174,
       "norm_label": "reveal()"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\LaunchAd.tsx",
       "source_location": "L47",
       "id": "launchad_sp",
-      "community": 173,
+      "community": 174,
       "norm_label": "sp()"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\LaunchAd.tsx",
       "source_location": "L116",
       "id": "launchad_switch",
-      "community": 173,
+      "community": 174,
       "norm_label": "switch()"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\PromoAd.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_rielcodead_promoad_tsx",
-      "community": 174,
+      "community": 175,
       "norm_label": "promoad.tsx"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\PromoAd.tsx",
       "source_location": "L29",
       "id": "promoad_reveal",
-      "community": 174,
+      "community": 175,
       "norm_label": "reveal()"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\PromoAd.tsx",
       "source_location": "L38",
       "id": "promoad_sp",
-      "community": 174,
+      "community": 175,
       "norm_label": "sp()"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\PromoAd.tsx",
       "source_location": "L171",
       "id": "promoad_card",
-      "community": 174,
+      "community": 175,
       "norm_label": "card()"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\theme.ts",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_rielcodead_theme_ts",
-      "community": 254,
+      "community": 255,
       "norm_label": "theme.ts"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\V3Ads.tsx",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_my_video_src_rielcodead_v3ads_tsx",
-      "community": 204,
+      "community": 205,
       "norm_label": "v3ads.tsx"
     },
     {
@@ -1305,8 +1305,53 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\my-video\\src\\RielcodeAd\\V3Ads.tsx",
       "source_location": "L182",
       "id": "v3ads_blob",
-      "community": 204,
+      "community": 205,
       "norm_label": "blob()"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L1",
+      "id": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "community": 171,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "selectTab()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L38",
+      "id": "main_selecttab",
+      "community": 171,
+      "norm_label": "selecttab()"
+    },
+    {
+      "label": "validateField()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L77",
+      "id": "main_validatefield",
+      "community": 171,
+      "norm_label": "validatefield()"
+    },
+    {
+      "label": "openBox()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L140",
+      "id": "main_openbox",
+      "community": 171,
+      "norm_label": "openbox()"
+    },
+    {
+      "label": "closeBox()",
+      "file_type": "code",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L147",
+      "id": "main_closebox",
+      "community": 171,
+      "norm_label": "closebox()"
     },
     {
       "label": "pnx-verify.mjs",
@@ -1314,7 +1359,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\screenshots\\pnx-verify.mjs",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_screenshots_pnx_verify_mjs",
-      "community": 255,
+      "community": 256,
       "norm_label": "pnx-verify.mjs"
     },
     {
@@ -1323,7 +1368,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\install-ad-skills.ps1",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_install_ad_skills_ps1",
-      "community": 256,
+      "community": 257,
       "norm_label": "install-ad-skills.ps1"
     },
     {
@@ -1332,7 +1377,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-audit-pull.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_meta_audit_pull_py",
-      "community": 205,
+      "community": 206,
       "norm_label": "meta-audit-pull.py"
     },
     {
@@ -1341,7 +1386,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-audit-pull.py",
       "source_location": "L19",
       "id": "meta_audit_pull_gg",
-      "community": 205,
+      "community": 206,
       "norm_label": "gg()"
     },
     {
@@ -1350,7 +1395,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-check-budget.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_meta_check_budget_py",
-      "community": 206,
+      "community": 207,
       "norm_label": "meta-check-budget.py"
     },
     {
@@ -1359,7 +1404,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-check-budget.py",
       "source_location": "L12",
       "id": "meta_check_budget_gg",
-      "community": 206,
+      "community": 207,
       "norm_label": "gg()"
     },
     {
@@ -1368,7 +1413,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-check-destination.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_meta_check_destination_py",
-      "community": 207,
+      "community": 208,
       "norm_label": "meta-check-destination.py"
     },
     {
@@ -1377,7 +1422,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-check-destination.py",
       "source_location": "L15",
       "id": "meta_check_destination_gg",
-      "community": 207,
+      "community": 208,
       "norm_label": "gg()"
     },
     {
@@ -1386,7 +1431,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-preflight.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_meta_preflight_py",
-      "community": 208,
+      "community": 209,
       "norm_label": "meta-preflight.py"
     },
     {
@@ -1395,7 +1440,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-preflight.py",
       "source_location": "L12",
       "id": "meta_preflight_gg",
-      "community": 208,
+      "community": 209,
       "norm_label": "gg()"
     },
     {
@@ -1404,7 +1449,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-set-budget.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_meta_set_budget_py",
-      "community": 257,
+      "community": 258,
       "norm_label": "meta-set-budget.py"
     },
     {
@@ -1413,7 +1458,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-verify-state.py",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_meta_verify_state_py",
-      "community": 209,
+      "community": 210,
       "norm_label": "meta-verify-state.py"
     },
     {
@@ -1422,7 +1467,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\meta-verify-state.py",
       "source_location": "L14",
       "id": "meta_verify_state_gg",
-      "community": 209,
+      "community": 210,
       "norm_label": "gg()"
     },
     {
@@ -1431,7 +1476,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\rielcode-review.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_rielcode_review_js",
-      "community": 258,
+      "community": 259,
       "norm_label": "rielcode-review.js"
     },
     {
@@ -1440,7 +1485,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\screenshot-order-pages.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_screenshot_order_pages_js",
-      "community": 259,
+      "community": 260,
       "norm_label": "screenshot-order-pages.js"
     },
     {
@@ -1449,7 +1494,7 @@
       "source_file": "scripts\\cross-browser-check\\references\\cross-browser-template.js",
       "source_location": "L1",
       "id": "scripts_cross_browser_check_references_cross_browser_template_js",
-      "community": 210,
+      "community": 211,
       "norm_label": "cross-browser-template.js"
     },
     {
@@ -1458,7 +1503,7 @@
       "source_file": "scripts\\cross-browser-check\\references\\cross-browser-template.js",
       "source_location": "L56",
       "id": "cross_browser_template_runbrowser",
-      "community": 210,
+      "community": 211,
       "norm_label": "runbrowser()"
     },
     {
@@ -1485,7 +1530,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\brief-fill.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_brief_fill_js",
-      "community": 260,
+      "community": 261,
       "norm_label": "brief-fill.js"
     },
     {
@@ -1494,7 +1539,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\brief-progress-mobile-screenshots.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_brief_progress_mobile_screenshots_js",
-      "community": 261,
+      "community": 262,
       "norm_label": "brief-progress-mobile-screenshots.js"
     },
     {
@@ -1503,7 +1548,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\check-slider.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_check_slider_js",
-      "community": 262,
+      "community": 263,
       "norm_label": "check-slider.js"
     },
     {
@@ -1512,7 +1557,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\custom-plan-mobile.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_custom_plan_mobile_js",
-      "community": 263,
+      "community": 264,
       "norm_label": "custom-plan-mobile.js"
     },
     {
@@ -1521,7 +1566,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\debug-chat.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_debug_chat_js",
-      "community": 264,
+      "community": 265,
       "norm_label": "debug-chat.js"
     },
     {
@@ -1530,7 +1575,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\discover-pages.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_discover_pages_js",
-      "community": 265,
+      "community": 266,
       "norm_label": "discover-pages.js"
     },
     {
@@ -1539,7 +1584,7 @@
       "source_file": "scripts\\playwright\\fill-custom-plan-pro.js",
       "source_location": "L1",
       "id": "scripts_playwright_fill_custom_plan_pro_js",
-      "community": 266,
+      "community": 267,
       "norm_label": "fill-custom-plan-pro.js"
     },
     {
@@ -1548,7 +1593,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-answer-all.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_answer_all_js",
-      "community": 267,
+      "community": 268,
       "norm_label": "gform-answer-all.js"
     },
     {
@@ -1557,7 +1602,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-answer.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_answer_js",
-      "community": 268,
+      "community": 269,
       "norm_label": "gform-answer.js"
     },
     {
@@ -1566,7 +1611,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-login.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_login_js",
-      "community": 269,
+      "community": 270,
       "norm_label": "gform-login.js"
     },
     {
@@ -1575,7 +1620,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-probe-all.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_probe_all_js",
-      "community": 270,
+      "community": 271,
       "norm_label": "gform-probe-all.js"
     },
     {
@@ -1584,7 +1629,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\gform-q1.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_gform_q1_js",
-      "community": 271,
+      "community": 272,
       "norm_label": "gform-q1.js"
     },
     {
@@ -1593,7 +1638,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\inspect-padding.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_inspect_padding_js",
-      "community": 272,
+      "community": 273,
       "norm_label": "inspect-padding.js"
     },
     {
@@ -1602,7 +1647,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\live-chat-pill.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_live_chat_pill_js",
-      "community": 187,
+      "community": 188,
       "norm_label": "live-chat-pill.js"
     },
     {
@@ -1611,7 +1656,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\live-chat-pill.js",
       "source_location": "L24",
       "id": "live_chat_pill_sendandread",
-      "community": 187,
+      "community": 188,
       "norm_label": "sendandread()"
     },
     {
@@ -1620,7 +1665,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\live-chat-pill.js",
       "source_location": "L63",
       "id": "live_chat_pill_openfreshchat",
-      "community": 187,
+      "community": 188,
       "norm_label": "openfreshchat()"
     },
     {
@@ -1629,7 +1674,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-debug.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_debug_js",
-      "community": 273,
+      "community": 274,
       "norm_label": "order-form-debug.js"
     },
     {
@@ -1638,7 +1683,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-smtp-test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_smtp_test_js",
-      "community": 274,
+      "community": 275,
       "norm_label": "order-form-smtp-test.js"
     },
     {
@@ -1647,7 +1692,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test_js",
-      "community": 275,
+      "community": 276,
       "norm_label": "order-form-test.js"
     },
     {
@@ -1656,7 +1701,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test2.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test2_js",
-      "community": 276,
+      "community": 277,
       "norm_label": "order-form-test2.js"
     },
     {
@@ -1665,7 +1710,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test3.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test3_js",
-      "community": 277,
+      "community": 278,
       "norm_label": "order-form-test3.js"
     },
     {
@@ -1674,7 +1719,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test4.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test4_js",
-      "community": 278,
+      "community": 279,
       "norm_label": "order-form-test4.js"
     },
     {
@@ -1683,7 +1728,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-test5.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_test5_js",
-      "community": 279,
+      "community": 280,
       "norm_label": "order-form-test5.js"
     },
     {
@@ -1692,7 +1737,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-verify-fix.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_verify_fix_js",
-      "community": 280,
+      "community": 281,
       "norm_label": "order-form-verify-fix.js"
     },
     {
@@ -1701,7 +1746,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\order-form-verify.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_order_form_verify_js",
-      "community": 281,
+      "community": 282,
       "norm_label": "order-form-verify.js"
     },
     {
@@ -1737,7 +1782,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\rielcode-fake-order-progress.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_rielcode_fake_order_progress_js",
-      "community": 282,
+      "community": 283,
       "norm_label": "rielcode-fake-order-progress.js"
     },
     {
@@ -1746,7 +1791,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\rielcode-progress-only.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_rielcode_progress_only_js",
-      "community": 283,
+      "community": 284,
       "norm_label": "rielcode-progress-only.js"
     },
     {
@@ -1755,7 +1800,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\scrape-artifact.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_scrape_artifact_js",
-      "community": 284,
+      "community": 285,
       "norm_label": "scrape-artifact.js"
     },
     {
@@ -1764,7 +1809,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\screenshot-all-mobile.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_screenshot_all_mobile_js",
-      "community": 285,
+      "community": 286,
       "norm_label": "screenshot-all-mobile.js"
     },
     {
@@ -1773,7 +1818,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\screenshot-all.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_screenshot_all_js",
-      "community": 286,
+      "community": 287,
       "norm_label": "screenshot-all.js"
     },
     {
@@ -1782,7 +1827,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\shot-chat-pill.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_shot_chat_pill_js",
-      "community": 287,
+      "community": 288,
       "norm_label": "shot-chat-pill.js"
     },
     {
@@ -1791,7 +1836,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\track1c-screenshots.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_track1c_screenshots_js",
-      "community": 288,
+      "community": 289,
       "norm_label": "track1c-screenshots.js"
     },
     {
@@ -1800,7 +1845,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\verify-chat-pill.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_verify_chat_pill_js",
-      "community": 211,
+      "community": 212,
       "norm_label": "verify-chat-pill.js"
     },
     {
@@ -1809,7 +1854,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\verify-chat-pill.js",
       "source_location": "L19",
       "id": "verify_chat_pill_makerender",
-      "community": 211,
+      "community": 212,
       "norm_label": "makerender()"
     },
     {
@@ -1818,7 +1863,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-check.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_check_js",
-      "community": 212,
+      "community": 213,
       "norm_label": "yt-check.js"
     },
     {
@@ -1827,7 +1872,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-check.js",
       "source_location": "L3",
       "id": "yt_check_get",
-      "community": 212,
+      "community": 213,
       "norm_label": "get()"
     },
     {
@@ -1836,7 +1881,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-debug.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_debug_js",
-      "community": 289,
+      "community": 290,
       "norm_label": "yt-debug.js"
     },
     {
@@ -1845,7 +1890,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-dump.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_dump_js",
-      "community": 290,
+      "community": 291,
       "norm_label": "yt-dump.js"
     },
     {
@@ -1854,7 +1899,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-get-url.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_get_url_js",
-      "community": 188,
+      "community": 189,
       "norm_label": "yt-get-url.js"
     },
     {
@@ -1863,7 +1908,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-get-url.js",
       "source_location": "L12",
       "id": "yt_get_url_get",
-      "community": 188,
+      "community": 189,
       "norm_label": "get()"
     },
     {
@@ -1872,7 +1917,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-get-url.js",
       "source_location": "L22",
       "id": "yt_get_url_getcaptionurl",
-      "community": 188,
+      "community": 189,
       "norm_label": "getcaptionurl()"
     },
     {
@@ -1881,7 +1926,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript-api.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript_api_js",
-      "community": 213,
+      "community": 214,
       "norm_label": "yt-transcript-api.js"
     },
     {
@@ -1890,7 +1935,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript-api.js",
       "source_location": "L5",
       "id": "yt_transcript_api_get",
-      "community": 213,
+      "community": 214,
       "norm_label": "get()"
     },
     {
@@ -1917,7 +1962,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript-browser.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript_browser_js",
-      "community": 291,
+      "community": 292,
       "norm_label": "yt-transcript-browser.js"
     },
     {
@@ -1926,7 +1971,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript-pkg.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript_pkg_js",
-      "community": 292,
+      "community": 293,
       "norm_label": "yt-transcript-pkg.js"
     },
     {
@@ -1935,7 +1980,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript_js",
-      "community": 293,
+      "community": 294,
       "norm_label": "yt-transcript.js"
     },
     {
@@ -1944,7 +1989,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\scripts\\playwright\\yt-transcript2.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_scripts_playwright_yt_transcript2_js",
-      "community": 294,
+      "community": 295,
       "norm_label": "yt-transcript2.js"
     },
     {
@@ -1953,7 +1998,7 @@
       "source_file": "tests\\playwright\\rielcode-audit.spec.js",
       "source_location": "L1",
       "id": "tests_playwright_rielcode_audit_spec_js",
-      "community": 189,
+      "community": 190,
       "norm_label": "rielcode-audit.spec.js"
     },
     {
@@ -1962,7 +2007,7 @@
       "source_file": "tests\\playwright\\rielcode-audit.spec.js",
       "source_location": "L27",
       "id": "rielcode_audit_spec_attachconsolelistener",
-      "community": 189,
+      "community": 190,
       "norm_label": "attachconsolelistener()"
     },
     {
@@ -1971,7 +2016,7 @@
       "source_file": "tests\\playwright\\rielcode-audit.spec.js",
       "source_location": "L38",
       "id": "rielcode_audit_spec_shot",
-      "community": 189,
+      "community": 190,
       "norm_label": "shot()"
     },
     {
@@ -1980,7 +2025,7 @@
       "source_file": "tests\\playwright\\smoke.spec.js",
       "source_location": "L1",
       "id": "tests_playwright_smoke_spec_js",
-      "community": 295,
+      "community": 296,
       "norm_label": "smoke.spec.js"
     },
     {
@@ -2079,7 +2124,7 @@
       "source_file": "tools\\launch-widget.ps1",
       "source_location": "L1",
       "id": "tools_launch_widget_ps1",
-      "community": 296,
+      "community": 297,
       "norm_label": "launch-widget.ps1"
     },
     {
@@ -2205,7 +2250,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\error.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_error_test_js",
-      "community": 297,
+      "community": 298,
       "norm_label": "error.test.js"
     },
     {
@@ -2214,7 +2259,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\figma.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_figma_test_js",
-      "community": 298,
+      "community": 299,
       "norm_label": "figma.test.js"
     },
     {
@@ -2223,7 +2268,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\figma\\tests\\output.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_figma_tests_output_test_js",
-      "community": 299,
+      "community": 300,
       "norm_label": "output.test.js"
     },
     {
@@ -2232,7 +2277,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\jest.config.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_jest_config_js",
-      "community": 300,
+      "community": 301,
       "norm_label": "jest.config.js"
     },
     {
@@ -2412,7 +2457,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\google\\tests\\youtube.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_google_tests_youtube_test_js",
-      "community": 301,
+      "community": 302,
       "norm_label": "youtube.test.js"
     },
     {
@@ -2763,7 +2808,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.instagram.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_instagram_test_js",
-      "community": 302,
+      "community": 303,
       "norm_label": "auth.instagram.test.js"
     },
     {
@@ -2772,7 +2817,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\auth.tiktok.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_auth_tiktok_test_js",
-      "community": 303,
+      "community": 304,
       "norm_label": "auth.tiktok.test.js"
     },
     {
@@ -2781,7 +2826,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\error.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_error_test_js",
-      "community": 304,
+      "community": 305,
       "norm_label": "error.test.js"
     },
     {
@@ -2790,7 +2835,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\ig.list.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_ig_list_test_js",
-      "community": 305,
+      "community": 306,
       "norm_label": "ig.list.test.js"
     },
     {
@@ -2799,7 +2844,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\output.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_output_test_js",
-      "community": 306,
+      "community": 307,
       "norm_label": "output.test.js"
     },
     {
@@ -2808,7 +2853,7 @@
       "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\tools\\social\\__tests__\\tt.list.test.js",
       "source_location": "L1",
       "id": "c_users_afw14_onedrive_documents_jarvis_tools_social_tests_tt_list_test_js",
-      "community": 307,
+      "community": 308,
       "norm_label": "tt.list.test.js"
     },
     {
@@ -2816,7 +2861,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot/homework_parser.py",
       "source_location": "L14",
-      "community": 308,
+      "community": 309,
       "norm_label": "parse a natural-language homework message.     returns {\"subject\": str, \"due_da",
       "id": "homework_bot_homework_parser_rationale_14"
     },
@@ -2825,7 +2870,7 @@
       "file_type": "rationale",
       "source_file": "homework-bot/tests/conftest.py",
       "source_location": "L9",
-      "community": 309,
+      "community": 310,
       "norm_label": "set up dummy environment variables for testing.",
       "id": "tests_conftest_rationale_9"
     },
@@ -2834,7 +2879,7 @@
       "file_type": "rationale",
       "source_file": "manim-ads/rielcode_ad.py",
       "source_location": "L1",
-      "community": 310,
+      "community": 311,
       "norm_label": "rielcode starter ad scene. render preview:  manim -ql rielcode_ad.py rielcodead",
       "id": "manim_ads_rielcode_ad_rationale_1"
     },
@@ -2843,7 +2888,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L1",
-      "community": 311,
+      "community": 312,
       "norm_label": "flask dashboard for meta ads + messenger dms. run: flask --app meta.dashboard.ap",
       "id": "dashboard_app_rationale_1"
     },
@@ -2852,7 +2897,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L11",
-      "community": 312,
+      "community": 313,
       "norm_label": "return (data, error_message). never raises to the view layer.",
       "id": "dashboard_app_rationale_11"
     },
@@ -2861,7 +2906,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L43",
-      "community": 313,
+      "community": 314,
       "norm_label": "client-side chat fetch. prefers conversation id (fast path) from the inbox list,",
       "id": "dashboard_app_rationale_43"
     },
@@ -2870,7 +2915,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L58",
-      "community": 314,
+      "community": 315,
       "norm_label": "server-rendered fallback for shared/direct links (no id available).",
       "id": "dashboard_app_rationale_58"
     },
@@ -2879,7 +2924,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/config.py",
       "source_location": "L1",
-      "community": 315,
+      "community": 316,
       "norm_label": "tiny .env reader, mirrors the loader in ../ads-report.mjs (no python-dotenv dep)",
       "id": "dashboard_config_rationale_1"
     },
@@ -2888,7 +2933,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L1",
-      "community": 316,
+      "community": 317,
       "norm_label": "read-only meta graph api client. ports the logic of ../ads-report.mjs and ../dms",
       "id": "dashboard_meta_api_rationale_1"
     },
@@ -2897,7 +2942,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L30",
-      "community": 317,
+      "community": 318,
       "norm_label": "friendly, user-facing api/config error (token missing, expired, no permission).",
       "id": "dashboard_meta_api_rationale_30"
     },
@@ -2906,7 +2951,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L305",
-      "community": 318,
+      "community": 319,
       "norm_label": "ordered (oldest-first) message history for a known conversation id.",
       "id": "dashboard_meta_api_rationale_305"
     },
@@ -2915,7 +2960,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L326",
-      "community": 319,
+      "community": 320,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
       "id": "dashboard_meta_api_rationale_326"
     },
@@ -2924,7 +2969,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L336",
-      "community": 320,
+      "community": 321,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
       "id": "dashboard_meta_api_rationale_336"
     },
@@ -2933,7 +2978,7 @@
       "file_type": "rationale",
       "source_file": "tools/claude-widget.py",
       "source_location": "L70",
-      "community": 321,
+      "community": 322,
       "norm_label": "return branch, repo name, dirty flag for given path.",
       "id": "tools_claude_widget_rationale_70"
     },
@@ -2942,7 +2987,7 @@
       "file_type": "rationale",
       "source_file": "tools/claude-widget.py",
       "source_location": "L89",
-      "community": 322,
+      "community": 323,
       "norm_label": "scan $temp for claude-ctx-*.json files and return the most recently     modifie",
       "id": "tools_claude_widget_rationale_89"
     },
@@ -3383,7 +3428,7 @@
       "file_type": "document",
       "source_file": "connections.md",
       "source_location": "L1",
-      "community": 214,
+      "community": 215,
       "norm_label": "connections.md",
       "id": "connections_md"
     },
@@ -3392,7 +3437,7 @@
       "file_type": "document",
       "source_file": "connections.md",
       "source_location": "L1",
-      "community": 214,
+      "community": 215,
       "norm_label": "connections",
       "id": "jarvis_connections_connections"
     },
@@ -5129,7 +5174,7 @@
       "file_type": "document",
       "source_file": "_COMMUNITY_Community 5.md",
       "source_location": "L1",
-      "community": 323,
+      "community": 324,
       "norm_label": "_community_community 5.md",
       "id": "community_community_5_md"
     },
@@ -6866,7 +6911,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/demo-website/SKILL.md",
       "source_location": "L1",
-      "community": 93,
+      "community": 89,
       "norm_label": "skill.md",
       "id": "claude_skills_demo_website_skill_md"
     },
@@ -6875,7 +6920,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L7",
-      "community": 93,
+      "community": 89,
       "norm_label": "what this skill does",
       "id": "demo_website_skill_what_this_skill_does"
     },
@@ -6884,7 +6929,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L11",
-      "community": 93,
+      "community": 89,
       "norm_label": "steps",
       "id": "demo_website_skill_steps"
     },
@@ -6893,7 +6938,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L13",
-      "community": 93,
+      "community": 89,
       "norm_label": "1. gather client details",
       "id": "demo_website_skill_1_gather_client_details"
     },
@@ -6902,7 +6947,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L26",
-      "community": 93,
+      "community": 89,
       "norm_label": "2. plan the design",
       "id": "demo_website_skill_2_plan_the_design"
     },
@@ -6911,7 +6956,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L55",
-      "community": 93,
+      "community": 89,
       "norm_label": "3. generate the project",
       "id": "demo_website_skill_3_generate_the_project"
     },
@@ -6920,7 +6965,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L60",
-      "community": 93,
+      "community": 89,
       "norm_label": "code:block1 ([business-name-demo]/)",
       "id": "demo_website_skill_codeblock_1"
     },
@@ -6929,7 +6974,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L95",
-      "community": 93,
+      "community": 89,
       "norm_label": "4. screenshot and review",
       "id": "demo_website_skill_4_screenshot_and_review"
     },
@@ -6938,7 +6983,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L107",
-      "community": 93,
+      "community": 89,
       "norm_label": "5. send ntfy notification",
       "id": "demo_website_skill_5_send_ntfy_notification"
     },
@@ -6947,7 +6992,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L111",
-      "community": 93,
+      "community": 89,
       "norm_label": "code:bash (curl -s -o /dev/null -h \"title: demo site ready\" -d \"demo fo)",
       "id": "demo_website_skill_codeblock_2"
     },
@@ -6956,7 +7001,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L117",
-      "community": 93,
+      "community": 89,
       "norm_label": "6. report to the user",
       "id": "demo_website_skill_6_report_to_the_user"
     },
@@ -6965,7 +7010,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L128",
-      "community": 93,
+      "community": 89,
       "norm_label": "rules",
       "id": "demo_website_skill_rules"
     },
@@ -8666,7 +8711,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L1",
-      "community": 89,
+      "community": 90,
       "norm_label": "skill.md",
       "id": "claude_skills_email_course_builder_skill_md"
     },
@@ -8675,7 +8720,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L1",
-      "community": 89,
+      "community": 90,
       "norm_label": "/email-course-builder",
       "id": "email_course_builder_skill_email_course_builder"
     },
@@ -8684,7 +8729,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L11",
-      "community": 89,
+      "community": 90,
       "norm_label": "what this skill does",
       "id": "email_course_builder_skill_what_this_skill_does"
     },
@@ -8693,7 +8738,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L19",
-      "community": 89,
+      "community": 90,
       "norm_label": "curriculum (pre-defined)",
       "id": "email_course_builder_skill_curriculum_pre_defined"
     },
@@ -8702,7 +8747,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L33",
-      "community": 89,
+      "community": 90,
       "norm_label": "email structure (per email)",
       "id": "email_course_builder_skill_email_structure_per_email"
     },
@@ -8711,7 +8756,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L35",
-      "community": 89,
+      "community": 90,
       "norm_label": "code:block1 (subject: [day x] [curiosity hook \u2014 max 50 chars])",
       "id": "email_course_builder_skill_codeblock_1"
     },
@@ -8720,7 +8765,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L56",
-      "community": 89,
+      "community": 90,
       "norm_label": "day 7 email \u2014 special structure",
       "id": "email_course_builder_skill_day_7_email_special_structure"
     },
@@ -8729,7 +8774,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L60",
-      "community": 89,
+      "community": 90,
       "norm_label": "code:block2 (subject: day 7: when diy breaks down (and what to do))",
       "id": "email_course_builder_skill_codeblock_2"
     },
@@ -8738,7 +8783,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L86",
-      "community": 89,
+      "community": 90,
       "norm_label": "steps when invoked",
       "id": "email_course_builder_skill_steps_when_invoked"
     },
@@ -8747,7 +8792,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L93",
-      "community": 89,
+      "community": 90,
       "norm_label": "brevo automation setup",
       "id": "email_course_builder_skill_brevo_automation_setup"
     },
@@ -8756,7 +8801,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L109",
-      "community": 89,
+      "community": 90,
       "norm_label": "utm tracking (add to all links)",
       "id": "email_course_builder_skill_utm_tracking_add_to_all_links"
     },
@@ -8765,7 +8810,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L115",
-      "community": 89,
+      "community": 90,
       "norm_label": "after setup",
       "id": "email_course_builder_skill_after_setup"
     },
@@ -8774,7 +8819,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/email-course-builder/SKILL.md",
       "source_location": "L123",
-      "community": 89,
+      "community": 90,
       "norm_label": "rollout timing (from growth plan)",
       "id": "email_course_builder_skill_rollout_timing_from_growth_plan"
     },
@@ -9746,7 +9791,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/frontend-design/SKILL.md",
       "source_location": "L1",
-      "community": 175,
+      "community": 176,
       "norm_label": "skill.md",
       "id": "claude_skills_frontend_design_skill_md"
     },
@@ -9755,7 +9800,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/frontend-design/SKILL.md",
       "source_location": "L11",
-      "community": 175,
+      "community": 176,
       "norm_label": "design thinking",
       "id": "frontend_design_skill_design_thinking"
     },
@@ -9764,7 +9809,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/frontend-design/SKILL.md",
       "source_location": "L27",
-      "community": 175,
+      "community": 176,
       "norm_label": "frontend aesthetics guidelines",
       "id": "frontend_design_skill_frontend_aesthetics_guidelines"
     },
@@ -11672,7 +11717,7 @@
       "file_type": "document",
       "source_file": ".claude/skills/site-cloner/SKILL.md",
       "source_location": "L1",
-      "community": 90,
+      "community": 93,
       "norm_label": "skill.md",
       "id": "claude_skills_site_cloner_skill_md"
     },
@@ -11681,7 +11726,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L7",
-      "community": 90,
+      "community": 93,
       "norm_label": "what this skill does",
       "id": "site_cloner_skill_what_this_skill_does"
     },
@@ -11690,7 +11735,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L11",
-      "community": 90,
+      "community": 93,
       "norm_label": "steps",
       "id": "site_cloner_skill_steps"
     },
@@ -11699,7 +11744,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L37",
-      "community": 90,
+      "community": 93,
       "norm_label": "code:block1 ([project-name]/)",
       "id": "site_cloner_skill_codeblock_1"
     },
@@ -11708,7 +11753,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L62",
-      "community": 90,
+      "community": 93,
       "norm_label": "output templates",
       "id": "site_cloner_skill_output_templates"
     },
@@ -11717,7 +11762,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L64",
-      "community": 90,
+      "community": 93,
       "norm_label": "design-breakdown.md",
       "id": "site_cloner_skill_design_breakdown_md"
     },
@@ -11726,7 +11771,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L66",
-      "community": 90,
+      "community": 93,
       "norm_label": "code:markdown (# design breakdown: [site name])",
       "id": "site_cloner_skill_codeblock_2"
     },
@@ -11735,7 +11780,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L99",
-      "community": 90,
+      "community": 93,
       "norm_label": "css/custom.css",
       "id": "site_cloner_skill_css_custom_css"
     },
@@ -11744,7 +11789,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L101",
-      "community": 90,
+      "community": 93,
       "norm_label": "code:css (:root {)",
       "id": "site_cloner_skill_codeblock_3"
     },
@@ -11753,7 +11798,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L124",
-      "community": 90,
+      "community": 93,
       "norm_label": "[page].html",
       "id": "site_cloner_skill_page_html"
     },
@@ -11762,7 +11807,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L126",
-      "community": 90,
+      "community": 93,
       "norm_label": "code:html (<!doctype html>)",
       "id": "site_cloner_skill_codeblock_4"
     },
@@ -11771,7 +11816,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L149",
-      "community": 90,
+      "community": 93,
       "norm_label": "notes",
       "id": "site_cloner_skill_notes"
     },
@@ -14417,7 +14462,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/connections.md",
       "source_location": "L1",
-      "community": 215,
+      "community": 216,
       "norm_label": "connections.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_connections_md"
     },
@@ -14426,7 +14471,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/connections.md",
       "source_location": "L1",
-      "community": 215,
+      "community": 216,
       "norm_label": "connections",
       "id": "vigilant_sinoussi_806708_connections_connections"
     },
@@ -14561,7 +14606,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/demo-website/SKILL.md",
       "source_location": "L1",
-      "community": 93,
+      "community": 89,
       "norm_label": "skill.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_claude_skills_demo_website_skill_md"
     },
@@ -14588,7 +14633,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/frontend-design/SKILL.md",
       "source_location": "L1",
-      "community": 175,
+      "community": 176,
       "norm_label": "skill.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_claude_skills_frontend_design_skill_md"
     },
@@ -14705,7 +14750,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/.claude/skills/site-cloner/SKILL.md",
       "source_location": "L1",
-      "community": 90,
+      "community": 93,
       "norm_label": "skill.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_claude_skills_site_cloner_skill_md"
     },
@@ -14786,7 +14831,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/context/about-business.md",
       "source_location": "L1",
-      "community": 190,
+      "community": 191,
       "norm_label": "about-business.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_context_about_business_md"
     },
@@ -14795,7 +14840,7 @@
       "file_type": "document",
       "source_file": "context/about-business.md",
       "source_location": "L1",
-      "community": 190,
+      "community": 191,
       "norm_label": "about rielcode",
       "id": "context_about_business_about_rielcode"
     },
@@ -14804,7 +14849,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/context/about-me.md",
       "source_location": "L1",
-      "community": 191,
+      "community": 192,
       "norm_label": "about-me.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_context_about_me_md"
     },
@@ -14813,7 +14858,7 @@
       "file_type": "document",
       "source_file": "context/about-me.md",
       "source_location": "L1",
-      "community": 191,
+      "community": 192,
       "norm_label": "about azriel",
       "id": "context_about_me_about_azriel"
     },
@@ -14822,7 +14867,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/context/current-priorities.md",
       "source_location": "L1",
-      "community": 176,
+      "community": 177,
       "norm_label": "current-priorities.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_context_current_priorities_md"
     },
@@ -14831,7 +14876,7 @@
       "file_type": "document",
       "source_file": "context/current-priorities.md",
       "source_location": "L1",
-      "community": 176,
+      "community": 177,
       "norm_label": "current priorities",
       "id": "context_current_priorities_current_priorities"
     },
@@ -14840,7 +14885,7 @@
       "file_type": "document",
       "source_file": "context/current-priorities.md",
       "source_location": "L10",
-      "community": 176,
+      "community": 177,
       "norm_label": "active projects",
       "id": "context_current_priorities_active_projects"
     },
@@ -14885,7 +14930,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/context/me.md",
       "source_location": "L1",
-      "community": 192,
+      "community": 193,
       "norm_label": "me.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_context_me_md"
     },
@@ -14894,7 +14939,7 @@
       "file_type": "document",
       "source_file": "context/me.md",
       "source_location": "L1",
-      "community": 192,
+      "community": 193,
       "norm_label": "about azriel",
       "id": "context_me_about_azriel"
     },
@@ -14903,7 +14948,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/context/priorities.md",
       "source_location": "L1",
-      "community": 193,
+      "community": 194,
       "norm_label": "priorities.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_context_priorities_md"
     },
@@ -14912,7 +14957,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/context/priorities.md",
       "source_location": "L1",
-      "community": 193,
+      "community": 194,
       "norm_label": "priorities -- q2 2026 (april-june)",
       "id": "context_priorities_priorities_q2_2026_april_june"
     },
@@ -14921,7 +14966,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/context/team.md",
       "source_location": "L1",
-      "community": 177,
+      "community": 178,
       "norm_label": "team.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_context_team_md"
     },
@@ -14930,7 +14975,7 @@
       "file_type": "document",
       "source_file": "context/team.md",
       "source_location": "L1",
-      "community": 177,
+      "community": 178,
       "norm_label": "team",
       "id": "context_team_team"
     },
@@ -14939,7 +14984,7 @@
       "file_type": "document",
       "source_file": "context/team.md",
       "source_location": "L5",
-      "community": 177,
+      "community": 178,
       "norm_label": "current clients",
       "id": "context_team_current_clients"
     },
@@ -15002,7 +15047,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/decisions/log.md",
       "source_location": "L1",
-      "community": 178,
+      "community": 179,
       "norm_label": "log.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_decisions_log_md"
     },
@@ -15011,7 +15056,7 @@
       "file_type": "document",
       "source_file": "decisions/log.md",
       "source_location": "L1",
-      "community": 178,
+      "community": 179,
       "norm_label": "decisions log",
       "id": "decisions_log_decisions_log"
     },
@@ -15020,7 +15065,7 @@
       "file_type": "document",
       "source_file": "decisions/log.md",
       "source_location": "L7",
-      "community": 178,
+      "community": 179,
       "norm_label": "code:block1 (## yyyy-mm-dd \u2014 short title)",
       "id": "decisions_log_codeblock_1"
     },
@@ -16901,7 +16946,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/leads/archive.md",
       "source_location": "L1",
-      "community": 194,
+      "community": 195,
       "norm_label": "archive.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_leads_archive_md"
     },
@@ -16910,7 +16955,7 @@
       "file_type": "document",
       "source_file": "leads/archive.md",
       "source_location": "L1",
-      "community": 194,
+      "community": 195,
       "norm_label": "leads archive",
       "id": "leads_archive_leads_archive"
     },
@@ -16919,7 +16964,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/leads/leads.md",
       "source_location": "L1",
-      "community": 179,
+      "community": 180,
       "norm_label": "leads.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_leads_leads_md"
     },
@@ -16928,7 +16973,7 @@
       "file_type": "document",
       "source_file": "leads/leads.md",
       "source_location": "L1",
-      "community": 179,
+      "community": 180,
       "norm_label": "leads",
       "id": "leads_leads_leads"
     },
@@ -16937,7 +16982,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/memory/MEMORY.md",
       "source_location": "L1",
-      "community": 195,
+      "community": 196,
       "norm_label": "memory.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_memory_memory_md"
     },
@@ -16946,7 +16991,7 @@
       "file_type": "document",
       "source_file": "memory/MEMORY.md",
       "source_location": "L1",
-      "community": 195,
+      "community": 196,
       "norm_label": "memory index",
       "id": "memory_memory_memory_index"
     },
@@ -16955,7 +17000,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/memory/project_testimonial_page.md",
       "source_location": "L1",
-      "community": 196,
+      "community": 197,
       "norm_label": "project_testimonial_page.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_memory_project_testimonial_page_md"
     },
@@ -16964,7 +17009,7 @@
       "file_type": "document",
       "source_file": "memory/project_testimonial_page.md",
       "source_location": "L13",
-      "community": 196,
+      "community": 197,
       "norm_label": "key notes",
       "id": "memory_project_testimonial_page_key_notes"
     },
@@ -16973,7 +17018,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/projects/Parallaxnet Canada/README.md",
       "source_location": "L1",
-      "community": 197,
+      "community": 198,
       "norm_label": "readme.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_projects_parallaxnet_canada_readme_md"
     },
@@ -16982,7 +17027,7 @@
       "file_type": "document",
       "source_file": "projects/Parallaxnet Canada/README.md",
       "source_location": "L1",
-      "community": 197,
+      "community": 198,
       "norm_label": "parallaxnet canada -- website",
       "id": "parallaxnet_canada_readme_parallaxnet_canada_website"
     },
@@ -18026,7 +18071,7 @@
       "file_type": "document",
       "source_file": ".claude/worktrees/vigilant-sinoussi-806708/references/learning-log.md",
       "source_location": "L1",
-      "community": 198,
+      "community": 199,
       "norm_label": "learning-log.md",
       "id": "claude_worktrees_vigilant_sinoussi_806708_references_learning_log_md"
     },
@@ -18035,7 +18080,7 @@
       "file_type": "document",
       "source_file": "references/learning-log.md",
       "source_location": "L1",
-      "community": 198,
+      "community": 199,
       "norm_label": "learning log",
       "id": "references_learning_log_learning_log"
     },
@@ -18449,7 +18494,7 @@
       "file_type": "document",
       "source_file": "archives/priorities-q2-2026.md",
       "source_location": "L1",
-      "community": 216,
+      "community": 217,
       "norm_label": "priorities-q2-2026.md",
       "id": "archives_priorities_q2_2026_md"
     },
@@ -18458,7 +18503,7 @@
       "file_type": "document",
       "source_file": "archives/priorities-q2-2026.md",
       "source_location": "L1",
-      "community": 216,
+      "community": 217,
       "norm_label": "priorities -- q2 2026 (april-june)",
       "id": "archives_priorities_q2_2026_priorities_q2_2026_april_june"
     },
@@ -18467,7 +18512,7 @@
       "file_type": "document",
       "source_file": "context/about-business.md",
       "source_location": "L1",
-      "community": 190,
+      "community": 191,
       "norm_label": "about-business.md",
       "id": "context_about_business_md"
     },
@@ -18476,7 +18521,7 @@
       "file_type": "document",
       "source_file": "context/about-me.md",
       "source_location": "L1",
-      "community": 191,
+      "community": 192,
       "norm_label": "about-me.md",
       "id": "context_about_me_md"
     },
@@ -18485,7 +18530,7 @@
       "file_type": "document",
       "source_file": "context/current-priorities.md",
       "source_location": "L1",
-      "community": 176,
+      "community": 177,
       "norm_label": "current-priorities.md",
       "id": "context_current_priorities_md"
     },
@@ -18521,7 +18566,7 @@
       "file_type": "document",
       "source_file": "context/me.md",
       "source_location": "L1",
-      "community": 192,
+      "community": 193,
       "norm_label": "me.md",
       "id": "context_me_md"
     },
@@ -18656,7 +18701,7 @@
       "file_type": "document",
       "source_file": "context/team.md",
       "source_location": "L1",
-      "community": 177,
+      "community": 178,
       "norm_label": "team.md",
       "id": "context_team_md"
     },
@@ -18674,7 +18719,7 @@
       "file_type": "document",
       "source_file": "decisions/log.md",
       "source_location": "L1",
-      "community": 178,
+      "community": 179,
       "norm_label": "log.md",
       "id": "decisions_log_md"
     },
@@ -18683,7 +18728,7 @@
       "file_type": "document",
       "source_file": "deployments/index.md",
       "source_location": "L1",
-      "community": 217,
+      "community": 218,
       "norm_label": "index.md",
       "id": "deployments_index_md"
     },
@@ -18692,7 +18737,7 @@
       "file_type": "document",
       "source_file": "deployments/index.md",
       "source_location": "L1",
-      "community": 217,
+      "community": 218,
       "norm_label": "deployments index",
       "id": "deployments_index_deployments_index"
     },
@@ -25127,7 +25172,7 @@
       "file_type": "document",
       "source_file": "leads/archive.md",
       "source_location": "L1",
-      "community": 194,
+      "community": 195,
       "norm_label": "archive.md",
       "id": "leads_archive_md"
     },
@@ -25136,7 +25181,7 @@
       "file_type": "document",
       "source_file": "leads/leads.md",
       "source_location": "L1",
-      "community": 179,
+      "community": 180,
       "norm_label": "leads.md",
       "id": "leads_leads_md"
     },
@@ -25145,7 +25190,7 @@
       "file_type": "document",
       "source_file": "leads/leads.md",
       "source_location": "L25",
-      "community": 179,
+      "community": 180,
       "norm_label": "active potential customers (proposal stage)",
       "id": "leads_leads_active_potential_customers_proposal_stage"
     },
@@ -25154,7 +25199,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_ad_script_customer_pov.md",
       "source_location": "L1",
-      "community": 324,
+      "community": 325,
       "norm_label": "feedback_ad_script_customer_pov.md",
       "id": "memory_feedback_ad_script_customer_pov_md"
     },
@@ -25163,7 +25208,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_close_gap_not_leadgen.md",
       "source_location": "L1",
-      "community": 325,
+      "community": 326,
       "norm_label": "feedback_close_gap_not_leadgen.md",
       "id": "memory_feedback_close_gap_not_leadgen_md"
     },
@@ -25172,7 +25217,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_flask_run_command.md",
       "source_location": "L1",
-      "community": 218,
+      "community": 219,
       "norm_label": "feedback_flask_run_command.md",
       "id": "memory_feedback_flask_run_command_md"
     },
@@ -25181,7 +25226,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_flask_run_command.md",
       "source_location": "L13",
-      "community": 218,
+      "community": 219,
       "norm_label": "code:block1 (python -m flask --app meta.dashboard.app run)",
       "id": "memory_feedback_flask_run_command_codeblock_1"
     },
@@ -25190,7 +25235,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_follow_up_no_em_dashes.md",
       "source_location": "L1",
-      "community": 326,
+      "community": 327,
       "norm_label": "feedback_follow_up_no_em_dashes.md",
       "id": "memory_feedback_follow_up_no_em_dashes_md"
     },
@@ -25199,7 +25244,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_google_cli.md",
       "source_location": "L1",
-      "community": 327,
+      "community": 328,
       "norm_label": "feedback_google_cli.md",
       "id": "memory_feedback_google_cli_md"
     },
@@ -25208,7 +25253,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_leads_vs_customers_reference.md",
       "source_location": "L1",
-      "community": 328,
+      "community": 329,
       "norm_label": "feedback_leads_vs_customers_reference.md",
       "id": "memory_feedback_leads_vs_customers_reference_md"
     },
@@ -25217,7 +25262,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_lead_message_opera.md",
       "source_location": "L1",
-      "community": 329,
+      "community": 330,
       "norm_label": "feedback_lead_message_opera.md",
       "id": "memory_feedback_lead_message_opera_md"
     },
@@ -25226,7 +25271,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_never_suggest_revert_v1_messenger.md",
       "source_location": "L1",
-      "community": 330,
+      "community": 331,
       "norm_label": "feedback_never_suggest_revert_v1_messenger.md",
       "id": "memory_feedback_never_suggest_revert_v1_messenger_md"
     },
@@ -25235,7 +25280,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_powershell_python_utf8.md",
       "source_location": "L1",
-      "community": 331,
+      "community": 332,
       "norm_label": "feedback_powershell_python_utf8.md",
       "id": "memory_feedback_powershell_python_utf8_md"
     },
@@ -25244,7 +25289,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_price_by_templates_not_pages.md",
       "source_location": "L1",
-      "community": 332,
+      "community": 333,
       "norm_label": "feedback_price_by_templates_not_pages.md",
       "id": "memory_feedback_price_by_templates_not_pages_md"
     },
@@ -25253,7 +25298,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_projects_layout.md",
       "source_location": "L1",
-      "community": 333,
+      "community": 334,
       "norm_label": "feedback_projects_layout.md",
       "id": "memory_feedback_projects_layout_md"
     },
@@ -25262,7 +25307,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_reddit_blocked_indonesia.md",
       "source_location": "L1",
-      "community": 334,
+      "community": 335,
       "norm_label": "feedback_reddit_blocked_indonesia.md",
       "id": "memory_feedback_reddit_blocked_indonesia_md"
     },
@@ -25271,7 +25316,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_remotion_fast_paced_3s_frame.md",
       "source_location": "L1",
-      "community": 335,
+      "community": 336,
       "norm_label": "feedback_remotion_fast_paced_3s_frame.md",
       "id": "memory_feedback_remotion_fast_paced_3s_frame_md"
     },
@@ -25280,7 +25325,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_remotion_serialize_renders.md",
       "source_location": "L1",
-      "community": 336,
+      "community": 337,
       "norm_label": "feedback_remotion_serialize_renders.md",
       "id": "memory_feedback_remotion_serialize_renders_md"
     },
@@ -25289,7 +25334,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_static_trailing_slash.md",
       "source_location": "L1",
-      "community": 337,
+      "community": 338,
       "norm_label": "feedback_static_trailing_slash.md",
       "id": "memory_feedback_static_trailing_slash_md"
     },
@@ -25298,7 +25343,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_video_voiceover.md",
       "source_location": "L1",
-      "community": 338,
+      "community": 339,
       "norm_label": "feedback_video_voiceover.md",
       "id": "memory_feedback_video_voiceover_md"
     },
@@ -25307,7 +25352,7 @@
       "file_type": "document",
       "source_file": "memory/feedback_wa_greeting_short_ask_need.md",
       "source_location": "L1",
-      "community": 339,
+      "community": 340,
       "norm_label": "feedback_wa_greeting_short_ask_need.md",
       "id": "memory_feedback_wa_greeting_short_ask_need_md"
     },
@@ -25316,7 +25361,7 @@
       "file_type": "document",
       "source_file": "memory/MEMORY.md",
       "source_location": "L1",
-      "community": 195,
+      "community": 196,
       "norm_label": "memory.md",
       "id": "memory_memory_md"
     },
@@ -25325,7 +25370,7 @@
       "file_type": "document",
       "source_file": "memory/project_audit_tool.md",
       "source_location": "L1",
-      "community": 340,
+      "community": 341,
       "norm_label": "project_audit_tool.md",
       "id": "memory_project_audit_tool_md"
     },
@@ -25334,7 +25379,7 @@
       "file_type": "document",
       "source_file": "memory/project_coldoutreach_centraljava_2026-06.md",
       "source_location": "L1",
-      "community": 180,
+      "community": 181,
       "norm_label": "project_coldoutreach_centraljava_2026-06.md",
       "id": "memory_project_coldoutreach_centraljava_2026_06_md"
     },
@@ -25343,7 +25388,7 @@
       "file_type": "document",
       "source_file": "memory/project_coldoutreach_centraljava_2026-06.md",
       "source_location": "L12",
-      "community": 180,
+      "community": 181,
       "norm_label": "contacts (verified, ready to dm)",
       "id": "memory_project_coldoutreach_centraljava_2026_06_contacts_verified_ready_to_dm"
     },
@@ -25352,7 +25397,7 @@
       "file_type": "document",
       "source_file": "memory/project_coldoutreach_centraljava_2026-06.md",
       "source_location": "L27",
-      "community": 180,
+      "community": 181,
       "norm_label": "message tone (locked by azriel 2026-06-11)",
       "id": "memory_project_coldoutreach_centraljava_2026_06_message_tone_locked_by_azriel_2026_06_11"
     },
@@ -25361,7 +25406,7 @@
       "file_type": "document",
       "source_file": "memory/project_coldoutreach_centraljava_2026-06.md",
       "source_location": "L40",
-      "community": 180,
+      "community": 181,
       "norm_label": "outreach status (as of 2026-06-11)",
       "id": "memory_project_coldoutreach_centraljava_2026_06_outreach_status_as_of_2026_06_11"
     },
@@ -25370,7 +25415,7 @@
       "file_type": "document",
       "source_file": "memory/project_cust2_call.md",
       "source_location": "L1",
-      "community": 341,
+      "community": 342,
       "norm_label": "project_cust2_call.md",
       "id": "memory_project_cust2_call_md"
     },
@@ -25379,7 +25424,7 @@
       "file_type": "document",
       "source_file": "memory/project_cust3_frontiersin_clone.md",
       "source_location": "L1",
-      "community": 342,
+      "community": 343,
       "norm_label": "project_cust3_frontiersin_clone.md",
       "id": "memory_project_cust3_frontiersin_clone_md"
     },
@@ -25388,7 +25433,7 @@
       "file_type": "document",
       "source_file": "memory/project_demo_sites.md",
       "source_location": "L1",
-      "community": 343,
+      "community": 344,
       "norm_label": "project_demo_sites.md",
       "id": "memory_project_demo_sites_md"
     },
@@ -25397,7 +25442,7 @@
       "file_type": "document",
       "source_file": "memory/project_messenger_client_history.md",
       "source_location": "L1",
-      "community": 344,
+      "community": 345,
       "norm_label": "project_messenger_client_history.md",
       "id": "memory_project_messenger_client_history_md"
     },
@@ -25406,7 +25451,7 @@
       "file_type": "document",
       "source_file": "memory/project_meta_ads_v3_finding.md",
       "source_location": "L1",
-      "community": 345,
+      "community": 346,
       "norm_label": "project_meta_ads_v3_finding.md",
       "id": "memory_project_meta_ads_v3_finding_md"
     },
@@ -25415,7 +25460,7 @@
       "file_type": "document",
       "source_file": "memory/project_meta_ads_wa_leadgen.md",
       "source_location": "L1",
-      "community": 346,
+      "community": 347,
       "norm_label": "project_meta_ads_wa_leadgen.md",
       "id": "memory_project_meta_ads_wa_leadgen_md"
     },
@@ -25424,7 +25469,7 @@
       "file_type": "document",
       "source_file": "memory/project_meta_ads_wa_lead_gen.md",
       "source_location": "L1",
-      "community": 347,
+      "community": 348,
       "norm_label": "project_meta_ads_wa_lead_gen.md",
       "id": "memory_project_meta_ads_wa_lead_gen_md"
     },
@@ -25433,7 +25478,7 @@
       "file_type": "document",
       "source_file": "memory/project_meta_ads_wa_quick_replies.md",
       "source_location": "L1",
-      "community": 348,
+      "community": 349,
       "norm_label": "project_meta_ads_wa_quick_replies.md",
       "id": "memory_project_meta_ads_wa_quick_replies_md"
     },
@@ -25442,7 +25487,7 @@
       "file_type": "document",
       "source_file": "memory/project_parallaxnet_aios.md",
       "source_location": "L1",
-      "community": 349,
+      "community": 350,
       "norm_label": "project_parallaxnet_aios.md",
       "id": "memory_project_parallaxnet_aios_md"
     },
@@ -25451,7 +25496,7 @@
       "file_type": "document",
       "source_file": "memory/project_parallaxnet_client.md",
       "source_location": "L1",
-      "community": 350,
+      "community": 351,
       "norm_label": "project_parallaxnet_client.md",
       "id": "memory_project_parallaxnet_client_md"
     },
@@ -25460,7 +25505,7 @@
       "file_type": "document",
       "source_file": "memory/project_portfolio_site.md",
       "source_location": "L1",
-      "community": 351,
+      "community": 352,
       "norm_label": "project_portfolio_site.md",
       "id": "memory_project_portfolio_site_md"
     },
@@ -25469,7 +25514,7 @@
       "file_type": "document",
       "source_file": "memory/project_redesign_launch.md",
       "source_location": "L1",
-      "community": 352,
+      "community": 353,
       "norm_label": "project_redesign_launch.md",
       "id": "memory_project_redesign_launch_md"
     },
@@ -25478,7 +25523,7 @@
       "file_type": "document",
       "source_file": "memory/project_rielcode_invoice_currency.md",
       "source_location": "L1",
-      "community": 353,
+      "community": 354,
       "norm_label": "project_rielcode_invoice_currency.md",
       "id": "memory_project_rielcode_invoice_currency_md"
     },
@@ -25487,7 +25532,7 @@
       "file_type": "document",
       "source_file": "memory/project_rielcode_laravel_app.md",
       "source_location": "L1",
-      "community": 354,
+      "community": 355,
       "norm_label": "project_rielcode_laravel_app.md",
       "id": "memory_project_rielcode_laravel_app_md"
     },
@@ -25496,7 +25541,7 @@
       "file_type": "document",
       "source_file": "memory/project_rielcode_outreach.md",
       "source_location": "L1",
-      "community": 355,
+      "community": 356,
       "norm_label": "project_rielcode_outreach.md",
       "id": "memory_project_rielcode_outreach_md"
     },
@@ -25505,7 +25550,7 @@
       "file_type": "document",
       "source_file": "memory/project_testimonials_system.md",
       "source_location": "L1",
-      "community": 356,
+      "community": 357,
       "norm_label": "project_testimonials_system.md",
       "id": "memory_project_testimonials_system_md"
     },
@@ -25514,7 +25559,7 @@
       "file_type": "document",
       "source_file": "memory/project_testimonial_page.md",
       "source_location": "L1",
-      "community": 196,
+      "community": 197,
       "norm_label": "project_testimonial_page.md",
       "id": "memory_project_testimonial_page_md"
     },
@@ -25523,7 +25568,7 @@
       "file_type": "document",
       "source_file": "memory/project_viral_ad_system.md",
       "source_location": "L1",
-      "community": 357,
+      "community": 358,
       "norm_label": "project_viral_ad_system.md",
       "id": "memory_project_viral_ad_system_md"
     },
@@ -25532,7 +25577,7 @@
       "file_type": "document",
       "source_file": "memory/reference_claude_code_mastery.md",
       "source_location": "L1",
-      "community": 181,
+      "community": 182,
       "norm_label": "reference_claude_code_mastery.md",
       "id": "memory_reference_claude_code_mastery_md"
     },
@@ -25541,7 +25586,7 @@
       "file_type": "document",
       "source_file": "memory/reference_claude_code_mastery.md",
       "source_location": "L8",
-      "community": 181,
+      "community": 182,
       "norm_label": "claude code mastery (opus 4.8)",
       "id": "memory_reference_claude_code_mastery_claude_code_mastery_opus_4_8"
     },
@@ -25550,7 +25595,7 @@
       "file_type": "document",
       "source_file": "memory/reference_claude_code_mastery.md",
       "source_location": "L12",
-      "community": 181,
+      "community": 182,
       "norm_label": "effort cheat sheet",
       "id": "memory_reference_claude_code_mastery_effort_cheat_sheet"
     },
@@ -25559,7 +25604,7 @@
       "file_type": "document",
       "source_file": "memory/reference_claude_code_mastery.md",
       "source_location": "L24",
-      "community": 181,
+      "community": 182,
       "norm_label": "top reminders",
       "id": "memory_reference_claude_code_mastery_top_reminders"
     },
@@ -25568,7 +25613,7 @@
       "file_type": "document",
       "source_file": "memory/reference_faster_whisper.md",
       "source_location": "L1",
-      "community": 358,
+      "community": 359,
       "norm_label": "reference_faster_whisper.md",
       "id": "memory_reference_faster_whisper_md"
     },
@@ -25577,7 +25622,7 @@
       "file_type": "document",
       "source_file": "memory/reference_manim_setup.md",
       "source_location": "L1",
-      "community": 359,
+      "community": 360,
       "norm_label": "reference_manim_setup.md",
       "id": "memory_reference_manim_setup_md"
     },
@@ -25586,7 +25631,7 @@
       "file_type": "document",
       "source_file": "memory/reference_meta_dashboard.md",
       "source_location": "L1",
-      "community": 199,
+      "community": 200,
       "norm_label": "reference_meta_dashboard.md",
       "id": "memory_reference_meta_dashboard_md"
     },
@@ -25595,7 +25640,7 @@
       "file_type": "document",
       "source_file": "memory/reference_meta_dashboard.md",
       "source_location": "L11",
-      "community": 199,
+      "community": 200,
       "norm_label": "code:block1 (python -m flask --app meta.dashboard.app run)",
       "id": "memory_reference_meta_dashboard_codeblock_1"
     },
@@ -25604,7 +25649,7 @@
       "file_type": "document",
       "source_file": "memory/reference_meta_dashboard.md",
       "source_location": "L18",
-      "community": 199,
+      "community": 200,
       "norm_label": "code:powershell (get-nettcpconnection -localport 5000 -state listen | select-)",
       "id": "memory_reference_meta_dashboard_codeblock_2"
     },
@@ -25613,7 +25658,7 @@
       "file_type": "document",
       "source_file": "memory/reference_parallaxnet_indonesia.md",
       "source_location": "L1",
-      "community": 360,
+      "community": 361,
       "norm_label": "reference_parallaxnet_indonesia.md",
       "id": "memory_reference_parallaxnet_indonesia_md"
     },
@@ -25622,7 +25667,7 @@
       "file_type": "document",
       "source_file": "memory/reference_remotion_video_project.md",
       "source_location": "L1",
-      "community": 361,
+      "community": 362,
       "norm_label": "reference_remotion_video_project.md",
       "id": "memory_reference_remotion_video_project_md"
     },
@@ -25631,7 +25676,7 @@
       "file_type": "document",
       "source_file": "memory/reference_rielcode_rebrand_assets.md",
       "source_location": "L1",
-      "community": 362,
+      "community": 363,
       "norm_label": "reference_rielcode_rebrand_assets.md",
       "id": "memory_reference_rielcode_rebrand_assets_md"
     },
@@ -25640,7 +25685,7 @@
       "file_type": "document",
       "source_file": "memory/reference_stats_assignment.md",
       "source_location": "L1",
-      "community": 363,
+      "community": 364,
       "norm_label": "reference_stats_assignment.md",
       "id": "memory_reference_stats_assignment_md"
     },
@@ -25649,7 +25694,7 @@
       "file_type": "document",
       "source_file": "memory/reference_stats_course.md",
       "source_location": "L1",
-      "community": 364,
+      "community": 365,
       "norm_label": "reference_stats_course.md",
       "id": "memory_reference_stats_course_md"
     },
@@ -25721,7 +25766,7 @@
       "file_type": "document",
       "source_file": "memory/user_academic_credentials.md",
       "source_location": "L1",
-      "community": 365,
+      "community": 366,
       "norm_label": "user_academic_credentials.md",
       "id": "memory_user_academic_credentials_md"
     },
@@ -25730,7 +25775,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_azriel_message_tone.md",
       "source_location": "L1",
-      "community": 182,
+      "community": 183,
       "norm_label": "feedback_azriel_message_tone.md",
       "id": "memory_global_feedback_azriel_message_tone_md"
     },
@@ -25739,7 +25784,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_azriel_message_tone.md",
       "source_location": "L13",
-      "community": 182,
+      "community": 183,
       "norm_label": "code:block1 (halo kak, mau tanya soal website bisnis.)",
       "id": "global_feedback_azriel_message_tone_codeblock_1"
     },
@@ -25748,7 +25793,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_azriel_message_tone.md",
       "source_location": "L31",
-      "community": 182,
+      "community": 183,
       "norm_label": "code:block2 (wah keren kak,)",
       "id": "global_feedback_azriel_message_tone_codeblock_2"
     },
@@ -25757,7 +25802,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_azriel_message_tone.md",
       "source_location": "L37",
-      "community": 182,
+      "community": 183,
       "norm_label": "code:block3 (untuk website tour dan travel, fitur yang kami sarankan anta)",
       "id": "global_feedback_azriel_message_tone_codeblock_3"
     },
@@ -25766,7 +25811,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_demo_url_base.md",
       "source_location": "L1",
-      "community": 366,
+      "community": 367,
       "norm_label": "feedback_demo_url_base.md",
       "id": "memory_global_feedback_demo_url_base_md"
     },
@@ -25775,7 +25820,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_followup_saya_tone.md",
       "source_location": "L1",
-      "community": 219,
+      "community": 220,
       "norm_label": "feedback_followup_saya_tone.md",
       "id": "memory_global_feedback_followup_saya_tone_md"
     },
@@ -25784,7 +25829,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_followup_saya_tone.md",
       "source_location": "L14",
-      "community": 219,
+      "community": 220,
       "norm_label": "code:block1 (halo kak, mau pastiin aja pesan saya kemarin kebaca ya. kala)",
       "id": "global_feedback_followup_saya_tone_codeblock_1"
     },
@@ -25793,7 +25838,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_follow_up_no_em_dashes.md",
       "source_location": "L1",
-      "community": 367,
+      "community": 368,
       "norm_label": "feedback_follow_up_no_em_dashes.md",
       "id": "memory_global_feedback_follow_up_no_em_dashes_md"
     },
@@ -25802,7 +25847,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_google_cli.md",
       "source_location": "L1",
-      "community": 368,
+      "community": 369,
       "norm_label": "feedback_google_cli.md",
       "id": "memory_global_feedback_google_cli_md"
     },
@@ -25811,7 +25856,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_lead_message_opera.md",
       "source_location": "L1",
-      "community": 369,
+      "community": 370,
       "norm_label": "feedback_lead_message_opera.md",
       "id": "memory_global_feedback_lead_message_opera_md"
     },
@@ -25820,7 +25865,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_meta_ads_objective_rule.md",
       "source_location": "L1",
-      "community": 370,
+      "community": 371,
       "norm_label": "feedback_meta_ads_objective_rule.md",
       "id": "memory_global_feedback_meta_ads_objective_rule_md"
     },
@@ -25829,7 +25874,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_projects_layout.md",
       "source_location": "L1",
-      "community": 371,
+      "community": 372,
       "norm_label": "feedback_projects_layout.md",
       "id": "memory_global_feedback_projects_layout_md"
     },
@@ -25838,7 +25883,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_wa_client_tone.md",
       "source_location": "L1",
-      "community": 372,
+      "community": 373,
       "norm_label": "feedback_wa_client_tone.md",
       "id": "memory_global_feedback_wa_client_tone_md"
     },
@@ -25847,7 +25892,7 @@
       "file_type": "document",
       "source_file": "memory/global/feedback_wa_funds_objection_tone.md",
       "source_location": "L1",
-      "community": 373,
+      "community": 374,
       "norm_label": "feedback_wa_funds_objection_tone.md",
       "id": "memory_global_feedback_wa_funds_objection_tone_md"
     },
@@ -25856,7 +25901,7 @@
       "file_type": "document",
       "source_file": "memory/global/MEMORY.md",
       "source_location": "L1",
-      "community": 220,
+      "community": 221,
       "norm_label": "memory.md",
       "id": "memory_global_memory_md"
     },
@@ -25865,7 +25910,7 @@
       "file_type": "document",
       "source_file": "memory/global/MEMORY.md",
       "source_location": "L1",
-      "community": 220,
+      "community": 221,
       "norm_label": "memory index",
       "id": "global_memory_memory_index"
     },
@@ -25874,7 +25919,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_jatra_scale.md",
       "source_location": "L1",
-      "community": 374,
+      "community": 375,
       "norm_label": "project_jatra_scale.md",
       "id": "memory_global_project_jatra_scale_md"
     },
@@ -25883,7 +25928,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_meta_ads_v1_v3_channels.md",
       "source_location": "L1",
-      "community": 375,
+      "community": 376,
       "norm_label": "project_meta_ads_v1_v3_channels.md",
       "id": "memory_global_project_meta_ads_v1_v3_channels_md"
     },
@@ -25892,7 +25937,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_meta_ads_v3_whatsapp.md",
       "source_location": "L1",
-      "community": 376,
+      "community": 377,
       "norm_label": "project_meta_ads_v3_whatsapp.md",
       "id": "memory_global_project_meta_ads_v3_whatsapp_md"
     },
@@ -25901,7 +25946,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_parallaxnet_aios.md",
       "source_location": "L1",
-      "community": 377,
+      "community": 378,
       "norm_label": "project_parallaxnet_aios.md",
       "id": "memory_global_project_parallaxnet_aios_md"
     },
@@ -25910,7 +25955,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_parallaxnet_client.md",
       "source_location": "L1",
-      "community": 378,
+      "community": 379,
       "norm_label": "project_parallaxnet_client.md",
       "id": "memory_global_project_parallaxnet_client_md"
     },
@@ -25919,7 +25964,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_portfolio_site.md",
       "source_location": "L1",
-      "community": 379,
+      "community": 380,
       "norm_label": "project_portfolio_site.md",
       "id": "memory_global_project_portfolio_site_md"
     },
@@ -25928,7 +25973,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_rielcode_figma_redesign.md",
       "source_location": "L1",
-      "community": 380,
+      "community": 381,
       "norm_label": "project_rielcode_figma_redesign.md",
       "id": "memory_global_project_rielcode_figma_redesign_md"
     },
@@ -25937,7 +25982,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_rielcode_invoice_currency.md",
       "source_location": "L1",
-      "community": 381,
+      "community": 382,
       "norm_label": "project_rielcode_invoice_currency.md",
       "id": "memory_global_project_rielcode_invoice_currency_md"
     },
@@ -25946,7 +25991,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_rielcode_outreach.md",
       "source_location": "L1",
-      "community": 382,
+      "community": 383,
       "norm_label": "project_rielcode_outreach.md",
       "id": "memory_global_project_rielcode_outreach_md"
     },
@@ -25955,7 +26000,7 @@
       "file_type": "document",
       "source_file": "memory/global/project_testimonials_system.md",
       "source_location": "L1",
-      "community": 383,
+      "community": 384,
       "norm_label": "project_testimonials_system.md",
       "id": "memory_global_project_testimonials_system_md"
     },
@@ -25964,7 +26009,7 @@
       "file_type": "document",
       "source_file": "memory/global/reference_meta_dashboard.md",
       "source_location": "L1",
-      "community": 221,
+      "community": 222,
       "norm_label": "reference_meta_dashboard.md",
       "id": "memory_global_reference_meta_dashboard_md"
     },
@@ -25973,7 +26018,7 @@
       "file_type": "document",
       "source_file": "memory/global/reference_meta_dashboard.md",
       "source_location": "L23",
-      "community": 221,
+      "community": 222,
       "norm_label": "code:bash (node meta/ads-report.mjs)",
       "id": "global_reference_meta_dashboard_codeblock_1"
     },
@@ -25982,7 +26027,7 @@
       "file_type": "document",
       "source_file": "memory/global/reference_rielcode_pricing.md",
       "source_location": "L1",
-      "community": 384,
+      "community": 385,
       "norm_label": "reference_rielcode_pricing.md",
       "id": "memory_global_reference_rielcode_pricing_md"
     },
@@ -25991,7 +26036,7 @@
       "file_type": "document",
       "source_file": "memory/global/reference_rumahweb_hosting.md",
       "source_location": "L1",
-      "community": 385,
+      "community": 386,
       "norm_label": "reference_rumahweb_hosting.md",
       "id": "memory_global_reference_rumahweb_hosting_md"
     },
@@ -26639,7 +26684,7 @@
       "file_type": "document",
       "source_file": "meta/clients/apif-apipah.md",
       "source_location": "L1",
-      "community": 222,
+      "community": 223,
       "norm_label": "apif-apipah.md",
       "id": "meta_clients_apif_apipah_md"
     },
@@ -26648,7 +26693,7 @@
       "file_type": "document",
       "source_file": "meta/clients/apif-apipah.md",
       "source_location": "L1",
-      "community": 222,
+      "community": 223,
       "norm_label": "apif apipah",
       "id": "clients_apif_apipah_apif_apipah"
     },
@@ -26657,7 +26702,7 @@
       "file_type": "document",
       "source_file": "meta/clients/bape-ne-faisal.md",
       "source_location": "L1",
-      "community": 223,
+      "community": 224,
       "norm_label": "bape-ne-faisal.md",
       "id": "meta_clients_bape_ne_faisal_md"
     },
@@ -26666,7 +26711,7 @@
       "file_type": "document",
       "source_file": "meta/clients/bape-ne-faisal.md",
       "source_location": "L1",
-      "community": 223,
+      "community": 224,
       "norm_label": "bape ne faisal",
       "id": "clients_bape_ne_faisal_bape_ne_faisal"
     },
@@ -26675,7 +26720,7 @@
       "file_type": "document",
       "source_file": "meta/clients/darmawan-dar.md",
       "source_location": "L1",
-      "community": 224,
+      "community": 225,
       "norm_label": "darmawan-dar.md",
       "id": "meta_clients_darmawan_dar_md"
     },
@@ -26684,7 +26729,7 @@
       "file_type": "document",
       "source_file": "meta/clients/darmawan-dar.md",
       "source_location": "L1",
-      "community": 224,
+      "community": 225,
       "norm_label": "darmawan dar",
       "id": "clients_darmawan_dar_darmawan_dar"
     },
@@ -26693,7 +26738,7 @@
       "file_type": "document",
       "source_file": "meta/clients/devita-gabriela.md",
       "source_location": "L1",
-      "community": 225,
+      "community": 226,
       "norm_label": "devita-gabriela.md",
       "id": "meta_clients_devita_gabriela_md"
     },
@@ -26702,7 +26747,7 @@
       "file_type": "document",
       "source_file": "meta/clients/devita-gabriela.md",
       "source_location": "L1",
-      "community": 225,
+      "community": 226,
       "norm_label": "devita gabriela",
       "id": "clients_devita_gabriela_devita_gabriela"
     },
@@ -26711,7 +26756,7 @@
       "file_type": "document",
       "source_file": "meta/clients/faiz-faisal.md",
       "source_location": "L1",
-      "community": 226,
+      "community": 227,
       "norm_label": "faiz-faisal.md",
       "id": "meta_clients_faiz_faisal_md"
     },
@@ -26720,7 +26765,7 @@
       "file_type": "document",
       "source_file": "meta/clients/faiz-faisal.md",
       "source_location": "L1",
-      "community": 226,
+      "community": 227,
       "norm_label": "faiz faisal",
       "id": "clients_faiz_faisal_faiz_faisal"
     },
@@ -26729,7 +26774,7 @@
       "file_type": "document",
       "source_file": "meta/clients/hengky-rawung.md",
       "source_location": "L1",
-      "community": 227,
+      "community": 228,
       "norm_label": "hengky-rawung.md",
       "id": "meta_clients_hengky_rawung_md"
     },
@@ -26738,7 +26783,7 @@
       "file_type": "document",
       "source_file": "meta/clients/hengky-rawung.md",
       "source_location": "L1",
-      "community": 227,
+      "community": 228,
       "norm_label": "hengky rawung",
       "id": "clients_hengky_rawung_hengky_rawung"
     },
@@ -26747,7 +26792,7 @@
       "file_type": "document",
       "source_file": "meta/clients/ilda-yti.md",
       "source_location": "L1",
-      "community": 228,
+      "community": 229,
       "norm_label": "ilda-yti.md",
       "id": "meta_clients_ilda_yti_md"
     },
@@ -26756,7 +26801,7 @@
       "file_type": "document",
       "source_file": "meta/clients/ilda-yti.md",
       "source_location": "L1",
-      "community": 228,
+      "community": 229,
       "norm_label": "ilda yti",
       "id": "clients_ilda_yti_ilda_yti"
     },
@@ -26765,7 +26810,7 @@
       "file_type": "document",
       "source_file": "meta/clients/index.md",
       "source_location": "L1",
-      "community": 229,
+      "community": 230,
       "norm_label": "index.md",
       "id": "meta_clients_index_md"
     },
@@ -26774,7 +26819,7 @@
       "file_type": "document",
       "source_file": "meta/clients/index.md",
       "source_location": "L1",
-      "community": 229,
+      "community": 230,
       "norm_label": "messenger clients",
       "id": "clients_index_messenger_clients"
     },
@@ -26783,7 +26828,7 @@
       "file_type": "document",
       "source_file": "meta/clients/m-raja-siregar.md",
       "source_location": "L1",
-      "community": 230,
+      "community": 231,
       "norm_label": "m-raja-siregar.md",
       "id": "meta_clients_m_raja_siregar_md"
     },
@@ -26792,7 +26837,7 @@
       "file_type": "document",
       "source_file": "meta/clients/m-raja-siregar.md",
       "source_location": "L1",
-      "community": 230,
+      "community": 231,
       "norm_label": "m raja siregar",
       "id": "clients_m_raja_siregar_m_raja_siregar"
     },
@@ -26801,7 +26846,7 @@
       "file_type": "document",
       "source_file": "meta/clients/mus-woge.md",
       "source_location": "L1",
-      "community": 231,
+      "community": 232,
       "norm_label": "mus-woge.md",
       "id": "meta_clients_mus_woge_md"
     },
@@ -26810,7 +26855,7 @@
       "file_type": "document",
       "source_file": "meta/clients/mus-woge.md",
       "source_location": "L1",
-      "community": 231,
+      "community": 232,
       "norm_label": "mus woge",
       "id": "clients_mus_woge_mus_woge"
     },
@@ -26819,7 +26864,7 @@
       "file_type": "document",
       "source_file": "meta/clients/pak-yunus.md",
       "source_location": "L1",
-      "community": 232,
+      "community": 233,
       "norm_label": "pak-yunus.md",
       "id": "meta_clients_pak_yunus_md"
     },
@@ -26828,7 +26873,7 @@
       "file_type": "document",
       "source_file": "meta/clients/pak-yunus.md",
       "source_location": "L1",
-      "community": 232,
+      "community": 233,
       "norm_label": "pak yunus",
       "id": "clients_pak_yunus_pak_yunus"
     },
@@ -26837,7 +26882,7 @@
       "file_type": "document",
       "source_file": "meta/clients/pbk-lores.md",
       "source_location": "L1",
-      "community": 233,
+      "community": 234,
       "norm_label": "pbk-lores.md",
       "id": "meta_clients_pbk_lores_md"
     },
@@ -26846,7 +26891,7 @@
       "file_type": "document",
       "source_file": "meta/clients/pbk-lores.md",
       "source_location": "L1",
-      "community": 233,
+      "community": 234,
       "norm_label": "pbk lores",
       "id": "clients_pbk_lores_pbk_lores"
     },
@@ -26855,7 +26900,7 @@
       "file_type": "document",
       "source_file": "meta/clients/rudy-r.md",
       "source_location": "L1",
-      "community": 234,
+      "community": 235,
       "norm_label": "rudy-r.md",
       "id": "meta_clients_rudy_r_md"
     },
@@ -26864,7 +26909,7 @@
       "file_type": "document",
       "source_file": "meta/clients/rudy-r.md",
       "source_location": "L1",
-      "community": 234,
+      "community": 235,
       "norm_label": "rudy r",
       "id": "clients_rudy_r_rudy_r"
     },
@@ -27116,7 +27161,7 @@
       "file_type": "document",
       "source_file": "meta/creative/swipe/INDEX.md",
       "source_location": "L1",
-      "community": 171,
+      "community": 172,
       "norm_label": "index.md",
       "id": "meta_creative_swipe_index_md"
     },
@@ -27125,7 +27170,7 @@
       "file_type": "document",
       "source_file": "meta/creative/swipe/INDEX.md",
       "source_location": "L1",
-      "community": 171,
+      "community": 172,
       "norm_label": "swipe database",
       "id": "swipe_index_swipe_database"
     },
@@ -27134,7 +27179,7 @@
       "file_type": "document",
       "source_file": "meta/creative/swipe/INDEX.md",
       "source_location": "L15",
-      "community": 171,
+      "community": 172,
       "norm_label": "thumbnails",
       "id": "swipe_index_thumbnails"
     },
@@ -27143,7 +27188,7 @@
       "file_type": "document",
       "source_file": "meta/creative/swipe/INDEX.md",
       "source_location": "L21",
-      "community": 171,
+      "community": 172,
       "norm_label": "titles",
       "id": "swipe_index_titles"
     },
@@ -27152,7 +27197,7 @@
       "file_type": "document",
       "source_file": "meta/creative/swipe/INDEX.md",
       "source_location": "L29",
-      "community": 171,
+      "community": 172,
       "norm_label": "recurring patterns (claude fills as database grows)",
       "id": "swipe_index_recurring_patterns_claude_fills_as_database_grows"
     },
@@ -29888,7 +29933,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/measuring-dom-nodes.md",
       "source_location": "L1",
-      "community": 183,
+      "community": 184,
       "norm_label": "measuring-dom-nodes.md",
       "id": "my_video_agents_skills_remotion_best_practices_rules_measuring_dom_nodes_md"
     },
@@ -29897,7 +29942,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/measuring-dom-nodes.md",
       "source_location": "L8",
-      "community": 183,
+      "community": 184,
       "norm_label": "measuring dom nodes in remotion",
       "id": "rules_measuring_dom_nodes_measuring_dom_nodes_in_remotion"
     },
@@ -29906,7 +29951,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/measuring-dom-nodes.md",
       "source_location": "L12",
-      "community": 183,
+      "community": 184,
       "norm_label": "measuring element dimensions",
       "id": "rules_measuring_dom_nodes_measuring_element_dimensions"
     },
@@ -29915,7 +29960,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/measuring-dom-nodes.md",
       "source_location": "L14",
-      "community": 183,
+      "community": 184,
       "norm_label": "code:tsx (import { usecurrentscale } from \"remotion\";)",
       "id": "rules_measuring_dom_nodes_codeblock_1"
     },
@@ -30293,7 +30338,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/sfx.md",
       "source_location": "L1",
-      "community": 235,
+      "community": 236,
       "norm_label": "sfx.md",
       "id": "my_video_agents_skills_remotion_best_practices_rules_sfx_md"
     },
@@ -30302,7 +30347,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/sfx.md",
       "source_location": "L10",
-      "community": 235,
+      "community": 236,
       "norm_label": "code:tsx (import { audio } from \"@remotion/sfx\";)",
       "id": "rules_sfx_codeblock_1"
     },
@@ -30464,7 +30509,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/tailwind.md",
       "source_location": "L1",
-      "community": 386,
+      "community": 387,
       "norm_label": "tailwind.md",
       "id": "my_video_agents_skills_remotion_best_practices_rules_tailwind_md"
     },
@@ -30473,7 +30518,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/text-animations.md",
       "source_location": "L1",
-      "community": 184,
+      "community": 185,
       "norm_label": "text-animations.md",
       "id": "my_video_agents_skills_remotion_best_practices_rules_text_animations_md"
     },
@@ -30482,7 +30527,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/text-animations.md",
       "source_location": "L8",
-      "community": 184,
+      "community": 185,
       "norm_label": "text animations",
       "id": "rules_text_animations_text_animations"
     },
@@ -30491,7 +30536,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/text-animations.md",
       "source_location": "L12",
-      "community": 184,
+      "community": 185,
       "norm_label": "typewriter effect",
       "id": "rules_text_animations_typewriter_effect"
     },
@@ -30500,7 +30545,7 @@
       "file_type": "document",
       "source_file": "my-video/.agents/skills/remotion-best-practices/rules/text-animations.md",
       "source_location": "L18",
-      "community": 184,
+      "community": 185,
       "norm_label": "word highlighting",
       "id": "rules_text_animations_word_highlighting"
     },
@@ -31688,7 +31733,7 @@
       "file_type": "document",
       "source_file": "projects/Parallaxnet Canada/README.md",
       "source_location": "L1",
-      "community": 197,
+      "community": 198,
       "norm_label": "readme.md",
       "id": "projects_parallaxnet_canada_readme_md"
     },
@@ -32750,7 +32795,7 @@
       "file_type": "document",
       "source_file": "references/learning-log.md",
       "source_location": "L1",
-      "community": 198,
+      "community": 199,
       "norm_label": "learning-log.md",
       "id": "references_learning_log_md"
     },
@@ -33614,7 +33659,7 @@
       "file_type": "document",
       "source_file": "transcripts/vaBxYgZ7MAU.md",
       "source_location": "L1",
-      "community": 387,
+      "community": 388,
       "norm_label": "vabxygz7mau.md",
       "id": "transcripts_vabxygz7mau_md"
     },
@@ -33623,7 +33668,7 @@
       "file_type": "document",
       "source_file": "context/priorities.md",
       "source_location": "L1",
-      "community": 193,
+      "community": 194,
       "norm_label": "priorities.md",
       "id": "context_priorities_md"
     },
@@ -33650,7 +33695,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L246",
-      "community": 388,
+      "community": 389,
       "norm_label": "ordered (oldest-first) message history for a known conversation id.",
       "id": "meta_api_rationale_246"
     },
@@ -33659,7 +33704,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L267",
-      "community": 389,
+      "community": 390,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
       "id": "meta_api_rationale_267"
     },
@@ -33668,7 +33713,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L277",
-      "community": 390,
+      "community": 391,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
       "id": "meta_api_rationale_277"
     },
@@ -33695,7 +33740,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L221",
-      "community": 391,
+      "community": 392,
       "norm_label": "ordered (oldest-first) message history for a known conversation id.",
       "id": "meta_api_rationale_221"
     },
@@ -33704,7 +33749,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L242",
-      "community": 392,
+      "community": 393,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
       "id": "meta_api_rationale_242"
     },
@@ -33713,7 +33758,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L252",
-      "community": 393,
+      "community": 394,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
       "id": "meta_api_rationale_252"
     },
@@ -33722,7 +33767,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L217",
-      "community": 394,
+      "community": 395,
       "norm_label": "ordered (oldest-first) message history for a known conversation id.",
       "id": "meta_api_rationale_217"
     },
@@ -33731,7 +33776,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L238",
-      "community": 395,
+      "community": 396,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
       "id": "meta_api_rationale_238"
     },
@@ -33740,7 +33785,7 @@
       "file_type": "rationale",
       "source_file": "C:/Users/afw14/OneDrive/Documents/JARVIS/meta/dashboard/meta_api.py",
       "source_location": "L248",
-      "community": 396,
+      "community": 397,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
       "id": "meta_api_rationale_248"
     },
@@ -33767,7 +33812,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L41",
-      "community": 397,
+      "community": 398,
       "norm_label": "client-side chat fetch. prefers conversation id (fast path) from the inbox list,",
       "id": "dashboard_app_rationale_41"
     },
@@ -33776,7 +33821,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/app.py",
       "source_location": "L56",
-      "community": 398,
+      "community": 399,
       "norm_label": "server-rendered fallback for shared/direct links (no id available).",
       "id": "dashboard_app_rationale_56"
     },
@@ -33785,7 +33830,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L217",
-      "community": 399,
+      "community": 400,
       "norm_label": "ordered (oldest-first) message history for a known conversation id.",
       "id": "dashboard_meta_api_rationale_217"
     },
@@ -33794,7 +33839,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L238",
-      "community": 400,
+      "community": 401,
       "norm_label": "fast path: messages for a conversation id already known from the inbox list.",
       "id": "dashboard_meta_api_rationale_238"
     },
@@ -33803,7 +33848,7 @@
       "file_type": "rationale",
       "source_file": "meta/dashboard/meta_api.py",
       "source_location": "L248",
-      "community": 401,
+      "community": 402,
       "norm_label": "full ordered (oldest-first) message history for the first thread matching `name`",
       "id": "dashboard_meta_api_rationale_248"
     },
@@ -36336,6 +36381,54 @@
       "_tgt": "v3ads_blob",
       "source": "c_users_afw14_onedrive_documents_jarvis_my_video_src_rielcodead_v3ads_tsx",
       "target": "v3ads_blob",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "_tgt": "main_selecttab",
+      "source": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "target": "main_selecttab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "_tgt": "main_validatefield",
+      "source": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "target": "main_validatefield",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "_tgt": "main_openbox",
+      "source": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "target": "main_openbox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\afw14\\OneDrive\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_src": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "_tgt": "main_closebox",
+      "source": "c_users_afw14_onedrive_documents_jarvis_projects_lumiere_hci_js_main_js",
+      "target": "main_closebox",
       "confidence_score": 1.0
     },
     {

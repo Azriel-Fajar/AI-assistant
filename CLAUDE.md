@@ -132,6 +132,16 @@ Memory + context files + decision log = assistant gets smarter over time without
 
 ---
 
+## Leads & Customers
+
+Lead and customer data lives in `leads/`. Go straight here, do not grep the whole codebase.
+
+- `leads/leads.md` -- **Leads** table (full outreach pipeline: cold to closed). Use when Azriel says "lead".
+- `leads/active-customers.md` -- **Active Potential Customers** context hub (proposal-stage customers, full scope/quote/brief per cust). Use when Azriel says "customer" or "client".
+- `leads/archive.md` -- dead/closed entries.
+
+To add a lead: append a row to `leads/leads.md`. To add a customer: append a `## Cust N` block to `leads/active-customers.md`. See [[feedback_leads_vs_customers_reference]].
+
 ## Projects
 
 Active workstreams live in `projects/`. Each has a `README.md` with status, description, and key dates.
