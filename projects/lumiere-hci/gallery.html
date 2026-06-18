@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Lumiere</title>
+  <meta name="description" content="A look inside Lumière: the room, the plates, the moments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       MATE 2 — GALLERY PAGE
+       The grid + lightbox already work. You only need to:
+         1. Swap each  src / data-full  with your real image paths
+            (put images in the assets/ folder, e.g. assets/room1.jpg).
+         2. Write a real  alt  text for each image (describe it).
+       Add or remove <button> blocks to change the number of images.
+       Do NOT change the nav, footer, CSS, or the JS.
+       See MATE-TASKS.md for the full brief.
+       ============================================================ -->
+
+  <header class="nav" data-open="false">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Lumi<span>è</span>re</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary" href="reservation.html">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- TODO Mate 2: build the Gallery page content here. Do NOT touch nav, footer, or the lightbox below.
+         See MATE-TASKS.md for the brief. The lightbox JS auto-wires to a .gallery-grid of:
+         <button type="button"><img src="assets/your.jpg" data-full="assets/your.jpg" alt="describe"></button> -->
+  </main>
+
+  <!-- Lightbox (pre-wired, do not edit) -->
+  <div class="lightbox" data-open="false" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" aria-label="Close image viewer">&times;</button>
+    <div>
+      <img src="" alt="">
+      <p class="lightbox__cap"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Lumi<span>è</span>re</p>
+        <p>Modern fine dining in the heart of Salatiga. Seasonal menus, curated wine, an intimate room.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Jl. Diponegoro No. 12<br>Salatiga, Central Java</p>
+        <p>Tue–Sun · 17:00–23:00</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="stack">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Lumière Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

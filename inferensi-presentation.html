@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; color:#1a2433; }
+  .page {
+    width:210mm; min-height:297mm; padding:18mm 16mm;
+    page-break-after:always; position:relative;
+  }
+  .page:last-child { page-break-after:auto; }
+  h1 { font-size:30px; color:#0d3b66; margin-bottom:4px; }
+  .sub { font-size:14px; color:#5b6b80; margin-bottom:6px; }
+  .creds { font-size:14px; font-weight:bold; color:#0d3b66; background:#eaf1f8; display:inline-block; padding:6px 14px; border-radius:6px; margin-bottom:20px; }
+  h2 { font-size:21px; color:#0d3b66; margin:22px 0 12px; border-left:6px solid #ee964b; padding-left:10px; }
+  p { font-size:14px; line-height:1.55; margin-bottom:10px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:13px; }
+  th { background:#0d3b66; color:#fff; padding:9px 6px; }
+  td { padding:8px 6px; text-align:center; border-bottom:1px solid #dde4ec; }
+  tr:nth-child(even) td { background:#f6f9fc; }
+  td.l { text-align:left; }
+  .box { background:#f0f4f8; border-radius:8px; padding:14px 18px; margin:12px 0; }
+  .formula { font-family:'Courier New',monospace; font-size:15px; color:#0d3b66; background:#eaf1f8; padding:8px 12px; border-radius:6px; display:inline-block; margin:4px 0; }
+  .step { font-size:14px; line-height:1.7; }
+  .step b { color:#ee964b; }
+  .answer { background:#fbe9d8; border-left:6px solid #ee964b; border-radius:6px; padding:14px 18px; margin:14px 0; font-size:15px; line-height:1.6; }
+  .footer { position:absolute; bottom:10mm; left:16mm; right:16mm; font-size:11px; color:#9aa7b8; border-top:1px solid #e0e6ee; padding-top:6px; display:flex; justify-content:space-between; }
+  .ovl { text-decoration:overline; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: Teori -->
+<div class="page">
+  <h1>Inferensi Statistika</h1>
+  <div class="sub">Interval Konfidensi untuk Rata-rata Satu Populasi (n &ge; 30)</div>
+  <div class="creds">Azriel Fajar Wicaksono &nbsp;|&nbsp; NIM 672025121</div>
+
+  <h2>Apa itu Inferensi</h2>
+  <p>Setelah data dianalisis, dilakukan inferensi (pengambilan keputusan tentang populasi berdasarkan sampel). Inferensi dibagi menjadi dua cara: <b>selang/interval konfidensi</b> dan <b>uji hipotesis</b>.</p>
+  <table>
+    <tr><th>Jenis Data</th><th>Pengujian</th><th>Statistik</th></tr>
+    <tr><td class="l">Kuantitatif (angka)</td><td>tes satu sampel</td><td>parametrik</td></tr>
+    <tr><td class="l">Kualitatif nominal</td><td>tes binomial, chi-kuadrat</td><td>non-parametrik</td></tr>
+    <tr><td class="l">Kualitatif ordinal</td><td>run test</td><td>non-parametrik</td></tr>
+  </table>
+
+  <h2>Lambang</h2>
+  <div class="box step">
+    &mu; = rata-rata populasi (sebenarnya, tidak diketahui) &nbsp;&bull;&nbsp; <span class="ovl">x</span> = rata-rata sampel<br>
+    &sigma;&sup2; = variansi populasi &nbsp;&bull;&nbsp; s&sup2; = variansi sampel &nbsp;&bull;&nbsp; &alpha; = batas kepercayaan (1 &minus; &alpha; = tingkat konfidensi)
+  </div>
+
+  <h2>Interval Konfidensi (1 &minus; &alpha;) untuk &mu;</h2>
+  <div class="box step">
+    Jika &sigma;&sup2; <b>diketahui</b>:<br>
+    <span class="formula"><span class="ovl">x</span> &minus; z<sub>&alpha;/2</sub> &middot; (&sigma;/&radic;n) &nbsp;&le;&nbsp; &mu; &nbsp;&le;&nbsp; <span class="ovl">x</span> + z<sub>&alpha;/2</sub> &middot; (&sigma;/&radic;n)</span><br><br>
+    Jika &sigma;&sup2; <b>tidak diketahui</b> (pakai s):<br>
+    <span class="formula"><span class="ovl">x</span> &minus; z<sub>&alpha;/2</sub> &middot; (s/&radic;n) &nbsp;&le;&nbsp; &mu; &nbsp;&le;&nbsp; <span class="ovl">x</span> + z<sub>&alpha;/2</sub> &middot; (s/&radic;n)</span><br>
+    <span style="font-size:13px;color:#5b6b80">Untuk n &ge; 30 (sampel besar), distribusi z tetap berlaku walau &sigma; tidak diketahui.</span>
+  </div>
+
+  <div class="footer"><span>Inferensi Statistika - Interval Konfidensi</span><span>Halaman 1</span></div>
+</div>
+
+<!-- PAGE 2: Latihan -->
+<div class="page">
+  <h2>Latihan: Bola Lampu</h2>
+  <p>Suatu pabrik listrik yang membuat bola lampu ingin mengetahui rata-rata panjang umur bola lampu yang dibuat. Diambil <b>36 bola lampu</b> secara random, diperoleh rata-rata panjang umur <b>780 jam</b> dengan standar deviasi <b>40 jam</b>. Hitung interval konfidensi <b>96%</b> untuk rata-rata panjang umur keseluruhan bola lampu.</p>
+
+  <table>
+    <tr><th>n</th><th><span class="ovl">x</span></th><th>s</th><th>Konfidensi</th></tr>
+    <tr><td>36</td><td>780 jam</td><td>40 jam</td><td>96%</td></tr>
+  </table>
+
+  <h2>Langkah 1: Cari &alpha;</h2>
+  <div class="box step">
+    Konfidensi 96% &rarr; 1 &minus; &alpha; = 0.96 &rarr; &alpha; = 0.04 &rarr; <b>&alpha;/2 = 0.02</b>
+  </div>
+
+  <h2>Langkah 2: Cari z<sub>0.02</sub></h2>
+  <div class="box step">
+    Cari z dengan P(Z &lt; z<sub>0.02</sub>) = 1 &minus; 0.02 = <b>0.98</b><br>
+    Dicari pada tabel kurva normal &rarr; z<sub>0.02</sub> = <b>2.05</b>
+  </div>
+
+  <h2>Langkah 3: Hitung Margin</h2>
+  <div class="box step">
+    <span class="formula">z<sub>&alpha;/2</sub> &middot; (s/&radic;n) = 2.05 &middot; (40/&radic;36)</span><br>
+    = 2.05 &middot; (40/6) = 2.05 &middot; 6.667 = <b>13.67</b>
+  </div>
+
+  <h2>Langkah 4: Susun Interval</h2>
+  <div class="box step">
+    <span class="formula">780 &minus; 13.67 &le; &mu; &le; 780 + 13.67</span><br>
+    <b>766.33 &le; &mu; &le; 793.67</b>
+  </div>
+
+  <div class="answer">
+    <b>Kesimpulan:</b> Dengan tingkat kepercayaan 96%, rata-rata panjang umur keseluruhan bola lampu yang dibuat berada di antara interval <b>766.33 jam</b> dan <b>793.67 jam</b>.
+  </div>
+
+  <div class="footer"><span>Inferensi Statistika - Interval Konfidensi</span><span>Halaman 2</span></div>
+</div>
+
+<!-- PAGE 3: Teori Uji Hipotesis -->
+<div class="page">
+  <h1>Uji Hipotesis</h1>
+  <div class="sub">Pengujian Rata-rata Satu Populasi (n &ge; 30)</div>
+
+  <h2>Pengertian</h2>
+  <p>Hipotesis adalah pernyataan mengenai parameter populasi. Pengujian dilakukan untuk menerima atau menolak pernyataan tersebut berdasarkan data sampel.</p>
+
+  <h2>Langkah-langkah</h2>
+  <div class="box step">
+    <b>1. Merumuskan hipotesis</b> (tiga kemungkinan bentuk):<br>
+    a. H<sub>0</sub> : &mu; = &mu;<sub>0</sub> &nbsp;lawan&nbsp; H<sub>1</sub> : &mu; &ne; &mu;<sub>0</sub> &nbsp;(dua arah)<br>
+    b. H<sub>0</sub> : &mu; &le; &mu;<sub>0</sub> &nbsp;lawan&nbsp; H<sub>1</sub> : &mu; &gt; &mu;<sub>0</sub> &nbsp;(satu arah kanan)<br>
+    c. H<sub>0</sub> : &mu; &ge; &mu;<sub>0</sub> &nbsp;lawan&nbsp; H<sub>1</sub> : &mu; &lt; &mu;<sub>0</sub> &nbsp;(satu arah kiri)<br><br>
+    <b>2. Menentukan tingkat signifikansi</b> (tingkat kesalahan) &alpha;<br><br>
+    <b>3. Menentukan statistik penguji:</b><br>
+    <span class="formula">Z = (<span class="ovl">x</span> &minus; &mu;<sub>0</sub>) / (&sigma;/&radic;n)</span> jika &sigma; diketahui<br>
+    <span class="formula">Z = (<span class="ovl">x</span> &minus; &mu;<sub>0</sub>) / (s/&radic;n)</span> jika &sigma; tidak diketahui<br><br>
+    <b>4. Menentukan daerah kritis</b> (daerah penolakan H<sub>0</sub>):<br>
+    a. Dua arah: H<sub>0</sub> ditolak jika Z &lt; &minus;z<sub>&alpha;/2</sub> atau Z &gt; z<sub>&alpha;/2</sub><br>
+    b. Satu arah kanan: H<sub>0</sub> ditolak jika Z &gt; z<sub>&alpha;</sub><br>
+    c. Satu arah kiri: H<sub>0</sub> ditolak jika Z &lt; &minus;z<sub>&alpha;</sub><br><br>
+    <b>5. Mengambil kesimpulan</b>
+  </div>
+
+  <div class="footer"><span>Inferensi Statistika - Uji Hipotesis</span><span>Halaman 3</span></div>
+</div>
+
+<!-- PAGE 4: Latihan Uji Hipotesis -->
+<div class="page">
+  <h2>Latihan: Bola Lampu (Uji Hipotesis)</h2>
+  <p>Dengan data yang sama (36 bola lampu random, rata-rata umur <b>780 jam</b>, standar deviasi <b>40 jam</b>): apakah dari data yang diperoleh bisa dikatakan bahwa rata-rata umur bola lampu adalah <b>800 jam</b>, dengan tingkat kesalahan <b>2%</b>?</p>
+
+  <table>
+    <tr><th>n</th><th><span class="ovl">x</span></th><th>s</th><th>&mu;<sub>0</sub></th><th>&alpha;</th></tr>
+    <tr><td>36</td><td>780 jam</td><td>40 jam</td><td>800 jam</td><td>0.02</td></tr>
+  </table>
+
+  <h2>1. Merumuskan Hipotesis</h2>
+  <div class="box step">
+    H<sub>0</sub> : &mu; = 800<br>
+    H<sub>1</sub> : &mu; &ne; 800 &nbsp;(uji dua arah)
+  </div>
+
+  <h2>2. Tingkat Signifikansi</h2>
+  <div class="box step">&alpha; = 0.02</div>
+
+  <h2>3. Statistik Penguji (&sigma; tidak diketahui)</h2>
+  <div class="box step">
+    <span class="formula">Z = (<span class="ovl">x</span> &minus; &mu;<sub>0</sub>) / (s/&radic;n)</span><br>
+    Z = (780 &minus; 800) / (40/&radic;36) = &minus;20 / (40/6) = &minus;20 / 6.667 = <b>&minus;3.00</b>
+  </div>
+
+  <h2>4. Daerah Kritis</h2>
+  <div class="box step">
+    H<sub>0</sub> ditolak jika Z &lt; &minus;z<sub>0.01</sub> atau Z &gt; z<sub>0.01</sub><br>
+    Untuk mencari z<sub>0.01</sub>: P(Z &lt; z<sub>0.01</sub>) = 1 &minus; 0.01 = 0.99<br>
+    Dicari pada tabel kurva normal, didapat z<sub>0.01</sub> = <b>2.33</b><br>
+    Sehingga: H<sub>0</sub> ditolak jika Z &lt; &minus;2.33 atau Z &gt; 2.33
+  </div>
+
+  <h2>5. Kesimpulan</h2>
+  <div class="answer">
+    Karena Z = &minus;3.00 &rarr; Z &lt; &minus;2.33, maka <b>memenuhi daerah kritik</b>, sehingga <b>H<sub>0</sub> ditolak</b>. Jadi hipotesis bahwa rata-rata panjang umur keseluruhan bola lampu adalah <b>800 jam ditolak</b>. Dengan tingkat kesalahan 2%, rata-rata umur bola lampu berbeda secara signifikan dari 800 jam.
+  </div>
+
+  <div class="footer"><span>Inferensi Statistika - Uji Hipotesis</span><span>Halaman 4</span></div>
+</div>
+
+</body>
+</html>

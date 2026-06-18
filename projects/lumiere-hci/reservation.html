@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservations — Lumiere</title>
+  <meta name="description" content="Reserve a table at Lumière. Choose your date, time and party size.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-open="false">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Lumi<span>è</span>re</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary" href="reservation.html">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">We Look Forward To Hosting You</span>
+        <h1>Reserve a Table</h1>
+        <p>Tell us when, and how many. We confirm every booking by email.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="form" data-validate-form data-success-msg="Thank you. Your reservation request has been received. We will confirm by email shortly." novalidate>
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="r-name">Full name <span class="req" aria-hidden="true">*</span></label>
+              <input id="r-name" name="name" type="text" autocomplete="name" data-validate="required" aria-describedby="r-name-err">
+              <p class="error" id="r-name-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="r-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="r-email" name="email" type="email" autocomplete="email" data-validate="required email" aria-describedby="r-email-err">
+              <p class="error" id="r-email-err" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form__row form__row--2">
+            <div class="field">
+              <label for="r-date">Date <span class="req" aria-hidden="true">*</span></label>
+              <input id="r-date" name="date" type="date" data-validate="required date" aria-describedby="r-date-err">
+              <p class="error" id="r-date-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="r-time">Time <span class="req" aria-hidden="true">*</span></label>
+              <select id="r-time" name="time" data-validate="required time" aria-describedby="r-time-err">
+                <option value="">Select a time</option>
+                <option>17:00</option><option>17:30</option><option>18:00</option>
+                <option>18:30</option><option>19:00</option><option>19:30</option>
+                <option>20:00</option><option>20:30</option><option>21:00</option>
+              </select>
+              <p class="error" id="r-time-err" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="r-guests">Party size <span class="req" aria-hidden="true">*</span></label>
+            <input id="r-guests" name="guests" type="number" min="1" max="20" inputmode="numeric" data-validate="required guests" aria-describedby="r-guests-help r-guests-err">
+            <p class="help" id="r-guests-help">Between 1 and 20 guests. For larger parties, please call us.</p>
+            <p class="error" id="r-guests-err" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="r-notes">Special requests</label>
+            <textarea id="r-notes" name="notes" placeholder="Allergies, celebrations, seating preference..."></textarea>
+          </div>
+
+          <p class="form__status" role="status" aria-live="polite"></p>
+          <button type="submit" class="btn btn--primary" style="width:100%">Request Reservation</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Lumi<span>è</span>re</p>
+        <p>Modern fine dining in the heart of Salatiga. Seasonal menus, curated wine, an intimate room.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Jl. Diponegoro No. 12<br>Salatiga, Central Java</p>
+        <p>Tue–Sun · 17:00–23:00</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="stack">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Lumière Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

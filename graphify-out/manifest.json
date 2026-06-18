@@ -609,6 +609,11 @@
     "ast_hash": "3f5ea994b62d63647d76e25d1c198577",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\js\\main.js": {
+    "mtime": 1781768573.248551,
+    "ast_hash": "9879ca1b6a712eaa60f90a7988383e7b",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\screenshots\\pnx-verify.mjs": {
     "mtime": 1781397208.3838954,
     "ast_hash": "d87de17ef1cc962d12624c854fad6107",
@@ -1087,6 +1092,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\EXPANSIONS.md": {
     "mtime": 1777962312.8494992,
     "ast_hash": "8cb171310135d042b85ab4c23c6fdf7f",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\inferensi-presentation.html": {
+    "mtime": 1781767590.9801977,
+    "ast_hash": "10f4c8f79eb73703dc865979fdec99ef",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\quiz-docs-prompt.md": {
@@ -2039,6 +2049,11 @@
     "ast_hash": "6dad90022f1fa1731c0b6cac964932dc",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\docs\\superpowers\\specs\\2026-06-18-lumiere-restaurant-hci-design.md": {
+    "mtime": 1781766507.4305634,
+    "ast_hash": "c930b82efb62809ee7e35ad90de66f21",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\homework-bot\\README.md": {
     "mtime": 1777962312.8544862,
     "ast_hash": "f605cefe88671970335cb24a0c0c3858",
@@ -2769,6 +2784,41 @@
     "ast_hash": "0961984a8d955141e9e383b3220ad318",
     "semantic_hash": ""
   },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\about.html": {
+    "mtime": 1781768532.615574,
+    "ast_hash": "da7fad195c34bb87451dc5b8d31e702f",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\contact.html": {
+    "mtime": 1781768580.6778755,
+    "ast_hash": "d1eadc691c93e3585dbb73bd46f79514",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\gallery.html": {
+    "mtime": 1781768543.9376094,
+    "ast_hash": "bc4ac8a8dc3ca942c91f44f903426bfb",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\index.html": {
+    "mtime": 1781767638.0644655,
+    "ast_hash": "d8c5f136b908499f00438a721fc1ae73",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\MATE-TASKS.md": {
+    "mtime": 1781767795.4394326,
+    "ast_hash": "e6c96cf0d76d28f209ded36ae8502ada",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\menu.html": {
+    "mtime": 1781767678.5630434,
+    "ast_hash": "9b0233490d161da0fafe8f3a7af5494b",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\reservation.html": {
+    "mtime": 1781767701.1553693,
+    "ast_hash": "008f0c93f5e74baa78e2d466904a744e",
+    "semantic_hash": ""
+  },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\Parallaxnet Canada\\README.md": {
     "mtime": 1779156306.1073184,
     "ast_hash": "15f97f566e59448e46e8f879641cad74",
@@ -3037,6 +3087,11 @@
   "D:\\Main Storage\\Documents\\JARVIS\\DISTRIBUTION_FREQUENCY_672025121.pdf": {
     "mtime": 1781161285.1217818,
     "ast_hash": "5c16b213287f28d8e75485f7a93dfc93",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\Inferensi_672025121.pdf": {
+    "mtime": 1781767604.0057192,
+    "ast_hash": "e16c4bbe93666fc64d7049ef78f360dd",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\.claude\\skills\\quiz-auto\\cache\\module.pdf": {
@@ -3352,6 +3407,16 @@
   "D:\\Main Storage\\Documents\\JARVIS\\my-video\\public\\site-redesign.png": {
     "mtime": 1780983567.2898288,
     "ast_hash": "bf0e8fd784f3bee9d6dbc763ea4c323d",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\assets\\dish.svg": {
+    "mtime": 1781767578.7947054,
+    "ast_hash": "a86b1b778be5141da871244e4f6ac28f",
+    "semantic_hash": ""
+  },
+  "D:\\Main Storage\\Documents\\JARVIS\\projects\\lumiere-hci\\assets\\hero.svg": {
+    "mtime": 1781767569.2759323,
+    "ast_hash": "46fe5ada5be3d9a8dff0fd50382c470a",
     "semantic_hash": ""
   },
   "D:\\Main Storage\\Documents\\JARVIS\\projects\\rielcode-growth-plan\\launch-assets\\v-code.png": {

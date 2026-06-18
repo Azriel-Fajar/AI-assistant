@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumiere — Modern Fine Dining</title>
+  <meta name="description" content="Lumiere is a modern fine dining restaurant. Seasonal tasting menus, curated wines, an intimate room. Reserve your table.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-open="false">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Lumi<span>è</span>re</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary" href="reservation.html">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Salatiga · Est. 2026</p>
+        <h1>An Evening Worth<br>Savouring</h1>
+        <p class="lead">Seasonal fine dining, curated wines, and a room built for quiet conversation. Welcome to Lumière.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="reservation.html">Reserve a Table</a>
+          <a class="btn btn--on-dark" href="menu.html">View the Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured dishes -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">From the Kitchen</span>
+          <h2>Signature Plates</h2>
+          <p class="lead" style="margin-inline:auto">A glimpse of the season. Our menu changes with the harvest.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card">
+            <img class="card__img" src="assets/dish.svg" alt="Seared scallop with citrus beurre blanc" loading="lazy">
+            <div class="card__body">
+              <h3>Seared Scallop</h3>
+              <p>Hand-dived scallop, citrus beurre blanc, charred leek ash.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="assets/dish.svg" alt="Slow-braised short rib with celeriac" loading="lazy">
+            <div class="card__body">
+              <h3>Braised Short Rib</h3>
+              <p>Forty-eight hour short rib, celeriac purée, red wine jus.</p>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="assets/dish.svg" alt="Dark chocolate délice with gold leaf" loading="lazy">
+            <div class="card__body">
+              <h3>Chocolate Délice</h3>
+              <p>Single-origin dark chocolate, salted caramel, edible gold.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story teaser -->
+    <section class="section" style="background:var(--white)">
+      <div class="container split">
+        <img class="split__media" src="assets/dish.svg" alt="The Lumière dining room at dusk">
+        <div class="stack">
+          <span class="eyebrow">Our Story</span>
+          <h2>Light, Plated</h2>
+          <p class="lead">Lumière began with a simple belief: that a meal can hold a whole evening. We cook with what the season gives, keep the room small, and let the details carry the night.</p>
+          <a class="btn btn--ghost" href="about.html">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reserve band -->
+    <section class="band">
+      <div class="container">
+        <span class="eyebrow">Tables Are Limited</span>
+        <h2>Reserve Your Evening</h2>
+        <p>We seat a handful of tables each night. Book ahead to secure yours.</p>
+        <a class="btn btn--primary" href="reservation.html">Reserve a Table</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Lumi<span>è</span>re</p>
+        <p>Modern fine dining in the heart of Salatiga. Seasonal menus, curated wine, an intimate room.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Jl. Diponegoro No. 12<br>Salatiga, Central Java</p>
+        <p>Tue–Sun · 17:00–23:00</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="stack">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Lumière Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

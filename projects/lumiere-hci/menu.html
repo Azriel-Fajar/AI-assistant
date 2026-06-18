@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Lumiere</title>
+  <meta name="description" content="The Lumière menu: starters, mains, desserts and drinks, changing with the season.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-open="false">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Lumi<span>è</span>re</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary" href="reservation.html">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Seasonal · Changes Weekly</span>
+        <h1>The Menu</h1>
+        <p>Plates built around what the season offers. Ask your server about pairings.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab" role="tab" id="tab-starters" aria-controls="panel-starters" aria-selected="true" tabindex="0">Starters</button>
+          <button class="tab" role="tab" id="tab-mains" aria-controls="panel-mains" aria-selected="false" tabindex="-1">Mains</button>
+          <button class="tab" role="tab" id="tab-desserts" aria-controls="panel-desserts" aria-selected="false" tabindex="-1">Desserts</button>
+          <button class="tab" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Drinks</button>
+        </div>
+
+        <div id="panel-starters" role="tabpanel" aria-labelledby="tab-starters" tabindex="0">
+          <div class="menu-list">
+            <div class="menu-item"><div><p class="menu-item__name">Seared Scallop</p><p class="menu-item__desc">Citrus beurre blanc, charred leek ash</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 95k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">Heirloom Tomato</p><p class="menu-item__desc">Burrata, basil oil, aged balsamic</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 78k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">Steak Tartare</p><p class="menu-item__desc">Hand-cut beef, cured yolk, sourdough crisp</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 110k</span></div>
+          </div>
+        </div>
+
+        <div id="panel-mains" role="tabpanel" aria-labelledby="tab-mains" tabindex="0" hidden>
+          <div class="menu-list">
+            <div class="menu-item"><div><p class="menu-item__name">Braised Short Rib</p><p class="menu-item__desc">48-hour rib, celeriac purée, red wine jus</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 185k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">Pan-Roasted Sea Bass</p><p class="menu-item__desc">Saffron fennel, brown butter emulsion</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 170k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">Wild Mushroom Risotto</p><p class="menu-item__desc">Aged parmesan, truffle, garden herbs</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 140k</span></div>
+          </div>
+        </div>
+
+        <div id="panel-desserts" role="tabpanel" aria-labelledby="tab-desserts" tabindex="0" hidden>
+          <div class="menu-list">
+            <div class="menu-item"><div><p class="menu-item__name">Chocolate Délice</p><p class="menu-item__desc">Single-origin dark chocolate, salted caramel, gold</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 85k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">Vanilla Crème Brûlée</p><p class="menu-item__desc">Tahitian vanilla, caramelised sugar crust</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 70k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">Citrus Tart</p><p class="menu-item__desc">Yuzu curd, toasted meringue, almond sablé</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 72k</span></div>
+          </div>
+        </div>
+
+        <div id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" tabindex="0" hidden>
+          <div class="menu-list">
+            <div class="menu-item"><div><p class="menu-item__name">Sommelier's Wine Pairing</p><p class="menu-item__desc">Four glasses, matched to your courses</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 220k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">Signature Negroni</p><p class="menu-item__desc">Barrel-aged, orange oil, single ice</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 90k</span></div>
+            <div class="menu-item"><div><p class="menu-item__name">House Kombucha</p><p class="menu-item__desc">Lemongrass and ginger, zero proof</p></div><span class="menu-item__dots"></span><span class="menu-item__price">Rp 45k</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="container">
+        <span class="eyebrow">Ready When You Are</span>
+        <h2>Book Your Table</h2>
+        <p>Tasting menus are best enjoyed unhurried. Reserve ahead.</p>
+        <a class="btn btn--primary" href="reservation.html">Reserve a Table</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Lumi<span>è</span>re</p>
+        <p>Modern fine dining in the heart of Salatiga. Seasonal menus, curated wine, an intimate room.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Jl. Diponegoro No. 12<br>Salatiga, Central Java</p>
+        <p>Tue–Sun · 17:00–23:00</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="stack">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Lumière Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

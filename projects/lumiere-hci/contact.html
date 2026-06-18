@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Lumiere</title>
+  <meta name="description" content="Contact Lumière. Find us, our hours, and send us a message.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-open="false">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="index.html">Lumi<span>è</span>re</a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary" href="reservation.html">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Contact Us</h1>
+        <p>Questions, private events, or press. We are happy to help.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container info-grid">
+        <!-- Contact form -->
+        <div>
+          <h2 style="margin-bottom:var(--sp-3)">Send a Message</h2>
+          <form class="form" data-validate-form data-success-msg="Thank you for reaching out. We will reply by email soon." novalidate>
+            <div class="field">
+              <label for="c-name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="c-name" name="name" type="text" autocomplete="name" data-validate="required" aria-describedby="c-name-err">
+              <p class="error" id="c-name-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="c-email" name="email" type="email" autocomplete="email" data-validate="required email" aria-describedby="c-email-err">
+              <p class="error" id="c-email-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="c-message">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="c-message" name="message" data-validate="required" aria-describedby="c-message-err"></textarea>
+              <p class="error" id="c-message-err" aria-live="polite"></p>
+            </div>
+            <p class="form__status" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn--primary" style="width:100%">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Info + map -->
+        <div class="stack">
+          <h2>Find Us</h2>
+          <dl class="info-list">
+            <dt>Address</dt>
+            <dd>Jl. Diponegoro No. 12, Salatiga, Central Java 50711</dd>
+            <dt>Hours</dt>
+            <dd>Tuesday – Sunday · 17:00 – 23:00<br>Closed Mondays</dd>
+            <dt>Phone</dt>
+            <dd><a href="tel:+62298000000">+62 298 000 000</a></dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@lumiere.example">hello@lumiere.example</a></dd>
+          </dl>
+          <iframe
+            class="map-frame"
+            title="Map showing Lumière in Salatiga"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=110.49%2C-7.34%2C110.51%2C-7.32&layer=mapnik&marker=-7.33%2C110.50"
+            loading="lazy"></iframe>
+          <p class="field"><a href="https://www.openstreetmap.org/?mlat=-7.33&mlon=110.50#map=16/-7.33/110.50" target="_blank" rel="noopener">View on OpenStreetMap</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__brand">Lumi<span>è</span>re</p>
+        <p>Modern fine dining in the heart of Salatiga. Seasonal menus, curated wine, an intimate room.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Jl. Diponegoro No. 12<br>Salatiga, Central Java</p>
+        <p>Tue–Sun · 17:00–23:00</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="stack">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservation.html">Reserve</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Lumière Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
