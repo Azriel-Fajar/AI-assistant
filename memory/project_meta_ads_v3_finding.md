@@ -15,4 +15,6 @@ Reviewed live Meta report 2026-06-11. 7-day spend Rp413k across 3 campaigns. v1 
 - When a lead asks for examples, send the niche-matched demo link instantly, framed as a rough idea + fully custom.
 - Confirms the close-gap thesis [[feedback_close_gap_not_leadgen]]. Ignore Meta campaign-score suggestions [[feedback_meta_ads_objective_rule]].
 
+**Current budget/balance (live 2026-06-19):** v3 ad set daily budget is **Rp50,000/day** (raised from old 18k). The Rp18k/day figure is the PAUSED v1 campaign, do NOT quote it as current. For any top-up question, fetch live balance via `node meta/balance-check` style query (acct fields: balance, amount_spent, spend_cap) or run `node meta/ads-report.mjs`; never quote a remembered balance, it is stale within a day. Runway = available_balance / 50000.
+
 Related: [[project_coldoutreach_centraljava_2026-06]] [[project_meta_ads_wa_quick_replies]]
