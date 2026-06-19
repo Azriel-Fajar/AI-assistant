@@ -10,7 +10,7 @@ const cases = [
   { msg: 'I want the Premium plan', pill: '/order?aksi=business' },
   { msg: "Okay I'm ready to order, not sure which plan yet", pill: '/order' },
   { msg: 'I need an online store with login and a shopping cart', pill: '/custom-plan' },
-  { msg: 'What would my site look like? Can I see examples?', pill: 'demo.rielcode.com' },
+  { msg: 'What would my site look like? Can I see examples?', pill: 'rielcode.com/demos/' },
   { msg: 'Can I see your past work / portfolio?', pill: '/work' },
   { msg: 'Show me all your pricing and packages', pill: '/services' },
   { msg: 'I want to talk to a human to get started', pill: 'wa.me' },

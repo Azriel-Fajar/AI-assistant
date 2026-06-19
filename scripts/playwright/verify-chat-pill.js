@@ -7,8 +7,8 @@ const BASE = 'http://127.0.0.1:8000';
 const cases = [
   { in: 'Pro is our most popular pick. Ready to roll?\n[[pill:order?aksi=pro|Order the Pro plan]]',
     wantLabel: 'Order the Pro plan', wantRel: '/order?aksi=pro', absolute: false },
-  { in: 'Want to see examples?\n[[pill:https://demo.rielcode.com|See live demos]]',
-    wantLabel: 'See live demos', wantAbs: 'https://demo.rielcode.com', absolute: true },
+  { in: 'Want to see examples?\n[[pill:https://rielcode.com/demos/|See live demos]]',
+    wantLabel: 'See live demos', wantAbs: 'https://rielcode.com/demos/', absolute: true },
   { in: 'Talk to a human anytime.\n[[pill:https://wa.me/6285669522225|Chat on WhatsApp]]',
     wantLabel: 'Chat on WhatsApp', wantAbs: 'https://wa.me/6285669522225', absolute: true },
   { in: 'Delivery takes 7 to 10 days for Pro. No rush.',

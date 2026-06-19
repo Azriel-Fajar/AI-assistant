@@ -15,6 +15,6 @@ Built 2026-06-06 to send prospects an example site for their industry. Library o
 
 **Tech:** pure static HTML/CSS/JS, NO Laravel routes, NO Blade, NO Vite build (do not run npm build for these). English copy. Mobile-responsive + hamburger. Forms fake-submit (no backend). Images = Unsplash hotlinks + Google Fonts CDN (needs internet when showing client).
 
-**Serving:** local dev via `http://127.0.0.1:8000/demos/` (artisan serve) or `http://localhost/rielcode-laravel/public/demos/` (XAMPP). Prod = point demo.rielcode.com docroot at public/demos/ (server/vhost step, no app code). See [[feedback_static_trailing_slash]].
+**Serving:** local dev via `http://127.0.0.1:8000/demos/` (artisan serve) or `http://localhost/rielcode-laravel/public/demos/` (XAMPP). Prod public URL = `rielcode.com/demos/{niche}/` (with trailing slash). NEVER `demo.rielcode.com`. See [[feedback_demo_url_base]] and [[feedback_static_trailing_slash]].
 
 Lives inside the live production app [[project_rielcode_laravel_app]] but touches zero app files (only public/demos/ untracked path).

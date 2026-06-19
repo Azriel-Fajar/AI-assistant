@@ -83,6 +83,42 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** discovery (2026-06-18). Awaiting reply on need.
 - **Next:** Confirm catalog vs order/checkout, then scope + quote.
 
+## Cust 15 — Klinik Terapi
+- **Source:** Meta Ads WA lead (2026-06-19)
+- **Industry:** Healthcare / therapy clinic
+- **Request:** Self-picked Premium. Asked ownership/garansi/maintenance/CMS/hidden-cost/renewal questions.
+- **Told:** Hosting+domain 1yr included, maintenance 2 months, no hidden cost, no extra konsul fee.
+- **Quote:** Premium (self-selected, not yet finalized).
+- **Stage:** meeting-pending (2026-06-19). Warm buyer. Wants online meet (gratis konsul), checking partner availability.
+- **Next:** Wait for partner schedule, then book online meet. Follow up if no reply by 2026-06-22.
+
+## Cust 16 — F&B Katalog
+- **Source:** Meta Ads WA lead (2026-06-19)
+- **Industry:** F&B
+- **Request:** Catalog site (products + supporting info + company profile). No web transactions, orders forwarded to CS chat.
+- **Scope:** Still loose, will refine as it goes. Good fit Starter/Pro catalog build.
+- **Stage:** scoping (2026-06-19). Offered online meet.
+- **Next:** Propose online meet to scope catalog site. Follow up if no reply by 2026-06-22.
+
+## Cust 17 — Web Rekber
+- **Source:** Inbound WA (+62 851-7427-7002), 2026-06-19
+- **Industry:** Escrow / rekber (akun game)
+- **Request:** Escrow site penjual-pembeli. MC holds funds manual, no payment gateway. Volume sering tak tentu.
+- **Scope:** Status-tracker build: 3-role auth (buyer/seller/MC), transaction flow + status, dispute flag, MC dashboard.
+- **Quote:** **Rp5,500,000**, 2-3 weeks (Premium 5jt + Login/Member 500k).
+- **Stage:** quoted, waiting (2026-06-19).
+- **Next:** Wait for reply. Follow up if no reply by 2026-06-22; offer to show contoh tampilan.
+
+## Cust 18 — izin.co.id-style Permit/Service Site
+- **Source:** Meta Ads WA lead (2026-06-19)
+- **Industry:** Legal/permit or product-service business (reference izin.co.id)
+- **Request:** Konsep + tampilan mirip izin.co.id, multi halaman. Bisa kelola produk + management artikel sendiri lewat admin.
+- **Scope:** LOOK + product CMS + blog CMS. No user accounts/payment/dashboard pengajuan.
+- **Demo sent:** rielcode.com/demos/company/
+- **Quote:** Pro **IDR 2jt** + Blog/Artikel add-on **IDR 400rb** = total **IDR 2.4jt**.
+- **Stage:** quoted (2026-06-19).
+- **Next:** Wait for reply. Follow up if no response by 2026-06-22.
+
 ---
 
 ## Deleted from potential customers

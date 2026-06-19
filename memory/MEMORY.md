@@ -29,7 +29,7 @@
 - [PowerShell Python UTF-8 Pitfalls](feedback_powershell_python_utf8.md) -- PS > redirect = UTF-16 BOM breaks JSON; write .py files not python -c; set PYTHONIOENCODING=utf-8
 - [Follow-up No Em Dashes](feedback_follow_up_no_em_dashes.md) -- follow-up and WA messages must never use em dashes, rewrite with commas or periods
 - [Meta Ads WA Quick Replies](project_meta_ads_wa_quick_replies.md) -- 6 WA Business presets + greeting for Meta Ads leads; pricing from references/rielcode-pricing.md
-- [Rielcode Demo Sites](project_demo_sites.md) -- 8 niche static demo sites at public/demos/ in rielcode-laravel, hub + 3 pages each, for demo.rielcode.com/{niche}
+- [Rielcode Demo Sites](project_demo_sites.md) -- 8 niche static demo sites at public/demos/ in rielcode-laravel, hub + 3 pages each, served at rielcode.com/demos/{niche}/
 - [Static Demo Trailing Slash](feedback_static_trailing_slash.md) -- open /demos with trailing slash or relative CSS/JS 404s; no npm build needed
 - [Remotion Video Project](reference_remotion_video_project.md) -- my-video/ builds all Rielcode video/ad assets; reuse theme + helpers, render from there
 - [Video Voiceover Workflow](feedback_video_voiceover.md) -- Azriel supplies AI VO mp3s externally (no TTS key); wire per-scene clips into Remotion
