@@ -30,12 +30,6 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** on hold (2026-06-15). Out of town this week.
 - **Next:** Contact again next week when back in town.
 
-## Cust 6 — Fire extinguisher / safety equipment seller
-- **Industry:** Safety equipment (alat pemadam api ringan + equipment)
-- **Request:** No website yet. Asked for reference site / wanted features.
-- **Stage:** follow-up sent (2026-06-16). No reply yet.
-- **Next:** Wait for reply; send F&B-style demo for safety-equipment niche if no response.
-
 ## Cust 7 — Jasa Branding + Homestay
 - **Industry:** Branding services + hospitality
 - **Request:** 2 SEPARATE sites — (1) jasa branding (company profile, logo, deck, pitching, video edit), (2) homestay landing. Confirmed separate 2026-06-16.
@@ -47,12 +41,6 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Request:** Landing page + catalog. Asked for reference/design.
 - **Stage:** follow-up sent (2026-06-16). No reply yet.
 - **Next:** Wait for reply; send demo tomorrow if no response.
-
-## Cust 9 — SaaS Digital Menu (Bukamenu clone)
-- **Industry:** SaaS / F&B tech
-- **Quote:** MVP 8-12jt, full 25-40jt. Sent scope + call request.
-- **Stage:** follow-up sent (2026-06-16). No reply yet.
-- **Next:** Wait for reply; push for call if no response.
 
 ## Cust 10 — Pesantren
 - **Brief:** `projects/cust-10-pesantren/`
@@ -83,7 +71,7 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 ## Cust 13 — Hijab Brand
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** Apparel / hijab products
-- **Reference:** brand "The Olive" (sent box photo). Replied with product/brand image.
+- **Reference:** their own brand "The Veiluxe" (sent packaging photo). Premium/elegant: gold + floral pink gift boxes, VL monogram logo.
 - **Stage:** scoping (2026-06-18).
 - **Next:** Review reference, scope + quote.
 

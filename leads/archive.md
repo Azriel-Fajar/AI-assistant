@@ -8,3 +8,5 @@ Closed leads (won or lost) are moved here automatically.
 | 006 | Parallaxnet Canada | Ali | - | referral | closed-won | 2026-05-05 | 2026-05-05 | First international client. Custom multi-page website with admin panel and AI chatbot. Completion doc delivered. |
 | Cust1 | Jatra Scale Indonesia | - | - | inbound | closed-lost | 2026-06-16 | 2026-06-18 | PT Kargo Jatra Muliatua, jatrascale.com. Wanted SEO ranking. Quoted Pro+Blog 2.4jt. No reply to follow-up. Archived no-response. Brief: projects/Jatra Scale Indonesia/ |
 | Cust3 | - | - | - | inbound | closed-lost | 2026-06-16 | 2026-06-18 | Follow-up sent, no reply. Details never given. Archived no-response. |
+| Cust6 | Fire extinguisher / safety equipment seller | - | - | inbound | closed-lost | 2026-06-16 | 2026-06-19 | No website yet, asked for reference. Follow-up sent, no reply. Archived no-response. |
+| Cust9 | SaaS Digital Menu (Bukamenu clone) | - | - | inbound | closed-lost | 2026-06-16 | 2026-06-19 | SaaS/F&B tech. Quoted MVP 8-12jt, full 25-40jt. Follow-up + call request, no reply. Archived no-response. |
