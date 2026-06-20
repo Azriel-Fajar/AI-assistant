@@ -5769,7 +5769,7 @@
       "source_file": "meta/dms-sync.mjs",
       "source_location": "L67",
       "id": "meta_dms_sync_fmt",
-      "community": 411,
+      "community": 422,
       "norm_label": "fmt()"
     },
     {
@@ -10566,7 +10566,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L3",
       "id": "lib_error_handleerror",
-      "community": 416,
+      "community": 420,
       "norm_label": "handleerror()"
     },
     {
@@ -10575,7 +10575,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L16",
       "id": "lib_error_notauthenticated",
-      "community": 416,
+      "community": 420,
       "norm_label": "notauthenticated()"
     },
     {
@@ -10998,7 +10998,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L1",
       "id": "tools_google_auth_oauth_js",
-      "community": 318,
+      "community": 416,
       "norm_label": "oauth.js"
     },
     {
@@ -11007,7 +11007,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L8",
       "id": "auth_oauth_dirname",
-      "community": 318,
+      "community": 416,
       "norm_label": "__dirname"
     },
     {
@@ -11016,7 +11016,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L9",
       "id": "auth_oauth_config_path",
-      "community": 318,
+      "community": 416,
       "norm_label": "config_path"
     },
     {
@@ -11025,7 +11025,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L10",
       "id": "auth_oauth_token_path",
-      "community": 318,
+      "community": 416,
       "norm_label": "token_path"
     },
     {
@@ -11034,7 +11034,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L12",
       "id": "auth_oauth_scopes",
-      "community": 318,
+      "community": 416,
       "norm_label": "scopes"
     },
     {
@@ -11043,7 +11043,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L19",
       "id": "auth_oauth_loadconfig",
-      "community": 318,
+      "community": 416,
       "norm_label": "loadconfig()"
     },
     {
@@ -11052,7 +11052,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L27",
       "id": "auth_oauth_createoauthclient",
-      "community": 318,
+      "community": 416,
       "norm_label": "createoauthclient()"
     },
     {
@@ -11061,7 +11061,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L36",
       "id": "auth_oauth_getauthenticatedclient",
-      "community": 318,
+      "community": 416,
       "norm_label": "getauthenticatedclient()"
     },
     {
@@ -11070,7 +11070,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L57",
       "id": "auth_oauth_runauthflow",
-      "community": 318,
+      "community": 422,
       "norm_label": "runauthflow()"
     },
     {
@@ -11214,7 +11214,7 @@
       "source_file": "tools/google/gdrive/index.js",
       "source_location": "L12",
       "id": "gdrive_index_getdrive",
-      "community": 318,
+      "community": 421,
       "norm_label": "getdrive()"
     },
     {
@@ -11286,7 +11286,7 @@
       "source_file": "tools/google/gmail/index.js",
       "source_location": "L12",
       "id": "gmail_index_getgmail",
-      "community": 318,
+      "community": 416,
       "norm_label": "getgmail()"
     },
     {
@@ -11385,7 +11385,7 @@
       "source_file": "tools/google/lib/error.js",
       "source_location": "L1",
       "id": "tools_google_lib_error_js",
-      "community": 416,
+      "community": 420,
       "norm_label": "error.js"
     },
     {
@@ -11691,7 +11691,7 @@
       "source_file": "tools/google/youtube/index.js",
       "source_location": "L281",
       "id": "youtube_index_runauth",
-      "community": 318,
+      "community": 422,
       "norm_label": "runauth()"
     },
     {
@@ -12168,7 +12168,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L1",
       "id": "tools_social_lib_error_js",
-      "community": 416,
+      "community": 420,
       "norm_label": "error.js"
     },
     {
@@ -34789,10 +34789,46 @@
       "norm_label": "cust 14 \u2014 marketplace seller (ronald)"
     },
     {
+      "label": "Cust 15 \u2014 Klinik Terapi",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L86",
+      "id": "leads_active_customers_cust_15_klinik_terapi",
+      "community": 135,
+      "norm_label": "cust 15 \u2014 klinik terapi"
+    },
+    {
+      "label": "Cust 16 \u2014 F&B Katalog",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L95",
+      "id": "leads_active_customers_cust_16_f_b_katalog",
+      "community": 135,
+      "norm_label": "cust 16 \u2014 f&b katalog"
+    },
+    {
+      "label": "Cust 17 \u2014 Web Rekber",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L103",
+      "id": "leads_active_customers_cust_17_web_rekber",
+      "community": 135,
+      "norm_label": "cust 17 \u2014 web rekber"
+    },
+    {
+      "label": "Cust 18 \u2014 izin.co.id-style Permit/Service Site",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L112",
+      "id": "leads_active_customers_cust_18_izin_co_id_style_permit_service_site",
+      "community": 135,
+      "norm_label": "cust 18 \u2014 izin.co.id-style permit/service site"
+    },
+    {
       "label": "Deleted from potential customers",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L88",
+      "source_location": "L124",
       "id": "leads_active_customers_deleted_from_potential_customers",
       "community": 135,
       "norm_label": "deleted from potential customers"
@@ -34801,7 +34837,7 @@
       "label": "~~Cust 1 \u2014 Jatra Scale Indonesia~~ (DELETED)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L90",
+      "source_location": "L126",
       "id": "leads_active_customers_cust_1_jatra_scale_indonesia_deleted",
       "community": 135,
       "norm_label": "~~cust 1 \u2014 jatra scale indonesia~~ (deleted)"
@@ -34810,7 +34846,7 @@
       "label": "~~Cust 3~~ (DELETED)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L94",
+      "source_location": "L130",
       "id": "leads_active_customers_cust_3_deleted",
       "community": 135,
       "norm_label": "~~cust 3~~ (deleted)"
@@ -34819,7 +34855,7 @@
       "label": "Cross-cust patterns",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L99",
+      "source_location": "L135",
       "id": "leads_active_customers_cross_cust_patterns",
       "community": 135,
       "norm_label": "cross-cust patterns"
@@ -87870,6 +87906,46 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "leads/active-customers.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_15_klinik_terapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_16_f_b_katalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_17_web_rekber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cust_18_izin_co_id_style_permit_service_site"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
       "source_location": "L100",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -99388,5 +99464,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e27b1d8987b25138534ef55ae6b22999f2b41e9f"
+  "built_at_commit": "f0d2e5f6fd8d4d10090a7e9f842e38454e066929"
 }

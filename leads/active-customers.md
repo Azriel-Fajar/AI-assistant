@@ -22,8 +22,8 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Goal:** Website like the Claude artifact mockup he sent (8-page waterproofing site).
 - **Reference scraped 2026-06-15:** 8 pages (Home + 6 services + Konsultasi), portfolio grid, testimonials, form→WhatsApp. No e-comm/DB.
 - **Quote:** Option A 8-page = **IDR 2.255jt** (Pro + 3 extra pages). Option B 1-page landing = **IDR 1jt**.
-- **Stage:** follow-up sent (2026-06-16). No reply yet. Customer leaning 1-page.
-- **Next:** Wait for A vs B pick.
+- **Stage:** waiting on owner (2026-06-20). Contact is intermediary; owner not replying, said will inform later. Customer leaning 1-page.
+- **Next:** Wait for owner decision on A vs B.
 
 ## Cust 5 — Pelatihan Craft (craft training)
 - **Industry:** Craft training / workshop
@@ -56,8 +56,8 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Industry:** Tour and travel
 - **Demo sent:** rielcode.com/demos/tour-travel/
 - **Quote:** mulai 2jt.
-- **Stage:** quoted, waiting (2026-06-18). Replied "Ok nanti kalo jadi saya infokan".
-- **Next:** Follow up if no reply by 2026-06-21.
+- **Stage:** quoted, parked (2026-06-20). Saw demo, replied "nanti ya, kalau jadi saya hubungi". Soft defer, not dead.
+- **Next:** Don't push. Light check-in in ~2 weeks (2026-07-04).
 
 ## Cust 12 — General Contractor
 - **Source:** Meta Ads WA lead (2026-06-18)

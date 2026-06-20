@@ -1,16 +1,16 @@
 # Graph Report - JARVIS  (2026-06-19)
 
 ## Corpus Check
-- 551 files · ~3,545,260 words
+- 551 files · ~3,545,638 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5148 nodes · 5281 edges · 668 communities (588 shown, 80 thin omitted)
+- 5152 nodes · 5285 edges · 668 communities (588 shown, 80 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 123 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e27b1d89`
+- Built from commit: `f0d2e5f6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -498,8 +498,8 @@
 1. `communities` - 31 edges
 2. `cohesion` - 31 edges
 3. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
-4. `Azriel's Executive Assistant` - 21 edges
-5. `Active Potential Customers — Context Hub` - 21 edges
+4. `Active Potential Customers — Context Hub` - 25 edges
+5. `Azriel's Executive Assistant` - 21 edges
 6. `get()` - 20 edges
 7. `log()` - 18 edges
 8. `Design Engineering` - 17 edges
@@ -509,13 +509,13 @@
 ## Surprising Connections (you probably didn't know these)
 - `periodToDates()` --calls--> `fmt()`  [INFERRED]
   tools/google/youtube/index.js → meta/dms-sync.mjs
+- `getCalendar()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
+  tools/google/gcal/index.js → tools/google/auth/oauth.js
+- `getDrive()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
+  tools/google/gdrive/index.js → tools/google/auth/oauth.js
 - `create_homework_events()` --calls--> `handle_message()`  [INFERRED]
   homework-bot/gcal.py → homework-bot/main.py
 - `parse_homework()` --calls--> `test_parse_day_name()`  [INFERRED]
-  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
-- `parse_homework()` --calls--> `test_parse_next_monday()`  [INFERRED]
-  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
-- `parse_homework()` --calls--> `test_parse_explicit_date()`  [INFERRED]
   homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
 
 ## Communities (668 total, 80 thin omitted)
@@ -1061,8 +1061,8 @@ Cohesion: 0.25
 Nodes (6): code:block1 (Hey Ali, I wanted to follow up on the website I uploaded a c), code:block2 (selamat sore kak, hanya ingin memastikan, bagaimana dengan r), Sample 1 -- English (client follow-up, WhatsApp), Sample 2 -- Indonesian (local lead follow-up, WhatsApp), Voice notes, Voice Reference
 
 ### Community 135 - "Community 135"
-Cohesion: 0.09
-Nodes (21): Active Potential Customers — Context Hub, Cross-cust patterns, Cust 10 — Pesantren, Cust 11 — Tour & Travel, Cust 12 — General Contractor, Cust 13 — Hijab Brand, Cust 14 — Marketplace Seller (Ronald), Cust 1 — Jatra Scale Indonesia (+13 more)
+Cohesion: 0.08
+Nodes (25): Active Potential Customers — Context Hub, Cross-cust patterns, Cust 10 — Pesantren, Cust 11 — Tour & Travel, Cust 12 — General Contractor, Cust 13 — Hijab Brand, Cust 14 — Marketplace Seller (Ronald), Cust 15 — Klinik Terapi (+17 more)
 
 ### Community 136 - "Community 136"
 Cohesion: 0.25
@@ -1273,8 +1273,8 @@ Cohesion: 0.07
 Nodes (26): dependencies, react, react-dom, remotion, @remotion/cli, @remotion/google-fonts, @remotion/zod-types, zod (+18 more)
 
 ### Community 318 - "Community 318"
-Cohesion: 0.1
-Nodes (22): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+14 more)
+Cohesion: 0.14
+Nodes (11): currentStart, d, end, event, events, freqMap, getCalendar(), newStart (+3 more)
 
 ### Community 319 - "Community 319"
 Cohesion: 0.08
@@ -1325,8 +1325,8 @@ Cohesion: 0.18
 Nodes (9): __dirname, getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath(), comments, dms (+1 more)
 
 ### Community 411 - "Community 411"
-Cohesion: 0.13
-Nodes (14): apiFetch(), env, fail(), fetchAllMessages(), file, fmt(), idx, lines (+6 more)
+Cohesion: 0.14
+Nodes (13): apiFetch(), env, fail(), fetchAllMessages(), file, idx, lines, OUT_DIR (+5 more)
 
 ### Community 412 - "Community 412"
 Cohesion: 0.12
@@ -1345,8 +1345,8 @@ Cohesion: 0.13
 Nodes (14): bin, figma, dependencies, axios, chalk, cli-table3, commander, devDependencies (+6 more)
 
 ### Community 416 - "Community 416"
-Cohesion: 0.15
-Nodes (9): data, label, msg, outPath, raw, rows, to, handleError() (+1 more)
+Cohesion: 0.12
+Nodes (15): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), SCOPES, TOKEN_PATH, data (+7 more)
 
 ### Community 417 - "Community 417"
 Cohesion: 0.13
@@ -1361,16 +1361,16 @@ Cohesion: 0.24
 Nodes (12): author, dependencies, playwright, description, keywords, license, main, name (+4 more)
 
 ### Community 420 - "Community 420"
-Cohesion: 0.18
-Nodes (10): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+2 more)
+Cohesion: 0.16
+Nodes (12): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+4 more)
 
 ### Community 421 - "Community 421"
-Cohesion: 0.23
-Nodes (8): copyMeta, metadata, perm, writer, printInfo(), printJSON(), printSuccess(), printTable()
+Cohesion: 0.21
+Nodes (9): copyMeta, getDrive(), metadata, perm, writer, printInfo(), printJSON(), printSuccess() (+1 more)
 
 ### Community 422 - "Community 422"
-Cohesion: 0.25
-Nodes (12): comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments(), listVideos() (+4 more)
+Cohesion: 0.2
+Nodes (15): runAuthFlow(), fmt(), comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics() (+7 more)
 
 ### Community 423 - "Community 423"
 Cohesion: 0.15
@@ -2113,7 +2113,7 @@ Cohesion: 0.67
 Nodes (3): code:php (<?php), code:bash (git add invoice-pdf.php), Task 11: PDF generation
 
 ## Knowledge Gaps
-- **2829 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2824 more)
+- **2833 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2828 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **80 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2127,7 +2127,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `MetaError` connect `Community 8` to `Community 309`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `0`, `1`, `2` to the rest of the system?**
-  _2875 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2879 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
