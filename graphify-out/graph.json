@@ -5769,7 +5769,7 @@
       "source_file": "meta/dms-sync.mjs",
       "source_location": "L67",
       "id": "meta_dms_sync_fmt",
-      "community": 422,
+      "community": 411,
       "norm_label": "fmt()"
     },
     {
@@ -6946,7 +6946,7 @@
       "label": "promoSizes",
       "file_type": "code",
       "source_file": "my-video/src/Root.tsx",
-      "source_location": "L24",
+      "source_location": "L27",
       "id": "src_root_promosizes",
       "community": 427,
       "norm_label": "promosizes"
@@ -6955,7 +6955,7 @@
       "label": "RemotionRoot()",
       "file_type": "code",
       "source_file": "my-video/src/Root.tsx",
-      "source_location": "L31",
+      "source_location": "L34",
       "id": "src_root_remotionroot",
       "community": 427,
       "norm_label": "remotionroot()"
@@ -10566,7 +10566,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L3",
       "id": "lib_error_handleerror",
-      "community": 420,
+      "community": 416,
       "norm_label": "handleerror()"
     },
     {
@@ -10575,7 +10575,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L16",
       "id": "lib_error_notauthenticated",
-      "community": 420,
+      "community": 416,
       "norm_label": "notauthenticated()"
     },
     {
@@ -10998,7 +10998,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L1",
       "id": "tools_google_auth_oauth_js",
-      "community": 416,
+      "community": 318,
       "norm_label": "oauth.js"
     },
     {
@@ -11007,7 +11007,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L8",
       "id": "auth_oauth_dirname",
-      "community": 416,
+      "community": 318,
       "norm_label": "__dirname"
     },
     {
@@ -11016,7 +11016,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L9",
       "id": "auth_oauth_config_path",
-      "community": 416,
+      "community": 318,
       "norm_label": "config_path"
     },
     {
@@ -11025,7 +11025,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L10",
       "id": "auth_oauth_token_path",
-      "community": 416,
+      "community": 318,
       "norm_label": "token_path"
     },
     {
@@ -11034,7 +11034,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L12",
       "id": "auth_oauth_scopes",
-      "community": 416,
+      "community": 318,
       "norm_label": "scopes"
     },
     {
@@ -11043,7 +11043,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L19",
       "id": "auth_oauth_loadconfig",
-      "community": 416,
+      "community": 318,
       "norm_label": "loadconfig()"
     },
     {
@@ -11052,7 +11052,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L27",
       "id": "auth_oauth_createoauthclient",
-      "community": 416,
+      "community": 318,
       "norm_label": "createoauthclient()"
     },
     {
@@ -11061,7 +11061,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L36",
       "id": "auth_oauth_getauthenticatedclient",
-      "community": 416,
+      "community": 318,
       "norm_label": "getauthenticatedclient()"
     },
     {
@@ -11070,7 +11070,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L57",
       "id": "auth_oauth_runauthflow",
-      "community": 422,
+      "community": 318,
       "norm_label": "runauthflow()"
     },
     {
@@ -11214,7 +11214,7 @@
       "source_file": "tools/google/gdrive/index.js",
       "source_location": "L12",
       "id": "gdrive_index_getdrive",
-      "community": 421,
+      "community": 318,
       "norm_label": "getdrive()"
     },
     {
@@ -11286,7 +11286,7 @@
       "source_file": "tools/google/gmail/index.js",
       "source_location": "L12",
       "id": "gmail_index_getgmail",
-      "community": 416,
+      "community": 318,
       "norm_label": "getgmail()"
     },
     {
@@ -11385,7 +11385,7 @@
       "source_file": "tools/google/lib/error.js",
       "source_location": "L1",
       "id": "tools_google_lib_error_js",
-      "community": 420,
+      "community": 416,
       "norm_label": "error.js"
     },
     {
@@ -11691,7 +11691,7 @@
       "source_file": "tools/google/youtube/index.js",
       "source_location": "L281",
       "id": "youtube_index_runauth",
-      "community": 422,
+      "community": 318,
       "norm_label": "runauth()"
     },
     {
@@ -12168,7 +12168,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L1",
       "id": "tools_social_lib_error_js",
-      "community": 420,
+      "community": 416,
       "norm_label": "error.js"
     },
     {
@@ -27637,7 +27637,7 @@
       "label": "DETECTION \u2192 PACKAGE MAPPING (for /site-review)",
       "file_type": "document",
       "source_file": "references/rielcode-pricing.md",
-      "source_location": "L90",
+      "source_location": "L91",
       "id": "references_rielcode_pricing_detection_package_mapping_for_site_review",
       "community": 49,
       "norm_label": "detection \u2192 package mapping (for /site-review)"
@@ -27646,7 +27646,7 @@
       "label": "NOTES",
       "file_type": "document",
       "source_file": "references/rielcode-pricing.md",
-      "source_location": "L103",
+      "source_location": "L104",
       "id": "references_rielcode_pricing_notes",
       "community": 49,
       "norm_label": "notes"
@@ -36949,6 +36949,105 @@
       "norm_label": "what it shows"
     },
     {
+      "label": "NEXT-ADS-PLAN.md",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L1",
+      "id": "my_video_next_ads_plan_md",
+      "community": 668,
+      "norm_label": "next-ads-plan.md"
+    },
+    {
+      "label": "Next v3 Ads \u2014 Free Demo Hook (build day: Jun 21-22, 2026)",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L1",
+      "id": "my_video_next_ads_plan_next_v3_ads_free_demo_hook_build_day_jun_21_22_2026",
+      "community": 668,
+      "norm_label": "next v3 ads \u2014 free demo hook (build day: jun 21-22, 2026)"
+    },
+    {
+      "label": "Constraints (locked)",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L6",
+      "id": "my_video_next_ads_plan_constraints_locked",
+      "community": 668,
+      "norm_label": "constraints (locked)"
+    },
+    {
+      "label": "Comp IDs (already registered in Root.tsx via angles.ts)",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L13",
+      "id": "my_video_next_ads_plan_comp_ids_already_registered_in_root_tsx_via_angles_ts",
+      "community": 668,
+      "norm_label": "comp ids (already registered in root.tsx via angles.ts)"
+    },
+    {
+      "label": "Render (ONE at a time)",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L18",
+      "id": "my_video_next_ads_plan_render_one_at_a_time",
+      "community": 668,
+      "norm_label": "render (one at a time)"
+    },
+    {
+      "label": "code:block1 (cd my-video)",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L19",
+      "id": "my_video_next_ads_plan_codeblock_1",
+      "community": 668,
+      "norm_label": "code:block1 (cd my-video)"
+    },
+    {
+      "label": "VIDEO SCRIPTS (per scene, 90-frame = 3s max each)",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L29",
+      "id": "my_video_next_ads_plan_video_scripts_per_scene_90_frame_3s_max_each",
+      "community": 668,
+      "norm_label": "video scripts (per scene, 90-frame = 3s max each)"
+    },
+    {
+      "label": "A6 \u2014 Free Demo (Curiosity)  -> vo-angle6.mp3",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L34",
+      "id": "my_video_next_ads_plan_a6_free_demo_curiosity_vo_angle6_mp3",
+      "community": 668,
+      "norm_label": "a6 \u2014 free demo (curiosity)  -> vo-angle6.mp3"
+    },
+    {
+      "label": "A7 \u2014 Free Demo Risk-Free  -> vo-angle7.mp3",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L42",
+      "id": "my_video_next_ads_plan_a7_free_demo_risk_free_vo_angle7_mp3",
+      "community": 668,
+      "norm_label": "a7 \u2014 free demo risk-free  -> vo-angle7.mp3"
+    },
+    {
+      "label": "A8 \u2014 Free Demo Fast  -> vo-angle8.mp3",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L50",
+      "id": "my_video_next_ads_plan_a8_free_demo_fast_vo_angle8_mp3",
+      "community": 668,
+      "norm_label": "a8 \u2014 free demo fast  -> vo-angle8.mp3"
+    },
+    {
+      "label": "After render -> upload",
+      "file_type": "document",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L60",
+      "id": "my_video_next_ads_plan_after_render_upload",
+      "community": 668,
+      "norm_label": "after render -> upload"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "my-video/README.md",
@@ -42775,7 +42874,7 @@
       "label": "Pro Plan \u2014 IDR 2jt / $116 \u2b50 Most Popular",
       "file_type": "document",
       "source_file": "references/rielcode-pricing.md",
-      "source_location": "L44",
+      "source_location": "L45",
       "id": "references_rielcode_pricing_pro_plan_idr_2jt_116_most_popular",
       "community": 49,
       "norm_label": "pro plan \u2014 idr 2jt / $116 \u2b50 most popular"
@@ -42784,7 +42883,7 @@
       "label": "Premium Plan \u2014 IDR 5jt / $290 \u2b50 Best Choice",
       "file_type": "document",
       "source_file": "references/rielcode-pricing.md",
-      "source_location": "L57",
+      "source_location": "L58",
       "id": "references_rielcode_pricing_premium_plan_idr_5jt_290_best_choice",
       "community": 49,
       "norm_label": "premium plan \u2014 idr 5jt / $290 \u2b50 best choice"
@@ -42793,7 +42892,7 @@
       "label": "Custom Plan \u2014 from IDR 500k / $29",
       "file_type": "document",
       "source_file": "references/rielcode-pricing.md",
-      "source_location": "L72",
+      "source_location": "L73",
       "id": "references_rielcode_pricing_custom_plan_from_idr_500k_29",
       "community": 49,
       "norm_label": "custom plan \u2014 from idr 500k / $29"
@@ -42802,7 +42901,7 @@
       "label": "ADD-ONS",
       "file_type": "document",
       "source_file": "references/rielcode-pricing.md",
-      "source_location": "L75",
+      "source_location": "L76",
       "id": "references_rielcode_pricing_add_ons",
       "community": 49,
       "norm_label": "add-ons"
@@ -87908,9 +88007,9 @@
       "source_file": "leads/active-customers.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "leads_active_customers_active_potential_customers_context_hub",
-      "target": "leads_active_customers_cust_15_klinik_terapi",
-      "confidence_score": 1.0
+      "target": "leads_active_customers_cust_15_klinik_terapi"
     },
     {
       "relation": "contains",
@@ -87918,9 +88017,9 @@
       "source_file": "leads/active-customers.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "leads_active_customers_active_potential_customers_context_hub",
-      "target": "leads_active_customers_cust_16_f_b_katalog",
-      "confidence_score": 1.0
+      "target": "leads_active_customers_cust_16_f_b_katalog"
     },
     {
       "relation": "contains",
@@ -87928,9 +88027,9 @@
       "source_file": "leads/active-customers.md",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "leads_active_customers_active_potential_customers_context_hub",
-      "target": "leads_active_customers_cust_17_web_rekber",
-      "confidence_score": 1.0
+      "target": "leads_active_customers_cust_17_web_rekber"
     },
     {
       "relation": "contains",
@@ -89371,6 +89470,106 @@
       "confidence_score": 1.0,
       "source": "dashboard_readme_run",
       "target": "dashboard_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_md",
+      "target": "my_video_next_ads_plan_next_v3_ads_free_demo_hook_build_day_jun_21_22_2026",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_md",
+      "target": "my_video_next_ads_plan_video_scripts_per_scene_90_frame_3s_max_each",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_next_v3_ads_free_demo_hook_build_day_jun_21_22_2026",
+      "target": "my_video_next_ads_plan_constraints_locked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_next_v3_ads_free_demo_hook_build_day_jun_21_22_2026",
+      "target": "my_video_next_ads_plan_comp_ids_already_registered_in_root_tsx_via_angles_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_next_v3_ads_free_demo_hook_build_day_jun_21_22_2026",
+      "target": "my_video_next_ads_plan_render_one_at_a_time",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_render_one_at_a_time",
+      "target": "my_video_next_ads_plan_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_video_scripts_per_scene_90_frame_3s_max_each",
+      "target": "my_video_next_ads_plan_a6_free_demo_curiosity_vo_angle6_mp3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_video_scripts_per_scene_90_frame_3s_max_each",
+      "target": "my_video_next_ads_plan_a7_free_demo_risk_free_vo_angle7_mp3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_video_scripts_per_scene_90_frame_3s_max_each",
+      "target": "my_video_next_ads_plan_a8_free_demo_fast_vo_angle8_mp3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "my-video/NEXT-ADS-PLAN.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "my_video_next_ads_plan_video_scripts_per_scene_90_frame_3s_max_each",
+      "target": "my_video_next_ads_plan_after_render_upload",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -99464,5 +99663,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f0d2e5f6fd8d4d10090a7e9f842e38454e066929"
+  "built_at_commit": "93f44cc9c34c6dfea5f7fd4153a4d191f53740d4"
 }

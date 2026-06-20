@@ -39,10 +39,11 @@ Landing page launch. Free hosting + domain included.
 - SSL & Security
 - Free Domain (.com, .id, etc.)
 - Hosting included (1 year)
+- CMS / Admin Panel (Basic) ← included
 - 1 design revision
 
 ### Pro Plan — IDR 2jt / $116 ⭐ Most Popular
-Multi-page business site with CMS.
+Multi-page business site with CMS. Laravel ready.
 ALWAYS INCLUDES CMS — when quoting/pitching Pro, you MUST name "CMS / Admin Panel (Basic)" as a feature. Never omit it.
 - Up to 5 pages
 - Custom UI/UX design
@@ -55,7 +56,7 @@ ALWAYS INCLUDES CMS — when quoting/pitching Pro, you MUST name "CMS / Admin Pa
 - 1 month support
 
 ### Premium Plan — IDR 5jt / $290 ⭐ Best Choice
-Full-scale platform with e-commerce and admin tooling.
+Full-scale platform with e-commerce and admin tooling. Laravel ready.
 - Up to 10 pages
 - Custom UI/UX design
 - Advanced SEO
@@ -103,6 +104,7 @@ When auditing a site, map detected features to the closest package:
 ## NOTES
 
 - PRO PLAN ALWAYS INCLUDES BASIC CMS / ADMIN PANEL. Every Pro quote, proposal, follow-up, WA message, and site-review estimate must list CMS as a Pro feature. Do not list Pro features from memory; read this file each time.
+- STARTER PLAN (1jt) ALSO INCLUDES BASIC CMS / ADMIN PANEL. Cheapest tier with admin panel. Student (500rb) does NOT.
 - International clients can pay USD directly.
 - Custom integrations beyond package = add-on, quote per item.
 - Rush jobs (under listed delivery) = Priority Delivery add-on (+IDR 300k / $18).

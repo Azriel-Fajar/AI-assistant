@@ -1,16 +1,16 @@
-# Graph Report - JARVIS  (2026-06-19)
+# Graph Report - JARVIS  (2026-06-20)
 
 ## Corpus Check
-- 551 files · ~3,545,638 words
+- 552 files · ~3,546,267 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5152 nodes · 5285 edges · 668 communities (588 shown, 80 thin omitted)
+- 5163 nodes · 5295 edges · 669 communities (589 shown, 80 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 123 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f0d2e5f6`
+- Built from commit: `93f44cc9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -493,6 +493,7 @@
 - [[_COMMUNITY_Community 627|Community 627]]
 - [[_COMMUNITY_Community 629|Community 629]]
 - [[_COMMUNITY_Community 630|Community 630]]
+- [[_COMMUNITY_Community 668|Community 668]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `communities` - 31 edges
@@ -509,16 +510,16 @@
 ## Surprising Connections (you probably didn't know these)
 - `periodToDates()` --calls--> `fmt()`  [INFERRED]
   tools/google/youtube/index.js → meta/dms-sync.mjs
-- `getCalendar()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
-  tools/google/gcal/index.js → tools/google/auth/oauth.js
-- `getDrive()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
-  tools/google/gdrive/index.js → tools/google/auth/oauth.js
 - `create_homework_events()` --calls--> `handle_message()`  [INFERRED]
   homework-bot/gcal.py → homework-bot/main.py
 - `parse_homework()` --calls--> `test_parse_day_name()`  [INFERRED]
   homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
+- `parse_homework()` --calls--> `test_parse_next_monday()`  [INFERRED]
+  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
+- `parse_homework()` --calls--> `test_parse_explicit_date()`  [INFERRED]
+  homework-bot/homework_parser.py → homework-bot/tests/test_parser.py
 
-## Communities (668 total, 80 thin omitted)
+## Communities (669 total, 80 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.22
@@ -1273,8 +1274,8 @@ Cohesion: 0.07
 Nodes (26): dependencies, react, react-dom, remotion, @remotion/cli, @remotion/google-fonts, @remotion/zod-types, zod (+18 more)
 
 ### Community 318 - "Community 318"
-Cohesion: 0.14
-Nodes (11): currentStart, d, end, event, events, freqMap, getCalendar(), newStart (+3 more)
+Cohesion: 0.1
+Nodes (22): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), runAuthFlow(), SCOPES, TOKEN_PATH (+14 more)
 
 ### Community 319 - "Community 319"
 Cohesion: 0.08
@@ -1325,8 +1326,8 @@ Cohesion: 0.18
 Nodes (9): __dirname, getAuthHeaders(), getToken(), readTokens(), saveToken(), tokensPath(), comments, dms (+1 more)
 
 ### Community 411 - "Community 411"
-Cohesion: 0.14
-Nodes (13): apiFetch(), env, fail(), fetchAllMessages(), file, idx, lines, OUT_DIR (+5 more)
+Cohesion: 0.13
+Nodes (14): apiFetch(), env, fail(), fetchAllMessages(), file, fmt(), idx, lines (+6 more)
 
 ### Community 412 - "Community 412"
 Cohesion: 0.12
@@ -1345,8 +1346,8 @@ Cohesion: 0.13
 Nodes (14): bin, figma, dependencies, axios, chalk, cli-table3, commander, devDependencies (+6 more)
 
 ### Community 416 - "Community 416"
-Cohesion: 0.12
-Nodes (15): CONFIG_PATH, createOAuthClient(), __dirname, getAuthenticatedClient(), loadConfig(), SCOPES, TOKEN_PATH, data (+7 more)
+Cohesion: 0.15
+Nodes (9): data, label, msg, outPath, raw, rows, to, handleError() (+1 more)
 
 ### Community 417 - "Community 417"
 Cohesion: 0.13
@@ -1361,16 +1362,16 @@ Cohesion: 0.24
 Nodes (12): author, dependencies, playwright, description, keywords, license, main, name (+4 more)
 
 ### Community 420 - "Community 420"
-Cohesion: 0.16
-Nodes (12): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+4 more)
+Cohesion: 0.18
+Nodes (10): allFiles, colors, comments, entries, files, fills, VALID_FORMATS, badFormat() (+2 more)
 
 ### Community 421 - "Community 421"
-Cohesion: 0.21
-Nodes (9): copyMeta, getDrive(), metadata, perm, writer, printInfo(), printJSON(), printSuccess() (+1 more)
+Cohesion: 0.23
+Nodes (8): copyMeta, metadata, perm, writer, printInfo(), printJSON(), printSuccess(), printTable()
 
 ### Community 422 - "Community 422"
-Cohesion: 0.2
-Nodes (15): runAuthFlow(), fmt(), comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics() (+7 more)
+Cohesion: 0.25
+Nodes (12): comments, confirm(), deleteComment(), getAnalytics(), getYouTube(), getYouTubeAnalytics(), listComments(), listVideos() (+4 more)
 
 ### Community 423 - "Community 423"
 Cohesion: 0.15
@@ -2112,8 +2113,12 @@ Nodes (3): code:php (<?php), code:bash (git add invoice/view.php), Task 10: Publ
 Cohesion: 0.67
 Nodes (3): code:php (<?php), code:bash (git add invoice-pdf.php), Task 11: PDF generation
 
+### Community 668 - "Community 668"
+Cohesion: 0.18
+Nodes (10): A6 — Free Demo (Curiosity)  -> vo-angle6.mp3, A7 — Free Demo Risk-Free  -> vo-angle7.mp3, A8 — Free Demo Fast  -> vo-angle8.mp3, After render -> upload, code:block1 (cd my-video), Comp IDs (already registered in Root.tsx via angles.ts), Constraints (locked), Next v3 Ads — Free Demo Hook (build day: Jun 21-22, 2026) (+2 more)
+
 ## Knowledge Gaps
-- **2833 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2828 more)
+- **2840 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2835 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **80 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -2127,7 +2132,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `MetaError` connect `Community 8` to `Community 309`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `0`, `1`, `2` to the rest of the system?**
-  _2879 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2886 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**

@@ -19,6 +19,9 @@ const ids = [
   "Angle3-Outcome",
   "Angle4-Affordable",
   "Angle5-SocialProof",
+  "Angle6-FreeDemo",
+  "Angle7-FreeDemoRiskFree",
+  "Angle8-FreeDemoFast",
 ];
 
 const promoSizes: { id: string; w: number; h: number; orientation: Orientation }[] = [
