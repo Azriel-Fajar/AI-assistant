@@ -42,15 +42,6 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** follow-up sent (2026-06-16). No reply yet.
 - **Next:** Wait for reply; send demo tomorrow if no response.
 
-## Cust 10 — Pesantren
-- **Brief:** `projects/cust-10-pesantren/`
-- **Industry:** Islamic boarding school
-- **Reference:** nurulishlahiyyah.id
-- **Request:** 5-page pesantren site + pendaftaran form to admin panel. No blog.
-- **Quote:** Pro 1.8jt rejected ("mahal, nyari yang murah"). Downsold to **Starter 900rb** (1jt - LAUNCH10): 1-2 pages + form to admin panel + Basic CMS + hosting + domain. Keeps core pendaftaran-to-admin function.
-- **Stage:** budget-blocked (2026-06-20). Confirmed blocker = budget, even 900rb too much. Asked their exact budget range; offered scope-down (NOT price cut, NOT installment) as only lever.
-- **Next:** Wait for their number. 900rb = floor with admin. Below that = strip admin (kills core need). No credit/cicilan for low-budget first-timer.
-
 ## Cust 11 — Tour & Travel
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** Tour and travel
