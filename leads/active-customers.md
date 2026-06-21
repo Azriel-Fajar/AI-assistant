@@ -9,13 +9,13 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 
 ---
 
-## Cust 2 — Furniture company
+## po Cust 2 — Furniture company
 - **Industry:** Furniture
 - **Quote:** Verbal yes to Starter (Rp1jt, furniture galeri). Offered LAUNCH10 (10% off).
 - **Stage:** verbal yes, not ready (2026-06-17). Gathering funds. Reassured scope fits.
 - **Next:** Wait for kakak to confirm ready. Do not chase.
 
-## Cust 4 — CNProject Waterproofing
+## po Cust 4 — CNProject Waterproofing
 - **Brief:** `projects/CNProject Waterproofing/client-brief.md`
 - **Entity:** Chemkon Nusantara Perkasa | **Area:** Jakarta/PIK2
 - **Industry:** Waterproofing / epoxy / PU concrete contractor (specialist positioning)
@@ -25,24 +25,24 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** waiting on owner (2026-06-20). Contact is intermediary; owner not replying, said will inform later. Customer leaning 1-page.
 - **Next:** Wait for owner decision on A vs B.
 
-## Cust 5 — Pelatihan Craft (craft training)
+## po Cust 5 — Pelatihan Craft (craft training)
 - **Industry:** Craft training / workshop
 - **Stage:** on hold (2026-06-15). Out of town this week.
 - **Next:** Contact again next week when back in town.
 
-## Cust 7 — Jasa Branding + Homestay
+## po Cust 7 — Jasa Branding + Homestay
 - **Industry:** Branding services + hospitality
 - **Request:** 2 SEPARATE sites — (1) jasa branding (company profile, logo, deck, pitching, video edit), (2) homestay landing. Confirmed separate 2026-06-16.
 - **Stage:** qualifying (2026-06-16). Follow-up sent asking pages + reference. No reply yet.
 - **Next:** Scope 2 separate sites; quote each.
 
-## Cust 8 — Jersey Custom
+## po Cust 8 — Jersey Custom
 - **Industry:** Apparel / custom jersey
 - **Request:** Landing page + catalog. Asked for reference/design.
 - **Stage:** follow-up sent (2026-06-16). No reply yet.
 - **Next:** Wait for reply; send demo tomorrow if no response.
 
-## Cust 11 — Tour & Travel
+## po Cust 11 — Tour & Travel
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** Tour and travel
 - **Demo sent:** rielcode.com/demos/tour-travel/
@@ -50,7 +50,7 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** quoted, parked (2026-06-20). Saw demo, replied "nanti ya, kalau jadi saya hubungi". Soft defer, not dead.
 - **Next:** Don't push. Light check-in in ~2 weeks (2026-07-04).
 
-## Cust 12 — General Contractor
+## po Cust 12 — General Contractor
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** General Contractor / Supplier / Trans / Rent
 - **Request:** Landing page.
@@ -59,14 +59,14 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** qualifying (2026-06-18).
 - **Next:** Wait for landing-page reference/scope reply.
 
-## Cust 13 — Hijab Brand
+## po Cust 13 — Hijab Brand
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** Apparel / hijab products
 - **Reference:** their own brand "The Veiluxe" (sent packaging photo). Premium/elegant: gold + floral pink gift boxes, VL monogram logo.
 - **Stage:** scoping (2026-06-18).
 - **Next:** Review reference, scope + quote.
 
-## Cust 14 — Marketplace Seller (Ronald)
+## po Cust 14 — Marketplace Seller (Ronald)
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** Retail / e-commerce. Sells on marketplaces (Shopee, etc).
 - **Request:** Asked for website suggestions. Open-ended.
@@ -74,16 +74,16 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** discovery (2026-06-18). Awaiting reply on need.
 - **Next:** Confirm catalog vs order/checkout, then scope + quote.
 
-## Cust 15 — Klinik Terapi
+## po Cust 15 — Klinik Terapi
 - **Source:** Meta Ads WA lead (2026-06-19)
 - **Industry:** Healthcare / therapy clinic
 - **Request:** Self-picked Premium. Asked ownership/garansi/maintenance/CMS/hidden-cost/renewal questions.
 - **Told:** Hosting+domain 1yr included, maintenance 2 months, no hidden cost, no extra konsul fee.
 - **Quote:** Premium (self-selected, not yet finalized).
-- **Stage:** meeting-pending (2026-06-19). Warm buyer. Wants online meet (gratis konsul), checking partner availability.
-- **Next:** Wait for partner schedule, then book online meet. Follow up if no reply by 2026-06-22.
+- **Stage:** meeting-pending, soft-defer (2026-06-21). Warm buyer. Replied he + partner busy ~1 week, will reach out again. Acknowledged.
+- **Next:** Don't push. They will re-initiate. Light check-in ~2026-06-29 if no word.
 
-## Cust 16 — F&B Katalog
+## po Cust 16 — F&B Katalog
 - **Source:** Meta Ads WA lead (2026-06-19)
 - **Industry:** F&B
 - **Request:** Catalog site (products + supporting info + company profile). No web transactions, orders forwarded to CS chat.
@@ -91,7 +91,7 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** scoping (2026-06-19). Offered online meet.
 - **Next:** Propose online meet to scope catalog site. Follow up if no reply by 2026-06-22.
 
-## Cust 17 — Web Rekber
+## po Cust 17 — Web Rekber
 - **Source:** Inbound WA (+62 851-7427-7002), 2026-06-19
 - **Industry:** Escrow / rekber (akun game)
 - **Request:** Escrow site penjual-pembeli. MC holds funds manual, no payment gateway. Volume sering tak tentu.
@@ -100,7 +100,7 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** quoted, waiting (2026-06-19).
 - **Next:** Wait for reply. Follow up if no reply by 2026-06-22; offer to show contoh tampilan.
 
-## Cust 18 — izin.co.id-style Permit/Service Site
+## po Cust 18 — izin.co.id-style Permit/Service Site
 - **Source:** Meta Ads WA lead (2026-06-19)
 - **Industry:** Legal/permit or product-service business (reference izin.co.id)
 - **Request:** Konsep + tampilan mirip izin.co.id, multi halaman. Bisa kelola produk + management artikel sendiri lewat admin.
@@ -110,15 +110,40 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** quoted (2026-06-19).
 - **Next:** Wait for reply. Follow up if no response by 2026-06-22.
 
+## po Cust 19 — Toko Herbal
+- **Source:** Meta Ads WA lead (2026-06-21)
+- **Industry:** Herbal products / retail
+- **Request:** Online store. Confirming scope: full e-commerce (cart + payment) vs catalog + WA.
+- **Demo sent:** rielcode.com/demos/ (no herbal-specific demo; e-commerce structure same)
+- **Stage:** scoping (2026-06-21). Awaiting scope reply.
+- **Next:** Confirm e-commerce vs catalog, then quote (online ~5jt / katalog ~2jt, minus LAUNCH10).
+
+## po Cust 20 — Toko Baju
+- **Source:** Meta Ads WA lead (2026-06-21)
+- **Industry:** Apparel / fashion retail
+- **Request:** Clothing store website. Asked if fashion demo exists (none; e-commerce structure same).
+- **Quote:** Online lengkap 5jt → 4,5jt (LAUNCH10) | Katalog + WA 2jt → 1,8jt (LAUNCH10).
+- **Stage:** quoted, scoping (2026-06-21). Sent 2-tier quote + LAUNCH10.
+- **Next:** Wait for tier pick. Offered to start from front-page mockup.
+
+## po Cust 21 — Sepeda Listrik (oTobot)
+- **Source:** Meta Ads WA lead (2026-06-21)
+- **Industry:** E-bikes / electric vehicles, reseller
+- **Request:** "Jadi 1" - one site that both sells to customers AND manages reseller network.
+- **Scope:** E-commerce + reseller/member system (login, register, manage reseller accounts).
+- **Quote:** Rp5,5jt → 4,95jt (LAUNCH10). Premium 5jt + Login/Member 500k.
+- **Stage:** quoted (2026-06-21).
+- **Next:** Wait for reply. Offered to start from front-page mockup.
+
 ---
 
 ## Deleted from potential customers
 
-## ~~Cust 1 — Jatra Scale Indonesia~~ (DELETED)
+## ~~po Cust 1 — Jatra Scale Indonesia~~ (DELETED)
 - **Industry:** Industrial weighing & calibration. Goal: Google ranking (SEO).
 - **Last quote:** Pro + Blog = IDR 2.4jt. Removed from active pipeline.
 
-## ~~Cust 3~~ (DELETED)
+## ~~po Cust 3~~ (DELETED)
 - Placeholder, was awaiting call. Removed from active pipeline.
 
 ---
