@@ -97,8 +97,9 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Request:** Escrow site penjual-pembeli. MC holds funds manual, no payment gateway. Volume sering tak tentu.
 - **Scope:** Status-tracker build: 3-role auth (buyer/seller/MC), transaction flow + status, dispute flag, MC dashboard.
 - **Quote:** **Rp5,500,000**, 2-3 weeks (Premium 5jt + Login/Member 500k).
-- **Stage:** quoted, waiting (2026-06-19).
-- **Next:** Wait for reply. Follow up if no reply by 2026-06-22; offer to show contoh tampilan.
+- **Demo sent:** rielcode.com/demos/rekber/ (clickable 3-role tracker built 2026-06-21, matches quoted scope).
+- **Stage:** demo sent, waiting (2026-06-21).
+- **Next:** Wait for reply on demo. Nudge toward DP if positive. Follow up if no reply by 2026-06-24.
 
 ## po Cust 18 — izin.co.id-style Permit/Service Site
 - **Source:** Meta Ads WA lead (2026-06-19)
@@ -134,6 +135,15 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Quote:** Rp5,5jt → 4,95jt (LAUNCH10). Premium 5jt + Login/Member 500k.
 - **Stage:** quoted (2026-06-21).
 - **Next:** Wait for reply. Offered to start from front-page mockup.
+
+## po Cust 22 — Massage Home Service
+- **Source:** Meta Ads WA lead (2026-06-21) | WA +62 857-1624-5929
+- **Industry:** Massage home service
+- **Request:** Landing site. Key needs: service list + prices, booking button straight to WhatsApp, coverage area.
+- **Channel:** WhatsApp only (no Instagram yet).
+- **Quote:** Starter Rp1jt → 900rb (LAUNCH10). Includes domain + hosting 1yr + basic admin panel. Delivery 3-5 days.
+- **Stage:** quoted (2026-06-21). Asked price directly, sent Starter + promo.
+- **Next:** Wait for reply. If yes, start with service-list intake (layanan, harga, area, jam).
 
 ---
 

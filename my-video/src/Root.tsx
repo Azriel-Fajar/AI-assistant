@@ -24,6 +24,13 @@ const ids = [
   "Angle8-FreeDemoFast",
 ];
 
+const adRatios: { label: string; w: number; h: number }[] = [
+  { label: "1x1", w: 1080, h: 1080 },
+  { label: "4x5", w: 1080, h: 1350 },
+  { label: "16x9", w: 1920, h: 1080 },
+  { label: "9x16", w: 1080, h: 1920 },
+];
+
 const promoSizes: { id: string; w: number; h: number; orientation: Orientation }[] = [
   { id: "Promo-9x16", w: 1080, h: 1920, orientation: "portrait" },
   { id: "Promo-4x5", w: 1080, h: 1350, orientation: "portrait45" },
@@ -113,18 +120,36 @@ export const RemotionRoot: React.FC = () => {
         ))}
       </Folder>
       <Folder name="Angles">
-        {angles.map((props, i) => (
+        {angles.slice(0, 5).map((props, i) => (
           <Composition
             key={ids[i]}
             id={ids[i]}
             component={AdBase}
-            durationInFrames={450}
+            durationInFrames={props.durationInFrames ?? 450}
             fps={30}
             width={1080}
             height={1080}
             defaultProps={props as AdProps}
           />
         ))}
+      </Folder>
+      <Folder name="FreeDemo">
+        {angles.slice(5).flatMap((props, j) => {
+          const id = ids[j + 5];
+          const dur = props.durationInFrames ?? 450;
+          return adRatios.map((r) => (
+            <Composition
+              key={`${id}-${r.label}`}
+              id={`${id}-${r.label}`}
+              component={AdBase}
+              durationInFrames={dur}
+              fps={30}
+              width={r.w}
+              height={r.h}
+              defaultProps={props as AdProps}
+            />
+          ));
+        })}
       </Folder>
     </>
   );

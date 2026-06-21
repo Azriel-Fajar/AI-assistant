@@ -11,6 +11,24 @@ import {
 } from "remotion";
 import { theme, LOGO_PATH } from "./theme";
 
+// quiet backing track under the VO; fades in at start, out at end
+const BackingMusic: React.FC = () => {
+  const { durationInFrames, fps } = useVideoConfig();
+  return (
+    <Audio
+      src={staticFile("music.mp3")}
+      volume={(f) =>
+        interpolate(
+          f,
+          [0, fps, durationInFrames - fps, durationInFrames],
+          [0, 0.2, 0.2, 0],
+          { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+        )
+      }
+    />
+  );
+};
+
 export type AdProps = {
   tag: string;
   headline1: string;
@@ -19,9 +37,8 @@ export type AdProps = {
   body: string;
   cta: string;
   voiceover: string;
+  durationInFrames?: number;
 };
-
-const EXIT_START = 400;
 
 export const AdBase: React.FC<AdProps> = ({
   tag,
@@ -33,7 +50,12 @@ export const AdBase: React.FC<AdProps> = ({
   voiceover,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, durationInFrames } = useVideoConfig();
+
+  // Exit begins ~50f before the comp ends, regardless of total length.
+  const EXIT_START = durationInFrames - 50;
+  // CTA pulse runs from when CTA settles until exit.
+  const PULSE_START = Math.min(300, EXIT_START - 60);
 
   // Spring enter
   const spr = (delay: number, damping = 18, stiffness = 120) =>
@@ -103,8 +125,8 @@ export const AdBase: React.FC<AdProps> = ({
 
   // CTA pulse after settled
   const ctaPulse =
-    frame > 300 && frame < EXIT_START
-      ? 1 + 0.025 * Math.sin(((frame - 300) / fps) * Math.PI * 2)
+    frame > PULSE_START && frame < EXIT_START
+      ? 1 + 0.025 * Math.sin(((frame - PULSE_START) / fps) * Math.PI * 2)
       : 1;
 
   const ctaScale = frame < EXIT_START ? spr(140) * ctaPulse : interpolate(frame, [EXIT_START, EXIT_START + 25], [1, 0.9], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -119,7 +141,8 @@ export const AdBase: React.FC<AdProps> = ({
 
   return (
     <AbsoluteFill style={{ background: theme.green, overflow: "hidden", perspective: 800 }}>
-      <Audio src={staticFile(voiceover)} />
+      <Audio src={staticFile(voiceover)} volume={2} />
+      <BackingMusic />
 
       {/* Background portfolio panels — 3D slide in from sides */}
       <AbsoluteFill
@@ -140,7 +163,7 @@ export const AdBase: React.FC<AdProps> = ({
           }}
         >
           <Img
-            src={staticFile("parallaxnet-ca-20260529-210724.png")}
+            src={staticFile("demo-cafe.png")}
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", filter: "blur(1px)" }}
           />
         </div>
@@ -155,7 +178,7 @@ export const AdBase: React.FC<AdProps> = ({
           }}
         >
           <Img
-            src={staticFile("parallaxnet-id-20260529-210732.png")}
+            src={staticFile("demo-salon.png")}
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", filter: "blur(1px)" }}
           />
         </div>

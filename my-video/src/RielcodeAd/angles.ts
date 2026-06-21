@@ -54,6 +54,7 @@ export const angles: AdProps[] = [
     body: "We build you a free working demo first.\nYou only pay if you love it. No deposit.",
     cta: "Chat us, get your free demo",
     voiceover: "vo-angle6.mp3",
+    durationInFrames: 300,
   },
   {
     tag: "Free Demo - Risk Free",
@@ -63,6 +64,7 @@ export const angles: AdProps[] = [
     body: "Send your business name. Get a real demo page built for you.\nZero upfront, zero risk.",
     cta: "Get my free demo",
     voiceover: "vo-angle7.mp3",
+    durationInFrames: 270,
   },
   {
     tag: "Free Demo - Fast",
@@ -72,5 +74,6 @@ export const angles: AdProps[] = [
     body: "No deposit. We design it, you decide.\nSimple, fast, yours to keep if you love it.",
     cta: "Start free, chat now",
     voiceover: "vo-angle8.mp3",
+    durationInFrames: 270,
   },
 ];

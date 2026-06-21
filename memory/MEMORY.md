@@ -48,3 +48,6 @@
 - [Remotion Fast Paced 3s Frame](feedback_remotion_fast_paced_3s_frame.md) -- ad renders fast-paced, max 3s (90 frames) per scene, use new redesign theme.ts not old design
 - [Ad Script Customer POV](feedback_ad_script_customer_pov.md) -- ad VO/scripts from customer POV (what THEY get), not seller POV (aku buat/kami bantu)
 - [Manim Setup](reference_manim_setup.md) -- Manim v0.20.1 global uv tool on py3.13 + FFmpeg; SAC disabled for PyAV DLLs; ad starter at manim-ads/rielcode_ad.py
+- [Free Demo Ads A6-A8](project_free_demo_ads.md) -- 3 new v3 ads (Free Demo/Risk-Free/Fast) built in 4 ratios, VO 2x + music, demo-cafe/salon panels, uploaded to test vs Contoh Gratis
+- [Ad Test Dupe Winner](feedback_ad_test_dupe_winner.md) -- dupe winning ad to test, keep control ON, pause dead ads only after new ads prove; new ads start Processing/Rp0
+- [WA Ad Icebreakers](feedback_wa_ad_icebreakers.md) -- click-to-WA icebreakers must be Indonesian + demo/price driven, not Meta English defaults; edit in ad template
