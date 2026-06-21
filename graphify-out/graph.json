@@ -5769,7 +5769,7 @@
       "source_file": "meta/dms-sync.mjs",
       "source_location": "L67",
       "id": "meta_dms_sync_fmt",
-      "community": 411,
+      "community": 422,
       "norm_label": "fmt()"
     },
     {
@@ -10566,7 +10566,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L3",
       "id": "lib_error_handleerror",
-      "community": 416,
+      "community": 420,
       "norm_label": "handleerror()"
     },
     {
@@ -10575,7 +10575,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L16",
       "id": "lib_error_notauthenticated",
-      "community": 416,
+      "community": 420,
       "norm_label": "notauthenticated()"
     },
     {
@@ -10611,7 +10611,7 @@
       "source_file": "tools/figma/lib/output.js",
       "source_location": "L1",
       "id": "tools_figma_lib_output_js",
-      "community": 421,
+      "community": 416,
       "norm_label": "output.js"
     },
     {
@@ -10620,7 +10620,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L4",
       "id": "lib_output_printtable",
-      "community": 421,
+      "community": 416,
       "norm_label": "printtable()"
     },
     {
@@ -10629,7 +10629,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L13",
       "id": "lib_output_printjson",
-      "community": 421,
+      "community": 416,
       "norm_label": "printjson()"
     },
     {
@@ -10638,7 +10638,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L17",
       "id": "lib_output_printsuccess",
-      "community": 421,
+      "community": 416,
       "norm_label": "printsuccess()"
     },
     {
@@ -10998,7 +10998,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L1",
       "id": "tools_google_auth_oauth_js",
-      "community": 318,
+      "community": 421,
       "norm_label": "oauth.js"
     },
     {
@@ -11007,7 +11007,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L8",
       "id": "auth_oauth_dirname",
-      "community": 318,
+      "community": 421,
       "norm_label": "__dirname"
     },
     {
@@ -11016,7 +11016,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L9",
       "id": "auth_oauth_config_path",
-      "community": 318,
+      "community": 421,
       "norm_label": "config_path"
     },
     {
@@ -11025,7 +11025,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L10",
       "id": "auth_oauth_token_path",
-      "community": 318,
+      "community": 421,
       "norm_label": "token_path"
     },
     {
@@ -11034,7 +11034,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L12",
       "id": "auth_oauth_scopes",
-      "community": 318,
+      "community": 421,
       "norm_label": "scopes"
     },
     {
@@ -11043,7 +11043,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L19",
       "id": "auth_oauth_loadconfig",
-      "community": 318,
+      "community": 421,
       "norm_label": "loadconfig()"
     },
     {
@@ -11052,7 +11052,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L27",
       "id": "auth_oauth_createoauthclient",
-      "community": 318,
+      "community": 421,
       "norm_label": "createoauthclient()"
     },
     {
@@ -11061,7 +11061,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L36",
       "id": "auth_oauth_getauthenticatedclient",
-      "community": 318,
+      "community": 421,
       "norm_label": "getauthenticatedclient()"
     },
     {
@@ -11070,7 +11070,7 @@
       "source_file": "tools/google/auth/oauth.js",
       "source_location": "L57",
       "id": "auth_oauth_runauthflow",
-      "community": 318,
+      "community": 421,
       "norm_label": "runauthflow()"
     },
     {
@@ -11214,7 +11214,7 @@
       "source_file": "tools/google/gdrive/index.js",
       "source_location": "L12",
       "id": "gdrive_index_getdrive",
-      "community": 318,
+      "community": 421,
       "norm_label": "getdrive()"
     },
     {
@@ -11286,7 +11286,7 @@
       "source_file": "tools/google/gmail/index.js",
       "source_location": "L12",
       "id": "gmail_index_getgmail",
-      "community": 318,
+      "community": 416,
       "norm_label": "getgmail()"
     },
     {
@@ -11385,7 +11385,7 @@
       "source_file": "tools/google/lib/error.js",
       "source_location": "L1",
       "id": "tools_google_lib_error_js",
-      "community": 416,
+      "community": 420,
       "norm_label": "error.js"
     },
     {
@@ -11394,7 +11394,7 @@
       "source_file": "tools/google/lib/output.js",
       "source_location": "L1",
       "id": "tools_google_lib_output_js",
-      "community": 421,
+      "community": 416,
       "norm_label": "output.js"
     },
     {
@@ -11403,7 +11403,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L21",
       "id": "lib_output_printinfo",
-      "community": 421,
+      "community": 416,
       "norm_label": "printinfo()"
     },
     {
@@ -11691,7 +11691,7 @@
       "source_file": "tools/google/youtube/index.js",
       "source_location": "L281",
       "id": "youtube_index_runauth",
-      "community": 318,
+      "community": 421,
       "norm_label": "runauth()"
     },
     {
@@ -12168,7 +12168,7 @@
       "source_file": "tools/social/lib/error.js",
       "source_location": "L1",
       "id": "tools_social_lib_error_js",
-      "community": 416,
+      "community": 420,
       "norm_label": "error.js"
     },
     {
@@ -12177,7 +12177,7 @@
       "source_file": "tools/social/lib/output.js",
       "source_location": "L1",
       "id": "tools_social_lib_output_js",
-      "community": 421,
+      "community": 416,
       "norm_label": "output.js"
     },
     {
@@ -34699,154 +34699,181 @@
       "norm_label": "active potential customers \u2014 context hub"
     },
     {
-      "label": "Cust 2 \u2014 Furniture company",
+      "label": "po Cust 2 \u2014 Furniture company",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L12",
-      "id": "leads_active_customers_cust_2_furniture_company",
+      "id": "leads_active_customers_po_cust_2_furniture_company",
       "community": 135,
-      "norm_label": "cust 2 \u2014 furniture company"
+      "norm_label": "po cust 2 \u2014 furniture company"
     },
     {
-      "label": "Cust 4 \u2014 CNProject Waterproofing",
+      "label": "po Cust 4 \u2014 CNProject Waterproofing",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L18",
-      "id": "leads_active_customers_cust_4_cnproject_waterproofing",
+      "id": "leads_active_customers_po_cust_4_cnproject_waterproofing",
       "community": 135,
-      "norm_label": "cust 4 \u2014 cnproject waterproofing"
+      "norm_label": "po cust 4 \u2014 cnproject waterproofing"
     },
     {
-      "label": "Cust 5 \u2014 Pelatihan Craft (craft training)",
+      "label": "po Cust 5 \u2014 Pelatihan Craft (craft training)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L28",
-      "id": "leads_active_customers_cust_5_pelatihan_craft_craft_training",
+      "id": "leads_active_customers_po_cust_5_pelatihan_craft_craft_training",
       "community": 135,
-      "norm_label": "cust 5 \u2014 pelatihan craft (craft training)"
+      "norm_label": "po cust 5 \u2014 pelatihan craft (craft training)"
     },
     {
-      "label": "Cust 7 \u2014 Jasa Branding + Homestay",
+      "label": "po Cust 7 \u2014 Jasa Branding + Homestay",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L33",
-      "id": "leads_active_customers_cust_7_jasa_branding_homestay",
+      "id": "leads_active_customers_po_cust_7_jasa_branding_homestay",
       "community": 135,
-      "norm_label": "cust 7 \u2014 jasa branding + homestay"
+      "norm_label": "po cust 7 \u2014 jasa branding + homestay"
     },
     {
-      "label": "Cust 8 \u2014 Jersey Custom",
+      "label": "po Cust 8 \u2014 Jersey Custom",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L39",
-      "id": "leads_active_customers_cust_8_jersey_custom",
+      "id": "leads_active_customers_po_cust_8_jersey_custom",
       "community": 135,
-      "norm_label": "cust 8 \u2014 jersey custom"
+      "norm_label": "po cust 8 \u2014 jersey custom"
     },
     {
-      "label": "Cust 11 \u2014 Tour & Travel",
+      "label": "po Cust 11 \u2014 Tour & Travel",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L45",
-      "id": "leads_active_customers_cust_11_tour_travel",
+      "id": "leads_active_customers_po_cust_11_tour_travel",
       "community": 135,
-      "norm_label": "cust 11 \u2014 tour & travel"
+      "norm_label": "po cust 11 \u2014 tour & travel"
     },
     {
-      "label": "Cust 12 \u2014 General Contractor",
+      "label": "po Cust 12 \u2014 General Contractor",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L53",
-      "id": "leads_active_customers_cust_12_general_contractor",
+      "id": "leads_active_customers_po_cust_12_general_contractor",
       "community": 135,
-      "norm_label": "cust 12 \u2014 general contractor"
+      "norm_label": "po cust 12 \u2014 general contractor"
     },
     {
-      "label": "Cust 13 \u2014 Hijab Brand",
+      "label": "po Cust 13 \u2014 Hijab Brand",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L62",
-      "id": "leads_active_customers_cust_13_hijab_brand",
+      "id": "leads_active_customers_po_cust_13_hijab_brand",
       "community": 135,
-      "norm_label": "cust 13 \u2014 hijab brand"
+      "norm_label": "po cust 13 \u2014 hijab brand"
     },
     {
-      "label": "Cust 14 \u2014 Marketplace Seller (Ronald)",
+      "label": "po Cust 14 \u2014 Marketplace Seller (Ronald)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L69",
-      "id": "leads_active_customers_cust_14_marketplace_seller_ronald",
+      "id": "leads_active_customers_po_cust_14_marketplace_seller_ronald",
       "community": 135,
-      "norm_label": "cust 14 \u2014 marketplace seller (ronald)"
+      "norm_label": "po cust 14 \u2014 marketplace seller (ronald)"
     },
     {
-      "label": "Cust 15 \u2014 Klinik Terapi",
+      "label": "po Cust 15 \u2014 Klinik Terapi",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L77",
-      "id": "leads_active_customers_cust_15_klinik_terapi",
+      "id": "leads_active_customers_po_cust_15_klinik_terapi",
       "community": 135,
-      "norm_label": "cust 15 \u2014 klinik terapi"
+      "norm_label": "po cust 15 \u2014 klinik terapi"
     },
     {
-      "label": "Cust 16 \u2014 F&B Katalog",
+      "label": "po Cust 16 \u2014 F&B Katalog",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L86",
-      "id": "leads_active_customers_cust_16_f_b_katalog",
+      "id": "leads_active_customers_po_cust_16_f_b_katalog",
       "community": 135,
-      "norm_label": "cust 16 \u2014 f&b katalog"
+      "norm_label": "po cust 16 \u2014 f&b katalog"
     },
     {
-      "label": "Cust 17 \u2014 Web Rekber",
+      "label": "po Cust 17 \u2014 Web Rekber",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L94",
-      "id": "leads_active_customers_cust_17_web_rekber",
+      "id": "leads_active_customers_po_cust_17_web_rekber",
       "community": 135,
-      "norm_label": "cust 17 \u2014 web rekber"
+      "norm_label": "po cust 17 \u2014 web rekber"
     },
     {
-      "label": "Cust 18 \u2014 izin.co.id-style Permit/Service Site",
+      "label": "po Cust 18 \u2014 izin.co.id-style Permit/Service Site",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
       "source_location": "L103",
-      "id": "leads_active_customers_cust_18_izin_co_id_style_permit_service_site",
+      "id": "leads_active_customers_po_cust_18_izin_co_id_style_permit_service_site",
       "community": 135,
-      "norm_label": "cust 18 \u2014 izin.co.id-style permit/service site"
+      "norm_label": "po cust 18 \u2014 izin.co.id-style permit/service site"
+    },
+    {
+      "label": "po Cust 19 \u2014 Toko Herbal",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L113",
+      "id": "leads_active_customers_po_cust_19_toko_herbal",
+      "community": 135,
+      "norm_label": "po cust 19 \u2014 toko herbal"
+    },
+    {
+      "label": "po Cust 20 \u2014 Toko Baju",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L121",
+      "id": "leads_active_customers_po_cust_20_toko_baju",
+      "community": 135,
+      "norm_label": "po cust 20 \u2014 toko baju"
+    },
+    {
+      "label": "po Cust 21 \u2014 Sepeda Listrik (oTobot)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L129",
+      "id": "leads_active_customers_po_cust_21_sepeda_listrik_otobot",
+      "community": 135,
+      "norm_label": "po cust 21 \u2014 sepeda listrik (otobot)"
     },
     {
       "label": "Deleted from potential customers",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L115",
+      "source_location": "L140",
       "id": "leads_active_customers_deleted_from_potential_customers",
       "community": 135,
       "norm_label": "deleted from potential customers"
     },
     {
-      "label": "~~Cust 1 \u2014 Jatra Scale Indonesia~~ (DELETED)",
+      "label": "~~po Cust 1 \u2014 Jatra Scale Indonesia~~ (DELETED)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L117",
-      "id": "leads_active_customers_cust_1_jatra_scale_indonesia_deleted",
+      "source_location": "L142",
+      "id": "leads_active_customers_po_cust_1_jatra_scale_indonesia_deleted",
       "community": 135,
-      "norm_label": "~~cust 1 \u2014 jatra scale indonesia~~ (deleted)"
+      "norm_label": "~~po cust 1 \u2014 jatra scale indonesia~~ (deleted)"
     },
     {
-      "label": "~~Cust 3~~ (DELETED)",
+      "label": "~~po Cust 3~~ (DELETED)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L121",
-      "id": "leads_active_customers_cust_3_deleted",
+      "source_location": "L146",
+      "id": "leads_active_customers_po_cust_3_deleted",
       "community": 135,
-      "norm_label": "~~cust 3~~ (deleted)"
+      "norm_label": "~~po cust 3~~ (deleted)"
     },
     {
       "label": "Cross-cust patterns",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L126",
+      "source_location": "L151",
       "id": "leads_active_customers_cross_cust_patterns",
       "community": 135,
       "norm_label": "cross-cust patterns"
@@ -34873,7 +34900,7 @@
       "label": "Active Potential Customers (proposal stage)",
       "file_type": "document",
       "source_file": "leads/leads.md",
-      "source_location": "L31",
+      "source_location": "L34",
       "id": "leads_leads_active_potential_customers_proposal_stage",
       "community": 180,
       "norm_label": "active potential customers (proposal stage)"
@@ -43508,6 +43535,141 @@
       "id": "transcripts_vabxygz7mau_md",
       "community": 388,
       "norm_label": "vabxygz7mau.md"
+    },
+    {
+      "label": "Cust 2 \u2014 Furniture company",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L12",
+      "community": 135,
+      "norm_label": "cust 2 \u2014 furniture company",
+      "id": "leads_active_customers_cust_2_furniture_company"
+    },
+    {
+      "label": "Cust 4 \u2014 CNProject Waterproofing",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L18",
+      "community": 135,
+      "norm_label": "cust 4 \u2014 cnproject waterproofing",
+      "id": "leads_active_customers_cust_4_cnproject_waterproofing"
+    },
+    {
+      "label": "Cust 5 \u2014 Pelatihan Craft (craft training)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L28",
+      "community": 135,
+      "norm_label": "cust 5 \u2014 pelatihan craft (craft training)",
+      "id": "leads_active_customers_cust_5_pelatihan_craft_craft_training"
+    },
+    {
+      "label": "Cust 7 \u2014 Jasa Branding + Homestay",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L33",
+      "community": 135,
+      "norm_label": "cust 7 \u2014 jasa branding + homestay",
+      "id": "leads_active_customers_cust_7_jasa_branding_homestay"
+    },
+    {
+      "label": "Cust 8 \u2014 Jersey Custom",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L39",
+      "community": 135,
+      "norm_label": "cust 8 \u2014 jersey custom",
+      "id": "leads_active_customers_cust_8_jersey_custom"
+    },
+    {
+      "label": "Cust 11 \u2014 Tour & Travel",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L45",
+      "community": 135,
+      "norm_label": "cust 11 \u2014 tour & travel",
+      "id": "leads_active_customers_cust_11_tour_travel"
+    },
+    {
+      "label": "Cust 12 \u2014 General Contractor",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L53",
+      "community": 135,
+      "norm_label": "cust 12 \u2014 general contractor",
+      "id": "leads_active_customers_cust_12_general_contractor"
+    },
+    {
+      "label": "Cust 13 \u2014 Hijab Brand",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L62",
+      "community": 135,
+      "norm_label": "cust 13 \u2014 hijab brand",
+      "id": "leads_active_customers_cust_13_hijab_brand"
+    },
+    {
+      "label": "Cust 14 \u2014 Marketplace Seller (Ronald)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L69",
+      "community": 135,
+      "norm_label": "cust 14 \u2014 marketplace seller (ronald)",
+      "id": "leads_active_customers_cust_14_marketplace_seller_ronald"
+    },
+    {
+      "label": "Cust 15 \u2014 Klinik Terapi",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L77",
+      "community": 135,
+      "norm_label": "cust 15 \u2014 klinik terapi",
+      "id": "leads_active_customers_cust_15_klinik_terapi"
+    },
+    {
+      "label": "Cust 16 \u2014 F&B Katalog",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L86",
+      "community": 135,
+      "norm_label": "cust 16 \u2014 f&b katalog",
+      "id": "leads_active_customers_cust_16_f_b_katalog"
+    },
+    {
+      "label": "Cust 17 \u2014 Web Rekber",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L94",
+      "community": 135,
+      "norm_label": "cust 17 \u2014 web rekber",
+      "id": "leads_active_customers_cust_17_web_rekber"
+    },
+    {
+      "label": "Cust 18 \u2014 izin.co.id-style Permit/Service Site",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L103",
+      "community": 135,
+      "norm_label": "cust 18 \u2014 izin.co.id-style permit/service site",
+      "id": "leads_active_customers_cust_18_izin_co_id_style_permit_service_site"
+    },
+    {
+      "label": "~~Cust 1 \u2014 Jatra Scale Indonesia~~ (DELETED)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L117",
+      "community": 135,
+      "norm_label": "~~cust 1 \u2014 jatra scale indonesia~~ (deleted)",
+      "id": "leads_active_customers_cust_1_jatra_scale_indonesia_deleted"
+    },
+    {
+      "label": "~~Cust 3~~ (DELETED)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L121",
+      "community": 135,
+      "norm_label": "~~cust 3~~ (deleted)",
+      "id": "leads_active_customers_cust_3_deleted"
     },
     {
       "label": "Cust 10 \u2014 Pesantren",
@@ -87907,6 +88069,206 @@
       "source_file": "leads/active-customers.md",
       "source_location": "L12",
       "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_2_furniture_company",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_4_cnproject_waterproofing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_5_pelatihan_craft_craft_training",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_7_jasa_branding_homestay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_8_jersey_custom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_11_tour_travel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_12_general_contractor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_13_hijab_brand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_14_marketplace_seller_ronald",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_15_klinik_terapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_16_f_b_katalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_17_web_rekber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_18_izin_co_id_style_permit_service_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_19_toko_herbal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_20_toko_baju",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_21_sepeda_listrik_otobot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_deleted_from_potential_customers"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_1_jatra_scale_indonesia_deleted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_3_deleted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_cross_cust_patterns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L12",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "leads_active_customers_active_potential_customers_context_hub",
       "target": "leads_active_customers_cust_2_furniture_company"
@@ -88035,16 +88397,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "leads/active-customers.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "leads_active_customers_active_potential_customers_context_hub",
-      "target": "leads_active_customers_deleted_from_potential_customers"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "leads/active-customers.md",
       "source_location": "L102",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -88060,16 +88412,6 @@
       "confidence_score": 1.0,
       "source": "leads_active_customers_active_potential_customers_context_hub",
       "target": "leads_active_customers_cust_3_deleted"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "leads/active-customers.md",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "leads_active_customers_active_potential_customers_context_hub",
-      "target": "leads_active_customers_cross_cust_patterns"
     },
     {
       "relation": "contains",
@@ -99663,5 +100005,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d1ec881aace26d70dfe9924646b3dd34a33f0fff"
+  "built_at_commit": "1d42694492f2d233a8d745f4b593948fb70faf4d"
 }
