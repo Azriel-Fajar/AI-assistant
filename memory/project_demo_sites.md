@@ -1,13 +1,15 @@
 ---
 name: Rielcode Demo Sites
-description: 11 demo websites for prospects (8 static niche + 3 interactive commerce) at public/demos/ in rielcode-laravel, served at rielcode.com/demos/{slug}/
+description: 12 demo websites for prospects (8 static niche + 3 interactive commerce + 1 rekber escrow) at public/demos/ in rielcode-laravel, served at rielcode.com/demos/{slug}/
 metadata:
   type: project
 ---
 
 Built 2026-06-06 to send prospects an example site for their industry. Library of demo websites under `C:\xampp\htdocs\rielcode-laravel\public\demos\`. Drop one link in WhatsApp to show a prospect what their site could look like.
 
-**Count = 11 demos.** Hub at `public/demos/index.html` shows ALL 11. Main-site homepage (`#demos` in `home.blade.php`) shows a curated 8 (3 commerce first, then restaurant, dental, real-estate, company, gym; beauty-salon/tour-travel/logistics dropped from homepage but stay on hub + live by URL).
+**Count = 12 demos.** Hub at `public/demos/index.html` shows ALL 12. Main-site homepage (`#demos` in `home.blade.php`) shows a curated subset (commerce first, then restaurant, dental, real-estate, company, gym; beauty-salon/tour-travel/logistics dropped from homepage but stay on hub + live by URL).
+
+**Full list (12), slug → label:** ecommerce-fashion (Fashion E-commerce), catalog-fnb (F&B Catalog), ecommerce-reseller (Store + Reseller Portal), restaurant-cafe (Restaurant & Cafe), dental-clinic (Dental Clinic), gym-fitness (Gym & Fitness), real-estate (Real Estate), beauty-salon (Beauty Salon), tour-travel (Tour & Travel), logistics (Logistics), company (Company / Corporate), rekber (Rekber / Escrow).
 
 **Original 8 static niche demos** (built 2026-06-06): restaurant-cafe (Ember & Oak, menu filter), dental-clinic (Brightsmile, appointment booking), gym-fitness (Ironclad, dark theme, class schedule tabs), real-estate (Crestview, property search filter), beauty-salon (Lumiere, booking picker), tour-travel (Wander Co, package filter), logistics (SwiftLine, shipment tracking timeline), company (Northpeak, stat counters + tabs). Each = 5 files (index/services/contact .html + style.css + app.js), cream/forest theme.
 
@@ -15,6 +17,8 @@ Built 2026-06-06 to send prospects an example site for their industry. Library o
 - `ecommerce-fashion` (Lumea) — fashion store: shop filter+search, cart drawer, product variants, checkout + fake order (LUM-xxxxxx). 6 files. Covers po Cust 8,13,20.
 - `catalog-fnb` (Saji) — F&B catalog: browse+filter, product detail, "Order via WhatsApp" prefilled wa.me link (rebuilds on portion/qty), company-profile home. 5 files, NO cart. Covers po Cust 16,14,19.
 - `ecommerce-reseller` (Volt) — e-bike store + reseller portal: storefront (cart+checkout) PLUS login/register (fake auth, demo creds reseller@volt.demo/volt1234), auth-gated dashboard (KPIs, order-at-reseller-price, order history, downline list). 8 files. Covers po Cust 21.
+
+**1 rekber/escrow demo** — `rekber` (Rekber / Escrow): buyer-seller-MC transaction tracker. Files: index/buyer/seller/mc .html + style.css + app.js. Three role views (buyer, seller, middleman/MC) for escrow transaction flow.
 
 **Tech:** pure static HTML/CSS/JS, NO Laravel routes, NO Blade, NO Vite build (do not run npm build). English copy. Mobile-responsive + hamburger. Forms fake-submit. Images = Unsplash hotlinks (verify content-type=image before using; dead IDs serve 404 text/html → ERR_BLOCKED_BY_ORB) + Google Fonts CDN.
 

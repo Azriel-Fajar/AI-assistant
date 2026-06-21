@@ -142,8 +142,8 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Request:** Landing site. Key needs: service list + prices, booking button straight to WhatsApp, coverage area.
 - **Channel:** WhatsApp only (no Instagram yet).
 - **Quote:** Starter Rp1jt → 900rb (LAUNCH10). Includes domain + hosting 1yr + basic admin panel. Delivery 3-5 days.
-- **Stage:** quoted (2026-06-21). Asked price directly, sent Starter + promo.
-- **Next:** Wait for reply. If yes, start with service-list intake (layanan, harga, area, jam).
+- **Stage:** thinking (2026-06-21). Sent demo restaurant-cafe, answered edit/admin/Google Ads questions. Said "ntar fikir2 dulu".
+- **Next:** Wait 1-2 days, then follow up if no reply.
 
 ---
 
