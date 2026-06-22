@@ -63,8 +63,8 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** Apparel / hijab products
 - **Reference:** their own brand "The Veiluxe" (sent packaging photo). Premium/elegant: gold + floral pink gift boxes, VL monogram logo.
-- **Stage:** scoping (2026-06-18).
-- **Next:** Review reference, scope + quote.
+- **Stage:** team discussion, confused on integration scope (2026-06-22). Sent 2-model explainer (katalog vs toko online).
+- **Next:** Don't push. Wait team decision. Light check-in ~2026-06-29 if no word.
 
 ## po Cust 14 — Marketplace Seller (Ronald)
 - **Source:** Meta Ads WA lead (2026-06-18)
@@ -154,6 +154,18 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Quote:** Not yet. Waiting on page count to pick tier (likely Starter/Pro info site).
 - **Stage:** scoping (2026-06-22). Confirmed scope, asked page count before quoting.
 - **Next:** Wait page count reply, then quote.
+
+## po Cust 24 — Tanur Muthmainnah Travel (Umroh mitra/agen)
+- **Source:** Instagram Ads WA lead "Demo gratis" (2026-06-22)
+- **Industry:** Umroh & Haji travel, lead is a mitra/agen (not pusat).
+- **Request:** Landing page as mitra. Goal both: dapat calon jamaah + rekrut mitra baru.
+- **Refs sent by cust:** tanurmuthmainnah.com, tanurtravel.com, tanurmuthmainnahtour.com (closest pick), almiratravel.id/contoh-landing-page-1.
+- **Scope (locked):** 1 halaman landing, not full corporate site. Tombol Daftar Umroh (atas) + Gabung Mitra (bawah). 4 pilihan pembayaran sebagai daya tarik utama di atas: Cash, Pay In Haram Land, Pembiayaan Syariah, Kemitraan.
+- **Why landing not site:** website utama dipegang pusat; mitra fokus promosi/closing, bukan situs resmi. 1 link gampang share ke WA/IG/status.
+- **Assets:** Materi lengkap ada (logo, paket+harga, foto, izin/legalitas).
+- **Demo:** Sent free rough demo 2026-06-22 17:26 — https://rielcode.com/demos/umroh-travel/index.html
+- **Stage:** demo sent (2026-06-22). Cust approved building free demo first.
+- **Next:** Wait cust feedback on demo, then quote tier.
 
 ---
 

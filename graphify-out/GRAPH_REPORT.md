@@ -1,7 +1,7 @@
 # Graph Report - C:\Users\afw14\OneDrive\Documents\JARVIS  (2026-06-22)
 
 ## Corpus Check
-- 134 files · ~3,434,980 words
+- 134 files · ~3,435,151 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -2506,8 +2506,6 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `get()` connect `Community 8` to `Community 25`, `Community 6`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `_insert_event()` connect `Community 25` to `Community 8`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Are the 19 inferred relationships involving `get()` (e.g. with `_insert_event()` and `index()`) actually correct?**
   _`get()` has 19 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 17 inferred relationships involving `log()` (e.g. with `shot()` and `printTable()`) actually correct?**
@@ -2517,4 +2515,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.02 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.02 - nodes in this community are weakly interconnected._
+- **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.02 - nodes in this community are weakly interconnected._
