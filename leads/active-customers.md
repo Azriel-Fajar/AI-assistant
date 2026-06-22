@@ -145,6 +145,16 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** thinking (2026-06-21). Sent demo restaurant-cafe, answered edit/admin/Google Ads questions. Said "ntar fikir2 dulu".
 - **Next:** Wait 1-2 days, then follow up if no reply.
 
+## po Cust 23 — ABU Robocon 2027 Event (EO)
+- **Source:** Instagram Ads WA lead (2026-06-22) | WA +62 851-7309-0066
+- **Industry:** Event Organizer, international robot competition
+- **Request:** Event website like ABU Robocon HK (app7.rthk.hk/special/aburobocon2026). Info + jadwal only, no registration form.
+- **Scope:** Info site (Beranda, Tema/Aturan, Jadwal, Berita, Kontak). ID + EN manual + Google auto-translate widget for other langs.
+- **Assets:** Logo ready. PDF content + video on progress (build parallel, fill content later).
+- **Quote:** Not yet. Waiting on page count to pick tier (likely Starter/Pro info site).
+- **Stage:** scoping (2026-06-22). Confirmed scope, asked page count before quoting.
+- **Next:** Wait page count reply, then quote.
+
 ---
 
 ## Deleted from potential customers
