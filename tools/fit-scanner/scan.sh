@@ -25,7 +25,9 @@ on_err() {
   local ec="${1:-?}"
   local ln="${2:-?}"
   local cmd="${3:-?}"
-  local crash="$SCRIPT_DIR/FITscan_CRASH_$(hostname 2>/dev/null || echo host)_$(date '+%Y%m%d-%H%M%S').txt"
+  local cdir="$SCRIPT_DIR"
+  ( : > "$SCRIPT_DIR/.fitscan_wtest" ) 2>/dev/null && rm -f "$SCRIPT_DIR/.fitscan_wtest" 2>/dev/null || cdir="${HOME:-/tmp}"
+  local crash="$cdir/FITscan_CRASH_$(hostname 2>/dev/null || echo host)_$(date '+%Y%m%d-%H%M%S').txt"
   {
     echo "================================================================"
     echo " FIT SCANNER - CRASH REPORT"
@@ -204,7 +206,16 @@ DUR=$((END_EPOCH - START_EPOCH))
 TOTAL=$(( ${#HITS_A[@]} + ${#HITS_B[@]} + ${#HITS_C[@]} + ${#HITS_D[@]} ))
 if [ "$TOTAL" -eq 0 ]; then VERDICT="CLEAN"; else VERDICT="FLAGGED - $TOTAL item(s), committee review required"; fi
 
-LOG="$SCRIPT_DIR/FITscan_${TEAM_SAFE}_${HOSTN}_${STAMP}.txt"
+# Prefer the script's own dir (flash disk), but fall back to $HOME if that
+# volume is read-only (e.g. NTFS drive mounted read-only on macOS).
+LOG_DIR="$SCRIPT_DIR"
+if ! ( : > "$SCRIPT_DIR/.fitscan_wtest" ) 2>/dev/null; then
+  LOG_DIR="$HOME_"
+  NOTES+=("script dir not writable ($SCRIPT_DIR); log written to \$HOME instead")
+else
+  rm -f "$SCRIPT_DIR/.fitscan_wtest" 2>/dev/null
+fi
+LOG="$LOG_DIR/FITscan_${TEAM_SAFE}_${HOSTN}_${STAMP}.txt"
 
 print_cat() { # title  array...
   local title="$1"; shift
