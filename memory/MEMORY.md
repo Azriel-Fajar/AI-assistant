@@ -51,3 +51,4 @@
 - [Free Demo Ads A6-A8](project_free_demo_ads.md) -- 3 new v3 ads (Free Demo/Risk-Free/Fast) built in 4 ratios, VO 2x + music, demo-cafe/salon panels, uploaded to test vs Contoh Gratis
 - [Ad Test Dupe Winner](feedback_ad_test_dupe_winner.md) -- dupe winning ad to test, keep control ON, pause dead ads only after new ads prove; new ads start Processing/Rp0
 - [WA Ad Icebreakers](feedback_wa_ad_icebreakers.md) -- click-to-WA icebreakers must be Indonesian + demo/price driven, not Meta English defaults; edit in ad template
+- [Demo Msg Rough Design Note](feedback_demo_msg_rough_design.md) -- every demo-send WA msg must note design is rough draft + customizable

@@ -4,6 +4,8 @@
 
 College HCI final project (Satya Wacana Christian University, Faculty of Information Technology, CompSci). Standalone, separate from Rielcode.
 
+**Access model (survey insight, Q10 open feedback):** "namanya marketplace FTI, namun seluruh orang dapat mengakses app" + "mhs FTI sudah pasti mendapat potongan harga/diskon." So: **anyone can register and transact** (public, not FTI-only), but **FTI affiliation is surfaced as a seller-level badge** so the community is visible. **Discount is NOT modeled in-app** — no payment gateway, money never flows through the app (see Data model §users / transactions). Any "diskon FTI" is arranged **seller↔buyer in chat by mutual agreement**; the app only signals who is FTI, it does not compute or apply a price cut.
+
 **Real-world listing conventions (the FTI WhatsApp group uses these tags — the app should map them to a `listing_type`):**
 - **#WTS** — Want to Sell (nawarin jualan) — a normal sell listing. *Default, fully modeled.*
 - **#WTB** — Want to Buy (mau beli, biar ditawarin) — a buyer-posted *request*; other users offer to sell to them (matches source note "potential buyers can request").
@@ -17,7 +19,7 @@ Turn the existing FTI faculty WhatsApp-group marketplace into a real working app
 1. **Fixed survey** (max 10 questions, Google Forms) — gather student pain points before building.
 2. **Full build plan** — real working **Flutter mobile app + Laravel API + Filament web admin**.
 
-**Two platforms, one product:**
+**Two platforms, one product** (survey-justified: Q8 = "keduanya sama-sama perlu" ×3, mobile-only ×2, **web-only 0** → ship both, mobile primary):
 - **Mobile app (Flutter)** = the main marketplace. Primary way users buy/sell, FB-Marketplace-style.
 - **Web** = alternative marketplace + admin entry. Same data, **same interface** (the same Flutter codebase compiled to web via `flutter build web`), so buyers get an identical storefront in a browser. The web host **also** serves the Filament admin panel at `/admin`, where the admin logs in to monitor transactions and manage the whole cross-platform system. Both platforms read/write the one Laravel API + MySQL DB.
 
@@ -77,7 +79,7 @@ Sulit menemukan pembeli/penjual / Takut ditipu atau barang tidak sesuai / Tidak 
 Foto produk yang jelas / Kondisi barang (baru/bekas/persentase) / Harga & bisa/tidak ditawar / Lokasi penjual (gedung/kampus) / Identitas penjual terverifikasi / Estimasi waktu pengambilan
 
 **6. Model transaksi seperti apa yang paling cocok untuk marketplace kampus ini?**
-COD langsung di kampus / Titip ke teman / Transfer dulu, ambil barang menyusul / Lainnya
+COD langsung di kampus / Titip ke teman / Transfer langsung ke rekening penjual (atas kesepakatan kedua pihak) / Lainnya
 
 **7. Apa yang paling membuat kamu percaya pada seorang penjual di marketplace kampus?** (pilih semua yang sesuai)
 Akun terverifikasi pakai email kampus / Rating & ulasan dari pembeli lain / Badge level penjual / Jumlah transaksi sukses / Foto profil & identitas jelas
@@ -93,27 +95,54 @@ Hampir setiap minggu / 1-2 kali per bulan / Hanya saat butuh saja / Mungkin tida
 
 > Min 5 respondents (rubric). Aim higher for stronger data.
 
+### Survey results (N=5, collected 23 Jun 2026 — feeds P5 persona + Design Report User Research 10%)
+
+Raw CSV: `TR Interaksi Manusia & Komputer (Responses) - Form Responses 1.csv`. Respondents: mostly 18-20, FTI students. Rubric floor (≥5) met.
+
+| Q | Finding (N=5) | Design implication |
+|---|---|---|
+| Q1 know group | 4 sudah tahu, 1 baru tahu | Group exists but discovery is weak → onboarding should explain the app's purpose. |
+| Q2 transacted | 0 sering, 2 pernah, **3 belum-tapi-tertarik**, 0 tidak-tertarik | **Latent demand, untapped.** Target user = interested-but-hasn't-transacted → low friction onboarding + minimal-typing sell flow matter most. |
+| Q3 category | Laptop/elektronik ×2 (top), Makanan, Pakaian+Jasa, vape/liquid | Electronics leads. Seeder + Home featured categories should lead with elektronik. |
+| Q4 biggest pain | **"Sulit menemukan penjual/pembeli" ×5 (unanimous)**, takut ditipu ×2, no platform ×2, nego awkward ×1, harga wajar ×1 | **#1 problem statement = discovery.** Search + browse + category filter is THE core feature, not a nice-to-have. Lead the report with this. |
+| Q5 mandatory listing info | **Kondisi ×5, Harga+bisa-ditawar ×5, Foto ×4, Lokasi ×4**, identitas-verified ×2, est-pickup ×1 | Condition + negotiable-price = **required fields** (5/5). Photo + location near-required. Surface all four on the card, not just detail. |
+| Q6 transaction model | **COD di kampus ×3**, transfer-dulu/ambil-menyusul ×2 | COD primary; `payment_method` enum cod/transfer holds. Pay-first answers (×2) reinforce the "takut ditipu" risk → reports/safety flow earns its place. |
+| Q7 trust signal | **"Foto profil & identitas jelas" ×5 (unanimous)**, badge ×2, verified-email ×2, rating/ulasan ×1, jumlah-txn ×1 | **Plan-correcting:** visible profile photo + clear identity beats campus-email verification. Elevate avatar + real name on the seller row; treat verified-email as secondary, not the headline trust feature. |
+| Q8 platform | **Keduanya ×3**, mobile-only ×2, **web-only 0** | Validates dual mobile + web. Kills any web-only doubt. Architecture confirmed. |
+| Q9 frequency | tiap minggu ×1, 1-2/bln ×1, **saat butuh ×3** | Need-based usage → push notifications + wishlist re-engagement matter (bring users back when they're not daily). |
+| Q10 open | (1) public access + FTI discount, (2) "fitur bisa lihat ulasan orang lain", (3) "leaderboard & reward agar org rajin berdagang", (4) japri-kalau-butuh, (5) tidak ada | Drove **open-access + FTI badge** (Context), confirmed **public review visibility** (P3), and added **leaderboard + badge-as-reward gamification** (P4). All folded into the plan. |
+
+**Plan adjustments from data:**
+1. **Trust = identity, not just email (Q7).** Make avatar + real name prominent on seller row / card; verified-email badge is secondary. (Was previously framed as the headline trust signal.)
+2. **Discovery is the headline problem (Q4 unanimous).** Search/browse/category lead the Design Report problem statement and the demo.
+3. **Condition + negotiable-price are required, card-visible (Q5 5/5).** Already in `listings`; enforce as required form fields + show on card.
+4. **Persona is now data-backed:** 18-20, FTI, electronics-interested, "tertarik tapi belum pernah transaksi", need-based user who trusts via profile photo + identity and wants reviews. Build the P5 persona straight from this.
+
 ---
 
 ## PART 2 — Build Plan
 
 ### Data model (tables + key columns) — shared MySQL DB
 
-- **users** (extend default): `role` enum('user','admin'), `google_id` nullable unique, `avatar`, `phone`, `bio`, `campus_program`, `is_verified_seller` bool, `onboarded_at`, `theme_preference` enum, `password` **nullable** (Google-only users).
+- **users** (extend default): `role` enum('user','admin'), `google_id` nullable unique, `avatar`, `phone`, `bio`, `campus_program`, `is_fti` bool default false, `fti_source` enum('email','self','admin') nullable, `is_verified_seller` bool, `payment_method` nullable (bank/ewallet name e.g. BCA/DANA/GoPay), `payment_account` nullable (acct number/phone), `payment_holder` nullable (name on acct), `onboarded_at`, `theme_preference` enum, `password` **nullable** (Google-only users). *Seller payment fields shown to buyer only when transaksi = transfer; no money flows through the app — direct buyer→seller transfer by mutual agreement (admin not a middleman).* **`is_fti` = FTI affiliation (separate from `is_verified_seller` trust badge — affiliation ≠ trust).** Set automatically when register/Google-login email matches the campus domain (`fti_source='email'`); when registering with a non-campus email (gmail/Google), the user **self-declares** FTI via a checkbox on the register form (`fti_source='self'`). Admin can override in Filament (`fti_source='admin'`). **No `fti_price` column, no discount math** — affiliation is display-only; any potongan harga is negotiated in chat (no payment gateway).
 - **categories**: `name`, `slug`, `icon`, `sort_order`.
-- **listings**: `user_id`(poster), `category_id`, `title`, `slug`, `description`, `price`, `listing_type` enum('wts','wtb','wtt','wtbt') default 'wts', `condition` enum, `status` enum('available','reserved','sold'), spec chips `size`/`material`/`color`/`brand`, `location`, `views_count`, `sold_at`, softDeletes. *`listing_type` carries the FTI tag intent (Sell/Buy-request/Trade-in/Barter); `price` is nullable/loose for WTB & WTBT.*
+- **listings**: `user_id`(poster), `category_id`, `title`, `slug`, `description`, `price`, `is_negotiable` bool default true, `listing_type` enum('wts','wtb','wtt','wtbt') default 'wts', `condition` enum, `status` enum('available','reserved','sold'), spec chips `size`/`material`/`color`/`brand`, `location`, `views_count`, `sold_at`, softDeletes. *`listing_type` carries the FTI tag intent (Sell/Buy-request/Trade-in/Barter); `price` is nullable/loose for WTB & WTBT. `condition`, `price`, `is_negotiable`, photo, `location` = **required/visible per survey Q5 (condition + bisa-ditawar 5/5, foto + lokasi 4/5)** — shown on card, not only detail.*
 - **listing_images**: `listing_id`, `path`, `is_primary`, `sort_order`.
 - **wishlists** (pivot): `user_id`+`listing_id` unique.
 - **conversations**: `listing_id`, `buyer_id`, `seller_id`, `last_message_at`; unique(`listing_id`,`buyer_id`).
 - **messages**: `conversation_id`, `user_id`(sender), `body`, `type` enum('text','offer','system'), `offer_id` nullable, `read_at`.
 - **offers**: `listing_id`, `conversation_id`, `buyer_id`, `seller_id`, `amount`, `status` enum('pending','accepted','rejected','withdrawn'), `responded_at`.
-- **transactions**: `listing_id`, `seller_id`, `buyer_id`, `final_price`, `offer_id` nullable, `status`, `completed_at`.
+- **transactions**: `listing_id`, `seller_id`, `buyer_id`, `final_price`, `offer_id` nullable, `payment_method` enum('cod','transfer'), `buyer_agreed` bool (checkout agreement: transfer langsung ke penjual, risiko ditanggung kedua pihak), `status`, `completed_at`. *No payment-proof upload, no escrow — app records the deal + payment method, money moves outside the app.*
 - **reviews**: `transaction_id` unique, `reviewer_id`, `seller_id`, `rating` 1-5, `body`.
 - **feedback**: `user_id` nullable, `type` enum('account','app'), `subject_user_id` nullable, `rating`, `message`, `status`.
 - **reports**: `reporter_id`, `reportable_type`/`reportable_id` (polymorphic — report a listing or a user), `reason` enum, `note`, `status` enum('open','reviewed','actioned','dismissed'). Powers the "takut ditipu" safety flow + Filament moderation queue.
 - **notifications**: built-in `php artisan notifications:table` (polymorphic).
 
-**Badge accessor on User**: completed sales count → 0-2 Pemula, 3-9 Terpercaya, 10+ Top Seller (thresholds in config). Exposed in API responses + Filament.
+**Badge accessor on User**: completed sales count → 0-2 Pemula, 3-9 Terpercaya, 10+ Top Seller (thresholds in config). Exposed in API responses + Filament. **This badge/level IS the reward** (status-based gamification, survey Q10 "leaderboard & reward agar rajin berdagang") — no money/points/vouchers (no payment gateway). Real prizes = future scope.
+
+**Leaderboard**: ranks sellers by **completed-sales count** (same counter the badge tiers use — no new data). Top N sellers with badge + avatar + sales count. `GET /leaderboard` (public, no token). Surfaced as a Flutter screen + a Filament widget. Drives "rajin berdagang" via visible rank + level, not cash.
+
+**FTI badge (seller-level, listing inherits via seller)**: `is_fti` true → "Civitas FTI" tag on the seller row, seller profile, and (inherited from the listing's seller) on listing cards. Exposed in `UserResource`/`SellerResource`/`ListingResource`. Browse adds a **`?fti=1` filter chip** ("Hanya FTI") — same chip pattern as `listing_type`. Affiliation only; carries no price/discount logic.
 
 Flutter never touches the DB directly — only calls the Laravel API. Filament reads/writes the same tables. No second database, no Firebase, no sync.
 
@@ -145,10 +174,11 @@ No Breeze, no Blade public views, no Vite/Echo on the backend — the public UI 
 #### API endpoints (`routes/api.php`, prefix `/api/v1`, JSON)
 
 **Public (no token):**
-- `GET /listings` — browse + `?search=&category=&sort=` filters (paginated)
+- `GET /listings` — browse + `?search=&category=&sort=&listing_type=&fti=1` filters (paginated; `fti=1` = sellers with `is_fti`)
 - `GET /listings/{slug}` — detail (increments `views_count`)
 - `GET /categories` — category chips/grid
 - `GET /sellers/{user}` — public seller profile + reviews + badge
+- `GET /leaderboard` — top sellers ranked by completed-sales count (badge + avatar + count)
 - `POST /auth/register`, `POST /auth/login` — returns Sanctum token
 - `POST /auth/google` — Flutter sends Google ID token → server verifies via Socialite stateless → `firstOrCreate` user → returns Sanctum token
 - `POST /feedback/app` — app feedback (guest allowed)
@@ -170,6 +200,7 @@ No Breeze, no Blade public views, no Vite/Echo on the backend — the public UI 
 #### Auth specifics (Sanctum, mobile-first)
 
 - **Email/pass:** `POST /auth/login` → validate → `$user->createToken('mobile')->plainTextToken` → Flutter stores in `flutter_secure_storage`. **Token persists across app restarts = stays logged in** (logout problem solved natively; no session/remember-me cookie needed for mobile).
+- **FTI flag at register:** `POST /auth/register` + `POST /auth/google` → if email matches campus domain → `is_fti=true, fti_source='email'`. Else → read the register form's **self-declare FTI checkbox** → `is_fti=<checkbox>, fti_source='self'`. (Google path: campus-domain Google account = auto; personal Google = self-declare on a one-time post-login prompt.)
 - **Google:** Flutter `google_sign_in` gets a Google ID token → `POST /auth/google` → server `Socialite::driver('google')->stateless()->userFromToken($idToken)` → `firstOrCreate` on `google_id`/`email` (password null, `email_verified_at=now()`) → returns Sanctum token.
 - **Logout:** `POST /auth/logout` → `$request->user()->currentAccessToken()->delete()`.
 - Filament admin uses normal **session** auth (web guard) — `canAccessPanel()` gates `role==='admin'`. Two guards coexist (Sanctum for API, web for Filament).
@@ -177,7 +208,7 @@ No Breeze, no Blade public views, no Vite/Echo on the backend — the public UI 
 
 #### Filament resources (admin = the "Desktop Application")
 
-`make:filament-resource` for: **User, Category, Listing, Offer, Transaction, Review, Feedback, Conversation** (`--generate`). Relation managers: Listing→Images/Offers, User→Listings/Reviews, Category→Listings. Dashboard widgets: stats overview (users, active listings, completed transactions, revenue) + sold-vs-available chart. Brand `#003CCB` primary, name "FTI Marketplace" — **same palette + terminology as the Flutter app** (cross-platform consistency, graded). Satisfies **desktop admin ≥3 pages + full CRUD** (8 resources × 4 ops).
+`make:filament-resource` for: **User, Category, Listing, Offer, Transaction, Review, Feedback, Conversation** (`--generate`). **User resource shows `is_fti` toggle + `fti_source`** (admin override = the `fti_source='admin'` path) and an FTI column/filter on the user table. Relation managers: Listing→Images/Offers, User→Listings/Reviews, Category→Listings. Dashboard widgets: stats overview (users, active listings, completed transactions, revenue) + sold-vs-available chart. Brand `#003CCB` primary, name "FTI Marketplace" — **same palette + terminology as the Flutter app** (cross-platform consistency, graded). Satisfies **desktop admin ≥3 pages + full CRUD** (8 resources × 4 ops).
 
 #### Real-time chat (Reverb ← Flutter)
 
@@ -217,11 +248,12 @@ One Flutter codebase, two build targets: **mobile** (`flutter run` / APK) and **
 | Screen | Design element | Rubric |
 |---|---|---|
 | Home | category chips, Explore-by-Category grid, New-This-Week cards + wishlist heart, search bar | **Required: Home** |
-| Browse/Search | search, filter sheet, category chips, card grid (infinite scroll) | **Required: Main Feature** |
-| Listing detail | image carousel, seller row + verified badge, condition/size/material/color spec chips, price, Make-an-Offer + Chat | detail |
+| Browse/Search | search, filter sheet, category chips, **"Hanya FTI" filter chip** (`?fti=1`), card grid (infinite scroll) | **Required: Main Feature** |
+| Listing detail | image carousel, seller row **leads with avatar + real name (Q7 top trust signal)** then verified badge + "Civitas FTI" tag + star rating (tap → seller's reviews), condition/size/material/color spec chips, price, Make-an-Offer + Chat | detail |
+| Register | email/pass + Google; **self-declare FTI checkbox** shown only when email is non-campus (auto-checked + locked when campus email) | auth |
 | Sell (create/edit) | form — dropdown category/condition chips, image picker (**minimal typing**) | "minimal typing" |
 | Profile/Settings | avatar, badge, my listings, theme toggle, logout, feedback | **Required: Profile/Settings** |
-| Wishlist tab, Inbox tab, Chat thread (live bubbles + offer accept/reject), Seller profile, Onboarding carousel, Notifications, Checkout/order-summary (simulated Pay Now / campus pickup) | bottom-nav tabs + extras | extra + polish |
+| Wishlist tab, Inbox tab, Chat thread (live bubbles + offer accept/reject), Seller profile **(avg stars + badge + public review list — anyone can read other buyers' ulasan, no login)**, **Leaderboard (top sellers by completed sales + badge — gamification)**, Onboarding carousel, Notifications, Checkout/order-summary (simulated Pay Now / campus pickup) | bottom-nav tabs + extras | extra + polish |
 
 **Bottom tab nav:** Home / Wishlist / Sell / Inbox / Profile. 3 required screens (Home, Browse, Profile) + ~9 more. Theme = brand palette (blue/navy/yellow on white). Finger-friendly tap targets, readable text, high-visibility CTAs — Mobile UI rubric (25%).
 
@@ -244,9 +276,9 @@ Throwaway proof-of-concepts. If one fails, adapt the plan now, not mid-build.
 - **P1 CORE MVP:** Auth endpoints (register/login/google/logout) + Flutter login/register/Google. Listings CRUD + images API + Flutter Home/Browse/Detail/Sell. Search/filter, mark-sold, profile. Filament User/Category/Listing/Transaction + dashboard. **First `flutter build web` here** — confirm the same UI loads in a browser hitting the API (CORS green). *Ship: guest browses on app AND web; user logs in (stays logged in on restart), sells, edits, marks sold; admin CRUD everything. **Satisfies all minimum rubric requirements.***
 - **P2 Chat+Offers:** conversations/messages/offers API + Reverb events + Sanctum channel auth. Flutter Inbox + live chat thread + make-offer/accept/reject. Notifications. Filament Conversation/Offer. Confirm chat works on web build too (websocket from browser). *Ship: real-time chat + offers on app + web.*
 - **P3 Ratings+Reviews:** review API gated on completed transaction. Flutter review flow + seller stars/badge. Verified badge on cards. Filament Review. *Ship: reputation live.*
-- **P4 Polish + moderation:** onboarding carousel, notifications center, light/dark theme toggle, wishlist tab, account+app feedback + Filament Feedback, optional checkout/order-summary screen. **Report-listing/report-user flow** (`reports` table + endpoint + Filament moderation queue) — closes the survey-Q4 "takut ditipu" pain point. Responsive web pass — breakpoints + nav swap (bottom-tab→rail) + max-width + grid scaling, checked at 360/768/1280/1920px. *Ship: full product, app + responsive web.*
+- **P4 Polish + moderation:** onboarding carousel, notifications center, light/dark theme toggle, wishlist tab, **leaderboard screen + `GET /leaderboard` + Filament widget (gamification — survey Q10)**, account+app feedback + Filament Feedback, optional checkout/order-summary screen. **Report-listing/report-user flow** (`reports` table + endpoint + Filament moderation queue) — closes the survey-Q4 "takut ditipu" pain point. Responsive web pass — breakpoints + nav swap (bottom-tab→rail) + max-width + grid scaling, checked at 360/768/1280/1920px. *Ship: full product, app + responsive web.*
 - **P5 Deliverables (build the graded artifacts):** required regardless of how far the code gets (slides 11, 17, 18-21).
-  - **User persona** (min 1): name/age/occupation/goals/frustrations/tech usage — derived from survey results.
+  - **User persona** (min 1): name/age/occupation/goals/frustrations/tech usage — **derived from the N=5 survey results (see Survey results table)**: 18-20 FTI student, interested but hasn't transacted, wants electronics, frustrated by "sulit menemukan penjual/pembeli", trusts sellers via profile photo + identity, need-based usage, wants to read others' reviews.
   - **Design Report (PDF):** problem statement, user research (survey results + pain points + needs + persona), mobile design, desktop/web design, design rationale (why these colors/nav/layout/flows), cross-platform consistency.
   - **Prototype requirement — satisfied by the working build, not Figma.** Slide 20 asks for a Figma/XD/Penpot interactive prototype; a **running app is a stronger deliverable than a clickable mock**. Capture annotated screenshots + a screen-recording of each key flow from the live Flutter app/web as the "prototype" evidence in the report. *(No Figma build — the working product replaces it. If the build catastrophically slips, a fast Penpot mock of the 3 required screens is the emergency fallback, but the floor-first schedule makes that unlikely.)*
   - **Presentation slides** (10 min): Problem → User Research → Mobile Design → Desktop/Web Design → Prototype/Build Demo → Testing Results.

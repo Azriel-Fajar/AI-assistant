@@ -1,16 +1,16 @@
 # Graph Report - JARVIS  (2026-06-23)
 
 ## Corpus Check
-- 565 files · ~4,483,751 words
+- 566 files · ~4,485,551 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5312 nodes · 5422 edges · 705 communities (620 shown, 85 thin omitted)
+- 5318 nodes · 5426 edges · 701 communities (616 shown, 85 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 124 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3eab178e`
+- Built from commit: `47f82f4c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -446,7 +446,6 @@
 - [[_COMMUNITY_Community 591|Community 591]]
 - [[_COMMUNITY_Community 592|Community 592]]
 - [[_COMMUNITY_Community 593|Community 593]]
-- [[_COMMUNITY_Community 594|Community 594]]
 - [[_COMMUNITY_Community 595|Community 595]]
 - [[_COMMUNITY_Community 596|Community 596]]
 - [[_COMMUNITY_Community 597|Community 597]]
@@ -512,14 +511,9 @@
 - [[_COMMUNITY_Community 658|Community 658]]
 - [[_COMMUNITY_Community 659|Community 659]]
 - [[_COMMUNITY_Community 660|Community 660]]
-- [[_COMMUNITY_Community 700|Community 700]]
-- [[_COMMUNITY_Community 701|Community 701]]
-- [[_COMMUNITY_Community 702|Community 702]]
-- [[_COMMUNITY_Community 703|Community 703]]
-- [[_COMMUNITY_Community 704|Community 704]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Active Potential Customers — Context Hub` - 46 edges
+1. `Active Potential Customers — Context Hub` - 49 edges
 2. `communities` - 31 edges
 3. `cohesion` - 31 edges
 4. `Social CLI (Instagram + TikTok) Implementation Plan` - 25 edges
@@ -542,7 +536,7 @@
 - `getGmail()` --calls--> `getAuthenticatedClient()`  [EXTRACTED]
   tools/google/gmail/index.js → tools/google/auth/oauth.js
 
-## Communities (705 total, 85 thin omitted)
+## Communities (701 total, 85 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.22
@@ -581,8 +575,8 @@ Cohesion: 0.07
 Nodes (49): int(), api_ads(), api_dms(), api_thread(), index(), Flask dashboard for Meta ads + Messenger DMs. Run: flask --app meta.dashboard.ap, Return (data, error_message). Never raises to the view layer., Client-side chat fetch. Prefers conversation id (fast path) from the inbox list, (+41 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.18
-Nodes (11): code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/visual.spec.ts scripts/qa/visual.spec.ts-), code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/axe.spec.ts), code:markdown (# Phase 2 — QA Report), code:bash (git add docs/qa/phase-2-report.md), Self-Review, Task 2J.2: Visual screenshot diff spec (+3 more)
+Cohesion: 0.11
+Nodes (19): code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/visual.spec.ts scripts/qa/visual.spec.ts-), code:ts (import { test, expect } from '@playwright/test';), code:bash (git add scripts/qa/axe.spec.ts), code:js (// scripts/qa/lighthouse.mjs), code:bash (npm run build && npm run preview -- --port 4321), code:bash (node scripts/qa/lighthouse.mjs), code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse) (+11 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.22
@@ -597,8 +591,8 @@ Cohesion: 0.25
 Nodes (5): code:block1 (C:\xampp\htdocs\pay\), code:bash (git add -A), File Map, pay.rielcode.com Implementation Plan, Task 2: DB tables
 
 ### Community 13 - "Community 13"
-Cohesion: 0.29
-Nodes (7): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/work/index.astro), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/services.astro), Task 2I.5: Convert `/work` index page to read from collection, Task 2I.7: Convert `/services` page to read from collections, TRACK 2I — Content Collections + Redirects
+Cohesion: 0.11
+Nodes (18): code:ts (// src/content.config.ts), code:bash (git add src/content.config.ts), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/work/index.astro), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/services.astro), code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/studio.astro) (+10 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.04
@@ -610,7 +604,7 @@ Nodes (46): code:block1 (## Module X — [Module Title]), Group 1, Group 10, Gro
 
 ### Community 16 - "Community 16"
 Cohesion: 0.04
-Nodes (46): Active Potential Customers — Context Hub, Cross-cust patterns, Cust 10 — Pesantren, Cust 11 — Tour & Travel, Cust 12 — General Contractor, Cust 13 — Hijab Brand, Cust 14 — Marketplace Seller (Ronald), Cust 15 — Klinik Terapi (+38 more)
+Nodes (49): Active Potential Customers — Context Hub, Cross-cust patterns, Cust 10 — Pesantren, Cust 11 — Tour & Travel, Cust 12 — General Contractor, Cust 13 — Hijab Brand, Cust 14 — Marketplace Seller (Ronald), Cust 15 — Klinik Terapi (+41 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.04
@@ -1350,7 +1344,7 @@ Nodes (19): bin, gcal, gdrive, gmail, yt, dependencies, chalk, cli-table3 (+11 m
 
 ### Community 421 - "Community 421"
 Cohesion: 0.08
-Nodes (23): 3-week schedule (floor-first), A. Backend — Laravel API + Filament admin (`C:\xampp\htdocs\fti-marketplace`), API endpoints (`routes/api.php`, prefix `/api/v1`, JSON), Auth specifics (Sanctum, mobile-first), B. Frontend — Flutter app (`fti_marketplace_app`), B. Frontend — Flutter app + web (`C:\xampp\htdocs\fti_marketplace_app`), B. Frontend — Flutter app + web (`fti_marketplace_app`), Build phases (shippable milestones) (+15 more)
+Nodes (24): 3-week schedule (floor-first), A. Backend — Laravel API + Filament admin (`C:\xampp\htdocs\fti-marketplace`), API endpoints (`routes/api.php`, prefix `/api/v1`, JSON), Auth specifics (Sanctum, mobile-first), B. Frontend — Flutter app (`fti_marketplace_app`), B. Frontend — Flutter app + web (`C:\xampp\htdocs\fti_marketplace_app`), B. Frontend — Flutter app + web (`fti_marketplace_app`), Build phases (shippable milestones) (+16 more)
 
 ### Community 422 - "Community 422"
 Cohesion: 0.16
@@ -1417,8 +1411,8 @@ Cohesion: 0.13
 Nodes (15): code:bash (cat C:/xampp/htdocs/rielcode-astro/src/components/Card.astro), code:astro (---), code:bash (git add src/components/Card.astro), code:astro (---), code:bash (cd C:/xampp/htdocs/rielcode-astro), code:bash (git add src/components/Nav.astro), code:astro (---), code:bash (git add src/components/CTABand.astro) (+7 more)
 
 ### Community 439 - "Community 439"
-Cohesion: 0.17
-Nodes (12): code:bash (npm install gsap), code:bash (git add package.json package-lock.json), code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), code:css ([data-nav] {), code:bash (git add src/components/Nav.astro) (+4 more)
+Cohesion: 0.13
+Nodes (15): code:bash (npm install gsap), code:bash (git add package.json package-lock.json), code:css ([data-nav] {), code:bash (git add src/components/Nav.astro), code:astro (<h1 class="rc-hero__title">), code:css (.rc-hero__word {), code:bash (git add src/components/EditorialHero.astro), code:ts (// src/scripts/gsap-scenes.ts) (+7 more)
 
 ### Community 440 - "Community 440"
 Cohesion: 0.24
@@ -1950,7 +1944,7 @@ Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (
 
 ### Community 574 - "Community 574"
 Cohesion: 0.4
-Nodes (5): code:block33 (/portfolio          /work             301), code:astro (---), code:bash (ls dist/_redirects dist/portfolio/index.html dist/packages/i), code:bash (git add public/_redirects src/pages/portfolio.astro src/page), Task 2I.10: Add 301 redirects for legacy Phase 1 URLs
+Nodes (5): code:ts (import { ClientRouter } from 'astro:transitions';), code:astro (<ClientRouter />), code:css (@media (prefers-reduced-motion: reduce) {), code:bash (git add src/layouts/BaseLayout.astro src/styles/global.css), Task 2H.2: Enable Astro `<ClientRouter />` (view transitions) + reduced-motion CSS
 
 ### Community 575 - "Community 575"
 Cohesion: 0.4
@@ -2007,10 +2001,6 @@ Nodes (3): Figma CLI Implementation Plan, File Map, Summary
 ### Community 593 - "Community 593"
 Cohesion: 0.5
 Nodes (4): Beauty is leverage, Core Philosophy, Taste is trained, not innate, Unseen details compound
-
-### Community 594 - "Community 594"
-Cohesion: 0.4
-Nodes (5): code:js (// scripts/qa/lighthouse.mjs), code:bash (npm run build && npm run preview -- --port 4321), code:bash (node scripts/qa/lighthouse.mjs), code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse), Task 2J.4: Lighthouse runner script
 
 ### Community 595 - "Community 595"
 Cohesion: 0.5
@@ -2192,42 +2182,22 @@ Nodes (3): code:php (<?php), code:bash (git add invoice/view.php), Task 10: Publ
 Cohesion: 0.67
 Nodes (3): code:php (<?php), code:bash (git add invoice-pdf.php), Task 11: PDF generation
 
-### Community 700 - "Community 700"
-Cohesion: 0.5
-Nodes (4): code:astro (<h1 class="rc-hero__title">), code:css (.rc-hero__word {), code:bash (git add src/components/EditorialHero.astro), Task 2H.5: EditorialHero staggered word reveal
-
-### Community 701 - "Community 701"
-Cohesion: 0.5
-Nodes (4): code:ts (// src/scripts/gsap-scenes.ts), code:astro (<script>), code:bash (git add src/scripts/gsap-scenes.ts src/pages/work/[...slug].), Task 2H.6: GSAP pinned-image scene for case study route
-
-### Community 702 - "Community 702"
-Cohesion: 0.67
-Nodes (3): code:ts (// src/content.config.ts), code:bash (git add src/content.config.ts), Task 2I.1: Define Content Collection schemas
-
-### Community 703 - "Community 703"
-Cohesion: 0.67
-Nodes (3): code:ts (import { getCollection } from 'astro:content';), code:bash (git add src/pages/studio.astro), Task 2I.8: Convert `/studio` FAQ section to read from collection
-
-### Community 704 - "Community 704"
-Cohesion: 0.67
-Nodes (3): code:block71 (Track 2H — motion layer (GSAP, ScrollTrigger, view transitio), code:bash (cd C:\Users\afw14\OneDrive\Documents\JARVIS), Task 2J.6: Update the Phase 2 spec to mark all tracks complete
-
 ## Knowledge Gaps
-- **2919 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2914 more)
+- **2923 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2918 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **85 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `get()` connect `Community 8` to `Community 25`, `Community 6`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `MetaError` connect `Community 323` to `Community 25`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `MetaError` connect `Community 8` to `Community 25`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `get()` connect `Community 8` to `Community 25`, `Community 6`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `0`, `1`, `2` to the rest of the system?**
-  _2965 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2969 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**

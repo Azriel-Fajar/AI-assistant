@@ -32985,7 +32985,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L85",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_1_define_content_collection_schemas",
-      "community": 702,
+      "community": 13,
       "norm_label": "task 2i.1: define content collection schemas"
     },
     {
@@ -32994,7 +32994,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L92",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_1",
-      "community": 702,
+      "community": 13,
       "norm_label": "code:ts (// src/content.config.ts)"
     },
     {
@@ -33003,7 +33003,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L164",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_2",
-      "community": 702,
+      "community": 13,
       "norm_label": "code:bash (git add src/content.config.ts)"
     },
     {
@@ -33282,7 +33282,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L687",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_8_convert_studio_faq_section_to_read_from_collection",
-      "community": 703,
+      "community": 13,
       "norm_label": "task 2i.8: convert `/studio` faq section to read from collection"
     },
     {
@@ -33291,7 +33291,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L694",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_27",
-      "community": 703,
+      "community": 13,
       "norm_label": "code:ts (import { getcollection } from 'astro:content';)"
     },
     {
@@ -33300,7 +33300,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L713",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_28",
-      "community": 703,
+      "community": 13,
       "norm_label": "code:bash (git add src/pages/studio.astro)"
     },
     {
@@ -33354,7 +33354,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L797",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2i_10_add_301_redirects_for_legacy_phase_1_urls",
-      "community": 574,
+      "community": 13,
       "norm_label": "task 2i.10: add 301 redirects for legacy phase 1 urls"
     },
     {
@@ -33363,7 +33363,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L807",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_33",
-      "community": 574,
+      "community": 13,
       "norm_label": "code:block33 (/portfolio          /work             301)"
     },
     {
@@ -33372,7 +33372,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L819",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_34",
-      "community": 574,
+      "community": 13,
       "norm_label": "code:astro (---)"
     },
     {
@@ -33381,7 +33381,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L848",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_35",
-      "community": 574,
+      "community": 13,
       "norm_label": "code:bash (ls dist/_redirects dist/portfolio/index.html dist/packages/i)"
     },
     {
@@ -33390,7 +33390,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L854",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_36",
-      "community": 574,
+      "community": 13,
       "norm_label": "code:bash (git add public/_redirects src/pages/portfolio.astro src/page)"
     },
     {
@@ -33471,7 +33471,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L917",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_2_enable_astro_clientrouter_view_transitions_reduced_motion_css",
-      "community": 439,
+      "community": 574,
       "norm_label": "task 2h.2: enable astro `<clientrouter />` (view transitions) + reduced-motion css"
     },
     {
@@ -33480,7 +33480,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L927",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_42",
-      "community": 439,
+      "community": 574,
       "norm_label": "code:ts (import { clientrouter } from 'astro:transitions';)"
     },
     {
@@ -33489,7 +33489,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L933",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_43",
-      "community": 439,
+      "community": 574,
       "norm_label": "code:astro (<clientrouter />)"
     },
     {
@@ -33498,7 +33498,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L941",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_44",
-      "community": 439,
+      "community": 574,
       "norm_label": "code:css (@media (prefers-reduced-motion: reduce) {)"
     },
     {
@@ -33507,7 +33507,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L960",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_45",
-      "community": 439,
+      "community": 574,
       "norm_label": "code:bash (git add src/layouts/baselayout.astro src/styles/global.css)"
     },
     {
@@ -33588,7 +33588,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1122",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_5_editorialhero_staggered_word_reveal",
-      "community": 700,
+      "community": 439,
       "norm_label": "task 2h.5: editorialhero staggered word reveal"
     },
     {
@@ -33597,7 +33597,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1131",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_52",
-      "community": 700,
+      "community": 439,
       "norm_label": "code:astro (<h1 class=\"rc-hero__title\">)"
     },
     {
@@ -33606,7 +33606,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1150",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_53",
-      "community": 700,
+      "community": 439,
       "norm_label": "code:css (.rc-hero__word {)"
     },
     {
@@ -33615,7 +33615,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1185",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_54",
-      "community": 700,
+      "community": 439,
       "norm_label": "code:bash (git add src/components/editorialhero.astro)"
     },
     {
@@ -33624,7 +33624,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1192",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2h_6_gsap_pinned_image_scene_for_case_study_route",
-      "community": 701,
+      "community": 439,
       "norm_label": "task 2h.6: gsap pinned-image scene for case study route"
     },
     {
@@ -33633,7 +33633,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1200",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_55",
-      "community": 701,
+      "community": 439,
       "norm_label": "code:ts (// src/scripts/gsap-scenes.ts)"
     },
     {
@@ -33642,7 +33642,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1243",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_56",
-      "community": 701,
+      "community": 439,
       "norm_label": "code:astro (<script>)"
     },
     {
@@ -33651,7 +33651,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1256",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_57",
-      "community": 701,
+      "community": 439,
       "norm_label": "code:bash (git add src/scripts/gsap-scenes.ts src/pages/work/[...slug].)"
     },
     {
@@ -33759,7 +33759,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1420",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2j_4_lighthouse_runner_script",
-      "community": 594,
+      "community": 9,
       "norm_label": "task 2j.4: lighthouse runner script"
     },
     {
@@ -33768,7 +33768,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1428",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_65",
-      "community": 594,
+      "community": 9,
       "norm_label": "code:js (// scripts/qa/lighthouse.mjs)"
     },
     {
@@ -33777,7 +33777,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1489",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_66",
-      "community": 594,
+      "community": 9,
       "norm_label": "code:bash (npm run build && npm run preview -- --port 4321)"
     },
     {
@@ -33786,7 +33786,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1497",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_67",
-      "community": 594,
+      "community": 9,
       "norm_label": "code:bash (node scripts/qa/lighthouse.mjs)"
     },
     {
@@ -33795,7 +33795,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1505",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_68",
-      "community": 594,
+      "community": 9,
       "norm_label": "code:bash (git add scripts/qa/lighthouse.mjs docs/qa/phase-2-lighthouse)"
     },
     {
@@ -33831,7 +33831,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1578",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_task_2j_6_update_the_phase_2_spec_to_mark_all_tracks_complete",
-      "community": 704,
+      "community": 9,
       "norm_label": "task 2j.6: update the phase 2 spec to mark all tracks complete"
     },
     {
@@ -33840,7 +33840,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1587",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_71",
-      "community": 704,
+      "community": 9,
       "norm_label": "code:block71 (track 2h \u2014 motion layer (gsap, scrolltrigger, view transitio)"
     },
     {
@@ -33849,7 +33849,7 @@
       "source_file": "docs/superpowers/plans/2026-05-21-rielcode-phase-2-tracks-2H-2I-2J.md",
       "source_location": "L1597",
       "id": "plans_2026_05_21_rielcode_phase_2_tracks_2h_2i_2j_codeblock_72",
-      "community": 704,
+      "community": 9,
       "norm_label": "code:bash (cd c:\\users\\afw14\\onedrive\\documents\\jarvis)"
     },
     {
@@ -35275,10 +35275,37 @@
       "norm_label": "po cust 24 \u2014 tanur muthmainnah travel (umroh mitra/agen)"
     },
     {
+      "label": "po Cust 25 \u2014 Sanya Lala (Bengkel Las & Interior)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L170",
+      "id": "leads_active_customers_po_cust_25_sanya_lala_bengkel_las_interior",
+      "community": 16,
+      "norm_label": "po cust 25 \u2014 sanya lala (bengkel las & interior)"
+    },
+    {
+      "label": "po Cust 26 \u2014 I'AM TEKNIK Air Conditioner (Servis AC)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L181",
+      "id": "leads_active_customers_po_cust_26_i_am_teknik_air_conditioner_servis_ac",
+      "community": 16,
+      "norm_label": "po cust 26 \u2014 i'am teknik air conditioner (servis ac)"
+    },
+    {
+      "label": "po Cust 27 \u2014 Jasa Servis AC (Purwokerto)",
+      "file_type": "document",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L194",
+      "id": "leads_active_customers_po_cust_27_jasa_servis_ac_purwokerto",
+      "community": 16,
+      "norm_label": "po cust 27 \u2014 jasa servis ac (purwokerto)"
+    },
+    {
       "label": "Deleted from potential customers",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L172",
+      "source_location": "L206",
       "id": "leads_active_customers_deleted_from_potential_customers",
       "community": 16,
       "norm_label": "deleted from potential customers"
@@ -35287,7 +35314,7 @@
       "label": "~~po Cust 1 \u2014 Jatra Scale Indonesia~~ (DELETED)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L174",
+      "source_location": "L208",
       "id": "leads_active_customers_po_cust_1_jatra_scale_indonesia_deleted",
       "community": 16,
       "norm_label": "~~po cust 1 \u2014 jatra scale indonesia~~ (deleted)"
@@ -35296,7 +35323,7 @@
       "label": "~~po Cust 3~~ (DELETED)",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L178",
+      "source_location": "L212",
       "id": "leads_active_customers_po_cust_3_deleted",
       "community": 16,
       "norm_label": "~~po cust 3~~ (deleted)"
@@ -35305,7 +35332,7 @@
       "label": "Cross-cust patterns",
       "file_type": "document",
       "source_file": "leads/active-customers.md",
-      "source_location": "L183",
+      "source_location": "L217",
       "id": "leads_active_customers_cross_cust_patterns",
       "community": 16,
       "norm_label": "cross-cust patterns"
@@ -35363,6 +35390,15 @@
       "id": "memory_feedback_close_gap_not_leadgen_md",
       "community": 338,
       "norm_label": "feedback_close_gap_not_leadgen.md"
+    },
+    {
+      "label": "feedback_demo_msg_rough_design.md",
+      "file_type": "document",
+      "source_file": "memory/feedback_demo_msg_rough_design.md",
+      "source_location": "L1",
+      "id": "memory_feedback_demo_msg_rough_design_md",
+      "community": 705,
+      "norm_label": "feedback_demo_msg_rough_design.md"
     },
     {
       "label": "feedback_flask_run_command.md",
@@ -41839,7 +41875,7 @@
       "label": "PART 1 \u2014 Survey (Google Forms, 10 Q)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L43",
+      "source_location": "L45",
       "id": "hci_fti_marketplace_plan_part_1_survey_google_forms_10_q",
       "community": 421,
       "norm_label": "part 1 \u2014 survey (google forms, 10 q)"
@@ -41848,7 +41884,7 @@
       "label": "Form header + description (paste into Google Forms top)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L47",
+      "source_location": "L49",
       "id": "hci_fti_marketplace_plan_form_header_description_paste_into_google_forms_top",
       "community": 421,
       "norm_label": "form header + description (paste into google forms top)"
@@ -41857,16 +41893,25 @@
       "label": "Questions + answers",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L62",
+      "source_location": "L64",
       "id": "hci_fti_marketplace_plan_questions_answers",
       "community": 421,
       "norm_label": "questions + answers"
     },
     {
-      "label": "PART 2 \u2014 Build Plan",
+      "label": "Survey results (N=5, collected 23 Jun 2026 \u2014 feeds P5 persona + Design Report User Research 10%)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
       "source_location": "L98",
+      "id": "hci_fti_marketplace_plan_survey_results_n_5_collected_23_jun_2026_feeds_p5_persona_design_report_user_research_10",
+      "community": 421,
+      "norm_label": "survey results (n=5, collected 23 jun 2026 \u2014 feeds p5 persona + design report user research 10%)"
+    },
+    {
+      "label": "PART 2 \u2014 Build Plan",
+      "file_type": "document",
+      "source_file": "projects/hci-fti-marketplace/PLAN.md",
+      "source_location": "L123",
       "id": "hci_fti_marketplace_plan_part_2_build_plan",
       "community": 421,
       "norm_label": "part 2 \u2014 build plan"
@@ -41875,7 +41920,7 @@
       "label": "Data model (tables + key columns) \u2014 shared MySQL DB",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L100",
+      "source_location": "L125",
       "id": "hci_fti_marketplace_plan_data_model_tables_key_columns_shared_mysql_db",
       "community": 421,
       "norm_label": "data model (tables + key columns) \u2014 shared mysql db"
@@ -41884,7 +41929,7 @@
       "label": "A. Backend \u2014 Laravel API + Filament admin (`C:\\xampp\\htdocs\\fti-marketplace`)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L124",
+      "source_location": "L153",
       "id": "hci_fti_marketplace_plan_a_backend_laravel_api_filament_admin_c_xampp_htdocs_fti_marketplace",
       "community": 421,
       "norm_label": "a. backend \u2014 laravel api + filament admin (`c:\\xampp\\htdocs\\fti-marketplace`)"
@@ -41893,7 +41938,7 @@
       "label": "Setup sequence (Apache+MySQL running, DB `fti_marketplace` created)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L126",
+      "source_location": "L155",
       "id": "hci_fti_marketplace_plan_setup_sequence_apache_mysql_running_db_fti_marketplace_created",
       "community": 421,
       "norm_label": "setup sequence (apache+mysql running, db `fti_marketplace` created)"
@@ -41902,7 +41947,7 @@
       "label": "code:bash (composer create-project laravel/laravel fti-marketplace)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L128",
+      "source_location": "L157",
       "id": "hci_fti_marketplace_plan_codeblock_1",
       "community": 421,
       "norm_label": "code:bash (composer create-project laravel/laravel fti-marketplace)"
@@ -41911,7 +41956,7 @@
       "label": "API endpoints (`routes/api.php`, prefix `/api/v1`, JSON)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L145",
+      "source_location": "L174",
       "id": "hci_fti_marketplace_plan_api_endpoints_routes_api_php_prefix_api_v1_json",
       "community": 421,
       "norm_label": "api endpoints (`routes/api.php`, prefix `/api/v1`, json)"
@@ -41920,7 +41965,7 @@
       "label": "Auth specifics (Sanctum, mobile-first)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L170",
+      "source_location": "L200",
       "id": "hci_fti_marketplace_plan_auth_specifics_sanctum_mobile_first",
       "community": 421,
       "norm_label": "auth specifics (sanctum, mobile-first)"
@@ -41929,7 +41974,7 @@
       "label": "Filament resources (admin = the \"Desktop Application\")",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L178",
+      "source_location": "L209",
       "id": "hci_fti_marketplace_plan_filament_resources_admin_the_desktop_application",
       "community": 421,
       "norm_label": "filament resources (admin = the \"desktop application\")"
@@ -41938,7 +41983,7 @@
       "label": "Real-time chat (Reverb \u2190 Flutter)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L182",
+      "source_location": "L213",
       "id": "hci_fti_marketplace_plan_real_time_chat_reverb_flutter",
       "community": 421,
       "norm_label": "real-time chat (reverb \u2190 flutter)"
@@ -41947,7 +41992,7 @@
       "label": "B. Frontend \u2014 Flutter app + web (`C:\\xampp\\htdocs\\fti_marketplace_app`)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L192",
+      "source_location": "L223",
       "id": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_c_xampp_htdocs_fti_marketplace_app",
       "community": 421,
       "norm_label": "b. frontend \u2014 flutter app + web (`c:\\xampp\\htdocs\\fti_marketplace_app`)"
@@ -41956,7 +42001,7 @@
       "label": "Build phases (shippable milestones)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L230",
+      "source_location": "L262",
       "id": "hci_fti_marketplace_plan_build_phases_shippable_milestones",
       "community": 421,
       "norm_label": "build phases (shippable milestones)"
@@ -41965,7 +42010,7 @@
       "label": "P-SPIKE (Day 1-2, BEFORE committing to full build) \u2014 kill the unknowns",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L236",
+      "source_location": "L268",
       "id": "hci_fti_marketplace_plan_p_spike_day_1_2_before_committing_to_full_build_kill_the_unknowns",
       "community": 421,
       "norm_label": "p-spike (day 1-2, before committing to full build) \u2014 kill the unknowns"
@@ -41974,7 +42019,7 @@
       "label": "3-week schedule (floor-first)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L265",
+      "source_location": "L297",
       "id": "hci_fti_marketplace_plan_3_week_schedule_floor_first",
       "community": 421,
       "norm_label": "3-week schedule (floor-first)"
@@ -41983,7 +42028,7 @@
       "label": "Verification",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L277",
+      "source_location": "L309",
       "id": "hci_fti_marketplace_plan_verification",
       "community": 421,
       "norm_label": "verification"
@@ -41992,7 +42037,7 @@
       "label": "Risks / gotchas",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L295",
+      "source_location": "L327",
       "id": "hci_fti_marketplace_plan_risks_gotchas",
       "community": 421,
       "norm_label": "risks / gotchas"
@@ -42001,7 +42046,7 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L317",
+      "source_location": "L349",
       "id": "hci_fti_marketplace_plan_notes",
       "community": 421,
       "norm_label": "notes"
@@ -44444,6 +44489,15 @@
       "id": "transcripts_vabxygz7mau_md",
       "community": 402,
       "norm_label": "vabxygz7mau.md"
+    },
+    {
+      "label": "_acshot.mjs",
+      "file_type": "code",
+      "source_file": "_acshot.mjs",
+      "source_location": "L1",
+      "community": 594,
+      "norm_label": "_acshot.mjs",
+      "id": "acshot_mjs"
     },
     {
       "label": "B. Frontend \u2014 Flutter app + web (`fti_marketplace_app`)",
@@ -89510,6 +89564,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "leads/active-customers.md",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_25_sanya_lala_bengkel_las_interior"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L181",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_26_i_am_teknik_air_conditioner_servis_ac"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "leads_active_customers_active_potential_customers_context_hub",
+      "target": "leads_active_customers_po_cust_27_jasa_servis_ac_purwokerto",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "leads/active-customers.md",
       "source_location": "L100",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -95660,6 +95744,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hci_fti_marketplace_plan_part_1_survey_google_forms_10_q",
+      "target": "hci_fti_marketplace_plan_survey_results_n_5_collected_23_jun_2026_feeds_p5_persona_design_report_user_research_10"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/hci-fti-marketplace/PLAN.md",
       "source_location": "L83",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -95682,9 +95776,9 @@
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hci_fti_marketplace_plan_part_2_build_plan",
-      "target": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_c_xampp_htdocs_fti_marketplace_app",
-      "confidence_score": 1.0
+      "target": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_c_xampp_htdocs_fti_marketplace_app"
     },
     {
       "relation": "contains",
@@ -102278,5 +102372,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3eab178e2e3f3194219b74b5b043f20cdd1c3c3b"
+  "built_at_commit": "47f82f4c196be492fb4ff0f517b5ef78c974e2e6"
 }

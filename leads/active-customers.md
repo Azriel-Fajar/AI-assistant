@@ -167,6 +167,40 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Stage:** demo sent (2026-06-22). Cust approved building free demo first.
 - **Next:** Wait cust feedback on demo, then quote tier.
 
+## po Cust 25 — Sanya Lala (Bengkel Las & Interior)
+- **Source:** Facebook Ads WA lead "Tanpa DP tanpa risiko, mulai Rp500rb" (2026-06-23), no +62 858-1185-4371.
+- **Industry:** Bengkel las + interior. Custom metalwork (pagar, kanopi, railing, furniture besi) + interior fit-out.
+- **Request:** Portfolio website to show hasil kerja before clients order.
+- **Scope (proposed):** Galeri foto hasil (filter per kategori), bagian sebelum & sesudah, daftar layanan + estimasi harga, tombol WhatsApp. 3 halaman (beranda, layanan, kontak).
+- **Demo:** Built free rough demo 2026-06-23 — https://rielcode.com/demos/bengkel-interior/ (slug generic, brand shown = Sanya Lala). Niche registered in demo hub.
+- **Demo sent:** 2026-06-23 13:29 via WA. Cust liked it, asked how to link on FB/IG.
+- **Budget:** Zero. Said usaha "gulung tikar", "jangankan seribu, buat makan saja susah". Wanted pay-after-business-succeeds (materai). Declined revenue-contingent + deferred-pay (memory rule: no credit/contingent for low-budget first-timers).
+- **Stage:** DECLINED 2026-06-23. Too much work (subdomain setup + materai + content swap + chasing) for uncertain 500rb. Demo left as goodwill. Door open if funded later.
+- **Next:** None. Reopen only if cust returns with real budget.
+
+## po Cust 26 — I'AM TEKNIK Air Conditioner (Servis AC)
+- **Source:** Facebook Ads WA lead "Tanpa DP tanpa risiko, mulai Rp500rb" (2026-06-23), no +62 859-3026-5195.
+- **Industry:** Jasa servis AC. Servis, cuci, isi freon, perbaikan, bongkar pasang.
+- **Request:** Asked info after demo ad. Lead replied biz = "jasa servis ac".
+- **Scope (proposed):** Landing page servis AC: layanan + harga, cek estimasi biaya, testimoni, tombol WhatsApp.
+- **Demo:** Built free rough demo 2026-06-23 — https://rielcode.com/demos/iam-teknik-ac/ (brand = I'AM TEKNIK Air Conditioner). Niche "Servis AC" registered in demo hub.
+- **Demo sent:** 2026-06-23 via WA. Noted design is rough draft + customizable.
+- **Prices (from cust):** Cuci AC (1/2-1pk) Rp 100rb; Isi Freon Rp 350-450rb; Perbaikan kebocoran Rp 250rb; Bongkar Rp 200-250rb; Pasang 1/2-1pk Rp 350rb, 1.5-2pk Rp 450-500rb; Instalasi listrik Rp 80rb/titik; Cuci toren Rp 250-450rb (per ukuran).
+- **Demo updated:** 2026-06-23, 6 cards w/ real prices + added Instalasi Listrik + Cuci Toren. Commit 4aa2289.
+- **Quote sent:** 2026-06-23. Starter Plan (landing page, domain+hosting 1thn, form+WA, basic CMS, SSL). Normal Rp 1jt, LAUNCH10 promo Rp 900rb (until 30 Jun).
+- **Stage:** quote sent (2026-06-23). Awaiting decision.
+- **Next:** Wait cust reply on Rp 900rb Starter. If budget objection, scope-down (not credit).
+
+## po Cust 27 — Jasa Servis AC (Purwokerto)
+- **Source:** Facebook Ads WA lead "Tanpa DP tanpa risiko, mulai Rp500rb" (2026-06-23).
+- **Industry:** Jasa servis AC, Purwokerto. Separate cust from Cust 26 (same niche).
+- **Request:** Asked info after demo ad. Biz = "jasa perbaikan instalasi ac ruang".
+- **Demo sent:** 2026-06-23 — reused https://rielcode.com/demos/iam-teknik-ac/ (noted rough draft + customizable).
+- **Feedback:** Liked demo. Wants name changed + service prices adjusted to Purwokerto market rates. Confirmed customizable.
+- **Quote sent:** 2026-06-23. Starter Plan (landing, domain+hosting 1thn, basic CMS, WA, editable). Normal Rp 1jt, LAUNCH10 Rp 900rb (until 30 Jun).
+- **Stage:** warm, asked "langkah selanjutnya" (2026-06-23). Strong buying signal. Sent next-step flow + quote.
+- **Next:** Wait reply. If yes, collect nama usaha + WA + harga pasaran Purwokerto + logo/foto, then build. If budget objection, scope-down (not credit).
+
 ---
 
 ## Deleted from potential customers
