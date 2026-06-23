@@ -41839,7 +41839,7 @@
       "label": "PART 1 \u2014 Survey (Google Forms, 10 Q)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L39",
+      "source_location": "L43",
       "id": "hci_fti_marketplace_plan_part_1_survey_google_forms_10_q",
       "community": 421,
       "norm_label": "part 1 \u2014 survey (google forms, 10 q)"
@@ -41848,7 +41848,7 @@
       "label": "Form header + description (paste into Google Forms top)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L43",
+      "source_location": "L47",
       "id": "hci_fti_marketplace_plan_form_header_description_paste_into_google_forms_top",
       "community": 421,
       "norm_label": "form header + description (paste into google forms top)"
@@ -41857,7 +41857,7 @@
       "label": "Questions + answers",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L58",
+      "source_location": "L62",
       "id": "hci_fti_marketplace_plan_questions_answers",
       "community": 421,
       "norm_label": "questions + answers"
@@ -41866,7 +41866,7 @@
       "label": "PART 2 \u2014 Build Plan",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L94",
+      "source_location": "L98",
       "id": "hci_fti_marketplace_plan_part_2_build_plan",
       "community": 421,
       "norm_label": "part 2 \u2014 build plan"
@@ -41875,7 +41875,7 @@
       "label": "Data model (tables + key columns) \u2014 shared MySQL DB",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L96",
+      "source_location": "L100",
       "id": "hci_fti_marketplace_plan_data_model_tables_key_columns_shared_mysql_db",
       "community": 421,
       "norm_label": "data model (tables + key columns) \u2014 shared mysql db"
@@ -41884,7 +41884,7 @@
       "label": "A. Backend \u2014 Laravel API + Filament admin (`C:\\xampp\\htdocs\\fti-marketplace`)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L120",
+      "source_location": "L124",
       "id": "hci_fti_marketplace_plan_a_backend_laravel_api_filament_admin_c_xampp_htdocs_fti_marketplace",
       "community": 421,
       "norm_label": "a. backend \u2014 laravel api + filament admin (`c:\\xampp\\htdocs\\fti-marketplace`)"
@@ -41893,7 +41893,7 @@
       "label": "Setup sequence (Apache+MySQL running, DB `fti_marketplace` created)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L122",
+      "source_location": "L126",
       "id": "hci_fti_marketplace_plan_setup_sequence_apache_mysql_running_db_fti_marketplace_created",
       "community": 421,
       "norm_label": "setup sequence (apache+mysql running, db `fti_marketplace` created)"
@@ -41902,7 +41902,7 @@
       "label": "code:bash (composer create-project laravel/laravel fti-marketplace)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L124",
+      "source_location": "L128",
       "id": "hci_fti_marketplace_plan_codeblock_1",
       "community": 421,
       "norm_label": "code:bash (composer create-project laravel/laravel fti-marketplace)"
@@ -41911,7 +41911,7 @@
       "label": "API endpoints (`routes/api.php`, prefix `/api/v1`, JSON)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L141",
+      "source_location": "L145",
       "id": "hci_fti_marketplace_plan_api_endpoints_routes_api_php_prefix_api_v1_json",
       "community": 421,
       "norm_label": "api endpoints (`routes/api.php`, prefix `/api/v1`, json)"
@@ -41920,7 +41920,7 @@
       "label": "Auth specifics (Sanctum, mobile-first)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L166",
+      "source_location": "L170",
       "id": "hci_fti_marketplace_plan_auth_specifics_sanctum_mobile_first",
       "community": 421,
       "norm_label": "auth specifics (sanctum, mobile-first)"
@@ -41929,7 +41929,7 @@
       "label": "Filament resources (admin = the \"Desktop Application\")",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L174",
+      "source_location": "L178",
       "id": "hci_fti_marketplace_plan_filament_resources_admin_the_desktop_application",
       "community": 421,
       "norm_label": "filament resources (admin = the \"desktop application\")"
@@ -41938,25 +41938,25 @@
       "label": "Real-time chat (Reverb \u2190 Flutter)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L178",
+      "source_location": "L182",
       "id": "hci_fti_marketplace_plan_real_time_chat_reverb_flutter",
       "community": 421,
       "norm_label": "real-time chat (reverb \u2190 flutter)"
     },
     {
-      "label": "B. Frontend \u2014 Flutter app + web (`fti_marketplace_app`)",
+      "label": "B. Frontend \u2014 Flutter app + web (`C:\\xampp\\htdocs\\fti_marketplace_app`)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L188",
-      "id": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_fti_marketplace_app",
+      "source_location": "L192",
+      "id": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_c_xampp_htdocs_fti_marketplace_app",
       "community": 421,
-      "norm_label": "b. frontend \u2014 flutter app + web (`fti_marketplace_app`)"
+      "norm_label": "b. frontend \u2014 flutter app + web (`c:\\xampp\\htdocs\\fti_marketplace_app`)"
     },
     {
       "label": "Build phases (shippable milestones)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L226",
+      "source_location": "L230",
       "id": "hci_fti_marketplace_plan_build_phases_shippable_milestones",
       "community": 421,
       "norm_label": "build phases (shippable milestones)"
@@ -41965,7 +41965,7 @@
       "label": "P-SPIKE (Day 1-2, BEFORE committing to full build) \u2014 kill the unknowns",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L232",
+      "source_location": "L236",
       "id": "hci_fti_marketplace_plan_p_spike_day_1_2_before_committing_to_full_build_kill_the_unknowns",
       "community": 421,
       "norm_label": "p-spike (day 1-2, before committing to full build) \u2014 kill the unknowns"
@@ -41974,7 +41974,7 @@
       "label": "3-week schedule (floor-first)",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L261",
+      "source_location": "L265",
       "id": "hci_fti_marketplace_plan_3_week_schedule_floor_first",
       "community": 421,
       "norm_label": "3-week schedule (floor-first)"
@@ -41983,7 +41983,7 @@
       "label": "Verification",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L273",
+      "source_location": "L277",
       "id": "hci_fti_marketplace_plan_verification",
       "community": 421,
       "norm_label": "verification"
@@ -41992,7 +41992,7 @@
       "label": "Risks / gotchas",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L291",
+      "source_location": "L295",
       "id": "hci_fti_marketplace_plan_risks_gotchas",
       "community": 421,
       "norm_label": "risks / gotchas"
@@ -42001,7 +42001,7 @@
       "label": "Notes",
       "file_type": "document",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L313",
+      "source_location": "L317",
       "id": "hci_fti_marketplace_plan_notes",
       "community": 421,
       "norm_label": "notes"
@@ -44444,6 +44444,15 @@
       "id": "transcripts_vabxygz7mau_md",
       "community": 402,
       "norm_label": "vabxygz7mau.md"
+    },
+    {
+      "label": "B. Frontend \u2014 Flutter app + web (`fti_marketplace_app`)",
+      "file_type": "document",
+      "source_file": "projects/hci-fti-marketplace/PLAN.md",
+      "source_location": "L188",
+      "community": 421,
+      "norm_label": "b. frontend \u2014 flutter app + web (`fti_marketplace_app`)",
+      "id": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_fti_marketplace_app"
     },
     {
       "label": "B. Frontend \u2014 Flutter app (`fti_marketplace_app`)",
@@ -95671,11 +95680,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/hci-fti-marketplace/PLAN.md",
-      "source_location": "L178",
+      "source_location": "L192",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "hci_fti_marketplace_plan_part_2_build_plan",
-      "target": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_fti_marketplace_app"
+      "target": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_c_xampp_htdocs_fti_marketplace_app",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -95696,6 +95705,16 @@
       "confidence_score": 1.0,
       "source": "hci_fti_marketplace_plan_part_2_build_plan",
       "target": "hci_fti_marketplace_plan_3_week_schedule_floor_first"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/hci-fti-marketplace/PLAN.md",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "hci_fti_marketplace_plan_part_2_build_plan",
+      "target": "hci_fti_marketplace_plan_b_frontend_flutter_app_web_fti_marketplace_app"
     },
     {
       "relation": "contains",
@@ -102259,5 +102278,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a5b70271bdb4fdb24989bfd3e7d852b320a19692"
+  "built_at_commit": "3eab178e2e3f3194219b74b5b043f20cdd1c3c3b"
 }

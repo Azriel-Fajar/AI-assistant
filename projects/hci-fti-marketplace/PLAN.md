@@ -32,7 +32,11 @@ Turn the existing FTI faculty WhatsApp-group marketplace into a real working app
 - Scope: all 4 tiers in order — Core MVP → Chat+Offers → Ratings+Reviews → Polish.
 - Design: secondhand-marketplace mobile layout (soft rounded cards, pill buttons, bottom tab nav Home/Wishlist/Sell/Inbox/Profile, category chips, spec chips, make-offer/checkout) **recolored** to palette: white `#FFFFFF`, royal blue `#003CCB`, navy `#00296B`, yellow `#FCC131`.
 
-**Two codebases:** `C:\xampp\htdocs\fti-marketplace` (Laravel API + Filament admin) and a separate Flutter project `fti_marketplace_app` (compiles to **both** Android/iOS app **and** web). No third frontend — web is just `flutter build web` output of the same Flutter project.
+**Two codebases (both under `C:\xampp\htdocs\`, siblings):**
+- `C:\xampp\htdocs\fti-marketplace` — Laravel API + Filament admin.
+- `C:\xampp\htdocs\fti_marketplace_app` — Flutter project, compiles to **both** Android/iOS app **and** web. No third frontend — web is just `flutter build web` output of the same Flutter project.
+
+Sibling, **not** nested — never put the Flutter project inside the Laravel tree (breaks both). Each gets its own git repo.
 
 ---
 
@@ -185,7 +189,7 @@ No Breeze, no Blade public views, no Vite/Echo on the backend — the public UI 
 
 ---
 
-### B. Frontend — Flutter app + web (`fti_marketplace_app`)
+### B. Frontend — Flutter app + web (`C:\xampp\htdocs\fti_marketplace_app`)
 
 One Flutter codebase, two build targets: **mobile** (`flutter run` / APK) and **web** (`flutter build web`). Same screens, same brand, same API client. The web build = the "alternative marketplace" (identical interface in a browser).
 

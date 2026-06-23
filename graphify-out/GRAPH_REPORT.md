@@ -1,16 +1,16 @@
 # Graph Report - JARVIS  (2026-06-23)
 
 ## Corpus Check
-- 565 files · ~4,483,725 words
+- 565 files · ~4,483,751 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5311 nodes · 5421 edges · 705 communities (620 shown, 85 thin omitted)
+- 5312 nodes · 5422 edges · 705 communities (620 shown, 85 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 124 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a5b70271`
+- Built from commit: `3eab178e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -1349,8 +1349,8 @@ Cohesion: 0.1
 Nodes (19): bin, gcal, gdrive, gmail, yt, dependencies, chalk, cli-table3 (+11 more)
 
 ### Community 421 - "Community 421"
-Cohesion: 0.09
-Nodes (22): 3-week schedule (floor-first), A. Backend — Laravel API + Filament admin (`C:\xampp\htdocs\fti-marketplace`), API endpoints (`routes/api.php`, prefix `/api/v1`, JSON), Auth specifics (Sanctum, mobile-first), B. Frontend — Flutter app (`fti_marketplace_app`), B. Frontend — Flutter app + web (`fti_marketplace_app`), Build phases (shippable milestones), code:bash (composer create-project laravel/laravel fti-marketplace) (+14 more)
+Cohesion: 0.08
+Nodes (23): 3-week schedule (floor-first), A. Backend — Laravel API + Filament admin (`C:\xampp\htdocs\fti-marketplace`), API endpoints (`routes/api.php`, prefix `/api/v1`, JSON), Auth specifics (Sanctum, mobile-first), B. Frontend — Flutter app (`fti_marketplace_app`), B. Frontend — Flutter app + web (`C:\xampp\htdocs\fti_marketplace_app`), B. Frontend — Flutter app + web (`fti_marketplace_app`), Build phases (shippable milestones) (+15 more)
 
 ### Community 422 - "Community 422"
 Cohesion: 0.16
@@ -2213,21 +2213,21 @@ Cohesion: 0.67
 Nodes (3): code:block71 (Track 2H — motion layer (GSAP, ScrollTrigger, view transitio), code:bash (cd C:\Users\afw14\OneDrive\Documents\JARVIS), Task 2J.6: Update the Phase 2 spec to mark all tracks complete
 
 ## Knowledge Gaps
-- **2918 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2913 more)
+- **2919 isolated node(s):** `0`, `1`, `2`, `3`, `4` (+2914 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **85 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `get()` connect `Community 8` to `Community 25`, `Community 6`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `MetaError` connect `Community 323` to `Community 25`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `MetaError` connect `Community 8` to `Community 25`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `get()` connect `Community 8` to `Community 25`, `Community 6`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `0`, `1`, `2` to the rest of the system?**
-  _2964 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2965 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.12 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
