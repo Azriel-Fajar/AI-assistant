@@ -1,5 +1,7 @@
 # Memory Index
 
+- [WA No Customer Pleasing](feedback_wa_no_customer_pleasing.md) -- WA/lead drafts professional + plain, no hype/pleasing openers ("wah cocok banget kak"); state facts direct
+
 - [Cust 3 Frontiersin Clone](project_cust3_frontiersin_clone.md) -- wants frontiersin.org clone "sama persis namun dimodifikasi", self-picked Premium; lock LOOK vs FUNCTION before quoting
 - [Cust 2 Call](project_cust2_call.md) -- call 2026-06-15 17:00, in Google Calendar; prep scope questions
 - [Price By Templates Not Pages](feedback_price_by_templates_not_pages.md) -- quote by distinct templates + features not URL count; Laravel = 1 template for infinite articles

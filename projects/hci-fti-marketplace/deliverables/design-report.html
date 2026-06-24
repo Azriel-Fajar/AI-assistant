@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FTI Marketplace — Design Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --white:#fff;--blue:#003CCB;--navy:#00296B;--yellow:#FCC131;
+    --ink:#0B1530;--muted:#5A6685;--line:#E2E6F0;--paper:#F4F6FB;--soft:#EAEEF8;--red:#D7263D;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-family:'Outfit',sans-serif;color:var(--ink);font-size:11.2px;line-height:1.62}
+  .page{width:210mm;min-height:297mm;margin:0 auto;background:var(--white);padding:18mm 17mm 16mm;position:relative;page-break-after:always;overflow:hidden}
+  .page:last-child{page-break-after:auto}
+
+  /* running header/footer */
+  .rh{position:absolute;top:8mm;left:17mm;right:17mm;display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:5px}
+  .rf{position:absolute;bottom:8mm;left:17mm;right:17mm;display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:8.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:5px}
+  .rh b,.rf b{color:var(--navy)}
+
+  h2.sec{font-family:'Fraunces',serif;font-weight:700;font-size:25px;color:var(--navy);letter-spacing:-.02em;margin:0 0 4px;display:flex;align-items:baseline;gap:12px}
+  h2.sec .num{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--blue);font-weight:500}
+  .sec-rule{height:3px;width:54px;background:var(--yellow);border-radius:2px;margin:7px 0 18px}
+  h3{font-size:13px;font-weight:600;color:var(--navy);margin:18px 0 8px;letter-spacing:-.01em}
+  h4{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:600;margin:14px 0 7px}
+  p{margin:0 0 9px;color:#27314d}
+  .lead{font-size:12.5px;color:var(--muted);margin-bottom:14px;max-width:64ch}
+  b,strong{color:var(--navy);font-weight:600}
+  ul{margin:0 0 10px;padding-left:0;list-style:none}
+  li{position:relative;padding-left:16px;margin-bottom:5px}
+  li::before{content:"";position:absolute;left:0;top:6px;width:5px;height:5px;border-radius:1.5px;background:var(--blue)}
+
+  /* cover */
+  .cover{background:linear-gradient(160deg,var(--navy) 0%,var(--blue) 70%,#0046e6 100%);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:24mm 20mm}
+  .cover::after{content:"";position:absolute;right:-140px;bottom:-140px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(252,193,49,.34),rgba(252,193,49,0) 68%)}
+  .cover .top{position:relative;z-index:2}
+  .cv-logo{display:flex;align-items:center;gap:12px;margin-bottom:60px}
+  .cv-logo .lg{width:44px;height:44px;border-radius:11px;background:#fff;position:relative}
+  .cv-logo .lg::after{content:"";position:absolute;inset:12px;border-radius:4px;background:var(--yellow)}
+  .cv-logo span{font-family:'Fraunces',serif;font-weight:700;font-size:19px;letter-spacing:-.01em}
+  .cv-kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--yellow);margin-bottom:14px}
+  .cv-title{font-family:'Fraunces',serif;font-weight:900;font-size:62px;line-height:.98;letter-spacing:-.03em;max-width:14ch}
+  .cv-sub{font-size:15px;color:rgba(255,255,255,.82);margin-top:18px;max-width:48ch;line-height:1.55}
+  .cv-meta{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;border-top:1px solid rgba(255,255,255,.22);padding-top:22px}
+  .cv-meta dt{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .cv-meta dd{font-size:14px;font-weight:600;margin-top:3px}
+
+  /* cards / callouts */
+  .callout{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:14px 16px;margin:12px 0}
+  .callout.warn{border-left-color:var(--red)}
+  .callout.win{border-left-color:var(--yellow)}
+  .callout p:last-child{margin-bottom:0}
+  .callout .ct{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:5px}
+  .callout.warn .ct{color:var(--red)}.callout.win .ct{color:#b07d00}
+
+  /* two col */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+  /* stat row */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0}
+  .stat{background:var(--navy);color:#fff;border-radius:14px;padding:14px 14px;position:relative;overflow:hidden}
+  .stat:nth-child(2){background:var(--blue)}
+  .stat:nth-child(3){background:#0b1530}
+  .stat:nth-child(4){background:var(--blue)}
+  .stat .n{font-family:'Fraunces',serif;font-weight:900;font-size:30px;line-height:1}
+  .stat .l{font-size:9.5px;color:rgba(255,255,255,.78);margin-top:5px;line-height:1.35}
+  .stat .y{color:var(--yellow)}
+
+  /* survey chart */
+  .chart{margin:8px 0 14px}
+  .chart .row{display:grid;grid-template-columns:150px 1fr 30px;align-items:center;gap:10px;margin-bottom:6px}
+  .chart .lab{font-size:10px;color:#27314d;text-align:right;line-height:1.2}
+  .chart .bar{height:16px;background:var(--soft);border-radius:5px;overflow:hidden}
+  .chart .fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--blue),var(--navy));display:flex;align-items:center}
+  .chart .fill.top{background:linear-gradient(90deg,var(--yellow),#e9a900)}
+  .chart .val{font-size:10px;font-weight:600;color:var(--navy)}
+  .qh{font-size:10.5px;font-weight:600;color:var(--navy);margin:14px 0 4px}
+  .qh .q{font-family:'JetBrains Mono',monospace;color:var(--blue);font-size:9.5px;margin-right:6px}
+
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:10px}
+  th{background:var(--navy);color:#fff;text-align:left;padding:7px 9px;font-weight:600;font-size:9px;letter-spacing:.05em;text-transform:uppercase}
+  td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:nth-child(even) td{background:var(--paper)}
+  td b{color:var(--navy)}
+
+  /* screenshot frames */
+  .shots{display:grid;gap:14px}
+  .shots.g2{grid-template-columns:1fr 1fr}
+  .shots.g3{grid-template-columns:repeat(3,1fr)}
+  .frame{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper)}
+  .frame img{width:100%;display:block;background:#fff}
+  .frame.web img{aspect-ratio:auto}
+  .cap{font-size:9px;color:var(--muted);padding:7px 10px;background:#fff;border-top:1px solid var(--line);line-height:1.35}
+  .cap b{color:var(--navy);font-size:9.5px;display:block;margin-bottom:1px}
+
+  .chip{display:inline-block;background:var(--soft);color:var(--blue);border-radius:99px;padding:2px 9px;font-size:9px;font-family:'JetBrains Mono',monospace;margin:2px 4px 2px 0}
+  .swatch{display:inline-flex;align-items:center;gap:7px;font-size:10px;margin:0 14px 6px 0}
+  .sw{width:18px;height:18px;border-radius:5px;border:1px solid rgba(0,0,0,.08)}
+
+  .toc{margin-top:30px}
+  .toc-row{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12.5px}
+  .toc-row .tn{font-family:'JetBrains Mono',monospace;color:var(--blue);font-size:11px;width:26px}
+  .toc-row .tt{font-weight:600;color:var(--navy);flex:1}
+  .toc-row .tp{font-family:'JetBrains Mono',monospace;color:var(--muted);font-size:10px}
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="page cover">
+  <div class="top">
+    <div class="cv-logo"><div class="lg"></div><span>FTI Marketplace</span></div>
+    <div class="cv-kicker">HCI Final Project · Design Report</div>
+    <h1 class="cv-title">From a WhatsApp group to a real marketplace.</h1>
+    <p class="cv-sub">A cross-platform campus marketplace for the Faculty of Information Technology — designed from student research, built as a working Flutter app, web storefront, and Laravel admin.</p>
+  </div>
+  <dl class="cv-meta">
+    <div><dt>Author</dt><dd>Azriel Fajar Wicaksono</dd></div>
+    <div><dt>NIM</dt><dd>672025121</dd></div>
+    <div><dt>Course</dt><dd>Interaksi Manusia &amp; Komputer</dd></div>
+    <div><dt>Faculty</dt><dd>FTI · UKSW</dd></div>
+  </dl>
+</section>
+
+<!-- ============ TOC + EXEC ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>Azriel Fajar Wicaksono · 672025121</span></div>
+
+  <h2 class="sec"><span class="num">00</span> Overview</h2>
+  <div class="sec-rule"></div>
+  <p class="lead">FTI students already buy and sell from each other — but it happens in a noisy WhatsApp group where listings scatter, search is impossible, and trust is a guess. This project turns that informal habit into a structured, cross-platform marketplace, designed around what students actually told us they need.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="n">8</div><div class="l">survey respondents,<br><span class="y">FTI students</span></div></div>
+    <div class="stat"><div class="n">6<span style="font-size:18px">/8</span></div><div class="l">name discovery as<br>their <span class="y">biggest pain</span></div></div>
+    <div class="stat"><div class="n">7<span style="font-size:18px">/8</span></div><div class="l">trust a seller by<br><span class="y">photo + identity</span></div></div>
+    <div class="stat"><div class="n">3</div><div class="l">platforms, one DB:<br><span class="y">app · web · admin</span></div></div>
+  </div>
+
+  <div class="toc">
+    <h4>Contents</h4>
+    <div class="toc-row"><span class="tn">01</span><span class="tt">Problem Statement</span><span class="tp">p.3</span></div>
+    <div class="toc-row"><span class="tn">02</span><span class="tt">User Research — Survey (N=8) &amp; Findings</span><span class="tp">p.4</span></div>
+    <div class="toc-row"><span class="tn">03</span><span class="tt">User Personas</span><span class="tp">p.6</span></div>
+    <div class="toc-row"><span class="tn">04</span><span class="tt">Mobile Design</span><span class="tp">p.7</span></div>
+    <div class="toc-row"><span class="tn">05</span><span class="tt">Desktop / Web Design</span><span class="tp">p.9</span></div>
+    <div class="toc-row"><span class="tn">06</span><span class="tt">Design Rationale</span><span class="tp">p.10</span></div>
+    <div class="toc-row"><span class="tn">07</span><span class="tt">Cross-Platform Consistency</span><span class="tp">p.11</span></div>
+    <div class="toc-row"><span class="tn">08</span><span class="tt">Prototype — The Working Build</span><span class="tp">p.12</span></div>
+  </div>
+
+  <div class="rf"><span>Universitas Kristen Satya Wacana · Fakultas Teknologi Informasi</span><span><b>2</b></span></div>
+</section>
+
+<!-- ============ 01 PROBLEM ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>01 · Problem Statement</span></div>
+  <h2 class="sec"><span class="num">01</span> Problem Statement</h2>
+  <div class="sec-rule"></div>
+
+  <p class="lead">The FTI faculty runs an informal second-hand marketplace inside a WhatsApp group, using tags like <span class="chip">#WTS</span><span class="chip">#WTB</span><span class="chip">#WTT</span><span class="chip">#WTBT</span> to signal intent. It works socially, but fails as a marketplace.</p>
+
+  <div class="two">
+    <div>
+      <h3>What breaks today</h3>
+      <ul>
+        <li><b>Discovery is impossible.</b> Listings vanish up the chat as new messages arrive. There is no search, no category, no archive.</li>
+        <li><b>Trust is a guess.</b> A buyer cannot tell a reliable seller from a stranger — no reviews, no track record, no verified identity.</li>
+        <li><b>No structure.</b> Price, condition, and location live in free-text paragraphs that are easy to omit and impossible to filter.</li>
+        <li><b>Negotiation is awkward.</b> Haggling happens in public group chat where everyone watches.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>The opportunity</h3>
+      <ul>
+        <li>The behaviour already exists — demand is proven, it just lacks a home.</li>
+        <li>A bounded campus community means real accountability is possible.</li>
+        <li>The four WhatsApp tags map cleanly to a structured <b>listing type</b> the app can model.</li>
+      </ul>
+      <div class="callout">
+        <div class="ct">Design problem statement</div>
+        <p style="margin:0"><b>"FTI students want to buy and sell within their community, but the current WhatsApp group makes items impossible to find and sellers impossible to trust."</b></p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Goals of the design</h3>
+  <table>
+    <tr><th style="width:34%">Goal</th><th>Design response</th></tr>
+    <tr><td><b>Make items findable</b></td><td>Search, category chips, listing-type filters, structured cards — discovery is the headline feature, not an add-on.</td></tr>
+    <tr><td><b>Make sellers trustable</b></td><td>Profile photo + real name first, then ratings, reviews, badges, and a "Civitas FTI" affiliation tag.</td></tr>
+    <tr><td><b>Keep posting effortless</b></td><td>Chip-and-dropdown sell form, minimal free typing, photo picker.</td></tr>
+    <tr><td><b>Move negotiation private</b></td><td>1-to-1 real-time chat with a structured "Make an Offer" action.</td></tr>
+  </table>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>3</b></span></div>
+</section>
+
+<!-- ============ 02 RESEARCH ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>02 · User Research</span></div>
+  <h2 class="sec"><span class="num">02</span> User Research</h2>
+  <div class="sec-rule"></div>
+
+  <p class="lead">Before building, we surveyed FTI students with a 10-question Google Form (<b>N=8</b>, collected 23 June 2026). Respondents were predominantly 18–20 (5/8) with the remainder 21–23. The findings directly shaped — and in two places corrected — the design.</p>
+
+  <div class="qh"><span class="q">Q4</span>What is the biggest pain in informal student trading? <span style="color:var(--muted);font-weight:400">(multi-select)</span></div>
+  <div class="chart">
+    <div class="row"><div class="lab">Can't find buyers/sellers</div><div class="bar"><div class="fill top" style="width:100%"></div></div><div class="val">6</div></div>
+    <div class="row"><div class="lab">Fear of being scammed</div><div class="bar"><div class="fill" style="width:66%"></div></div><div class="val">4</div></div>
+    <div class="row"><div class="lab">Never tried at all</div><div class="bar"><div class="fill" style="width:50%"></div></div><div class="val">3</div></div>
+    <div class="row"><div class="lab">No dedicated platform</div><div class="bar"><div class="fill" style="width:33%"></div></div><div class="val">2</div></div>
+    <div class="row"><div class="lab">Don't know fair price</div><div class="bar"><div class="fill" style="width:33%"></div></div><div class="val">2</div></div>
+    <div class="row"><div class="lab">Awkward negotiation</div><div class="bar"><div class="fill" style="width:17%"></div></div><div class="val">1</div></div>
+  </div>
+  <div class="callout"><div class="ct">Headline finding</div><p style="margin:0"><b>Discovery is the #1 problem (6/8).</b> This is why search, browse, and category filtering lead the entire product — not chat, not payments.</p></div>
+
+  <div class="two" style="margin-top:14px">
+    <div>
+      <div class="qh"><span class="q">Q7</span>What makes you trust a seller? <span style="color:var(--muted);font-weight:400">(multi)</span></div>
+      <div class="chart">
+        <div class="row"><div class="lab">Photo + identity</div><div class="bar"><div class="fill top" style="width:100%"></div></div><div class="val">7</div></div>
+        <div class="row"><div class="lab">Campus-email verified</div><div class="bar"><div class="fill" style="width:57%"></div></div><div class="val">4</div></div>
+        <div class="row"><div class="lab">Seller badge/level</div><div class="bar"><div class="fill" style="width:43%"></div></div><div class="val">3</div></div>
+        <div class="row"><div class="lab">Ratings &amp; reviews</div><div class="bar"><div class="fill" style="width:43%"></div></div><div class="val">3</div></div>
+        <div class="row"><div class="lab">Successful txn count</div><div class="bar"><div class="fill" style="width:29%"></div></div><div class="val">2</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="qh"><span class="q">Q5</span>Mandatory info on a listing? <span style="color:var(--muted);font-weight:400">(multi)</span></div>
+      <div class="chart">
+        <div class="row"><div class="lab">Price + negotiable</div><div class="bar"><div class="fill top" style="width:100%"></div></div><div class="val">8</div></div>
+        <div class="row"><div class="lab">Condition</div><div class="bar"><div class="fill" style="width:88%"></div></div><div class="val">7</div></div>
+        <div class="row"><div class="lab">Clear photo</div><div class="bar"><div class="fill" style="width:88%"></div></div><div class="val">7</div></div>
+        <div class="row"><div class="lab">Seller location</div><div class="bar"><div class="fill" style="width:63%"></div></div><div class="val">5</div></div>
+        <div class="row"><div class="lab">Verified identity</div><div class="bar"><div class="fill" style="width:50%"></div></div><div class="val">4</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout win"><div class="ct">Research that corrected the plan</div><p style="margin:0"><b>Identity beats verification (Q7).</b> We had assumed campus-email verification would be the headline trust feature. Students disagreed: a clear <b>profile photo + real name (7/8)</b> matters more than an email badge (4/8). The seller row was redesigned to lead with avatar and name; email-verification became secondary.</p></div>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>4</b></span></div>
+</section>
+
+<!-- ============ 02b RESEARCH cont ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>02 · User Research</span></div>
+  <h3 style="margin-top:0">Remaining findings &amp; design implications</h3>
+
+  <table>
+    <tr><th style="width:8%">Q</th><th style="width:30%">Question</th><th style="width:30%">Result (N=8)</th><th>Design implication</th></tr>
+    <tr><td><b>Q1</b></td><td>Aware of the FTI marketplace group?</td><td>7 already knew, 1 just found out</td><td>The group exists but onboarding must still explain the app's purpose.</td></tr>
+    <tr><td><b>Q2</b></td><td>Ever transacted with peers?</td><td><b>5 interested-but-never</b>, 3 done it, <b>0 uninterested</b></td><td>Latent, untapped demand. Target the interested newcomer with low-friction flows.</td></tr>
+    <tr><td><b>Q3</b></td><td>Categories wanted most</td><td>Electronics ×3, Clothing ×3, Food ×2, Stationery ×2</td><td>Lead seed data &amp; featured categories with electronics + clothing.</td></tr>
+    <tr><td><b>Q6</b></td><td>Preferred transaction model</td><td><b>COD on campus ×6</b>, transfer ×2</td><td>COD is primary; transfer is secondary and by mutual agreement. No payment gateway.</td></tr>
+    <tr><td><b>Q8</b></td><td>Which platform?</td><td><b>Both ×5</b>, mobile-only ×3, <b>web-only 0</b></td><td>Confirms dual mobile + web, mobile primary. Kills any web-only doubt.</td></tr>
+    <tr><td><b>Q9</b></td><td>Expected usage frequency</td><td>When-needed ×4, 1–2×/month ×3, weekly ×1</td><td>Need-based usage → wishlist + notifications to re-engage dormant users.</td></tr>
+  </table>
+
+  <h4>Q10 — open feedback (verbatim, drove three features)</h4>
+  <div class="three">
+    <div class="callout" style="margin:0"><div class="ct">Access model</div><p style="margin:0;font-size:10px"><i>"namanya marketplace FTI, namun seluruh orang dapat mengakses app… mhs FTI sudah pasti mendapat potongan harga."</i></p><p style="margin:6px 0 0;font-size:9.5px;color:var(--muted)">→ Public access + FTI badge (affiliation, not a discount engine).</p></div>
+    <div class="callout win" style="margin:0"><div class="ct">Reviews</div><p style="margin:0;font-size:10px"><i>"fitur bisa lihat ulasan orang lain."</i></p><p style="margin:6px 0 0;font-size:9.5px;color:var(--muted)">→ Public, login-free review reading on every seller profile.</p></div>
+    <div class="callout win" style="margin:0"><div class="ct">Gamification</div><p style="margin:0;font-size:10px"><i>"leaderboard dan reward agar org rajin berdagang."</i></p><p style="margin:6px 0 0;font-size:9.5px;color:var(--muted)">→ Leaderboard + badge tiers as status reward.</p></div>
+  </div>
+  <p style="margin-top:10px">A fourth respondent asked for <b>"filter jenis barang"</b> (category filtering), reinforcing the discovery priority. Filtering was already core to the design.</p>
+
+  <div class="callout"><div class="ct">Research summary → product</div><p style="margin:0">Every major feature traces to data: <b>discovery</b> (Q4) → search/filter; <b>trust</b> (Q7) → identity-first seller row + reviews; <b>required fields</b> (Q5) → price/condition/photo on the card; <b>access</b> (Q10) → public + FTI badge; <b>motivation</b> (Q10) → leaderboard; <b>re-engagement</b> (Q9) → wishlist + notifications.</p></div>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>5</b></span></div>
+</section>
+
+<!-- ============ 03 PERSONAS ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>03 · Personas</span></div>
+  <h2 class="sec"><span class="num">03</span> User Personas</h2>
+  <div class="sec-rule"></div>
+  <p class="lead">Two personas were derived directly from the survey clusters. They are reproduced in full on the standalone persona sheet; summarized here to anchor the design decisions that follow.</p>
+
+  <div class="two">
+    <div class="callout" style="border-left-color:var(--blue)">
+      <div class="ct">Primary · The Latent Buyer</div>
+      <p style="font-family:'Fraunces',serif;font-weight:700;font-size:16px;color:var(--navy);margin:2px 0 6px">Aufa, 19</p>
+      <p style="margin:0 0 6px"><b>Goal:</b> find affordable used electronics from someone she can trust, in one tap.</p>
+      <p style="margin:0 0 6px"><b>Frustration:</b> can't find sellers in the scattered WA group; afraid of scams.</p>
+      <p style="margin:0"><b>Trusts via:</b> profile photo + identity, then reviews.</p>
+      <p style="margin:8px 0 0"><span class="chip">Q2 ×5 cluster</span><span class="chip">when-needed</span></p>
+    </div>
+    <div class="callout" style="border-left-color:var(--yellow)">
+      <div class="ct">Secondary · The Active Seller</div>
+      <p style="font-family:'Fraunces',serif;font-weight:700;font-size:16px;color:var(--navy);margin:2px 0 6px">Daniro, 22</p>
+      <p style="margin:0 0 6px"><b>Goal:</b> move items fast, build a visible reputation, get recognised.</p>
+      <p style="margin:0 0 6px"><b>Frustration:</b> effort and reliability go unrewarded today.</p>
+      <p style="margin:0"><b>Motivated by:</b> leaderboard, badge tiers, accumulating reviews.</p>
+      <p style="margin:8px 0 0"><span class="chip">Q2 ×3 cluster</span><span class="chip">Q10 leaderboard</span></p>
+    </div>
+  </div>
+
+  <h3>How the personas shaped decisions</h3>
+  <table>
+    <tr><th style="width:30%">Persona need</th><th>Resulting design</th></tr>
+    <tr><td><b>Aufa</b> — low-friction discovery</td><td>Search bar on Home, category chips, infinite-scroll grid, structured cards.</td></tr>
+    <tr><td><b>Aufa</b> — trust before contact</td><td>Avatar + real name lead the seller row; public reviews readable without login.</td></tr>
+    <tr><td><b>Daniro</b> — reputation &amp; status</td><td>Badge tiers (Pemula → Terpercaya → Top Seller) + a public leaderboard.</td></tr>
+    <tr><td><b>Daniro</b> — multi-device selling</td><td>Identical Flutter app on mobile and web; manage listings from either.</td></tr>
+  </table>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>6</b></span></div>
+</section>
+
+<!-- ============ 04 MOBILE DESIGN ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>04 · Mobile Design</span></div>
+  <h2 class="sec"><span class="num">04</span> Mobile Design</h2>
+  <div class="sec-rule"></div>
+  <p class="lead">The mobile app (Flutter) is the primary product — a Facebook-Marketplace-style storefront recolored to the FTI brand. Bottom-tab navigation, soft rounded cards, pill buttons, category and spec chips.</p>
+
+  <div class="shots g3">
+    <div class="frame"><img src="shots/01-onboarding.png" alt=""><div class="cap"><b>Onboarding</b>Explains the app's purpose — "no longer scattered in the WhatsApp group" (answers Q1 discovery-of-app).</div></div>
+    <div class="frame"><img src="shots/03-search.png" alt=""><div class="cap"><b>Home / Browse</b>Search bar, category chips with live counts, "Terbaru" card grid with price, condition &amp; location (Q5 fields).</div></div>
+    <div class="frame"><img src="shots/04-detail.png" alt=""><div class="cap"><b>Listing detail</b>Seller row leads with avatar + name + badge (Q7), spec chips, Make-Offer &amp; Chat CTAs.</div></div>
+  </div>
+
+  <h3>Key mobile screens</h3>
+  <ul>
+    <li><b>Home / Browse</b> — the discovery surface. Search, category chips, listing-type filters, and a card grid. Every card shows the four survey-mandated fields: photo, price + negotiable, condition, location.</li>
+    <li><b>Listing detail</b> — image carousel, the identity-first seller row, condition/size/material/color spec chips, and two clear CTAs: <i>Tawar</i> (make an offer) and <i>Chat Penjual</i>.</li>
+    <li><b>Onboarding</b> — a three-slide carousel shown once, framing the value: find campus items, sell easily, trade safely.</li>
+  </ul>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>7</b></span></div>
+</section>
+
+<!-- ============ 04b MOBILE cont ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>04 · Mobile Design</span></div>
+  <h3 style="margin-top:0">Selling, identity &amp; reputation</h3>
+
+  <div class="shots g3">
+    <div class="frame"><img src="shots/09-sell.png" alt=""><div class="cap"><b>Sell form</b>Minimal typing: listing-type selector (WTS/WTB/WTT/WTBT), category dropdown, condition chips, negotiable toggle, location.</div></div>
+    <div class="frame"><img src="shots/08-profile.png" alt=""><div class="cap"><b>Profile</b>Avatar, Terpercaya badge + Civitas FTI tag, my listings, settings: leaderboard, dark mode, feedback, logout.</div></div>
+    <div class="frame"><img src="shots/13-leaderboard.png" alt=""><div class="cap"><b>Leaderboard</b>Sellers ranked by completed sales with badge + FTI tag — the status reward from Q10.</div></div>
+  </div>
+
+  <div class="two" style="margin-top:6px">
+    <div>
+      <h4>Minimal-typing sell flow</h4>
+      <p>Posting an item is mostly tapping, not typing — a chip-based listing type, a category dropdown, condition chips, and a photo picker. This directly serves the latent-buyer persona who has never sold before and needs the lowest possible barrier.</p>
+    </div>
+    <div>
+      <h4>Identity-first trust</h4>
+      <p>Across detail, profile, and leaderboard the seller is represented the same way: photo, real name, then badge and FTI tag. This consistency is deliberate — it is the single most-cited trust signal (Q7) repeated everywhere a buyer evaluates a seller.</p>
+    </div>
+  </div>
+
+  <h4>Dark mode</h4>
+  <div class="shots g3">
+    <div class="frame"><img src="shots/14-darkmode.png" alt=""><div class="cap"><b>Dark theme</b>User-toggled, persisted across sessions. Same brand hierarchy, inverted surfaces.</div></div>
+    <div class="frame"><img src="shots/06-auth.png" alt=""><div class="cap"><b>Login</b>Email/password (+ Google). Token persists, so users stay logged in across restarts.</div></div>
+    <div class="frame"><img src="shots/05-login-gate.png" alt=""><div class="cap"><b>Login gate</b>Browsing is open; selling, chat, and profile prompt sign-in only when needed.</div></div>
+  </div>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>8</b></span></div>
+</section>
+
+<!-- ============ 05 WEB DESIGN ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>05 · Desktop / Web Design</span></div>
+  <h2 class="sec"><span class="num">05</span> Desktop / Web Design</h2>
+  <div class="sec-rule"></div>
+  <p class="lead">The web storefront is the <b>same Flutter codebase</b> compiled to web — not a second frontend. It adapts responsively: the bottom tab bar becomes a side navigation rail, the card grid scales its columns, and content is capped to a readable max-width.</p>
+
+  <div class="shots g3">
+    <div class="frame web"><img src="shots/web-768.png" alt=""><div class="cap"><b>Tablet · 768px</b>Mid-density grid, navigation adapts.</div></div>
+    <div class="frame web"><img src="shots/web-1280.png" alt=""><div class="cap"><b>Desktop · 1280px</b>Side rail, multi-column grid, centered max-width.</div></div>
+    <div class="frame web"><img src="shots/web-1920.png" alt=""><div class="cap"><b>Wide · 1920px</b>Grid scales to more columns without spanning edge-to-edge.</div></div>
+  </div>
+
+  <div class="two">
+    <div>
+      <h3>Responsive strategy</h3>
+      <ul>
+        <li><b>Breakpoints:</b> mobile &lt;600, tablet 600–1024, desktop &gt;1024.</li>
+        <li><b>Grid:</b> cards size by max-extent, so columns scale automatically — 2 on phone, up to 5–6 on desktop.</li>
+        <li><b>Navigation swap:</b> bottom tabs on mobile → side rail on desktop, same five destinations.</li>
+        <li><b>Max width:</b> body capped (~1200px) so listings stay readable on ultrawide monitors.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Why web matters</h3>
+      <p>Survey Q8 settled it: <b>5/8 wanted both platforms, zero wanted web-only</b>. Web is the alternative storefront for users at a desktop, and the host that also serves the admin panel. One codebase keeps brand, terminology, and behaviour identical to mobile at zero extra maintenance cost.</p>
+      <div class="callout" style="margin-top:8px"><div class="ct">Desktop admin</div><p style="margin:0">The assignment's "Desktop Application" is the Filament admin panel, opened in a desktop browser, sharing the one Laravel API + MySQL database with the app.</p></div>
+    </div>
+  </div>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>9</b></span></div>
+</section>
+
+<!-- ============ 06 RATIONALE ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>06 · Design Rationale</span></div>
+  <h2 class="sec"><span class="num">06</span> Design Rationale</h2>
+  <div class="sec-rule"></div>
+
+  <h3>Color</h3>
+  <p>A four-color brand system: white ground, royal blue as the action color, navy for depth and headings, yellow as the single accent reserved for status and reward (badges, leaderboard trophy). Blue/navy carry institutional trust appropriate to a campus; yellow's scarcity makes rewards feel earned.</p>
+  <div style="margin:10px 0 6px">
+    <span class="swatch"><span class="sw" style="background:#FFFFFF"></span> White #FFFFFF — ground</span>
+    <span class="swatch"><span class="sw" style="background:#003CCB"></span> Royal Blue #003CCB — action</span>
+    <span class="swatch"><span class="sw" style="background:#00296B"></span> Navy #00296B — depth</span>
+    <span class="swatch"><span class="sw" style="background:#FCC131"></span> Yellow #FCC131 — reward</span>
+  </div>
+
+  <div class="two">
+    <div>
+      <h3>Typography</h3>
+      <p>In the app, a clean geometric sans keeps listings legible at a glance with finger-friendly sizes. Headings carry weight for hierarchy. The priority is readability of price, condition, and seller name — the data students said they need.</p>
+      <h3>Navigation</h3>
+      <p>Five bottom tabs — Home, Wishlist, Sell, Inbox, Profile — match the mental model of consumer marketplace apps students already use, so no relearning is required. Sell sits center as the primary creative action.</p>
+    </div>
+    <div>
+      <h3>Layout &amp; flow</h3>
+      <p>Public browsing requires no login; authentication is requested only at the moment of selling, chatting, or saving — lowering the barrier for the interested-but-never persona. Cards surface the four mandatory fields so a buyer can judge an item without opening it.</p>
+      <h3>Trust by repetition</h3>
+      <p>The identity-first seller representation appears identically on the card, the detail page, the profile, and the leaderboard. Repeating the strongest trust signal everywhere is a deliberate rationale, not an accident of layout.</p>
+    </div>
+  </div>
+
+  <div class="callout win"><div class="ct">Every choice traces to research</div><p style="margin:0">Discovery-led IA (Q4), identity-first trust (Q7), card-visible required fields (Q5), COD-primary transactions (Q6), public access + FTI badge (Q10), leaderboard reward (Q10), need-based re-engagement (Q9). The design is an argument the data makes.</p></div>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>10</b></span></div>
+</section>
+
+<!-- ============ 07 CROSS-PLATFORM ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>07 · Cross-Platform</span></div>
+  <h2 class="sec"><span class="num">07</span> Cross-Platform Consistency</h2>
+  <div class="sec-rule"></div>
+  <p class="lead">Three surfaces — mobile app, web storefront, desktop admin — share one design language and one source of truth, so the experience is coherent wherever a user enters.</p>
+
+  <table>
+    <tr><th style="width:20%">Dimension</th><th>Mobile app (Flutter)</th><th>Web (Flutter→web)</th><th>Admin (Filament)</th></tr>
+    <tr><td><b>Brand colors</b></td><td colspan="3" style="text-align:center">Identical four hex values — #FFFFFF / #003CCB / #00296B / #FCC131</td></tr>
+    <tr><td><b>Terminology</b></td><td colspan="3" style="text-align:center">Shared vocabulary — Listing · Seller · Offer · Transaction · Badge</td></tr>
+    <tr><td><b>Codebase</b></td><td>One Flutter project</td><td>Same project, <code>flutter build web</code></td><td>Laravel Filament</td></tr>
+    <tr><td><b>Data</b></td><td colspan="3" style="text-align:center">One Laravel API · one MySQL database · no second store, no sync</td></tr>
+    <tr><td><b>Navigation</b></td><td>Bottom tab bar</td><td>Side rail / top nav</td><td>Filament sidebar</td></tr>
+    <tr><td><b>Role</b></td><td>Primary marketplace</td><td>Alt storefront</td><td>Moderation &amp; monitoring</td></tr>
+  </table>
+
+  <div class="two">
+    <div>
+      <h3>One source of truth</h3>
+      <p>Mobile and web are literally the same compiled code; admin is a separate Laravel panel. All three read and write the same database through the same API. A listing created on the phone appears instantly in the browser and in the admin queue — there is no duplication and nothing to keep in sync.</p>
+    </div>
+    <div>
+      <h3>Consistency as a graded goal</h3>
+      <p>The four brand hex values and the core domain nouns are defined once and reused across Flutter and Filament. This single-source discipline is what makes the admin panel feel like the same product as the app rather than a bolted-on dashboard.</p>
+    </div>
+  </div>
+
+  <div class="rf"><span>UKSW · FTI</span><span><b>11</b></span></div>
+</section>
+
+<!-- ============ 08 PROTOTYPE ============ -->
+<section class="page">
+  <div class="rh"><span><b>FTI Marketplace</b> · Design Report</span><span>08 · Prototype</span></div>
+  <h2 class="sec"><span class="num">08</span> Prototype — The Working Build</h2>
+  <div class="sec-rule"></div>
+  <p class="lead">The prototype is not a clickable mock — it is the <b>running product</b>. A working Flutter app, a live web build, and a functioning Laravel + Filament backend. The screenshots throughout this report are captured from that live build; a running product is stronger evidence than a static prototype.</p>
+
+  <div class="shots g2">
+    <div class="frame"><img src="shots/07-auth-filled.png" alt=""><div class="cap"><b>Live authentication</b>Real login against the API; Sanctum token persists the session.</div></div>
+    <div class="frame"><img src="shots/10-inbox.png" alt=""><div class="cap"><b>Inbox</b>Real-time chat list, powered by Laravel Reverb websockets.</div></div>
+  </div>
+
+  <h3>What "prototype" means here</h3>
+  <ul>
+    <li><b>Mobile app</b> — runs on Android and as a web build; full browse → detail → offer → chat → review loop.</li>
+    <li><b>Web storefront</b> — the same app, responsive across phone, tablet, and desktop widths (shown in §05).</li>
+    <li><b>Desktop admin</b> — Filament panel with full CRUD over users, listings, offers, transactions, reviews, reports, and feedback.</li>
+    <li><b>Live data</b> — one Laravel API and MySQL database behind all three.</li>
+  </ul>
+
+  <div class="callout"><div class="ct">Evidence captured</div><p style="margin:0">Eleven key flows were screen-captured from the live build for this report: onboarding, browse, detail, login, profile, sell, leaderboard, dark mode, and three responsive web widths. The same flows form the basis of the usability test (next phase).</p></div>
+
+  <h3 style="margin-top:16px">Next phase — usability testing</h3>
+  <p>The working build enables a real usability test: 3+ FTI students perform genuine tasks (register, search, make an offer, create a listing, update profile) while we observe without helping. Findings — successes, problems, and improvements — will be folded back into the product and reported in the presentation's Testing Results section.</p>
+
+  <div class="rf"><span>UKSW · FTI · Interaksi Manusia &amp; Komputer</span><span><b>12</b></span></div>
+</section>
+
+</body>
+</html>

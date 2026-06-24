@@ -23,13 +23,18 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Package:** Starter, LAUNCH10 → **Rp 900.000**. Payment 20/80 (DP Rp 180rb, sisa Rp 720rb on completion).
 - **Silent bonus:** Advanced SEO included free (do NOT tell customer).
 - **Invoice:** INV-2026-003-D (Deposit 20%, Rp 180.000). DP PAID 2026-06-24 via BCA (proof received, to RIELCODE WEB DEVELOPER / BIMASAKTI Solo).
-- **Domain chosen:** Joinschool.com
+- **Domain chosen:** joinschool.id
 - **Hosting:** Azriel's account (customer has no Rumahweb account). Will set up under Azriel's, create new email, hand over login after build so customer changes password.
 - **Demo/template:** built from https://rielcode.com/demos/preschool/ (penguin yellow/navy, playful, child-challenges section + consultation booking form).
 - **Order:** confirmed via rielcode.com/en/order?aksi=starter with LAUNCH10 code. Brief form sent: brief.rielcode.com (token link).
 - **Customer wants:** colorful, menarik design. Sending testimoni via PDF (besok, ~2026-06-25). Real testimoni + foto kegiatan swapped in at build.
 - **Build:** DONE 2026-06-24. Full PHP+MySQL site at `C:\xampp\htdocs\join-school` (Tailwind CDN, DB `join_school`). Admin panel (Testimoni CRUD, Foto Kegiatan upload, Pesan Masuk inbox, Pengaturan to change login). Login `admin` / `joinschool2026` (change at handover). Consult = WA button + form saving to DB. Advanced SEO live (JSON-LD 3 locations, OG, sitemap, robots). Branded placeholders pending real photos. Staging snapshot exported to `Rielcode-laravel/resources/staging/join-school`.
-- **Next:** Set order `staging_slug=join-school` in Filament for token preview. Get testimoni PDF + foto kegiatan (~2026-06-25), upload via admin. Customer rechecks wording. Then deploy to Rumahweb under joinschool.com (update config.php DB creds), collect remaining Rp 720rb on completion.
+- **Next:** Set order `staging_slug=join-school` in Filament for token preview. Get testimoni PDF + foto kegiatan (~2026-06-25), upload via admin. Customer rechecks wording. Then deploy to Rumahweb under joinschool.id (update config.php DB creds), collect remaining Rp 720rb on completion.
+- **Progress note draft** (for Rielcode progress page `OrderProgressNote.note`, ID, customer-facing timeline entry):
+  > Tampilan halaman utama website sudah selesai kami kerjakan, mencakup bagian hero, profil sekolah, program, galeri kegiatan, testimoni, dan ketiga lokasi.
+  > Form konsultasi WhatsApp sudah aktif. Setiap pesan yang masuk langsung diteruskan ke panel admin Anda.
+  > Panel admin juga sudah siap dipakai. Anda bisa mengganti foto kegiatan, testimoni, dan gambar utama sendiri, serta mengubah username dan password kapan saja.
+  > Langkah berikutnya, kami menunggu file testimoni dan foto kegiatan dari Anda untuk dimasukkan ke website sebelum proses online ke domain.
 
 ---
 
