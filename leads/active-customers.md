@@ -9,6 +9,30 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 
 ---
 
+# Projects (Won Customers)
+
+_Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24._
+
+## CUST 1 — JOIN School (Surabaya) — CLOSED / WON 🎉
+- **Status:** CLOSED. Rielcode's FIRST paying customer. DP paid 2026-06-24.
+- **Customer name:** Anna Maria (per invoice). WA contact label "Joyce JOIN", HP 0898-3331-997 (only one number).
+- **Industry:** Preschool / Kindergarten / Playgroup (KB/TK) + Enrichment. Akreditasi A. IG @joinschool.
+- **JOIN acronym:** "Joyce Occupation In Natural Education" (final, corrected twice by customer).
+- **Pain:** Sekolah pindah lokasi, ex murid cari di Google dikira tutup. Needs online appearance so parents find new address/contact.
+- **3 addresses for site:** (1) Jl. Tengger Kandangan 1/2 Surabaya, (2) Puri Asta Kencana A/33 Boteng Menganti, (3) De Naila Park PD 29/63 Menganti.
+- **Package:** Starter, LAUNCH10 → **Rp 900.000**. Payment 20/80 (DP Rp 180rb, sisa Rp 720rb on completion).
+- **Silent bonus:** Advanced SEO included free (do NOT tell customer).
+- **Invoice:** INV-2026-003-D (Deposit 20%, Rp 180.000). DP PAID 2026-06-24 via BCA (proof received, to RIELCODE WEB DEVELOPER / BIMASAKTI Solo).
+- **Domain chosen:** Joinschool.com
+- **Hosting:** Azriel's account (customer has no Rumahweb account). Will set up under Azriel's, create new email, hand over login after build so customer changes password.
+- **Demo/template:** built from https://rielcode.com/demos/preschool/ (penguin yellow/navy, playful, child-challenges section + consultation booking form).
+- **Order:** confirmed via rielcode.com/en/order?aksi=starter with LAUNCH10 code. Brief form sent: brief.rielcode.com (token link).
+- **Customer wants:** colorful, menarik design. Sending testimoni via PDF (besok, ~2026-06-25). Real testimoni + foto kegiatan swapped in at build.
+- **Build:** DONE 2026-06-24. Full PHP+MySQL site at `C:\xampp\htdocs\join-school` (Tailwind CDN, DB `join_school`). Admin panel (Testimoni CRUD, Foto Kegiatan upload, Pesan Masuk inbox, Pengaturan to change login). Login `admin` / `joinschool2026` (change at handover). Consult = WA button + form saving to DB. Advanced SEO live (JSON-LD 3 locations, OG, sitemap, robots). Branded placeholders pending real photos. Staging snapshot exported to `Rielcode-laravel/resources/staging/join-school`.
+- **Next:** Set order `staging_slug=join-school` in Filament for token preview. Get testimoni PDF + foto kegiatan (~2026-06-25), upload via admin. Customer rechecks wording. Then deploy to Rumahweb under joinschool.com (update config.php DB creds), collect remaining Rp 720rb on completion.
+
+---
+
 ## po Cust 2 — Furniture company
 - **Industry:** Furniture
 - **Quote:** Verbal yes to Starter (Rp1jt, furniture galeri). Offered LAUNCH10 (10% off).
@@ -200,6 +224,23 @@ Message tone: ID, casual warm "kak", no em dashes, ask/confirm not hype, custome
 - **Quote sent:** 2026-06-23. Starter Plan (landing, domain+hosting 1thn, basic CMS, WA, editable). Normal Rp 1jt, LAUNCH10 Rp 900rb (until 30 Jun).
 - **Stage:** warm, asked "langkah selanjutnya" (2026-06-23). Strong buying signal. Sent next-step flow + quote.
 - **Next:** Wait reply. If yes, collect nama usaha + WA + harga pasaran Purwokerto + logo/foto, then build. If budget objection, scope-down (not credit).
+
+## po Cust 29 — Salmon Hasugian (Tugas Akhir, Mail Management)
+- **Source:** Facebook Ads WA lead "Demo gratis, tanpa DP tanpa risiko, mulai Rp500rb" (2026-06-24). WA +62 851-1941-3419 (~Salmon Hasugian).
+- **Type:** STUDENT / tugas akhir. Not commercial client. Real custom CRUD web app build (not landing page).
+- **Request:** Sistem manajemen surat berbasis web, PHP + MySQL: surat masuk, surat keluar, disposisi, arsip.
+- **Scope (locked 2026-06-24):**
+  - Login multi-role (admin + pimpinan)
+  - Disposisi flow: admin kirim surat → pimpinan disposisi
+  - Arsip dengan upload file surat (PDF/scan)
+  - Notifikasi IN-APP (model 1, lonceng/alert saat surat masuk baru) — not email/WA push
+  - Online: perlu hosting + domain (cust confirmed "perlu kk")
+- **Deadline:** akhir bulan Juni 2026 ("bulan 6 akhir") = ~6 hari dari quote. TIGHT. Rush risk, flag in quote (Priority Delivery applies).
+- **Quote journey:** First quoted online version Pro+Login+LAUNCH10 = Rp 2.25jt. Cust price-objected ("mahal"), then anchored hard on ad's "mulai 500rb" (expected whole system for 500-600rb). Explained 500rb = Student floor (1-page site), his = real CRUD app. Refused fake-cheap promise (Sanya Lala/Cust 25 trap). Pivoted to **localhost-only** version (no hosting/domain) to fit student budget.
+- **Quote sent (localhost):** Rp 1.200.000. Full mail-mgmt system (surat masuk/keluar/disposisi/arsip, 2-role login, file upload, in-app notif) + source code + DB (.sql) + XAMPP setup help. NO hosting/domain (runs localhost for sidang). Payment 20/80 (DP Rp 240rb, sisa Rp 960rb on completion). Floor price, won't go below for this scope+rush.
+- **Online upsell door:** If funded later, add hosting+domain ~600-800rb add-on.
+- **Stage:** localhost quote sent (2026-06-24). Awaiting DP commit.
+- **Next:** Wait DP + contoh surat. If DP today, start build to chase end-June deadline. If still budget-stuck, hold floor (do not drop below 1.2jt for full CRUD).
 
 ---
 
