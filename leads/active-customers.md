@@ -145,8 +145,8 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Industry:** Herbal products / retail
 - **Request:** Online store. Confirming scope: full e-commerce (cart + payment) vs catalog + WA.
 - **Demo sent:** rielcode.com/demos/ (no herbal-specific demo; e-commerce structure same)
-- **Stage:** scoping (2026-06-21). Awaiting scope reply.
-- **Next:** Confirm e-commerce vs catalog, then quote (online ~5jt / katalog ~2jt, minus LAUNCH10).
+- **Stage:** parked, prepping product (2026-06-24). Cust replied "sedang kita siapin produknya". Azriel said disiapkan dulu santai, kabari kalau sudah ada gambaran. Scope (online vs katalog) still unanswered.
+- **Next:** Don't push. Wait cust to return with products ready + scope pick. Light check-in ~2026-07-01 if no word.
 
 ## po Cust 20 — Toko Baju
 - **Source:** Meta Ads WA lead (2026-06-21)
