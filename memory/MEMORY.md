@@ -1,5 +1,7 @@
 # Memory Index
 
+- [DP Terms 20/80](feedback_dp_terms_20_80.md) -- Rielcode payment = DP 20% upfront / 80% on finish, never default 50/50
+
 - [WA No Customer Pleasing](feedback_wa_no_customer_pleasing.md) -- WA/lead drafts professional + plain, no hype/pleasing openers ("wah cocok banget kak"); state facts direct
 
 - [Cust 3 Frontiersin Clone](project_cust3_frontiersin_clone.md) -- wants frontiersin.org clone "sama persis namun dimodifikasi", self-picked Premium; lock LOOK vs FUNCTION before quoting
