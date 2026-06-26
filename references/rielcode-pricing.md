@@ -65,7 +65,7 @@ Full-scale platform with e-commerce and admin tooling. Laravel ready.
 - Google Analytics + Search Console
 - Performance optimization
 - AI Chatbot
-- E-commerce
+- Catalog / Item List
 - Free Domain + Hosting (1 year)
 - 5 design revisions
 - 2 months support
@@ -82,8 +82,7 @@ Defined per scope after consult.
 | Google Analytics + Search Console | one time | 300k | $18 |
 | Advanced SEO | one time | 200k | $12 |
 | Login / Member System | one time | 500k | $30 |
-| E-Commerce | one time | from 1,000k | from $58 |
-| Blog / News Section | one time | 400k | $24 |
+| Catalog / Item List | one time | from 1,000k | from $58 |
 | Extra Page | per page | 85k | $5 |
 | Maintenance Support | monthly | 300k | $18 |
 | Priority Delivery (50% faster) | one time | 300k | $18 |
@@ -99,7 +98,7 @@ When auditing a site, map detected features to the closest package:
 | 2-5 pages, no CMS | Pro (lower end) | upsell CMS |
 | 3-5 pages + CMS/blog | Pro | core offering |
 | 6-10 pages, admin, chatbot | Premium | full platform |
-| E-commerce / cart / checkout | Pro or Premium + E-Commerce add-on | from 1jt add-on |
+| E-commerce / catalog / item list | Pro or Premium + Catalog / Item List add-on | from 1jt add-on |
 
 ## NOTES
 

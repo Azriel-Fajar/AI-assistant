@@ -17,5 +17,5 @@ Rielcode.com redesign launch, target date 2026-06-10. New editorial site (serif 
 - Footage = scroll-pan of real site screenshot captured from local `http://127.0.0.1:8000/en/`. If site changes, re-screenshot and re-render Reel (also update `SITE_H` in LaunchAd.tsx to new screenshot height).
 - After Jun 30: deactivate `LAUNCH10` in admin (no expiry field in schema).
 - Per-referrer video variants: `LaunchAd.tsx` compositions take optional `code` prop (defaults to brand `LAUNCH10`). Badge auto-shrinks for long codes. VO is code-aware: `code === CODE` uses `vo-launch-code.mp3` (speaks LAUNCH10), else `vo-launch-code-ref.mp3` (code-agnostic). Both Reel CodeScene and the 3 statics (StaticVO) are code-aware.
-- Batch render referral codes: `node render-referrals.mjs` (or pass codes as args) → `out/referrals/<CODE>/{reel,feed,story,wa}.mp4`. Codes list at top of script. 7 codes done 2026-06-09: MISAEL67, NAND24, FRED14, CYN10, YEZ10, BRY10, LIN10 = 28 videos.
+- Batch render referral codes: `node render-referrals.mjs` (or pass codes as args) → `out/referrals/<CODE>/{reel,feed,story,wa}.mp4`. Codes list at top of script. 7 codes done 2026-06-09: SIDE07, NAND24, FRED14, CYN10, YEZ10, BRY10, LIN10 = 28 videos.
 See [[reference_remotion_video_project]], [[feedback_video_voiceover]], and [[feedback_remotion_serialize_renders]].

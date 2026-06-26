@@ -12,7 +12,7 @@ import { mkdirSync } from "node:fs";
 import { join } from "node:path";
 
 // Referral codes from the admin panel. Edit this list as codes change.
-const CODES = ["MISAEL67", "NAND24", "FRED14", "CYN10", "YEZ10", "BRY10", "LIN10"];
+const CODES = ["SIDE07", "NAND24", "FRED14", "CYN10", "YEZ10", "BRY10", "LIN10", "CAL10"];
 
 // composition id -> output filename
 const ASSETS = [

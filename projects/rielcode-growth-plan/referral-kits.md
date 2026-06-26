@@ -180,4 +180,4 @@ Status: new -> replied -> quoted -> closed / lost
 
 ## Codes -> admin
 
-Each code must exist in admin (rielcode-laravel) with 10% off + active. Verify before sending kits. Codes: BRY10, YEZ10, CYN10, LIN10, NAND24, FRED14, MISAEL67.
+Each code must exist in admin (rielcode-laravel) with 10% off + active. Verify before sending kits. Codes: BRY10, YEZ10, CYN10, LIN10, NAND24, FRED14, SIDE07, CAL10.

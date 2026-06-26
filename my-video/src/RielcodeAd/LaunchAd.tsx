@@ -28,7 +28,7 @@ export type StaticProps = { code?: string };
 // Launch facts — single source of truth. `code` is overridable per referrer.
 export const CODE = "LAUNCH10";
 export const OFFER = "10% off any package";
-export const VALID = "Valid through 30 June 2026";
+export const VALID = "No expiry — always valid";
 const SITE_IMG = "site-redesign.png";
 const SITE_W = 1920;
 const SITE_H = 5524;
