@@ -12,21 +12,24 @@
 
 | Package | Price (IDR) | Referrer Gets       |
 | ------- | ----------- | ------------------- |
-| Student | IDR 499k    | ~IDR 50k            |
-| Starter | IDR 999k    | ~IDR 100k           |
-| Pro     | IDR 2.499jt | ~IDR 250k           |
-| Premium | IDR 4.999jt | ~IDR 500k           |
+| Student | IDR 500k    | IDR 50k            |
+| Starter | IDR 1jt     | IDR 100k           |
+| Pro     | IDR 2jt     | IDR 200k           |
+| Premium | IDR 5jt     | IDR 500k           |
 | Custom  | Varies      | 10% of agreed price |
 
 ## Referral Code Registry
 
 | Friend Name   | Referral Code |
 | ------------- | ------------- |
-| Misael Syalom | MISAEL67      |
+| Misael Syalom | SIDE07        |
 | Fando         | FRED14        |
 | Aufaanandi    | NAND24        |
 | Cynthia       | CYN10         |
 | Yeza          | YEZ10         |
+| Calvin        | CAL10         |
+| Bryan         | BRY10         |
+| Carlene       | LIN10         |
 
 > Add each friend's name and assigned code here.
 
