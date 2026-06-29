@@ -145,10 +145,12 @@ async function findNextOrSubmit(page) {
 
   try {
     await page.goto(FORM_URL, { waitUntil: 'networkidle', timeout: 60000 });
+    await page.waitForTimeout(2000);
 
     if (firstRun) {
       await waitEnter('First run — sign in to Google in the open window, then press Enter here to continue: ');
       await page.goto(FORM_URL, { waitUntil: 'networkidle', timeout: 60000 });
+      await page.waitForTimeout(2000);
     }
 
     let formTitle = '';
@@ -239,6 +241,7 @@ async function findNextOrSubmit(page) {
             continue;
           }
           await radio.scrollIntoViewIfNeeded().catch(() => {});
+          await page.waitForTimeout(300);
           await radio.click();
           const checked = await radio.getAttribute('aria-checked');
           if (checked !== 'true') {
@@ -383,6 +386,38 @@ async function findNextOrSubmit(page) {
         };
         fs.writeFileSync(archivePath, JSON.stringify(archivePayload, null, 2));
         console.log(`Archived → ${archivePath}`);
+
+        // Study doc: every question, full text, all options, chosen answer.
+        const study = allQuestions.map((q, idx) => {
+          const match = answers.find(a => q.heading.includes(a.keyword));
+          return {
+            number: idx + 1,
+            question: q.heading,
+            options: q.options,
+            answer: match ? match.answer : null,
+          };
+        });
+        const moduleTag = (ANSWERS_PATH.match(/answers_(module\d+)/i) || [])[1] || formIdFromUrl(FORM_URL);
+        const studyJsonPath = path.join(outDir, `study_${moduleTag}.json`);
+        fs.writeFileSync(studyJsonPath, JSON.stringify(study, null, 2));
+        console.log(`Study JSON → ${studyJsonPath}`);
+
+        const md = [];
+        md.push(`# ${formTitle || moduleTag}`);
+        md.push('');
+        for (const s of study) {
+          md.push(`## ${s.number}. ${s.question}`);
+          for (const opt of s.options) {
+            const correct = s.answer && opt === s.answer;
+            md.push(`- ${correct ? '**' + opt + '** ✅' : opt}`);
+          }
+          md.push('');
+          md.push(`**Answer:** ${s.answer || '(unanswered)'}`);
+          md.push('');
+        }
+        const studyMdPath = path.join(outDir, `study_${moduleTag}.md`);
+        fs.writeFileSync(studyMdPath, md.join('\n'));
+        console.log(`Study Markdown → ${studyMdPath}`);
       } catch (e) { console.error('Regroup/archive failed:', e.message); }
       console.log(`\n${answered}/${allQuestions.length} answered.`);
       if (miss.length) {

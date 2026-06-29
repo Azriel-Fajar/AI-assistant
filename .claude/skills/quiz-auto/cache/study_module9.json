@@ -1,0 +1,552 @@
+[
+  {
+    "number": 1,
+    "question": "What does GDPR regulate?\n*",
+    "options": [
+      "Credit card transaction security standards",
+      "Password complexity requirements",
+      "Collection and processing of personal data in the EU",
+      "Network access control policies"
+    ],
+    "answer": "Collection and processing of personal data in the EU"
+  },
+  {
+    "number": 2,
+    "question": "In the context of security risk formula: Risk = ?\n*",
+    "options": [
+      "Impact × Likelihood",
+      "Exploit × Attack Vector",
+      "Threat × Vulnerability",
+      "Asset Value × Threat Level"
+    ],
+    "answer": "Impact × Likelihood"
+  },
+  {
+    "number": 3,
+    "question": "Which type of security assessment focuses on verifying adherence to laws and regulations?\n*",
+    "options": [
+      "Penetration Test",
+      "Compliance Audit",
+      "Technical Audit",
+      "Risk-Based Audit"
+    ],
+    "answer": "Compliance Audit"
+  },
+  {
+    "number": 4,
+    "question": "What does the CIA Triad stand for in network security?\n*",
+    "options": [
+      "Cryptography – Identification – Access",
+      "Control – Inspection – Authentication",
+      "Compliance – Investigation – Authorization",
+      "Confidentiality – Integrity – Availability"
+    ],
+    "answer": "Confidentiality – Integrity – Availability"
+  },
+  {
+    "number": 5,
+    "question": "Which regulatory standard specifically applies to organizations handling credit card transactions?\n*",
+    "options": [
+      "GDPR",
+      "SOX",
+      "PCI DSS",
+      "HIPAA"
+    ],
+    "answer": "PCI DSS"
+  },
+  {
+    "number": 6,
+    "question": "What is the purpose of a Business Impact Analysis (BIA)?\n*",
+    "options": [
+      "To train employees on phishing awareness",
+      "To create firewall rules for the network",
+      "To install security software on all systems",
+      "To assess potential losses from threat scenarios"
+    ],
+    "answer": "To assess potential losses from threat scenarios"
+  },
+  {
+    "number": 7,
+    "question": "A cryptographic hash algorithm is characterized by which property?\n*",
+    "options": [
+      "It requires a key to decrypt the output",
+      "It transforms a string into a fixed-length hash that cannot be reversed",
+      "It converts plaintext to ciphertext reversibly",
+      "It encrypts data symmetrically"
+    ],
+    "answer": "It transforms a string into a fixed-length hash that cannot be reversed"
+  },
+  {
+    "number": 8,
+    "question": "Which component of the CIA Triad ensures that data is accurate and has not been tampered with?\n*",
+    "options": [
+      "Availability",
+      "Authentication",
+      "Confidentiality",
+      "Integrity"
+    ],
+    "answer": "Integrity"
+  },
+  {
+    "number": 9,
+    "question": "What is the primary purpose of encryption?\n*",
+    "options": [
+      "To convert plaintext into ciphertext to ensure confidentiality",
+      "To increase data transfer speed",
+      "To verify the identity of users",
+      "To compress data for efficient storage"
+    ],
+    "answer": "To convert plaintext into ciphertext to ensure confidentiality"
+  },
+  {
+    "number": 10,
+    "question": "What is a vulnerability in an information security context?\n*",
+    "options": [
+      "A type of malware that encrypts data",
+      "A deliberate attack on a system",
+      "An unauthorized user accessing a network",
+      "A flaw in software design that can be exploited to bypass security"
+    ],
+    "answer": "A flaw in software design that can be exploited to bypass security"
+  },
+  {
+    "number": 11,
+    "question": "Which of the following is a use case for a cryptographic hash algorithm?\n*",
+    "options": [
+      "Secure key exchange between two parties",
+      "Protecting email content from interception",
+      "Password storage and verifying data integrity",
+      "Real-time encryption of video streams"
+    ],
+    "answer": "Password storage and verifying data integrity"
+  },
+  {
+    "number": 12,
+    "question": "What is a honeypot in the context of deception technologies?\n*",
+    "options": [
+      "A fake system designed to lure and trap attackers",
+      "A type of firewall that blocks malicious packets",
+      "A monitoring tool that captures network traffic",
+      "A tool for encrypting sensitive data"
+    ],
+    "answer": "A fake system designed to lure and trap attackers"
+  },
+  {
+    "number": 13,
+    "question": "Data stored on persistent media such as an encrypted hard drive is referred to as:\n*",
+    "options": [
+      "Data in Use",
+      "Data in Processing",
+      "Data in Transit",
+      "Data at Rest"
+    ],
+    "answer": "Data at Rest"
+  },
+  {
+    "number": 14,
+    "question": "What are zero-day vulnerabilities?\n*",
+    "options": [
+      "Vulnerabilities discovered after a system has been decommissioned",
+      "Vulnerabilities that cause zero performance degradation",
+      "Vulnerabilities exploited before developers can release a patch",
+      "Vulnerabilities that only affect systems on the first day of deployment"
+    ],
+    "answer": "Vulnerabilities exploited before developers can release a patch"
+  },
+  {
+    "number": 15,
+    "question": "Which mitigation strategy is associated with external threats?\n*",
+    "options": [
+      "Firewall protection and intrusion detection systems (IDS)",
+      "Role-based access controls and user activity monitoring",
+      "Biometric authentication and physical access controls",
+      "Patch management and vulnerability scanning only"
+    ],
+    "answer": "Firewall protection and intrusion detection systems (IDS)"
+  },
+  {
+    "number": 16,
+    "question": "What is a honeynet?\n*",
+    "options": [
+      "A fake network used for broader trapping of attackers",
+      "A single fake server to attract attackers",
+      "An intrusion prevention system",
+      "A network of honeypots deployed on the public internet only"
+    ],
+    "answer": "A fake network used for broader trapping of attackers"
+  },
+  {
+    "number": 17,
+    "question": "Which state of data is protected using TLS encryption during network transmission?\n*",
+    "options": [
+      "Data in Transit",
+      "Data in Archive",
+      "Data at Rest",
+      "Data in Use"
+    ],
+    "answer": "Data in Transit"
+  },
+  {
+    "number": 18,
+    "question": "Which state of data involves securing information held in volatile memory such as RAM?\n*",
+    "options": [
+      "Data at Rest",
+      "Data in Storage",
+      "Data in Transit",
+      "Data in Use"
+    ],
+    "answer": "Data in Use"
+  },
+  {
+    "number": 19,
+    "question": "What is the primary benefit of deploying deception technologies like honeypots?\n*",
+    "options": [
+      "They encrypt all network communications automatically",
+      "They block DDoS attacks in real time",
+      "They eliminate the need for firewalls",
+      "They allow early attack detection and analysis of attacker tactics"
+    ],
+    "answer": "They allow early attack detection and analysis of attacker tactics"
+  },
+  {
+    "number": 20,
+    "question": "Internal threats are harder to detect than external threats primarily because:\n*",
+    "options": [
+      "Internal attackers always use encryption",
+      "Internal threats never involve data theft",
+      "External attacks are always more sophisticated",
+      "Insiders have legitimate access to systems"
+    ],
+    "answer": "Insiders have legitimate access to systems"
+  },
+  {
+    "number": 21,
+    "question": "Which type of malware requires no code to be written to disk and is particularly hard to detect?\n*",
+    "options": [
+      "Ransomware",
+      "Fileless Malware",
+      "Spyware",
+      "Adware"
+    ],
+    "answer": "Fileless Malware"
+  },
+  {
+    "number": 22,
+    "question": "What is the primary intent of a Denial of Service (DoS) attack?\n*",
+    "options": [
+      "To disrupt service and deny users access",
+      "To redirect DNS queries to malicious servers",
+      "To steal sensitive data from the target",
+      "To install malware on all connected devices"
+    ],
+    "answer": "To disrupt service and deny users access"
+  },
+  {
+    "number": 23,
+    "question": "Which of the following is an example of an internal threat?\n*",
+    "options": [
+      "A phishing email from an external sender",
+      "A botnet launching a DDoS attack",
+      "A hacker from a foreign country probing open ports",
+      "An employee accidentally leaking sensitive data"
+    ],
+    "answer": "An employee accidentally leaking sensitive data"
+  },
+  {
+    "number": 24,
+    "question": "What is a botnet?\n*",
+    "options": [
+      "A collection of compromised computers controlled remotely for malicious purposes",
+      "A tool used for penetration testing",
+      "A network of firewalls configured to block malicious traffic",
+      "A type of encryption used in banking applications"
+    ],
+    "answer": "A collection of compromised computers controlled remotely for malicious purposes"
+  },
+  {
+    "number": 25,
+    "question": "Which DDoS mitigation strategy involves monitoring for unusual traffic patterns?\n*",
+    "options": [
+      "Response Plan",
+      "Traffic Filtering",
+      "Redundancy Implementation",
+      "Early Detection"
+    ],
+    "answer": "Early Detection"
+  },
+  {
+    "number": 26,
+    "question": "Fileless malware typically persists on a system using which method?\n*",
+    "options": [
+      "Installing executable files in system directories",
+      "Replacing legitimate system drivers",
+      "Modifying registry entries and using scripting tools like PowerShell",
+      "Writing malicious code to the hard drive"
+    ],
+    "answer": "Modifying registry entries and using scripting tools like PowerShell"
+  },
+  {
+    "number": 27,
+    "question": "What does footprinting involve in the context of enumeration attacks?\n*",
+    "options": [
+      "Physically accessing server rooms to steal hardware",
+      "Overloading switch CAM tables with fake MAC addresses",
+      "Injecting malicious scripts into web applications",
+      "Network topology discovery and security configurations via social engineering or port scanning"
+    ],
+    "answer": "Network topology discovery and security configurations via social engineering or port scanning"
+  },
+  {
+    "number": 28,
+    "question": "Which DDoS attack type exploits misconfigured DNS servers to amplify attack traffic?\n*",
+    "options": [
+      "ICMP Flood",
+      "MAC Flooding",
+      "DNS Amplification",
+      "SYN Flood"
+    ],
+    "answer": "DNS Amplification"
+  },
+  {
+    "number": 29,
+    "question": "What technique is used in network enumeration to identify system or software versions?\n*",
+    "options": [
+      "Fingerprinting",
+      "MAC flooding",
+      "Footprinting",
+      "ARP spoofing"
+    ],
+    "answer": "Fingerprinting"
+  },
+  {
+    "number": 30,
+    "question": "A SYN Flood attack targets which mechanism?\n*",
+    "options": [
+      "ICMP echo requests",
+      "UDP packet fragmentation",
+      "DNS resolution process",
+      "TCP three-way handshake"
+    ],
+    "answer": "TCP three-way handshake"
+  },
+  {
+    "number": 31,
+    "question": "What is the goal of an on-path (man-in-the-middle) attack?\n*",
+    "options": [
+      "To overload a target server with traffic",
+      "To discover network topology through port scanning",
+      "To steal sensitive information or inject malware by intercepting communications",
+      "To exploit zero-day vulnerabilities in web browsers"
+    ],
+    "answer": "To steal sensitive information or inject malware by intercepting communications"
+  },
+  {
+    "number": 32,
+    "question": "What is spoofing in the context of network security?\n*",
+    "options": [
+      "Disguising oneself as a trusted entity to gain unauthorized access",
+      "Encrypting data to prevent unauthorized access",
+      "Blocking traffic from unknown IP addresses",
+      "Scanning a network for open ports and services"
+    ],
+    "answer": "Disguising oneself as a trusted entity to gain unauthorized access"
+  },
+  {
+    "number": 33,
+    "question": "Which attack type involves intercepting and possibly altering communications between two parties without their knowledge?\n*",
+    "options": [
+      "DoS attack",
+      "On-path (Man-in-the-Middle) attack",
+      "Botnet attack",
+      "VLAN hopping attack"
+    ],
+    "answer": "On-path (Man-in-the-Middle) attack"
+  },
+  {
+    "number": 34,
+    "question": "What is a rogue device in a network security context?\n*",
+    "options": [
+      "A device that has been patched with the latest firmware",
+      "A device used exclusively for penetration testing",
+      "A network device running an outdated operating system",
+      "Unauthorized hardware that connects to a network without permission"
+    ],
+    "answer": "Unauthorized hardware that connects to a network without permission"
+  },
+  {
+    "number": 35,
+    "question": "A VLAN hopping attack allows an attacker to:\n*",
+    "options": [
+      "Shut down all VLANs on a switch",
+      "Force all devices into the default VLAN",
+      "Decrypt all VLAN-tagged traffic",
+      "Access packets on a VLAN to which they normally have no access"
+    ],
+    "answer": "Access packets on a VLAN to which they normally have no access"
+  },
+  {
+    "number": 36,
+    "question": "ARP spoofing is classified as which type of attack?\n*",
+    "options": [
+      "On-path/spoofing attack",
+      "Rogue device attack",
+      "Denial of Service",
+      "Enumeration attack"
+    ],
+    "answer": "On-path/spoofing attack"
+  },
+  {
+    "number": 37,
+    "question": "Which are the two types of VLAN hopping attacks?\n*",
+    "options": [
+      "Switch spoofing and double tagging",
+      "IP spoofing and session hijacking",
+      "ARP spoofing and DNS hijacking",
+      "MAC flooding and SYN flooding"
+    ],
+    "answer": "Switch spoofing and double tagging"
+  },
+  {
+    "number": 38,
+    "question": "What is the purpose of a MAC flooding attack?\n*",
+    "options": [
+      "To redirect DNS queries to attacker-controlled servers",
+      "To overload the switch CAM table causing it to broadcast all traffic",
+      "To encrypt network traffic on a switch",
+      "To inject malicious ARP responses into the network"
+    ],
+    "answer": "To overload the switch CAM table causing it to broadcast all traffic"
+  },
+  {
+    "number": 39,
+    "question": "What happens to a switch during a successful MAC flooding attack?\n*",
+    "options": [
+      "It automatically blocks all unknown MAC addresses",
+      "It begins functioning as a hub and broadcasts all traffic",
+      "It sends an alert to the network administrator",
+      "It shuts down and stops forwarding frames"
+    ],
+    "answer": "It begins functioning as a hub and broadcasts all traffic"
+  },
+  {
+    "number": 40,
+    "question": "Which of the following is NOT a type of spoofing attack?\n*",
+    "options": [
+      "Email spoofing",
+      "IP spoofing",
+      "ARP spoofing",
+      "SYN spoofing"
+    ],
+    "answer": "SYN spoofing"
+  },
+  {
+    "number": 41,
+    "question": "Which of the following is an example of a social engineering attack?\n*",
+    "options": [
+      "Brute force password cracking",
+      "SQL injection into a web application",
+      "Phishing emails designed to trick users into revealing credentials",
+      "Exploiting a buffer overflow vulnerability"
+    ],
+    "answer": "Phishing emails designed to trick users into revealing credentials"
+  },
+  {
+    "number": 42,
+    "question": "Which password attack method tries every possible character combination?\n*",
+    "options": [
+      "Rainbow table attack",
+      "Dictionary attack",
+      "Brute force attack",
+      "Credential stuffing"
+    ],
+    "answer": "Brute force attack"
+  },
+  {
+    "number": 43,
+    "question": "Which of the following is a characteristic of a rogue DHCP server attack?\n*",
+    "options": [
+      "It can enable traffic redirection and on-path attacks",
+      "It permanently corrupts the DHCP lease database",
+      "It only affects wireless networks",
+      "It requires physical access to the target network"
+    ],
+    "answer": "It can enable traffic redirection and on-path attacks"
+  },
+  {
+    "number": 44,
+    "question": "Which is an example of a DNS attack characteristic?\n*",
+    "options": [
+      "Cache poisoning to redirect users to malicious sites",
+      "Flooding DNS servers with SYN packets",
+      "Installing rogue access points near DNS servers",
+      "Encrypting DNS queries using TLS"
+    ],
+    "answer": "Cache poisoning to redirect users to malicious sites"
+  },
+  {
+    "number": 45,
+    "question": "Shoulder surfing is a social engineering technique that involves:\n*",
+    "options": [
+      "Following an authorized person into a restricted area",
+      "Sending fraudulent emails to trick users",
+      "Observing a victim's screen or keyboard to capture sensitive information",
+      "Rummaging through an organization's discarded documents"
+    ],
+    "answer": "Observing a victim's screen or keyboard to capture sensitive information"
+  },
+  {
+    "number": 46,
+    "question": "A rogue DHCP server attack is characterized by:\n*",
+    "options": [
+      "Blocking all DHCP requests from reaching the real server",
+      "Flooding the network with ICMP echo requests",
+      "An unauthorized DHCP server distributing incorrect network configuration parameters to clients",
+      "A legitimate DHCP server that has been misconfigured"
+    ],
+    "answer": "An unauthorized DHCP server distributing incorrect network configuration parameters to clients"
+  },
+  {
+    "number": 47,
+    "question": "Tailgating (piggybacking) in social engineering refers to:\n*",
+    "options": [
+      "Installing keyloggers on public computers",
+      "Attaching malicious files to legitimate emails",
+      "Physically following an authorized person to gain access to a restricted area",
+      "Redirecting network traffic through an attacker's system"
+    ],
+    "answer": "Physically following an authorized person to gain access to a restricted area"
+  },
+  {
+    "number": 48,
+    "question": "What is the defining characteristic of social engineering attacks?\n*",
+    "options": [
+      "They rely entirely on automated malware tools",
+      "They require physical access to the target organization",
+      "They exploit technical vulnerabilities in operating systems",
+      "They manipulate human psychology rather than targeting technical weaknesses"
+    ],
+    "answer": "They manipulate human psychology rather than targeting technical weaknesses"
+  },
+  {
+    "number": 49,
+    "question": "A dictionary attack is specifically designed to target:\n*",
+    "options": [
+      "Multi-factor authentication systems",
+      "Encrypted files using rainbow tables",
+      "Systems with no password policy",
+      "Weak passwords that use common words"
+    ],
+    "answer": "Weak passwords that use common words"
+  },
+  {
+    "number": 50,
+    "question": "DNS attacks undermine which aspects of internet services?\n*",
+    "options": [
+      "Wireless signal strength and coverage",
+      "Data encryption and key management",
+      "The integrity and availability of internet services",
+      "Physical network connectivity"
+    ],
+    "answer": "The integrity and availability of internet services"
+  }
+]

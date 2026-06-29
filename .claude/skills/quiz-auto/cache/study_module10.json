@@ -1,0 +1,552 @@
+[
+  {
+    "number": 1,
+    "question": "A password is an example of which authentication factor?\n*",
+    "options": [
+      "Something you are",
+      "Something you have",
+      "Something you know",
+      "Something you do"
+    ],
+    "answer": "Something you know"
+  },
+  {
+    "number": 2,
+    "question": "Time restrictions as an authentication factor represent which category?\n*",
+    "options": [
+      "Something you do",
+      "Something you are",
+      "Somewhen you are",
+      "Somewhere you are"
+    ],
+    "answer": "Somewhen you are"
+  },
+  {
+    "number": 3,
+    "question": "A fingerprint scanner is an example of which type of authentication factor?\n*",
+    "options": [
+      "Something you have",
+      "Something you are",
+      "Something you do",
+      "Something you know"
+    ],
+    "answer": "Something you are"
+  },
+  {
+    "number": 4,
+    "question": "Which AAA component is responsible for tracking authorized and unauthorized usage of a resource by a subject?\n*",
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Accounting",
+      "Identity"
+    ],
+    "answer": "Accounting"
+  },
+  {
+    "number": 5,
+    "question": "Which of the following best defines Authentication?\n*",
+    "options": [
+      "The rights and permissions a subject is granted within a system",
+      "The method for tracking and logging user activity",
+      "Factor(s) used to prove a subject is who or what it claims to be",
+      "An account that uniquely identifies a user on the network"
+    ],
+    "answer": "Factor(s) used to prove a subject is who or what it claims to be"
+  },
+  {
+    "number": 6,
+    "question": "A smart card is classified under which authentication factor category?\n*",
+    "options": [
+      "Something you know",
+      "Somewhere you are",
+      "Something you are",
+      "Something you have"
+    ],
+    "answer": "Something you have"
+  },
+  {
+    "number": 7,
+    "question": "What does Authorization refer to in network security?\n*",
+    "options": [
+      "The unique ID assigned to each network device",
+      "The rights and permissions a subject is granted within a system or network",
+      "The process of verifying a user's identity",
+      "The tracking of user activity on the network"
+    ],
+    "answer": "The rights and permissions a subject is granted within a system or network"
+  },
+  {
+    "number": 8,
+    "question": "Geofencing as an authentication factor represents which category?\n*",
+    "options": [
+      "Something you do",
+      "Somewhen you are",
+      "Something you know",
+      "Somewhere you are"
+    ],
+    "answer": "Somewhere you are"
+  },
+  {
+    "number": 9,
+    "question": "What is the definition of Identity in the context of network access control?\n*",
+    "options": [
+      "The proof that a user is who they claim to be",
+      "The rights and permissions granted to a user within a system",
+      "The tracking of authorized and unauthorized usage of a resource",
+      "An account or ID that uniquely represents a user device or process on the network"
+    ],
+    "answer": "An account or ID that uniquely represents a user device or process on the network"
+  },
+  {
+    "number": 10,
+    "question": "Gait recognition is classified as which type of authentication factor?\n*",
+    "options": [
+      "Something you do",
+      "Something you have",
+      "Something you are",
+      "Somewhere you are"
+    ],
+    "answer": "Something you do"
+  },
+  {
+    "number": 11,
+    "question": "Which step in the Kerberos Ticket Granting Service flow involves the client presenting credentials directly to the Application Server?\n*",
+    "options": [
+      "Data Transfer",
+      "Mutual Authentication",
+      "Presenting Service Ticket",
+      "Service Request"
+    ],
+    "answer": "Presenting Service Ticket"
+  },
+  {
+    "number": 12,
+    "question": "Which access control model is described as owner-controlled access where the resource owner decides who can access it?\n*",
+    "options": [
+      "Network Access Control (NAC)",
+      "Role-Based Access Control (RBAC)",
+      "Discretionary Access Control (DAC)",
+      "Mandatory Access Control (MAC)"
+    ],
+    "answer": "Discretionary Access Control (DAC)"
+  },
+  {
+    "number": 13,
+    "question": "Which access control model assigns permissions based on a user's role within an organization?\n*",
+    "options": [
+      "Separation of Duties",
+      "Role-Based Access Control (RBAC)",
+      "Discretionary Access Control (DAC)",
+      "Privileged Access Management (PAM)"
+    ],
+    "answer": "Role-Based Access Control (RBAC)"
+  },
+  {
+    "number": 14,
+    "question": "What is the primary benefit of Single Sign-On (SSO)?\n*",
+    "options": [
+      "It increases the number of passwords a user must remember",
+      "It requires multi-factor authentication for every application",
+      "It prevents users from accessing cloud-based applications",
+      "It allows a user to authenticate once and access multiple applications without logging in separately"
+    ],
+    "answer": "It allows a user to authenticate once and access multiple applications without logging in separately"
+  },
+  {
+    "number": 15,
+    "question": "What is the purpose of Privileged Access Management (PAM)?\n*",
+    "options": [
+      "Granting users just enough rights to perform their job",
+      "Dividing tasks to prevent misuse",
+      "Providing controls to prevent abuse of privileged accounts",
+      "Assigning permissions based on user roles"
+    ],
+    "answer": "Providing controls to prevent abuse of privileged accounts"
+  },
+  {
+    "number": 16,
+    "question": "In Kerberos SSO Authentication what component is responsible for issuing the initial Ticket Granting Ticket (TGT)?\n*",
+    "options": [
+      "The Proxy Server",
+      "The KDC (Key Distribution Center) acting as Authentication Service",
+      "The Application Server",
+      "The Principal"
+    ],
+    "answer": "The KDC (Key Distribution Center) acting as Authentication Service"
+  },
+  {
+    "number": 17,
+    "question": "What does Separation of Duties mean in the context of access management?\n*",
+    "options": [
+      "Controlling access based on resource ownership",
+      "Tracking and logging all user activity",
+      "Dividing tasks among multiple users to prevent misuse",
+      "Granting users only the rights they need for their job"
+    ],
+    "answer": "Dividing tasks among multiple users to prevent misuse"
+  },
+  {
+    "number": 18,
+    "question": "Which access management principle involves granting users only the minimum rights necessary to perform their job?\n*",
+    "options": [
+      "Role-Based Access Control",
+      "Separation of Duties",
+      "Privileged Access Management",
+      "Least Privilege"
+    ],
+    "answer": "Least Privilege"
+  },
+  {
+    "number": 19,
+    "question": "What is a Privileged Account used for in access management?\n*",
+    "options": [
+      "Granting minimum rights to all users",
+      "Tracking unauthorized usage of network resources",
+      "Dividing tasks among multiple users to prevent misuse",
+      "Accounting for major system changes"
+    ],
+    "answer": "Accounting for major system changes"
+  },
+  {
+    "number": 20,
+    "question": "In the Kerberos authentication flow what does the client send to the KDC Ticket Granting Service to request access to a specific application?\n*",
+    "options": [
+      "A digital certificate",
+      "Username and password",
+      "A Service Ticket",
+      "The Ticket Granting Ticket (TGT)"
+    ],
+    "answer": "The Ticket Granting Ticket (TGT)"
+  },
+  {
+    "number": 21,
+    "question": "Which role would most appropriately be granted access to server configurations and security settings?\n*",
+    "options": [
+      "HR Manager",
+      "Developer",
+      "System Administrator",
+      "Sales Representative"
+    ],
+    "answer": "System Administrator"
+  },
+  {
+    "number": 22,
+    "question": "What security measures are used at the Internal Network layer of the Defense in Depth model?\n*",
+    "options": [
+      "Guards locks tracking devices and fences",
+      "Firewalls VPN and IDS/IPS",
+      "Subnets VLANs and IDS/IPS",
+      "Access Control Lists"
+    ],
+    "answer": "Subnets VLANs and IDS/IPS"
+  },
+  {
+    "number": 23,
+    "question": "Physical Security in the Defense in Depth model includes which of the following?\n*",
+    "options": [
+      "Access Control Lists and VLANs",
+      "OS hardening and patching",
+      "Firewalls and VPN concentrators",
+      "Guards locks tracking devices and fences"
+    ],
+    "answer": "Guards locks tracking devices and fences"
+  },
+  {
+    "number": 24,
+    "question": "What does a Switch primarily do in a network?\n*",
+    "options": [
+      "Provides wireless access to connected devices",
+      "Inspects packets for malware and policy compliance",
+      "Connects and manages communication on a network",
+      "Filters traffic based on IP addresses and ports"
+    ],
+    "answer": "Connects and manages communication on a network"
+  },
+  {
+    "number": 25,
+    "question": "What is the definition of Network Access Control (NAC)?\n*",
+    "options": [
+      "A protocol used to inspect DHCP traffic for authenticity",
+      "A dedicated interface on a switch that connects devices",
+      "A method for filtering traffic based on MAC addresses",
+      "A system to authenticate and authorize access to a network"
+    ],
+    "answer": "A system to authenticate and authorize access to a network"
+  },
+  {
+    "number": 26,
+    "question": "In the Defense in Depth model what security measures are associated with the Perimeter layer?\n*",
+    "options": [
+      "Application hardening and antivirus",
+      "Subnets VLANs and IDS/IPS",
+      "OS hardening patching and BIOS password",
+      "Firewalls VPN and IDS/IPS"
+    ],
+    "answer": "Firewalls VPN and IDS/IPS"
+  },
+  {
+    "number": 27,
+    "question": "Which layer of the Defense in Depth model uses Access Control Lists (ACLs) as its primary security measure?\n*",
+    "options": [
+      "Application",
+      "Host",
+      "Data",
+      "Internal Network"
+    ],
+    "answer": "Data"
+  },
+  {
+    "number": 28,
+    "question": "What security measures are implemented at the Host layer in the Defense in Depth model?\n*",
+    "options": [
+      "User education and security documents",
+      "Subnets VLANs and IDS/IPS",
+      "OS hardening patching and BIOS password",
+      "Application hardening and antivirus"
+    ],
+    "answer": "OS hardening patching and BIOS password"
+  },
+  {
+    "number": 29,
+    "question": "Which of the following is the outermost layer of the Defense in Depth model?\n*",
+    "options": [
+      "Policies Procedures and Awareness",
+      "Physical Security",
+      "Perimeter",
+      "Internal Network"
+    ],
+    "answer": "Policies Procedures and Awareness"
+  },
+  {
+    "number": 30,
+    "question": "Which layer of the Defense in Depth model includes application hardening and antivirus?\n*",
+    "options": [
+      "Host",
+      "Application",
+      "Internal Network",
+      "Data"
+    ],
+    "answer": "Application"
+  },
+  {
+    "number": 31,
+    "question": "What is the purpose of enabling Router Advertisement Guard (RA) on a switch?\n*",
+    "options": [
+      "To protect against rogue router advertisements on the network",
+      "To prevent unauthorized DHCP server responses",
+      "To authenticate users via the EAP protocol",
+      "To limit connections to known MAC addresses"
+    ],
+    "answer": "To protect against rogue router advertisements on the network"
+  },
+  {
+    "number": 32,
+    "question": "Which of the following is a function of a Proxy Server?\n*",
+    "options": [
+      "Deconstructs and analyzes packets to ensure rule compliance and enforces company policies",
+      "Provides OS-level hardening and patching services",
+      "Filters traffic entering or leaving a network segment based on an ACL",
+      "Authenticates users using the Kerberos protocol"
+    ],
+    "answer": "Deconstructs and analyzes packets to ensure rule compliance and enforces company policies"
+  },
+  {
+    "number": 33,
+    "question": "What does stateful inspection mean in the context of firewall filtering?\n*",
+    "options": [
+      "Tracking the state of active connections to determine which packets are allowed",
+      "Filtering based on content keywords within the packet payload",
+      "Filtering traffic based solely on the source IP address",
+      "Filtering based on the reputation of the destination website"
+    ],
+    "answer": "Tracking the state of active connections to determine which packets are allowed"
+  },
+  {
+    "number": 34,
+    "question": "Which port security measure uses the EAP protocol to authenticate devices before granting network access?\n*",
+    "options": [
+      "MAC filtering",
+      "802.1x authentication",
+      "Router Advertisement Guard (RA)",
+      "DHCP snooping"
+    ],
+    "answer": "802.1x authentication"
+  },
+  {
+    "number": 35,
+    "question": "Which of the following is a Firewall filtering criterion?\n*",
+    "options": [
+      "Content keywords",
+      "URLs and domain names",
+      "Reputation of websites",
+      "Source and destination port numbers"
+    ],
+    "answer": "Source and destination port numbers"
+  },
+  {
+    "number": 36,
+    "question": "Which of the following is a Proxy Server filtering criterion?\n*",
+    "options": [
+      "URLs domain names and content keywords",
+      "Source and destination IP addresses",
+      "Source and destination port numbers",
+      "Stateful inspection of packet headers"
+    ],
+    "answer": "URLs domain names and content keywords"
+  },
+  {
+    "number": 37,
+    "question": "What is a Switch Port?\n*",
+    "options": [
+      "A software rule that controls traffic flow",
+      "A protocol for authenticating wireless clients",
+      "A dedicated interface on a switch that connects devices",
+      "A virtual local area network segment"
+    ],
+    "answer": "A dedicated interface on a switch that connects devices"
+  },
+  {
+    "number": 38,
+    "question": "Which of the following is a recommended port security practice to prevent unauthorized devices from connecting to unused switch ports?\n*",
+    "options": [
+      "Configure MAC filtering only on critical ports",
+      "Disable unneeded ports on the switch",
+      "Enable DHCP snooping on all ports",
+      "Implement Router Advertisement Guard on all ports"
+    ],
+    "answer": "Disable unneeded ports on the switch"
+  },
+  {
+    "number": 39,
+    "question": "What is the primary function of a Firewall in network security?\n*",
+    "options": [
+      "Filters all traffic and blocks or allows it based on an ACL",
+      "Manages and redirects requests to control internet access",
+      "Deconstructs and analyzes packets to enforce company policies",
+      "Provides wireless authentication using EAP"
+    ],
+    "answer": "Filters all traffic and blocks or allows it based on an ACL"
+  },
+  {
+    "number": 40,
+    "question": "Which port security measure helps prevent rogue DHCP servers from assigning IP addresses on a network?\n*",
+    "options": [
+      "Implementing 802.1x authentication",
+      "Enabling Router Advertisement Guard (RA)",
+      "Configuring DHCP snooping",
+      "Configuring MAC filtering"
+    ],
+    "answer": "Configuring DHCP snooping"
+  },
+  {
+    "number": 41,
+    "question": "Which of the following scenarios correctly illustrates the Least Privilege principle?\n*",
+    "options": [
+      "All employees are given read and write access to all company databases",
+      "A sales representative is granted access to the financial database and accounting software",
+      "A system administrator receives the same access rights as a regular end user",
+      "A developer is given access only to development tools and code repositories needed for their work"
+    ],
+    "answer": "A developer is given access only to development tools and code repositories needed for their work"
+  },
+  {
+    "number": 42,
+    "question": "What is the risk of an overly permissive ACL on a firewall?\n*",
+    "options": [
+      "It prevents the firewall from performing stateful inspection",
+      "It allows traffic that should be denied potentially exposing the network to threats",
+      "It disables logging of network events",
+      "It blocks all legitimate traffic causing service disruptions"
+    ],
+    "answer": "It allows traffic that should be denied potentially exposing the network to threats"
+  },
+  {
+    "number": 43,
+    "question": "A network administrator wants to limit switch connections to only known devices. Which feature should be configured?\n*",
+    "options": [
+      "Router Advertisement Guard",
+      "MAC filtering",
+      "DHCP snooping",
+      "802.1x authentication"
+    ],
+    "answer": "MAC filtering"
+  },
+  {
+    "number": 44,
+    "question": "According to the slide on Two Truths and a Lie which statement about firewalls is FALSE?\n*",
+    "options": [
+      "Proxy servers can filter based on content keywords",
+      "Firewalls deconstruct and analyze packets to ensure rule compliance before forwarding",
+      "Firewalls are positioned to filter traffic entering or leaving a network segment",
+      "Firewalls use ACLs to block or allow traffic"
+    ],
+    "answer": "Firewalls deconstruct and analyze packets to ensure rule compliance before forwarding"
+  },
+  {
+    "number": 45,
+    "question": "What security risk does improper logging settings on a firewall create?\n*",
+    "options": [
+      "It prevents the firewall from enforcing ACL rules correctly",
+      "It makes it difficult to detect and investigate security incidents",
+      "It enables unauthorized MAC addresses to connect to the switch",
+      "It allows rogue DHCP servers to assign IP addresses"
+    ],
+    "answer": "It makes it difficult to detect and investigate security incidents"
+  },
+  {
+    "number": 46,
+    "question": "Which of the following is a common firewall misconfiguration?\n*",
+    "options": [
+      "Enabling DHCP snooping on all ports",
+      "Configuring MAC filtering for all network devices",
+      "Failure to apply an implicit deny rule",
+      "Regularly updating switch firmware"
+    ],
+    "answer": "Failure to apply an implicit deny rule"
+  },
+  {
+    "number": 47,
+    "question": "Which of the following best describes the Kerberos Key Distribution Center (KDC)?\n*",
+    "options": [
+      "A switch component that manages port security",
+      "A device that filters network traffic based on ACLs",
+      "A proxy server that enforces company internet use policies",
+      "A server that provides both Authentication Service and Ticket Granting Service functions"
+    ],
+    "answer": "A server that provides both Authentication Service and Ticket Granting Service functions"
+  },
+  {
+    "number": 48,
+    "question": "A company wants to ensure that no single employee can complete a sensitive financial transaction alone. Which access management principle should be applied?\n*",
+    "options": [
+      "Role-Based Access Control",
+      "Separation of Duties",
+      "Least Privilege",
+      "Privileged Access Management"
+    ],
+    "answer": "Separation of Duties"
+  },
+  {
+    "number": 49,
+    "question": "What problem arises from an overly prohibitive ACL on a firewall?\n*",
+    "options": [
+      "It logs too much data causing storage issues",
+      "It blocks legitimate traffic disrupting normal network operations",
+      "It disables the implicit deny rule",
+      "It allows unauthorized traffic to pass through the network"
+    ],
+    "answer": "It blocks legitimate traffic disrupting normal network operations"
+  },
+  {
+    "number": 50,
+    "question": "Which of the following accurately describes the goal of Defense in Depth?\n*",
+    "options": [
+      "Applying multiple layers of security policies and mechanisms to safeguard data integrity confidentiality and availability",
+      "Relying solely on firewalls and VPNs to protect the network perimeter",
+      "Ensuring all users have privileged access to system resources",
+      "Using a single strong security mechanism to protect all network resources"
+    ],
+    "answer": "Applying multiple layers of security policies and mechanisms to safeguard data integrity confidentiality and availability"
+  }
+]
