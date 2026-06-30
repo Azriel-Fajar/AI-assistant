@@ -274,6 +274,20 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 
 ---
 
+## po Cust 32 — PT Sinar Mas Benua (Pupuk & Herbisida)
+- **Source:** Meta Ads WA lead "Free Demo" (2026-06-30). +62 851-2667-5059.
+- **Type:** Commercial. Distributor pupuk, herbisida, racun rumput. Own-brand "Amy" line: Amy Peak (herbisida sistemik 525 SL), Amy Quat (herbisida kontak 325 SL), Genta Xone. No existing site.
+- **Request:** Best-fit website (cust said "bebas, yang terbaik"). Scoped to katalog produk + company profile, order forwarded to WhatsApp.
+- **Demo sent:** rielcode.com/demos/katalog-pertanian/ — green agro theme, beranda (company profile) + katalog (filter per kategori herbisida/pupuk/pestisida + search) + product detail (kemasan 1L/5L/20L, qty, WA order). Brand shown = "Sinar Tani" (generic). Mobile nav fixed. Listed in demos hub.
+- **Key requirement (2026-06-30):** "Harganya wajib saya berikan per produk." CLARIFIED: means each product DISPLAYS its own price, and CUST supplies the prices for US to input ("Kk aj yg kasih kk"). NOT self-manage CMS. So no forced CMS upsell from this.
+- **Prices sample given:** Amy Quat 328 SL — 1L Rp60.000, 5L Rp300.000, 20L Rp1.050.000. Amy Peak "harga sama". Prices are PER-KEMASAN (1L/5L/20L differ). Demo currently shows one price + kemasan selector that doesn't change price — gap to handle at build (per-kemasan pricing) IF deal closes.
+- **Quote sent (2026-06-30):** Pro Plan Rp2jt → LAUNCH10 = **Rp1.800.000**. Catalog + company profile + WA order, domain+hosting 1yr, basic admin panel, SEO. Prices input by Rielcode (cust supplies).
+- **Gating:** Full product list collection GATED behind commit. Do NOT gather catalog/prices until cust confirms order (avoid free catalog labor on uncommitted lead).
+- **Stage:** WARM / quoted, soft-defer (2026-06-30). Saw demo (positive), got Pro 1,8jt quote, replied "Ok kk besok sy akan hbg balik ya". Will re-contact ~2026-07-01.
+- **Next:** Wait for cust to re-contact (~2026-07-01). If yes → collect full product list + per-kemasan prices, build per-kemasan pricing into demo. Light check-in ~2026-07-03 if silent. Don't push.
+
+---
+
 ## Deleted from potential customers
 
 ## ~~po Cust 1 — Jatra Scale Indonesia~~ (DELETED)
