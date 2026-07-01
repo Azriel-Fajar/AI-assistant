@@ -289,6 +289,32 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 
 ---
 
+## po Cust 33 — XL SATU AXIATA (WiFi Sales Agent)
+- **Source:** Meta Ads WA lead (2026-07-01). +62 813-9700-6865.
+- **Type:** Commercial. WiFi sales agent (jual/pasang wifi), Medan. Wants website to get more subscribers. No existing site.
+- **Area layanan:** All Medan + All Deli Serdang.
+- **Request:** Website to promote wifi subscription + pendaftaran online. Scoped: paket wifi info, area layanan, cara pasang/langganan, form pendaftaran calon pelanggan, WA contact.
+- **Key requirement:** Form pendaftaran = customer fills when agreeing to subscribe. Fields: upload KTP + Email + pilih paket + alamat pemasangan + no HP. Syarat berlangganan = KTP + Email.
+- **Demo sent:** rielcode.com/demos/iam-teknik-ac/ — closest install-service model (jasa pasang). Told it's rough draft, will redesign for wifi brand. Positive ("Ok mantap").
+- **Quote sent (2026-07-01):** Pro Plan Rp2jt → LAUNCH10 = **Rp1.800.000**. Up to 5 pages, form pendaftaran (KTP+Email+paket+alamat), CMS/Admin Panel (Basic), Advanced SEO, domain+hosting 1yr, SSL, Google Analytics, 2 revisi, 1 bulan support. DP 20% Rp360.000 to start, 80% Rp1.440.000 on finish. Delivery 7-10 hari.
+- **Stage:** WARM / quoted (2026-07-01). Sent full rincian. Awaiting reply.
+- **Next:** Wait reply. If yes → collect brand assets (logo, paket list + prices, coverage map) + start on DP. Don't push.
+
+---
+
+## po Cust 34 — Perumahan Sabaat Permai (Rumah Subsidi Kupang)
+- **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Free Demo" (2026-07-01). +62 813-5388-6771 (~Amor / Yust).
+- **Type:** Commercial. Developer perumahan subsidi. Entity **PT Sabaat Jaya Persada**, proyek **Perumahan Sabaat Permai**. Lead intro: "Yust dari Kupang NTT, bisnis Property subsidi". No existing site.
+- **Location:** Desa Penfui Timur, Kec. Kupang Tengah, Kab. Kupang, Nusa Tenggara Timur.
+- **Request:** Website tampilkan listing rumah + fitur cari/filter + admin panel biar bisa update listing sendiri. Confirmed "tentunya ada fitur cari saat update".
+- **Scope (locked):** Listing tipe unit + cari/filter status (tersedia/booking/terjual) + CMS/admin update sendiri + form ajukan KPR ke WhatsApp. = Pro tier fit.
+- **Quote (verbal):** Pro Plan Rp2jt. Add-on Catalog door if unit banyak/kompleks. LAUNCH10 available.
+- **Demo:** Built free rough demo 2026-07-01 — rielcode.com/demos/perumahan-subsidi/ (brand shown = Perumahan Sabaat Permai, warm green theme, hero + listing tipe rumah w/ cari+filter status + keunggulan subsidi + simulasi cicilan + syarat KPR + lokasi Penfui Timur + form WA). Placeholders for photos. Listed in demo hub.
+- **Stage:** demo-first chosen (2026-07-01). Cust picked "akun demonya dulu" over ordering. Demo about to be sent.
+- **Next:** Send demo link (note rough draft + customizable). Wait feedback, then close on Pro. If positive, collect real assets (logo, tipe unit + harga + status, foto, peta lokasi) + start on DP. Don't push.
+
+---
+
 ## Deleted from potential customers
 
 ## ~~po Cust 1 — Jatra Scale Indonesia~~ (DELETED)
