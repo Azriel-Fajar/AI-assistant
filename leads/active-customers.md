@@ -42,7 +42,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Industry:** Furniture
 - **Quote:** Verbal yes to Starter (Rp1jt, furniture galeri). Offered LAUNCH10 (10% off).
 - **Stage:** verbal yes, not ready (2026-06-17). Gathering funds. Reassured scope fits.
-- **Next:** Wait for kakak to confirm ready. Do not chase.
+- **Next:** Wait for kakak to confirm ready. Do not chase. Follow-up sent 2026-07-01.
 
 ## po Cust 4 — CNProject Waterproofing
 - **Brief:** `projects/CNProject Waterproofing/client-brief.md`
@@ -57,7 +57,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 ## po Cust 5 — Pelatihan Craft (craft training)
 - **Industry:** Craft training / workshop
 - **Stage:** on hold (2026-06-15). Out of town this week.
-- **Next:** Contact again next week when back in town.
+- **Next:** Contact again next week when back in town. Follow-up sent 2026-07-01.
 
 ## po Cust 7 — Jasa Branding + Homestay
 - **Industry:** Branding services + hospitality
@@ -77,7 +77,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Demo sent:** rielcode.com/demos/tour-travel/
 - **Quote:** mulai 2jt.
 - **Stage:** quoted, parked (2026-06-20). Saw demo, replied "nanti ya, kalau jadi saya hubungi". Soft defer, not dead.
-- **Next:** Don't push. Light check-in in ~2 weeks (2026-07-04).
+- **Next:** Don't push. Light check-in done early — follow-up sent 2026-07-01.
 
 ## po Cust 12 — General Contractor
 - **Source:** Meta Ads WA lead (2026-06-18)
@@ -86,14 +86,14 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Demo sent:** rielcode.com/demos/ (hub)
 - **Quote:** mulai 500rb.
 - **Stage:** qualifying (2026-06-18).
-- **Next:** Wait for landing-page reference/scope reply.
+- **Next:** Wait for landing-page reference/scope reply. Follow-up sent 2026-07-01.
 
 ## po Cust 13 — Hijab Brand
 - **Source:** Meta Ads WA lead (2026-06-18)
 - **Industry:** Apparel / hijab products
 - **Reference:** their own brand "The Veiluxe" (sent packaging photo). Premium/elegant: gold + floral pink gift boxes, VL monogram logo.
 - **Stage:** team discussion, confused on integration scope (2026-06-22). Sent 2-model explainer (katalog vs toko online).
-- **Next:** Don't push. Wait team decision. Light check-in ~2026-06-29 if no word.
+- **Next:** Don't push. Wait team decision. Follow-up sent 2026-07-01.
 
 ## po Cust 14 — Marketplace Seller (Ronald)
 - **Source:** Meta Ads WA lead (2026-06-18)
@@ -101,7 +101,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Request:** Asked for website suggestions. Open-ended.
 - **Asked:** product catalog site vs marketplace-style ordering/checkout.
 - **Stage:** discovery (2026-06-18). Awaiting reply on need.
-- **Next:** Confirm catalog vs order/checkout, then scope + quote.
+- **Next:** Confirm catalog vs order/checkout, then scope + quote. Follow-up sent 2026-07-01.
 
 ## po Cust 15 — Klinik Terapi
 - **Source:** Meta Ads WA lead (2026-06-19)
@@ -110,7 +110,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Told:** Hosting+domain 1yr included, maintenance 2 months, no hidden cost, no extra konsul fee.
 - **Quote:** Premium (self-selected, not yet finalized).
 - **Stage:** meeting-pending, soft-defer (2026-06-21). Warm buyer. Replied he + partner busy ~1 week, will reach out again. Acknowledged.
-- **Next:** Don't push. They will re-initiate. Light check-in ~2026-06-29 if no word.
+- **Next:** Don't push. They will re-initiate. Follow-up sent 2026-07-01.
 
 ## po Cust 16 — F&B Katalog
 - **Source:** Meta Ads WA lead (2026-06-19)
@@ -118,7 +118,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Request:** Catalog site (products + supporting info + company profile). No web transactions, orders forwarded to CS chat.
 - **Scope:** Still loose, will refine as it goes. Good fit Starter/Pro catalog build.
 - **Stage:** scoping (2026-06-19). Offered online meet.
-- **Next:** Propose online meet to scope catalog site. Follow up if no reply by 2026-06-22.
+- **Next:** Propose online meet to scope catalog site. Follow-up sent 2026-07-01.
 
 ## po Cust 17 — Web Rekber
 - **Source:** Inbound WA (+62 851-7427-7002), 2026-06-19
@@ -128,7 +128,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Quote:** **Rp5,500,000**, 2-3 weeks (Premium 5jt + Login/Member 500k).
 - **Demo sent:** rielcode.com/demos/rekber/ (clickable 3-role tracker built 2026-06-21, matches quoted scope).
 - **Stage:** demo sent, waiting (2026-06-21).
-- **Next:** Wait for reply on demo. Nudge toward DP if positive. Follow up if no reply by 2026-06-24.
+- **Next:** Wait for reply on demo. Nudge toward DP if positive. Follow-up sent 2026-07-01.
 
 ## po Cust 18 — izin.co.id-style Permit/Service Site
 - **Source:** Meta Ads WA lead (2026-06-19)
@@ -146,7 +146,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Request:** Online store. Confirming scope: full e-commerce (cart + payment) vs catalog + WA.
 - **Demo sent:** rielcode.com/demos/ (no herbal-specific demo; e-commerce structure same)
 - **Stage:** parked, prepping product (2026-06-24). Cust replied "sedang kita siapin produknya". Azriel said disiapkan dulu santai, kabari kalau sudah ada gambaran. Scope (online vs katalog) still unanswered.
-- **Next:** Don't push. Wait cust to return with products ready + scope pick. Light check-in ~2026-07-01 if no word.
+- **Next:** Don't push. Wait cust to return with products ready + scope pick. Follow-up sent 2026-07-01.
 
 ## po Cust 20 — Toko Baju
 - **Source:** Meta Ads WA lead (2026-06-21)
@@ -162,8 +162,9 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Request:** "Jadi 1" - one site that both sells to customers AND manages reseller network.
 - **Scope:** E-commerce + reseller/member system (login, register, manage reseller accounts).
 - **Quote:** Rp5,5jt → 4,95jt (LAUNCH10). Premium 5jt + Login/Member 500k.
-- **Stage:** quoted (2026-06-21).
-- **Next:** Wait for reply. Offered to start from front-page mockup.
+- **Demo sent:** rielcode.com/demos/ecommerce-reseller/ (matches quoted scope: jualan + reseller/member).
+- **Stage:** quoted + demo sent (2026-06-21).
+- **Next:** Wait for feedback on demo. Nudge toward DP if positive. Follow-up sent 2026-07-01.
 
 ## po Cust 22 — Massage Home Service
 - **Source:** Meta Ads WA lead (2026-06-21) | WA +62 857-1624-5929
@@ -172,7 +173,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Channel:** WhatsApp only (no Instagram yet).
 - **Quote:** Starter Rp1jt → 900rb (LAUNCH10). Includes domain + hosting 1yr + basic admin panel. Delivery 3-5 days.
 - **Stage:** thinking (2026-06-21). Sent demo restaurant-cafe, answered edit/admin/Google Ads questions. Said "ntar fikir2 dulu".
-- **Next:** Wait 1-2 days, then follow up if no reply.
+- **Next:** Wait 1-2 days, then follow up if no reply. Follow-up sent 2026-07-01.
 
 ## po Cust 23 — ABU Robocon 2027 Event (EO)
 - **Source:** Instagram Ads WA lead (2026-06-22) | WA +62 851-7309-0066
@@ -182,7 +183,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Assets:** Logo ready. PDF content + video on progress (build parallel, fill content later).
 - **Quote:** Not yet. Waiting on page count to pick tier (likely Starter/Pro info site).
 - **Stage:** scoping (2026-06-22). Confirmed scope, asked page count before quoting.
-- **Next:** Wait page count reply, then quote.
+- **Next:** Wait page count reply, then quote. Follow-up sent 2026-07-01.
 
 ## po Cust 24 — Tanur Muthmainnah Travel (Umroh mitra/agen)
 - **Source:** Instagram Ads WA lead "Demo gratis" (2026-06-22)
@@ -194,7 +195,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Assets:** Materi lengkap ada (logo, paket+harga, foto, izin/legalitas).
 - **Demo:** Sent free rough demo 2026-06-22 17:26 — https://rielcode.com/demos/umroh-travel/index.html
 - **Stage:** demo sent (2026-06-22). Cust approved building free demo first.
-- **Next:** Wait cust feedback on demo, then quote tier.
+- **Next:** Wait cust feedback on demo, then quote tier. Follow-up sent 2026-07-01.
 
 ## po Cust 25 — Sanya Lala (Bengkel Las & Interior)
 - **Source:** Facebook Ads WA lead "Tanpa DP tanpa risiko, mulai Rp500rb" (2026-06-23), no +62 858-1185-4371.
@@ -218,7 +219,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Demo updated:** 2026-06-23, 6 cards w/ real prices + added Instalasi Listrik + Cuci Toren. Commit 4aa2289.
 - **Quote sent:** 2026-06-23. Starter Plan (landing page, domain+hosting 1thn, form+WA, basic CMS, SSL). Normal Rp 1jt, LAUNCH10 promo Rp 900rb (until 30 Jun).
 - **Stage:** quote sent (2026-06-23). Awaiting decision.
-- **Next:** Wait cust reply on Rp 900rb Starter. If budget objection, scope-down (not credit).
+- **Next:** Wait cust reply on Rp 900rb Starter. If budget objection, scope-down (not credit). Follow-up sent 2026-07-01.
 
 ## po Cust 27 — Jasa Servis AC (Purwokerto)
 - **Source:** Facebook Ads WA lead "Tanpa DP tanpa risiko, mulai Rp500rb" (2026-06-23).
@@ -228,7 +229,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Feedback:** Liked demo. Wants name changed + service prices adjusted to Purwokerto market rates. Confirmed customizable.
 - **Quote sent:** 2026-06-23. Starter Plan (landing, domain+hosting 1thn, basic CMS, WA, editable). Normal Rp 1jt, LAUNCH10 Rp 900rb (until 30 Jun).
 - **Stage:** warm, asked "langkah selanjutnya" (2026-06-23). Strong buying signal. Sent next-step flow + quote.
-- **Next:** Wait reply. If yes, collect nama usaha + WA + harga pasaran Purwokerto + logo/foto, then build. If budget objection, scope-down (not credit).
+- **Next:** Wait reply. If yes, collect nama usaha + WA + harga pasaran Purwokerto + logo/foto, then build. If budget objection, scope-down (not credit). Follow-up sent 2026-07-01.
 
 ## po Cust 29 — Salmon Hasugian (Tugas Akhir, Mail Management)
 - **Source:** Facebook Ads WA lead "Demo gratis, tanpa DP tanpa risiko, mulai Rp500rb" (2026-06-24). WA +62 851-1941-3419 (~Salmon Hasugian).
@@ -246,7 +247,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Online upsell door:** If funded later, add hosting+domain ~600-800rb add-on.
 - **Stage:** STALLED on funds (2026-06-25). Pushed 1.0jt sidang/deadline rush price + DP-today CTA. Cust replied "kasih waktu dulu buat ngumpulin uangnya" (needs time to gather money). Azriel acknowledged "baik". Ball in cust court.
 - **Note:** Already dropped from 1.2jt to **1.0jt** (sidang rush concession). Floor now 1.0jt for full CRUD + setup help. Do not go lower.
-- **Next:** Wait for cust to confirm funds. Soft follow-up ~2-3 days if silent (deadline end-June = pressure works both ways; if too close, may slip past sidang). Do NOT chase aggressively, no money = no start.
+- **Next:** Wait for cust to confirm funds. Follow-up sent 2026-07-01 (deadline end-June already passing; sidang may slip). Do NOT chase aggressively, no money = no start.
 
 ---
 
@@ -257,7 +258,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Demo sent:** rielcode.com/demos/laundry/ (beranda, layanan+harga, pesan jemput online, kontak). Cust reply: "Modelnya udah sesuai sih, hanya mungkin perlu ada sedikit tambahan dan penyesuaian." Positive, minor tweaks expected.
 - **Stage:** WARM / order-form sent (2026-06-25). Cust asked "bagaimana untuk memulainya?" (buying-intent signal). Azriel sent order form https://rielcode.com/en/order?aksi=starter + LAUNCH10 10% checkout promo. Ball in cust court (fill form).
 - **Quote:** Not formally quoted yet. Demo = laundry niche, has online pesan-jemput feature = likely Pro tier (booking/order form + admin). Confirm exact scope after form. Apply LAUNCH10.
-- **Next:** Wait for form submission. Soft follow-up ~2 days if silent — nudge form, offer to walk through it. Hot lead, asked how to start, do not lose to friction.
+- **Next:** Wait for form submission. Follow-up sent 2026-07-01 (nudged form, offered walk-through). Hot lead, asked how to start, do not lose to friction.
 
 ---
 
@@ -270,7 +271,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Quote:** Pro Plan Rp 2.000.000 → LAUNCH10 10% off = **Rp 1.800.000**. Includes up to 5 pages, filterable listings, CMS/Admin Panel (cust can self-update listings — core value), WA contact form, Advanced SEO, Google Analytics, free domain+hosting 1yr, 2 revisions, 1mo support. Add-on upsell door: detailed property search, per-project pages, AI chatbot.
 - **Structure confirmed (2026-06-25):** Cust chose multi-page ("boleh liat yg ke 2") + self-update listings ("agar memudahkan dan sllu update"). = Pro tier locked (multi-page + CMS). Did NOT build 2nd demo — Pro delivers exactly what they described; avoid free preview loop.
 - **Stage:** WARM / quote sent (2026-06-25). Pro Rp 1.8jt framed as "the v2 you asked for". Soft close w/ DP ask + offer to plan page structure together after start. Ball in cust court.
-- **Next:** Wait for DP confirm. If yes → swap placeholders for real logo/photos/listings, build multi-page. Soft follow-up ~2 days if silent. Strong signal (approved demo + confirmed scope + asked price), do not lose to friction.
+- **Next:** Wait for DP confirm. If yes → swap placeholders for real logo/photos/listings, build multi-page. Follow-up sent 2026-07-01. Strong signal (approved demo + confirmed scope + asked price), do not lose to friction.
 
 ---
 
@@ -283,8 +284,8 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Prices sample given:** Amy Quat 328 SL — 1L Rp60.000, 5L Rp300.000, 20L Rp1.050.000. Amy Peak "harga sama". Prices are PER-KEMASAN (1L/5L/20L differ). Demo currently shows one price + kemasan selector that doesn't change price — gap to handle at build (per-kemasan pricing) IF deal closes.
 - **Quote sent (2026-06-30):** Pro Plan Rp2jt → LAUNCH10 = **Rp1.800.000**. Catalog + company profile + WA order, domain+hosting 1yr, basic admin panel, SEO. Prices input by Rielcode (cust supplies).
 - **Gating:** Full product list collection GATED behind commit. Do NOT gather catalog/prices until cust confirms order (avoid free catalog labor on uncommitted lead).
-- **Stage:** WARM / quoted, soft-defer (2026-06-30). Saw demo (positive), got Pro 1,8jt quote, replied "Ok kk besok sy akan hbg balik ya". Will re-contact ~2026-07-01.
-- **Next:** Wait for cust to re-contact (~2026-07-01). If yes → collect full product list + per-kemasan prices, build per-kemasan pricing into demo. Light check-in ~2026-07-03 if silent. Don't push.
+- **Stage:** WARM / price-clarify (2026-07-01). Saw demo (positive), got Pro 1,8jt quote. Re-contacted asking "website yg 490k yg mana" — anchoring on ad "mulai 500rb". No 490k tier exists; nearest = Student 500rb (1-page, no domain/hosting), does NOT fit his katalog+profile+per-produk-price+WA scope. Replied: explained Student vs his need, held Pro Rp1.8jt (LAUNCH10 honored past 30 Jun), offered scope-down talk.
+- **Next:** Wait reply. If budget objection, scope-down to Starter katalog-lite (not credit). If yes → collect full product list + per-kemasan prices, build per-kemasan pricing into demo. Don't push.
 
 ---
 

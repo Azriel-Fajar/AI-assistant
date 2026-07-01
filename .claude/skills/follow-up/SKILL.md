@@ -7,6 +7,8 @@ description: Use when Azriel needs to draft a WhatsApp follow-up message for a l
 
 Drafts a short, professional WhatsApp follow-up message tailored to where the client or lead is in the relationship. No emojis. Direct and human.
 
+**First step, always:** read `references/followup-reference.md` in the JARVIS project dir. It holds everything needed to draft (data locations, hard bans, tone, per-type structure, pricing rules). Steps below are the workflow; the reference is the content.
+
 ## Steps
 
 ### 1. Identify the situation
