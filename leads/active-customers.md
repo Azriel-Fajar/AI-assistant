@@ -313,6 +313,18 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Stage:** demo-first chosen (2026-07-01). Cust picked "akun demonya dulu" over ordering. Demo about to be sent.
 - **Next:** Send demo link (note rough draft + customizable). Wait feedback, then close on Pro. If positive, collect real assets (logo, tipe unit + harga + status, foto, peta lokasi) + start on DP. Don't push.
 
+## po Cust 35 — Terapi Holistik Barqun
+- **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Free Demo" (2026-07-02). +62 895-8005-22929. Refers to Azriel as "Dik".
+- **Type:** Terapi Islami (Barqun) — pengobatan ala Al-Quran QS Al-Baqarah 73. Mengobati keluhan medis & non medis. Parent brand PT Radja Barqun International (RBI), kontak pusat Bang Abdul 0895-3746-44456, www.barqun.id. Lead = agen/terapis, bukan pusat.
+- **Business two-sided:** (1) layanan terapi + jual alat + pelatihan terapis, (2) peluang bisnis / rekrut mitra.
+- **Scope (locked via chat):** Satu website gabungan — sisi pasien (info layanan + terapi + booking/konsultasi WA) + sisi mitra (info peluang bisnis + daftar). Rekomendasi Azriel: mulai simpel (form konsultasi manual via WA, halaman mitra info + daftar), upgrade booking otomatis + login mitra nanti kalau rame.
+- **Mitra replica angle:** Lead mau tiap anggota timnya punya salinan website sendiri (ganti nomor + data masing masing). Bukan multi-tenant system — tiap mitra = penjualan terpisah. Peluang repeat sale / reseller lane dari Barqun.
+- **Quote (soft, not committed):** Versi awal mulai dari Rp1jt (Starter: domain + hosting 1thn + panel edit sendiri). Harga khusus untuk tim/mitra yang ikut karena modelnya sama. Belum kasih angka mitra per-kepala.
+- **Demo:** Built free rough demo 2026-07-02 — rielcode.com/demos/terapi-holistik/ (brand = Terapi Holistik Barqun, green/gold Islamic theme, hero + ayat QS 73 + kenapa Barqun + manfaat lahir/batin + 3 metode alamiah/ilmiah/ilahiyah + paket mahar Rp2.05jt + tentang + jadi mitra + form konsultasi WA). WA number di demo = 0895-8005-22929. Placeholders untuk foto. Listed in demo hub. Verified render clean, no console errors.
+- **Brief assets received:** 4 brosur images (paket mahar Rp2.05jt, manfaat lahir/batin full list, manfaat terapi diagram, deskripsi lengkap Barqun Palembang). Real content sourced from these.
+- **Stage:** demo-first (2026-07-02). Lead said "masih bingung" → Azriel offered free demo to kill paralysis, lead gave brief. Demo about to be sent.
+- **Next:** Send demo link (note rough draft + customizable). Wait feedback, close on Starter/Pro. If positive, collect real assets (logo, foto tempat/alat, testimoni, nomor final) + start DP. Clarify mitra replica pricing only if he pushes. Don't push.
+
 ---
 
 ## Deleted from potential customers
