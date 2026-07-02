@@ -36,9 +36,11 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
   > Panel admin juga sudah siap dipakai. Anda bisa mengganti foto kegiatan, testimoni, dan gambar utama sendiri, serta mengubah username dan password kapan saja.
   > Langkah berikutnya, kami menunggu file testimoni dan foto kegiatan dari Anda untuk dimasukkan ke website sebelum proses online ke domain.
 
-## CUST 2 — Terapi Barqun (Palembang) — WON / ORDER PLACED 🎉
-- **Status:** WON. Rielcode's 2nd customer. Order placed 2026-07-02, awaiting DP.
-- **Source:** Facebook/Meta Ads WA lead "Free Demo / bayar setelah lihat hasil" (2026-07-02). Lead WA +62 895-8005-22929. Calls Azriel "Dik".
+## CUST 2 — Terapi Barqun (Palembang) — WON / DP PAID 🎉
+- **Status:** WON, DP PAID 2026-07-02. Rielcode's 2nd paying customer. Build starting.
+- **Customer name:** ABDUL HALIM (per transfer). Lead WA +62 895-8005-22929. Calls Azriel "Dik".
+- **DP received:** Rp200.000 via Bank Mandiri 2026-07-02 12:46 (from ABDUL HALIM → AZRIEL FAJAR WICAKSO / Mandiri 1360038400674). Bukti transfer received. Sisa Rp800.000 on completion.
+- **Source:** Facebook/Meta Ads WA lead "Free Demo / bayar setelah lihat hasil" (2026-07-02).
 - **Type:** Terapi Islami (Barqun) — pengobatan ala Al-Quran QS Al-Baqarah 73, keluhan medis & non medis. Parent brand PT Radja Barqun International (RBI), pusat Bang Abdul 0895-3746-44456, www.barqun.id. Lead = agen/terapis Palembang.
 - **Package:** Starter **Rp1.000.000** (full price, no LAUNCH10 — July). Includes domain + hosting 1thn + Basic CMS/panel. Payment 20/80 → **DP Rp200.000**, sisa Rp800.000 on completion. Delivery 3-5 hari.
 - **Invoice:** INV-2026-005-D (Deposit 20%, Rp200.000). Pay link pay.rielcode.com/i/INV-2026-005-D (token t=f586f9...67dcb). Sent 2026-07-02. Awaiting DP + bukti transfer.
@@ -49,7 +51,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Brief assets received:** 4 brosur images (paket Rp2.05jt, manfaat lahir/batin, diagram, deskripsi Barqun Palembang). Content sourced from these.
 - **Network (repeat lane):** Same owner coordinates 2 more, both skincare product+recruit — SR12 Lakukeras + Wikinara, both contact 0812-7126-274. "Fokus Barqun dulu." Offered 10% off each if continues. See memory [[project_lead_barqun_network]].
 - **Hosting/domain option (chosen 2026-07-02):** **Option 2** — customer's own account under their name (full ownership). Lead wants guidance ("mohon bimbingannya"). Azriel to bimbing pelan-pelan through Rumahweb signup + purchase.
-- **Next:** Brief DONE. Only gate = DP Rp200rb + bukti transfer → then start build. On DP: collect logo, foto tempat/alat, testimoni, confirm terapi nomor 0895-3746-44456. Guide customer through hosting/domain purchase (own account). Build (3-5 hari). Add Pelatihan Gratis section. After Barqun lands, pitch SR12 + Wikinara.
+- **Next:** DP PAID → BUILD NOW. Collect real assets (logo, foto tempat/alat, testimoni). Confirm terapi nomor 0895-3746-44456. Include Pelatihan Gratis section + foto/video promo slot. Guide customer through hosting/domain purchase (own account, Option 2) when build done. Deliver 3-5 hari, then collect sisa Rp800rb. After Barqun lands, pitch SR12 + Wikinara (10% each).
 
 ---
 
