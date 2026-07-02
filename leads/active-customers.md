@@ -44,11 +44,12 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Invoice:** INV-2026-005-D (Deposit 20%, Rp200.000). Pay link pay.rielcode.com/i/INV-2026-005-D (token t=f586f9...67dcb). Sent 2026-07-02. Awaiting DP + bukti transfer.
 - **Order:** placed via rielcode.com/en/order?aksi=starter (Starter, no add-on — Starter already includes Basic CMS). Brief form sent brief.rielcode.com (token t=f04385...640428). Azriel helping fill.
 - **Site details:** Nama website = "terapi barqun". Bahasa Indonesia. Terapi WA di site = **0895-3746-44456** (bukan nomor lead). Wants foto/video promo embedded (video penjelasan bisnis). Honest SEO (no #1 promise, findable + visitor→WA).
-- **Scope:** Satu website gabungan — sisi pasien (info terapi + manfaat + konsultasi WA) + sisi mitra (peluang bisnis + daftar). Start simpel (form konsultasi manual WA), upgrade booking/login mitra nanti kalau rame.
+- **Scope:** Satu website gabungan — sisi pasien (info terapi + manfaat + konsultasi WA) + sisi mitra (peluang bisnis + daftar) + **Pelatihan Gratis** (calon terapis, daftar via site). Start simpel (form konsultasi manual WA), upgrade booking/login mitra nanti kalau rame.
 - **Demo built:** rielcode.com/demos/terapi-holistik/ (green/gold Islamic theme, ayat QS 73, manfaat lahir/batin, 3 metode, paket mahar Rp2.05jt, jadi mitra, form WA). In demo hub. Verified clean.
 - **Brief assets received:** 4 brosur images (paket Rp2.05jt, manfaat lahir/batin, diagram, deskripsi Barqun Palembang). Content sourced from these.
 - **Network (repeat lane):** Same owner coordinates 2 more, both skincare product+recruit — SR12 Lakukeras + Wikinara, both contact 0812-7126-274. "Fokus Barqun dulu." Offered 10% off each if continues. See memory [[project_lead_barqun_network]].
-- **Next:** Collect DP Rp200rb + bukti. On DP: collect logo, foto tempat/alat, testimoni, confirm terapi nomor. Build (3-5 hari). After Barqun lands, pitch SR12 + Wikinara.
+- **Hosting/domain option (asked 2026-07-02):** Explained 2 options — (1) Azriel's account = easy edits/updates no friction (recommended), (2) customer's own or new account under their name = full ownership. Awaiting choice.
+- **Next:** Collect DP Rp200rb + bukti. Confirm hosting/domain option. On DP: collect logo, foto tempat/alat, testimoni, confirm terapi nomor. Build (3-5 hari). Add Pelatihan Gratis section. After Barqun lands, pitch SR12 + Wikinara.
 
 ---
 
