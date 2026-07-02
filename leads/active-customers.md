@@ -42,11 +42,11 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Layanan:** Bangun rumah, renovasi, kolam renang, finishing.
 - **Area kerja:** Jember (Jatim) & Bali.
 - **Assets received:** 6+ foto proyek (gedung bertingkat + scaffolding + kolam renang biru). Real work, proyek skala besar.
-- **Scope (tentative, discovery-first):** Portofolio online — hero, layanan, galeri proyek, tentang, kontak/form WA. Pro tier fit kalau mau CMS update galeri sendiri; Starter kalau statis.
-- **Quote:** Belum kasih harga. Discovery first, demo-first strategy.
-- **Demo:** Built free rough demo 2026-07-02 — rielcode.com/demos/kontraktor/ (brand = Mandiri Konstruksi, industrial theme, hero + layanan 4 + galeri proyek + area kerja Jember/Bali + tentang + form WA). WA di demo = 0822-5753-9209. Placeholders untuk foto proyek. Listed in demo hub.
-- **Stage:** demo-first (2026-07-02). Lead setuju dibuatkan demo. Demo about to be sent.
-- **Next:** Send demo link (note rough draft + customizable). Wait feedback, then close. If positive, collect real assets (logo, foto proyek HD, daftar layanan detail, testimoni). No price until demo lands. Don't push.
+- **Scope (locked):** Portofolio online 1 halaman — hero, layanan (bangun rumah/renovasi/kolam renang/finishing), galeri proyek, area kerja, tentang, kontak/form WA. Static, isi di awal. Cust said "ini baru pertama, cukup di awal dulu" (no CMS need), tapi Starter tetap include Basic CMS/admin panel = bonus, framed sebagai fitur update sendiri.
+- **Quote:** Starter Plan **Rp1.000.000** (full, LAUNCH10 EXPIRED — sudah Juli). Include: domain gratis + hosting 1thn + panel admin dasar + form WA + SSL + 1x revisi. DP 20/80 = Rp200rb start / Rp800rb on completion. Delivery 3-5 hari.
+- **Demo:** Built free rough demo 2026-07-02 — rielcode.com/demos/kontraktor/ (brand = Mandiri Konstruksi, industrial theme, hero + layanan 4 + galeri proyek + area kerja Jember/Bali + tentang + form WA). WA di demo = 0822-5753-9209. Placeholders untuk foto proyek. Listed in demo hub. Verified render clean.
+- **Stage:** quoted (2026-07-02). Demo sent, lead reply "cocok banget". Scope locked (static, isi awal). Starter Rp1jt quote about to be sent.
+- **Next:** Send Starter quote. If yes, collect assets (logo, foto proyek HD, daftar layanan detail, nama lengkap CV/usaha, nomor final) + send order link + brief form + start DP Rp200rb. Warm buyer, close-ready. Don't over-push.
 
 ---
 
