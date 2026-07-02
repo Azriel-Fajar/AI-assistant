@@ -36,6 +36,18 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
   > Panel admin juga sudah siap dipakai. Anda bisa mengganti foto kegiatan, testimoni, dan gambar utama sendiri, serta mengubah username dan password kapan saja.
   > Langkah berikutnya, kami menunggu file testimoni dan foto kegiatan dari Anda untuk dimasukkan ke website sebelum proses online ke domain.
 
+## po Cust 36 — Mandiri Konstruksi (Kontraktor Sipil & Finishing)
+- **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Free Demo" (2026-07-02). +62 822-5753-9209.
+- **Type:** Kontraktor / pemborong. "Pemborong teknik sipil & finishing", proyek sipil. Nama usaha **Mandiri Konstruksi**. No existing site.
+- **Layanan:** Bangun rumah, renovasi, kolam renang, finishing.
+- **Area kerja:** Jember (Jatim) & Bali.
+- **Assets received:** 6+ foto proyek (gedung bertingkat + scaffolding + kolam renang biru). Real work, proyek skala besar.
+- **Scope (tentative, discovery-first):** Portofolio online — hero, layanan, galeri proyek, tentang, kontak/form WA. Pro tier fit kalau mau CMS update galeri sendiri; Starter kalau statis.
+- **Quote:** Belum kasih harga. Discovery first, demo-first strategy.
+- **Demo:** Built free rough demo 2026-07-02 — rielcode.com/demos/kontraktor/ (brand = Mandiri Konstruksi, industrial theme, hero + layanan 4 + galeri proyek + area kerja Jember/Bali + tentang + form WA). WA di demo = 0822-5753-9209. Placeholders untuk foto proyek. Listed in demo hub.
+- **Stage:** demo-first (2026-07-02). Lead setuju dibuatkan demo. Demo about to be sent.
+- **Next:** Send demo link (note rough draft + customizable). Wait feedback, then close. If positive, collect real assets (logo, foto proyek HD, daftar layanan detail, testimoni). No price until demo lands. Don't push.
+
 ---
 
 ## po Cust 2 — Furniture company
