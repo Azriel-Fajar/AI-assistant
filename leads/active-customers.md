@@ -36,6 +36,22 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
   > Panel admin juga sudah siap dipakai. Anda bisa mengganti foto kegiatan, testimoni, dan gambar utama sendiri, serta mengubah username dan password kapan saja.
   > Langkah berikutnya, kami menunggu file testimoni dan foto kegiatan dari Anda untuk dimasukkan ke website sebelum proses online ke domain.
 
+## CUST 2 — Terapi Barqun (Palembang) — WON / ORDER PLACED 🎉
+- **Status:** WON. Rielcode's 2nd customer. Order placed 2026-07-02, awaiting DP.
+- **Source:** Facebook/Meta Ads WA lead "Free Demo / bayar setelah lihat hasil" (2026-07-02). Lead WA +62 895-8005-22929. Calls Azriel "Dik".
+- **Type:** Terapi Islami (Barqun) — pengobatan ala Al-Quran QS Al-Baqarah 73, keluhan medis & non medis. Parent brand PT Radja Barqun International (RBI), pusat Bang Abdul 0895-3746-44456, www.barqun.id. Lead = agen/terapis Palembang.
+- **Package:** Starter **Rp1.000.000** (full price, no LAUNCH10 — July). Includes domain + hosting 1thn + Basic CMS/panel. Payment 20/80 → **DP Rp200.000**, sisa Rp800.000 on completion. Delivery 3-5 hari.
+- **Invoice:** INV-2026-005-D (Deposit 20%, Rp200.000). Pay link pay.rielcode.com/i/INV-2026-005-D (token t=f586f9...67dcb). Sent 2026-07-02. Awaiting DP + bukti transfer.
+- **Order:** placed via rielcode.com/en/order?aksi=starter (Starter, no add-on — Starter already includes Basic CMS). Brief form sent brief.rielcode.com (token t=f04385...640428). Azriel helping fill.
+- **Site details:** Nama website = "terapi barqun". Bahasa Indonesia. Terapi WA di site = **0895-3746-44456** (bukan nomor lead). Wants foto/video promo embedded (video penjelasan bisnis). Honest SEO (no #1 promise, findable + visitor→WA).
+- **Scope:** Satu website gabungan — sisi pasien (info terapi + manfaat + konsultasi WA) + sisi mitra (peluang bisnis + daftar). Start simpel (form konsultasi manual WA), upgrade booking/login mitra nanti kalau rame.
+- **Demo built:** rielcode.com/demos/terapi-holistik/ (green/gold Islamic theme, ayat QS 73, manfaat lahir/batin, 3 metode, paket mahar Rp2.05jt, jadi mitra, form WA). In demo hub. Verified clean.
+- **Brief assets received:** 4 brosur images (paket Rp2.05jt, manfaat lahir/batin, diagram, deskripsi Barqun Palembang). Content sourced from these.
+- **Network (repeat lane):** Same owner coordinates 2 more, both skincare product+recruit — SR12 Lakukeras + Wikinara, both contact 0812-7126-274. "Fokus Barqun dulu." Offered 10% off each if continues. See memory [[project_lead_barqun_network]].
+- **Next:** Collect DP Rp200rb + bukti. On DP: collect logo, foto tempat/alat, testimoni, confirm terapi nomor. Build (3-5 hari). After Barqun lands, pitch SR12 + Wikinara.
+
+---
+
 ## po Cust 36 — Mandiri Konstruksi (Kontraktor Sipil & Finishing)
 - **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Free Demo" (2026-07-02). +62 822-5753-9209.
 - **Type:** Kontraktor / pemborong. "Pemborong teknik sipil & finishing", proyek sipil. Nama usaha **Mandiri Konstruksi**. No existing site.
@@ -324,21 +340,6 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Demo:** Built free rough demo 2026-07-01 — rielcode.com/demos/perumahan-subsidi/ (brand shown = Perumahan Sabaat Permai, warm green theme, hero + listing tipe rumah w/ cari+filter status + keunggulan subsidi + simulasi cicilan + syarat KPR + lokasi Penfui Timur + form WA). Placeholders for photos. Listed in demo hub.
 - **Stage:** demo sent + engaged (2026-07-02). Cust reviewing, sending real data via brosur: tipe rumah, harga mulai Rp185jt (lokasi Kaniti Kupang), syarat KPR per brosur. Said "yang lain bisa diperbaiki" — warm, wants penyesuaian tampilan + isi data. Not yet ordered / no DP agreed.
 - **Next:** Close on Pro Rp2jt (LAUNCH10 available). Once cust confirms demo model fits, lock order → collect full assets (logo, tipe unit + harga + status, foto rumah, peta Kaniti, syarat KPR full) → DP 20%. Don't push invoice before verbal yes.
-
-## po Cust 35 — Terapi Holistik Barqun
-- **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Free Demo" (2026-07-02). +62 895-8005-22929. Refers to Azriel as "Dik".
-- **Type:** Terapi Islami (Barqun) — pengobatan ala Al-Quran QS Al-Baqarah 73. Mengobati keluhan medis & non medis. Parent brand PT Radja Barqun International (RBI), kontak pusat Bang Abdul 0895-3746-44456, www.barqun.id. Lead = agen/terapis, bukan pusat.
-- **Business two-sided:** (1) layanan terapi + jual alat + pelatihan terapis, (2) peluang bisnis / rekrut mitra.
-- **Scope (locked via chat):** Satu website gabungan — sisi pasien (info layanan + terapi + booking/konsultasi WA) + sisi mitra (info peluang bisnis + daftar). Rekomendasi Azriel: mulai simpel (form konsultasi manual via WA, halaman mitra info + daftar), upgrade booking otomatis + login mitra nanti kalau rame.
-- **Mitra replica angle:** Lead mau tiap anggota timnya punya salinan website sendiri (ganti nomor + data masing masing). Bukan multi-tenant system — tiap mitra = penjualan terpisah. Peluang repeat sale / reseller lane dari Barqun.
-- **Package CLOSED:** Starter Rp1.000.000 (full price, LAUNCH10 expired — now July). Includes domain + hosting 1thn + Basic CMS/panel. Payment 20/80 → DP Rp200rb, sisa Rp800rb on completion. Delivery 3-5 hari.
-- **Site details (confirmed):** Nama website = "terapi barqun". Bahasa Indonesia. Terapi WA contact di site = **0895-3746-44456** (bukan nomor lead 0895-8005-22929). Wants foto/video promo embedded (video penjelasan bisnis di dalam site). Honest SEO set (no #1 promise, findable + visitor→WA).
-- **Add-on note:** Lead confused by CMS dropdown (Basic 600k/Standard 1000k/Advanced 1400k) on order form, tried to add Basic. Azriel clarified Starter ALREADY includes Basic CMS — pick Starter, no add-on. [[pro_plan_includes_cms]]
-- **Network (3 businesses, same owner/coordinator):** All product-sell + partner-recruit model. (1) Terapi Barqun (this order), (2) SR12 Lakukeras — skincare herbal + kosmetik MLM, mentors Kang Dewa (founder SR12) + Mas Andrie (distributor utama Sumsel), contact 0812-7126-274. (3) Wikinara — skincare, name = 4 founders (Wi: Dewi Bamsoet, Ki: Dr. Oky Pratama/Bening Clinic, Na: Ina Rachman/Sekjen APLI, Ra: Putra Siregar), contact 0812-7126-274. Lead said "fokus Barqun Palembang dulu". Incentive offered: 10% off each for SR12 + Wikinara if he continues.
-- **Demo:** Built free rough demo 2026-07-02 — rielcode.com/demos/terapi-holistik/ (green/gold Islamic theme, hero + ayat QS 73 + manfaat lahir/batin + 3 metode + paket mahar Rp2.05jt + jadi mitra + form konsultasi WA). Listed in demo hub. Verified render clean.
-- **Brief assets received:** 4 brosur images (paket mahar Rp2.05jt, manfaat lahir/batin full list, manfaat terapi diagram, deskripsi Barqun Palembang). Content sourced from these.
-- **Stage:** ORDER PLACED, awaiting brief (2026-07-02). Lead completed order (Starter). Brief form link sent: brief.rielcode.com (token t=f04385...640428). Azriel offered to help fill / rapikan for him.
-- **Next:** Wait for brief fill (or help via chat). Then send DP invoice Rp200rb, explain payment. On DP: collect logo, foto tempat/alat, testimoni, confirm terapi nomor 0895-3746-44456. Build (3-5 hari). After Barqun lands, pitch SR12 + Wikinara (10% each).
 
 ---
 
