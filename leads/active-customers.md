@@ -52,6 +52,7 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Network (repeat lane):** Same owner coordinates 2 more, both skincare product+recruit — SR12 Lakukeras + Wikinara, both contact 0812-7126-274. "Fokus Barqun dulu." Offered 10% off each if continues. See memory [[project_lead_barqun_network]].
 - **Hosting/domain option (chosen 2026-07-02):** **Option 2** — customer's own account under their name (full ownership). Lead wants guidance ("mohon bimbingannya"). Azriel to bimbing pelan-pelan through Rumahweb signup + purchase.
 - **Next:** DP PAID → BUILD NOW. Collect real assets (logo, foto tempat/alat, testimoni). Confirm terapi nomor 0895-3746-44456. Include Pelatihan Gratis section + foto/video promo slot. Guide customer through hosting/domain purchase (own account, Option 2) when build done. Deliver 3-5 hari, then collect sisa Rp800rb. After Barqun lands, pitch SR12 + Wikinara (10% each).
+- **2026-07-02 msgs sent:** notified new Google acct being made for hosting (Option 2); requested logo/foto tempat-alat/testimoni/video promo. Awaiting assets back.
 
 ---
 
@@ -343,6 +344,17 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Demo:** Built free rough demo 2026-07-01 — rielcode.com/demos/perumahan-subsidi/ (brand shown = Perumahan Sabaat Permai, warm green theme, hero + listing tipe rumah w/ cari+filter status + keunggulan subsidi + simulasi cicilan + syarat KPR + lokasi Penfui Timur + form WA). Placeholders for photos. Listed in demo hub.
 - **Stage:** demo sent + engaged (2026-07-02). Cust reviewing, sending real data via brosur: tipe rumah, harga mulai Rp185jt (lokasi Kaniti Kupang), syarat KPR per brosur. Said "yang lain bisa diperbaiki" — warm, wants penyesuaian tampilan + isi data. Not yet ordered / no DP agreed.
 - **Next:** Close on Pro Rp2jt (LAUNCH10 available). Once cust confirms demo model fits, lock order → collect full assets (logo, tipe unit + harga + status, foto rumah, peta Kaniti, syarat KPR full) → DP 20%. Don't push invoice before verbal yes.
+
+---
+
+## po Cust 37 — Toko Plafon Anugrah (Plafon PVC Cibinong)
+- **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Free Demo" (2026-07-02).
+- **Type:** Commercial. Toko jual plafon PVC. Lokasi Cibinong, Kab. Bogor. No existing site.
+- **Business type given:** "Penjualan plafon PVC." Nama usaha: "Toko Plafon Anugrah Cibinong."
+- **Scope (initial):** Katalog produk plafon (motif/polos/glossy + lis/aksesoris) + halaman harga per model + kontak/pemesanan via WhatsApp. Likely add borongan + pasang option.
+- **Demo built (2026-07-02):** rielcode.com/demos/plafon-pvc/ — blue-grey interior theme, brand "Plafon Anugrah". Beranda (company profile) + katalog (filter kategori Motif/Polos/Glossy/Lis + search) + product detail (opsi Per Lembar / Per Dus / Borongan+Pasang, qty, WA order). Placeholder photos + prices. Listed in demos hub.
+- **Stage:** demo about to send (2026-07-02). Not yet ordered, no quote sent, no DP.
+- **Next:** Send demo link w/ rough-draft note. Wait for fit confirm. If positive → scope (self-manage CMS vs we-input), quote Pro or Starter per need, LAUNCH10. Don't push price on first demo.
 
 ---
 
