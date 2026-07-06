@@ -103,3 +103,4 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - New skills need a validation step before rendering. First runs have data gaps.
 - Pro plan always includes Basic CMS. Re-read pricing file before quoting.
 - WA/follow-up tone casual-professional; ban "colek saya"/"santai aja"/"mampir nyapa".
+- Demo mobile menu = right slide-in drawer + overlay; never top slide-down panel.

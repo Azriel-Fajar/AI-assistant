@@ -51,8 +51,66 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Brief assets received:** 4 brosur images (paket Rp2.05jt, manfaat lahir/batin, diagram, deskripsi Barqun Palembang). Content sourced from these.
 - **Network (repeat lane):** Same owner coordinates 2 more, both skincare product+recruit — SR12 Lakukeras + Wikinara, both contact 0812-7126-274. "Fokus Barqun dulu." Offered 10% off each if continues. See memory [[project_lead_barqun_network]].
 - **Hosting/domain option (chosen 2026-07-02):** **Option 2** — customer's own account under their name (full ownership). Lead wants guidance ("mohon bimbingannya"). Azriel to bimbing pelan-pelan through Rumahweb signup + purchase.
+- **DELIVERED 2026-07-04:** Site LIVE at https://terapibarqun.com. Delivery + admin panel creds sent via WA. Admin: https://terapibarqun.com/admin/ (user adminbarqun / pw barqunadmin, told to change). Awaiting customer confirmation → then collect sisa Rp800rb pelunasan.
 - **Next:** DP PAID → BUILD NOW. Collect real assets (logo, foto tempat/alat, testimoni). Confirm terapi nomor 0895-3746-44456. Include Pelatihan Gratis section + foto/video promo slot. Guide customer through hosting/domain purchase (own account, Option 2) when build done. Deliver 3-5 hari, then collect sisa Rp800rb. After Barqun lands, pitch SR12 + Wikinara (10% each).
 - **2026-07-02 msgs sent:** notified new Google acct being made for hosting (Option 2); requested logo/foto tempat-alat/testimoni/video promo. Awaiting assets back.
+- **Video assets received 2026-07-02:** 6 WA videos at `C:\Users\afw14\Videos\barqun\`, transcribed via faster-whisper → `.\transcripts\`. Structured content below.
+
+### Cust 2 — Structured site content (from videos + brosur + WA)
+
+**Entity / brand**
+- PT Radja Barqun International (RBI). Tagline: "Ikhtiar Sehat, Terinspirasi dari Al-Qur'an". Method QS Al-Baqarah 73.
+- Products: Barqun (alat kerok/terapi tanduk) · Barqun Feel (tetes/minyak) · Barqun minum.
+- Barqun Academy (Squadron Barqun) — training/mitra arm, official partner RBI.
+- barqun.id listed as parent-brand site in brosur; OWNERSHIP UNCONFIRMED (Azriel still asking lead) — do NOT wire as their domain until confirmed.
+
+**Credibility (About/Trust)**
+- Endorsement: Dr. Rizwah Yuni Widawati, M.Sc ("Dr. Riz") — praktisi kesehatan/herbal/kecantikan, anggota Konsil Tenaga Kesehatan Indonesia (Kemenkes RI). Frames Barqun as pengobatan alternatif komplementer.
+
+**Services / manfaat**
+- Melancarkan aliran darah, kenyamanan, seluruh badan (kepala → badan).
+- Keluhan: tekanan darah tinggi, asam lambung, kolesterol, maag akut, batuk, demam, masuk angin, pegal/capai.
+- Kejantanan pria. Terapi Aura/kecantikan: keriput, ratakan warna kulit, cegah penuaan dini, cegah kusam.
+- ⚠️ Videos claim "sembuh 20-25 menit". DO NOT publish as guaranteed cure (health-ad/BPOM risk + honesty rule). Frame as ikhtiar/membantu + testimonial-based.
+
+**Testimonials (social proof)**
+- Bu Hj. Earlywati Rahayu (Jawa Barat) — kaki diseret → sehat + income.
+- Golfer — 3 hari golf Jepang non-stop, no fatigue (Barqun Feel).
+- Pak Darmas, Dusun Sekip. · Anandya (Owner Glo), Kalimantan. · Mbak Ana (suami, stamina).
+
+**Locations / contact**
+- Terapi Barqun Palembang, CP **0895-3746-44456**.
+- Alamat 1: Jl. Inspektur Marzuki, Lr. Tenang RT07 RW09 No.2999, Siring Agung, Ilir Barat 1, Palembang 30138.
+- Alamat 2: Jl. Swadaya Lr. Perikanan 2 No.333 RT04 RW01, Talang Aman, Kec. Kemuning, Palembang.
+
+**Business model**
+- Jual alat + terapi walk-in + peluang mitra/income (Academy). Site = pasien + mitra + Pelatihan Gratis (per scope line above).
+
+---
+
+## CUST 3 — CV. Karya Jun Teknik (Fabrikasi Stainless/Besi, Padang) — WON / DP PAID 🎉
+- **Status:** WON, DP PAID 2026-07-04. Rielcode's 3rd paying customer. Build starting.
+- **Correction (2026-07-04):** Real business name confirmed from physical nama kartu = **CV. KARYA JUN TEKNIK** (KJT logo). Previous "Nur Padang Kitchen Stainless" name was WRONG — lead had said that name in chat but actual usaha/kartu nama says CV. Karya Jun Teknik. Use CV. Karya Jun Teknik as site brand.
+- **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Tanpa DP, tanpa risiko. Mulai Rp500rb" (2026-07-03). WA +62 813-7477-0791 (also +62 821-7095-8212).
+- **Alamat:** Jl. Alai Timur No. 44A, Kota Padang.
+- **Type:** Commercial. Bengkel fabrikasi — full scope wider than kitchen set alone: Stainless Steel, Besi Hitam, Folding Gate, Canopy, Teralis, Pagar, Riling Tangga, Konstruksi Baja Ringan, Konsen Aluminium, Qubah Masjid, Composite, dll. Also does zink kitchen set + jasa bending/tekuk plat. No existing site. Portfolio-driven buyer.
+- **Client brief (submitted, order "Zulbadri" Starter):**
+  - Business: "Kami dari bengkel CV. Karya Jun Teknik mengerjakan zink kitchen set stainless steel, dikerjakan dengan mesin bending plat presisi tinggi. Pagar stainless, kanopi, balkon, lemari stainless. Juga menerima jasa bending plat/tekuk plat."
+  - Goals: Meningkatkan pasar dan penjualan.
+  - Audience: CV. Karya Jun Teknik (general customer base).
+  - Success metric: Penjualan meningkat.
+  - Brand style: Zink kitchen set (steel/industrial look, per demo already built).
+- **Demo built (2026-07-03):** rielcode.com/demos/kitchen-set-stainless/ — charcoal + brass steel theme. Hero, produk/layanan, galeri hasil kerja (filter kategori kitchen/meja/rak), estimator harga per meter (model x panjang), langkah pesan, why, testimoni, form konsultasi WA. Mobile: slide-in drawer nav + trust bar hidden. Placeholder foto/harga. Listed in demos hub.
+- **Requested tweak:** Add copy "dikerjakan dengan mesin bending/tekuk plat presisi tinggi" (not yet added to demo). Consider broadening galeri/kategori beyond kitchen set to match full scope (pagar/canopy/teralis/qubah/dll) since brief confirms wider service range.
+- **Quote sent (2026-07-03):** Starter Plan IDR 1jt — 1-2 halaman (galeri/produk/profil/kontak), free domain + hosting 1 thn, Basic CMS/Admin Panel (self-manage foto project), WA integration, SSL, revisi desain.
+- **DP received:** Rp200.000 via Bank Mandiri 2026-07-04. Bukti transfer received. Sisa Rp800.000 on completion.
+- **Logo received:** CV. Karya Jun Teknik business card photo only (KJT gear logo, yellow/red). No separate logo file exists (confirmed by lead: "Gak ada"). Recreate logo digitally from kartu nama photo, or design simple text/gear logo matching KJT style.
+- **Video assets received (2026-07-04):** 27 WA videos — proses kerja bengkel (bak truk custom, tekuk/bending plat, fabrikasi stainless/besi, dll). Real work footage, use for galeri/hero b-roll or extract stills.
+- **Assets requested (2026-07-04):** logo (no file, recreate), foto hasil kerja per kategori (have videos, need stills), daftar harga/estimasi, testimoni. Awaiting harga + testimoni.
+- **Next:** Rebrand demo from "JUN TEKNIK Stainless" to "CV. Karya Jun Teknik", swap in real KJT logo. Add bending/tekuk plat presisi copy line. Consider expanding galeri categories to match full brief scope (pagar/canopy/teralis/qubah/baja ringan/aluminium), not just kitchen set. Send invoice for remaining 80% (Rp800k) after finish.
+- **BUILD (2026-07-04):** Full PHP+MySQL starter app built at `C:\xampp\htdocs\karya-jun-teknik\` (mirrors terapi-barqun architecture: config/db/index/admin/schema). DB `karya_jun_teknik`, 7 tables. Admin panel (login admin/karyajun2026, changeable) with **Katalog Produk CRUD** (12 seeded products, prices = supplier list +10% per client instruction), Galeri Foto, Gambar Utama, Testimoni, Pesan Masuk, Pengaturan. Public site redesigned industrial-premium (brushed steel + blue), category-filter catalog, portfolio, kitchen set, testimonials, lead form, floating WA. KJT logo recreated as clean SVG (gear cog + KJT badge + wordmark), 3 variants (color/mark/white-footer). Verified end-to-end (login, product CRUD, lead submit, no overflow, 0 console errors via Apache).
+- **Staging live (2026-07-04):** exported to `Rielcode-laravel/resources/staging/karya-jun-teknik/`, committed + pushed (commit 5986ce4). Progress preview link SENT to client: https://progress.rielcode.com/?t=074761afe5f2bc5a435d6719f9cd046968ad2b1397b0b61af7e7b1e85668164d
+- **Still pending:** real photos (have 27 process videos, extract stills → upload via admin per product + galeri + hero/kitchen-set slots), real harga confirmation, testimoni. Then invoice remaining Rp800k.
 
 ---
 
@@ -355,6 +413,43 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 - **Demo built (2026-07-02):** rielcode.com/demos/plafon-pvc/ — blue-grey interior theme, brand "Plafon Anugrah". Beranda (company profile) + katalog (filter kategori Motif/Polos/Glossy/Lis + search) + product detail (opsi Per Lembar / Per Dus / Borongan+Pasang, qty, WA order). Placeholder photos + prices. Listed in demos hub.
 - **Stage:** demo about to send (2026-07-02). Not yet ordered, no quote sent, no DP.
 - **Next:** Send demo link w/ rough-draft note. Wait for fit confirm. If positive → scope (self-manage CMS vs we-input), quote Pro or Starter per need, LAUNCH10. Don't push price on first demo.
+
+---
+
+## po Cust 39 — GIG Homestay (Homestay / Penginapan, Sorong Selatan)
+- **Source:** Facebook/Meta Ads WA lead (2026-07-03). WA +62 822-3946-9877. Bisnis jasa nginap / homestay.
+- **Type:** Commercial. Homestay "GIG" (brand: gold crown logo "GIG Teminabuan"). Rooms "Deluxe Twin" IDR 500.000/malam. Benefit: Free Laundry 2pcs, WiFi, complimentary water. No existing site.
+- **Alamat:** Kompleks Pasar Kajase, Teminabuan, Kab. Sorong Selatan.
+- **Website type wanted:** Company Profile saja (confirmed by lead, not booking+payment).
+- **Demo built (2026-07-04):** rielcode.com/demos/homestay/ — brand "Aruna Homestay". Iterated 3x: (1) initial dark terracotta = too construction-like, (2) redesigned warm cream + terracotta + sage boutique (light theme, hero polaroid stack, price badge, marquee ribbon, Fraunces + Nunito Sans), (3) emojis swapped for line SVG icons. Sections: hero, rooms w/ filter (Standard/Deluxe/Family), facilities, gallery, location, booking form-to-WA. Mobile: right slide-in drawer + overlay, verified 390-1440px no overflow/errors. Listed in demos hub.
+- **Lead instructions (2026-07-04):** Sent 9 real photos of GIG Homestay (rooms, corridor, entrance). Gave address. Said "pakai saja warna yang ada jgn di ganti" = use their existing brand colors (dark + gold), don't change. NOTE: demo is currently light/warm; their brand is dark+gold — retheme to their brand at build (after DP).
+- **Quote sent (2026-07-04):** Starter Plan IDR 1jt — 1 halaman lengkap (hero, kamar, fasilitas, galeri, lokasi, form booking WA), custom design pakai foto+warna brand, free domain + hosting 1 thn, SSL, Basic CMS/Admin Panel, SEO dasar, 1x revisi. DP 20% (Rp200k) / 80% on finish.
+- **Objection (2026-07-04):** "kemahalan" + soft exit "Makasih yah dah kinfirm". Price stall, not hard no. High intent (sent photos, address, color spec). Counter drafted: LAUNCH10 → Rp900k, DP recalc Rp180k, value reframe (hosting+domain 1yr absorbs most cost). Did NOT offer Student/500k (strips hosting+domain they need).
+- **Stage:** Price objection, counter-offer (LAUNCH10 Rp900k) drafted, not yet accepted. No DP, no build.
+- **Next:** Send LAUNCH10 counter. If still balks, ask target budget (don't keep cutting). On agree → DP Rp180k, then build with their real photos + dark+gold brand + real address. Retheme demo to their brand only after DP.
+
+---
+
+## po Cust 40 — AP Rent Car (Rental Mobil)
+- **Source:** WhatsApp lead (2026-07-04). WA +62 821-5105-2789. Business account "~A'P RENT'CAR", joined Jan 2024.
+- **Type:** Commercial. Rental mobil. No existing site.
+- **Website type wanted:** Booking online (lead picked "No 2" = booking system, not just catalog or profile). Also asked booking terhubung langsung ke WhatsApp.
+- **Plan mentioned:** Lead plans to run ads ("mau di kasih iklan juga pakai ads") → site is ad landing page. Potential future ads upsell.
+- **Demo built (2026-07-05):** rielcode.com/demos/rental-mobil/ — brand "AP Rent Car", green boutique theme (Fraunces + Inter). Hero + armada (6 cars: Avanza/Innova/Brio/Hiace/Xpander/Fortuner, price/day + specs), Cara Sewa 3-step, Kenapa Kami, booking form (pilih mobil + tanggal ambil/kembali + live cost estimate + tipe sewa lepas kunci/sopir → success). Mobile: right slide-in drawer + overlay, verified 390-1440px no overflow/errors. Committed to production, listed in demos hub.
+- **Quote sent (2026-07-05):** Pro Plan IDR 2jt — website daftar mobil + form booking, booking terhubung ke WhatsApp (notif masuk WA), Panel Admin (self-manage armada + harga), free domain + hosting 1 thn, SSL, Advanced SEO. NO discount (LAUNCH10 expired July). DP 20% (Rp400k) / 80% on finish explained.
+- **Stage:** Quote + payment terms sent, lead soft-deferred "tanya istri dulu" (2026-07-05). No DP, no build. Warm, not a no.
+- **Next:** Follow up in a few days if no reply. On agree → DP Rp400k, then build with real fleet photos + prices + brand. Booking-to-WA is the hook (matches their ask). Do NOT offer LAUNCH10 (expired). If they later commit to ads, revisit ads-service upsell.
+
+---
+
+## po Cust 41 — Servis + Cuci AC (WA lead)
+- **Source:** WhatsApp lead from Meta ad (2026-07-06). WA +62 822-5195-5441. Sent 2 videos of AC service work ("Ibu Ilham service"), no text answer to discovery.
+- **Type:** Commercial. Jasa servis + cuci AC. No existing site. Same niche as Cust 26 (I'AM TEKNIK AC) but separate lead.
+- **Website type wanted:** Landing page servis AC. Asked "bisa muncul di laman pertama Google" — answered honestly no ranking guarantee, offered Advanced SEO add-on as real lever.
+- **Demo sent (2026-07-06):** rielcode.com/demos/iam-teknik-ac/ (existing AC service demo). Lead responded "ok" (passive).
+- **Quote sent (2026-07-06):** Starter Plan IDR 1jt — landing page (1-2 halaman), custom design, free domain + hosting 1 thn, SSL, admin panel (Basic), 1 revisi. DP 20% (Rp200k) / 80% on finish explained. NO LAUNCH10 (expired July).
+- **Stage:** Lead said "boleh" to proceed. Sent self-serve order form link (rielcode.com/en/order?aksi=starter, Starter preselected) for lead to fill own data → invoice generated → pay DP via TF or QRIS. Waiting on form submission.
+- **Next:** On form submit → send invoice, collect DP Rp200k (TF/QRIS). After DP → build with real brand name, logo, service list + prices, WA number, area, work photos for gallery. Advanced SEO (Rp200rb) upsell still open if they push ranking.
 
 ---
 
