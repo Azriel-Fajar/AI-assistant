@@ -59,6 +59,9 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 
 ### Cust 2 — Structured site content (from videos + brosur + WA)
 
+**⚠️ Wobble (2026-07-09):** Client messaged "Sepertinya di stop aja Dik gak menarik" → "Sudahlah Dik" → "Di stop aja Dik." Wants to stop, reason "gak menarik" (unclear = design/content vs lost interest). Sent save-attempt WA: ask which part feels lacking (tampilan/isi/arah bisnis), reframe as fixable early-stage, offer free revisions until cocok, steer away from cancel without hard-sell. Awaiting reply. NOT cancelled.
+
+
 **Entity / brand**
 - PT Radja Barqun International (RBI). Tagline: "Ikhtiar Sehat, Terinspirasi dari Al-Qur'an". Method QS Al-Baqarah 73.
 - Products: Barqun (alat kerok/terapi tanduk) · Barqun Feel (tetes/minyak) · Barqun minum.
