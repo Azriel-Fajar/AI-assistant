@@ -1,0 +1,552 @@
+[
+  {
+    "number": 1,
+    "question": "Which internet access technology uses time-division multiplexing and is ideal for businesses needing constant connections?\n*",
+    "options": [
+      "Fiber to the Premises",
+      "T1 Leased Line",
+      "Cable Internet",
+      "DSL"
+    ],
+    "answer": "T1 Leased Line"
+  },
+  {
+    "number": 2,
+    "question": "Which OSI model layer in WANs uses modems for copper cable connections?\n*",
+    "options": [
+      "Session Layer",
+      "Physical Layer",
+      "Network Layer",
+      "Data Link Layer"
+    ],
+    "answer": "Physical Layer"
+  },
+  {
+    "number": 3,
+    "question": "Which internet connection type offers the highest possible speed by eliminating all non-fiber connection points?\n*",
+    "options": [
+      "FTTP",
+      "T1 Leased Line",
+      "FTTC",
+      "Cable Internet with DOCSIS"
+    ],
+    "answer": "FTTP"
+  },
+  {
+    "number": 4,
+    "question": "What does CE and PE stand for in WAN networking?\n*",
+    "options": [
+      "Customer Edge and Provider Edge",
+      "Circuit Edge and Packet Edge",
+      "Core Edge and Peripheral Edge",
+      "Central Edge and Public Edge"
+    ],
+    "answer": "Customer Edge and Provider Edge"
+  },
+  {
+    "number": 5,
+    "question": "What is the primary difference between a WAN and a LAN?\n*",
+    "options": [
+      "WANs are faster than LANs in all cases",
+      "WANs are used exclusively by private companies",
+      "WANs only use wireless technologies",
+      "WANs cover larger geographic areas using public telecom infrastructure"
+    ],
+    "answer": "WANs cover larger geographic areas using public telecom infrastructure"
+  },
+  {
+    "number": 6,
+    "question": "What is the main disadvantage of FTTC compared to FTTP?\n*",
+    "options": [
+      "FTTC is more expensive to install",
+      "FTTC has lower reliability than FTTP",
+      "FTTC requires a final non-fiber connection to the premise",
+      "FTTC cannot support business environments"
+    ],
+    "answer": "FTTC requires a final non-fiber connection to the premise"
+  },
+  {
+    "number": 7,
+    "question": "What technology does Cable Internet use that combines fiber and coaxial cabling?\n*",
+    "options": [
+      "HFC",
+      "DOCSIS",
+      "SDSL",
+      "FTTP"
+    ],
+    "answer": "HFC"
+  },
+  {
+    "number": 8,
+    "question": "What does FTTC stand for?\n*",
+    "options": [
+      "Fiber to the Core",
+      "Fiber to the Curb",
+      "Fiber to the Campus",
+      "Fiber to the Cloud"
+    ],
+    "answer": "Fiber to the Curb"
+  },
+  {
+    "number": 9,
+    "question": "What is the maximum downlink speed of ADSL2?\n*",
+    "options": [
+      "24 Mbps",
+      "38 Mbps",
+      "10 Mbps",
+      "100 Mbps"
+    ],
+    "answer": "24 Mbps"
+  },
+  {
+    "number": 10,
+    "question": "What does WAN stand for in networking?\n*",
+    "options": [
+      "Web Application Network",
+      "Wireless Access Node",
+      "Wide Access Node",
+      "Wide Area Network"
+    ],
+    "answer": "Wide Area Network"
+  },
+  {
+    "number": 11,
+    "question": "In IPSec which mode encrypts only the payload of the IP packet?\n*",
+    "options": [
+      "Full Mode",
+      "Secure Mode",
+      "Transport Mode",
+      "Tunnel Mode"
+    ],
+    "answer": "Transport Mode"
+  },
+  {
+    "number": 12,
+    "question": "At which OSI layer does GRE operate?\n*",
+    "options": [
+      "Network Layer",
+      "Session Layer",
+      "Transport Layer",
+      "Data Link Layer"
+    ],
+    "answer": "Network Layer"
+  },
+  {
+    "number": 13,
+    "question": "What does tunneling accomplish in VPN communications?\n*",
+    "options": [
+      "It encapsulates packets within packets to create secure passages across public networks",
+      "It increases the speed of data transmission over public networks",
+      "It replaces IP addressing with MAC addressing",
+      "It eliminates the need for encryption in private networks"
+    ],
+    "answer": "It encapsulates packets within packets to create secure passages across public networks"
+  },
+  {
+    "number": 14,
+    "question": "Which IPSec mode is ideal for VPNs and securing communications across public networks?\n*",
+    "options": [
+      "Relay Mode",
+      "Bridge Mode",
+      "Tunnel Mode",
+      "Transport Mode"
+    ],
+    "answer": "Tunnel Mode"
+  },
+  {
+    "number": 15,
+    "question": "Which tunneling protocol operates at the Data Link layer and is used for digital lines?\n*",
+    "options": [
+      "TLS",
+      "PPP",
+      "IPSec",
+      "GRE"
+    ],
+    "answer": "PPP"
+  },
+  {
+    "number": 16,
+    "question": "In IPSec Transport Mode what does the Authentication Header (AH) provide?\n*",
+    "options": [
+      "Payload confidentiality",
+      "Key exchange services",
+      "Encryption of the entire IP packet",
+      "IP header integrity"
+    ],
+    "answer": "IP header integrity"
+  },
+  {
+    "number": 17,
+    "question": "What does GRE stand for?\n*",
+    "options": [
+      "Gateway Routing Exchange",
+      "Generic Routing Encapsulation",
+      "Generic Remote Encapsulation",
+      "Global Relay Encryption"
+    ],
+    "answer": "Generic Routing Encapsulation"
+  },
+  {
+    "number": 18,
+    "question": "What is the purpose of a Remote Access Policy?\n*",
+    "options": [
+      "To manage physical access to data centers",
+      "To replace firewalls in enterprise networks",
+      "To allow unrestricted access to all network resources",
+      "To define authorized access with strong identity verification and encrypted connections"
+    ],
+    "answer": "To define authorized access with strong identity verification and encrypted connections"
+  },
+  {
+    "number": 19,
+    "question": "In IPSec Tunnel Mode what is encrypted?\n*",
+    "options": [
+      "The entire IP packet including the header",
+      "Only the IP header",
+      "Only the authentication credentials",
+      "Only the data payload"
+    ],
+    "answer": "The entire IP packet including the header"
+  },
+  {
+    "number": 20,
+    "question": "Which tunneling protocol operates at the Session layer and provides security with increased overhead?\n*",
+    "options": [
+      "GRE",
+      "TLS/DTLS",
+      "IPSec",
+      "PPP"
+    ],
+    "answer": "TLS/DTLS"
+  },
+  {
+    "number": 21,
+    "question": "Which VPN protocol is considered deprecated due to security flaws?\n*",
+    "options": [
+      "PPTP",
+      "SSTP",
+      "L2TP/IPSec",
+      "IKEv2"
+    ],
+    "answer": "PPTP"
+  },
+  {
+    "number": 22,
+    "question": "What is a Clientless VPN?\n*",
+    "options": [
+      "A VPN with no security features",
+      "A VPN that operates without any server infrastructure",
+      "A VPN that uses HTML5 and WebSockets to allow access via a web browser without dedicated client software",
+      "A VPN that requires specialized hardware on the client side"
+    ],
+    "answer": "A VPN that uses HTML5 and WebSockets to allow access via a web browser without dedicated client software"
+  },
+  {
+    "number": 23,
+    "question": "What component acts as the VPN-enabled router at the network's edge in a Client-to-Site VPN?\n*",
+    "options": [
+      "VPN Gateway",
+      "VPN Client",
+      "VPN Concentrator",
+      "VPN Firewall"
+    ],
+    "answer": "VPN Gateway"
+  },
+  {
+    "number": 24,
+    "question": "Which version of IKE supports EAP for user/device authentication and has simplified setup with better NAT traversal?\n*",
+    "options": [
+      "IKEv4",
+      "IKEv2",
+      "IKEv3",
+      "IKEv1"
+    ],
+    "answer": "IKEv2"
+  },
+  {
+    "number": 25,
+    "question": "In a Split Tunnel VPN configuration what happens to internet-bound traffic?\n*",
+    "options": [
+      "All traffic is blocked until the VPN is disconnected",
+      "Internet traffic is encrypted separately from corporate traffic",
+      "Internet traffic goes directly to the internet while corporate traffic goes through the VPN",
+      "All traffic goes through the corporate VPN gateway"
+    ],
+    "answer": "Internet traffic goes directly to the internet while corporate traffic goes through the VPN"
+  },
+  {
+    "number": 26,
+    "question": "What does IKE stand for in IPSec?\n*",
+    "options": [
+      "Internal Key Encryption",
+      "Integrated Key Establishment",
+      "Internet Key Encryption",
+      "Internet Key Exchange"
+    ],
+    "answer": "Internet Key Exchange"
+  },
+  {
+    "number": 27,
+    "question": "What does MOBIKE in IKEv2 provide?\n*",
+    "options": [
+      "Multi-browser interface for key exchange",
+      "Mobile bandwidth increase for cellular networks",
+      "Mobile encryption for wireless networks",
+      "Mobility and multihoming support for mobile connectivity"
+    ],
+    "answer": "Mobility and multihoming support for mobile connectivity"
+  },
+  {
+    "number": 28,
+    "question": "Which technology does a Clientless VPN use in the browser to enable its functionality?\n*",
+    "options": [
+      "HTML5 canvas element and WebSockets",
+      "Flash Player and Silverlight",
+      "XML and SOAP",
+      "Java Applets and ActiveX"
+    ],
+    "answer": "HTML5 canvas element and WebSockets"
+  },
+  {
+    "number": 29,
+    "question": "Which VPN topology connects individual clients to a corporate network over the public Internet?\n*",
+    "options": [
+      "Hub-and-Spoke VPN",
+      "Client-to-Site VPN",
+      "Site-to-Site VPN",
+      "Mesh VPN"
+    ],
+    "answer": "Client-to-Site VPN"
+  },
+  {
+    "number": 30,
+    "question": "What is the primary purpose of IKE in IPSec?\n*",
+    "options": [
+      "To route packets across public networks",
+      "To negotiate and establish Security Associations and exchange cryptographic keys",
+      "To compress data for faster transmission",
+      "To assign IP addresses to VPN clients"
+    ],
+    "answer": "To negotiate and establish Security Associations and exchange cryptographic keys"
+  },
+  {
+    "number": 31,
+    "question": "Which SSH command holds private keys used for public key authentication?\n*",
+    "options": [
+      "ssh-add",
+      "scp",
+      "ssh-agent",
+      "ssh-keygen"
+    ],
+    "answer": "ssh-agent"
+  },
+  {
+    "number": 32,
+    "question": "What port does the Telnet daemon listen on by default?\n*",
+    "options": [
+      "Port 443",
+      "Port 23",
+      "Port 22",
+      "Port 80"
+    ],
+    "answer": "Port 23"
+  },
+  {
+    "number": 33,
+    "question": "What does the ssh-copy-id command do?\n*",
+    "options": [
+      "Adds private key identities to the authentication agent",
+      "Initiates a secure shell session",
+      "Generates a new SSH key pair",
+      "Copies a public SSH key to a remote server's authorized keys file"
+    ],
+    "answer": "Copies a public SSH key to a remote server's authorized keys file"
+  },
+  {
+    "number": 34,
+    "question": "What is a key advantage of Site-to-Site VPNs over Client-to-Site VPNs?\n*",
+    "options": [
+      "Site-to-Site VPNs are cheaper to implement in all scenarios",
+      "Site-to-Site VPNs are always-on and provide seamless connectivity between entire networks",
+      "Site-to-Site VPNs require more individual device configuration",
+      "Site-to-Site VPNs support more encryption algorithms"
+    ],
+    "answer": "Site-to-Site VPNs are always-on and provide seamless connectivity between entire networks"
+  },
+  {
+    "number": 35,
+    "question": "What TCP port does Remote Desktop Protocol (RDP) use?\n*",
+    "options": [
+      "Port 23",
+      "Port 443",
+      "Port 3389",
+      "Port 22"
+    ],
+    "answer": "Port 3389"
+  },
+  {
+    "number": 36,
+    "question": "What is the function of the scp command in SSH?\n*",
+    "options": [
+      "Manages SSH daemon configuration",
+      "Adds SSH keys to the authentication agent",
+      "Securely copies files between hosts on a network",
+      "Starts an interactive SSH session"
+    ],
+    "answer": "Securely copies files between hosts on a network"
+  },
+  {
+    "number": 37,
+    "question": "Which protocol should replace Telnet for secure remote management?\n*",
+    "options": [
+      "HTTP",
+      "FTP",
+      "SMTP",
+      "SSH"
+    ],
+    "answer": "SSH"
+  },
+  {
+    "number": 38,
+    "question": "Which SSH command is used to generate a new SSH key pair?\n*",
+    "options": [
+      "ssh-copy-id",
+      "ssh-add",
+      "ssh-keygen",
+      "ssh"
+    ],
+    "answer": "ssh-keygen"
+  },
+  {
+    "number": 39,
+    "question": "Which open-source product is an example of a Clientless VPN implementation?\n*",
+    "options": [
+      "WireGuard",
+      "Apache Guacamole",
+      "OpenVPN",
+      "Cisco AnyConnect"
+    ],
+    "answer": "Apache Guacamole"
+  },
+  {
+    "number": 40,
+    "question": "What is the main security concern with Telnet?\n*",
+    "options": [
+      "All communications including passwords are transmitted unencrypted",
+      "It is too slow for modern networks",
+      "It does not support file transfer",
+      "It requires special hardware"
+    ],
+    "answer": "All communications including passwords are transmitted unencrypted"
+  },
+  {
+    "number": 41,
+    "question": "Which authentication feature does RDP use to improve security?\n*",
+    "options": [
+      "Two-Factor Authentication (2FA)",
+      "OAuth 2.0",
+      "Network Level Authentication (NLA)",
+      "Certificate Pinning"
+    ],
+    "answer": "Network Level Authentication (NLA)"
+  },
+  {
+    "number": 42,
+    "question": "Which of the following is listed as an alternative to RDP for cross-platform remote access?\n*",
+    "options": [
+      "FTP",
+      "SMTP",
+      "VNC (Virtual Network Computing)",
+      "Telnet"
+    ],
+    "answer": "VNC (Virtual Network Computing)"
+  },
+  {
+    "number": 43,
+    "question": "What is a Jump Box in network security?\n*",
+    "options": [
+      "A tool for testing network connectivity",
+      "A physical server used for storing backup configurations",
+      "A secure access point used to manage servers in screened subnets or cloud networks",
+      "A type of firewall used in DMZ environments"
+    ],
+    "answer": "A secure access point used to manage servers in screened subnets or cloud networks"
+  },
+  {
+    "number": 44,
+    "question": "What does OOB stand for in network management?\n*",
+    "options": [
+      "Out-of-Band",
+      "Open-Base",
+      "On-Board",
+      "Over-the-Bridge"
+    ],
+    "answer": "Out-of-Band"
+  },
+  {
+    "number": 45,
+    "question": "Which protocol should be used for API communications to ensure security?\n*",
+    "options": [
+      "FTP",
+      "HTTPS",
+      "Telnet",
+      "HTTP"
+    ],
+    "answer": "HTTPS"
+  },
+  {
+    "number": 46,
+    "question": "How does a Jump Box enhance security in network administration?\n*",
+    "options": [
+      "By blocking all incoming traffic by default",
+      "By replacing the need for firewalls in the network",
+      "By acting as an intermediary that application servers only accept connections from",
+      "By encrypting all network traffic automatically"
+    ],
+    "answer": "By acting as an intermediary that application servers only accept connections from"
+  },
+  {
+    "number": 47,
+    "question": "What is the purpose of Out-of-Band (OOB) management?\n*",
+    "options": [
+      "To manage wireless devices only",
+      "To provide a dedicated channel for secure device administration especially during network outages",
+      "To replace standard network management protocols",
+      "To increase normal network throughput"
+    ],
+    "answer": "To provide a dedicated channel for secure device administration especially during network outages"
+  },
+  {
+    "number": 48,
+    "question": "What is RDP Restricted Admin (RDPRA) Mode used for?\n*",
+    "options": [
+      "To enhance security by preventing credential exposure on remote servers",
+      "To allow multiple simultaneous RDP connections",
+      "To enable RDP over UDP",
+      "To increase RDP connection speed"
+    ],
+    "answer": "To enhance security by preventing credential exposure on remote servers"
+  },
+  {
+    "number": 49,
+    "question": "What is the purpose of a Console Connection in network device management?\n*",
+    "options": [
+      "To allow direct connection for configuration and troubleshooting when network access is unavailable",
+      "To provide encrypted remote access",
+      "To increase the speed of network management",
+      "To provide wireless access to network devices"
+    ],
+    "answer": "To allow direct connection for configuration and troubleshooting when network access is unavailable"
+  },
+  {
+    "number": 50,
+    "question": "What security principle should be applied to automation accounts that use APIs?\n*",
+    "options": [
+      "Shared Credential Principle",
+      "Admin-Only Access Principle",
+      "Least Privilege Principle",
+      "Maximum Privilege Principle"
+    ],
+    "answer": "Least Privilege Principle"
+  }
+]

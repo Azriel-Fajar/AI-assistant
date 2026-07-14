@@ -1,0 +1,552 @@
+[
+  {
+    "number": 1,
+    "question": "What organization established the 802.11 wireless standards?\n*",
+    "options": [
+      "Wi-Fi Alliance",
+      "ITU",
+      "IETF",
+      "IEEE"
+    ],
+    "answer": "IEEE"
+  },
+  {
+    "number": 2,
+    "question": "What modulation technology does 802.11a use for data transmission?\n*",
+    "options": [
+      "OFDM",
+      "DSSS",
+      "CCK",
+      "MIMO"
+    ],
+    "answer": "OFDM"
+  },
+  {
+    "number": 3,
+    "question": "What does CSMA/CA stand for in the context of 802.11 MAC layer?\n*",
+    "options": [
+      "Carrier Sense Media Access with Channel Aggregation",
+      "Carrier Sense Multiple Access with Collision Avoidance",
+      "Carrier Signal Multiple Access with Channel Allocation",
+      "Channel Sense Media Access with Collision Avoidance"
+    ],
+    "answer": "Carrier Sense Multiple Access with Collision Avoidance"
+  },
+  {
+    "number": 4,
+    "question": "Which technology does 802.11b use for signal encoding?\n*",
+    "options": [
+      "DSSS and CCK",
+      "FHSS and QPSK",
+      "MU-MIMO and beamforming",
+      "OFDM and MIMO"
+    ],
+    "answer": "DSSS and CCK"
+  },
+  {
+    "number": 5,
+    "question": "What is the nominal data rate of 802.11g?\n*",
+    "options": [
+      "11 Mbps",
+      "150 Mbps",
+      "54 Mbps",
+      "72 Mbps"
+    ],
+    "answer": "54 Mbps"
+  },
+  {
+    "number": 6,
+    "question": "Which frequency band does 802.11a operate in?\n*",
+    "options": [
+      "6 GHz",
+      "5 GHz",
+      "60 GHz",
+      "2.4 GHz"
+    ],
+    "answer": "5 GHz"
+  },
+  {
+    "number": 7,
+    "question": "Which frequency band does 802.11ac (Wi-Fi 5) operate exclusively on?\n*",
+    "options": [
+      "2.4 GHz",
+      "Both 2.4 GHz and 5 GHz",
+      "5 GHz",
+      "6 GHz"
+    ],
+    "answer": "5 GHz"
+  },
+  {
+    "number": 8,
+    "question": "What is the maximum potential data rate of 802.11n under optimum conditions?\n*",
+    "options": [
+      "300 Mbps",
+      "600 Mbps",
+      "450 Mbps",
+      "150 Mbps"
+    ],
+    "answer": "600 Mbps"
+  },
+  {
+    "number": 9,
+    "question": "What is the nominal data rate of 802.11b?\n*",
+    "options": [
+      "600 Mbps",
+      "1 Mbps",
+      "11 Mbps",
+      "54 Mbps"
+    ],
+    "answer": "11 Mbps"
+  },
+  {
+    "number": 10,
+    "question": "What is a key feature of 802.11n that significantly increases bandwidth?\n*",
+    "options": [
+      "MU-MIMO and beamforming",
+      "MIMO and channel bonding",
+      "OFDM only",
+      "DSSS and CCK"
+    ],
+    "answer": "MIMO and channel bonding"
+  },
+  {
+    "number": 11,
+    "question": "Which type of satellite has high latency that limits real-time applications?\n*",
+    "options": [
+      "Low Earth Orbital (LEO) satellites",
+      "High Altitude Platform satellites",
+      "Geostationary orbital satellites",
+      "Medium Earth Orbit satellites"
+    ],
+    "answer": "Geostationary orbital satellites"
+  },
+  {
+    "number": 12,
+    "question": "What is the maximum number of spatial streams supported by 802.11ac?\n*",
+    "options": [
+      "6",
+      "16",
+      "8",
+      "4"
+    ],
+    "answer": "8"
+  },
+  {
+    "number": 13,
+    "question": "What does MU-MIMO stand for?\n*",
+    "options": [
+      "Modulated User MIMO Interface",
+      "Multi-Unit MIMO Architecture",
+      "Multi-User Multiple Input Multiple Output",
+      "Multiple User Multi-Instance Multiplexed Output"
+    ],
+    "answer": "Multi-User Multiple Input Multiple Output"
+  },
+  {
+    "number": 14,
+    "question": "What does BSSID stand for?\n*",
+    "options": [
+      "Basic Service Set Identifier",
+      "Bridged Station Service ID",
+      "Basic Subnet Service ID",
+      "Broadcast Service Set Identifier"
+    ],
+    "answer": "Basic Service Set Identifier"
+  },
+  {
+    "number": 15,
+    "question": "What does SSID stand for?\n*",
+    "options": [
+      "Service Set Identifier",
+      "System Service Identification Data",
+      "Substation Session ID",
+      "Secure Signal Identification"
+    ],
+    "answer": "Service Set Identifier"
+  },
+  {
+    "number": 16,
+    "question": "What is the peak data rate of 5G cellular technology?\n*",
+    "options": [
+      "10 Gbps",
+      "Up to 20 Gbps",
+      "1 Gbps",
+      "300 Mbps"
+    ],
+    "answer": "Up to 20 Gbps"
+  },
+  {
+    "number": 17,
+    "question": "What topology does an 802.11 infrastructure mode WLAN use?\n*",
+    "options": [
+      "Physical ring",
+      "Physical bus",
+      "Logical star",
+      "Mesh"
+    ],
+    "answer": "Logical star"
+  },
+  {
+    "number": 18,
+    "question": "What is the ideal signal strength in dBm for a wireless connection?\n*",
+    "options": [
+      "-80 dBm",
+      "0 dBm",
+      "-30 dBm",
+      "-65 dBm"
+    ],
+    "answer": "-30 dBm"
+  },
+  {
+    "number": 19,
+    "question": "What does ESSID enable in a wireless network?\n*",
+    "options": [
+      "Separate VLANs for each AP",
+      "Client roaming across channels and bands within a larger WLAN",
+      "Encryption of management frames",
+      "Point-to-point encryption between APs"
+    ],
+    "answer": "Client roaming across channels and bands within a larger WLAN"
+  },
+  {
+    "number": 20,
+    "question": "What is the purpose of Band Steering in wireless networks?\n*",
+    "options": [
+      "To reduce the number of SSIDs broadcast",
+      "To steer devices toward 5/6 GHz bands over 2.4 GHz",
+      "To increase signal power on the 2.4 GHz band",
+      "To bond multiple frequency bands together"
+    ],
+    "answer": "To steer devices toward 5/6 GHz bands over 2.4 GHz"
+  },
+  {
+    "number": 21,
+    "question": "What do heat maps represent in wireless network planning?\n*",
+    "options": [
+      "Visual representation of signal strength intensity across an area",
+      "CPU load distribution across access points",
+      "Temperature distribution in server rooms",
+      "Data throughput by time of day"
+    ],
+    "answer": "Visual representation of signal strength intensity across an area"
+  },
+  {
+    "number": 22,
+    "question": "What year was WPA2 introduced?\n*",
+    "options": [
+      "2006",
+      "2001",
+      "2010",
+      "2004"
+    ],
+    "answer": "2004"
+  },
+  {
+    "number": 23,
+    "question": "What routing protocol is used in Wireless Mesh Networks for path discovery?\n*",
+    "options": [
+      "OSPF",
+      "BGP",
+      "HWMP",
+      "RIP"
+    ],
+    "answer": "HWMP"
+  },
+  {
+    "number": 24,
+    "question": "What is a Wireless Distribution System (WDS) used for?\n*",
+    "options": [
+      "Creating a VPN tunnel between APs",
+      "Extending a wireless network where cabling is impractical",
+      "Encrypting management frames",
+      "Providing guest network access"
+    ],
+    "answer": "Extending a wireless network where cabling is impractical"
+  },
+  {
+    "number": 25,
+    "question": "How many APs can a wireless controller support at once according to the slide?\n*",
+    "options": [
+      "Up to 5000 APs",
+      "Up to 100 APs",
+      "Up to 500 APs",
+      "Up to 1500 APs"
+    ],
+    "answer": "Up to 5000 APs"
+  },
+  {
+    "number": 26,
+    "question": "At what dBm level does packet loss typically occur in a wireless network?\n*",
+    "options": [
+      "-80 dBm",
+      "-30 dBm",
+      "-65 dBm",
+      "-50 dBm"
+    ],
+    "answer": "-80 dBm"
+  },
+  {
+    "number": 27,
+    "question": "What is the topology of a Wireless Mesh Network (WMN)?\n*",
+    "options": [
+      "Logical star via AP",
+      "Mesh Basic Service Set (MBSS) with peer nodes",
+      "Point-to-point bridge",
+      "IBSS peer-to-peer"
+    ],
+    "answer": "Mesh Basic Service Set (MBSS) with peer nodes"
+  },
+  {
+    "number": 28,
+    "question": "What is the purpose of a wireless site survey?\n*",
+    "options": [
+      "To determine optimal AP placement and identify interference sources",
+      "To update firmware on wireless access points",
+      "To assign IP addresses to wireless devices",
+      "To configure SSID and security settings on all APs"
+    ],
+    "answer": "To determine optimal AP placement and identify interference sources"
+  },
+  {
+    "number": 29,
+    "question": "Which type of antenna radiates and receives signals equally in all directions?\n*",
+    "options": [
+      "Omnidirectional antenna",
+      "Unidirectional antenna",
+      "Dual-polarized antenna",
+      "Yagi antenna"
+    ],
+    "answer": "Omnidirectional antenna"
+  },
+  {
+    "number": 30,
+    "question": "Which antenna type is best suited for point-to-point communications requiring precise alignment?\n*",
+    "options": [
+      "Dual-polarized antenna",
+      "Omnidirectional antenna",
+      "Unidirectional antenna",
+      "Sector antenna"
+    ],
+    "answer": "Unidirectional antenna"
+  },
+  {
+    "number": 31,
+    "question": "What is the primary function of a captive portal?\n*",
+    "options": [
+      "To block all unauthorized DNS queries",
+      "To require users to authenticate via a web page before accessing the network",
+      "To encrypt all wireless traffic using AES-256",
+      "To manage IP address assignments to guests"
+    ],
+    "answer": "To require users to authenticate via a web page before accessing the network"
+  },
+  {
+    "number": 32,
+    "question": "What is the main risk of a rogue access point?\n*",
+    "options": [
+      "It reduces network bandwidth for legitimate users",
+      "It overloads the DHCP server with duplicate requests",
+      "It allows attackers to intercept data from unknowing users",
+      "It disables WPA3 encryption on nearby devices"
+    ],
+    "answer": "It allows attackers to intercept data from unknowing users"
+  },
+  {
+    "number": 33,
+    "question": "What major security improvement does WPA3 provide over WPA2?\n*",
+    "options": [
+      "Supports forward secrecy and individualized data encryption",
+      "Removes the need for passwords entirely",
+      "Operates only on 5 GHz band",
+      "Uses a shared encryption key for all devices"
+    ],
+    "answer": "Supports forward secrecy and individualized data encryption"
+  },
+  {
+    "number": 34,
+    "question": "What is a deauthentication attack designed to do?\n*",
+    "options": [
+      "Permanently remove a device from the network's ACL",
+      "Force devices to disconnect and reconnect to an attacker-controlled network",
+      "Crack the WPA2 encryption key using brute force",
+      "Redirect DNS queries to malicious servers"
+    ],
+    "answer": "Force devices to disconnect and reconnect to an attacker-controlled network"
+  },
+  {
+    "number": 35,
+    "question": "What is a rogue access point also known as?\n*",
+    "options": [
+      "Evil twin",
+      "Deauthenticator",
+      "Band steerer",
+      "Honey pot"
+    ],
+    "answer": "Evil twin"
+  },
+  {
+    "number": 36,
+    "question": "What does forward secrecy mean in the context of WPA3?\n*",
+    "options": [
+      "Session keys are shared publicly for transparency",
+      "All future data is automatically encrypted with quantum keys",
+      "The password is rotated every 24 hours automatically",
+      "Previously captured data cannot be decrypted even if the password is later compromised"
+    ],
+    "answer": "Previously captured data cannot be decrypted even if the password is later compromised"
+  },
+  {
+    "number": 37,
+    "question": "What is the purpose of a guest network in a wireless deployment?\n*",
+    "options": [
+      "To provide faster speeds for high-priority users",
+      "To connect IoT devices directly to the internet",
+      "To test new AP configurations without affecting main users",
+      "To offer separate access for visitors with traffic isolated from the main network"
+    ],
+    "answer": "To offer separate access for visitors with traffic isolated from the main network"
+  },
+  {
+    "number": 38,
+    "question": "How is signal strength measured in wireless networking?\n*",
+    "options": [
+      "In bits per second (bps)",
+      "In decibels milliwatts (dBm)",
+      "In watts (W)",
+      "In decibels (dB) relative to isotropic (dBi)"
+    ],
+    "answer": "In decibels milliwatts (dBm)"
+  },
+  {
+    "number": 39,
+    "question": "What does SNR stand for and what does a higher value indicate?\n*",
+    "options": [
+      "Signal-to-Noise Ratio, higher means more noise",
+      "Signal-to-Node Ratio, higher means more connected nodes",
+      "Signal-to-Noise Ratio, higher means clearer signals",
+      "Spectrum Noise Ratio, higher means better interference"
+    ],
+    "answer": "Signal-to-Noise Ratio, higher means clearer signals"
+  },
+  {
+    "number": 40,
+    "question": "Which encryption standard does WPA2 use?\n*",
+    "options": [
+      "TKIP",
+      "DES",
+      "3DES",
+      "AES"
+    ],
+    "answer": "AES"
+  },
+  {
+    "number": 41,
+    "question": "What is the BYOD acronym used for in enterprise wireless?\n*",
+    "options": [
+      "Broadcast Your Own Data",
+      "Bridge Your Own Domain",
+      "Bandwidth Your Organization Deploys",
+      "Bring Your Own Device"
+    ],
+    "answer": "Bring Your Own Device"
+  },
+  {
+    "number": 42,
+    "question": "What is the primary cause of overcapacity issues in a wireless network?\n*",
+    "options": [
+      "Too many SSIDs broadcast on the same channel",
+      "Misconfigured WPA2 enterprise authentication",
+      "Too many devices attempting to connect to a single AP",
+      "Excessive use of omnidirectional antennas"
+    ],
+    "answer": "Too many devices attempting to connect to a single AP"
+  },
+  {
+    "number": 43,
+    "question": "What is the key difference between Ad Hoc (IBSS) and Infrastructure mode WLANs?\n*",
+    "options": [
+      "Ad hoc is peer-to-peer with no AP while infrastructure uses a central AP",
+      "Infrastructure mode cannot use SSIDs while ad hoc can",
+      "Ad hoc supports more devices than infrastructure mode",
+      "Ad hoc uses WPA3 while infrastructure uses WPA2"
+    ],
+    "answer": "Ad hoc is peer-to-peer with no AP while infrastructure uses a central AP"
+  },
+  {
+    "number": 44,
+    "question": "Which solution best addresses overcapacity in a high-density wireless environment?\n*",
+    "options": [
+      "Reduce the beacon interval on all APs",
+      "Increase AP transmit power to maximum",
+      "Disable band steering",
+      "Distribute multiple APs and set client connection limits"
+    ],
+    "answer": "Distribute multiple APs and set client connection limits"
+  },
+  {
+    "number": 45,
+    "question": "What is the minimum channel spacing recommended to avoid adjacent channel interference (ACI)?\n*",
+    "options": [
+      "25 MHz",
+      "20 MHz",
+      "10 MHz",
+      "15 MHz"
+    ],
+    "answer": "25 MHz"
+  },
+  {
+    "number": 46,
+    "question": "What causes co-channel interference (CCI)?\n*",
+    "options": [
+      "Devices using overlapping channels at different frequencies",
+      "Physical obstacles blocking the signal path",
+      "Multiple devices competing on the same channel",
+      "Devices using adjacent but non-overlapping channels"
+    ],
+    "answer": "Multiple devices competing on the same channel"
+  },
+  {
+    "number": 47,
+    "question": "Which set of 802.11 standards supports seamless wireless roaming?\n*",
+    "options": [
+      "802.11k, 802.11r, 802.11v",
+      "802.11i, 802.11e, 802.11w",
+      "802.11a, 802.11b, 802.11g",
+      "802.11n, 802.11ac, 802.11ax"
+    ],
+    "answer": "802.11k, 802.11r, 802.11v"
+  },
+  {
+    "number": 48,
+    "question": "What are the optimal non-overlapping channels for 2.4 GHz Wi-Fi networks?\n*",
+    "options": [
+      "1, 2, 2003",
+      "1, 5, 2009",
+      "2, 6, 10",
+      "1, 6, 11"
+    ],
+    "answer": "1, 6, 11"
+  },
+  {
+    "number": 49,
+    "question": "What is a sticky client problem in wireless roaming?\n*",
+    "options": [
+      "A client that refuses to authenticate using WPA3",
+      "A client that connects to multiple APs simultaneously",
+      "A client that broadcasts excessive probe requests",
+      "A client that fails to switch to a closer AP with better signal"
+    ],
+    "answer": "A client that fails to switch to a closer AP with better signal"
+  },
+  {
+    "number": 50,
+    "question": "What channel utilization percentage limit is recommended to avoid adjacent channel interference?\n*",
+    "options": [
+      "75% or less",
+      "50% or less",
+      "90% or less",
+      "25% or less"
+    ],
+    "answer": "75% or less"
+  }
+]

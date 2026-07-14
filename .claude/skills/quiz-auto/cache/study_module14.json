@@ -1,0 +1,552 @@
+[
+  {
+    "number": 1,
+    "question": "Which protocol eliminates the need for Spanning Tree Protocol in a Spine and Leaf design?\n*",
+    "options": [
+      "BGP",
+      "OSPF",
+      "RIP",
+      "ECMP"
+    ],
+    "answer": "ECMP"
+  },
+  {
+    "number": 2,
+    "question": "Which component of a SAN connects servers with storage devices?\n*",
+    "options": [
+      "Tape Library",
+      "SAN Fabric",
+      "Host Bus Adapter",
+      "RAID Array"
+    ],
+    "answer": "SAN Fabric"
+  },
+  {
+    "number": 3,
+    "question": "What is the primary benefit of a Storage Area Network?\n*",
+    "options": [
+      "It replaces the need for physical hard drives entirely",
+      "It provides wireless connectivity to storage devices",
+      "It separates storage resources from the local network for dedicated access",
+      "It provides DNS resolution for storage devices"
+    ],
+    "answer": "It separates storage resources from the local network for dedicated access"
+  },
+  {
+    "number": 4,
+    "question": "In Fibre Channel terminology what is an initiator?\n*",
+    "options": [
+      "A storage device port",
+      "A server with a host bus adapter",
+      "A tape library controller",
+      "A SAN switch"
+    ],
+    "answer": "A server with a host bus adapter"
+  },
+  {
+    "number": 5,
+    "question": "What does FC stand for in the context of SANs?\n*",
+    "options": [
+      "Fast Communication",
+      "Fiber Core",
+      "Fibre Channel",
+      "Forward Connectivity"
+    ],
+    "answer": "Fibre Channel"
+  },
+  {
+    "number": 6,
+    "question": "In a Spine and Leaf topology how many hops does it take from any server to reach the backbone?\n*",
+    "options": [
+      "Single hop",
+      "Variable hops",
+      "Two hops",
+      "Three hops"
+    ],
+    "answer": "Single hop"
+  },
+  {
+    "number": 7,
+    "question": "What is the primary purpose of North-South traffic in a datacenter?\n*",
+    "options": [
+      "Communication between spine and leaf switches",
+      "External client access to datacenter resources",
+      "Server-to-server communication within the datacenter",
+      "Storage replication between RAID arrays"
+    ],
+    "answer": "External client access to datacenter resources"
+  },
+  {
+    "number": 8,
+    "question": "What is the role of the Spine layer in a Spine and Leaf topology?\n*",
+    "options": [
+      "Manages storage replication",
+      "Connects directly to end-user devices",
+      "Provides wireless access to servers",
+      "Acts as the backbone containing top-tier distribution switches"
+    ],
+    "answer": "Acts as the backbone containing top-tier distribution switches"
+  },
+  {
+    "number": 9,
+    "question": "What type of traffic refers to server-to-server communication within a datacenter?\n*",
+    "options": [
+      "Transit traffic",
+      "Overlay traffic",
+      "East-West traffic",
+      "North-South traffic"
+    ],
+    "answer": "East-West traffic"
+  },
+  {
+    "number": 10,
+    "question": "What does SAN stand for in networking?\n*",
+    "options": [
+      "Storage Area Network",
+      "Secured Access Node",
+      "Server Aggregation Node",
+      "Switched Access Network"
+    ],
+    "answer": "Storage Area Network"
+  },
+  {
+    "number": 11,
+    "question": "Which cloud deployment model offers the greatest control over privacy and security?\n*",
+    "options": [
+      "Public Cloud",
+      "Private Cloud",
+      "Hybrid Cloud",
+      "Hosted Private Cloud"
+    ],
+    "answer": "Private Cloud"
+  },
+  {
+    "number": 12,
+    "question": "What is horizontal scaling also known as?\n*",
+    "options": [
+      "Scaling Deep",
+      "Scaling Smart",
+      "Scaling Up",
+      "Scaling Out"
+    ],
+    "answer": "Scaling Out"
+  },
+  {
+    "number": 13,
+    "question": "What is the definition of scalability in cloud computing?\n*",
+    "options": [
+      "The ability to encrypt data at rest and in transit",
+      "The process of distributing content across multiple servers",
+      "The ability to automatically reduce resources during off-peak hours",
+      "The capability of a cloud system to handle a growing amount of work"
+    ],
+    "answer": "The capability of a cloud system to handle a growing amount of work"
+  },
+  {
+    "number": 14,
+    "question": "Which cloud service model provides hardware and software tools typically used for application development?\n*",
+    "options": [
+      "NaaS",
+      "SaaS",
+      "PaaS",
+      "IaaS"
+    ],
+    "answer": "PaaS"
+  },
+  {
+    "number": 15,
+    "question": "Microsoft Office 365 is an example of which cloud service model?\n*",
+    "options": [
+      "SaaS",
+      "PaaS",
+      "IaaS",
+      "DaaS"
+    ],
+    "answer": "SaaS"
+  },
+  {
+    "number": 16,
+    "question": "Which cloud service model provides virtualized computing resources over the Internet?\n*",
+    "options": [
+      "DaaS",
+      "PaaS",
+      "SaaS",
+      "IaaS"
+    ],
+    "answer": "IaaS"
+  },
+  {
+    "number": 17,
+    "question": "Which cloud deployment model uses shared resources over the Internet provided by a Cloud Service Provider?\n*",
+    "options": [
+      "Hosted Private Cloud",
+      "Hybrid Cloud",
+      "Public Cloud",
+      "Private Cloud"
+    ],
+    "answer": "Public Cloud"
+  },
+  {
+    "number": 18,
+    "question": "What distinguishes elasticity from scalability in cloud computing?\n*",
+    "options": [
+      "There is no difference between the two concepts",
+      "Elasticity automatically adjusts resources on demand while scalability handles growing workloads",
+      "Elasticity is manual while scalability is automatic",
+      "Scalability is cost-free while elasticity has usage-based costs"
+    ],
+    "answer": "Elasticity automatically adjusts resources on demand while scalability handles growing workloads"
+  },
+  {
+    "number": 19,
+    "question": "Which cloud deployment model mixes public and private cloud solutions?\n*",
+    "options": [
+      "Hosted Private Cloud",
+      "Multi-Cloud",
+      "Community Cloud",
+      "Hybrid Cloud"
+    ],
+    "answer": "Hybrid Cloud"
+  },
+  {
+    "number": 20,
+    "question": "What is Google App Engine an example of?\n*",
+    "options": [
+      "IaaS",
+      "DaaS",
+      "PaaS",
+      "SaaS"
+    ],
+    "answer": "PaaS"
+  },
+  {
+    "number": 21,
+    "question": "What are the three types of cloud instances?\n*",
+    "options": [
+      "Bare Metal PaaS and IaaS",
+      "Virtual Machines Containers and Virtual Appliances",
+      "Public Private and Hybrid instances",
+      "Servers Routers and Switches"
+    ],
+    "answer": "Virtual Machines Containers and Virtual Appliances"
+  },
+  {
+    "number": 22,
+    "question": "What is the purpose of a NAT Gateway in cloud networking?\n*",
+    "options": [
+      "To route traffic between different VPCs",
+      "To block all inbound traffic from the Internet",
+      "To allow outbound Internet access for instances without requiring a public IP",
+      "To assign public IP addresses to all virtual machines"
+    ],
+    "answer": "To allow outbound Internet access for instances without requiring a public IP"
+  },
+  {
+    "number": 23,
+    "question": "Which type of cloud instance provides complete isolation from the host system?\n*",
+    "options": [
+      "Microservice",
+      "Virtual Machine",
+      "Virtual Appliance",
+      "Container"
+    ],
+    "answer": "Virtual Machine"
+  },
+  {
+    "number": 24,
+    "question": "What does VPC stand for in cloud networking?\n*",
+    "options": [
+      "Virtual Protocol Controller",
+      "Virtual Packet Core",
+      "Virtual Private Cloud",
+      "Verified Private Cluster"
+    ],
+    "answer": "Virtual Private Cloud"
+  },
+  {
+    "number": 25,
+    "question": "How do CDN servers stay updated with current content?\n*",
+    "options": [
+      "By replicating content among themselves",
+      "By reading from a central database every 24 hours",
+      "By using blockchain synchronization",
+      "By pulling from origin servers on each request"
+    ],
+    "answer": "By replicating content among themselves"
+  },
+  {
+    "number": 26,
+    "question": "What is the primary function of a Virtual Private Cloud (VPC)?\n*",
+    "options": [
+      "To provide free public internet access to cloud users",
+      "To serve as an isolated environment within a public cloud for secure application deployment",
+      "To replace on-premises hardware with cloud-based equivalents",
+      "To manage software licenses across multiple cloud providers"
+    ],
+    "answer": "To serve as an isolated environment within a public cloud for secure application deployment"
+  },
+  {
+    "number": 27,
+    "question": "What is a Virtual Appliance?\n*",
+    "options": [
+      "A pre-configured VM or container that emulates hardware functions",
+      "A physical server dedicated to a single application",
+      "A cloud billing management tool",
+      "A container orchestration platform"
+    ],
+    "answer": "A pre-configured VM or container that emulates hardware functions"
+  },
+  {
+    "number": 28,
+    "question": "What distinguishes a public subnet from a private subnet in cloud networking?\n*",
+    "options": [
+      "Public subnets require an Internet gateway and default route while private subnets remain private without one",
+      "Public subnets are within VPCs while private subnets are outside VPCs",
+      "Public subnets are free while private subnets are billed",
+      "Public subnets use IPv6 while private subnets use IPv4"
+    ],
+    "answer": "Public subnets require an Internet gateway and default route while private subnets remain private without one"
+  },
+  {
+    "number": 29,
+    "question": "What is the primary purpose of a Content Delivery Network (CDN)?\n*",
+    "options": [
+      "To manage virtual machine deployments across regions",
+      "To cache content and deliver it from servers near the consumer for faster access",
+      "To encrypt traffic between datacenters",
+      "To provide DNS resolution for cloud services"
+    ],
+    "answer": "To cache content and deliver it from servers near the consumer for faster access"
+  },
+  {
+    "number": 30,
+    "question": "Which type of cloud instance shares the host system's kernel and has a small footprint?\n*",
+    "options": [
+      "Container",
+      "Hypervisor",
+      "Virtual Machine",
+      "Virtual Appliance"
+    ],
+    "answer": "Container"
+  },
+  {
+    "number": 31,
+    "question": "Which IaC tool uses a declarative approach and allows provisioning of any cloud infrastructure or service?\n*",
+    "options": [
+      "Chef",
+      "Terraform",
+      "Ansible",
+      "AWS CloudFormation"
+    ],
+    "answer": "Terraform"
+  },
+  {
+    "number": 32,
+    "question": "What type of filtering does a Security Group provide?\n*",
+    "options": [
+      "Stateful filtering with allow rules only",
+      "Packet-level filtering at Layer 2",
+      "Stateless filtering with allow and deny rules",
+      "Deep packet inspection at Layer 7"
+    ],
+    "answer": "Stateful filtering with allow rules only"
+  },
+  {
+    "number": 33,
+    "question": "At which OSI layer does a cloud firewall perform stateful inspection of connections?\n*",
+    "options": [
+      "Layer 4",
+      "Layer 2",
+      "Layer 7",
+      "Layer 3"
+    ],
+    "answer": "Layer 4"
+  },
+  {
+    "number": 34,
+    "question": "Which cloud connectivity option offers high bandwidth and low latency but requires physical infrastructure?\n*",
+    "options": [
+      "Software-defined overlay",
+      "VPN",
+      "Direct Connect or Colocation",
+      "Transit Gateway"
+    ],
+    "answer": "Direct Connect or Colocation"
+  },
+  {
+    "number": 35,
+    "question": "What does IaC stand for in modern network environments?\n*",
+    "options": [
+      "Infrastructure as a Code",
+      "Inbound Access Control",
+      "Internet as a Component",
+      "Integrated Application Control"
+    ],
+    "answer": "Infrastructure as a Code"
+  },
+  {
+    "number": 36,
+    "question": "At which OSI layer does a cloud firewall filter based on IP addresses and TCP/UDP ports?\n*",
+    "options": [
+      "Layer 7",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "answer": "Layer 3"
+  },
+  {
+    "number": 37,
+    "question": "Which cloud connectivity option is best suited for distributed networks and is cost-effective?\n*",
+    "options": [
+      "Colocation",
+      "Direct Connect",
+      "Transit Gateway",
+      "VPN"
+    ],
+    "answer": "VPN"
+  },
+  {
+    "number": 38,
+    "question": "Which IaC tool uses recipes and cookbooks to apply configurations across environments?\n*",
+    "options": [
+      "Chef",
+      "Puppet",
+      "Ansible",
+      "Terraform"
+    ],
+    "answer": "Chef"
+  },
+  {
+    "number": 39,
+    "question": "What is the key difference between a Security Group and a Security List?\n*",
+    "options": [
+      "Security Groups are only used in private clouds while Security Lists are used in public clouds",
+      "Security Groups support IPv6 while Security Lists support only IPv4",
+      "Security Groups operate at the instance level with stateful filtering while Security Lists operate at the subnet level with stateless filtering",
+      "Security Groups operate at the subnet level while Security Lists operate at the instance level"
+    ],
+    "answer": "Security Groups operate at the instance level with stateful filtering while Security Lists operate at the subnet level with stateless filtering"
+  },
+  {
+    "number": 40,
+    "question": "Which IaC tool uses a declarative language to automate deployment configuration and orchestration tasks?\n*",
+    "options": [
+      "Chef",
+      "Ansible",
+      "Puppet",
+      "Terraform"
+    ],
+    "answer": "Ansible"
+  },
+  {
+    "number": 41,
+    "question": "What is the primary purpose of SD-WAN?\n*",
+    "options": [
+      "To manage DNS resolution across branch offices",
+      "To replace SAN with a software-defined storage layer",
+      "To provide an innovative approach to designing enterprise WAN with optimized traffic flow and secure connections",
+      "To encrypt all wireless traffic in a campus network"
+    ],
+    "answer": "To provide an innovative approach to designing enterprise WAN with optimized traffic flow and secure connections"
+  },
+  {
+    "number": 42,
+    "question": "What is the core principle of Zero Trust Architecture regarding network entities?\n*",
+    "options": [
+      "Entities outside the network are trusted after one-time verification",
+      "All internal users are trusted by default",
+      "Trust is granted based on IP address ranges",
+      "No entity is trusted by default regardless of whether they are inside or outside the network"
+    ],
+    "answer": "No entity is trusted by default regardless of whether they are inside or outside the network"
+  },
+  {
+    "number": 43,
+    "question": "In SDN what is the role of Southbound APIs?\n*",
+    "options": [
+      "Managing user authentication requests",
+      "Interface between the controller and business applications",
+      "Providing external access to SDN data",
+      "Communication between the SDN controller and network devices"
+    ],
+    "answer": "Communication between the SDN controller and network devices"
+  },
+  {
+    "number": 44,
+    "question": "What is an Overlay Network?\n*",
+    "options": [
+      "A virtual network built on top of an existing physical network",
+      "A network exclusively for storage traffic",
+      "A backup network used during outages",
+      "A physical network replacing older LAN infrastructure"
+    ],
+    "answer": "A virtual network built on top of an existing physical network"
+  },
+  {
+    "number": 45,
+    "question": "What does VXLAN stand for and what is it used for?\n*",
+    "options": [
+      "Variable eXtensible Local Area Network used for wide-area connectivity",
+      "Verified eXternal LAN used for cloud firewall management",
+      "Virtual eXtensible LAN used for data center network segmentation and isolation",
+      "Virtual X-Layer Architecture Network used for VPN tunneling"
+    ],
+    "answer": "Virtual eXtensible LAN used for data center network segmentation and isolation"
+  },
+  {
+    "number": 46,
+    "question": "What is Source Control primarily used for in software development?\n*",
+    "options": [
+      "Compiling code for cloud deployment",
+      "Monitoring application performance in production",
+      "Encrypting source code before deployment",
+      "Managing and tracking code changes and maintaining code integrity"
+    ],
+    "answer": "Managing and tracking code changes and maintaining code integrity"
+  },
+  {
+    "number": 47,
+    "question": "What two main technologies does SASE integrate?\n*",
+    "options": [
+      "VPC and CDN",
+      "SDN and IaC",
+      "SAN and VPN",
+      "SD-WAN technology and Security Service Edge (SSE)"
+    ],
+    "answer": "SD-WAN technology and Security Service Edge (SSE)"
+  },
+  {
+    "number": 48,
+    "question": "What does SASE stand for?\n*",
+    "options": [
+      "Scalable Access and Security Engine",
+      "Site-to-site Access Service Environment",
+      "Secure Access Service Edge",
+      "Software-Aligned Security Exchange"
+    ],
+    "answer": "Secure Access Service Edge"
+  },
+  {
+    "number": 49,
+    "question": "What does SDN stand for?\n*",
+    "options": [
+      "Secure Data Node",
+      "Software-Defined Networking",
+      "Switched Domain Network",
+      "Static Data Notation"
+    ],
+    "answer": "Software-Defined Networking"
+  },
+  {
+    "number": 50,
+    "question": "Which principle of Zero Trust Architecture involves granting users the minimum level of access needed?\n*",
+    "options": [
+      "Least Privilege Access",
+      "Microsegmentation",
+      "Assume No Trust",
+      "Continuous Verification"
+    ],
+    "answer": "Least Privilege Access"
+  }
+]

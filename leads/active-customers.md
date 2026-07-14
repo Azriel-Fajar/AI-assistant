@@ -92,8 +92,9 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 
 ---
 
-## CUST 3 — CV. Karya Jun Teknik (Fabrikasi Stainless/Besi, Padang) — WON / DP PAID 🎉
-- **Status:** WON, DP PAID 2026-07-04. Rielcode's 3rd paying customer. Build starting.
+## CUST 3 — CV. Karya Jun Teknik (Fabrikasi Stainless/Besi, Padang) — DELIVERED / AWAITING FINAL PAYMENT 🎉
+- **Status:** DELIVERED 2026-07-10. Site live at karyajunteknik.com, client reviewed + approved ("Sudah" / "Ya sesuai"). Final invoice INV-2026-006-F sent (Rp800k, sisa 80%). Client: "Baik besok saya transfer kak" — expect transfer ~2026-07-11. On payment: activate full + finish domain verification.
+- **Prev status:** WON, DP PAID 2026-07-04. Rielcode's 3rd paying customer.
 - **Correction (2026-07-04):** Real business name confirmed from physical nama kartu = **CV. KARYA JUN TEKNIK** (KJT logo). Previous "Nur Padang Kitchen Stainless" name was WRONG — lead had said that name in chat but actual usaha/kartu nama says CV. Karya Jun Teknik. Use CV. Karya Jun Teknik as site brand.
 - **Source:** Facebook/Meta Ads WA lead "Nggak usah bayar dulu sampai kamu lihat hasilnya" / "Tanpa DP, tanpa risiko. Mulai Rp500rb" (2026-07-03). WA +62 813-7477-0791 (also +62 821-7095-8212).
 - **Alamat:** Jl. Alai Timur No. 44A, Kota Padang.
