@@ -68,7 +68,7 @@ Feature list (when asked): "kami sarankan" not "kami buatkan", numbered list OK,
 - Single source: `references/rielcode-pricing.md`. Re-read before any quote, never from memory.
 - Pro plan always includes Basic CMS/Admin Panel.
 - Every quote includes LAUNCH10 (10% off, show orig + discounted) until 30 June 2026.
-- DP 20% upfront / 80% on finish. Never 50/50.
+- DP 30% upfront / 70% on finish for new quotes (since 2026-07-16). Clients already quoted 20/80 keep 20/80. Never 50/50.
 - No installment/credit to low-budget first-timers. Scope down instead.
 
 ---

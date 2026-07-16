@@ -1,22 +1,56 @@
 # SOP: Client Hosting Provisioning
 
-Single source of truth for setting up a client's domain, hosting, and account so the client owns everything and Rielcode holds no recovery keys after handoff.
+Single source of truth for setting up a client's domain, hosting, and account. Three options depending on client capability and preference. Goal in every case: no dangling recovery keys on Rielcode after handoff (Options 1-2) or a clearly documented dependency (Option 3).
+
+## Rule zero: payment first
+
+**Never buy hosting or domain before the DP is received.** DP is 30% upfront (see `memory/feedback_dp_terms_30_70.md`). Hosting + domain costs 250-400rb; buying before DP means Rielcode eats the loss if the client bails (happened with Cust 2).
 
 ## The core problem this solves
 
 - Google limits new Gmail creation (Azriel's numbers are maxed on phone verification). Cannot make fresh Gmails for clients.
 - Every new Rumahweb account needs an email to register with.
 - A client's own-domain email (`admin@theirdomain.com`) does not exist yet at registration time, because the domain + hosting are what create it.
+- Clients who pick "hosting on my account" usually cannot operate hosting themselves.
 
-**Fix:** use a temporary cPanel mailbox on rielcode.com as the registration vehicle, then transfer the Rumahweb account email to the client's own-domain email at handoff. After that, the temp mailbox is disposable and nothing depends on Rielcode's hosting.
+## Decision table
 
-## Prerequisites
+| Question | Option 1: Client's own account | Option 2: Rielcode-managed transfer (default) | Option 3: On Rielcode's account |
+|---|---|---|---|
+| Client tech-savvy? | Yes, or willing to relay OTP | No | No |
+| Wants day-1 ownership? | Yes | Yes (ownership at handoff) | No |
+| Wants zero effort? | No | Yes | Yes |
+| Client effort | Operates hosting, or relays 1 OTP / shares password briefly | None | None |
+| Ownership after handoff | Full, immediate | Full, at handoff | Rielcode owns; client pays yearly via Rielcode |
+| Rielcode dependency after | None | None | Yes (documented; can migrate to Option 2 later) |
 
-- cPanel access on rielcode.com (unlimited mailboxes, no phone verification).
-- Client has confirmed which email option they want (see WA script: `templates/wa-hosting-email-options.md`).
-- Payment / DP settled per standard terms (DP 20% upfront).
+WA script for offering the options: `templates/wa-hosting-email-options.md`.
 
-## Standard flow (Rielcode registers domain + hosting, new account per client)
+## Prerequisites (all options)
+
+- DP 30% received. No purchases before this.
+- Client has confirmed which option they want (WA script above).
+- Options 2-3: cPanel access on rielcode.com (unlimited mailboxes, no phone verification).
+
+## Option 1: Client's own account
+
+Use when the client insists everything stays under their control from day 1.
+
+**Path A — client operates hosting themselves.** Client knows hosting. Rielcode delivers site files + deployment guidance only. Client buys their own hosting/domain, uploads or grants temporary cPanel/FTP access for deploy. No account setup by Rielcode.
+
+**Path B — client owns account, Rielcode does the buying.** Client cannot operate hosting but wants their own email on the account:
+
+1. Register the Rumahweb account with the client's existing personal email. Either:
+   - Client relays the verification OTP/link code back over WA (never shares a password), or
+   - Client temporarily shares the account password so Rielcode logs in with an OTP they forward; client changes password after handoff.
+2. Buy domain + hosting under that account (after DP, per rule zero).
+3. Continue from step 4 of the Option 2 flow (create own-domain mailbox, upload, hand over).
+
+Downside: needs client cooperation mid-setup. That friction is why Option 2 is the default.
+
+## Option 2: Rielcode-managed setup with ownership transfer (default)
+
+Temp mailbox on rielcode.com registers the account; ownership transfers to the client's own-domain email at handoff. Client does nothing and ends up owning everything.
 
 1. **Temp mailbox.** cPanel on rielcode.com > Email Accounts > create `client@rielcode.com` (use client business name, e.g. `anugrah@rielcode.com`) + password. No Google limit.
 
@@ -43,29 +77,23 @@ Single source of truth for setting up a client's domain, hosting, and account so
 
 9. **Cleanup.** The temp `client@rielcode.com` mailbox is now disposable. Nothing points at it. Delete it or leave it; if Rielcode hosting ever dies, the client is unaffected.
 
-## Why this is safe
+**Why this is safe:** after step 5, recovery lives on the client's own domain; Rielcode hosting dying doesn't lock them out; client never shares a password or OTP; no new Gmail needed.
 
-- After step 5, the Rumahweb account recovery email is on the client's own domain.
-- Rielcode's hosting dying does not lock the client out.
-- The client never had to hand over a password or copy an OTP.
-- No new Gmail was needed, so the Google limit is never touched.
+**Verify on next live run:** docs confirm the primary account email is editable via My Profile > Edit account details, but the exact confirmation-click behavior is behind the login. Confirm on the next real client (or throwaway account) that step 5's confirmation link goes to the NEW address and clicking completes the change.
 
-## Fallback: client wants day-1 independence, no temp mailbox
+## Option 3: Hosting on Rielcode's account
 
-Use only if the client refuses any Rielcode-domain mailbox in the chain.
+Use when the client wants zero involvement and accepts the site living under Rielcode's Rumahweb account.
 
-1. Register the Rumahweb account directly with the client's existing personal email.
-2. Rumahweb sends a verification OTP / link to that inbox.
-3. Client reads the code from their own inbox and passes just the code back (they never share a password).
-4. Continue from step 3 of the standard flow.
+1. Buy domain + hosting under Rielcode's own Rumahweb account (after DP, per rule zero).
+2. Deploy site. Client gets the site + any admin panel logins, not the hosting login.
+3. Client pays yearly hosting + domain renewal via Rielcode (invoice before renewal date; set a reminder).
+4. Document the dependency in the completion doc: Rielcode holds hosting; migration to their own account available anytime via Option 2 flow (register new account with temp mailbox, transfer domain + files, flip ownership).
 
-Downside: client must copy-paste the OTP once during setup. That effort is the reason the standard flow (temp mailbox) is the default.
-
-## One thing to verify on next live run
-
-Docs confirm the primary account email is editable via My Profile > Edit account details, but the exact confirmation-click behavior is behind the login and could not be verified from public docs. Confirm on the next real client (or a throwaway account) that step 5's confirmation link goes to the NEW address and clicking it completes the change.
+Benefit: recurring yearly touchpoint + simplest for the client. Risk: Rielcode is a single point of failure; always state the migration path in the handoff doc.
 
 ## References
 
 - Rumahweb Unlimited plan = unlimited free mailboxes. See memory `reference_rumahweb_hosting`.
 - Client email options WA script: `templates/wa-hosting-email-options.md`.
+- Payment terms: `memory/feedback_dp_terms_30_70.md` (DP 30% / 70% on finish).

@@ -68,12 +68,12 @@ NOT INCLUDED
 TIMELINE
 - Estimated duration: <X weeks>
 - Target delivery: <date or TBD>
-- Kickoff upon receipt of 50% deposit
+- Kickoff upon receipt of 30% deposit
 
 INVESTMENT
 - Total: IDR <amount>
-- Deposit (50%): IDR <amount> -- due before work begins
-- Final (50%): IDR <amount> -- due before file/access handover
+- Deposit (30%): IDR <amount> -- due before work begins
+- Final (70%): IDR <amount> -- due before file/access handover
 
 TERMS
 - Revisions: 2 rounds included. Additional revisions billed separately.

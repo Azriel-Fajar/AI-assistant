@@ -1,6 +1,6 @@
 # Memory Index
 
-- [DP Terms 20/80](feedback_dp_terms_20_80.md) -- Rielcode payment = DP 20% upfront / 80% on finish, never default 50/50
+- [DP Terms 30/70](feedback_dp_terms_30_70.md) -- Rielcode payment = DP 30% upfront / 70% on finish (new quotes; in-progress clients keep 20/80); hosting bought only after DP; never 50/50
 
 - [WA No Customer Pleasing](feedback_wa_no_customer_pleasing.md) -- WA/lead drafts professional + plain, no hype/pleasing openers ("wah cocok banget kak"); state facts direct
 

@@ -100,6 +100,12 @@ When auditing a site, map detected features to the closest package:
 | 6-10 pages, admin, chatbot | Premium | full platform |
 | E-commerce / catalog / item list | Pro or Premium + Catalog / Item List add-on | from 1jt add-on |
 
+## PAYMENT TERMS
+
+- DP 30% upfront to start, 70% on completion after client checks the result. (Raised from 20/80 on 2026-07-16; clients already in progress on 20/80 keep 20/80.)
+- Hosting and domain are purchased only AFTER the DP is received. Never before.
+- Never quote 50/50.
+
 ## NOTES
 
 - PRO PLAN ALWAYS INCLUDES BASIC CMS / ADMIN PANEL. Every Pro quote, proposal, follow-up, WA message, and site-review estimate must list CMS as a Pro feature. Do not list Pro features from memory; read this file each time.
