@@ -1,20 +1,51 @@
-# A. Latar Belakang Masalah
+**LITERASI DIGITAL SEBAGAI BENTENG INFORMASI BANGSA**
 
-Pada awal September 2025, publik digegerkan oleh unggahan di media sosial TikTok yang mengeklaim bahwa Presiden Prabowo Subianto meminta rakyat untuk menjarah rumah anggota DPR dan sejumlah menteri, menyusul peristiwa penjarahan rumah anggota DPR Ahmad Sahroni.[^1] Unggahan tersebut disertai poster yang mencantumkan logo media Warta Ekonomi, padahal media tersebut tidak pernah menerbitkan berita demikian. Faktanya, foto asli yang digunakan justru memperlihatkan Presiden Prabowo menyerukan ketenangan di tengah demonstrasi menolak tunjangan DPR, dan bahkan memerintahkan aparat menindak tegas pelaku penjarahan.[^1]
+**MAKALAH**
+**Tugas Akhir Mata Kuliah Bahasa Indonesia**
+**Dosen : Drs. Heru Purwanta, S.Si., M.Hum.**
 
-Peristiwa tersebut hanyalah satu dari sekian banyak hoaks yang mengganggu ketenangan masyarakat Indonesia. Kasus semacam ini memunculkan pertanyaan tentang seberapa jauh sebenarnya hoaks dapat merugikan kehidupan sosial dan bangsa, apalagi informasi hoaks kerap menyebar jauh lebih cepat daripada klarifikasi atas kebenarannya.
+**Oleh**
+**AZRIEL FAJAR WICAKSONO**
+**NIM 672025121**
 
-Skala masalah ini bukan perkara yang kecil. Sepanjang tahun 2024, Kementerian Komunikasi dan Digital (Komdigi) mengidentifikasi 1.923 konten hoaks, dengan kategori penipuan sebagai yang terbanyak, yakni 890 konten, diikuti dengan isu politik, pemerintahan, kesehatan, dan bencana.[^2] Secara kumulatif, sejak Agustus 2018 hingga akhir 2023, Kementerian Komunikasi dan Informatika (Kominfo) telah menangani 12.547 isu hoaks, dengan isu kesehatan termasuk salah satu kategori terbanyak.[^3] Angka ini menunjukkan bahwa persoalan hoaks bukanlah fenomena sesaat, melainkan masalah struktural yang terus berulang dari tahun ke tahun.
+[logo UKSW]
 
-Hal yang lebih memprihatinkan adalah maraknya hoaks ini berjalan bersamaan dengan meluasnya akses internet di Indonesia. Penetrasi internet nasional mencapai 79,5% pada 2024, atau sekitar 221,5 juta pengguna dari total 278,7 juta penduduk.[^4] Semakin luas akses digital seharusnya membuka jalan bagi masyarakat untuk mendapatkan informasi yang lebih cepat dan akurat, namun kenyataannya justru dibarengi meluasnya penyebaran hoaks. Ironi ini menimbulkan pertanyaan tentang apa sebenarnya yang membuat hoaks begitu marak di tengah masyarakat, terlebih ketika Indeks Literasi Digital Nasional 2024 hasil kerja sama Kominfo dan Katadata Insight Center masih berada di angka 3,49 dari skala 5, atau setara kematangan sekitar 62% dan tergolong kategori "sedang".[^5]
+**UNIVERSITAS KRISTEN SATYA WACANA**
+**SALATIGA**
+**2026**
 
-Pemerintah sebenarnya sudah menyediakan landasan hukum untuk bertindak terhadap penyebaran hoaks, sebagaimana diatur dalam Pasal 28 ayat (1) Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik juncto Pasal 45A ayat (1) Undang-Undang Nomor 19 Tahun 2016, yang mengancam pelaku penyebar berita hoaks dengan pidana penjara maksimal enam tahun dan/atau denda maksimal satu miliar rupiah.[^6] Akan tetapi, hanya dengan hukum saja tampaknya tidak cukup untuk mengatasi derasnya arus hoaks, sebab hukum tersebut hanya dapat bekerja setelah hoaks terlanjur menyebar dan menimbulkan dampak. Kenyataan ini menyisakan pertanyaan tentang pendekatan apa yang dapat menutup celah tersebut dan mencegah hoaks sebelum ikut disebarkan oleh masyarakat.
+**BAB I**
+**PENDAHULUAN**
+
+1. **Latar Belakang Masalah**
+
+Pada awal September 2025, publik digegerkan oleh unggahan di media sosial TikTok yang mengeklaim bahwa Presiden Prabowo Subianto meminta rakyat untuk menjarah rumah anggota DPR dan sejumlah menteri, setelah peristiwa penjarahan rumah anggota DPR Ahmad Sahroni. Unggahan tersebut disertai poster yang mencantumkan logo media Warta Ekonomi, padahal media tersebut tidak pernah menerbitkan berita demikian. Faktanya, foto asli yang digunakan justru memperlihatkan Presiden Prabowo menyerukan ketenangan di tengah demonstrasi menolak tunjangan DPR, dan bahkan memerintahkan aparat menindak tegas pelaku penjarahan.[^1]
+
+Peristiwa tersebut hanyalah satu dari sekian banyak hoaks yang mengganggu ketenangan masyarakat Indonesia. Kasus semacam ini memunculkan pertanyaan tentang seberapa jauh sebenarnya hoaks dapat merugikan kehidupan sosial dan bangsa, apalagi informasi hoaks seringkali menyebar jauh lebih cepat daripada klarifikasi atas kebenarannya.
+
+Skala masalah ini bukan perkara yang kecil. Sejak Agustus 2018 hingga akhir 2023, Kementerian Komunikasi dan Informatika (Kominfo) telah menangani 12.547 isu hoaks, dengan isu kesehatan termasuk salah satu kategori terbanyak.[^2]
+
+Hal yang lebih memprihatinkan adalah maraknya hoaks ini berjalan bersamaan dengan meluasnya akses internet di Indonesia yang kini telah menjangkau sebagian besar penduduk.
+
+Semakin luas akses digital seharusnya membuka jalan bagi masyarakat untuk mendapatkan informasi yang lebih cepat dan akurat, namun kenyataannya justru bertambah luasnya penyebaran hoaks. Hal ini menimbulkan pertanyaan tentang apa sebenarnya yang membuat hoaks begitu marak di tengah masyarakat, terlebih lagi ketika tingkat literasi digital masyarakat Indonesia masih tergolong sedang.
+
+Pemerintah sebenarnya sudah menyediakan landasan hukum untuk bertindak terhadap penyebaran hoaks melalui Undang-Undang Informasi dan Transaksi Elektronik, yang mengancam pelaku penyebar berita bohong dengan pidana penjara dan denda.
+
+Akan tetapi, hanya dengan hukum saja tampaknya tidak cukup untuk mengatasi derasnya arus hoaks, sebab hukum tersebut hanya dapat bekerja setelah hoaks terlanjur menyebar dan menimbulkan dampak. Kenyataan ini menyisakan pertanyaan tentang pendekatan apa yang dapat menutup celah tersebut dan mencegah hoaks sebelum ikut disebarkan oleh masyarakat.
 
 Berdasarkan pernyataan di atas, penting bagi kita untuk memahami lebih jauh hakikat hoaks dan penyebab maraknya hoaks di masyarakat, dampak yang ditimbulkan bagi kehidupan sosial dan bangsa, serta bagaimana literasi digital dapat berperan sebagai strategi untuk mencegahnya.
 
-[^1]: Kompas.com, "[HOAKS] Prabowo Minta Masyarakat Jarah Rumah Anggota DPR dan Menteri," 2 September 2025, https://www.kompas.com/cekfakta/read/2025/09/02/160600082/-hoaks-prabowo-minta-masyarakat-jarah-rumah-anggota-dpr-dan-menteri, diakses 10 Juli 2026.
-[^2]: Komdigi, "Komdigi Identifikasi 1.923 Konten Hoaks Sepanjang Tahun 2024," Siaran Pers, https://www.komdigi.go.id/berita/siaran-pers/detail/komdigi-identifikasi-1923-konten-hoaks-sepanjang-tahun-2024, diakses 10 Juli 2026.
-[^3]: Kominfo, Siaran Pers No. 02/HM/KOMINFO/01/2024, https://www.komdigi.go.id/berita/pengumuman/detail/siaran-pers-no-02-hm-kominfo-01-2024-tentang-hingga-akhir-tahun-2023-kominfo-tangani-12-547-isu-hoaks, diakses 10 Juli 2026.
-[^4]: Muhammad Alifa Fikri Irhamni, "Internet Makin Merata, Hoaks Makin Meluas?," GoodStats, 8 November 2024, https://goodstats.id/article/internet-makin-merata-hoaks-semakin-meluas-peningkatan-pengguna-internet-di-indonesia-2024-TpUiO, diakses 10 Juli 2026.
-[^5]: MUI, "Literasi Digital Indonesia Baru 62 Persen, Infokom MUI Gandeng UIN Sunan Kalijaga Gelar Seminar Nasional," 23 September 2025, https://mui.or.id/baca/berita/literasi-digital-indonesia-baru-62-persen-infokom-mui-gandeng-uin-sunan-kalijaga-gelar-seminar-nasional, diakses 10 Juli 2026.
-[^6]: Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik, Pasal 28 ayat (1), juncto Undang-Undang Nomor 19 Tahun 2016 tentang Perubahan atas Undang-Undang Nomor 11 Tahun 2008, Pasal 45A ayat (1).
+2. **Rumusan Masalah**
+
+1. Apa yang dimaksud dengan hoaks dan mengapa hoaks marak di masyarakat?
+2. Apa dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa?
+3. Bagaimana peran literasi digital dalam mencegah penyebaran hoaks?
+
+3. **Tujuan**
+
+1. Menjelaskan hakikat hoaks dan penyebab maraknya hoaks di masyarakat.
+2. Menjelaskan dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa.
+3. Menjelaskan peran literasi digital dalam mencegah penyebaran hoaks.
+
+[^1]: Kompas.com, "[HOAKS] Prabowo Minta Masyarakat Jarah Rumah Anggota DPR dan Menteri," 2 September 2025, https://www.kompas.com/cekfakta/read/2025/09/02/160600082/-hoaks-prabowo-minta-masyarakat-jarah-rumah-anggota-dpr-dan-menteri (Diakses pada 9 Juli 2026).
+[^2]: Kominfo, Siaran Pers No. 02/HM/KOMINFO/01/2024, https://www.komdigi.go.id/berita/pengumuman/detail/siaran-pers-no-02-hm-kominfo-01-2024-tentang-hingga-akhir-tahun-2023-kominfo-tangani-12-547-isu-hoaks (Diakses pada 10 Juli 2026).

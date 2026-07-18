@@ -10,8 +10,8 @@
 - [x] Judul dipilih
 - [x] Riset sumber (sumber.md)
 - [x] Struktur BAB I-III (struktur.md)
-- [ ] Draft BAB I
-- [ ] Draft BAB II
+- [x] Draft BAB I (bab1-latar-belakang.md: latar belakang + rumusan + tujuan)
+- [x] Draft BAB II (bab2-pembahasan.md: A hakikat+penyebab, B dampak, C literasi digital) -- 12 footnote, sisanya analisis sendiri
 - [ ] Draft BAB III + Daftar Pustaka
 - [ ] Format final (cover, footnote, render PDF)
 

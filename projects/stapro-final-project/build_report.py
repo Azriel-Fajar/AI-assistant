@@ -158,7 +158,7 @@ figcaption {{ text-align:center; font-size:12px; color:#475569; margin-bottom:14
 <div class="page cover">
   <p style="font-size:15px; letter-spacing:2px;">FINAL PROJECT</p>
   <h1>Frequency Distribution Analysis</h1>
-  <p style="font-size:16px; margin-top:4px;">Number of Higher Education Institutions by Regency/City in Java and Banten, Indonesia (2023)</p>
+  <p style="font-size:16px; margin-top:4px;">Number of Higher Education Institutions by Regency/City in Java, Indonesia (2024)</p>
   <div class="members">
     <b>Group Members</b><br>
     Azriel Fajar Wicaksono &ndash; 672025121<br>
@@ -171,10 +171,10 @@ figcaption {{ text-align:center; font-size:12px; color:#475569; margin-bottom:14
 <div class="page">
   <h2>1. Data Collection</h2>
   <h3>1.1 Data Source</h3>
-  <p>The data used in this project is the <b>number of higher education institutions (universities) per regency/city (kabupaten/kota)</b> in Indonesia in 2023, published by the Indonesian government open data portal:</p>
-  <p class="small">Source: data.go.id &ndash; &ldquo;Jumlah Perguruan Tinggi menurut Akreditasi dan Wilayah, Tahun 2023&rdquo;<br>
+  <p>The data used in this project is the <b>number of higher education institutions (universities) per regency/city (kabupaten/kota)</b> in Indonesia in 2024, published by the Indonesian government open data portal:</p>
+  <p class="small">Source: data.go.id &ndash; &ldquo;Jumlah Perguruan Tinggi menurut Akreditasi dan Wilayah, Tahun 2024&rdquo;<br>
   https://data.go.id/dataset/dataset/jumlah-perguruan-tinggi-menurut-akreditasi-2024</p>
-  <p>The quantitative variable analyzed is <b>Total semua</b>: the total number of higher education institutions (both under Kemendikbudristek and non-Kemendikbudristek) in each regency/city. The observation unit is one regency/city. The dataset covers the provinces of Banten, D.I. Yogyakarta, D.K.I. Jakarta, Jawa Barat, Jawa Tengah, and Jawa Timur, giving <b>n = {n} observations</b>, which satisfies the minimum requirement of 100 observations.</p>
+  <p>The quantitative variable analyzed is the total number of higher education institutions (both under Kemendikbudristek and non-Kemendikbudristek) in each regency/city. The observation unit is one regency/city. The dataset covers the provinces of Banten, D.I. Yogyakarta, D.K.I. Jakarta, Jawa Barat, Jawa Tengah, and Jawa Timur, giving <b>n = {n} observations</b>, which satisfies the minimum requirement of 100 observations.</p>
   <h3>1.2 Raw Data ({n} observations)</h3>
   {raw_table()}
 </div>
@@ -240,7 +240,7 @@ figcaption {{ text-align:center; font-size:12px; color:#475569; margin-bottom:14
     <li><b>Consequence of skewness.</b> Because of the strong right skew, the mean would be pulled well above the median; the median or mode is a more representative measure of a &ldquo;typical&rdquo; regency/city than the mean for this data.</li>
   </ol>
   <h3>4.4 Conclusion</h3>
-  <p>Using Sturges&rsquo; formula, the {n} observations were grouped into 8 classes of width 11. The frequency distribution, histogram, frequency polygon, and ogive all show a strongly right-skewed distribution: most regencies/cities in Java and Banten have very few higher education institutions, while a small number of metropolitan cities concentrate most of them. This reflects the real-world centralization of higher education in Indonesia&rsquo;s big cities.</p>
+  <p>Using Sturges&rsquo; formula, the {n} observations were grouped into 8 classes of width 11. The frequency distribution, histogram, frequency polygon, and ogive all show a strongly right-skewed distribution: most regencies/cities in Java have very few higher education institutions, while a small number of metropolitan cities concentrate most of them. This reflects the real-world centralization of higher education in Indonesia&rsquo;s big cities.</p>
 </div>
 
 </body></html>"""

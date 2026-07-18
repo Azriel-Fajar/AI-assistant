@@ -30,11 +30,18 @@
 
 ## 3. Definisi & teori (BAB II subbab A)
 
+ATURAN: karya ilmiah -> sumber maksimal 10 tahun ke belakang (2016 ke atas, cek per 2026).
+
 - **KBBI:** hoaks = berita bohong.
-- **Silverman (2015):** hoaks = rangkaian informasi yang sengaja disesatkan tetapi "dijual" sebagai kebenaran.
-- **Werme (2016):** fake news = berita palsu berisi informasi yang sengaja menyesatkan dengan agenda politik tertentu.
-  Sumber definisi: https://mh.uma.ac.id/apa-sebenarnya-hoaks-itu/ dan https://dspace.uii.ac.id/bitstream/handle/123456789/14089/05.2%20bab%202.pdf
-- Ciri-ciri + jenis hoaks: https://gnld.siberkreasi.id/apa-itu-hoaks-ini-lah-beberapa-bahayanya-yang-wajib-diketahui/ dan https://www.merdeka.com/jatim/mengenal-arti-hoax-atau-berita-bohong-dan-cara-tepat-menyikapinya-kln.html
+- **Simarmata dkk. (2019),** *Hoaks dan Media Sosial: Saring Sebelum Sharing*: hoaks = informasi rekayasa yang sengaja dilakukan untuk memanipulasi informasi yang sebenarnya. Dikutip via Kompas.com Skola (22 Mar 2022, penulis Feiren Dina Junita): https://www.kompas.com/skola/read/2022/03/22/180000369/hoaks-pengertian-ciri-ciri-jenis-dan-contohnya
+- **Batoebara & Hasugian (2023),** DEVICE Vol. 4 No. 2: hoaks = informasi yang menyimpang dengan cara memutarbalikkan kebenaran atau menyembunyikan informasi. Juga memuat beda hoaks vs misinformasi (misinformasi = penyebar yakin benar, tanpa niat merugikan): https://jurnal.dharmawangsa.ac.id/index.php/device/article/view/4044
+- Ciri hoaks menurut **Dewan Pers** (via Kompas Skola 2022): menimbulkan kebencian/kecemasan, sumber anonim, fanatik tanpa fakta, tanda seru berlebihan. Jenis: fake news, clickbait, satire, propaganda.
+- Ciri tambahan + jenis: https://gnld.siberkreasi.id/apa-itu-hoaks-ini-lah-beberapa-bahayanya-yang-wajib-diketahui/ (17 Jun 2024) dan Edelweis Lararenjana, Merdeka.com (13 Mei 2020): https://www.merdeka.com/jatim/mengenal-arti-hoax-atau-berita-bohong-dan-cara-tepat-menyikapinya-kln.html
+
+DIBUANG (lewat batas 10 tahun, audit 18 Jul 2026):
+- ~~Silverman (2015)~~ -- 11 tahun. Diganti Simarmata dkk. (2019).
+- ~~Werme (2016)~~ -- pas di batas, berisiko. Diganti Batoebara & Hasugian (2023).
+- Sumber perantara https://mh.uma.ac.id/apa-sebenarnya-hoaks-itu/ dan dspace UII ikut tidak dipakai.
 
 ## 4. Dasar hukum (footnote gaya template UU)
 
