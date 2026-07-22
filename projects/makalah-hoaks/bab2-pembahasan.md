@@ -1,7 +1,7 @@
 **BAB II**
 **PEMBAHASAN**
 
-A. **Hakikat dan Penyebab Maraknya Hoaks**
+A. **Hakikat Hoaks**
 
 1. **Pengertian Hoaks**
 
@@ -23,21 +23,29 @@ Karena itu, cara paling sederhana untuk mengenali hoaks bukanlah dengan menghafa
 
 Contoh jenis berita bohong yaitu kasus poster manipulasi berlogo Warta Ekonomi yang telah disinggung pada bab sebelumnya. Identitas media yang kredibel sengaja dicantumkan agar informasi tersebut tampak resmi dan layak dipercaya. Hal ini memperlihatkan bahwa hoaks tidak selalu tampil sebagai pesan yang asal-asalan, melainkan dapat dikemas dengan rapi sehingga sulit dibedakan dari berita yang sebenarnya.
 
-3. **Penyebab Maraknya Hoaks**
+B. **Penyebab Maraknya Hoaks di Masyarakat**
 
-Pertanyaan berikutnya adalah mengapa hoaks bisa begitu marak di masyarakat. Setidaknya ada empat hal yang saling berkaitan sebagai penyebabnya.
+Setelah memahami apa itu hoaks, pertanyaan berikutnya adalah mengapa hoaks bisa begitu marak di masyarakat. Setidaknya ada empat hal yang saling berkaitan sebagai penyebabnya.
 
-Pertama, meluasnya penyebaran internet dan media sosial. Penyebaran internet di Indonesia mencapai 79,5% pada 2024, atau sekitar 221,5 juta pengguna.[^7] Sebelumnya informasi hanya dapat diterbitkan oleh media yang memiliki redaksi dan proses penyuntingan. Sekarang setiap pemilik akun media sosial dapat menerbitkan informasi apa pun dan bisa dibilang tanpa melalui proses verifikasi. Akibatnya, informasi yang benar dan yang bohong beredar secara berdampingan dengan tampilan yang hampir sama, dan pembaca dituntut untuk bisa menilai sendiri mana yang dapat dipercaya.
+1. **Meluasnya Internet dan Media Sosial**
 
-Kedua, rendahnya kemampuan literasi digital. Indeks Literasi Digital Nasional 2024 masih berada pada angka 3,49 dari skala 5 dan tergolong kategori "sedang".[^8] Angka tersebut memperlihatkan bahwa kemampuan masyarakat untuk menilai kebenaran informasi belum sebanding dengan kecepatan mereka mengakses dan menyebarkannya. Banyak pengguna sudah mahir dalam menjalankan berbagai aplikasi, namun belum terbiasa untuk memeriksa sumber sebuah informasi, kapan dibuat, dan apakah isinya masuk akal. Kemahiran teknis dan kemampuan menilai informasi adalah dua hal yang berbeda.
+Penyebaran internet di Indonesia mencapai 79,5% pada 2024, atau sekitar 221,5 juta pengguna.[^7] Sebelumnya informasi hanya dapat diterbitkan oleh media yang memiliki redaksi dan proses penyuntingan. Sekarang setiap pemilik akun media sosial dapat menerbitkan informasi apa pun dan bisa dibilang tanpa melalui proses verifikasi. Akibatnya, informasi yang benar dan yang bohong beredar secara berdampingan dengan tampilan yang hampir sama, dan pembaca dituntut untuk bisa menilai sendiri mana yang dapat dipercaya.
 
-Ketiga, adanya motif ekonomi dan politik. Data Komdigi sepanjang 2024 menunjukkan penipuan sebagai kategori hoaks terbanyak dengan 890 konten, disusul isu politik sebanyak 237 konten.[^9] Data tersebut memperlihatkan bahwa sebagian besar hoaks dibuat untuk mengambil uang korban, sedangkan sebagian lain untuk membentuk opini publik. Artinya hoaks tidak muncul secara kebetulan. Selama masih ada pihak yang diuntungkan, pembuatan informasi hoaks tidak akan berhenti dengan sendirinya.
+2. **Rendahnya Kemampuan Literasi Digital**
 
-Keempat, kebiasaan menyebarkan informasi sebelum menyaringnya. Banyak orang meneruskan sebuah pesan hanya karena isinya sesuai dengan keyakinannya, tanpa memeriksa terlebih dahulu kebenarannya. Informasi yang salah akhirnya terus berputar di dalam kelompok yang sepaham, lalu dianggap benar karena sering muncul. Kebiasaan inilah yang membuat hoaks menyebar jauh lebih cepat daripada klarifikasi yang menyusul kemudian.
+Indeks Literasi Digital Nasional 2024 masih berada pada angka 3,49 dari skala 5 dan tergolong kategori "sedang".[^8] Angka tersebut memperlihatkan bahwa kemampuan masyarakat untuk menilai kebenaran informasi belum sebanding dengan kecepatan mereka mengakses dan menyebarkannya. Banyak pengguna sudah mahir dalam menjalankan berbagai aplikasi, namun belum terbiasa untuk memeriksa sumber sebuah informasi, kapan dibuat, dan apakah isinya masuk akal. Kemahiran teknis dan kemampuan menilai informasi adalah dua hal yang berbeda.
+
+3. **Motif Ekonomi dan Politik**
+
+Data Komdigi sepanjang 2024 menunjukkan penipuan sebagai kategori hoaks terbanyak dengan 890 konten, disusul isu politik sebanyak 237 konten.[^9] Data tersebut memperlihatkan bahwa sebagian besar hoaks dibuat untuk mengambil uang korban, sedangkan sebagian lain untuk membentuk opini publik. Artinya hoaks tidak muncul secara kebetulan. Selama masih ada pihak yang diuntungkan, pembuatan informasi hoaks tidak akan berhenti dengan sendirinya.
+
+4. **Kebiasaan Menyebarkan Informasi Sebelum Menyaringnya**
+
+Banyak orang meneruskan sebuah pesan hanya karena isinya sesuai dengan keyakinannya, tanpa memeriksa terlebih dahulu kebenarannya. Informasi yang salah akhirnya terus berputar di dalam kelompok yang sepaham, lalu dianggap benar karena sering muncul. Kebiasaan inilah yang membuat hoaks menyebar jauh lebih cepat daripada klarifikasi yang menyusul kemudian.
 
 Keempat penyebab di atas saling menguatkan. Internet menyediakan medianya, rendahnya literasi digital membuat media tersebut tidak terjaga, motif ekonomi dan politik menyediakan alasan untuk terus membuat hoaks, dan kebiasaan menyebar tanpa menyaring menjadikan masyarakat sebagai penerus rantainya. Hal ini menjelaskan mengapa hoaks sulit dihilangkan hanya dengan menindak pembuatnya, sebab yang membuat hoaks sampai ke banyak orang itu justru masyarakat yang merasa dirinya bukan bagian dari masalah.
 
-B. **Dampak Maraknya Hoaks bagi Kehidupan Masyarakat dan Bangsa**
+C. **Dampak Maraknya Hoaks bagi Kehidupan Masyarakat dan Bangsa**
 
 Hoaks tidak berhenti sebagai informasi yang tidak tepat. Setiap hoaks yang dipercaya oleh seseorang, akan membuat orang tersebut keliru untuk mengambil sikap dan tindakan. Dampaknya dapat dilihat pada beberapa bidang berikut.
 
@@ -77,7 +85,7 @@ Ketentuan tersebut memperlihatkan bahwa menyebarkan hoaks dapat terkena hukum, t
 
 Dari keempat dampak di atas terlihat bahwa hoaks dapat merugikan masyarakat pada hampir semua sisi kehidupan, mulai dari hubungan antarwarga, ekonomi, kualitas demokrasi, sampai keselamatan hukum penyebarnya sendiri. Semua kerugian tersebut berasal dari satu perbuatan yang tampak sepele, yaitu meneruskan informasi tanpa memeriksanya lebih dahulu.
 
-C. **Peran Literasi Digital dalam Mencegah Penyebaran Hoaks**
+D. **Peran Literasi Digital dalam Mencegah Penyebaran Hoaks**
 
 Sebagaimana informasi yang disinggung pada bab sebelumnya, hukum baru dapat bekerja setelah hoaks terlanjur menyebar dan menimbulkan dampak. Yang dibutuhkan adalah pencegahan, dan pencegahan itu berpusat pada kemampuan masyarakat menilai informasi. Kemampuan inilah yang disebut literasi digital.
 
@@ -85,33 +93,33 @@ Sebagaimana informasi yang disinggung pada bab sebelumnya, hukum baru dapat beke
 
 Literasi digital bukan sekadar kemampuan mengoperasikan perangkat dan aplikasi. Literasi digital adalah kecakapan memahami, mengevaluasi secara kritis, dan menggunakan informasi digital secara sehat dan bertanggung jawab.
 
-Penelitian terhadap remaja di Nanga Ketungau menemukan bahwa edukasi kecakapan digital meningkatkan kemampuan mereka mengevaluasi konten yang beredar di media sosial, dan menegaskan bahwa penguasaan platform harus disertai kemampuan menilai secara kritis.[^14]
+Penelitian terhadap remaja di Nanga Ketungau menemukan bahwa edukasi keterampilan digital meningkatkan kemampuan mereka mengevaluasi konten yang beredar di media sosial, dan menegaskan bahwa penguasaan platform digital harus disertai dengan kemampuan untuk menilai secara kritis.[^14]
 
-Temuan tersebut menegur anggapan yang selama ini beredar, bahwa generasi yang tumbuh bersama internet otomatis melek digital. Kenyataannya, terbiasa menggunakan media sosial sejak kecil tidak dengan sendirinya melahirkan kemampuan menilai kebenaran informasi. Keduanya adalah kecakapan yang berbeda, dan yang kedua harus diajarkan.
+Temuan tersebut membantah anggapan yang selama ini beredar, bahwa generasi yang tumbuh bersama dengan internet otomatis sadar akan kebenaran informasi digital. Kenyataannya, terbiasa menggunakan media sosial sejak kecil tidak dengan sendirinya melahirkan kemampuan menilai kebenaran informasi. Keduanya adalah kemampuan yang berbeda, dan yang kedua harus diajarkan.
 
 2. **Peran Individu**
 
-Langkah pencegahan yang paling dekat dimulai dari diri sendiri, yaitu membiasakan menyaring sebelum membagikan. Sebelum meneruskan sebuah informasi, ada beberapa hal sederhana yang dapat diperiksa: siapa yang menerbitkannya, kapan informasi itu dibuat, apakah media lain yang kredibel memberitakan hal serupa, dan apakah judulnya sejalan dengan isinya.
+Langkah pencegahan yang paling dekat adalah dari diri sendiri, yaitu membiasakan diri untuk menyaring sebelum membagikan. Sebelum meneruskan sebuah informasi, ada beberapa hal yang dapat diperiksa, antara lain adalah siapa yang menerbitkannya, kapan informasi tersebut dibuat, apakah media lain yang terpercaya memberitakan hal serupa, dan apakah judulnya sejalan dengan isinya.
 
-Kebenaran sebuah informasi juga dapat diperiksa melalui kanal cek fakta yang dikelola media dan pemerintah, seperti rubrik Cek Fakta Kompas.com dan laman berita hoaks Komdigi. Pemeriksaan semacam ini biasanya hanya memakan waktu satu sampai dua menit, jauh lebih singkat daripada waktu yang dibutuhkan untuk memperbaiki akibatnya bila informasi tersebut ternyata bohong.
+Kebenaran sebuah informasi juga dapat diperiksa melalui sumber cek fakta yang dikelola media dan pemerintah, seperti rubrik Cek Fakta Kompas.com dan halaman berita hoaks Komdigi. Pemeriksaan semacam ini biasanya hanya memakan waktu satu sampai dua menit, jauh lebih singkat daripada waktu yang dibutuhkan untuk memperbaiki akibatnya bila informasi tersebut ternyata bohong.
 
-Selain memeriksa isinya, pembaca juga perlu mewaspadai informasi yang terlalu memancing emosi. Kemarahan dan ketakutan adalah pintu masuk yang paling sering dipakai pembuat hoaks agar pesannya cepat diteruskan. Karena itu, kebiasaan berhenti sejenak ketika merasa terpancing sebenarnya sudah merupakan setengah dari upaya pencegahan.
+Selain memeriksa isinya, kita juga perlu waspada pada informasi yang terlalu memancing emosi. Kemarahan dan ketakutan adalah tujuan reaksi yang paling sering dipakai dengan pembuat hoaks agar pesannya cepat diteruskan. Karena itu, kebiasaan berhenti sejenak ketika merasa terpancing sebenarnya sudah merupakan setengah dari upaya pencegahan.
 
 3. **Peran Keluarga dan Sekolah**
 
-Kebiasaan menyaring informasi tidak muncul dengan sendirinya, melainkan perlu ditanamkan sejak dini. Keluarga menjadi tempat pertama anak belajar bersikap terhadap informasi. Orang tua yang terbiasa memeriksa kebenaran sebuah pesan sebelum meneruskannya akan menjadi contoh yang lebih kuat daripada sekadar larangan, sebab anak lebih meniru apa yang dilihatnya daripada apa yang didengarnya.
+Kebiasaan menyaring informasi tidak muncul dengan sendirinya, melainkan perlu ditanamkan sejak dini. Keluarga dapat menjadi tempat pertama untuk anak belajar bersikap terhadap suatu informasi. Orang tua yang terbiasa untuk memeriksa kebenaran sebuah informasi sebelum meneruskannya akan menjadi contoh yang lebih kuat daripada sekadar larangan, sebab anak lebih meniru apa yang dilihatnya daripada apa yang didengarnya.
 
-Sekolah melanjutkan peran tersebut melalui pembelajaran. Literasi digital sebaiknya tidak berhenti pada pelajaran mengoperasikan komputer, tetapi mencakup latihan menilai sumber informasi, membandingkan beberapa berita, dan mengenali ciri hoaks.[^14]
+Sekolah melanjutkan peran tersebut melalui pembelajaran. Literasi digital sebaiknya tidak berhenti pada pelajaran mengoperasikan komputer saja, tetapi juga latihan untuk menilai sumber informasi, membandingkan beberapa berita, dan mengenali ciri hoaks.[^14]
 
-Latihan semacam ini akan lebih mengesan apabila menggunakan contoh hoaks yang benar-benar pernah beredar, bukan contoh yang dibuat-buat. Dengan begitu, siswa terbiasa bersikap kritis sebelum mereka aktif di media sosial, bukan setelah terlanjur menjadi penyebar hoaks.
+Latihan seperti ini akan lebih berkesan apabila menggunakan contoh hoaks yang benar-benar beredar, bukan contoh yang dibuat-buat. Dengan begitu, siswa dapat terbiasa bersikap kritis sebelum mereka menanggapi sesuatu di media sosial.
 
 4. **Peran Pemerintah dan Masyarakat**
 
-Pada tingkat yang lebih luas, pemerintah menjalankan Gerakan Nasional Literasi Digital melalui Siberkreasi, yang mengedukasi masyarakat tentang penggunaan ruang digital secara sehat. Komdigi juga melakukan penanganan konten hoaks dan menerbitkan klarifikasi resmi, sebagaimana terlihat dari 1.923 konten hoaks yang diidentifikasi sepanjang 2024.[^9]
+Pada tingkat yang lebih luas, pemerintah juga menjalankan Gerakan Nasional Literasi Digital melalui Siberkreasi, yang mengajak masyarakat untuk belajar tentang penggunaan platform digital secara sehat. Komdigi juga melakukan penanganan konten hoaks dan menerbitkan klarifikasi resmi, sebagaimana terlihat dari 1.923 konten hoaks yang diidentifikasi sepanjang 2024.[^9]
 
-Meskipun demikian, penanganan konten memiliki batas. Sebuah hoaks baru dapat ditangani setelah beredar dan dilaporkan, sementara pada saat yang sama hoaks baru terus bermunculan. Karena itu, edukasi literasi digital tetap menjadi upaya yang paling menentukan, sebab yang diperkuat bukan sistem penyaringnya, melainkan orang-orang yang menerima informasi itu sendiri.
+Meskipun demikian, pengelolaan konten hoaks memiliki batas. Sebuah hoaks baru dapat ditangani setelah beredar dan dilaporkan, sementara pada saat yang sama hoaks baru akan terus muncul. Karena itu, edukasi literasi digital tetap menjadi upaya yang paling menentukan, sebab yang diperkuat bukan sistem penyaringnya, melainkan orang-orang yang menerima informasi itu sendiri.
 
-Program literasi digital juga perlu menjangkau kelompok yang selama ini kurang diperhatikan, misalnya orang tua yang baru mengenal media sosial dan perangkat desa yang menjadi rujukan informasi bagi warganya. Kelompok tersebut sering luput dari sasaran program, padahal informasi yang mereka teruskan biasanya lebih dipercaya lingkungannya.
+Program literasi digital juga perlu menjangkau kelompok yang selama ini kurang diperhatikan, misalnya orang tua yang baru mengenal media sosial dan perangkat desa yang menjadi sumber informasi bagi warganya. Kelompok tersebut sering melenceng dari sasaran program, padahal informasi yang mereka teruskan biasanya lebih dipercaya lingkungannya.
 
 Pada akhirnya, semua upaya tersebut hanya akan berhasil jika masyarakat bersedia memeriksa lebih dahulu sebelum menyebarkan. Benteng terakhir dari hoaks bukan aturan atau teknologi, melainkan kesediaan setiap orang untuk berhenti sejenak dan bertanya apakah informasi yang diterimanya benar.
 

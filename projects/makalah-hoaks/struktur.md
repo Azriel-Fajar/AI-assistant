@@ -2,7 +2,7 @@
 
 **Judul:** MARAKNYA HOAKS DI MASYARAKAT: LITERASI DIGITAL SEBAGAI BENTENG INFORMASI BANGSA
 
-Mengikuti pola template dosen (Pendidikan Karakter): rumusan masalah 3 butir -> BAB II 3 subbab -> kesimpulan 3 butir.
+Mengikuti pola template dosen (Pendidikan Karakter). Revisi dosen 2026-07-22: rumusan masalah 4 butir -> BAB II 4 subbab -> kesimpulan 4 butir.
 
 ## COVER
 Judul, MAKALAH, Tugas Akhir Mata Kuliah Bahasa Indonesia, Dosen: Drs. Heru Purwanta, S.Si., M.Hum., Oleh Azriel Fajar Wicaksono NIM 672025121, logo UKSW, Salatiga 2026.
@@ -27,18 +27,20 @@ Judul, MAKALAH, Tugas Akhir Mata Kuliah Bahasa Indonesia, Dosen: Drs. Heru Purwa
 6. Penutup: perlu dipahami hakikat hoaks, dampaknya, dan strategi penanggulangannya melalui literasi digital.
 
 ### B. Rumusan Masalah
-1. Apa yang dimaksud dengan hoaks dan mengapa hoaks marak di masyarakat?
-2. Apa dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa?
-3. Bagaimana peran literasi digital dalam menangkal penyebaran hoaks?
+1. Apa yang dimaksud dengan hoaks?
+2. Mengapa hoaks marak di masyarakat?
+3. Apa dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa?
+4. Bagaimana peran literasi digital dalam menangkal penyebaran hoaks?
 
 ### C. Tujuan
-1. Menjelaskan hakikat hoaks dan penyebab maraknya hoaks di masyarakat.
-2. Menjelaskan dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa.
-3. Menjelaskan peran literasi digital dalam menangkal penyebaran hoaks.
+1. Menjelaskan hakikat hoaks.
+2. Menjelaskan penyebab maraknya hoaks di masyarakat.
+3. Menjelaskan dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa.
+4. Menjelaskan peran literasi digital dalam menangkal penyebaran hoaks.
 
 ## BAB II PEMBAHASAN
 
-### A. Hakikat Hoaks dan Penyebab Maraknya
+### A. Hakikat Hoaks
 1. Definisi (footnote per definisi):
    - KBBI: hoaks = berita bohong -- rujuk KBBI Edisi V (gaya template) + https://www.merdeka.com/jatim/mengenal-arti-hoax-atau-berita-bohong-dan-cara-tepat-menyikapinya-kln.html (link ditsmp.kemendikdasmen lama MATI/404, diganti)
    - Silverman (2015): informasi sengaja disesatkan, "dijual" sebagai kebenaran -- via https://mh.uma.ac.id/apa-sebenarnya-hoaks-itu/
@@ -47,13 +49,14 @@ Judul, MAKALAH, Tugas Akhir Mata Kuliah Bahasa Indonesia, Dosen: Drs. Heru Purwa
    - Sumber: Siberkreasi -- https://gnld.siberkreasi.id/apa-itu-hoaks-ini-lah-beberapa-bahayanya-yang-wajib-diketahui/
    - Pendukung: Merdeka -- https://www.merdeka.com/jatim/mengenal-arti-hoax-atau-berita-bohong-dan-cara-tepat-menyikapinya-kln.html
 3. Kesimpulan definisi versi sendiri (gaya template: "Dari penjelasan di atas dapat disimpulkan..."). (Tanpa sumber.)
-4. Penyebab marak: (a) penetrasi internet + medsos, semua orang jadi "penerbit"; (b) literasi digital rendah; (c) motif ekonomi dan politik; (d) budaya share sebelum saring / echo chamber.
+### B. Penyebab Maraknya Hoaks di Masyarakat
+1. Penyebab marak, tiap butir jadi subbab: (a) penetrasi internet + medsos, semua orang jadi "penerbit"; (b) literasi digital rendah; (c) motif ekonomi dan politik; (d) budaya share sebelum saring / echo chamber.
    - Sumber (a): Survei APJII -- https://survei.apjii.or.id/
    - Sumber (b): Indeks Literasi Digital 3,49/5 -- https://mui.or.id/baca/berita/literasi-digital-indonesia-baru-62-persen-infokom-mui-gandeng-uin-sunan-kalijaga-gelar-seminar-nasional
    - Sumber (c): Komdigi, penipuan 890 konten 2024 -- https://www.komdigi.go.id/berita/siaran-pers/detail/komdigi-identifikasi-1923-konten-hoaks-sepanjang-tahun-2024
    - Sumber (d): Jurnal Dharmawangsa, Isu Hoaks Meningkat Menjadi Potensi Kekacauan -- https://jurnal.dharmawangsa.ac.id/index.php/device/article/download/4044/pdf
 
-### B. Dampak Maraknya Hoaks bagi Masyarakat dan Bangsa
+### C. Dampak Maraknya Hoaks bagi Masyarakat dan Bangsa
 1. Dampak sosial: perpecahan, saling curiga, konflik SARA; contoh pesan berantai warga Tionghoa 2025.
    - Sumber: Kompas.com -- https://www.kompas.com/cekfakta/read/2025/08/30/135900782/-hoaks-pesan-berantai-bagi-warga-tionghoa-terkait-demo-28-agustus
    - Teori: Jurnal Dharmawangsa (potensi kekacauan) -- https://jurnal.dharmawangsa.ac.id/index.php/device/article/download/4044/pdf
@@ -66,7 +69,7 @@ Judul, MAKALAH, Tugas Akhir Mata Kuliah Bahasa Indonesia, Dosen: Drs. Heru Purwa
    - Sumber: UU ITE Pasal 28 ayat (1) jo. Pasal 45A ayat (1) UU 19/2016 (pidana maks 6 tahun / denda Rp1 miliar); penjelasan di https://mh.uma.ac.id/apa-sebenarnya-hoaks-itu/
 5. Muara: hoaks mengancam persatuan dan keberadaban bangsa. (Sintesis penulis.)
 
-### C. Literasi Digital sebagai Strategi Menangkal Hoaks
+### D. Literasi Digital sebagai Strategi Menangkal Hoaks
 1. Hakikat literasi digital: kecakapan memahami, mengevaluasi kritis, menggunakan informasi digital secara sehat.
    - Sumber: Jurnal Informatio Unpad -- https://jurnal.unpad.ac.id/informatio/article/view/43792
    - Sumber: Jurnal Komunikasi Pemberdayaan APMD -- https://jurnal.apmd.ac.id/index.php/JKP/article/view/401
@@ -83,10 +86,11 @@ Judul, MAKALAH, Tugas Akhir Mata Kuliah Bahasa Indonesia, Dosen: Drs. Heru Purwa
 
 ## BAB III PENUTUP
 
-### A. Kesimpulan (3 butir, jawab tiap rumusan; tanpa sumber baru)
-1. Hoaks = berita bohong yang sengaja disesatkan; marak karena penetrasi medsos, rendahnya literasi digital, motif ekonomi-politik.
-2. Dampak: merusak kohesi sosial, kerugian ekonomi lewat penipuan, merusak demokrasi, ancaman pidana bagi penyebar; mengancam keberadaban bangsa.
-3. Penangkal utama adalah literasi digital di level individu, keluarga-sekolah, dan negara; hukum saja tidak cukup.
+### A. Kesimpulan (4 butir, jawab tiap rumusan; tanpa sumber baru)
+1. Hoaks = berita bohong yang sengaja disesatkan.
+2. Marak karena penetrasi medsos, rendahnya literasi digital, motif ekonomi-politik, budaya share sebelum saring.
+3. Dampak: merusak kohesi sosial, kerugian ekonomi lewat penipuan, merusak demokrasi, ancaman pidana bagi penyebar; mengancam keberadaban bangsa.
+4. Penangkal utama adalah literasi digital di level individu, keluarga-sekolah, dan negara; hukum saja tidak cukup.
 
 ### B. Saran (2 butir)
 1. Masyarakat: biasakan saring sebelum sharing dan verifikasi lewat kanal cek fakta sebelum menyebarkan informasi.

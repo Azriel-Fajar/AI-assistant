@@ -37,15 +37,17 @@ Berdasarkan pernyataan di atas, penting bagi kita untuk memahami lebih jauh haki
 
 2. **Rumusan Masalah**
 
-1. Apa yang dimaksud dengan hoaks dan mengapa hoaks marak di masyarakat?
-2. Apa dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa?
-3. Bagaimana peran literasi digital dalam mencegah penyebaran hoaks?
+1. Apa yang dimaksud dengan hoaks?
+2. Mengapa hoaks marak di masyarakat?
+3. Apa dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa?
+4. Bagaimana peran literasi digital dalam mencegah penyebaran hoaks?
 
 3. **Tujuan**
 
-1. Menjelaskan hakikat hoaks dan penyebab maraknya hoaks di masyarakat.
-2. Menjelaskan dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa.
-3. Menjelaskan peran literasi digital dalam mencegah penyebaran hoaks.
+1. Menjelaskan hakikat hoaks.
+2. Menjelaskan penyebab maraknya hoaks di masyarakat.
+3. Menjelaskan dampak maraknya hoaks bagi kehidupan masyarakat dan bangsa.
+4. Menjelaskan peran literasi digital dalam mencegah penyebaran hoaks.
 
 [^1]: Kompas.com, "[HOAKS] Prabowo Minta Masyarakat Jarah Rumah Anggota DPR dan Menteri," 2 September 2025, https://www.kompas.com/cekfakta/read/2025/09/02/160600082/-hoaks-prabowo-minta-masyarakat-jarah-rumah-anggota-dpr-dan-menteri (Diakses pada 9 Juli 2026).
 [^2]: Kominfo, Siaran Pers No. 02/HM/KOMINFO/01/2024, https://www.komdigi.go.id/berita/pengumuman/detail/siaran-pers-no-02-hm-kominfo-01-2024-tentang-hingga-akhir-tahun-2023-kominfo-tangani-12-547-isu-hoaks (Diakses pada 10 Juli 2026).
