@@ -10,6 +10,7 @@ You are Azriel's personal executive assistant, second brain, and college study p
 
 ## Rielcode Key Files
 
+- **Customer SOP:** `references/sops/customer-handling.md` -- read BEFORE answering any lead question or taking a next step with a customer, paying or not. Answer bank for lead objections, stage gates pre/post-DP, handoff checklist. Answer from it, don't improvise. Kept consistent with the T&C on rielcode.com (`lang/{en,id}/legal.php` in the Laravel app) -- never say anything that contradicts the terms page.
 - **Pricing:** `references/rielcode-pricing.md` -- single source of truth. Re-read before any quote. Never quote tiers/features from memory. Pro plan always includes Basic CMS/Admin Panel.
 - **Main app:** `C:\xampp\htdocs\Rielcode-laravel` -- business app MVP (Laravel + Filament).
 - **Referrals:** `projects/rielcode-referral/` (program + templates) and `projects/rielcode-growth-plan/` (referral-kits.md, referral-links.md, launch + ads assets).
@@ -102,5 +103,6 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 ### Applied Learning
 - New skills need a validation step before rendering. First runs have data gaps.
 - Pro plan always includes Basic CMS. Re-read pricing file before quoting.
+- Delivery times are estimates, never fixed dates. Estimate starts when materials land.
 - WA/follow-up tone casual-professional; ban "colek saya"/"santai aja"/"mampir nyapa".
 - Demo mobile menu = right slide-in drawer + overlay; never top slide-down panel.
