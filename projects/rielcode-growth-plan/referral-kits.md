@@ -13,7 +13,7 @@ No manual "saya dari [name]" tally. The code IS the tracking.
 
 ## Reward (double-sided)
 
-- New client uses the friend's code at checkout -> **client gets 10% off** any package (through 30 June 2026).
+- New client uses the friend's code at checkout -> **client gets 10% off** any package. Referral codes are ongoing, no expiry.
 - Friend earns **10% of the closed project value**, paid after deposit clears.
 - Tracking = the code on the order. No code = no reward.
 - 10% of a 4jt project = 400rb. Scales with project size.
@@ -53,7 +53,7 @@ mau bikin? chat: wa.me/6285669522225
 --- IG / FB feed ---
 buat yang lagi mikir bikin website bisnis, ini recommended.
 rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
-pakai kode BRY10 buat diskon 10% paket (sampai 30 Juni).
+pakai kode BRY10 buat diskon 10% paket.
 chat: wa.me/6285669522225
 #jasawebsite #websiteumkm
 ```
@@ -75,7 +75,7 @@ mau bikin? chat: wa.me/6285669522225
 --- IG / FB feed ---
 buat yang lagi mikir bikin website bisnis, ini recommended.
 rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
-pakai kode YEZ10 buat diskon 10% paket (sampai 30 Juni).
+pakai kode YEZ10 buat diskon 10% paket.
 chat: wa.me/6285669522225
 #jasawebsite #websiteumkm
 ```
@@ -97,7 +97,7 @@ mau bikin? chat: wa.me/6285669522225
 --- IG / FB feed ---
 buat yang lagi mikir bikin website bisnis, ini recommended.
 rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
-pakai kode CYN10 buat diskon 10% paket (sampai 30 Juni).
+pakai kode CYN10 buat diskon 10% paket.
 chat: wa.me/6285669522225
 #jasawebsite #websiteumkm
 ```
@@ -119,7 +119,7 @@ mau bikin? chat: wa.me/6285669522225
 --- IG / FB feed ---
 buat yang lagi mikir bikin website bisnis, ini recommended.
 rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
-pakai kode LIN10 buat diskon 10% paket (sampai 30 Juni).
+pakai kode LIN10 buat diskon 10% paket.
 chat: wa.me/6285669522225
 #jasawebsite #websiteumkm
 ```
@@ -141,7 +141,7 @@ mau bikin? chat: wa.me/6285669522225
 --- IG / FB feed ---
 buat yang lagi mikir bikin website bisnis, ini recommended.
 rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
-pakai kode NAND24 buat diskon 10% paket (sampai 30 Juni).
+pakai kode NAND24 buat diskon 10% paket.
 chat: wa.me/6285669522225
 #jasawebsite #websiteumkm
 ```
@@ -163,7 +163,51 @@ mau bikin? chat: wa.me/6285669522225
 --- IG / FB feed ---
 buat yang lagi mikir bikin website bisnis, ini recommended.
 rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
-pakai kode FRED14 buat diskon 10% paket (sampai 30 Juni).
+pakai kode FRED14 buat diskon 10% paket.
+chat: wa.me/6285669522225
+#jasawebsite #websiteumkm
+```
+
+---
+
+## Misael — code SIDE07
+
+```
+Misael, tolong bantu post ini ya. Tinggal upload videonya + caption di bawah. Kalau ada yang chat pakai kodemu, kamu dapet 10% dari nilai project. Makasih banyak 🙏🏻
+
+VIDEO: (aku kirim filenya terpisah)
+
+--- WhatsApp Status / IG Story ---
+temen aku bikin website bisnis di rielcode, hasilnya rapi banget.
+pakai kode SIDE07 dapet diskon 10%.
+mau bikin? chat: wa.me/6285669522225
+
+--- IG / FB feed ---
+buat yang lagi mikir bikin website bisnis, ini recommended.
+rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
+pakai kode SIDE07 buat diskon 10% paket.
+chat: wa.me/6285669522225
+#jasawebsite #websiteumkm
+```
+
+---
+
+## Calvin — code CAL10
+
+```
+Calvin, tolong bantu post ini ya. Tinggal upload videonya + caption di bawah. Kalau ada yang chat pakai kodemu, kamu dapet 10% dari nilai project. Makasih banyak 🙏🏻
+
+VIDEO: (aku kirim filenya terpisah)
+
+--- WhatsApp Status / IG Story ---
+temen aku bikin website bisnis di rielcode, hasilnya rapi banget.
+pakai kode CAL10 dapet diskon 10%.
+mau bikin? chat: wa.me/6285669522225
+
+--- IG / FB feed ---
+buat yang lagi mikir bikin website bisnis, ini recommended.
+rielcode bikin website custom, landing page, sampai toko online. cepat, harga jujur.
+pakai kode CAL10 buat diskon 10% paket.
 chat: wa.me/6285669522225
 #jasawebsite #websiteumkm
 ```
@@ -180,4 +224,8 @@ Status: new -> replied -> quoted -> closed / lost
 
 ## Codes -> admin
 
-Each code must exist in admin (rielcode-laravel) with 10% off + active. Verify before sending kits. Codes: BRY10, YEZ10, CYN10, LIN10, NAND24, FRED14, SIDE07, CAL10.
+Each code must exist in admin (rielcode-laravel) with 10% off + active. Codes: BRY10 (Bryan), YEZ10 (Yeza), CYN10 (Cynthia), LIN10 (Carlene), NAND24 (Aufa), FRED14 (Fando), SIDE07 (Misael), CAL10 (Calvin). Azriel confirmed all live 2026-07-26, along with MERDEKA10.
+
+## During August 2026
+
+Send `referral-kits-merdeka.md` instead. Same codes and rewards, but Merdeka framing with a 31 Aug deadline and the Merdeka video. Come back to this file on 1 Sep.

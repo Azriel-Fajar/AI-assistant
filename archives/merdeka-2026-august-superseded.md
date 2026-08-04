@@ -1,6 +1,13 @@
+> **SUPERSEDED 2026-07-26. Do not use.**
+> Live plan is `projects/merdeka-campaign/README.md`.
+> This draft is kept for reference only. It conflicts with the live plan in three ways:
+> ends 24 Aug (live: 31 Aug), gates the discount behind a follow-to-unlock mechanic
+> (live: straight code), and uses "lihat hasilnya sebelum bayar", which reads as
+> pay-on-success and is banned per `feedback_ad_copy_demo_ambiguity`.
+
 # Merdeka Sale — August 2026 (17 Agustus)
 
-_Planned: 2026-06-22. Status: planned, not launched._
+_Planned: 2026-06-22. Status: superseded, never launched._
 
 The big seasonal play. Anchored to Hari Kemerdekaan RI (Aug 17) — real ID buying moment, country-wide patriotic discount mood. Replaces the dead LAUNCH10 promo.
 

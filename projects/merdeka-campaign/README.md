@@ -1,6 +1,15 @@
 # Merdeka Campaign: 17 Agustus 2026 Promo Video
 
-Plan for the Independence Day Meta Ads promo. Status: PLAN APPROVED, BUILD PENDING. No video built yet; scripts below await Azriel's approval + VO recording.
+Plan for the Independence Day Meta Ads promo. Status: **VIDEO BUILT, SILENT, AWAITING VO.**
+
+Built 2026-07-26: both angles, all 4 ratios, plus a per-friend render for each of the 8 referral codes. 24 files total. Everything renders silent until the 10 VO mp3s land in `my-video/public/`; the scenes already accept a `vo` prop, so wiring is one line per scene with no rebuild.
+
+- Ads: `my-video/out/merdeka/Merdeka-{M1,M2}-{9x16,4x5,1x1,16x9}.mp4`
+- Referrals: `my-video/out/merdeka/<CODE>/{reel-9x16,feed-4x5}.mp4`
+- Batch script: `my-video/render-merdeka-referrals.mjs`
+- Kits to forward: `projects/rielcode-growth-plan/referral-kits-merdeka.md`
+
+Remaining before launch: VO clips, then upload + icebreakers + budget top-up.
 
 ## Offer
 
@@ -24,7 +33,9 @@ Copy rules (locked, apply to every script/caption/icebreaker):
 ## Video spec (locked constraints)
 
 - Remotion project `my-video/`, new composition `src/RielcodeAd/MerdekaAd.tsx`, registered in `Root.tsx` under a `Merdeka` folder.
-- Reuse `theme.ts` (cream #f4f1e9, forest green #2e4636). Allowed: one brief red-white accent moment (flag stripe motif) inside the hook scene; do not re-theme the whole ad.
+- Reuse `theme.ts` (cream #f4f1e9, forest green #2e4636) as the spine. Azriel expanded the Indonesian theming on 2026-07-26: red-white is a full accent system, not one hook moment. Built in: kawung batik texture field on every scene, umbul-umbul bunting on hook + CTA, waving Merah Putih stripe in the hook, red check marks, gold "Dirgahayu RI ke-81" line. Green still carries the brand; red-white is seasonal.
+- No flag graphic in the solution scene: red-over-white on cream reads as a floating red dash even with an outline. Dropped 2026-07-26. Flag motifs only survive on green backgrounds or against the bunting.
+- Code badge uses Inter, not Playfair. Playfair's old-style numerals render "MERDEKA10" as "MERDEKAio", which is unusable for a code people must type.
 - 4 ratios per angle: 1x1, 4x5, 16x9, 9x16 (reuse `adRatios` pattern from Root.tsx).
 - Max 3s (90 frames) per scene, fast-paced (per feedback_remotion_fast_paced_3s_frame).
 - VO: Azriel supplies AI VO mp3s into `my-video/public/` (no TTS key), wired per scene like A6-A8.
@@ -34,27 +45,43 @@ Copy rules (locked, apply to every script/caption/icebreaker):
 
 Two angles for testing. Each ~15s = 5 scenes x 3s. VO Indonesian, customer POV.
 
-### Angle M1: "Bisnis Merdeka"
+### Angle M1: "Bisnis Merdeka" — BUILT
 
-| Scene | VO | On-screen text |
-|---|---|---|
-| 1 Hook | "Tahun ini, bisnismu bisa merdeka juga." | BISNIS MERDEKA (red-white accent moment) |
-| 2 Problem | "Selama ini jualanmu numpang di marketplace dan algoritma." | Numpang lapak? Kena potongan? |
-| 3 Solution | "Punya website sendiri. Domain sendiri. Alamat bisnismu di internet." | namausahamu.com |
-| 4 Proof | "Lengkap dengan admin panel, bisa update sendiri kapan saja." | Admin panel + demo tampilan gratis |
-| 5 CTA | "Mulai 1 juta. Kode MERDEKA10, diskon 10% sampai 31 Agustus." | MERDEKA10, mulai 1jt, chat WA |
+Matches `src/RielcodeAd/MerdekaAd.tsx` as rendered. Record to these lengths; scenes 1-4 are 90 frames (3.0s), scene 5 is 105 frames (3.5s). Keep each clip a touch under so it never clips.
 
-### Angle M2: "Investasi, Bukan Gratisan"
+| # | File | Max | VO | On screen |
+|---|---|---|---|---|
+| 1 | `vo-merdeka-m1-1.mp3` | 2.8s | "Tahun ini, bisnismu bisa merdeka juga." | Bisnis Merdeka, bunting, 81 Tahun Indonesia |
+| 2 | `vo-merdeka-m1-2.mp3` | 2.8s | "Selama ini jualanmu numpang di marketplace dan algoritma." | Numpang lapak orang? Kena potongan tiap transaksi? Tenggelam kalau algoritma berubah? |
+| 3 | `vo-merdeka-m1-3.mp3` | 2.8s | "Punya website sendiri. Alamat bisnismu di internet." | Alamat bisnismu sendiri. / namausahamu.com |
+| 4 | `vo-merdeka-m1-4.mp3` | 2.8s | "Domain, hosting, admin panel, semua sudah termasuk." | Sudah termasuk + 7 item list |
+| 5 | `vo-merdeka-m1-5.mp3` | 3.3s | "Mulai 1 juta. Pakai kodenya, diskon 10% sampai 31 Agustus." | 10% DISKON, mulai 1 juta, `{code}`, WA |
 
-| Scene | VO | On-screen text |
-|---|---|---|
-| 1 Hook | "Website gratisan itu ada. Tapi yang menghasilkan, tidak gratis." | Gratis vs Menghasilkan |
-| 2 Reframe | "Website itu investasi. Alat supaya bisnismu ditemukan pembeli." | Investasi bisnis, bukan biaya |
-| 3 Offer | "Lihat demo tampilan websitemu dulu, gratis. Lanjut kalau cocok." | Demo tampilan gratis dulu |
-| 4 Terms | "Mulai 1 juta, DP 30% baru mulai dikerjakan." | Mulai 1jt, DP 30% |
-| 5 CTA | "Kode MERDEKA10, diskon 10% sampai akhir Agustus." | MERDEKA10, sampai 31 Agustus |
+Scene 4 VO changed from the original "admin panel" line: the scene now lists 7 Starter inclusions, so the VO names the top three instead of one.
+
+### Angle M2: "Investasi, Bukan Gratisan" — NOT BUILT YET
+
+| # | File | Max | VO | On screen |
+|---|---|---|---|---|
+| 1 | `vo-merdeka-m2-1.mp3` | 2.8s | "Website gratisan itu ada. Tapi yang menghasilkan, tidak gratis." | Gratis vs Menghasilkan |
+| 2 | `vo-merdeka-m2-2.mp3` | 2.8s | "Website itu investasi. Alat supaya bisnismu ditemukan pembeli." | Investasi bisnis, bukan biaya |
+| 3 | `vo-merdeka-m2-3.mp3` | 2.8s | "Lihat demo tampilan websitemu dulu, gratis. Lanjut kalau cocok." | Demo tampilan gratis dulu |
+| 4 | `vo-merdeka-m2-4.mp3` | 2.8s | "Mulai 1 juta, DP 30% baru mulai dikerjakan." | Mulai 1jt, DP 30% |
+| 5 | `vo-merdeka-m2-5.mp3` | 3.3s | "Pakai kodenya, diskon 10% sampai akhir Agustus." | 10% DISKON, `{code}`, sampai 31 Agustus |
 
 Note: M2 scene 4 states DP 30% on purpose, it screens out non-buyers.
+
+### VO is code-agnostic (locked)
+
+VO never speaks a code out loud. It says "pakai kodenya" and the code appears on screen only, driven by the `code` prop. Same rule `render-referrals.mjs` already relies on (see its header comment).
+
+Why: this video ships to Azriel AND to all 8 referral friends. Azriel's copy shows MERDEKA10; each friend's shows their own code (BRY10, YEZ10, CYN10, LIN10, NAND24, FRED14, SIDE07, CAL10). If VO said "MERDEKA10", the friend's badge and audio would contradict, and their code would never get used, which breaks referral tracking and their payout.
+
+One VO set of 10 clips (2 angles x 5 scenes) covers all 9 recipients.
+
+### Where to put the VO files
+
+Drop the mp3s in `my-video/public/` using the exact filenames in the tables above. The scenes already accept a `vo` prop and render silent when it is absent, so wiring is a one-line change per scene once the files land, no rebuild of the composition needed.
 
 ## Meta Ads setup
 
@@ -77,7 +104,8 @@ Note: M2 scene 4 states DP 30% on purpose, it screens out non-buyers.
 
 ## Open items for Azriel
 
-1. Confirm code name MERDEKA10 or rename.
-2. Confirm discount feature works on rielcode.com (LAUNCH10 gate infra).
-3. Supply VO mp3s per scene when scripts approved (10 clips: 2 angles x 5 scenes).
-4. Budget amount + top-up date for the launch window.
+1. ~~Confirm code name MERDEKA10~~ — confirmed 2026-07-26.
+2. ~~Discount codes live in admin~~ — Azriel confirmed MERDEKA10 + all 8 referral codes active 2026-07-26.
+3. **Supply VO mp3s** — 10 clips, filenames and max durations in the script tables above. Drop in `my-video/public/`.
+4. **Budget amount + top-up date.** Ad account was paused for funds as of Jul 2026. IDR 500k+ before launch to avoid a learning reset.
+5. ~~SIDE07 and CAL10 have no friend name on record~~ — SIDE07 = Misael, CAL10 = Calvin. Confirmed 2026-07-26, kits filled in.

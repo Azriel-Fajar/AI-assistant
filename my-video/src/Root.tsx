@@ -12,6 +12,13 @@ import {
   CODE,
 } from "./RielcodeAd/LaunchAd";
 import { V3AngleA, V3AngleB } from "./RielcodeAd/V3Ads";
+import {
+  MerdekaM1,
+  MerdekaM2,
+  MERDEKA_M1_DURATION,
+  MERDEKA_M2_DURATION,
+  MERDEKA_CODE,
+} from "./RielcodeAd/MerdekaAd";
 
 const ids = [
   "Angle1-NoOnlinePresence",
@@ -78,6 +85,26 @@ export const RemotionRoot: React.FC = () => {
           height={1920}
           defaultProps={{ code: CODE }}
         />
+      </Folder>
+      <Folder name="Merdeka">
+        {[
+          // Angles run different lengths: each scene is sized to its VO clip.
+          { angle: "M1", component: MerdekaM1, duration: MERDEKA_M1_DURATION },
+          { angle: "M2", component: MerdekaM2, duration: MERDEKA_M2_DURATION },
+        ].flatMap(({ angle, component, duration }) =>
+          adRatios.map((r) => (
+            <Composition
+              key={`Merdeka-${angle}-${r.label}`}
+              id={`Merdeka-${angle}-${r.label}`}
+              component={component}
+              durationInFrames={duration}
+              fps={30}
+              width={r.w}
+              height={r.h}
+              defaultProps={{ code: MERDEKA_CODE }}
+            />
+          ))
+        )}
       </Folder>
       <Folder name="V3">
         <Composition
