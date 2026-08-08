@@ -461,6 +461,20 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 
 ---
 
+## po Cust 42 — Warung HWI / Agen Resmi (Maxpresso + NesV, NTT)
+- **Source:** WhatsApp lead from Meta ad "Merdeka dari numpang lapak orang" (2026-08-07). WA +62 812-3650-6889. Opened with the ad's auto-icebreaker.
+- **Type:** Commercial. Agen resmi HWI (healthwealth International), MLM/reseller. Physical warung with a full HWI display case, located NTT.
+- **Currently selling via:** TikTok + WhatsApp only. No website. Ad hook landed because their reach depends on someone else's platform.
+- **Scope journey:** First said "produk herbal seperti kopi maxpresso". Then sent a warung photo showing 30+ HWI SKUs, so scope was read up toward a catalog. On being asked to confirm, answered **"Dua produk saja kk"** → scope settled back to Starter. Products confirmed: **Maxpresso** (kopi herbal ginseng/guarana/cordyceps) and **NesV** (herbal kewanitaan). Lesson: warung stock ≠ what they want online, always confirm before scoping up.
+- **Constraint — bad connectivity:** Lead flagged "jaringan di NTT parah". Site must be lightweight and fast on poor mobile networks. Was used as a selling point in the pitch. Keep it a real build constraint, not just copy.
+- **COMPLIANCE RISK (important):** The NesV creatives the lead sent carry hard medical claims — "cegah kanker serviks", "keputihan langsung hilang dalam 3 hari", "kista & mioma", "mengobati". NesV is BPOM **TR** (jamu/herbal tradisional), which cannot legally claim to treat, cure, or prevent disease. Their testimonial images also show real names + private health conditions with no visible consent. **Boundary was stated pre-DP (2026-08-07):** site will use manfaat language from official packaging/HWI copy only, testimonials shown without names and without raw chat screenshots. Do NOT build the raw claims even if asked later.
+- **Note on delivery:** The compliance message quoted the lead's own creatives back at them and used "kena teguran" (enforcement risk). Substance correct, tone one notch too heavy for a warm lead. Future compliance boundaries: name the category, not their material; frame as "how we build", skip enforcement language.
+- **Quote sent (2026-08-07):** Starter IDR 1jt — landing page for 2 products (penjelasan + foto + harga), testimoni, alamat warung, tombol pesan ke WhatsApp, domain + hosting 1 thn, panel admin (Basic). **MERDEKA10 10% off → Rp900rb.** DP 30% = **Rp270rb** (calculated on discounted price), 70% on finish.
+- **Stage:** Quoted with DP as the next step (SOP stage 5). No materials requested per SOP 1.4 (materials only after DP). Awaiting decision.
+- **Next:** On DP Rp270rb → send materials list (product photos, prices, warung address, jam buka, brand assets), then build. Closest demo reference is rielcode.com/demos/ecommerce-reseller/ though scope is smaller. If they push the medical claims, that is a decline not a negotiation. If silent 1-2 days → one warm nudge about the website, NOT about claims. Silent 3 days after nudge → archive.
+
+---
+
 ## Deleted from potential customers
 
 ## ~~po Cust 1 — Jatra Scale Indonesia~~ (DELETED)

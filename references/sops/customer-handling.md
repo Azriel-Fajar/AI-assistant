@@ -19,6 +19,7 @@ These never bend. If a situation seems to require bending one, stop and ask Azri
 | Handoff after payment | Hosting account handover happens at or after the 70% payment. The handoff is the lever, not the live site. |
 | DP non-refundable | Stated only when asked directly. See 1.2. |
 | No purchase before DP | Never buy hosting or domain until DP is received. Costs 250-400rb and Rielcode eats it if they bail. Happened with Cust 2. |
+| No materials request before DP | Never ask for product photos, price lists, logo files, or written content until DP is received. Ask for the decision, not the materials. See 1.4. |
 | Never 50/50 | Not a payment option. |
 | Never promise results | No "pasti dapat pelanggan/siswa". Website is a visibility tool. Say so honestly. |
 | Read pricing before quoting | Open `references/rielcode-pricing.md` every time. Never list features from memory. |
@@ -47,8 +48,8 @@ From first contact to money received.
 | 2 | Need known | They said their industry or what they want. | One nudge asking about their business. |
 | 3 | Quoted | Price band + demo link sent in the SAME message. | Follow-up nudge, see wa-close-scripts #4. |
 | 4 | Objection handled | Their question answered, next step offered. | Follow-up nudge. |
-| 5 | Agreed | They said yes to a package. | Send DP details again, once. |
-| 6 | DP received | Money in. Move to Part 2. | Ask once if there is a blocker. |
+| 5 | Agreed | They said yes to a package. Send DP details. Do NOT ask for materials yet. | Send DP details again, once. |
+| 6 | DP received | Money in. Move to Part 2. Materials request happens there, not here. | Ask once if there is a blocker. |
 
 **The one rule that matters most:** once you know their industry, quote in the next message. Do not run a discovery loop. 0/39 close rate came from qualifying endlessly and quoting late or never.
 
@@ -172,6 +173,37 @@ Keyed by what they actually type. Find the closest match. Exact wording lives in
 
 They supply business info, text, photos, and brand assets, and are responsible for the accuracy and licensing of what they send. Late materials push the estimate out, say that now, see 2.4.
 
+**State this as scope, not as a request.** Pre-DP this is information about what is included, so they can budget. Do not turn it into "kirim fotonya ya kak". The actual materials request happens at Part 2 stage 3, after DP. See 1.4.
+
+---
+
+#### Their content breaks a rule (medical claims, income claims, copied material)
+
+**When this comes up:** the client sends creatives or copy that cannot legally go on the site. Most common with herbal and supplement resellers (BPOM TR products cannot claim to treat, cure, or prevent disease), MLM income claims, and copied photos or text.
+
+**What they mean:** nothing. They are proud of their material and are showing you what to build. They almost never know there is a rule.
+
+**Answer with:** the boundary, stated as how Rielcode builds rather than as a correction. Name the category of claim, never their specific wording. Give the compliant alternative in the same message so it reads as a solution, not a refusal.
+
+Skeleton:
+
+> Satu catatan kecil kak. Untuk [product category], di website kami pakai [safe approach] bukan [claim category]. Website lebih ketat daripada sosmed karena permanen dan terindeks Google.
+>
+> Hasilnya tetap kuat kok kak, cuma bahasanya lebih aman buat kakak.
+
+**Never say:**
+- Their own copy quoted back at them as the example of what is wrong. This is the main failure. It reads as scolding someone who just shared something proudly.
+- Enforcement language. No "kena teguran", no sanctions, no penalties. Introduces a fear they did not arrive with.
+- Anything implying their existing sosmed posts are wrong. Comment on the website only.
+
+**Placement:** after the quote or alongside it, never before. The first substantial thing they read should not be a restriction.
+
+**Length:** short. One paragraph plus one reassurance line. A long compliance message reads as a bigger problem than it is.
+
+**The boundary does not bend, only the delivery.** If they insist on the prohibited content after a polite explanation, that is a decline. Rielcode's name is on the build and in the portfolio.
+
+**Live example:** Cust 42, HWI reseller, 2026-08-07. First attempt quoted the lead's NesV creatives back and used "kena teguran". Correct substance, too heavy. See `leads/active-customers.md` po Cust 42.
+
 ---
 
 #### "berapa lama jadinya?"
@@ -200,7 +232,7 @@ Add the condition in the same breath: estimasi mulai dihitung setelah materi dar
 
 **Do:** one nudge. Soft, gives them an out, keeps the door open. wa-close-scripts #4.
 
-**Do not:** send a second nudge, then a third. One nudge, then let it rest and apply the dead-lead rule (1.4).
+**Do not:** send a second nudge, then a third. One nudge, then let it rest and apply the dead-lead rule (1.5).
 
 ---
 
@@ -230,7 +262,29 @@ The Free Demo ad is paused. A custom mockup is no longer an advertised offer, it
 - Use the phrasing skeleton: "Ini website demo X yang ada di website kami kak:" then the URL, then the list of pages, then "modelnya cocok sama yang kakak bayangin?"
 - Demo URLs are `rielcode.com/demos/{niche}/` with the trailing slash. Without it the CSS 404s.
 
-### 1.4 Dead-lead rule
+### 1.4 Materials come after DP, never before
+
+**Do not ask a pre-DP lead for product photos, price lists, logo files, or written content.** Not as a next step, not as a soft close, not "biar kami mulai siapkan".
+
+**Why:**
+
+1. **It asks for work before they have committed.** Gathering photos and writing a price list is an afternoon of effort. A lead who has not paid will not do it, so the request becomes the thing that stalls the conversation. The ask feels like a task assigned by a stranger.
+2. **It fakes a commitment that does not exist.** Sending photos is not agreement. It creates a middle state where the lead thinks the project started and Rielcode thinks it is close to closing, and neither is true. Cust 2 sat in that state.
+3. **It buries the actual decision.** The only question pre-DP is "do you want to proceed at this price". A materials request replaces that question with a smaller, easier one, and the lead answers the easy one by going quiet on both.
+4. **It leaks scope for free.** Full catalog, prices, and assets in hand means the lead can take the spec elsewhere at no cost.
+5. **It contradicts rule zero.** Buy nothing before DP already applies to hosting. The same logic applies to our time. Materials handling is work.
+
+**Instead, close on the decision.** The message after a quote ends with the DP, not a shopping list:
+
+> Kalau kakak cocok, kami mulai dengan DP 30% kak, yaitu [amount]. Setelah DP masuk, kami kirim daftar materi yang kami butuhkan dan langsung mulai pengerjaan.
+
+That line does two jobs. It names the one action that moves things forward, and it tells them materials are coming later so the request is not a surprise at stage 3 of Part 2.
+
+**If the lead volunteers materials pre-DP:** accept them, thank them, do not start building. Steer back to the DP. Unsolicited photos are enthusiasm, not payment.
+
+**The only pre-DP question about their content** is the scope question needed to quote correctly, such as roughly how many products. That is a number, not an asset. Asking "berapa produknya" is fine. Asking "kirim foto produknya" is not.
+
+### 1.5 Dead-lead rule
 
 **3 days after the last nudge with no reply, move the lead to `leads/archive.md`.**
 
@@ -250,7 +304,7 @@ DP is in. This half is about delivering and getting paid the rest.
 |---|---|---|---|
 | 1 | DP received | Money confirmed. Log in `leads/active-customers.md`. | n/a |
 | 2 | Hosting option picked | Client chose option 1, 2, or 3. | Send the option script again, once. |
-| 3 | Brief + content in | Business info, photos, text, logo received. | Nudge for content. Estimate extends by the delay, tell them. |
+| 3 | Brief + content in | Business info, photos, text, logo received. **This is the first time materials are requested.** Send the full list in one message right after DP. | Nudge for content. Estimate extends by the delay, tell them. |
 | 4 | Build + review | Staging shown, revisions applied. | Ask what is blocking approval. |
 | 5 | Live | Site on their domain, working. | n/a |
 | 6 | Paid + handed off | 70% received, accounts transferred, completion doc sent. | Follow up on the balance. |
@@ -358,6 +412,7 @@ POST-DP
 
 - Quoted more than 3 days ago, no nudge sent. Send it.
 - Talking to a lead for a week with no number given. Quote now.
+- Asked a pre-DP lead for photos or a price list. Stop, steer back to the DP. See 1.4.
 - Paid client waiting on you with no update in 3 days. Update them even if there is no progress.
 - Site live but 70% unpaid and accounts already handed over. Never do this again, the handoff is the lever.
 
