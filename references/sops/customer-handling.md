@@ -59,6 +59,8 @@ From first contact to money received.
 
 Keyed by what they actually type. Find the closest match. Exact wording lives in `references/wa-close-scripts.md`; this bank gives the reasoning and the guardrails.
 
+**Before using any answer below, check it against the message limits in 1.2b.** A correct answer delivered as a wall of text still loses the lead.
+
 ---
 
 #### "kok mahal ya kak?" / "bisa kurang?" / "ada yang 300rb"
@@ -244,6 +246,59 @@ Add the condition in the same breath: estimasi mulai dihitung setelah materi dar
 
 ---
 
+### 1.2b Message length limits
+
+Quoting correctly is not enough. A lead who receives four topics in one block retains only the price and answers nothing. Both engaged leads in the 2026-08 WhatsApp batch got a 17-line quote and both went quiet.
+
+**The quote is two messages, not one.**
+
+**Message 1: recommendation, proof, promo, one question.** Send this, then stop and wait.
+
+- One tier only. Recommend the fit, do not present a menu.
+- Four feature bullets maximum, chosen for their niche. The full list is only for "dapat apa aja?".
+- One demo link. Two links split attention.
+- Promo goes here, one line. It is a close lever and belongs with the price (see 1.2, "kok mahal ya kak").
+- Ends with "modelnya cocok sama yang kakak bayangin?".
+
+**Message 2: timeline and DP.** Only after they reply.
+
+- Estimate, said as an estimate, with the materials condition.
+- DP amount and what happens after it lands.
+- No new features, no second tier, no extra links.
+
+**Why the split.** Message 1 asks them to react to a design. Message 2 asks them to commit money. Those are different decisions and stacking them means the lead answers neither. Splitting also means a non-reply to message 1 tells you the design missed, which is information you can act on.
+
+**This does not violate the quote-immediately rule.** Message 1 still contains the price and still ends on a concrete question. Nothing is deferred except the DP ask, which needs their reaction first to land.
+
+**Hard limits for any pre-DP message:**
+
+| Limit | Value |
+|---|---|
+| Tiers per message | 1 |
+| Feature bullets | 4 |
+| Demo links | 1 |
+| Questions asked | 1 |
+| Topics | 1 |
+
+**Second tier only on pushback.** If they say the price is too high, then offer the smaller tier, alone, in its own message. Never pre-empt a budget objection by quoting two tiers at once. That teaches them to anchor on the cheaper one before they have seen the value of either.
+
+**First contact stays one tap.** The auto-greeting asks the need with numbered options, not an open question. An open-ended "cerita dulu bisnis kakak di bidang apa" asks a stranger to do homework and lost 6 of 8 leads in the 2026-08 batch. Give them a list to pick from:
+
+```
+Halo kak, terimakasih sudah hubungi Rielcode 🙏🏻
+
+Biar kami bisa kasih gambaran yang paling pas, websitenya buat keperluan apa kak?
+1. Profil usaha
+2. Katalog produk
+3. Toko online
+
+Boleh balas nomornya saja kak, sekalian bidang usahanya kalau berkenan 😊
+```
+
+Still asks the need first, still no price or demo dump. The three options double as qualification, each maps to a tier band.
+
+---
+
 ### 1.3 Free demo gate
 
 The Free Demo ad is paused. A custom mockup is no longer an advertised offer, it is a rare fallback for a hesitant lead who would otherwise walk.
@@ -412,6 +467,7 @@ POST-DP
 
 - Quoted more than 3 days ago, no nudge sent. Send it.
 - Talking to a lead for a week with no number given. Quote now.
+- Quote message longer than 4 bullets, or carrying two tiers, or stacking demo plus timeline plus DP. Split it per 1.2b.
 - Asked a pre-DP lead for photos or a price list. Stop, steer back to the DP. See 1.4.
 - Paid client waiting on you with no update in 3 days. Update them even if there is no progress.
 - Site live but 70% unpaid and accounts already handed over. Never do this again, the handoff is the lever.

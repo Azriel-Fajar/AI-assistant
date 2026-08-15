@@ -1,102 +1,193 @@
 # WhatsApp Ad-Lead Close Scripts
 
-_Built 2026-06-17 from funnel analysis of 39 Meta Ads WhatsApp chats. Close rate at time: 0/39 paid._
+_Built 2026-06-17 from funnel analysis of 39 Meta Ads WhatsApp chats. Rewritten 2026-08-15 after the 8-chat August batch._
 
-## Diagnosis (why close died)
+Exact copy-paste wording. The reasoning behind each answer lives in `references/sops/customer-handling.md` 1.2. Message length rules are in SOP 1.2b and are not optional.
 
-1. **Double greeting, no hook** — 21/39 leads ghosted right after greeting. Auto-greeting + manual "ada yang bisa dibantu" said nothing new.
-2. **Price then silence** — 7 leads quoted, then no close attempt. Always ended on "mau dijelasin?" instead of a next step.
-3. **Over-discovery** — endless "fitur apa aja / ada referensi" loops, quote came too late or never (Cust 6 never got a number across 4 follow-ups).
+## Diagnosis
 
-Root cause: ran a discovery loop, not a close loop. Qualify endlessly, quote late, never ask for the yes.
+**June, 39 chats, 0 paid:**
+
+1. **Double greeting, no hook** - 21/39 ghosted right after greeting.
+2. **Price then silence** - 7 quoted, no close attempt, ended on "mau dijelasin?".
+3. **Over-discovery** - quote came too late or never.
+
+**August, 8 chats, 0 paid:**
+
+4. **Open-ended greeting** - 6/8 died on "cerita dulu bisnis kakak di bidang apa". A stranger will not do homework.
+5. **Wall-of-text quote** - the 2 engaged leads both got 17 lines carrying tier, features, demo, timeline, promo, and DP at once. Both went quiet. One retained only the price and replied "gak ada yang 500 ribuan".
+6. **No follow-up sent, ever** - all 8 chats ended on a Rielcode message. Zero nudges.
+
+Root cause June: discovery loop, not a close loop. Root cause August: correct content, unusable packaging, and no second touch.
 
 ## Tone rules (apply to all scripts)
 
 - Warm "kak", soft 🙏🏻, short one-idea lines.
-- Use "kami" in client messages.
-- No em dashes. No hype. No fake urgency. No lo/gue.
-- Ask need first. Do NOT dump price or demo links on first message.
+- Use "kami" not "saya".
+- No em dashes. No hype openers ("wah cocok banget kak", "mantap kak"). No fake urgency. No lo/gue.
+- Banned: "colek saya", "santai aja" (use "tidak masalah"), "gak masalah" (use "tidak masalah").
+- Ask the need first. No price or demo in the first message.
+- Plain copy-paste blocks. No markdown, it breaks on paste.
+
+**Current promo: MERDEKA10, 10% off, through 31 Aug 2026. LAUNCH10 is expired, never offer it.**
 
 ---
 
-## 1. Auto-greeting (set in WA Business app, not here)
+## 1. Auto-greeting (set in the WA Business app, not here)
 
-Replace the current price-dump greeting with this. Drops the "mulai dari Rp500.000" line per ask-need-first rule.
+Numbered options, not an open question. Reply cost is one character.
 
 ```
-Halo kak, makasih udah hubungi Rielcode 😊
+Halo kak, terimakasih sudah hubungi Rielcode 🙏🏻
 
-Boleh cerita dulu bisnis kakak di bidang apa? Biar kami bisa kasih gambaran website yang paling pas buat kakak 🙏🏻
+Biar kami bisa kasih gambaran yang paling pas, websitenya buat keperluan apa kak?
+1. Profil usaha
+2. Katalog produk
+3. Toko online
+
+Boleh balas nomornya saja kak, sekalian bidang usahanya kalau berkenan 😊
 ```
 
-Do NOT re-send a second "ada yang bisa dibantu" after this. The greeting already asks. Wait for their reply, then go to step 2.
+Do not send a second "ada yang bisa dibantu" after this. The greeting already asks. Wait, then go to script 2.
+
+Rough tier mapping from their answer: 1 leans Starter, 2 leans Starter or Pro, 3 leans Pro or Premium plus the Catalog add-on. Confirm against `references/rielcode-pricing.md` before quoting.
 
 ---
 
-## 2. After they say their business -> quote fast
+## 2. Quote, message 1 of 2
 
-Goal: give a demo + a price band in the SAME message. Don't loop on features first.
+One tier, four features inline, one niche demo, promo, one question. Then stop.
 
-```
-Wah boleh kak, [industri] cocok banget punya website 🙌
-
-Ini beberapa contoh demo kami biar kebayang: rielcode.com/demos/
-
-Buat bisnis seperti ini, biasanya pas di paket Pro Rp2.000.000 (custom, sampai 5 halaman, CMS biar bisa edit sendiri, domain + hosting gratis 1 tahun).
-
-Mau kami breakdown lebih detail kak?
-```
-
-If they want cheaper / simpler, drop to Starter band, but still give a number same message. Never end without a number once you know the industry.
-
----
-
-## 3. After price -> always close (never end on "mau dijelasin")
-
-End every quote on a next step, not a question into the void.
+Read the pricing file before sending. Never list features from memory.
 
 ```
-Kalau cocok, kami bisa mulai minggu ini kak.
+Baik kak, untuk [industri] biasanya paling kepakai [paket] [harga].
 
-Oiya, bulan ini ada promo LAUNCH10, diskon 10%, jadi totalnya Rp1.800.000.
+Isinya [fitur 1], [fitur 2], [fitur 3], plus Admin Panel biar kakak bisa ganti foto dan harga sendiri.
 
-Mau kami kirim detail buat mulai, atau enaknya call singkat dulu kak? 🙏🏻
+Lagi ada promo MERDEKA10 diskon 10 persen sampai 31 Agustus, jadi [harga diskon].
+
+Ini contoh yang mirip kak:
+rielcode.com/demos/[niche]/
+
+Desainnya masih draft kasar ya kak, nanti disesuaikan penuh sama usaha kakak. Modelnya cocok sama yang kakak bayangin?
 ```
 
-Always pair LAUNCH10 WITH the quote, not after they leave. It is a close lever, not a consolation prize.
+Rules:
 
----
+- One tier. Do not present a menu. Quoting two tiers anchors them on the cheaper one before they see value in either.
+- Four features maximum, chosen for their niche.
+- One demo link, the closest niche. Never the `/demos/` hub, it makes them browse.
+- Trailing slash on the URL or the CSS 404s.
+- Always say the design is a rough draft.
+- Starter and Pro always include CMS. Never omit it.
+- No timeline, no DP in this message.
 
-## 4. Ghost re-engage (after price, no reply 1-2 days)
-
-Soft, gives an out, keeps door open. One nudge, not many.
+Filled example, furniture:
 
 ```
-Halo kak, mau follow up pelan aja soal website [industri] nya 😊
+Baik kak, untuk furnitur biasanya paling kepakai Starter 1 juta.
 
-Kalau masih nimbang nimbang gak masalah. Kalau ada yang mau ditanya soal paket atau harganya, kami siap bantu.
+Isinya 1 sampai 2 halaman, desain custom, domain sama hosting gratis 1 tahun, plus Admin Panel biar kakak bisa ganti foto dan harga produk sendiri.
 
-Promo LAUNCH10 masih bisa dipakai bulan ini ya kak 🙏🏻
+Lagi ada promo MERDEKA10 diskon 10 persen sampai 31 Agustus, jadi 900 ribu.
+
+Ini contoh yang mirip kak:
+rielcode.com/demos/bengkel-interior/
+
+Desainnya masih draft kasar ya kak, nanti disesuaikan penuh sama produk kakak. Modelnya cocok sama yang kakak bayangin?
 ```
 
 ---
 
-## 5. Budget objection (lead says "belum cukup budget" / "lumayan juga")
+## 3. Quote, message 2 of 2
 
-Never mention their money. Reassure scope fit, offer the smaller tier + LAUNCH10.
+Only after they reply to message 1. Timeline and DP, nothing else.
 
 ```
-Gak masalah kak 🙏🏻 kami bisa sesuaikan sama kebutuhan kakak dulu.
+Estimasi [X] hari kerja kak, dihitung setelah materi dari kakak lengkap.
 
-Kalau mau, kami mulai dari versi lebih simpel dulu, nanti fitur lain bisa ditambah bertahap. Tetap dapat LAUNCH10 ya kak.
+Kalau kakak cocok, kami mulai dengan DP 30 persen yaitu [DP] setelah promo. Setelah DP masuk kami kirim daftar materinya dan langsung mulai pengerjaan 🙏🏻
+```
 
-Mau kami buatin gambaran versi yang pas budget kakak?
+Estimates: Student 1-3 days, Starter 3-5, Pro 7-10, Premium 10-14. Always an estimate, never a date.
+
+DP after MERDEKA10: Student 135rb, Starter 270rb, Pro 540rb, Premium 1.35jt.
+
+Do not ask for materials here. That happens after the DP lands. See SOP 1.4.
+
+---
+
+## 4. Ghost re-engage (no reply 1-2 days after the quote)
+
+One nudge. Gives an out, keeps the door open, restates the next step.
+
+```
+Halo kak, izin cek lagi soal website [industri] nya 🙏🏻
+
+Kalau demonya belum sreg, tidak masalah kak, warna sama modelnya bisa kami sesuaikan penuh sama usaha kakak. Yang di link itu masih draft kasar.
+
+Kalau kakak mau mulai, DP 30 persen nya [DP] setelah promo MERDEKA10. Setelah DP masuk kami kirim daftar materi yang dibutuhkan dan langsung mulai pengerjaan.
+```
+
+One nudge only. No reply after 3 more days means archive to `leads/archive.md`.
+
+---
+
+## 4b. Greeting-drop re-engage (no reply after the greeting)
+
+They never told you their industry, so there is nothing to quote. Re-ask with the easy version.
+
+```
+Halo kak, izin menyapa lagi 🙏🏻
+
+Biar lebih gampang, websitenya kira-kira buat keperluan apa kak?
+1. Profil usaha
+2. Katalog produk
+3. Toko online
+
+Balas nomornya saja juga tidak masalah kak, nanti kami kirimkan contoh yang paling mendekati.
+```
+
+---
+
+## 5. Budget objection ("belum cukup budget" / "ada yang 500 ribuan")
+
+Now the smaller tier appears, alone, in its own message. Never comment on their money.
+
+```
+Ada kak, Student 500 ribu, isinya 1 halaman dengan desain custom dan tombol WhatsApp.
+
+Satu catatan penting kak, di paket ini domain dan hosting belum termasuk, jadi terpisah sekitar 250 sampai 400 ribu per tahun dan dibayar langsung ke penyedia hostingnya.
+
+Kalau mau yang sudah sekalian lengkap, Starter 900 ribu setelah promo sudah termasuk domain, hosting 1 tahun, dan Admin Panel.
+
+Fitur lain bisa ditambah bertahap nanti kak, jadi tidak harus sekaligus di awal.
+```
+
+Student has no domain, no hosting, and no CMS. Always state that, otherwise the upgrade later feels like a bait.
+
+---
+
+## 6. Price pushback ("kok mahal ya kak" / "ada yang 300rb")
+
+Answer with what the tier buys. Never attack the competitor, never drop the price unprompted.
+
+```
+Paham kak. Harga itu sudah sepaket ya kak, bukan cuma halamannya.
+
+Di dalamnya sudah termasuk domain dan hosting gratis 1 tahun, yang kalau beli sendiri sekitar 250 sampai 400 ribu per tahun. Desainnya juga custom, bukan template, dan ada Admin Panel biar kakak bisa ganti isinya sendiri tanpa hubungi kami tiap kali.
+
+Dengan MERDEKA10 sampai 31 Agustus, jadi [harga diskon] kak.
 ```
 
 ---
 
 ## Rule of thumb
 
-- Industry known -> quote in next message.
-- Price sent -> next step in same message (call / start date / LAUNCH10).
-- One follow-up nudge if ghost, then let it rest.
+- Industry known, quote in the next message. Do not run a discovery loop.
+- Quote is two messages. Recommendation and demo first, DP after they react.
+- One tier per message. Second tier only on pushback.
+- Never end on "mau dijelasin?". Every message ends on a concrete next step.
+- One nudge if they ghost, then archive after 3 days.
+- Read `references/rielcode-pricing.md` before every quote.
