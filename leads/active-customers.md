@@ -475,6 +475,19 @@ _Closed/paying customers. First sale = JOIN School (Cust 1), DP paid 2026-06-24.
 
 ---
 
+## po Cust 43 — Furnitur (WA lead, +62 857-3589-1078)
+- **Source:** WhatsApp lead from Meta ad (2026-08-11, "Halo! Bisakah saya mendapatkan info selengkapnya tentang ini?"). WA +62 857-3589-1078.
+- **Type:** Commercial. Furnitur. No existing site mentioned.
+- **Discovery:** Opened with price question ("berapa biaya bayar bikin web"), answered niche only: "Furnitur". No scope detail given yet (no product count, no brand, no photos).
+- **Quote sent (2026-08-11):** Pro IDR 2jt — up to 5 halaman (Beranda, Tentang, Katalog Produk, Galeri, Kontak), custom design, CMS/Admin Panel, domain + hosting 1 thn, SEO Advanced + Google Analytics, support 1 bulan. Starter IDR 1jt offered as the lighter option.
+- **Budget objection (2026-08-11):** "gak ada yang 500 ribuan". Answered with Student Plan IDR 500rb (1 halaman, custom design, SEO dasar, tombol WA + form, 1x revisi) and flagged clearly that **domain + hosting are NOT included in Student**, quoted as ~250-400rb/tahun paid direct to the host. Steered toward Starter as the real fit for a catalog.
+- **MERDEKA10 applied:** Starter 1jt → **Rp900rb** (promo until 31 Aug).
+- **Open accuracy issue:** the ~250-400rb/thn domain+hosting figure is NOT in `references/rielcode-pricing.md`. It was quoted from market estimate, not the price list. Verify real provider cost (Rumahweb etc.) and either lock the number or stop quoting it. Already sent to this lead twice, so keep it consistent here unless corrected.
+- **Stage:** Lead replied "Jadi" (2026-08-16) = decided to proceed, but did not say which plan. Sent a clarifying message asking Student 500rb vs Starter 900rb, restating that the only difference is domain + hosting + Admin Panel, plus DP 30% as the next step.
+- **Next:** On plan confirmed → DP 30% (Rp150rb if Student, Rp270rb if Starter), then request materials per SOP (product photos, prices, brand, alamat, WA number). Recommend Starter: a furniture catalog does not fit Student's 1 page. Do NOT send materials list before DP.
+
+---
+
 ## Deleted from potential customers
 
 ## ~~po Cust 1 — Jatra Scale Indonesia~~ (DELETED)
