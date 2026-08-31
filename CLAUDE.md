@@ -106,3 +106,4 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - Delivery times are estimates, never fixed dates. Estimate starts when materials land.
 - WA/follow-up tone casual-professional; ban "colek saya"/"santai aja"/"mampir nyapa".
 - Demo mobile menu = right slide-in drawer + overlay; never top slide-down panel.
+- Slide-gen prompts: draft in chat, never a file. Filename is his call.

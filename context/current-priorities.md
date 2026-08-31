@@ -1,11 +1,12 @@
 # Current Priorities
 
-_Last updated: 2026-06-18_
+_Last updated: 2026-08-31_
 
 1. **Business** -- Land more clients for Rielcode. Target: 2 per month. Bottleneck is closing, not lead-gen.
 2. **College** -- Pass all coursework; semester ends July 2026.
-3. **Financial independence** -- Grow income to reduce reliance on monthly allowance.
-4. **Gym** -- Keep up physical health on the side.
+3. **Teaching** -- Lecturer's assistant for DDP, PTI, Matematika Diskrit. Coordinate with co-assistants, prep lab/practicum sessions, grade.
+4. **Financial independence** -- Grow income to reduce reliance on monthly allowance.
+5. **Gym** -- Keep up physical health on the side.
 
 ## Active Projects
 

@@ -8,6 +8,16 @@
   - Budget landing pages
   - Simple e-commerce
 
+## Teaching -- Lecturer's Assistant (asisten dosen)
+
+Assists three courses. Each has its own co-assistant.
+
+| Course | Co-assistant(s) |
+|---|---|
+| Dasar-Dasar Pemrograman (DDP) | Cynthia Elena Gunadi |
+| Pengantar Teknologi Informasi (PTI) | TBD |
+| Matematika Diskrit (Matdis) | Augusta Nayra Naftali, Inayatul Safitri |
+
 ## Revenue
 - Monthly allowance: ~IDR 1,500,000
 - Per project: ~IDR 4,000,000
