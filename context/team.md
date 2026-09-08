@@ -7,7 +7,6 @@ Azriel works solo on Rielcode. No employees or contractors.
 Not Rielcode staff. Peers he shares each course's assistant duties with.
 
 - **Dasar-Dasar Pemrograman (DDP)** -- Cynthia Elena Gunadi
-- **Pengantar Teknologi Informasi (PTI)** -- TBD
 - **Matematika Diskrit (Matdis)** -- Augusta Nayra Naftali, Inayatul Safitri
 
 ## Current Clients
