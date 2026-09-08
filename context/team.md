@@ -6,8 +6,8 @@ Azriel works solo on Rielcode. No employees or contractors.
 
 Not Rielcode staff. Peers he shares each course's assistant duties with.
 
-- **Dasar-Dasar Pemrograman (DDP)** -- Cynthia Elena Gunadi
-- **Matematika Diskrit (Matdis)** -- Augusta Nayra Naftali, Inayatul Safitri
+- **Dasar-Dasar Pemrograman (DDP)** -- Cynthia Elena Gunadi (672025001)
+- **Matematika Diskrit (Matdis)** -- Augusta Nayra Naftali (672025055), Inayatul Safitri (672025087)
 
 ## Current Clients
 
