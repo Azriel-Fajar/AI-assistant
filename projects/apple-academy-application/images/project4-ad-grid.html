@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f4f1ea;font-family:Inter,system-ui,sans-serif;color:#1c1a17}
+.wrap{width:1600px;height:1000px;padding:34px 44px;display:flex;flex-direction:column}
+h1{font-size:24px;font-weight:600;letter-spacing:-.01em}
+.sub{font-size:13px;color:#6b6459;margin-top:5px}
+.card{flex:1;margin-top:18px;background:#fffdf8;border:1px solid #e2dcd0;border-radius:12px;padding:18px;display:flex;flex-direction:column;justify-content:center}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tile{aspect-ratio:16/9}
+.tile{position:relative;border:1px solid #e2dcd0;border-radius:7px;overflow:hidden;background:#1e3229}
+.tile img{width:100%;height:100%;object-fit:contain;display:block}
+.tag{position:absolute;left:8px;bottom:8px;font-family:'JetBrains Mono',ui-monospace,Consolas,monospace;font-size:10px;letter-spacing:.02em;color:#fffdf8;background:rgba(12,11,9,.72);padding:3px 7px;border-radius:4px}
+.legend{margin-top:14px;display:flex;gap:26px;font-size:12.5px;color:#6b6459}
+.legend b{color:#1c1a17;font-weight:600}
+</style></head><body><div class="wrap">
+<h1>Rendering Advertisements With Code</h1>
+<div class="sub">Frames from twelve renders across four campaigns. Every scene is a React component; typography, color, and timing come from one shared theme file, so a palette change re-renders the whole library.</div>
+<div class="card">
+<div class="grid">
+  <div class="tile"><img src="adframes/f01.jpg"><span class="tag">Angle 6 · free demo</span></div>
+  <div class="tile"><img src="adframes/f02.jpg"><span class="tag">Angle 7 · risk free</span></div>
+  <div class="tile"><img src="adframes/f03.jpg"><span class="tag">Angle 8 · fast</span></div>
+  <div class="tile"><img src="adframes/f04.jpg"><span class="tag">v3 A · hook</span></div>
+  <div class="tile"><img src="adframes/f05.jpg"><span class="tag">v3 A · offer</span></div>
+  <div class="tile"><img src="adframes/f06.jpg"><span class="tag">v3 B · proof</span></div>
+  <div class="tile"><img src="adframes/f07.jpg"><span class="tag">v3 B · offer</span></div>
+  <div class="tile"><img src="adframes/f08.jpg"><span class="tag">promo · why</span></div>
+  <div class="tile"><img src="adframes/f09.jpg"><span class="tag">promo · close</span></div>
+  <div class="tile"><img src="adframes/f10.jpg"><span class="tag">Merdeka M1 · domain</span></div>
+  <div class="tile"><img src="adframes/f11.jpg"><span class="tag">Merdeka M1 · code</span></div>
+  <div class="tile"><img src="adframes/f12.jpg"><span class="tag">Merdeka M2 · price</span></div>
+</div>
+<div class="legend"><span><b>93</b> finished video assets</span><span><b>4</b> aspect ratios per ad</span><span><b>3s</b> maximum per scene</span><span><b>1</b> theme file drives all of it</span></div>
+</div>
+</div></body></html>

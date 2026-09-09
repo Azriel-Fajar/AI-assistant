@@ -1,4 +1,4 @@
-# CV Content — Azriel Fajar Wicaksono
+# CV Content: Azriel Fajar Wicaksono
 
 File name for submission: `AzrielFajarWicaksono_CV_Academy.pdf`
 Max 2 pages.
@@ -44,8 +44,8 @@ a chance to learn a new discipline rather than repeat a known one.
 
 ## WORK EXPERIENCE
 
-### Teaching Assistant (Asisten Dosen) — Satya Wacana Christian University
-**Aug 2026 – Present**
+### Teaching Assistant (Asisten Dosen): Satya Wacana Christian University
+**Aug 2026 to Present**
 
 - Selected as teaching assistant for three concurrent courses: Programming Fundamentals
   (Dasar-Dasar Pemrograman), Introduction to Information Technology (Pengantar Teknologi
@@ -55,8 +55,8 @@ a chance to learn a new discipline rather than repeat a known one.
 - Share responsibility with a co-assistant for 30% of the final grade in each class, including
   assessment design and evaluation.
 
-### Founder & Web Developer — Rielcode
-**Oct 2024 – Present**
+### Founder & Web Developer: Rielcode
+**Oct 2024 to Present**
 
 - Founded and run Rielcode, a solo web development studio, handling the full cycle from lead
   generation and scoping through development, deployment, and client handover.
@@ -74,8 +74,8 @@ a chance to learn a new discipline rather than repeat a known one.
 - Rebuilt the FIT Competition 2026 website for Satya Wacana Christian University, improving
   structure, responsiveness, and visual quality.
 
-### Web Developer (Intern) — PT. Parallaxnet Siber Indonesia
-**Sep 2024 – Feb 2025**
+### Web Developer (Intern): PT. Parallaxnet Siber Indonesia
+**Sep 2024: Feb 2025**
 
 - Developed the company website using PHP, Laravel, MySQL, Bootstrap, HTML, CSS, and JavaScript.
 - Built core features including page structures, backend functionality, and database integration.
@@ -86,8 +86,8 @@ a chance to learn a new discipline rather than repeat a known one.
 
 ## PROJECTS
 
-### Rielcode Business Platform — rielcode.com
-**Oct 2025 – Present | Laravel, Filament, MySQL**
+### Rielcode Business Platform: rielcode.com
+**Oct 2025 to Present | Laravel, Filament, MySQL**
 
 - Built the internal platform that runs the business: order management, invoice generation,
   audit logging, and admin settlement.
@@ -95,8 +95,8 @@ a chance to learn a new discipline rather than repeat a known one.
   program section.
 - Supports both IDR and USD invoicing for local and international clients.
 
-### JARVIS — Personal AI Operating System
-**2025 – Present | Markdown, PowerShell, Node.js, Claude Code**
+### JARVIS: Personal AI Operating System
+**2025 to Present | Markdown, PowerShell, Node.js, Claude Code**
 
 - Built a personal AI assistant system with 45 modular skills covering client proposals,
   lead tracking, deployment pipelines, content production, and coursework support.
@@ -115,15 +115,15 @@ a chance to learn a new discipline rather than repeat a known one.
 
 ## EDUCATION
 
-### Satya Wacana Christian University — Computer Science
-**2025 – Present | GPA 3.91 / 4.00**
+### Satya Wacana Christian University: Computer Science
+**2025 to Present | GPA 3.91 / 4.00**
 
 - Teaching assistant for three courses: Programming Fundamentals, Introduction to Information
   Technology, and Discrete Mathematics.
 - Event committee member, FIT Competition 2026.
 
-### Surakarta State Vocational School 5 — Software Engineering
-**2022 – 2025**
+### Surakarta State Vocational School 5: Software Engineering
+**2022 to 2025**
 
 - 1st place, city-level Student Competency Competition, Web Design Engineering.
 - Completed Advanced Software Engineering course, Universitas Gadjah Mada.
@@ -132,9 +132,9 @@ a chance to learn a new discipline rather than repeat a known one.
 
 ## CERTIFICATIONS
 
-- Full Stack Developer Certificate — PT. Parallaxnet Siber Indonesia, 2025
-- Advanced Software Engineering Course — Universitas Gadjah Mada, 2024
-- Student Competency Competition, Web Design Engineering — Lomba Kompetensi Siswa, 2024
+- Full Stack Developer Certificate: PT. Parallaxnet Siber Indonesia, 2025
+- Advanced Software Engineering Course: Universitas Gadjah Mada, 2024
+- Student Competency Competition, Web Design Engineering: Lomba Kompetensi Siswa, 2024
 
 ---
 

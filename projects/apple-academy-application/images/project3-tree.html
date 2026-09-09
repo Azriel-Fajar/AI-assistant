@@ -1,0 +1,54 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f4f1ea;font-family:Inter,system-ui,sans-serif;color:#1c1a17}
+.wrap{width:1600px;height:1000px;padding:38px 60px;display:flex;flex-direction:column}
+h1{font-size:24px;font-weight:600;letter-spacing:-.01em}
+.sub{font-size:13px;color:#6b6459;margin-top:5px}
+.card{flex:1;margin-top:18px;background:#fffdf8;border:1px solid #e2dcd0;border-radius:12px;padding:22px 34px;display:flex;align-items:center}
+pre{font-family:'JetBrains Mono',ui-monospace,'Cascadia Mono','Consolas',monospace;font-size:13.5px;line-height:1.42;white-space:pre;color:#2b2822}
+.g{font-weight:700;color:#0b0a08}
+.c{color:#8a8275}
+.legend{margin-top:14px;display:flex;gap:28px;font-size:13px;color:#6b6459}
+.legend b{color:#1c1a17;font-weight:600}
+</style></head><body><div class="wrap">
+<h1>JARVIS: Personal AI Operating System</h1>
+<div class="sub">45 modular skills, grouped by the friction each one removes. The memory layer is why the system holds a standard across sessions instead of restarting cold.</div>
+<div class="card"><pre>JARVIS/
+├── CLAUDE.md                    <span class="c">assistant constitution: rules, priorities, data map</span>
+├── .claude/skills/              <span class="c">45 modular skills</span>
+│   │
+│   ├── <span class="g">BUSINESS / CLIENT PIPELINE</span>
+│   │   ├── lead-tracker/        <span class="c">cold to closed pipeline</span>
+│   │   ├── client-proposal/     <span class="c">proposal from pricing source of truth</span>
+│   │   ├── follow-up/           <span class="c">client message drafting</span>
+│   │   ├── demo-website/        <span class="c">per-niche demo site generator</span>
+│   │   ├── site-review/         <span class="c">feature detection to price estimate</span>
+│   │   └── project-kickoff/ · project-completion-doc/ · audit/
+│   │
+│   ├── <span class="g">MARKETING / CONTENT</span>
+│   │   ├── caption/ · instagram-content/ · banner-design/
+│   │   ├── yt-strategy/ · yt-batch/ · yt-script/
+│   │   └── brand/ · design-system/ · repurpose-project/
+│   │
+│   ├── <span class="g">ENGINEERING / DELIVERY</span>
+│   │   ├── deploy/              <span class="c">7-stage deployment pipeline</span>
+│   │   ├── frontend-design/ · ui-ux-pro-max/ · site-cloner/
+│   │   └── git-command/ · playwright/ · chatbot-integration/
+│   │
+│   ├── <span class="g">COLLEGE / TEACHING</span>
+│   │   └── quiz-auto/ · grill-me/ · level-up/
+│   │
+│   └── <span class="g">META: skills that build skills</span>
+│       ├── skill-builder/ · agent-builder/ · claude-coach/
+│       └── session-memory/ · daily-priorities/ · gcal-schedule/
+│
+├── memory/                      <span class="c">57 files, persists across every session</span>
+├── context/                     <span class="c">identity, business, current priorities</span>
+├── decisions/log.md             <span class="c">append-only decision record</span>
+├── references/                  <span class="c">SOPs + pricing source of truth</span>
+├── leads/ · projects/           <span class="c">live business state</span>
+└── tools/google/                <span class="c">calendar, mail, drive CLIs</span></pre></div>
+</div></body></html>

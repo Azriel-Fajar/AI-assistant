@@ -1,4 +1,4 @@
-# Handoff Prompt — Update portfolio.rielcode.com
+# Handoff Prompt: Update portfolio.rielcode.com
 
 Paste everything below the line into a fresh Claude Code session.
 
@@ -30,7 +30,7 @@ click through, so the site has to agree with the PDF.
 - 93 rendered video ad assets
 - Two client projects delivered and paid; four company websites shipped in total
 - Rielcode Laravel platform: order management, invoicing (IDR + USD), audit logging, admin
-  settlement. **No payment gateway yet — do not claim one.**
+  settlement. **No payment gateway yet: do not claim one.**
 
 ## Do not put these on the site
 
@@ -45,11 +45,11 @@ click through, so the site has to agree with the PDF.
 
 Match these, in this order, so a reviewer moving from PDF to site sees the same story:
 
-1. Rielcode — building a web studio from zero (entrepreneurial)
-2. Rielcode Business Platform — Laravel + Filament operations system
-3. JARVIS — personal AI operating system, 45 skills
-4. Programmatic video ad pipeline — Remotion + Manim, 93 assets
-5. Parallaxnet Canada — company website with admin news system and AI chatbot
+1. Rielcode: building a web studio from zero (entrepreneurial)
+2. Rielcode Business Platform: Laravel + Filament operations system
+3. JARVIS: personal AI operating system, 45 skills
+4. Programmatic video ad pipeline: Remotion + Manim, 93 assets
+5. Parallaxnet Canada: company website with admin news system and AI chatbot
 
 ## What I want you to do
 
