@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Company Profile - PT Dwipa Anugrah Alam Mandiri</title>
+<style>
+@page { size: A4; margin: 0; }
+* { margin:0; padding:0; box-sizing:border-box; }
+:root { --ink:#0d2b45; --aqua:#0f7c92; --line:#d8e2e8; --soft:#f3f7f9; }
+body { font-family:"Segoe UI", Arial, Helvetica, sans-serif; color:#1b2733; font-size:9.6pt; line-height:1.5; }
+
+.page { width:210mm; height:297mm; position:relative; overflow:hidden; page-break-after:always; background:#fff; }
+.page:last-child { page-break-after:auto; }
+.pad { padding:16mm 18mm 13mm 18mm; height:100%; display:flex; flex-direction:column; }
+
+/* cover */
+.cover { background:var(--ink); color:#fff; }
+.cover-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.34; }
+.cover-wrap { position:relative; height:100%; display:flex; flex-direction:column; padding:24mm 18mm; }
+.cover-logo { width:34mm; }
+.cover-mid { margin-top:auto; }
+.cover-kicker { font-size:10pt; letter-spacing:.32em; text-transform:uppercase; color:#8fd3e0; margin-bottom:7mm; }
+.cover h1 { font-size:33pt; line-height:1.13; font-weight:700; letter-spacing:-.5px; }
+.cover .sub { font-size:14pt; color:#b9d6e2; margin-top:6mm; font-weight:300; }
+.cover-rule { width:36mm; height:3px; background:var(--aqua); margin:9mm 0; }
+.cover-foot { font-size:9.5pt; color:#9fc0cf; line-height:1.8; }
+
+/* headers */
+.eyebrow { font-size:8pt; letter-spacing:.24em; text-transform:uppercase; color:var(--aqua); font-weight:600; margin-bottom:2.5mm; }
+h2 { font-size:17pt; color:var(--ink); font-weight:700; letter-spacing:-.3px; line-height:1.2; }
+h2 + .rule { width:22mm; height:2.5px; background:var(--aqua); margin:3.5mm 0 5mm; }
+h3 { font-size:11pt; color:var(--ink); font-weight:700; margin-bottom:1.8mm; }
+h4 { font-size:9.6pt; color:var(--ink); font-weight:700; margin-bottom:1mm; }
+p { margin-bottom:2.5mm; }
+.lead { font-size:10.4pt; color:#37505f; line-height:1.55; }
+
+/* full bleed divider pages */
+.bleed { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border:none; }
+.bleed-tint { position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(10,40,72,.66) 0%, rgba(9,37,68,.72) 45%, rgba(7,26,46,.94) 100%); }
+/* cool-* images have the blue bias baked in; keeps the PDF vector-light */
+.bleed-txt { position:absolute; left:18mm; right:18mm; bottom:22mm; color:#fff; }
+.bleed-txt .n { font-size:9pt; letter-spacing:.3em; color:#8fd3e0; font-weight:600; margin-bottom:4mm; }
+.bleed-txt h2 { color:#fff; font-size:26pt; line-height:1.15; }
+.bleed-txt .rule { width:28mm; height:3px; background:var(--aqua); margin:5mm 0; }
+.bleed-txt p { color:#cfe3ec; font-size:10.5pt; max-width:125mm; line-height:1.6; margin:0; }
+
+/* image helpers */
+.img { width:100%; object-fit:cover; display:block; border-radius:2px; border:1px solid var(--line); }
+.cap { font-size:7.6pt; color:#8499a7; margin-top:1.2mm; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:5mm; }
+.grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:4mm; }
+.fill { flex:1; min-height:0; }
+
+/* text bits */
+ul.bul { list-style:none; margin:1.5mm 0 2.5mm; }
+ul.bul li { position:relative; padding-left:5mm; margin-bottom:1.3mm; font-size:9.2pt; color:#37505f; line-height:1.45; }
+ul.bul li:before { content:""; position:absolute; left:0; top:1.8mm; width:2mm; height:2mm; background:var(--aqua); border-radius:50%; }
+
+.band { background:var(--soft); border-left:3px solid var(--aqua); padding:4.5mm 5.5mm; }
+.band p:last-child { margin-bottom:0; }
+
+.speclist { list-style:none; }
+.speclist li { display:flex; border-bottom:1px solid var(--line); padding:1.4mm 0; font-size:8.8pt; }
+.speclist li span:first-child { width:32mm; color:#6a8394; }
+.speclist li span:last-child { font-weight:600; color:var(--ink); }
+
+table.spec { width:100%; border-collapse:collapse; font-size:8.8pt; }
+table.spec th { background:var(--ink); color:#fff; text-align:left; padding:2mm 3mm; font-weight:600; }
+table.spec td { padding:1.7mm 3mm; border-bottom:1px solid var(--line); }
+table.spec tr:nth-child(even) td { background:#fafcfd; }
+
+.tile { border:1px solid var(--line); border-radius:2px; padding:3.4mm 4mm; }
+.tile p { margin-bottom:0; font-size:8.8pt; color:#405768; line-height:1.45; }
+.tile .n { font-size:7.6pt; color:var(--aqua); font-weight:700; letter-spacing:.14em; margin-bottom:1.2mm; }
+
+.capbar { background:var(--ink); color:#fff; padding:3.5mm 5mm; border-radius:2px; }
+.capbar h4 { color:#fff; margin-bottom:.8mm; }
+.capbar p { color:#b9d6e2; font-size:8.8pt; margin:0; line-height:1.45; }
+
+.pnum { position:absolute; bottom:8mm; right:18mm; font-size:8.5pt; color:#9bb0bd; }
+.pfoot { position:absolute; bottom:8mm; left:18mm; font-size:8.5pt; color:#9bb0bd; }
+
+.toc { list-style:none; }
+.toc li { display:flex; align-items:baseline; padding:2.6mm 0; border-bottom:1px solid var(--line); font-size:10pt; }
+.toc .tn { width:11mm; color:var(--aqua); font-weight:700; }
+.toc .tt { flex:1; color:var(--ink); font-weight:600; }
+.toc .tp { color:#9bb0bd; font-size:9.5pt; }
+
+.ct { display:grid; grid-template-columns:1fr 1fr 1fr; gap:5mm; }
+.ct > div { border:1px solid var(--line); border-top:3px solid var(--aqua); border-radius:2px; padding:5mm 4.5mm; }
+.ct .lbl { font-size:7.6pt; letter-spacing:.2em; text-transform:uppercase; color:var(--aqua); font-weight:600; margin-bottom:2mm; }
+.ct p { font-size:9.4pt; margin-bottom:0; line-height:1.6; }
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<div class="page cover">
+  <img class="cover-img" src="img/cool-waste.jpg">
+  <div class="cover-wrap">
+    <img class="cover-logo" src="img/DAAM_Logo.png">
+    <div class="cover-mid">
+      <div class="cover-kicker">Company Profile</div>
+      <h1>PT Dwipa Anugrah<br>Alam Mandiri</h1>
+      <div class="sub">Waste and Water Management Infrastructure</div>
+      <div class="cover-rule"></div>
+      <div class="cover-foot">
+        Jl. A. Yani No. 285B, Manahan, Kec. Banjarsari<br>
+        Kota Surakarta, Jawa Tengah 57139<br>
+        daam.co.id
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 TENTANG + TOC -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">Tentang Perusahaan</div>
+  <h2>PT Dwipa Anugrah Alam Mandiri</h2>
+  <div class="rule"></div>
+
+  <p class="lead">Penyedia infrastruktur pengelolaan air dan limbah yang berkedudukan di Surakarta. Perusahaan menangani perancangan, pengadaan, pemasangan, dan pemeliharaan sistem teknik untuk kebutuhan industri dan bangunan komersial.</p>
+
+  <div class="band" style="margin:4mm 0;">
+    <p>Perusahaan melakukan riset dan perancangan teknologi pemurnian garam. Sebagian besar tenaga ahli berasal dari lembaga riset dan pengembangan teknologi garam terkemuka, dengan kerja sama bersama produsen teknologi pemurnian garam berskala global.</p>
+  </div>
+
+  <div class="grid2" style="margin-bottom:5mm;">
+    <div><img class="img" style="height:52mm;" src="img/teamwork.jpg"><div class="cap">Tim teknik perusahaan</div></div>
+    <div><img class="img" style="height:52mm;" src="img/purification_tank.jpg"><div class="cap">Unit pemurnian air</div></div>
+  </div>
+
+  <div class="eyebrow">Daftar Isi</div>
+  <ul class="toc">
+    <li><span class="tn">01</span><span class="tt">Bidang Usaha</span><span class="tp">03</span></li>
+    <li><span class="tn">02</span><span class="tt">Mechanical and Electrical Contracting</span><span class="tp">04</span></li>
+    <li><span class="tn">03</span><span class="tt">Infrastruktur Data Center</span><span class="tp">06</span></li>
+    <li><span class="tn">04</span><span class="tt">Pengolahan Air dan Air Limbah</span><span class="tp">09</span></li>
+    <li><span class="tn">05</span><span class="tt">Energi Terbarukan</span><span class="tp">11</span></li>
+    <li><span class="tn">06</span><span class="tt">Teknologi Pemurnian Garam</span><span class="tp">12</span></li>
+    <li><span class="tn">07</span><span class="tt">Informasi Kontak</span><span class="tp">14</span></li>
+  </ul>
+
+  <div class="pfoot">PT Dwipa Anugrah Alam Mandiri</div>
+  <div class="pnum">02</div>
+</div></div>
+
+<!-- 3 BIDANG USAHA -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">01 &nbsp;/&nbsp; Bidang Usaha</div>
+  <h2>Lima Lini Layanan</h2>
+  <div class="rule"></div>
+
+  <div class="grid2" style="gap:5mm;">
+    <div>
+      <img class="img" style="height:46mm;" src="img/brakist_tank.jpg">
+      <div class="tile" style="border-top:none; border-radius:0 0 2px 2px;">
+        <div class="n">01 &nbsp; MECHANICAL AND ELECTRICAL</div>
+        <h4>Kontraktor Sistem Bangunan</h4>
+        <p>Elektrikal, plambing dan pemadam kebakaran, HVAC, serta sistem komunikasi dan keamanan.</p>
+      </div>
+    </div>
+    <div>
+      <img class="img" style="height:46mm;" src="img/MEPL.jpeg">
+      <div class="tile" style="border-top:none; border-radius:0 0 2px 2px;">
+        <div class="n">02 &nbsp; DATA CENTER</div>
+        <h4>Infrastruktur Data Center</h4>
+        <p>Perancangan, pembangunan, dan pemeliharaan infrastruktur kelistrikan data center.</p>
+      </div>
+    </div>
+    <div>
+      <img class="img" style="height:46mm;" src="img/Waste-Water-Threatment.jpeg">
+      <div class="tile" style="border-top:none; border-radius:0 0 2px 2px;">
+        <div class="n">03 &nbsp; WATER TREATMENT</div>
+        <h4>Pengolahan Air dan Air Limbah</h4>
+        <p>IPAL, sistem pemurnian air deionisasi, dan desalinasi air payau serta air laut.</p>
+      </div>
+    </div>
+    <div>
+      <img class="img" style="height:46mm;" src="img/biomass.jpg">
+      <div class="tile" style="border-top:none; border-radius:0 0 2px 2px;">
+        <div class="n">04 &nbsp; RENEWABLE ENERGY</div>
+        <h4>Energi Terbarukan</h4>
+        <p>Energi biomassa, produksi wood pellet, dan pengolahan sampah menjadi energi.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:5mm;">
+    <img class="img" style="height:42mm;" src="img/salt-refinary.jpg">
+    <div class="tile" style="border-top:none; border-radius:0 0 2px 2px;">
+      <div class="n">05 &nbsp; SALT TECHNOLOGY</div>
+      <h4>Teknologi Pemurnian Garam</h4>
+      <p>Plant pengolahan garam lengkap, meliputi evaporasi dan kristalisasi vakum maupun MVR, refinery mekanis, coarse salt upgrading, flake salt, garam blok ternak, bath salt, tablet pelunak air, sampai lini pengemasan otomatis.</p>
+    </div>
+  </div>
+
+  <div class="pfoot">Bidang Usaha</div>
+  <div class="pnum">03</div>
+</div></div>
+
+<!-- 4 M&E DIVIDER -->
+<div class="page">
+  <img class="bleed" src="img/cool-purification.jpg">
+  <div class="bleed-tint"></div>
+  <div class="bleed-txt">
+    <div class="n">02 &nbsp; MECHANICAL AND ELECTRICAL</div>
+    <h2>Kontraktor Mekanikal<br>dan Elektrikal</h2>
+    <div class="rule"></div>
+    <p>Perancangan, pengadaan, pemasangan, pengujian, dan commissioning sistem bangunan. Solusi satu pintu untuk hunian, perkantoran, pabrik, serta fasilitas komersial dan publik.</p>
+  </div>
+  <div class="pnum" style="color:#8fd3e0;">04</div>
+</div>
+
+<!-- 5 M&E SOLUSI -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">02 &nbsp;/&nbsp; Mechanical and Electrical</div>
+  <h2>Cakupan Pekerjaan</h2>
+  <div class="rule"></div>
+
+  <div class="grid2" style="gap:5mm;">
+    <div>
+      <h3>Pekerjaan Elektrikal</h3>
+      <ul class="bul">
+        <li>Gardu listrik tegangan menengah dan rendah beserta transformator</li>
+        <li>Pemasangan generator set serta distribusi daya melalui panel utama dan cabang</li>
+        <li>Distribusi tegangan rendah, bus duct, penyangga kabel, dan pengkabelan</li>
+        <li>Pemasangan unit UPS</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Plambing dan Pemadam Kebakaran</h3>
+      <ul class="bul">
+        <li>Instalasi pengolahan air dan pekerjaan perpipaan</li>
+        <li>Produksi dan distribusi air dingin maupun air panas</li>
+        <li>Drainase air hujan dan sistem pompa</li>
+        <li>Pengolahan air kotor dan air limbah</li>
+        <li>Peralatan dan pengolahan air kolam renang</li>
+        <li>Sistem pemadam kebakaran dan sistem LPG</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid2" style="gap:5mm; margin-top:3mm;">
+    <div>
+      <h3>Sistem HVAC</h3>
+      <ul class="bul">
+        <li>Sistem air dingin berpendingin udara dengan desuperheater</li>
+        <li>Chiller berpendingin air dan cooling tower</li>
+        <li>Air handling unit, fan coil unit, dan unit split</li>
+        <li>Sistem Variable Refrigerant Volume</li>
+        <li>Udara segar, ventilasi, dan exhaust termasuk ducting</li>
+        <li>Cold room dan clean room</li>
+        <li>Penerapan Building Management System</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Komunikasi dan Keamanan</h3>
+      <ul class="bul">
+        <li>Sistem keamanan dan kendali akses</li>
+        <li>Sistem alarm kebakaran</li>
+        <li>CCTV dan Master Antenna Television</li>
+        <li>Telepon dan jaringan data termasuk PABX</li>
+        <li>Public Address dan EWIS</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="capbar" style="margin-top:4mm;">
+    <h4>Cakupan Sektor</h4>
+    <p>Hotel, resor, perkantoran, hunian, industri, pendidikan, kesehatan, lingkungan, ketenagalistrikan, transportasi, kelembagaan, dan ritel.</p>
+  </div>
+
+  <div class="fill" style="margin-top:5mm;">
+    <div class="grid2" style="height:100%;">
+      <img class="img" style="height:100%;" src="img/MEPL.jpeg">
+      <img class="img" style="height:100%;" src="img/purification_tank.jpg">
+    </div>
+  </div>
+
+  <div class="pfoot">Mechanical and Electrical</div>
+  <div class="pnum">05</div>
+</div></div>
+
+<!-- 6 DC DIVIDER -->
+<div class="page">
+  <img class="bleed" src="img/cool-mepl.jpg">
+  <div class="bleed-tint"></div>
+  <div class="bleed-txt">
+    <div class="n">03 &nbsp; INFRASTRUKTUR DATA CENTER</div>
+    <h2>Sistem Kelistrikan<br>dan Pemeliharaan</h2>
+    <div class="rule"></div>
+    <p>Infrastruktur data center bersifat mission critical. Keandalan daya menjadi fondasi utama, karena seluruh perangkat komputasi, pendingin, dan keamanan bergantung pada pasokan listrik yang tidak boleh terputus.</p>
+  </div>
+  <div class="pnum" style="color:#8fd3e0;">06</div>
+</div>
+
+<!-- 7 DC ELEKTRIKAL -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">03 &nbsp;/&nbsp; Infrastruktur Data Center</div>
+  <h2>Komponen Kelistrikan</h2>
+  <div class="rule"></div>
+
+  <p class="lead" style="margin-bottom:4mm;">Infrastruktur kelistrikan data center disusun berlapis. Sumber daya utama ditopang sumber cadangan, distribusi diatur agar setiap beban terlindungi, dan kondisi tiap komponen dipantau berkelanjutan.</p>
+
+  <img class="img" style="height:48mm;" src="img/MEPL.jpeg">
+  <div class="cap" style="margin-bottom:4mm;">Instalasi panel dan distribusi daya</div>
+
+  <table class="spec">
+    <tr><th style="width:42mm;">Komponen</th><th>Fungsi dalam Sistem</th></tr>
+    <tr><td>Panel Listrik</td><td>Enklosur pelat logam berisi komponen kelistrikan, konfigurasi tiga fasa dengan magnetic contactor pengendali aliran arus</td></tr>
+    <tr><td>Generator Set</td><td>Mengubah energi kinetik diesel atau bensin menjadi tenaga listrik sebagai sumber daya cadangan</td></tr>
+    <tr><td>Transformator</td><td>Mengubah tingkat tegangan arus bolak balik melalui belitan primer dan sekunder</td></tr>
+    <tr><td>Cubicle</td><td>Distribusi, pengukuran, dan proteksi rangkaian melalui bagian incoming, metering, dan outgoing</td></tr>
+    <tr><td>Kabel Daya</td><td>Penghantar tembaga atau aluminium berlapis isolasi dan selubung pelindung</td></tr>
+    <tr><td>UPS</td><td>Cadangan daya baterai dan pengondisian daya, melindungi dari pemadaman, lonjakan, dan penurunan tegangan</td></tr>
+    <tr><td>Battery Monitoring System</td><td>Memantau tegangan, arus, suhu, State of Charge, dan State of Health baterai</td></tr>
+  </table>
+
+  <div class="band" style="margin-top:4mm;">
+    <h4>Mengapa Lapisan Kelistrikan Menentukan</h4>
+    <p>Satu titik kegagalan daya dapat menghentikan seluruh layanan. UPS menjaga kesinambungan pada detik peralihan, generator set menopang beban pada pemadaman panjang, dan battery monitoring system memastikan cadangan benar benar siap saat dibutuhkan.</p>
+  </div>
+
+  <div class="pfoot">Infrastruktur Data Center</div>
+  <div class="pnum">07</div>
+</div></div>
+
+<!-- 8 DC PEMELIHARAAN -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">03 &nbsp;/&nbsp; Infrastruktur Data Center</div>
+  <h2>Layanan Pemeliharaan</h2>
+  <div class="rule"></div>
+
+  <p class="lead" style="margin-bottom:4mm;">Inspeksi rutin, pemantauan, dan servis berkala terhadap infrastruktur teknologi informasi maupun fasilitas, mencakup sistem pendingin, kelistrikan, perangkat server, dan sistem keamanan.</p>
+
+  <div class="grid3" style="margin-bottom:4mm;">
+    <div class="tile">
+      <div class="n">STRATEGI 01</div>
+      <h4>Preventif</h4>
+      <p>Perawatan terjadwal pada interval tetap. Pembersihan, penggantian komponen habis pakai, pengencangan sambungan, dan pemeriksaan parameter operasi.</p>
+    </div>
+    <div class="tile">
+      <div class="n">STRATEGI 02</div>
+      <h4>Prediktif</h4>
+      <p>Berpijak pada data kondisi aktual. Suhu, arus, tegangan, dan State of Health baterai dipakai memperkirakan kapan komponen mendekati batas kemampuan.</p>
+    </div>
+    <div class="tile">
+      <div class="n">STRATEGI 03</div>
+      <h4>Reliability Centered</h4>
+      <p>Prioritas perawatan berdasarkan kekritisan komponen. Perangkat dengan dampak kegagalan terbesar mendapat frekuensi pemeriksaan lebih tinggi.</p>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:4mm;">
+    <div>
+      <h3>Cakupan Objek Pemeliharaan</h3>
+      <ul class="bul">
+        <li>Sistem pendingin presisi dan perangkat tata udara</li>
+        <li>Panel, cubicle, transformator, dan generator set</li>
+        <li>UPS beserta bank baterai dan pemantauannya</li>
+        <li>Perangkat server dan infrastruktur pendukung</li>
+        <li>Kendali akses dan sistem pengawasan</li>
+      </ul>
+    </div>
+    <div class="capbar">
+      <h4>Dukungan Operasional</h4>
+      <p>Pemantauan dan dukungan teknis tersedia 24 jam setiap hari sepanjang minggu, sejalan dengan standar layanan yang perusahaan terapkan pada seluruh lini plant dan sistem yang dibangun.</p>
+    </div>
+  </div>
+
+  <div class="fill">
+    <img class="img" style="height:100%;" src="img/purification_tank.jpg">
+  </div>
+
+  <div class="pfoot">Infrastruktur Data Center</div>
+  <div class="pnum">08</div>
+</div></div>
+
+<!-- 9 WATER DIVIDER -->
+<div class="page">
+  <img class="bleed" src="img/cool-waste.jpg">
+  <div class="bleed-tint"></div>
+  <div class="bleed-txt">
+    <div class="n">04 &nbsp; PENGOLAHAN AIR DAN AIR LIMBAH</div>
+    <h2>Air Limbah, Pemurnian,<br>dan Desalinasi</h2>
+    <div class="rule"></div>
+    <p>Mengubah air yang tidak lagi layak digunakan menjadi air yang aman dikembalikan ke lingkungan, serta mengolah air laut dan air payau menjadi air layak minum.</p>
+  </div>
+  <div class="pnum" style="color:#8fd3e0;">09</div>
+</div>
+
+<!-- 10 WATER ISI -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">04 &nbsp;/&nbsp; Pengolahan Air dan Air Limbah</div>
+  <h2>Sistem dan Spesifikasi</h2>
+  <div class="rule"></div>
+
+  <div class="grid2" style="margin-bottom:4mm;">
+    <div>
+      <img class="img" style="height:40mm;" src="img/Waste-Water-Threatment.jpeg">
+      <div class="cap">Instalasi pengolahan air limbah</div>
+    </div>
+    <div>
+      <img class="img" style="height:40mm;" src="img/purification_tank.jpg">
+      <div class="cap">Sistem pemurnian air deionisasi</div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:4mm;">
+    <div class="tile">
+      <h4>Pengolahan Biologis</h4>
+      <p>Memanfaatkan materi biologis dan bakteri untuk menguraikan zat pencemar. Sesuai untuk air limbah rumah tangga dan bangunan usaha.</p>
+    </div>
+    <div class="tile">
+      <h4>Pengolahan Fisika dan Kimia</h4>
+      <p>Memanfaatkan reaksi kimia dan proses fisika. Untuk air limbah industri dan manufaktur yang mengandung bahan kimia serta zat beracun.</p>
+    </div>
+  </div>
+
+  <h3>Desalinasi Air Payau dan Air Laut</h3>
+  <p style="font-size:9.2pt; color:#37505f;">Sistem reverse osmosis dengan perbaikan rasa, penyesuaian pH, dan prapengolahan. Menyisihkan garam anorganik, ion logam berat, bahan organik, serta bakteri.</p>
+
+  <table class="spec" style="margin-bottom:4mm;">
+    <tr><th style="width:46mm;">Spesifikasi</th><th>Keterangan</th></tr>
+    <tr><td>Kemampuan Olah</td><td>Air laut sampai 40.000 ppm menjadi air tawar di bawah 700 ppm</td></tr>
+    <tr><td>Mutu Air Hasil</td><td>Memenuhi standar air minum GB5749-2006</td></tr>
+    <tr><td>Daya</td><td>220V dan 380V per 50 atau 60 Hz, dapat disesuaikan</td></tr>
+    <tr><td>Proteksi Tekanan</td><td>Berhenti otomatis di atas 6,5 MPa dan di bawah 0,05 MPa</td></tr>
+    <tr><td>Umur Rancangan</td><td>10 tahun</td></tr>
+    <tr><td>Tipe Kontainer</td><td>Ukuran 20, 30, dan 40 kaki</td></tr>
+    <tr><td>Penerapan</td><td>Kepulauan, kapal, perikanan, wilayah pesisir kekurangan air</td></tr>
+  </table>
+
+  <div class="fill">
+    <div class="grid2" style="height:100%;">
+      <div style="height:100%;"><img class="img" style="height:100%;" src="img/Brakist_kontainer.jpg"></div>
+      <div style="height:100%;"><img class="img" style="height:100%;" src="img/brakist_tank.jpg"></div>
+    </div>
+  </div>
+
+  <div class="pfoot">Pengolahan Air dan Air Limbah</div>
+  <div class="pnum">10</div>
+</div></div>
+
+<!-- 11 RENEWABLE -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">05 &nbsp;/&nbsp; Energi Terbarukan</div>
+  <h2>Biomassa dan Waste to Energy</h2>
+  <div class="rule"></div>
+
+  <div class="grid2" style="margin-bottom:4mm;">
+    <div>
+      <img class="img" style="height:44mm;" src="img/biomass.jpg">
+      <div class="tile" style="border-top:none; border-radius:0 0 2px 2px;">
+        <h4>Energi Biomassa</h4>
+        <p>Bahan bakar dari bahan organik. Dibakar menghasilkan uap penggerak turbin listrik, atau panas untuk pemanas ruangan dan air. Emisinya jauh lebih rendah dari batu bara dan minyak, dengan efisiensi boiler setara boiler konvensional.</p>
+      </div>
+    </div>
+    <div>
+      <img class="img" style="height:44mm;" src="img/wood.jpg">
+      <div class="tile" style="border-top:none; border-radius:0 0 2px 2px;">
+        <h4>Wood Pellet</h4>
+        <p>Bahan bakar padat dari limbah kayu, serbuk gergaji, dan sisa kehutanan. Panjang 1 sampai 2 sentimeter, diameter 6, 8, 10, atau 12 milimeter. Tanpa bahan pengikat tambahan karena lignin berperan sebagai pengikat.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3>Waste to Energy</h3>
+  <p style="font-size:9.2pt; color:#37505f;">Pengelolaan sampah padat perkotaan merupakan salah satu persoalan kota paling menantang di Indonesia. Diperkirakan hanya 60 sampai 70 persen timbulan sampah yang terangkut ke tempat pembuangan akhir, sisanya ditangani sendiri oleh masyarakat atau tersebar di berbagai titik kota.</p>
+
+  <h4 style="margin-top:2mm;">Akar Persoalan yang Teridentifikasi</h4>
+  <ul class="bul">
+    <li>Dukungan pemerintah kota yang belum sistematis, terpadu, dan menyeluruh</li>
+    <li>Komitmen pemerintah pusat dan daerah dalam pengelolaan sampah profesional</li>
+    <li>Regulasi baku yang belum menyeluruh dan konsisten</li>
+    <li>Disiplin pengelola sampah dalam menerapkan prosedur teknis</li>
+    <li>Pemahaman dan kesadaran masyarakat mengenai penanganan sampah</li>
+    <li>Kesiapan masyarakat untuk membayar layanan kebersihan</li>
+  </ul>
+
+  <div class="fill" style="margin-top:2mm;">
+    <img class="img" style="height:100%;" src="img/waste-energy.jpeg">
+  </div>
+
+  <div class="pfoot">Energi Terbarukan</div>
+  <div class="pnum">11</div>
+</div></div>
+
+<!-- 12 SALT DIVIDER -->
+<div class="page">
+  <img class="bleed" src="img/cool-vacuum.jpg">
+  <div class="bleed-tint"></div>
+  <div class="bleed-txt">
+    <div class="n">06 &nbsp; TEKNOLOGI PEMURNIAN GARAM</div>
+    <h2>Dari Evaporasi<br>sampai Pengemasan</h2>
+    <div class="rule"></div>
+    <p>Rangkaian plant pengolahan garam secara lengkap, mencakup evaporasi dan kristalisasi, refinery mekanis, upgrading, plant produksi, serta lini pengemasan otomatis.</p>
+  </div>
+  <div class="pnum" style="color:#8fd3e0;">12</div>
+</div>
+
+<!-- 13 SALT ISI -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">06 &nbsp;/&nbsp; Teknologi Pemurnian Garam</div>
+  <h2>Plant dan Spesifikasi</h2>
+  <div class="rule"></div>
+
+  <div class="grid3" style="margin-bottom:4mm;">
+    <div>
+      <img class="img" style="height:32mm;" src="img/salt_2.jpg">
+      <div class="cap">Rancangan tata letak plant</div>
+    </div>
+    <div>
+      <img class="img" style="height:32mm;" src="img/salt-refinary.jpg">
+      <div class="cap">Garam hasil pemurnian</div>
+    </div>
+    <div>
+      <img class="img" style="height:32mm;" src="img/Automaticsalt.jpg">
+      <div class="cap">Lini pengemasan otomatis</div>
+    </div>
+  </div>
+
+  <table class="spec" style="margin-bottom:4mm;">
+    <tr><th style="width:52mm;">Plant</th><th style="width:34mm;">Kapasitas</th><th>Material dan Kendali</th><th style="width:20mm;">Kirim</th></tr>
+    <tr><td>Vacuum Salt Plant</td><td>1 sampai 100 TPH</td><td>Titanium dan SS316L, DCS</td><td>5 sampai 8 bulan</td></tr>
+    <tr><td>MVR Evaporating Plant</td><td>1 sampai 80 TPH</td><td>Titanium dan SS316L, DCS</td><td>5 sampai 8 bulan</td></tr>
+    <tr><td>Mechanical Salt Refinery</td><td>1 sampai 30 TPH</td><td>SS316L, Cabinet atau PLC</td><td>3 sampai 5 bulan</td></tr>
+    <tr><td>Coarse Salt Upgrading</td><td>5 TPH sampai sesuai kebutuhan</td><td>SS316L</td><td>5 bulan</td></tr>
+    <tr><td>Flake Salt Refining</td><td>500 kilogram sampai 5 TPD</td><td>SS316L, Cabinet atau PLC</td><td>3 sampai 5 bulan</td></tr>
+    <tr><td>Livestock Salt Bricks</td><td>Blok 5 dan 10 kilogram, 3 sampai 4 per menit</td><td>SS316L dan Q235 antikorosi</td><td>2 bulan</td></tr>
+    <tr><td>Bath Salt Making</td><td>Sesuai kebutuhan</td><td>SS316L</td><td>2 bulan</td></tr>
+    <tr><td>Water Softener Tablet</td><td>Sesuai kebutuhan</td><td>SS316L</td><td>2 bulan</td></tr>
+  </table>
+  <p style="font-size:8.4pt; color:#6a8394; margin-bottom:4mm;">Seluruh plant disertai garansi 1 tahun dan layanan 24 jam setiap hari sepanjang minggu. Proses berjalan kontinu.</p>
+
+  <div class="grid2" style="margin-bottom:4mm;">
+    <div class="tile">
+      <h4>Evaporasi dan Kristalisasi</h4>
+      <p>Sistem multiple effect memanfaatkan uap sekunder antar tahap untuk menghemat energi. Sistem MVR mengompresi ulang uap sehingga tidak memerlukan uap segar setelah penyalaan awal, dan cukup satu tahap evaporasi sehingga menghemat lahan serta ruang boiler.</p>
+    </div>
+    <div class="tile">
+      <h4>Refinery Mekanis</h4>
+      <p>Roller pulverizer memotong butiran agar pengotor terpapar, dipadukan screw washing, stirring washing, dan elutriating counter current washing. Hasil akhir kering, putih, mengilap, dan mudah mengalir.</p>
+    </div>
+  </div>
+
+  <div class="fill">
+    <div class="grid3" style="height:100%;">
+      <img class="img" style="height:100%;" src="img/salt-coarse.jpg">
+      <img class="img" style="height:100%;" src="img/flake-salt.jpg">
+      <img class="img" style="height:100%;" src="img/lifes-stock.jpg">
+    </div>
+  </div>
+
+  <div class="pfoot">Teknologi Pemurnian Garam</div>
+  <div class="pnum">13</div>
+</div></div>
+
+<!-- 14 KONTAK -->
+<div class="page"><div class="pad">
+  <div class="eyebrow">07 &nbsp;/&nbsp; Informasi Kontak</div>
+  <h2>Hubungi Kami</h2>
+  <div class="rule"></div>
+
+  <div class="ct" style="margin-bottom:5mm;">
+    <div>
+      <div class="lbl">Alamat Kantor</div>
+      <p>Jl. A. Yani No. 285B<br>Manahan, Kec. Banjarsari<br>Kota Surakarta<br>Jawa Tengah 57139</p>
+    </div>
+    <div>
+      <div class="lbl">Telepon</div>
+      <p>+62 812-8494-0076<br><span style="color:#6a8394; font-size:8.6pt;">Sales 1</span></p>
+      <p style="margin-top:2.5mm;">+62 821-2343-8144<br><span style="color:#6a8394; font-size:8.6pt;">Sales 2</span></p>
+    </div>
+    <div>
+      <div class="lbl">Situs Web</div>
+      <p>daam.co.id</p>
+      <p style="margin-top:2.5mm; color:#6a8394; font-size:8.6pt;">Dukungan teknis 24 jam setiap hari sepanjang minggu.</p>
+    </div>
+  </div>
+
+  <div class="grid3" style="margin-bottom:5mm;">
+    <img class="img" style="height:34mm;" src="img/salt-bath.jpg">
+    <img class="img" style="height:34mm;" src="img/salt-softener-tablet.jpg">
+    <img class="img" style="height:34mm;" src="img/Vacuum1.jpg">
+  </div>
+
+  <div class="fill">
+    <img class="img" style="height:100%;" src="img/teamwork.jpg">
+  </div>
+
+  <div style="margin-top:5mm; padding-top:4mm; border-top:1px solid var(--line); text-align:center;">
+    <img src="img/DAAM_Logo.png" style="width:26mm;">
+    <p style="margin-top:2.5mm; font-size:9.6pt; color:var(--ink); font-weight:600;">PT Dwipa Anugrah Alam Mandiri</p>
+    <p style="font-size:9pt; color:#6a8394; margin:0;">Waste and Water Management Infrastructure</p>
+  </div>
+
+  <div class="pfoot">Informasi Kontak</div>
+  <div class="pnum">14</div>
+</div></div>
+
+</body>
+</html>
