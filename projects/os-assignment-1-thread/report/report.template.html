@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Task 1: Thread and Multithreading</title>
+<style>
+@page { size: A4; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Georgia, 'Times New Roman', serif; color:#1e293b; font-size:13px; line-height:1.6; }
+h1 { font-size:26px; }
+h2 { font-size:19px; margin:0 0 12px; padding-bottom:6px; border-bottom:2px solid #1d4ed8; color:#1e3a8a; }
+h3 { font-size:14.5px; margin:16px 0 7px; color:#1e3a8a; break-after: avoid; }
+p { margin-bottom:9px; text-align:justify; }
+ul, ol { margin:0 0 10px 22px; }
+li { margin-bottom:5px; text-align:justify; }
+code { font-family: Consolas, 'Courier New', monospace; font-size:12px; background:#eef2ff; padding:0 3px; border-radius:3px; }
+table { border-collapse:collapse; width:100%; margin:8px 0 12px; font-size:12px; }
+th, td { border:1px solid #94a3b8; padding:5px 8px; text-align:left; vertical-align:top; }
+th { background:#dbeafe; }
+.section { page-break-before: always; }
+.keep { break-inside: avoid; }
+
+.cover { height:255mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; page-break-after: always; }
+.cover p { text-align:center; }
+.cover .course { font-size:15px; letter-spacing:2px; color:#1e3a8a; }
+.cover h1 { margin:14px 0 6px; font-size:30px; }
+.cover .sub { font-size:16px; color:#475569; }
+.cover .who { margin:48px 0; font-size:16px; line-height:2; }
+.cover .uni { font-size:14px; line-height:1.8; }
+
+.code, .term { margin:6px 0 14px; border-radius:6px; overflow:hidden; }
+.term { break-inside: avoid; }
+.code { border:1px solid #cbd5e1; }
+.code-head, .term-head { font-family: Consolas, monospace; font-size:11px; padding:4px 10px; }
+.code-head { background:#e2e8f0; color:#334155; }
+.code pre, .term pre { font-family: Consolas, 'Courier New', monospace; font-size:10px; line-height:1.35; padding:8px 10px; white-space:pre-wrap; }
+.code pre { background:#f8fafc; }
+.ln { display:inline-block; width:2.4em; color:#94a3b8; text-align:right; margin-right:12px; }
+.c { color:#15803d; font-style:italic; }
+.s { color:#b45309; }
+.p { color:#7c3aed; }
+.k { color:#1d4ed8; font-weight:bold; }
+.n { color:#be123c; }
+.term { background:#0f172a; }
+.term-head { background:#1e293b; color:#94a3b8; }
+.term pre { color:#e2e8f0; }
+.note { background:#f1f5f9; border-left:3px solid #1d4ed8; padding:7px 12px; margin:8px 0 12px; font-size:12.5px; }
+</style></head><body>
+
+<!-- ============ COVER ============ -->
+<div class="cover">
+  <p class="course">TC631 OPERATING SYSTEM</p>
+  <h1>Task 1: Thread and Multithreading</h1>
+  <p class="sub">Multithreading, Mutex, Semaphore, and Coroutine in C++</p>
+  <div class="who">
+    <b>Azriel Fajar Wicaksono</b><br>
+    NIM 672025121<br>
+    Instructor: Theophilus Wellem
+  </div>
+  <p class="uni">Faculty of Information Technology<br>Satya Wacana Christian University<br>2026</p>
+</div>
+
+<!-- ============ 1. INTRODUCTION ============ -->
+<h2>1. Introduction</h2>
+<p>A <b>thread</b> is a unit of execution in which instructions run one after another. Every program has at least one thread, the <b>main thread</b>, which runs the code inside <code>main()</code>. A program that starts extra threads next to the main thread is a <b>multithreaded application</b>. The threads can run in parallel, so the operating system can use more than one CPU core.</p>
+<p>When threads share data, they must be <b>synchronized</b>, or the data can become wrong. This report shows four simple programs, one for each concept in the assignment:</p>
+<table class="keep">
+  <tr><th>Program</th><th>Concept</th><th>Scenario</th><th>Main C++ feature</th></tr>
+  <tr><td><code>1_thread.cpp</code></td><td>Multithreading</td><td>Two workers run at the same time as main</td><td><code>std::jthread</code>, <code>join()</code></td></tr>
+  <tr><td><code>2_mutex.cpp</code></td><td>Mutex</td><td>Two threads add to one shared counter</td><td><code>std::mutex</code></td></tr>
+  <tr><td><code>3_semaphore.cpp</code></td><td>Semaphore</td><td>Five cars share a parking lot with two spots</td><td><code>std::counting_semaphore</code></td></tr>
+  <tr><td><code>4_coroutine.cpp</code></td><td>Coroutine</td><td>A countdown that pauses and resumes</td><td><code>co_yield</code>, <code>std::generator</code></td></tr>
+</table>
+
+<h3>1.1 Environment</h3>
+<ul>
+  <li>Operating system: Windows 11</li>
+  <li>Compiler: {{gxx}}</li>
+  <li>Language standard: C++20 for Programs 1 to 3, C++23 for Program 4 (<code>std::generator</code> was added in C++23)</li>
+</ul>
+<p>Each program is compiled with <code>g++ -std=c++20 file.cpp -o file</code> (or <code>-std=c++23</code> for Program 4). The flag is required: without it, g++ uses C++17, where <code>std::jthread</code>, <code>std::counting_semaphore</code>, <code>std::format</code> and <code>std::generator</code> do not exist. All outputs in this report are real outputs from running the programs.</p>
+<div class="note">Programs 1 and 3 print with <code>std::cout &lt;&lt; std::format(...)</code>. <code>std::format</code> builds the whole line first, so each line is written in one call. If a line were printed piece by piece with several <code>&lt;&lt;</code>, pieces from different threads could get mixed in the same line.</div>
+
+<!-- ============ 2. MULTITHREADING ============ -->
+<div class="section">
+<h2>2. Program 1: Multithreading</h2>
+<h3>2.1 Objective</h3>
+<p>Show that threads run at the same time. The main thread starts two worker threads, keeps running, and then waits for both workers to finish before the program ends.</p>
+
+<h3>2.2 Source Code</h3>
+{{code:1_thread}}
+
+<h3>2.3 How the Program Works</h3>
+<ol>
+  <li><b>Lines 13&ndash;21, <code>Worker(int id)</code>:</b> the function that every worker thread runs. It prints three steps. After each step it sleeps for 500 ms (line 18) to act like it is doing real work. At the end it prints that it is finished.</li>
+  <li><b>Lines 28&ndash;29:</b> creating a <code>std::jthread</code> object starts a new thread <b>immediately</b>. <code>worker1</code> runs <code>Worker(1)</code> and <code>worker2</code> runs <code>Worker(2)</code>. From this point there are three threads: main, worker 1 and worker 2.</li>
+  <li><b>Line 31:</b> the main thread does not wait for the workers. It continues to its next line right away.</li>
+  <li><b>Lines 34&ndash;35, <code>join()</code>:</b> the main thread blocks until <code>worker1</code> ends, then until <code>worker2</code> ends. This is the simplest form of <b>thread synchronization</b>: one thread waits on another. (A <code>std::jthread</code> also joins automatically when it is destroyed. The <code>join()</code> calls are written here to make the waiting visible.)</li>
+  <li><b>Line 37:</b> this line only runs after both workers are done, so it is always the last line of the output.</li>
+</ol>
+
+<h3>2.4 Output</h3>
+{{output:1_thread}}
+
+<h3>2.5 Analysis</h3>
+<ul>
+  <li>The steps of Worker 1 and Worker 2 are mixed together. Both threads are active at the same time, which shows that they run in parallel.</li>
+  <li>The order of Worker 1 and Worker 2 inside the same step can change from run to run. The <b>operating system scheduler</b> decides which thread runs first. The program has no control over it.</li>
+  <li>Each worker sleeps 3 &times; 500 ms = 1.5 s. If the workers ran one after another, the program would take about 3 s. The measured run time was <b>{{time:1_thread}}</b> (1.5 s of work plus program start-up time), because both workers sleep at the same time.</li>
+  <li>"Main: all workers finished" always comes last, because of the two <code>join()</code> calls.</li>
+</ul>
+</div>
+
+<!-- ============ 3. MUTEX ============ -->
+<div class="section">
+<h2>3. Program 2: Mutex</h2>
+<h3>3.1 Objective</h3>
+<p>Show what goes wrong when two threads write to the same shared variable without synchronization (a <b>race condition</b>), and how a <b>mutex</b> fixes it. Two threads each add 1 to a shared <code>counter</code> 1,000,000 times, so the correct result is 2,000,000.</p>
+
+<h3>3.2 Source Code</h3>
+{{code:2_mutex}}
+
+<h3>3.3 How the Program Works</h3>
+<ol>
+  <li><b>Lines 13&ndash;14:</b> <code>counter</code> is a global variable, so both threads share it. <code>counterMutex</code> is the mutex that protects it.</li>
+  <li><b>Lines 17&ndash;21, <code>AddWithoutMutex()</code>:</b> adds 1 to <code>counter</code> 1,000,000 times with no protection.</li>
+  <li><b>Lines 24&ndash;32, <code>AddWithMutex()</code>:</b> the same loop, but each <code>counter++</code> is inside the mutex:
+    <ul>
+      <li>Line 28, <code>lock()</code>: the thread <b>acquires</b> the mutex. If another thread already holds it, this thread waits (the OS puts it to sleep) until the mutex is released.</li>
+      <li>Line 29, <code>counter++</code>: the <b>critical section</b>. Only one thread can be here at a time.</li>
+      <li>Line 30, <code>unlock()</code>: the thread <b>releases</b> the mutex, so a waiting thread can enter.</li>
+    </ul>
+  </li>
+  <li><b>Lines 37&ndash;42, Test 1:</b> two threads run <code>AddWithoutMutex</code> at the same time. Main joins both and prints the result.</li>
+  <li><b>Lines 45&ndash;50, Test 2:</b> the same test with <code>AddWithMutex</code>.</li>
+</ol>
+
+<h3>3.4 Why the Result Is Wrong Without a Mutex</h3>
+<p><code>counter++</code> looks like one operation, but the CPU does it in three steps: <b>read</b> the value from memory, <b>add</b> 1, and <b>write</b> it back. If two threads do these steps at the same moment, one addition can be lost:</p>
+<table class="keep">
+  <tr><th>Time</th><th>Thread A</th><th>Thread B</th><th>counter in memory</th></tr>
+  <tr><td>1</td><td>read counter (10)</td><td></td><td>10</td></tr>
+  <tr><td>2</td><td></td><td>read counter (10)</td><td>10</td></tr>
+  <tr><td>3</td><td>add 1, write 11</td><td></td><td>11</td></tr>
+  <tr><td>4</td><td></td><td>add 1, write 11</td><td>11 (should be 12)</td></tr>
+</table>
+<p>This happens many times during 2,000,000 additions, so the final value is too small. With the mutex, Thread B cannot start its read until Thread A has finished its write and unlocked, so no addition is lost.</p>
+
+<h3>3.5 Output (three runs)</h3>
+{{output:2_mutex}}
+
+<h3>3.6 Analysis</h3>
+<ul>
+  <li><b>Without mutex:</b> the result is always below 2,000,000 and different in every run. The result depends on how the OS schedules the two threads, so it cannot be predicted.</li>
+  <li><b>With mutex:</b> the result is exactly 2,000,000 every time.</li>
+  <li><b>Ownership:</b> a mutex has an owner. Only the thread that locked it may unlock it. This is the main difference from a semaphore (Program 3).</li>
+  <li>The program must be compiled <b>without</b> <code>-O2</code>. When I tested with <code>-O2</code>, the compiler optimized the loop and the result without a mutex was also 2,000,000, which hides the race condition. The bug is still in the code. It just does not show.</li>
+  <li>In real programs, <code>std::lock_guard&lt;std::mutex&gt;</code> is usually used instead of calling <code>lock()</code> and <code>unlock()</code> by hand, because it unlocks automatically, even if an error happens. Here the calls are written out so each step is visible.</li>
+</ul>
+</div>
+
+<!-- ============ 4. SEMAPHORE ============ -->
+<div class="section">
+<h2>4. Program 3: Semaphore</h2>
+<h3>4.1 Objective</h3>
+<p>Show how a <b>counting semaphore</b> limits how many threads can use a shared resource at the same time. A parking lot has only <b>2 spots</b>, but <b>5 cars</b> (5 threads) want to park. The semaphore makes sure that no more than 2 cars are parked at once.</p>
+
+<h3>4.2 Source Code</h3>
+{{code:3_semaphore}}
+
+<h3>4.3 How the Program Works</h3>
+<ol>
+  <li><b>Line 16:</b> <code>std::counting_semaphore&lt;2&gt; parkingSpots(2)</code> creates a semaphore. It is an integer counter that starts at 2 (two free spots). The template value <code>&lt;2&gt;</code> is the maximum the counter can reach.</li>
+  <li><b>Lines 18&ndash;29, <code>Car(int id)</code>:</b> the function each car thread runs.
+    <ul>
+      <li>Line 22, <code>acquire()</code> (wait): if the counter is above 0, it is decreased by 1 and the car parks. If the counter is 0, the thread <b>blocks</b> until another thread releases a spot.</li>
+      <li>Line 25: the car stays parked for 1 second.</li>
+      <li>Line 28, <code>release()</code> (signal): the counter is increased by 1. If a car is waiting, one waiting thread is woken up and can park.</li>
+    </ul>
+  </li>
+  <li><b>Lines 33&ndash;38:</b> main creates 5 car threads, 50 ms apart, and stores them in a vector.</li>
+  <li><b>Lines 40&ndash;41:</b> main joins every car thread, then prints the final line.</li>
+</ol>
+
+<h3>4.4 Example Timeline of the Counter</h3>
+<table class="keep">
+  <tr><th>Time</th><th>Event</th><th>Counter</th></tr>
+  <tr><td>0.00 s</td><td>Car 1 calls <code>acquire()</code> and parks</td><td>2 &rarr; 1</td></tr>
+  <tr><td>0.05 s</td><td>Car 2 calls <code>acquire()</code> and parks</td><td>1 &rarr; 0</td></tr>
+  <tr><td>0.10&ndash;0.20 s</td><td>Cars 3, 4, 5 call <code>acquire()</code> and block</td><td>0</td></tr>
+  <tr><td>1.00 s</td><td>Car 1 calls <code>release()</code>, one waiting car wakes up and parks</td><td>0 &rarr; 1 &rarr; 0</td></tr>
+  <tr><td>1.05 s</td><td>Car 2 calls <code>release()</code>, another waiting car parks</td><td>0 &rarr; 1 &rarr; 0</td></tr>
+  <tr><td>2.00 s and later</td><td>The last car parks, then all cars leave</td><td>back to 2</td></tr>
+</table>
+
+<h3>4.5 Output</h3>
+{{output:3_semaphore}}
+
+<h3>4.6 Analysis</h3>
+<ul>
+  <li>Cars 1 and 2 park right away. Cars 3, 4 and 5 print "waiting" and then block, because the counter is 0.</li>
+  <li>A new car parks only right after another car leaves. At no point are more than 2 cars parked at the same time. (The build script that produced this report checks this in the output automatically.)</li>
+  <li>A semaphore does <b>not</b> guarantee first come, first served. When a spot is released, any waiting car can get it, depending on which thread the OS wakes up. So the parking order of cars 3, 4 and 5 can change between runs.</li>
+  <li><b>No ownership:</b> unlike a mutex, a semaphore does not remember which thread took a spot. Any thread may call <code>release()</code>.</li>
+  <li>A semaphore that starts at 1 is a <b>binary semaphore</b> (<code>std::binary_semaphore</code>). It lets only one thread in, like a mutex, but still without ownership.</li>
+  <li>Real uses: limiting a database connection pool, or limiting how many downloads or HTTP requests run at the same time.</li>
+</ul>
+</div>
+
+<!-- ============ 5. COROUTINE ============ -->
+<div class="section">
+<h2>5. Program 4: Coroutine</h2>
+<h3>5.1 Objective</h3>
+<p>Show that a <b>coroutine</b> is a function that can <b>pause</b> in the middle and <b>resume</b> later from the same place. The whole program runs in <b>one thread</b>. The coroutine and <code>main</code> take turns, and the coroutine itself decides when to pause (<b>cooperative multitasking</b>).</p>
+
+<h3>5.2 Source Code</h3>
+{{code:4_coroutine}}
+
+<h3>5.3 How the Program Works</h3>
+<ol>
+  <li><b>Line 11:</b> <code>Countdown</code> returns <code>std::generator&lt;int&gt;</code> and its body uses <code>co_yield</code>, so the compiler turns it into a coroutine. The keywords <code>co_yield</code>, <code>co_await</code> and <code>co_return</code> come from C++20. The ready-made <code>std::generator</code> type comes from C++23. It handles the setup code that C++20 would otherwise need, which keeps the program short.</li>
+  <li><b>Line 28:</b> calling <code>Countdown(3)</code> does <b>not</b> run the body yet. The body starts only when the <code>for</code> loop asks for the first value. This is why "[main] calling the coroutine" is printed before "[coroutine] started".</li>
+  <li><b>Line 17, <code>co_yield n</code>:</b> the coroutine sends <code>n</code> to main and <b>pauses right there</b>. Its local variables (<code>n</code>, <code>start</code>) and its position are saved in the coroutine frame.</li>
+  <li><b>Line 30:</b> main receives the value and does its own work.</li>
+  <li>When the loop asks for the next value, the coroutine <b>resumes</b> on line 18, the line right after <code>co_yield</code>, not from the start of the function.</li>
+  <li>When the coroutine reaches the end of its body (line 20), the <code>for</code> loop in main ends.</li>
+</ol>
+
+<h3>5.4 Output</h3>
+{{output:4_coroutine}}
+
+<h3>5.5 Analysis</h3>
+<ul>
+  <li>Control goes back and forth: coroutine, main, coroutine, main. This is visible from the indented "[coroutine]" lines and the "[main]" lines.</li>
+  <li>"[coroutine] resumed" appears right after main's line, which shows that the coroutine continues from where it paused, with its state (the value of <code>n</code>) kept.</li>
+  <li>The output is exactly the same on every run. There is only one thread, so the OS scheduler never interrupts the coroutine. It only stops when it reaches <code>co_yield</code>. Threads work the other way: the OS can interrupt them at any moment (<b>preemptive scheduling</b>), which is why Programs 1 and 3 can print in a different order each run.</li>
+  <li>No mutex is needed, because the coroutine and main never run at the same time.</li>
+  <li>Coroutines are cheaper than threads, because pausing and resuming is only a function jump, with no OS thread switch. This is why they are used for many I/O tasks at once, like web servers and network sockets, through <code>async</code>/<code>await</code> patterns.</li>
+</ul>
+</div>
+
+<!-- ============ 6. CONCLUSION ============ -->
+<div class="section">
+<h2>6. Comparison and Conclusion</h2>
+<table class="keep">
+  <tr><th></th><th>Thread</th><th>Mutex</th><th>Semaphore</th><th>Coroutine</th></tr>
+  <tr><td><b>What it is</b></td><td>An independent path of execution</td><td>A lock that lets 1 thread in at a time</td><td>A counter that lets up to N threads in</td><td>A function that can pause and resume</td></tr>
+  <tr><td><b>Runs in parallel?</b></td><td>Yes</td><td>Synchronization tool</td><td>Synchronization tool</td><td>No, one thread takes turns</td></tr>
+  <tr><td><b>Who switches?</b></td><td>The OS (preemptive)</td><td>&ndash;</td><td>&ndash;</td><td>The code itself at <code>co_yield</code> (cooperative)</td></tr>
+  <tr><td><b>Ownership</b></td><td>&ndash;</td><td>Yes, only the locking thread may unlock</td><td>No, any thread may release</td><td>&ndash;</td></tr>
+  <tr><td><b>C++ feature</b></td><td><code>std::jthread</code></td><td><code>std::mutex</code></td><td><code>std::counting_semaphore</code></td><td><code>co_yield</code>, <code>std::generator</code></td></tr>
+  <tr><td><b>Shown in</b></td><td>Program 1</td><td>Program 2</td><td>Program 3</td><td>Program 4</td></tr>
+</table>
+<p>The four programs show that multithreading lets a program do several things at the same time, but the order of execution is decided by the operating system and changes between runs. When threads share data, synchronization is required. A <b>mutex</b> protects a critical section so that only one thread uses it at a time. A <b>semaphore</b> allows a fixed number of threads to use a limited resource. A <b>coroutine</b> is different from both: it does not create new threads. It runs in one thread and pauses on its own, so its execution order is always predictable.</p>
+<p>The result that surprised me most was Program 2. A single line like <code>counter++</code> looks safe, but in the three runs shown in Section 3.5 it lost between {{lost:2_mutex}} additions when two threads ran it at the same time. The number was also different every run. This showed me why shared data between threads must always be protected.</p>
+
+<h3>References</h3>
+<ol>
+  <li>S. Rao, <i>Sams Teach Yourself C++ in One Hour a Day</i>, 9th ed. Pearson, 2022.</li>
+  <li>T. Wellem, "TC631 Operating System, Assignment #1: Thread and Multithreading," lecture slides, Satya Wacana Christian University, 2026.</li>
+  <li>cppreference.com, "std::jthread," "std::mutex," "std::counting_semaphore," and "std::generator." Available: https://en.cppreference.com/w/cpp/thread and https://en.cppreference.com/w/cpp/coroutine/generator</li>
+</ol>
+</div>
+
+</body></html>
