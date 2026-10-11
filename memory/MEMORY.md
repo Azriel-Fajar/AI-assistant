@@ -10,6 +10,7 @@
 - [Leads vs Customers Reference Rule](feedback_leads_vs_customers_reference.md) -- "leads" = Leads table; "customer/client" = Active Potential Customers table in leads.md
 
 - [Makalah Format vs Tone](feedback_makalah_format_vs_tone.md) -- tiru struktur/penomoran template dosen, JANGAN tiru diksinya; footnote lengkap + kalimat reflektif bentuk pertanyaan = suara Azriel
+- [Matdis Grading Laws](feedback_matdis_grading_laws.md) -- Simplifikasi p∨(¬p∧q)≡p∨q is a valid law; Implikasi steps need no law name; formula counts as name
 - [Academic Credentials](user_academic_credentials.md) -- name Azriel Fajar Wicaksono, NIM 672025121, use on college work
 - [Viral Ad System](project_viral_ad_system.md) -- meta/creative/ 8-step ad SOP + swipe database (thumbnails/titles) + hook bank; "log swipes" reads folders
 - [Reddit Blocked Indonesia](feedback_reddit_blocked_indonesia.md) -- Reddit blocked in ID; never use for ID market research, use TikTok/IG/FB/Kaskus instead
