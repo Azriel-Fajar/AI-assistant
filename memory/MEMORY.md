@@ -43,6 +43,7 @@
 - [Close Gap Not Lead Gen](feedback_close_gap_not_leadgen.md) -- Rielcode bottleneck is follow-up/closing not lead-gen; don't suggest new channels, fix the close
 - [Cold Outreach Central Java Jun 2026](project_coldoutreach_centraljava_2026-06.md) -- 10 leads (cafe/salon/dental/gym/real-estate) with IG + demo links + locked ID message tone
 - [Meta Ads v3 Finding (corrected Aug 2026)](project_meta_ads_v3_finding.md) -- 147 convos, 0 confirmed payers; cheap cost-per-convo = vanity metric; lead with Mulai 1jt, judge on quote rate not CPL
+- [PMJ Course](reference_pmj_course.md) -- Perancangan Manajemen dan Jaringan; Tugas 1 Wireshark HTTP vs HTTPS due 2026-10-11 23:59
 - [Probability & Statistics Course](reference_stats_course.md) -- lecturer Radius Tanone (UKSW), assignments emailed with PDF attached, Ch2 freq dist + Ch3 center/dispersion
 - [Stats Assignment Build](reference_stats_assignment.md) -- stats-presentation.html renders to PDF via Playwright chromium; .compact class avoids A4 overflow, .ovl span for x-bar
 - [Parallaxnet Siber Indonesia Research](reference_parallaxnet_indonesia.md) -- report at research/parallaxnet-siber-indonesia.md; PT Parallaxnet Siber Indonesia = Indonesian EdTech arm of US Parallaxnet, Canada entity unverified
@@ -57,3 +58,4 @@
 - [Ad Test Dupe Winner](feedback_ad_test_dupe_winner.md) -- dupe winning ad to test, keep control ON, pause dead ads only after new ads prove; new ads start Processing/Rp0
 - [WA Ad Icebreakers](feedback_wa_ad_icebreakers.md) -- click-to-WA icebreakers must be Indonesian + demo/price driven, not Meta English defaults; edit in ad template
 - [Demo Msg Rough Design Note](feedback_demo_msg_rough_design.md) -- every demo-send WA msg must note design is rough draft + customizable
+- [Asdos Grading Reasonable](feedback_asdos_grading_reasonable.md) -- grade student work by error severity with reasons, no rigid -N per line formula

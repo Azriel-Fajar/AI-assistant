@@ -107,3 +107,4 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - WA/follow-up tone casual-professional; ban "colek saya"/"santai aja"/"mampir nyapa".
 - Demo mobile menu = right slide-in drawer + overlay; never top slide-down panel.
 - Slide-gen prompts: draft in chat, never a file. Filename is his call.
+- Asdos grading: judge errors by severity, give reason per score, no rigid formulas.
