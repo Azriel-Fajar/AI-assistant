@@ -11,7 +11,9 @@ Durasi maksimal 10 menit. Target sekitar 5 sampai 6 menit. Bagian dalam `[ ]` pe
 | Pendahuluan (basa-basi) | 0:45 |
 | Visi | 0:40 |
 | Misi + gambaran proker | 2:30 |
-| Closing | 0:40 |
+| Penutup orasi | 0:30 |
+
+Closing statement (bagian 7) terpisah, dibawakan setelah QnA dan sebelum voting.
 
 ---
 
@@ -55,13 +57,23 @@ Durasi maksimal 10 menit. Target sekitar 5 sampai 6 menit. Bagian dalam `[ ]` pe
 >
 > **Misi keempat**, menerapkan ilmu kita untuk masyarakat. Bentuknya bisa berupa kegiatan literasi digital untuk lingkungan sekitar.
 
-## 6. Closing Statement
+## 6. Penutup Orasi (akhir sesi 10 menit, sebelum QnA)
+
+Singkat, merangkum, lalu membuka QnA. Sikap humble disimpan untuk closing statement setelah QnA.
 
 **Opsi A:**
-> Itu tadi visi dan misi saya. Saya sadar saya bukan satu-satunya yang punya niat baik di sini. Teman saya, [nama], juga maju sebagai calon ketua, dan saya yakin dia punya alasan dan gagasan yang baik juga. Pada akhirnya, pilihan tetap ada di tangan teman-teman semua. Sekian dari saya, terima kasih.
+> Itu tadi visi dan misi yang ingin saya bawa. Singkatnya, saya ingin HMPTI menjadi tempat kita belajar, berkarya, dan didengar. Terima kasih sudah mendengarkan. Saya siap menerima pertanyaan dari teman-teman.
 
 **Opsi B (lebih singkat):**
-> Saya tidak berdiri di sini untuk mengatakan saya yang terbaik. [Nama] juga maju karena punya alasan dan niat baik untuk HMPTI. Pilihan sepenuhnya ada di tangan teman-teman. Sekian, terima kasih.
+> Itu tadi visi dan misi saya. Terima kasih atas perhatiannya. Silakan kalau ada pertanyaan, saya akan jawab sebaik mungkin.
+
+## 7. Closing Statement (setelah QnA, sebelum voting)
+
+**Opsi A:**
+> Terima kasih untuk semua pertanyaan dan masukannya tadi. Saya sadar saya bukan satu-satunya yang punya niat baik di sini. Teman saya, [nama], juga maju sebagai calon ketua, dan saya yakin dia punya alasan dan gagasan yang baik juga. Pada akhirnya, pilihan tetap ada di tangan teman-teman semua. Sekian dari saya, terima kasih.
+
+**Opsi B (lebih singkat):**
+> Terima kasih untuk pertanyaannya tadi. Saya tidak berdiri di sini untuk mengatakan saya yang terbaik. [Nama] juga maju karena punya alasan dan niat baik untuk HMPTI. Pilihan sepenuhnya ada di tangan teman-teman. Sekian, terima kasih.
 
 ---
 
