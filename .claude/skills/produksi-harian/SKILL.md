@@ -15,7 +15,7 @@ Read `shorts/ide/jadwal-<yyyy-mm>.md` (next month's too near the end of a month)
 
 - **Target:** the earliest plan row dated today or later whose slug is not `dibuat` in the log. That is today's film, or, when today's is done, the next day's (working ahead), but never more than 3 days ahead. If nothing qualifies, skip to step 4.
 - A plan row dated before today and not made is missed: mark it `ditunda` in the log and say so in the report. Don't make old films.
-- If the month has no plan, or the plan has under 3 rows left, add the next topics with `riset-sekitar`'s rules before going on.
+- If the month has no plan, or the plan has under 3 rows left, add the next topics with `riset-sekitar`'s rules before going on. A new plan row also gets a Pendataan row: even dates 12.00, odd dates 19.00, until Azriel picks one slot.
 
 ## 2. Research it if needed
 
@@ -34,6 +34,7 @@ For the next 2 plan rows without a block, run `riset-sekitar` for each slug, so 
 Write `shorts/out/<slug>/LAPORAN.md` in casual Indonesian, short:
 
 - Status: **SIAP UPLOAD** (all gates passed) or **PERLU CEK** (which gate, why).
+- The upload slot from the plan's **Pendataan** table ("Upload Sel 3 Nov jam 19.00"), so he can schedule it on all three platforms in the morning.
 - Final video, cover and `upload.md` paths, then all of `upload.md` pasted in, ready to copy on a phone.
 - Gate scores per round, what the reviewer fixed, what is estimated, the weakest moment.
 - What Azriel must still check: the sound on a phone speaker, and the captions on the hard words.
