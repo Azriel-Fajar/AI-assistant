@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Task 2: Thread Library in Linux and Windows</title>
+<style>
+@page { size: A4; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Georgia, 'Times New Roman', serif; color:#1e293b; font-size:13px; line-height:1.6; }
+h1 { font-size:26px; }
+h2 { font-size:19px; margin:0 0 12px; padding-bottom:6px; border-bottom:2px solid #1d4ed8; color:#1e3a8a; }
+h3 { font-size:14.5px; margin:16px 0 7px; color:#1e3a8a; break-after: avoid; }
+p { margin-bottom:9px; text-align:justify; }
+ul, ol { margin:0 0 10px 22px; }
+li { margin-bottom:5px; text-align:justify; }
+code { font-family: Consolas, 'Courier New', monospace; font-size:12px; background:#eef2ff; padding:0 3px; border-radius:3px; }
+table { border-collapse:collapse; width:100%; margin:8px 0 12px; font-size:12px; }
+th, td { border:1px solid #94a3b8; padding:5px 8px; text-align:left; vertical-align:top; }
+th { background:#dbeafe; }
+.section { page-break-before: always; }
+.keep { break-inside: avoid; }
+
+.cover { height:255mm; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; page-break-after: always; }
+.cover p { text-align:center; }
+.cover .course { font-size:15px; letter-spacing:2px; color:#1e3a8a; }
+.cover h1 { margin:14px 0 6px; font-size:30px; }
+.cover .sub { font-size:16px; color:#475569; }
+.cover .who { margin:48px 0; font-size:16px; line-height:2; }
+.cover .uni { font-size:14px; line-height:1.8; }
+
+.code, .term { margin:6px 0 14px; border-radius:6px; overflow:hidden; }
+.term { break-inside: avoid; }
+.code { border:1px solid #cbd5e1; }
+.code-head, .term-head { font-family: Consolas, monospace; font-size:11px; padding:4px 10px; }
+.code-head { background:#e2e8f0; color:#334155; }
+.code pre, .term pre { font-family: Consolas, 'Courier New', monospace; font-size:10px; line-height:1.35; padding:8px 10px; white-space:pre-wrap; }
+.code pre { background:#f8fafc; }
+.ln { display:inline-block; width:2.4em; color:#94a3b8; text-align:right; margin-right:12px; }
+.c { color:#15803d; font-style:italic; }
+.s { color:#b45309; }
+.p { color:#7c3aed; }
+.k { color:#1d4ed8; font-weight:bold; }
+.n { color:#be123c; }
+.term { background:#0f172a; }
+.term-head { background:#1e293b; color:#94a3b8; }
+.term pre { color:#e2e8f0; }
+.note { background:#f1f5f9; border-left:3px solid #1d4ed8; padding:7px 12px; margin:8px 0 12px; font-size:12.5px; }
+</style></head><body>
+
+<!-- ============ COVER ============ -->
+<div class="cover">
+  <p class="course">TC631 OPERATING SYSTEM</p>
+  <h1>Task 2: Thread Library in Linux and Windows</h1>
+  <p class="sub">Converting a POSIX Threads Program to the Windows API and to C++ Standard Threads</p>
+  <div class="who">
+    <b>Azriel Fajar Wicaksono</b><br>
+    NIM 672025121<br>
+    Instructor: Theophilus Wellem
+  </div>
+  <p class="uni">Faculty of Information Technology<br>Satya Wacana Christian University<br>2026</p>
+</div>
+
+<!-- ============ 1. INTRODUCTION ============ -->
+<h2>1. Introduction</h2>
+<p><b>POSIX Threads (Pthreads)</b> is the standard thread API on Linux and other Unix systems. A program uses it by including <code>&lt;pthread.h&gt;</code>. Windows does not use Pthreads. It has its own thread API, the <b>Win32 API</b> (<code>CreateThread</code>, <code>WaitForSingleObject</code>, and others). Because of this, the Pthreads example from the lecture cannot be compiled on Windows with Microsoft Visual C++.</p>
+<p>The assignment is to convert the example program in two ways:</p>
+<table class="keep">
+  <tr><th>Program</th><th>Thread library</th><th>Language</th><th>Runs on</th></tr>
+  <tr><td><code>0_pthread.c</code></td><td>POSIX Threads (original lecture example)</td><td>C</td><td>Linux (Windows only through a translation layer)</td></tr>
+  <tr><td><code>1_winapi_thread.c</code></td><td>Windows API (Win32) threads</td><td>C</td><td>Windows only</td></tr>
+  <tr><td><code>2_std_thread.cpp</code></td><td>C++ standard thread library (<code>std::jthread</code>)</td><td>C++23</td><td>Windows and Linux, same code</td></tr>
+</table>
+<p>All three programs do the same job in three steps: (1) the main thread creates one worker thread and passes it the number 1, (2) the main thread waits for the worker to finish, and (3) the main thread prints the value the worker returned (1 &times; 10 = 10).</p>
+
+<h3>1.1 Environment</h3>
+<ul>
+  <li>Operating system: Windows 11</li>
+  <li>Compiler: gcc (Rev13, Built by MSYS2 project) 15.2.0 (MinGW-w64, UCRT64 environment), used as <code>gcc</code> for C and <code>g++</code> for C++</li>
+  <li>Language standard: C23 (<code>-std=c23</code>) for the C programs, C++23 (<code>-std=c++23</code>) for the C++ program</li>
+</ul>
+<p>All outputs in this report are real outputs from running the programs. The script that builds this report compiles every program, runs each one five times, and checks that the worker always returns 10.</p>
+
+<h3>1.2 Why C++ and Not C for Program 2</h3>
+<p>The assignment allows either the C standard thread library (<code>&lt;threads.h&gt;</code>, C11) or the C++ standard thread library. I first tried C. On this compiler, <code>#include &lt;threads.h&gt;</code> fails with <code>fatal error: threads.h: No such file or directory</code>, because the MinGW-w64 C library does not include the C11 threads header. The C++ thread library is part of the compiler itself (libstdc++), so it works on Windows and Linux in the same way. The lecture slides also recommend <code>std::jthread</code> for C++20 and newer, so Program 2 uses C++23 with <code>std::jthread</code>.</p>
+
+<!-- ============ 2. ORIGINAL ============ -->
+<div class="section">
+<h2>2. The Original Program (POSIX Threads)</h2>
+<h3>2.1 Source Code</h3>
+<p>This is the example from the lecture slides, unchanged. It is included so the two converted programs can be compared with it line by line.</p>
+<div class="code"><div class="code-head">0_pthread.c</div><pre><span class="ln">1</span><span class="p">#include &lt;pthread.h&gt;</span>
+<span class="ln">2</span><span class="p">#include &lt;stdio.h&gt;</span>
+<span class="ln">3</span><span class="p">#include &lt;stdlib.h&gt;</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="c">// Every thread function must return void* and accept void*</span>
+<span class="ln">6</span><span class="k">void</span>* thread_runner(<span class="k">void</span>* arg) {
+<span class="ln">7</span>    <span class="k">int</span>* thread_num = (<span class="k">int</span>*)arg; <span class="c">// Cast void pointer back to original type</span>
+<span class="ln">8</span>    printf(<span class="s">"Hello from Worker Thread #%d!\n"</span>, *thread_num);
+<span class="ln">9</span>
+<span class="ln">10</span>    <span class="c">// Dynamically allocate a return value to safely pass back</span>
+<span class="ln">11</span>    <span class="k">int</span>* result = malloc(<span class="k">sizeof</span>(<span class="k">int</span>));
+<span class="ln">12</span>    *result = (*thread_num) * <span class="n">10</span>;
+<span class="ln">13</span>
+<span class="ln">14</span>    pthread_exit((<span class="k">void</span>*)result); <span class="c">// Equivalent to returning result;</span>
+<span class="ln">15</span>}
+<span class="ln">16</span>
+<span class="ln">17</span><span class="k">int</span> main() {
+<span class="ln">18</span>    pthread_t worker_thread;
+<span class="ln">19</span>    <span class="k">int</span> thread_arg = <span class="n">1</span>;
+<span class="ln">20</span>    <span class="k">void</span>* thread_return_val;
+<span class="ln">21</span>
+<span class="ln">22</span>    <span class="c">// 1. Create the thread (ID, Attributes, Function, Argument)</span>
+<span class="ln">23</span>    <span class="k">if</span> (pthread_create(&amp;worker_thread, <span class="k">NULL</span>, thread_runner, &amp;thread_arg) != <span class="n">0</span>) {
+<span class="ln">24</span>        perror(<span class="s">"Failed to create thread"</span>);
+<span class="ln">25</span>        <span class="k">return</span> <span class="n">1</span>;
+<span class="ln">26</span>    }
+<span class="ln">27</span>
+<span class="ln">28</span>    printf(<span class="s">"Hello from the Main Thread!\n"</span>);
+<span class="ln">29</span>
+<span class="ln">30</span>    <span class="c">// 2. Join the thread (Wait for it to finish and catch its return value)</span>
+<span class="ln">31</span>    <span class="k">if</span> (pthread_join(worker_thread, &amp;thread_return_val) != <span class="n">0</span>) {
+<span class="ln">32</span>        perror(<span class="s">"Failed to join thread"</span>);
+<span class="ln">33</span>        <span class="k">return</span> <span class="n">1</span>;
+<span class="ln">34</span>    }
+<span class="ln">35</span>
+<span class="ln">36</span>    <span class="c">// 3. Process the returned data</span>
+<span class="ln">37</span>    <span class="k">int</span>* output = (<span class="k">int</span>*)thread_return_val;
+<span class="ln">38</span>    printf(<span class="s">"Worker thread returned: %d\n"</span>, *output);
+<span class="ln">39</span>
+<span class="ln">40</span>    free(output); <span class="c">// Clean up dynamically allocated memory</span>
+<span class="ln">41</span>    <span class="k">return</span> <span class="n">0</span>;
+<span class="ln">42</span>}</pre></div>
+
+<h3>2.2 How the Program Works</h3>
+<ol>
+  <li><b>Lines 6&ndash;15, <code>thread_runner</code>:</b> a Pthreads thread function must take <code>void*</code> and return <code>void*</code>. The argument is cast back to <code>int*</code> (line 7). The return value must also be a pointer, so the result is stored in memory from <code>malloc</code> (lines 11&ndash;12) and its address is returned with <code>pthread_exit</code> (line 14).</li>
+  <li><b>Line 23, <code>pthread_create</code>:</b> creates the thread and starts it. It returns 0 on success.</li>
+  <li><b>Line 31, <code>pthread_join</code>:</b> waits for the thread to finish and receives the pointer it returned.</li>
+  <li><b>Lines 37&ndash;40:</b> reads the result through the pointer and frees the memory the worker allocated.</li>
+</ol>
+
+<h3>2.3 Output</h3>
+<p>This program can still be run on Windows with MinGW, because MinGW includes <b>winpthreads</b>, a library that translates each Pthreads call into a Win32 call (option 2 on the "Options for Running Pthreads on Windows" slide). It is compiled with the <code>-pthread</code> flag:</p>
+<div class="term"><div class="term-head">Terminal (PowerShell)</div><pre>&gt; gcc -std=c23 0_pthread.c -o 0_pthread -pthread
+&gt; .\0_pthread.exe
+Hello from the Main Thread!
+Hello from Worker Thread #1!
+Worker thread returned: 10</pre></div>
+<p>The output is the same as the output shown in the lecture slides. This is the result both converted programs must reproduce.</p>
+</div>
+
+<!-- ============ 3. WINDOWS API ============ -->
+<div class="section">
+<h2>3. Program 1: Windows API Thread</h2>
+<h3>3.1 Objective</h3>
+<p>Rewrite the program with the native Windows thread API, so it does not need <code>&lt;pthread.h&gt;</code> or any translation library. Every Pthreads call is replaced by its Win32 equivalent.</p>
+
+<h3>3.2 Source Code</h3>
+<div class="code"><div class="code-head">1_winapi_thread.c</div><pre><span class="ln">1</span><span class="c">// Program 1: Windows API thread</span>
+<span class="ln">2</span><span class="c">// The pthread example converted to native Win32 threads.</span>
+<span class="ln">3</span><span class="c">// Compile: gcc -std=c23 1_winapi_thread.c -o 1_winapi_thread</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="p">#include &lt;windows.h&gt;</span>
+<span class="ln">6</span><span class="p">#include &lt;stdio.h&gt;</span>
+<span class="ln">7</span>
+<span class="ln">8</span><span class="c">// Every Win32 thread function must return DWORD and accept LPVOID (void*)</span>
+<span class="ln">9</span>DWORD WINAPI thread_runner(LPVOID arg) {
+<span class="ln">10</span>    <span class="k">int</span>* thread_num = (<span class="k">int</span>*)arg; <span class="c">// Cast void pointer back to original type</span>
+<span class="ln">11</span>    printf(<span class="s">"Hello from Worker Thread #%d!\n"</span>, *thread_num);
+<span class="ln">12</span>
+<span class="ln">13</span>    <span class="c">// The return value travels back as the thread's exit code (a DWORD),</span>
+<span class="ln">14</span>    <span class="c">// so no malloc is needed</span>
+<span class="ln">15</span>    DWORD result = (DWORD)(*thread_num) * <span class="n">10</span>;
+<span class="ln">16</span>
+<span class="ln">17</span>    ExitThread(result); <span class="c">// Equivalent to return result;</span>
+<span class="ln">18</span>}
+<span class="ln">19</span>
+<span class="ln">20</span><span class="k">int</span> main(<span class="k">void</span>) {
+<span class="ln">21</span>    HANDLE worker_thread;
+<span class="ln">22</span>    <span class="k">int</span> thread_arg = <span class="n">1</span>;
+<span class="ln">23</span>    DWORD thread_return_val;
+<span class="ln">24</span>
+<span class="ln">25</span>    <span class="c">// 1. Create the thread (Security, Stack size, Function, Argument, Flags, Thread ID)</span>
+<span class="ln">26</span>    worker_thread = CreateThread(<span class="k">NULL</span>, <span class="n">0</span>, thread_runner, &amp;thread_arg, <span class="n">0</span>, <span class="k">NULL</span>);
+<span class="ln">27</span>    <span class="k">if</span> (worker_thread == <span class="k">NULL</span>) {
+<span class="ln">28</span>        fprintf(stderr, <span class="s">"Failed to create thread (error %lu)\n"</span>, GetLastError());
+<span class="ln">29</span>        <span class="k">return</span> <span class="n">1</span>;
+<span class="ln">30</span>    }
+<span class="ln">31</span>
+<span class="ln">32</span>    printf(<span class="s">"Hello from the Main Thread!\n"</span>);
+<span class="ln">33</span>
+<span class="ln">34</span>    <span class="c">// 2. Join the thread (Wait until the thread handle is signaled = thread finished)</span>
+<span class="ln">35</span>    <span class="k">if</span> (WaitForSingleObject(worker_thread, INFINITE) != WAIT_OBJECT_0) {
+<span class="ln">36</span>        fprintf(stderr, <span class="s">"Failed to join thread (error %lu)\n"</span>, GetLastError());
+<span class="ln">37</span>        <span class="k">return</span> <span class="n">1</span>;
+<span class="ln">38</span>    }
+<span class="ln">39</span>
+<span class="ln">40</span>    <span class="c">// 3. Process the returned data (read the thread's exit code)</span>
+<span class="ln">41</span>    <span class="k">if</span> (!GetExitCodeThread(worker_thread, &amp;thread_return_val)) {
+<span class="ln">42</span>        fprintf(stderr, <span class="s">"Failed to get exit code (error %lu)\n"</span>, GetLastError());
+<span class="ln">43</span>        <span class="k">return</span> <span class="n">1</span>;
+<span class="ln">44</span>    }
+<span class="ln">45</span>    printf(<span class="s">"Worker thread returned: %lu\n"</span>, thread_return_val);
+<span class="ln">46</span>
+<span class="ln">47</span>    CloseHandle(worker_thread); <span class="c">// Clean up the thread handle</span>
+<span class="ln">48</span>    <span class="k">return</span> <span class="n">0</span>;
+<span class="ln">49</span>}</pre></div>
+
+<h3>3.3 How the Program Works</h3>
+<ol>
+  <li><b>Line 5:</b> <code>&lt;windows.h&gt;</code> replaces <code>&lt;pthread.h&gt;</code>. The <code>-pthread</code> flag is no longer needed, because the thread functions live in <code>kernel32.dll</code>, which every Windows program already uses.</li>
+  <li><b>Line 9, the thread function:</b> <code>CreateThread</code> requires a function of the form <code>DWORD WINAPI f(LPVOID)</code>. <code>LPVOID</code> is the Windows name for <code>void*</code>, <code>DWORD</code> is a 32-bit unsigned integer, and <code>WINAPI</code> sets the calling convention that Windows uses to call the function.</li>
+  <li><b>Lines 10&ndash;11:</b> the same as the original. The argument is cast back to <code>int*</code> and the message is printed.</li>
+  <li><b>Lines 15&ndash;17:</b> the result is calculated as a <code>DWORD</code> and the thread ends with <code>ExitThread(result)</code>, the Win32 version of <code>pthread_exit</code>. The value becomes the thread's <b>exit code</b>, which the operating system keeps inside the thread object.</li>
+  <li><b>Line 21:</b> a <code>HANDLE</code> replaces <code>pthread_t</code>. A handle is a reference to a kernel object, in this case the thread object created by Windows.</li>
+  <li><b>Line 26, <code>CreateThread</code>:</b> replaces <code>pthread_create</code>. It has six parameters:
+    <table class="keep">
+      <tr><th>Argument</th><th>Parameter</th><th>Meaning</th></tr>
+      <tr><td><code>NULL</code></td><td>Security attributes</td><td>Default security, and the handle cannot be inherited by child processes</td></tr>
+      <tr><td><code>0</code></td><td>Stack size</td><td>Use the default stack size set in the program file</td></tr>
+      <tr><td><code>thread_runner</code></td><td>Start address</td><td>The function the thread runs</td></tr>
+      <tr><td><code>&amp;thread_arg</code></td><td>Parameter</td><td>The <code>void*</code> argument given to the function</td></tr>
+      <tr><td><code>0</code></td><td>Creation flags</td><td>Start running immediately (<code>CREATE_SUSPENDED</code> would create it paused)</td></tr>
+      <tr><td><code>NULL</code></td><td>Thread ID</td><td>The numeric thread ID is not needed here</td></tr>
+    </table>
+  </li>
+  <li><b>Lines 27&ndash;30:</b> <code>CreateThread</code> returns <code>NULL</code> on failure. Win32 functions report the reason through <code>GetLastError()</code>, not through <code>errno</code>, so <code>perror</code> from the original is replaced by <code>fprintf</code> with the error code.</li>
+  <li><b>Line 35, <code>WaitForSingleObject</code>:</b> replaces the waiting part of <code>pthread_join</code>. A thread object becomes <b>signaled</b> when the thread ends. With the timeout <code>INFINITE</code>, the main thread sleeps until that happens, and the function returns <code>WAIT_OBJECT_0</code>.</li>
+  <li><b>Line 41, <code>GetExitCodeThread</code>:</b> replaces the second part of <code>pthread_join</code>: it reads the exit code that the worker set on line 17.</li>
+  <li><b>Line 47, <code>CloseHandle</code>:</b> releases the handle. Windows deletes the thread object only when the thread has ended <b>and</b> every handle to it is closed. Forgetting this call causes a handle leak. In Pthreads, <code>pthread_join</code> does this cleanup automatically, but in Win32 waiting and cleanup are two separate steps.</li>
+</ol>
+
+<h3>3.4 Output</h3>
+<div class="term"><div class="term-head">Terminal (PowerShell)</div><pre>&gt; gcc -std=c23 1_winapi_thread.c -o 1_winapi_thread
+&gt; .\1_winapi_thread.exe
+Hello from the Main Thread!
+Hello from Worker Thread #1!
+Worker thread returned: 10</pre></div>
+
+<h3>3.5 Analysis</h3>
+<ul>
+  <li>The output is the same as the original Pthreads program, so the conversion is correct.</li>
+  <li><b>No <code>malloc</code> and <code>free</code>.</b> In Pthreads, a thread can only return a <code>void*</code>, so the original had to allocate memory, return its address, and free it in main. In Win32, the exit code is a number (<code>DWORD</code>), so a small integer like 10 can be returned directly. This removes the risk of a memory leak.</li>
+  <li><b>Limitation of the exit code:</b> it is only 32 bits. On 64-bit Windows a pointer is 64 bits, so a pointer cannot be returned this way. To return larger data, the thread should write it into a structure passed through the <code>LPVOID</code> argument. Also, the value 259 should not be used as a result, because <code>GetExitCodeThread</code> uses it as <code>STILL_ACTIVE</code> to mean "the thread is still running".</li>
+  <li>"Hello from the Main Thread!" was printed first in every run. Creating a new thread takes some time, while main continues to its next line right away. This order is not guaranteed: the <b>operating system scheduler</b> decides which thread runs first, so on another machine the worker could print first. Only the last line is guaranteed to be last, because of <code>WaitForSingleObject</code>.</li>
+</ul>
+<div class="note">Microsoft's documentation recommends <code>_beginthreadex</code> instead of <code>CreateThread</code> for threads that call the C runtime library (here, <code>printf</code>). The assignment asks for the Windows API thread, so <code>CreateThread</code> is used directly. With the modern Universal C Runtime used by this compiler, the program runs correctly, as the output shows.</div>
+<h3>3.6 Pthreads to Win32 Mapping</h3>
+<table class="keep">
+  <tr><th>Step</th><th>Pthreads (original)</th><th>Windows API (Program 1)</th></tr>
+  <tr><td>Header</td><td><code>&lt;pthread.h&gt;</code></td><td><code>&lt;windows.h&gt;</code></td></tr>
+  <tr><td>Thread type</td><td><code>pthread_t</code></td><td><code>HANDLE</code></td></tr>
+  <tr><td>Function signature</td><td><code>void* f(void*)</code></td><td><code>DWORD WINAPI f(LPVOID)</code></td></tr>
+  <tr><td>Create</td><td><code>pthread_create()</code></td><td><code>CreateThread()</code></td></tr>
+  <tr><td>Terminate</td><td><code>pthread_exit()</code></td><td><code>ExitThread()</code></td></tr>
+  <tr><td>Wait for thread</td><td><code>pthread_join()</code></td><td><code>WaitForSingleObject()</code></td></tr>
+  <tr><td>Get return value</td><td><code>pthread_join()</code> (second argument)</td><td><code>GetExitCodeThread()</code></td></tr>
+  <tr><td>Release resources</td><td><code>pthread_join()</code> (automatic)</td><td><code>CloseHandle()</code></td></tr>
+  <tr><td>Error reporting</td><td>Return value is an error number</td><td><code>NULL</code> / <code>FALSE</code>, then <code>GetLastError()</code></td></tr>
+</table>
+</div>
+
+<!-- ============ 4. C++ STANDARD THREADS ============ -->
+<div class="section">
+<h2>4. Program 2: C++ Standard Thread Library</h2>
+<h3>4.1 Objective</h3>
+<p>Rewrite the program with the C++ standard thread library, so the same source code compiles and runs on both Windows and Linux without any change.</p>
+
+<h3>4.2 Source Code</h3>
+<div class="code"><div class="code-head">2_std_thread.cpp</div><pre><span class="ln">1</span><span class="c">// Program 2: C++ standard thread library</span>
+<span class="ln">2</span><span class="c">// The pthread example converted to std::jthread (C++20/23).</span>
+<span class="ln">3</span><span class="c">// Compile: g++ -std=c++23 2_std_thread.cpp -o 2_std_thread</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="p">#include &lt;thread&gt;</span>
+<span class="ln">6</span><span class="p">#include &lt;iostream&gt;</span>
+<span class="ln">7</span><span class="p">#include &lt;format&gt;</span>
+<span class="ln">8</span><span class="p">#include &lt;functional&gt;</span>
+<span class="ln">9</span>
+<span class="ln">10</span><span class="c">// A std::jthread function can have any parameters and types.</span>
+<span class="ln">11</span><span class="c">// The result is written into a reference, so no malloc and no void* casts.</span>
+<span class="ln">12</span><span class="k">void</span> thread_runner(<span class="k">int</span> thread_num, <span class="k">int</span>&amp; result) {
+<span class="ln">13</span>    std::cout &lt;&lt; std::format(<span class="s">"Hello from Worker Thread #{}!\n"</span>, thread_num);
+<span class="ln">14</span>
+<span class="ln">15</span>    result = thread_num * <span class="n">10</span>; <span class="c">// Pass the return value back to main</span>
+<span class="ln">16</span>}
+<span class="ln">17</span>
+<span class="ln">18</span><span class="k">int</span> main() {
+<span class="ln">19</span>    <span class="k">int</span> thread_arg = <span class="n">1</span>;
+<span class="ln">20</span>    <span class="k">int</span> thread_return_val = <span class="n">0</span>;
+<span class="ln">21</span>
+<span class="ln">22</span>    <span class="c">// 1. Create the thread (Function, Arguments). The thread starts immediately.</span>
+<span class="ln">23</span>    <span class="c">//    std::ref passes thread_return_val by reference instead of copying it.</span>
+<span class="ln">24</span>    <span class="c">//    If creation fails, std::system_error is thrown.</span>
+<span class="ln">25</span>    std::jthread worker_thread(thread_runner, thread_arg, std::ref(thread_return_val));
+<span class="ln">26</span>
+<span class="ln">27</span>    std::cout &lt;&lt; <span class="s">"Hello from the Main Thread!\n"</span>;
+<span class="ln">28</span>
+<span class="ln">29</span>    <span class="c">// 2. Join the thread (Wait for it to finish)</span>
+<span class="ln">30</span>    worker_thread.join();
+<span class="ln">31</span>
+<span class="ln">32</span>    <span class="c">// 3. Process the returned data</span>
+<span class="ln">33</span>    std::cout &lt;&lt; std::format(<span class="s">"Worker thread returned: {}\n"</span>, thread_return_val);
+<span class="ln">34</span>
+<span class="ln">35</span>    <span class="k">return</span> <span class="n">0</span>; <span class="c">// Nothing to free: no heap memory, no handle to close</span>
+<span class="ln">36</span>}</pre></div>
+
+<h3>4.3 How the Program Works</h3>
+<ol>
+  <li><b>Lines 5&ndash;8:</b> <code>&lt;thread&gt;</code> provides <code>std::jthread</code>, <code>&lt;format&gt;</code> builds the output text, and <code>&lt;functional&gt;</code> provides <code>std::ref</code>.</li>
+  <li><b>Line 12, the thread function:</b> unlike Pthreads and Win32, a C++ thread function can have any parameters with real types. Here it takes the thread number as an <code>int</code> and the place to store the result as an <code>int&amp;</code> (a reference). No <code>void*</code> casting is needed, so the compiler can check the types.</li>
+  <li><b>Line 13:</b> <code>std::format</code> builds the whole line first and prints it in one call. If the line were printed piece by piece with several <code>&lt;&lt;</code>, pieces from the two threads could get mixed in the same line.</li>
+  <li><b>Line 15:</b> the result is written through the reference, directly into the <code>thread_return_val</code> variable of <code>main</code>.</li>
+  <li><b>Line 25, creating the <code>std::jthread</code>:</b> replaces <code>pthread_create</code>. The thread starts immediately and runs <code>thread_runner(thread_arg, thread_return_val)</code>.
+    <ul>
+      <li>By default, <code>std::jthread</code> <b>copies</b> every argument into the new thread. <code>thread_arg</code> is copied, which is safer than the original, where the worker read <code>main</code>'s variable through a pointer.</li>
+      <li><code>std::ref(thread_return_val)</code> wraps the variable so it is passed as a reference instead of a copy. Without <code>std::ref</code>, the worker would write into its own copy and <code>main</code> would never see the result.</li>
+      <li>If the thread cannot be created, the constructor throws a <code>std::system_error</code> exception instead of returning an error code.</li>
+    </ul>
+  </li>
+  <li><b>Line 30, <code>join()</code>:</b> replaces <code>pthread_join</code>. Main waits until the worker is finished. <code>join()</code> also guarantees that everything the worker wrote is visible to main afterwards, so reading <code>thread_return_val</code> on line 33 is safe. Reading it before <code>join()</code> would be a data race.</li>
+  <li><b>Line 35:</b> there is nothing to clean up. There is no heap memory to free and no handle to close. The <code>std::jthread</code> object releases the thread when it is destroyed at the end of <code>main</code> (RAII).</li>
+</ol>
+
+<h3>4.4 Output</h3>
+<div class="term"><div class="term-head">Terminal (PowerShell)</div><pre>&gt; g++ -std=c++23 2_std_thread.cpp -o 2_std_thread
+&gt; .\2_std_thread.exe
+Hello from the Main Thread!
+Hello from Worker Thread #1!
+Worker thread returned: 10</pre></div>
+
+<h3>4.5 Analysis</h3>
+<ul>
+  <li>The output is the same as the original program and Program 1, so the conversion is correct.</li>
+  <li><b>Returning a value:</b> <code>join()</code> returns nothing, so a C++ thread cannot return a value the way <code>pthread_exit</code> does. This program writes the result into a reference instead. Two other standard ways are <code>std::promise</code>/<code>std::future</code> and <code>std::async</code>, which do return a value, but a reference is the simplest for one number.</li>
+  <li><b><code>std::jthread</code> vs <code>std::thread</code>:</b> if a <code>std::thread</code> is destroyed without <code>join()</code>, the program crashes with <code>std::terminate</code>. A <code>std::jthread</code> ("joining thread", C++20) calls <code>join()</code> by itself in its destructor, so forgetting it cannot crash the program. <code>join()</code> is still written on line 30 so the waiting is clear and happens before the result is printed.</li>
+  <li><b>Portability:</b> this file uses only standard C++, so the same code compiles on Linux with <code>g++ -std=c++23</code> without changes. The compiler connects <code>std::jthread</code> to the operating system's own threads. On Linux it uses Pthreads. On this Windows compiler (thread model <code>posix</code>), it uses winpthreads, which uses Win32 threads underneath.</li>
+  <li>As in Program 1, main printed first in every run, but the order of the first two lines is decided by the scheduler and is not guaranteed.</li>
+</ul>
+</div>
+
+<!-- ============ 5. CONCLUSION ============ -->
+<div class="section">
+<h2>5. Comparison and Conclusion</h2>
+<table class="keep">
+  <tr><th></th><th>Pthreads (original)</th><th>Windows API (Program 1)</th><th>C++ <code>std::jthread</code> (Program 2)</th></tr>
+  <tr><td><b>Header</b></td><td><code>&lt;pthread.h&gt;</code></td><td><code>&lt;windows.h&gt;</code></td><td><code>&lt;thread&gt;</code></td></tr>
+  <tr><td><b>Thread type</b></td><td><code>pthread_t</code></td><td><code>HANDLE</code></td><td><code>std::jthread</code></td></tr>
+  <tr><td><b>Function signature</b></td><td><code>void* f(void*)</code></td><td><code>DWORD WINAPI f(LPVOID)</code></td><td>Any, e.g. <code>void f(int, int&amp;)</code></td></tr>
+  <tr><td><b>Create</b></td><td><code>pthread_create()</code></td><td><code>CreateThread()</code></td><td><code>std::jthread</code> constructor</td></tr>
+  <tr><td><b>Wait</b></td><td><code>pthread_join()</code></td><td><code>WaitForSingleObject()</code></td><td><code>join()</code></td></tr>
+  <tr><td><b>Return value</b></td><td>Pointer to <code>malloc</code> memory</td><td>32-bit exit code</td><td>Written through a reference</td></tr>
+  <tr><td><b>Cleanup</b></td><td><code>free()</code> the result</td><td><code>CloseHandle()</code></td><td>Automatic (destructor)</td></tr>
+  <tr><td><b>Errors</b></td><td>Return value, non-zero = error</td><td><code>GetLastError()</code></td><td><code>std::system_error</code> exception</td></tr>
+  <tr><td><b>Runs on</b></td><td>Linux (Windows with winpthreads)</td><td>Windows only</td><td>Windows and Linux</td></tr>
+  <tr><td><b>Compile</b></td><td><code>gcc -std=c23 0_pthread.c -o 0_pthread -pthread</code></td><td><code>gcc -std=c23 1_winapi_thread.c -o 1_winapi_thread</code></td><td><code>g++ -std=c++23 2_std_thread.cpp -o 2_std_thread</code></td></tr>
+</table>
+<p>The three programs give the same output, so both conversions are correct. They also show that the idea of a thread is the same on every system: <b>create</b> a thread, let it run at the same time as main, <b>wait</b> for it with join, and then read its <b>result</b>. Only the API is different. Pthreads and the Windows API are both low-level C APIs, tied to one operating system, that pass data as <code>void*</code> and need manual cleanup. The C++ standard thread library hides those details. It is portable, type-safe, and cleans up by itself, while underneath it still uses the operating system's own threads.</p>
+<p>The part that surprised me most was how differently each API returns a value from a thread. Pthreads needs <code>malloc</code> and a pointer, Win32 uses the thread's exit code, and C++ does not return a value from <code>join()</code> at all, so the result has to go through a reference. I also learned that the Win32 version needs <code>CloseHandle</code>, because waiting for a thread and releasing it are two separate steps on Windows, while <code>pthread_join</code> does both.</p>
+
+<h3>References</h3>
+<ol>
+  <li>T. Wellem, "TC631 Operating System, Assignment #2: Thread Library in Linux and Windows," lecture slides, Satya Wacana Christian University, 2026.</li>
+  <li>Microsoft Learn, "CreateThread function," "WaitForSingleObject function," "GetExitCodeThread function," and "CloseHandle function." Available: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/</li>
+  <li>cppreference.com, "std::jthread" and "std::ref." Available: https://en.cppreference.com/w/cpp/thread/jthread</li>
+</ol>
+</div>
+
+</body></html>
