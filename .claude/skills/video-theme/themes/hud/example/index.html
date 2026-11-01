@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>HUD example</title>
+<script src="assets/gsap.min.js"></script>
+<script src="assets/motion.js"></script>
+<script src="assets/hud.js"></script>
+<script src="scenes.js"></script>
+<link rel="stylesheet" href="assets/theme.css">
+</head><body>
+<div id="main" class="stage" data-composition-id="main" data-start="0" data-duration="8" data-width="1080" data-height="1920">
+
+  <!-- scene 1: flash card -->
+  <div id="s1" class="layer bg-orange clip" data-start="0" data-duration="8" data-track-index="0"><div id="push1" class="layer">
+    <div id="howdoes" class="abs ui" style="left:90px;top:500px;font-size:72px;color:var(--black)"></div>
+    <div id="ai" class="abs title" style="left:60px;top:600px;font-size:500px;color:var(--black)">AI</div>
+    <div id="answer" class="abs title" style="left:84px;top:1080px;font-size:150px;color:var(--black)">ANSWER</div>
+    <div id="composer" class="abs" style="left:84px;top:1300px;width:912px;height:130px;border-radius:65px;background:var(--white);box-shadow:0 10px 0 rgba(0,0,0,.18)">
+      <div id="typed" class="abs ui" style="left:52px;top:34px;font-size:54px;color:var(--black)"></div>
+      <div class="abs" style="right:22px;top:22px;width:86px;height:86px;border-radius:50%;background:var(--black)"></div>
+    </div>
+  </div></div>
+
+  <!-- scene 2: counter ring -> the drop -->
+  <div id="s2" class="layer bg-black clip" style="opacity:0" data-start="0" data-duration="8" data-track-index="1"><div id="push2" class="layer"><div id="shake2" class="layer">
+    <div id="lead" class="abs mono" style="left:90px;top:300px;font-size:32px;color:var(--dim)"></div>
+    <div id="ringwrap" class="layer">
+      <svg class="layer" width="1080" height="1920">
+        <circle cx="540" cy="800" r="300" fill="none" stroke="rgba(236,234,228,.15)" stroke-width="6"/>
+        <circle id="prog" cx="540" cy="800" r="300" fill="none" stroke="var(--orange)" stroke-width="10" stroke-linecap="round" transform="rotate(-90 540 800)"/>
+      </svg>
+      <div id="num" class="abs mono" style="left:0;width:1080px;top:740px;text-align:center;font-size:88px;letter-spacing:0.02em;color:var(--white)">0</div>
+      <div class="abs mono" style="left:0;width:1080px;top:860px;text-align:center;font-size:24px;color:var(--dim)">TRAINING EXAMPLES</div>
+    </div>
+    <div id="millions" class="abs title bloom" style="left:0;width:1080px;text-align:center;top:1160px;font-size:132px;color:var(--orange)">MILLIONS</div>
+    <div id="examples" class="abs ui" style="left:0;width:1080px;text-align:center;top:1330px;font-size:72px;color:var(--white)">of examples</div>
+    <div id="data" class="abs title ca" style="left:0;width:1080px;text-align:center;top:660px;font-size:240px;color:var(--white)">DATA</div>
+    <div id="datasub" class="abs serif" style="left:0;width:1080px;text-align:center;top:940px;font-size:84px;color:var(--orange)">that's what it's called.</div>
+  </div></div></div>
+
+  <div id="flash" class="layer flash clip" data-start="0" data-duration="8" data-track-index="2"></div>
+  <div id="fx" class="layer clip" data-start="0" data-duration="8" data-track-index="3" style="pointer-events:none"><div class="layer vignette"></div></div>
+  <div id="hud" class="layer hud clip" data-start="0" data-duration="8" data-track-index="4"></div>
+
+  <audio id="vo" src="assets/vo-8s.m4a" data-start="0" data-duration="7.5" data-track-index="10" data-volume="1"></audio>
+  <audio id="sfx" src="assets/sfx.wav" data-start="0" data-duration="8" data-track-index="12" data-volume="0.55"></audio>
+</div>
+<script>
+const SC = window.SCENES, S = SC.scenes;
+const at = (s, w, n = 1) => S[s].words.filter((x) => x[0] === w)[n - 1][1];
+const tl = gsap.timeline({ paused: true });
+const M = Motion, H = HUD, D = 8;
+const cut = S[1].start - 0.28;
+
+H.frame(tl, "#hud", { title: "HOW AI WORKS", sub: "RIELCODE · EXPLAINER 01", handle: "rielcode.com", chapters: ["hook", "data"], scenes: SC, duration: D });
+H.grain(tl, "#fx", D);
+
+// ---- scene 1: flash card ----
+M.push(tl, "#push1", 0, cut, 1.05);
+H.type(tl, "#howdoes", "HOW DOES", at(0, "how"), 26);
+M.slam(tl, "#ai", at(0, "ai"), "hit");
+M.shake(tl, "#push1", at(0, "ai") + 0.04, 12);
+M.stretch(tl, "#answer", at(0, "answer"), "swish");
+tl.from("#composer", { y: 220, opacity: 0, duration: 0.3, ease: "back.out(1.6)" }, at(0, "your") - 0.15);
+M.sfx("pop", at(0, "your") - 0.1);
+H.type(tl, "#typed", "your questions?", at(0, "your") + 0.05, 20);
+M.squash(tl, "#composer", at(0, "questions") + 0.55, "pop");
+
+// ---- cut: glitch ----
+H.glitch(tl, "#s1", cut);
+tl.set("#s2", { opacity: 1 }, cut + 0.18); // next scene appears as the glitch ends
+M.sfx("whoosh", cut + 0.1);
+
+// ---- scene 2: counter -> riser -> drop ----
+M.push(tl, "#push2", S[1].start, 7.6, 1.05);
+H.type(tl, "#lead", "> AI LEARNS FROM", S[1].start, 24);
+const circ = 2 * Math.PI * 300;
+tl.fromTo("#prog", { strokeDasharray: circ, strokeDashoffset: circ }, { strokeDashoffset: 0, duration: 0.8, ease: "power2.out" }, at(1, "millions"));
+M.counter(tl, "#num", 0, 1000000, at(1, "millions"), 0.8, (v) => Math.round(v).toLocaleString("en-US"));
+M.slam(tl, "#millions", at(1, "millions"), "hit");
+M.fade(tl, "#examples", at(1, "of"));
+H.lockOn(tl, "#shake2", [210, 1320, 660, 110], at(1, "examples"));
+// riser builds from "that's", the drop lands on "data"
+M.sfx("riser", at(1, "thats"), { dur: at(1, "data") - at(1, "thats") });
+tl.to("#ringwrap", { scale: 1.12, duration: at(1, "data") - at(1, "thats"), ease: "power2.in" }, at(1, "thats"));
+tl.to(["#ringwrap", "#millions", "#examples", "#lead", ".bracket"], { opacity: 0, duration: 0.12 }, at(1, "data") - 0.04);
+M.slam(tl, "#data", at(1, "data"));
+M.sfx("drop", at(1, "data"));
+H.flash(tl, "#flash", at(1, "data"));
+M.shake(tl, "#shake2", at(1, "data") + 0.03, 18);
+M.fade(tl, "#datasub", at(1, "data") + 0.45);
+tl.to("#data", { scale: 1.04, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 7.0);
+
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+</script>
+</body></html>

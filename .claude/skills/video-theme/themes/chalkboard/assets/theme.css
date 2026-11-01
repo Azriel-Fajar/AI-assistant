@@ -1,0 +1,26 @@
+/* chalkboard theme: tokens + classes named in THEME.md */
+/* Cabin Sketch (Pablo Impallari) + Architects Daughter (Kimberly Geswein): SIL OFL 1.1, latin subset */
+@font-face { font-family: 'Cabin Sketch'; font-weight: 700; src: url('fonts/cabin-sketch-700.woff2') format('woff2'); }
+@font-face { font-family: 'Architects Daughter'; font-weight: 400; src: url('fonts/architects-daughter.woff2') format('woff2'); }
+
+:root { --board: #233a2c; --board2: #31503c; --chalk: #f3f0e6; --yellow: #f4e285; --pink: #f2a7b5; --blue: #a8d8ea; --wood: #6b4a2b; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--board); }
+.stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: radial-gradient(ellipse at 50% 40%, var(--board2), var(--board) 75%); }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+
+/* board decor: old smudges, chalk tray at the very bottom (inside platform UI zone) */
+.smudge { position: absolute; border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 255, 255, .06), transparent); }
+.tray { position: absolute; left: 0; top: 1840px; width: 1080px; height: 80px; background: var(--wood); box-shadow: 0 -6px 0 #8a6239; }
+.stick { position: absolute; left: 640px; top: 1818px; width: 120px; height: 22px; border-radius: 6px; background: var(--chalk); }
+.streak { position: absolute; left: -60px; width: 1200px; height: 140px; background: linear-gradient(transparent, rgba(255, 255, 255, .07), transparent); }
+.eraser { position: absolute; left: -320px; top: 0; width: 260px; height: 120px; }
+.eraser::before { content: ""; position: absolute; left: 0; top: 0; width: 260px; height: 70px; background: #a87545; border-radius: 10px 10px 0 0; }
+.eraser::after { content: ""; position: absolute; left: 0; top: 70px; width: 260px; height: 50px; background: #4b4b4b; border-radius: 0 0 8px 8px; }
+
+/* chalk marks (SVG) */
+text { fill: var(--chalk); stroke: var(--chalk); stroke-width: 1.6; white-space: pre; }
+.t { font-family: 'Cabin Sketch', cursive; font-weight: 700; }
+.h { font-family: 'Architects Daughter', cursive; }
+.ln { fill: none; stroke: var(--chalk); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }

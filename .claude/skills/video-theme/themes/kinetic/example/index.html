@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Kinetic example</title>
+<script src="assets/gsap.min.js"></script>
+<script src="assets/motion.js"></script>
+<script src="assets/kinetic.js"></script>
+<script src="scenes.js"></script>
+<link rel="stylesheet" href="assets/theme.css">
+</head><body>
+<div id="main" class="stage" data-composition-id="main" data-start="0" data-duration="8" data-width="1080" data-height="1920">
+
+  <!-- scene 1: words placed in 3D on the studio plate -->
+  <div id="s1" class="layer clip" data-start="0" data-duration="8" data-track-index="0">
+   <div id="world1" class="layer world">
+    <div id="w-how" class="w grey" style="left:96px;top:240px;font-size:120px">how</div>
+    <div id="w-does" class="w" style="left:380px;top:220px;font-size:160px">does</div>
+    <div id="w-ai" class="w red" style="left:70px;top:480px;font-size:560px;transform:translateZ(220px)">ai</div>
+    <div id="w-answer" class="w hard" style="left:80px;top:960px;font-size:210px">answer</div>
+    <svg class="layer" width="1080" height="1920" style="overflow:visible">
+      <path id="arc1" d="M 70 1480 Q 540 1150 1010 1480" fill="none"/>
+      <text class="arc" font-size="118"><textPath id="tp1" href="#arc1" startOffset="100%">your questions?</textPath></text>
+    </svg>
+   </div>
+  </div>
+
+  <!-- scene 2: red grid card -->
+  <div id="s2" class="layer card on-card clip" data-start="0" data-duration="8" data-track-index="1">
+   <div id="world2" class="layer world"><div id="shake2" class="layer">
+    <div id="w2-ai" class="w white" style="left:90px;top:270px;font-size:120px">ai</div>
+    <div id="w2-learns" class="w white" style="left:290px;top:270px;font-size:120px">learns</div>
+    <div id="w2-from" class="w small white" style="left:760px;top:290px;font-size:96px">from</div>
+    <div id="w2-millions" class="w white cond" style="left:60px;top:380px;font-size:520px">millions</div>
+    <div id="w2-count" class="w white" style="left:90px;top:860px;font-size:150px;transform:translateZ(-300px);opacity:.9">0</div>
+    <div id="w2-of" class="w small white" style="left:90px;top:1060px;font-size:96px">of</div>
+    <div id="w2-examples" class="w white" style="left:230px;top:1030px;font-size:160px">examples</div>
+    <div id="w2-called" class="w small white" style="left:90px;top:1215px;font-size:84px">that's called</div>
+    <div id="w2-data" class="w white hard" style="left:70px;top:1290px;font-size:280px;transform:translateZ(120px)">data.</div>
+   </div></div>
+  </div>
+  <div id="drops" class="layer clip" data-start="0" data-duration="8" data-track-index="2" style="pointer-events:none">
+    <div class="drop" style="left:1000px;top:40px;width:70px;height:70px"></div>
+    <div class="drop" style="left:960px;top:20px;width:44px;height:44px"></div>
+    <div class="drop" style="left:1030px;top:110px;width:34px;height:34px"></div>
+    <div class="drop" style="left:900px;top:60px;width:26px;height:26px"></div>
+  </div>
+
+  <audio id="vo" src="assets/vo-8s.m4a" data-start="0" data-duration="7.5" data-track-index="10" data-volume="1"></audio>
+  <audio id="sfx" src="assets/sfx.wav" data-start="0" data-duration="8" data-track-index="12" data-volume="0.55"></audio>
+</div>
+<script>
+const S = window.SCENES.scenes;
+const at = (s, w, n = 1) => S[s].words.filter((x) => x[0] === w)[n - 1][1];
+const tl = gsap.timeline({ paused: true });
+const M = Motion, K = Kinetic;
+const cut = S[1].start - 0.4;
+
+// ---- scene 1 ----
+K.dolly(tl, "#world1", 0, cut + 0.3, 1.14);
+M.slide(tl, "#w-how", at(0, "how"), "left");
+M.drop(tl, "#w-does", at(0, "does"), "pop");
+M.swing(tl, "#w-ai", at(0, "ai"), "left", "hit");
+M.slam(tl, "#w-answer", at(0, "answer"), "hit");
+K.rack(tl, ["#w-how", "#w-does", "#w-ai"], at(0, "your") - 0.1, 0, 6);  // focus moves down to the arc
+K.arcIn(tl, "#tp1", at(0, "your"), 100, 4, "swish");
+tl.to("#w-ai", { rotation: -4, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 1 }, at(0, "questions"));
+
+// ---- ink wipe to the red card ----
+K.inkWipe(tl, "#s2", "#drops .drop", cut);
+
+// ---- scene 2 ----
+K.dolly(tl, "#world2", S[1].start - 0.1, 7.6, 1.1);
+M.drop(tl, "#w2-ai", at(1, "ai"), "pop");
+M.slide(tl, "#w2-learns", at(1, "learns"), "right", "swish");
+M.fade(tl, "#w2-from", at(1, "from"));
+M.stretch(tl, "#w2-millions", at(1, "millions"), "hit");
+tl.from("#w2-count", { opacity: 0, duration: 0.15 }, at(1, "millions") + 0.12);
+M.counter(tl, "#w2-count", 0, 1000000, at(1, "millions") + 0.12, 0.7, (v) => Math.round(v).toLocaleString("en-US") + "+", "typing");
+M.fade(tl, "#w2-of", at(1, "of"));
+M.popLetters(tl, "#w2-examples", at(1, "examples"), 0.035, "pop");
+K.rack(tl, ["#w2-ai", "#w2-learns", "#w2-from", "#w2-millions", "#w2-count", "#w2-of", "#w2-examples"], at(1, "thats") - 0.1, 0, 8);
+M.fade(tl, "#w2-called", at(1, "thats"));
+M.slam(tl, "#w2-data", at(1, "data"), "hit");
+M.shake(tl, "#shake2", at(1, "data") + 0.05, 14);
+tl.to("#w2-data", { scale: 1.04, duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 1 }, 7.0);
+
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+</script>
+</body></html>

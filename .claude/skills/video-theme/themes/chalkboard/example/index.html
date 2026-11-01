@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Chalkboard example</title>
+<script src="assets/gsap.min.js"></script>
+<script src="assets/motion.js"></script>
+<script src="assets/chalk.js"></script>
+<script src="scenes.js"></script>
+<link rel="stylesheet" href="assets/theme.css">
+</head><body>
+<div id="main" class="stage" data-composition-id="main" data-start="0" data-duration="8" data-width="1080" data-height="1920">
+  <div class="smudge" style="left:-120px;top:200px;width:600px;height:400px"></div>
+  <div class="smudge" style="left:600px;top:1000px;width:700px;height:500px"></div>
+  <div class="tray"></div><div class="stick"></div>
+  <div id="streak1" class="streak clip" style="top:560px" data-start="0" data-duration="8" data-track-index="5"></div>
+  <div id="streak2" class="streak clip" style="top:1100px" data-start="0" data-duration="8" data-track-index="6"></div>
+
+  <!-- scene 1: push (slow camera) > punch (accent zoom) > board -->
+  <div id="s1" class="layer clip" data-start="0" data-duration="8" data-track-index="0">
+   <div id="push1" class="layer"><div id="punch1" class="layer">
+    <svg class="layer" width="1080" height="1920">
+     <g id="b1" filter="url(#chalk)">
+      <text id="t1a" class="t" x="540" y="340" text-anchor="middle" font-size="140"></text>
+      <text id="t1b" class="t" x="540" y="490" text-anchor="middle" font-size="140"></text>
+      <path id="u1" class="ln" stroke="var(--pink)" d="M300 540 C420 522 560 552 780 528"/>
+      <g transform="translate(540 1050) scale(1.2) translate(-535 -855)">
+        <path id="p-head" class="ln" d="M220 760 C250 760 270 782 270 810 C270 838 250 860 220 860 C190 860 170 838 170 810 C170 782 190 760 220 760 Z"/>
+        <path id="p-body" class="ln" d="M220 860 L222 1010 M222 1010 L170 1110 M222 1010 L276 1108 M222 900 L160 960"/>
+        <path id="p-arm" class="ln" d="M222 900 L290 950"/>
+        <g id="think"><path class="ln" d="M300 700 C300 640 360 610 410 630 C440 590 520 600 530 650 C580 660 580 730 530 745 C510 790 430 790 410 760 C360 780 300 760 300 700 Z"/><path class="ln" d="M290 790 C292 784 300 784 300 792 M270 820 C271 816 276 816 276 822"/></g>
+        <text id="q" class="t" x="418" y="725" text-anchor="middle" font-size="96"></text>
+        <path id="arr" class="ln" stroke="var(--yellow)" d="M330 960 C420 920 520 920 600 950 M572 922 L604 952 L566 970"/>
+        <g id="bot">
+          <path class="ln" stroke="var(--blue)" d="M650 820 L900 812 L908 1040 L656 1046 Z"/>
+          <path class="ln" stroke="var(--blue)" d="M720 900 L722 940 M830 898 L832 938 M720 990 C760 1010 800 1010 840 988"/>
+          <path id="bot-ant" class="ln" stroke="var(--blue)" d="M778 816 L776 760 M762 746 C762 732 792 732 792 748 C792 762 762 762 762 746"/>
+        </g>
+        <text id="bang" class="t" x="680" y="760" text-anchor="middle" font-size="120" style="fill:var(--yellow);stroke:var(--yellow)">!</text>
+      </g>
+     </g>
+    </svg>
+   </div></div>
+  </div>
+
+  <!-- scene 2 -->
+  <div id="s2" class="layer clip" data-start="0" data-duration="8" data-track-index="1">
+   <div id="push2" class="layer"><div id="punch2" class="layer">
+    <svg class="layer" width="1080" height="1920">
+     <g id="b2" filter="url(#chalk)">
+      <text id="t2a" class="t" x="540" y="320" text-anchor="middle" font-size="110"></text>
+      <text id="t2b" class="t" x="540" y="440" text-anchor="middle" font-size="94"></text>
+      <g transform="translate(0 40)"><g id="tally"></g>
+        <text id="big" class="h" x="600" y="650" font-size="78" style="fill:var(--yellow);stroke:var(--yellow)"></text></g>
+      <g transform="translate(0 130)">
+        <g id="i-doc"><path class="ln" stroke="var(--blue)" d="M120 760 L300 756 L304 960 L124 964 Z M150 810 L270 808 M150 850 L275 848 M150 890 L240 888"/></g>
+        <g id="i-img"><path class="ln" stroke="var(--blue)" d="M420 760 L640 756 L644 960 L424 964 Z M440 940 L510 860 L560 910 L600 870 L628 940 M590 800 C590 785 615 785 615 800 C615 815 590 815 590 800"/></g>
+        <g id="i-chat"><path class="ln" stroke="var(--blue)" d="M740 770 C800 762 920 764 960 772 C968 820 966 860 958 880 C900 888 820 888 770 884 L740 920 L752 882 C740 850 738 800 740 770 Z M770 815 L930 812 M770 850 L880 848"/></g>
+      </g>
+      <g transform="translate(540 1400) scale(1.25) translate(-540 -1120)">
+        <text id="data" class="t" x="540" y="1180" text-anchor="middle" font-size="150" style="fill:var(--yellow);stroke:var(--yellow)"></text>
+        <path id="ring" class="ln" stroke="var(--pink)" d="M330 1120 C320 1040 760 1020 780 1110 C800 1200 360 1230 320 1150 C300 1100 430 1040 560 1040"/>
+      </g>
+     </g>
+     <g id="dust2"></g>
+    </svg>
+   </div></div>
+  </div>
+
+  <div id="eraser" class="eraser clip" data-start="0" data-duration="8" data-track-index="3"></div>
+
+  <audio id="vo" src="assets/vo-8s.m4a" data-start="0" data-duration="7.5" data-track-index="10" data-volume="1"></audio>
+  <audio id="bed" src="assets/bed-8s.m4a" data-start="0" data-duration="8" data-track-index="11" data-volume="1"></audio>
+  <audio id="sfx" src="assets/sfx.wav" data-start="0" data-duration="8" data-track-index="12" data-volume="0.45"></audio>
+</div>
+<script>
+Chalk.filter();
+const S = window.SCENES.scenes;
+const at = (s, w, n = 1) => S[s].words.filter((x) => x[0] === w)[n - 1][1];
+const tl = gsap.timeline({ paused: true });
+const M = Motion;
+
+// ---- scene 1: question ----
+M.boil(tl, "#b1", 0, S[1].start - 0.25);
+M.push(tl, "#push1", 0, S[1].start - 0.3, 1.05);
+Chalk.write(tl, "#t1a", [["How does ", null], ["AI", "#f4e285"]], 0.05);
+M.punch(tl, "#punch1", at(0, "ai"), 1.06, "tap");
+Chalk.write(tl, "#t1b", [["answer?", null]], at(0, "answer") - 0.05);
+Chalk.draw(tl, "#u1", at(0, "answer") + 0.25, 0.3);
+Chalk.draw(tl, "#p-head, #p-body, #p-arm", at(0, "answer"), 0.5);
+tl.to("#p-head", { rotation: -10, transformOrigin: "50% 100%", duration: 0.3, ease: "sine.inOut", yoyo: true, repeat: 3 }, at(0, "your") + 0.05); // secondary action
+tl.to("#p-arm", { rotation: -55, transformOrigin: "0% 0%", duration: 0.25, ease: "back.out(2)" }, at(0, "your") + 0.1);
+Chalk.draw(tl, "#think", at(0, "your"), 0.35);
+Chalk.write(tl, "#q", [["?", "#f2a7b5"]], at(0, "questions") - 0.06, 0, 0.25);
+M.float(tl, "#q", at(0, "questions") + 0.25, S[1].start - 0.3, 10);
+Chalk.draw(tl, "#arr", at(0, "questions"), 0.3);
+tl.to("#arr", { x: 10, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1 }, at(0, "questions") + 0.3); // follow-through
+Chalk.draw(tl, "#bot", at(0, "questions") + 0.24, 0.5);
+M.squash(tl, "#bot", at(0, "questions") + 0.74);
+tl.to("#bot-ant", { rotation: 14, transformOrigin: "50% 100%", duration: 0.1, ease: "sine.inOut", yoyo: true, repeat: 3 }, at(0, "questions") + 0.82);
+tl.from("#bang", { scale: 0, rotation: -30, transformOrigin: "50% 100%", duration: 0.3, ease: "back.out(3)" }, at(0, "questions") + 0.84);
+M.sfx("tap", at(0, "questions") + 0.84);
+
+// ---- transition: eraser ----
+const cut = S[1].start - 0.28;
+Chalk.erase(tl, "#eraser", "#s1", cut, 560, 1100);
+tl.from("#streak1", { scaleX: 0, transformOrigin: "0% 50%", duration: 0.2, ease: "none" }, cut);
+tl.from("#streak2", { scaleX: 0, transformOrigin: "100% 50%", duration: 0.2, ease: "none" }, cut + 0.21);
+
+// ---- scene 2: data ----
+M.boil(tl, "#b2", S[1].start, 8);
+M.push(tl, "#push2", S[1].start, 7.5, 1.05);
+Chalk.write(tl, "#t2a", [["AI learns from", null]], S[1].start, 0.03);
+Chalk.write(tl, "#t2b", [["millions", "#f4e285"], [" of examples", null]], at(1, "from") - 0.08, 0.03);
+M.punch(tl, "#punch2", at(1, "millions"), 1.05);
+const NS = "http://www.w3.org/2000/svg", tally = document.querySelector("#tally");
+for (let g = 0; g < 3; g++) {
+  const x0 = 120 + g * 150, d = [0, 1, 2, 3].map((k) => `M${x0 + k * 24} 570 L${x0 + k * 24 + 2} 670`).join(" ") + ` M${x0 - 14} 650 L${x0 + 90} 584`;
+  const p = document.createElementNS(NS, "path"); p.setAttribute("class", "ln"); p.setAttribute("d", d); tally.appendChild(p);
+  M.sfx("tap", at(1, "millions") + g * 0.2 + 0.18);
+}
+Chalk.draw(tl, "#tally", at(1, "millions"), 0.6);
+Chalk.write(tl, "#big", [["1,000,000+", null]], at(1, "millions") + 0.22, 0.03, 0.2);
+tl.to("#big", { scale: 1.18, transformOrigin: "0% 50%", duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1 }, at(1, "of") + 0.16);
+[["#i-doc", at(1, "examples")], ["#i-img", at(1, "examples") + 0.27], ["#i-chat", at(1, "examples") + 0.52]].forEach(([id, t]) => {
+  Chalk.draw(tl, id, t, 0.35); M.hop(tl, id, t + 0.36);
+});
+// arcs: icons fly in and become "data"
+[["#i-doc", 328, 410, -40], ["#i-img", 8, 410, 20], ["#i-chat", -310, 445, 40]].forEach(([id, dx, dy, rot], i) => {
+  const t = at(1, "thats") + i * 0.06;
+  M.arcTo(tl, id, dx, dy, t, 0.45, { rotation: rot, scale: 0.25, transformOrigin: "50% 50%" });
+  tl.to(id, { opacity: 0, duration: 0.08 }, t + 0.42);
+});
+M.sfx("swish", at(1, "thats"), { dur: 0.5 });
+Chalk.write(tl, "#data", [["DATA", null]], at(1, "data"), 0.07, 0.3);
+M.punch(tl, "#punch2", at(1, "data") + 0.02, 1.07);
+M.shake(tl, "#punch2", at(1, "data") + 0.02, 10);
+M.puff(tl, "#dust2", 540, 1400, at(1, "data") + 0.02, "#f3f0e6", 12);
+M.sfx("tap", at(1, "data") + 0.02, { strong: true });
+Chalk.draw(tl, "#ring", at(1, "data") + 0.32, 0.45);
+tl.to("#data", { scale: 1.05, transformOrigin: "50% 50%", duration: 0.35, ease: "sine.inOut", yoyo: true, repeat: 1 }, 7.1);
+
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+</script>
+</body></html>
