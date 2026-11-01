@@ -71,6 +71,8 @@ export type Common = {
   edgeAngle?: number;
   metal?: number;
   rough?: number;
+  // false keeps a small part from throwing a shadow (e.g. swimming things whose shadows read as ghosts)
+  shadow?: boolean;
 };
 
 // Setting metal or rough switches a part from flat shading to reflective, for chrome, brass and water.
@@ -91,12 +93,12 @@ const Edges: React.FC<{ geo: THREE.BufferGeometry; angle: number; opacity: numbe
 };
 
 const Solid: React.FC<Common & { geo: THREE.BufferGeometry; side?: THREE.Side }> = ({
-  geo, pos = [0, 0, 0], rot = [0, 0, 0], scale = 1, color = T.white, opacity = 1, edge = true, edgeAngle = 30, side, metal, rough,
+  geo, pos = [0, 0, 0], rot = [0, 0, 0], scale = 1, color = T.white, opacity = 1, edge = true, edgeAngle = 30, side, metal, rough, shadow = true,
 }) => {
   if (opacity <= 0.003) return null;
   return (
     <group position={pos} rotation={rot} scale={scale}>
-      <mesh geometry={geo} castShadow={opacity > 0.6} receiveShadow>
+      <mesh geometry={geo} castShadow={shadow && opacity > 0.6} receiveShadow>
         <Mat color={color} opacity={opacity} side={side} metal={metal} rough={rough} />
       </mesh>
       {edge && <Edges geo={geo} angle={edgeAngle} opacity={opacity} />}
