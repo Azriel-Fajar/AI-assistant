@@ -70,7 +70,7 @@ See [[feedback_leads_vs_customers_reference]].
 
 ## Skills
 
-Custom skills in `.claude/skills/<name>/SKILL.md`, invoke with `/<name>`. Each skill's description tells you when to use it. Notable: `/daily-priorities`, `/follow-up`, `/client-proposal`, `/lead-tracker`, `/demo-website`, `/site-review`, `/caption`, `/grill-me`, `/git-command`, `/project-kickoff`, `/project-completion-doc`, `/claude-coach`, `/video-studio` (social video editing, HyperFrames kit in `video-studio/`), `/explainer-video` + `/video-theme` (animated explainers / motion graphics synced to VO; themes chalkboard, manim, kinetic, hud, grid-pulpen; code-made SFX).
+Custom skills in `.claude/skills/<name>/SKILL.md`, invoke with `/<name>`. Each skill's description tells you when to use it. Notable: `/daily-priorities`, `/follow-up`, `/client-proposal`, `/lead-tracker`, `/demo-website`, `/site-review`, `/caption`, `/grill-me`, `/git-command`, `/project-kickoff`, `/project-completion-doc`, `/claude-coach`, `/video-studio` (social video editing, HyperFrames kit in `video-studio/`), `/explainer-video` + `/video-theme` (animated explainers / motion graphics synced to VO; themes chalkboard, manim, kinetic, hud, grid-pulpen; code-made SFX), `/riset-sekitar` + `/sekitar` (idea research, then 3D everyday-object explainer shorts, Remotion + Three.js + Gemini VO; project in gitignored `shorts/`).
 
 ---
 
@@ -109,3 +109,8 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - Slide-gen prompts: draft in chat, never a file. Filename is his call.
 - Asdos grading: judge errors by severity, give reason per score, no rigid formulas.
 - Explainer videos: no captions, VO carries words; visuals fill the frame.
+- VO scripts: give one plain copy-paste block, no numbering/bold/notes.
+- Channel/bio descriptions: general and informative, no specific video examples or sources.
+- sekitar: big word captions, full setting, constant motion, no blur, pause after sign-off.
+- sekitar upload: curiosity title + #faktaunik #sains, SEO description, formal Anda.
+- Teaching slides: credits on title slide (lecturer, TAs + NIM, session), never last.

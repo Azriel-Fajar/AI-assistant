@@ -18,6 +18,8 @@ what the video says or when things happen (explainer-video owns script and timin
 | `hud` | black + orange control room, HUD frame, glitch, drop | SFX only | tech/AI topics, high energy, one big reveal |
 | `grid-pulpen` | grid paper, blue ballpoint doodles | music + pen SFX | calm notebook style (first theme; felt stiff, prefer the four above) |
 
+**3D cutaway of an everyday object** (kitabedah style, captions on) is not a theme here: use skill `sekitar` (Remotion + Three.js, its own look in its `engine/`).
+
 **Default: `manim`** (Azriel's choice, 2026-11-01). No theme named → use manim. Switch only
 when he names another theme or the topic clearly fits another "Pick when" row (then ask once).
 

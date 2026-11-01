@@ -133,6 +133,7 @@ dead frames, theme "Check before render". Re-render as `draft-2`… never overwr
 | One of 70+ film styles (watercolor, ukiyoe, blueprint, swiss-motion, hologram-hud…) | plugin `lemo-opuscar` (`/lemo-opuscar:lemo-opuscar`) | its own pipeline; tell it Azriel supplies the voice; it may score music itself |
 | Hand-painted mascot cartoon | `video-studio/claude-animation-base/` (open that folder, read ANIMATION_GUIDE.md) | the mascot is Anthropic's: personal use, not Rielcode ads |
 | Paper-collage B-roll clip | skill `gbro-collage-broll` | needs GEMINI_API_KEY (paid video gen) + stills (built for Codex image_gen); ask before any paid call |
+| 3D cutaway of an everyday object (kitabedah style) | skill `sekitar` (ideas: `riset-sekitar`) | Remotion + Three.js, Gemini VO, captions on; project in `shorts/` |
 | Words behind Azriel on camera | not installed (Kinetic Type full pipeline, ~8 GB AI cutout) | only when he films himself |
 
 ## Notes

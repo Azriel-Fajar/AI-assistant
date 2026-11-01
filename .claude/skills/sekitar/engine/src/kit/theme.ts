@@ -1,0 +1,45 @@
+// Colours sampled from the reference frames; brand values are the only part meant to change per account.
+export const T = {
+  bg: '#ECE9E0',
+  bgWarm: '#E5DFC7',
+  ink: '#141414',
+  yellow: '#FDE25A',
+  card: '#FFFEF5',
+  captionBg: 'rgba(24,24,24,0.92)',
+  future: 'rgba(255,255,255,0.42)',
+  red: '#C73117',
+  orange: '#EF6A2D',
+  blue: '#2971BB',
+  water: '#6FB4DC',
+  green: '#1F8A5B',
+  copper: '#AA653B',
+  brass: '#C69A3C',
+  steel: '#B7BCBF',
+  dark: '#3F454A',
+  rubber: '#26282A',
+  white: '#F7F6F1',
+  line: '#22262A',
+};
+
+// The account the follow end card shows. Its picture is public/brand/profil.png, copied there by setup.py.
+// Two handles: without the dot on Instagram and YouTube, with it on TikTok. One end card shows both, that order.
+export const ACCOUNT = {
+  name: 'Dibaliknya Apa',
+  handles: [
+    { where: 'Instagram · YouTube', handle: '@dibaliknyaapa' },
+    { where: 'TikTok', handle: '@dibaliknya.apa' },
+  ],
+  bio: 'Cara kerja hal sehari-hari, dalam 3D.',
+};
+
+export const SANS = 'InterKit';
+export const MONO = 'JetMonoKit';
+
+// Layout measured on a 608x1080 reference frame, scaled to 1080x1920.
+export const L = {
+  W: 1080,
+  H: 1920,
+  marginX: 57,
+  headerY: 188,
+  captionY: 1300,
+};

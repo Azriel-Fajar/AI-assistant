@@ -12,3 +12,4 @@ meta/dashboard/.venv/
 __pycache__/
 
 chats/
+shorts/

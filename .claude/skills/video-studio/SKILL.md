@@ -11,6 +11,8 @@ make-a-video, motion-showreel, short-form-edit, style-library, video-storytellin
 website-to-hyperframes). Their support files live in `video-studio/`.
 Source: github.com/nateherkai/herk-edit-kit, commit in `video-studio/.kit-version`.
 
+A finished `sekitar` render (`shorts/out/<slug>/<slug>.mp4`) is edited here like any footage. Don't re-caption it: it already has captions.
+
 ## Path rules (the kit assumed one repo root; JARVIS splits it)
 
 - Kit root = `video-studio/`. Run every kit command from there (or from a project inside it).
