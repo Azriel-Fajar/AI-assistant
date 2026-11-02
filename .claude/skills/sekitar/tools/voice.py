@@ -1,6 +1,6 @@
 """Narrate script.json in one session, several takes, score them, keep the best, write timing.json.
 
-  python voice.py <project>/src/pieces/<slug> [--engine gemini|elevenlabs|edge] [--takes 3]
+  python voice.py <project>/src/pieces/<slug> [--engine gemini|elevenlabs|edge] [--takes 3] [--until 0.9]
   python voice.py <project>/src/pieces/<slug> --sample Charon,Sadaltager,Achird   (a short clip per voice, to choose)
 
 gemini needs GEMINI_API_KEY in the environment (never in a file). elevenlabs needs ELEVENLABS_API_KEY and
@@ -34,6 +34,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("piece")
 ap.add_argument("--engine", choices=["gemini", "elevenlabs", "edge"], default="gemini" if os.environ.get("GEMINI_API_KEY") else "edge")
 ap.add_argument("--takes", type=int, default=3)
+ap.add_argument("--until", type=float, help="stop at the first take whose match reaches this, to save API quota")
 ap.add_argument("--sample")
 ap.add_argument("--reuse", action="store_true", help="re-time the takes already on disk without generating new ones")
 a = ap.parse_args()
@@ -425,6 +426,8 @@ for i in range(a.takes):
     print(f"take {i + 1}: match={match:.3f} syl/s={sps:.2f} length={span:.1f}s cuts={ncuts} score={s:.3f}", flush=True)
     if best is None or s > best[0]:
         best = (s, i + 1, audio, say)
+    if a.until and match >= a.until:
+        break
 
 s, n, audio, say = best
 audio, say = hold(audio, say)

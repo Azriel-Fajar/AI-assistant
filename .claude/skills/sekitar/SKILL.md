@@ -32,7 +32,7 @@ When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 20
 
 - **Never ask.** Skip the reminders. Where a step waits for Azriel, a fresh reviewer gate from [rubrik.md](rubrik.md) decides instead: gate `naskah` after step 2, gate `look` after step 4, gate `akhir` after step 6. Apply its fixes and re-review, at most 3 rounds per gate.
 - **Hook:** write the 3 options as usual; the `naskah` reviewer picks the strongest and says why.
-- **Voice:** Gemini only. If the best take's `match` is under 0.8, generate 3 new takes once more. If Gemini fails, stop and report; edge-tts never goes into an automatic film.
+- **Voice:** Gemini only, `--takes 3 --until 0.9`: it stops at the first take with `match` ≥ 0.9, so a film spends 1–3 of the free tier's 10 requests a day and 3 films fit in one day. If the best `match` is still under 0.8, generate no more: the film is PERLU CEK. If Gemini fails, stop and report; edge-tts never goes into an automatic film.
 - **Look:** `stills.mjs ... every=2 --scale=0.3` plus the 3–4 key moments, then gate `look`.
 - **Render:** a re-render after gate `akhir` goes to `<slug>_v2.mp4`; the report names the final file.
 - **Facts are hard:** if a claim can't be sourced, cut it; if the film no longer stands without it, stop, report, and let `produksi-harian` swap the topic.
