@@ -5,7 +5,9 @@ import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const [project, slug, outFile, spec = 'every=3', ...rest] = process.argv.slice(2);
+const [projectArg, slug, outFile, spec = 'every=3', ...rest] = process.argv.slice(2);
+// createRequire needs an absolute path; "." used to crash and cost each film two retries.
+const project = path.resolve(projectArg);
 const opt = Object.fromEntries(rest.map((a) => a.replace(/^--/, '').split('=')));
 // Remotion caches its 120 MB browser in the working directory; keep that in the project, never a repo.
 process.chdir(project);

@@ -1,10 +1,12 @@
 # Reviewer rubric (automatic mode)
 
-The reviewer replaces Azriel's approvals when `produksi-harian` runs `sekitar` unattended. Each gate gets a **fresh** reviewer (an Agent with no part in making the film), given only file paths and this rubric. It returns JSON and nothing else:
+The reviewer replaces Azriel's approvals when `produksi-harian` runs `sekitar` unattended. Each gate gets a **fresh** reviewer (an Agent with no part in making the film, started with `model: "sonnet"`), given only file paths and this rubric. Sonnet since 3 Nov 2026, to save Claude usage; on trial until Azriel judges the films. It returns JSON and nothing else:
 
 ```json
 {"gate": "naskah|look|akhir", "scores": {"<criterion>": 1-10}, "pass": true, "fixes": ["concrete change, with the line id, second or element"]}
 ```
+
+**Before calling a reviewer**, the maker scores its own work against the gate's table and fixes anything under 8 first. This doesn't replace the reviewer, it only spares rounds: the bus film needed 3 naskah rounds on 3 Nov 2026.
 
 **Pass:** every criterion ≥ 8, and any criterion marked *hard* at 10. A failed gate gets its fixes applied and is reviewed again by a new reviewer, at most 3 rounds. After the third failure the film still goes on, with the gate marked **PERLU CEK** in the report, unless a *hard* criterion failed: then stop and report, never publish a film with an unsourced claim.
 
