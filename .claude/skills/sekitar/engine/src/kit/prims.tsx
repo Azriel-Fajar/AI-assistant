@@ -75,19 +75,35 @@ export type Common = {
   shadow?: boolean;
 };
 
+// Comic shading (Azriel, 3 Nov 2026, after the fig. Why retaining-wall short): faces in shade get a screen-space
+// halftone of ink dots that grow as the light drops; lit faces stay clean. Dots are 9 px on a 45° grid.
+const halftone = (sh: { fragmentShader: string }) => {
+  sh.fragmentShader = sh.fragmentShader.replace(
+    '#include <opaque_fragment>',
+    `{
+      float lum = dot(outgoingLight / max(diffuseColor.rgb, vec3(0.05)), vec3(0.3333));
+      float shade = clamp((1.05 - lum) / 0.55, 0.0, 1.0);
+      vec2 q = mat2(0.7071, -0.7071, 0.7071, 0.7071) * gl_FragCoord.xy / 9.0;
+      float d = length(fract(q) - 0.5);
+      outgoingLight *= mix(1.0, 0.68, (1.0 - smoothstep(0.42 * sqrt(shade) - 0.06, 0.42 * sqrt(shade), d)) * step(0.04, shade));
+    }
+    #include <opaque_fragment>`,
+  );
+};
+
 // Setting metal or rough switches a part from flat shading to reflective, for chrome, brass and water.
 const Mat: React.FC<{ color: string; opacity: number; side?: THREE.Side; metal?: number; rough?: number }> = ({ color, opacity, side, metal, rough }) =>
   metal === undefined && rough === undefined ? (
-    <meshLambertMaterial color={color} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
+    <meshLambertMaterial onBeforeCompile={halftone} color={color} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
   ) : (
-    <meshStandardMaterial color={color} metalness={metal ?? 0} roughness={rough ?? 0.5} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
+    <meshStandardMaterial onBeforeCompile={halftone} color={color} metalness={metal ?? 0} roughness={rough ?? 0.5} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
   );
 
 const Edges: React.FC<{ geo: THREE.BufferGeometry; angle: number; opacity: number }> = ({ geo, angle, opacity }) => {
   const e = useMemo(() => new THREE.EdgesGeometry(geo, angle), [geo, angle]);
   return (
     <lineSegments geometry={e}>
-      <lineBasicMaterial color={T.line} transparent opacity={0.7 * opacity} />
+      <lineBasicMaterial color={T.ink} transparent opacity={opacity} />
     </lineSegments>
   );
 };
@@ -195,6 +211,25 @@ export const Tiles: React.FC<{ w: number; d: number; tile: number; color?: strin
       <lineSegments geometry={lines}>
         <lineBasicMaterial color={lineColor} />
       </lineSegments>
+    </group>
+  );
+};
+
+// The world as a cut-out block of ground (fig. Why grammar): a top surface on stacked layers whose front and side
+// faces show the strata, sitting on the page. layers run top to bottom; the top surface (grass, paving) is `top`.
+// Put buildings and props on y = 0. Cut a trench or a wall into it by leaving parts out and adding your own boxes.
+export const Diorama: React.FC<{ w: number; d: number; top?: string; topH?: number; layers: { h: number; color: string }[]; pos?: V3 }> = ({
+  w, d, top = '#5E8C3A', topH = 0.12, layers, pos = [0, 0, 0],
+}) => {
+  let y = -topH;
+  return (
+    <group position={pos}>
+      <Box size={[w, topH, d]} pos={[0, -topH / 2, 0]} color={top} />
+      {layers.map((l, i) => {
+        const c = y - l.h / 2;
+        y -= l.h;
+        return <Box key={i} size={[w, l.h, d]} pos={[0, c, 0]} color={l.color} />;
+      })}
     </group>
   );
 };

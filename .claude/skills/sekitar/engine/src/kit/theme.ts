@@ -1,6 +1,6 @@
 // Colours sampled from the reference frames; brand values are the only part meant to change per account.
 export const T = {
-  bg: '#ECE9E0',
+  bg: '#FFFFFF',
   bgWarm: '#E5DFC7',
   ink: '#141414',
   yellow: '#FDE25A',
@@ -42,4 +42,5 @@ export const L = {
   marginX: 57,
   headerY: 188,
   captionY: 1300,
+  badgeY: 372,
 };

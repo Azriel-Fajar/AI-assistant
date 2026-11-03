@@ -14,19 +14,8 @@ export const TopFade: React.FC<{ color?: string }> = ({ color = T.bg }) => (
   <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 620, background: `linear-gradient(${color} 0%, ${color} 48%, ${color}00 100%)` }} />
 );
 
-// items: when each header takes over. kicker is the mono label, title the plain statement.
-export const Header: React.FC<{ items: { t: number; kicker: string; title: string }[]; color?: string }> = ({ items, color }) => {
-  const t = useT();
-  const cur = [...items].reverse().find((h) => t >= h.t);
-  if (!cur) return null;
-  const p = ev(t, cur.t, 0.28);
-  return (
-    <div style={{ position: 'absolute', left: L.marginX, right: L.marginX, maxWidth: 860, top: L.headerY, opacity: p, transform: `translateY(${(1 - p) * 14}px)` }}>
-      <div style={{ fontFamily: MONO, fontWeight: 500, fontSize: 25, letterSpacing: '0.13em', color: color ?? '#3A3A36', textTransform: 'uppercase' }}>{cur.kicker}</div>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 55, lineHeight: 1.12, letterSpacing: '-0.015em', color: color ?? T.ink, marginTop: 8 }}>{cur.title}</div>
-    </div>
-  );
-};
+// Retired (Azriel, 3 Nov 2026): the top stays clear, the caption carries the words. Kept so older pieces still compile.
+export const Header: React.FC<{ items: { t: number; kicker: string; title: string }[]; color?: string }> = () => null;
 
 // The account's logo, soft and one-colour, top right where the fade keeps the page plain. Header stops short of it.
 // Account @dibaliknyaapa has no logo yet (1 Nov 2026): put the logo's paths inside the svg when it exists.
@@ -34,8 +23,8 @@ export const Watermark: React.FC<{ color?: string }> = ({ color = T.ink }) => (
   <svg viewBox="0 0 1024 1024" width={104} height={104} fill={color} style={{ position: 'absolute', right: 50, top: 172, opacity: 0.42, filter: 'blur(1.4px)' }} />
 );
 
-// Chunks of 1-3 words, cut at punctuation, at long pauses and between lines, so each fits one glance.
-const MAX_WORDS = 3;
+// Chunks of 1-2 words, cut at punctuation, at long pauses and between lines, so each fits one glance.
+const MAX_WORDS = 2;
 const MAX_CHARS = 14;
 type Chunk = { w: string; s: number; e: number }[];
 
@@ -60,9 +49,10 @@ const chunksOf = (timing: Timing) => {
   return out;
 };
 
-// Big word-by-word caption: white with a black outline, the spoken word yellow, keywords orange.
-// Each chunk pops in, each word kicks a little as it is said. `keywords` are lower-case words without punctuation.
-export const Captions: React.FC<{ timing: Timing; keywords?: string[] }> = ({ timing, keywords = [] }) => {
+// Caption mid-low (y=1300, Azriel 3 Nov 2026): 1-2 words, wide heavy caps in ink with a white outline so it reads over the scene,
+// key terms coloured by meaning. keywords: a list (painted the account's orange) or { word: colour } from theme.ts, e.g. { tekanan: T.red, air: T.blue }.
+// Lower-case words without punctuation. Orange = key term, red = the problem, blue = water; never another channel's palette (Azriel, 3 Nov 2026).
+export const Captions: React.FC<{ timing: Timing; keywords?: string[] | Record<string, string> }> = ({ timing, keywords = [] }) => {
   const t = useT();
   const chunks = React.useMemo(() => chunksOf(timing), [timing]);
   const i = chunks.findIndex((c, k) => t >= c[0].s - 0.06 && t < (chunks[k + 1]?.[0].s ?? Infinity) - 0.06);
@@ -71,17 +61,15 @@ export const Captions: React.FC<{ timing: Timing; keywords?: string[] }> = ({ ti
   const last = c[c.length - 1];
   if (t > last.e + 0.6) return null;
   // The opening frame is also the thumbnail, so the first caption is already there.
-  const a = c[0].s < 0.1 ? 1 : pop(t, c[0].s - 0.06, 0.22);
-  const keys = new Set(keywords.map((k) => k.toLowerCase()));
+  const a = c[0].s < 0.1 ? 1 : pop(t, c[0].s - 0.06, 0.2);
+  const keys: Record<string, string> = Array.isArray(keywords) ? Object.fromEntries(keywords.map((k) => [k.toLowerCase(), T.orange])) : keywords;
   return (
-    <div style={{ position: 'absolute', left: 50, right: 50, top: L.captionY, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 38, rowGap: 0, transform: `scale(${0.7 + 0.3 * a})`, opacity: clamp(a * 2) }}>
+    <div style={{ position: 'absolute', left: 50, right: 50, top: L.captionY, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 30, transform: `translateY(${(1 - a) * 18}px)`, opacity: clamp(a * 2) }}>
       {c.map((w, j) => {
-        const on = t >= w.s - 0.03 && t < w.e;
-        const kick = on ? 1 + 0.1 * (1 - clamp((t - w.s) / 0.18)) : 1;
-        const clean = w.w.replace(/[.,;:]+$/, '');
-        const key = keys.has(clean.toLowerCase().replace(/[^a-z0-9-]/g, ''));
+        const clean = w.w.replace(/[.,;:?!]+$/, '');
+        const key = keys[clean.toLowerCase().replace(/[^a-z0-9-]/g, '')];
         return (
-          <span key={j} style={{ display: 'inline-block', transform: `scale(${kick}) rotate(${on ? -2 : 0}deg)`, fontFamily: SANS, fontWeight: 900, fontSize: 96, lineHeight: 1.12, letterSpacing: '-0.01em', textTransform: 'uppercase', color: on ? T.yellow : key ? T.orange : '#FFFFFF', WebkitTextStroke: `12px ${T.ink}`, paintOrder: 'stroke fill', textShadow: '0 7px 0 rgba(20,20,20,0.35)', whiteSpace: 'nowrap' }}>
+          <span key={j} style={{ display: 'inline-block', fontFamily: SANS, fontWeight: 900, fontSize: 78, lineHeight: 1.08, letterSpacing: '0.02em', textTransform: 'uppercase', color: key ?? T.ink, WebkitTextStroke: '10px #FFFFFF', paintOrder: 'stroke fill', transform: 'scaleX(1.18)', margin: '0 22px', whiteSpace: 'nowrap' }}>
             {clean}
           </span>
         );
@@ -131,7 +119,7 @@ export const Badge: React.FC<{ t0: number; t1?: number; text: string; color?: st
   const out = t1 === undefined ? 1 : 1 - ev(t, t1, 0.2);
   if (a <= 0 || out <= 0) return null;
   return (
-    <div style={{ position: 'absolute', left: L.marginX, top: L.headerY + 132, opacity: a * out, background: color, color: '#fff', fontFamily: MONO, fontWeight: 700, fontSize: 23, letterSpacing: '0.09em', textTransform: 'uppercase', padding: '9px 22px', borderRadius: 30 }}>
+    <div style={{ position: 'absolute', left: L.marginX, top: L.badgeY, opacity: a * out, background: color, color: '#fff', fontFamily: MONO, fontWeight: 700, fontSize: 23, letterSpacing: '0.09em', textTransform: 'uppercase', padding: '9px 22px', borderRadius: 30 }}>
       {text}
     </div>
   );

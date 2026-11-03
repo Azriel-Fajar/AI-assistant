@@ -2,14 +2,14 @@ import React from 'react';
 import { AbsoluteFill, Audio, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Cam, camAt, CamKey } from './camera';
 import { Stage } from './prims';
-import { Captions, TopFade, Watermark } from './overlay';
+import { Captions, Watermark } from './overlay';
 import { FollowCard } from './endcard';
 import { Timing } from './timing';
 import { T } from './theme';
 import './fonts';
 
-// What every piece shares: page colour, 3D stage, top fade, watermark, caption, final mix.
-// keywords: words the caption always paints orange (the film's key terms).
+// What every piece shares: page colour, 3D stage (no top fade, Azriel 3 Nov 2026: top stays fully clear), watermark, caption, final mix.
+// keywords: the film's key terms, coloured in the caption (a list paints green; a map sets each colour).
 // The line with id `cta` hands the screen to the follow end card, a motion graphic of its own.
 // scene gets the time and the live camera; overlay sits above the fade and the caption sits on top.
 export const Frame: React.FC<{
@@ -21,7 +21,7 @@ export const Frame: React.FC<{
   bg?: string;
   mark?: string;
   audio?: boolean;
-  keywords?: string[];
+  keywords?: string[] | Record<string, string>;
 }> = ({ slug, timing, keys, scene, overlay, bg = T.bg, mark, audio = true, keywords }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -33,7 +33,6 @@ export const Frame: React.FC<{
       <Stage cam={cam}>
         {scene(t, cam)}
       </Stage>
-      <TopFade color={bg} />
       {overlay(t, cam)}
       <Watermark color={mark} />
       {cta && <FollowCard t0={cta.s} />}

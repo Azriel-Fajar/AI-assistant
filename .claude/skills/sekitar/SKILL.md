@@ -45,7 +45,7 @@ When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 20
 - **video-theme:** lists sekitar as its 3D option. Its themes are HyperFrames-only; sekitar keeps its own look in `engine/src/kit/theme.ts`.
 - **video-studio:** post-editing of a finished render (trim, join with real footage, re-cut per platform). Hand it `out/<slug>/<slug>.mp4`.
 
-**Captions stay on in sekitar** (Azriel, 1 Nov 2026). The no-caption rule is for explainer-video only. Their style is big word chunks, not the reference's karaoke rows (Azriel, 1 Nov 2026): 1–3 words at a time, white with a black outline, the spoken word yellow, the film's key terms orange, each chunk popping in. Pass 3–6 key terms to `Frame` as `keywords`.
+**Captions stay on in sekitar** (Azriel, 1 Nov 2026). The no-caption rule is for explainer-video only. Since 3 Nov 2026 they follow the grammar of the fig. Why short Azriel liked (youtube.com/shorts/7urjYoPsSEo): 1–2 words at a time, centred low on the screen (y=1300; Azriel moved it off the top on 3 Nov 2026), wide heavy caps in ink with a white outline, key terms coloured by meaning. Colours come only from this account's `theme.ts` (orange key term, red the problem, blue water), never fig. Why's neon palette. Pass `keywords` to `Frame` as a list (orange) or a `{ word: T.red }` map.
 
 ## Non-negotiables
 
@@ -94,22 +94,24 @@ Write `piece.tsx` (start from the example) and `sfx.json`. Then `node <skill>/to
 
 **Picture rules, all measured from the reference:**
 - **One continuous world, no hard cuts.** Move the camera between places with an eased move, never blurred: blur makes viewers dizzy (Azriel, 1 Nov 2026). A new move about every 3–6 s; `camAt` pushes slowly in between so nothing freezes.
-- **Build the setting, not only the object** (Azriel, 1 Nov 2026). The film happens somewhere: sky and clouds, ground and grass, the edge of a room or yard. A lone object on an empty floor reads as a demo.
+- **The world is a cut-out diorama on a white page** (Azriel, 3 Nov 2026, from the fig. Why short). Build the setting as one block of ground with `Diorama`: the top surface (grass, road, floor) carries the scene, and its cut faces show what is underneath (soil, gravel, pipes, water) in layers. The page stays plain white (`T.bg`), no sky. The block still holds a whole place: a yard, a street edge, a room corner, with props and people. A lone object on an empty floor reads as a demo.
+- **Comic look is built in:** every part gets full-ink edges and a halftone of dots in its shaded faces (`prims.tsx`). Keep shapes flat-coloured so the dots read.
 - **Detail it like the real thing.** Layers, small parts and true shapes: check what the thing really looks like before modelling (Streptomyces is a branching thread, not a rod).
 - **Something moves in every shot,** besides the camera: weather, sway, particles, a part working. A card held over a still scene is a dead spot.
 - **Build the object with kit parts** (`Box`, `Cyl`, `Lathe`, `Tube`, `Tiles`). `Lathe` with `cut` is the signature shot: a section that opens the thing, with the wall cut in a loud colour (`capColor`). Start solid and open it on the word that says so.
 - **Chrome, brass and water reflect:** put one `Env` in the scene, then give those parts `metal`/`rough`; `Lathe` takes `smooth` for round shading. Keep the rest flat. It barely slows the render (1 Nov 2026, about 8 min for 59 s). A deep bowl hides its floor from a low camera: floor-to-rim height must stay under radius × tan(camera elevation).
+- **Windows are openings, never stickers** (Azriel, 3 Nov 2026; glitched on palu-kaca-bus and etoll-tanpa-baterai). A thin glass box laid a few mm over a solid body flickers: the body's shadow and edge lines fight it. Build the frame around a gap (roof + pillars, as in palu-kaca-bus's bus side), put the glass inside the gap with `edge={false} shadow={false}`, and show dark interior behind it. The same goes for any flat decal on a moving or shadowed surface: lift it at least 1% of the object's size. Vibration is a slow sine (≤ ~2 Hz): `sin(40*t)` aliases into random jumps at 30 fps.
 - **Colour only what the sentence is about.** Everything else stays white, steel or dark. Water blue, heat orange-red, good green, bad red, copper for windings. Yellow is reserved for attention.
 - **Exaggerate honestly:** enlarge small parts and slow fast ones, and label the shot (`Badge`: "Ilustrasi disederhanakan", "Gerak lambat", "Dipercepat", "Hitungan kami").
-- **Watermark corner stays clear.** `Frame` draws `Watermark` (top right, 104 px, 42% opacity, 1.4 px blur), empty until the account has a logo; a piece never adds its own. Keep that corner clear anyway so nothing moves when the logo arrives. A film on a dark page passes `mark="#FFFFFF"` to `Frame` and `color="#FFFFFF"` to `Header`. Its fit under the TikTok, Instagram and YouTube icons is untested until the first upload: ask Azriel to check each app's preview.
-- **Upper part is for reading:** `Header` always on (mono kicker + plain statement in lower-case). Titles wrap at 860 px, about 32 characters, to stay off the watermark; keep them to one line, because a second line runs into `Badge`. Keep subjects below y≈520 px or they vanish into `TopFade`. Cards sit at y≈400. Caption at y=1300. Nothing important below y≈1500: TikTok's UI lives there.
+- **Watermark corner stays clear.** `Frame` draws `Watermark` (top right, 104 px, 42% opacity, 1.4 px blur), empty until the account has a logo; a piece never adds its own. Keep that corner clear anyway so nothing moves when the logo arrives. A film on a dark page passes `mark="#FFFFFF"` to `Frame`. Its fit under the TikTok, Instagram and YouTube icons is untested until the first upload: ask Azriel to check each app's preview.
+- **Upper part is for reading:** the top stays clear: no `Header` in new films, no white fade (Azriel, 3 Nov 2026). Only `Badge` (y=372) and the watermark sit there. Caption at y=1300, so keep the key part of the shot between y≈450 and y≈1250. Cards sit at y≈440. Nothing important below y≈1500: TikTok's UI lives there.
 - **Numbers become objects** where possible: 34 galon pop in rather than a figure on a card. Rows in `Steps` and stats light up only when spoken.
 - **Tags point at the part being named,** `to={at(worldPoint)}`, appearing on the word. `Pop` sound words at most every ~8 s.
 
 Cue from words, never seconds: `S('line')`, `E('line')`, `W('line','word')`. All motion comes from `t`; never `useFrame`, `Math.random` or the clock.
 
 ### 5. Sound
-`sfx.json` lists effects by word (`drip`, `pop`, `tick`, `thud`, `whoosh`, `ding`, `crack`, `squeak`; 8–15 a film, on actions, not on decoration; set a small negative `offset` so a hit lands in the pause before its word, as the reference does, because under a word it gets masked). `python3.13 <skill>/tools/sound.py <piece>` synthesises the low bed on the reference's 1.24 s pulse, mixes it under the voice and masters to −14 LUFS. Nothing needs licensing because nothing is sampled. To add a kind of effect, add a case to `make()`.
+`sfx.json` lists effects by word (`drip`, `pop`, `tick`, `thud`, `whoosh`, `ding`, `crack`, `squeak`; 8–15 a film, on actions, not on decoration; set a small negative `offset` so a hit lands in the pause before its word, as the reference does, because under a word it gets masked). `python3.13 <skill>/tools/sound.py <piece>` synthesises the bed, different per film (key, tempo, chords seeded by the slug) and per section (its layers change at a line start every 7 s or more, with one near-silent breath), 13 dB under the voice and ducking while the narrator speaks (Azriel, 3 Nov 2026: the old bed was too loud and samey). `"bed": false` in script.json drops it for a film. It mixes it under the voice and masters to −14 LUFS. Nothing needs licensing because nothing is sampled. To add a kind of effect, add a case to `make()`.
 
 ### 6. Render and check
 ```powershell
@@ -129,9 +131,19 @@ Run the render in the background, and read its output for errors before trusting
 | | TikTok | Instagram | YouTube Shorts |
 |---|---|---|---|
 | Text | Caption, ≤2,200 (API limit, the safe one; in-app is reported as 4,000) | Caption, ≤2,200 | Title ≤100, description ≤5,000 |
-| Lead with | The hook line, the same one as the YouTube title without its hashtags | The hook line first, ≤125 characters, because the rest folds under "more" | A curiosity statement, not a question, key words early, ending in `#faktaunik #sains`: "Rahasia wangi tanah setelah hujan yang jarang orang tahu #faktaunik #sains" |
+| Lead with | The hook line, the same one as the YouTube title without its hashtags | The hook line first, ≤125 characters, because the rest folds under "more" | A hook title, key words early, ending in `#faktaunik #sains`. Vary the hook pattern per film (see **Title hooks** below); never "Rahasia ... yang jarang orang tahu" by default |
 | Then | The common belief against the fact, the cause in 2–3 sentences, a comment prompt ("Fenomena alam apa yang ingin Anda ketahui selanjutnya?"), sources | The name of the thing, the cause, one reason to save or share it plus the comment prompt, sources | A plain summary of what the film shows, sources as a list, then an SEO block: an opening question ("Pernah penasaran kenapa ...?"), 2–3 short paragraphs that use the key terms (what people believe, what is true, how it works, who the video is for), a CTA to subscribe and comment the next topic, topic hashtags last |
 | Hashtags | `#faktaunik #sains` + 2–3 topic tags (5 max) | `#faktaunik #sains` + up to 3 topic tags (limit 5) | Title: `#faktaunik #sains`; description: 3 topic tags. Over 60 voids all |
+
+**Title hooks.** Each title is a hook in its own right, unique to its film, never a reused frame. Before writing, read the YouTube titles in the last 5 `out/*/upload.md` and pick a pattern none of them used; the pattern word ("Rahasia", "Ternyata", ...) appears at most once in any 5 titles. Patterns to rotate, examples only, never copy their wording:
+- Belief flip: "Bukan kotor, bau hujan itu dari bakteri tanah"
+- Surprising number: "Kaca bus cuma butuh 1 titik untuk pecah"
+- Hidden mechanism: "Kartu e-toll hidup dari gelombang radio, bukan baterai"
+- Wrong habit: "Menguras bak tiap minggu tidak membunuh telur nyamuk"
+- Cut-off reveal: "Ini yang terjadi saat kartu e-toll ditempel"
+- Question: "Kenapa jentik nyamuk balik lagi setelah bak dikuras?"
+- Rahasia / Ternyata: allowed, just not as the default.
+The claim in the title must be in the script's source table, like any other. TikTok and Instagram open with the same hook line.
 
 **Settings** go in the same file:
 - Cover: the frame from above.

@@ -112,5 +112,8 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - VO scripts: give one plain copy-paste block, no numbering/bold/notes.
 - Channel/bio descriptions: general and informative, no specific video examples or sources.
 - sekitar: big word captions, full setting, constant motion, no blur, pause after sign-off.
-- sekitar upload: curiosity title + #faktaunik #sains, SEO description, formal Anda.
+- sekitar upload: varied hook title (not always Rahasia) + #faktaunik #sains, SEO description, formal Anda.
 - Teaching slides: credits on title slide (lecturer, TAs + NIM, session), never last.
+- sekitar vehicles: windows are openings with glass inside, never glass over body.
+- sekitar look: cut diorama, white bg, mid caption, own colours, no header.
+- sekitar bed: quieter, varies per film and section, ducks under VO.
