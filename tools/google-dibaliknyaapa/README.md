@@ -22,6 +22,6 @@ Google warns "app isn't verified": **Advanced → Go to (app)**. Pick the @dibal
 node tools/google-dibaliknyaapa/stats.js
 ```
 
-JSON: channel, subscribers, and every video (id, title, published, status, views, likes, comments), oldest first.
+JSON: channel, subscribers, and every video (id, title, published, status, views, likes, comments), oldest first. Each video also has `analytics` (avg view seconds and %, engaged views, shares, subscribers gained, retention at 5/25/50/75%/end): `null` until YouTube Analytics has data, 2-3 days after upload.
 
 `credentials.json` and `tokens.json` are gitignored. Never commit them.

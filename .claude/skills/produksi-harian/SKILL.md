@@ -57,7 +57,7 @@ Only in research session `riset 1/3`, or when started by hand. `node tools/googl
 - **Jam:** the real upload time in WIB, when the cell is `?` or differs.
 - **Views 24 jam:** once the video is 24 hours old and the YT part is empty, fill it with the current views and the age, e.g. `– / – / 2.089 (28j)`. **Views 7 hari:** the same once it is 7 days old. Never overwrite a filled number. TikTok and IG stay `–` until their APIs are set up.
 
-Put a short **Statistik YouTube** part in the film's report (step 6): subscribers, and per video its age, views, likes and comments, best first. If `stats.js` fails, note the error and go on; numbers never stop a film.
+Put a short **Statistik YouTube** part in the film's report (step 6): subscribers, and per video its age, views, likes and comments, best first. Where `analytics` is filled (YouTube Analytics lags 2-3 days, so new videos show `null`), add average % watched, engaged views and the retention points, and name the steepest drop. If `stats.js` fails, note the error and go on; numbers never stop a film.
 
 ## 6. Report and notify
 

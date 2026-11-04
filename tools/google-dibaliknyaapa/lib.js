@@ -49,3 +49,14 @@ export async function yt(path, params) {
   if (!r.ok) throw new Error(`${path}: ${d.error?.message ?? r.status}`);
   return d;
 }
+
+// YouTube Analytics report for the logged-in channel. Rows come back as objects keyed by column name.
+export async function ya(params) {
+  const r = await fetch(`https://youtubeanalytics.googleapis.com/v2/reports?${new URLSearchParams({ ids: 'channel==MINE', ...params })}`, {
+    headers: { Authorization: `Bearer ${await accessToken()}` },
+  });
+  const d = await r.json();
+  if (!r.ok) throw new Error(`analytics: ${d.error?.message ?? r.status}`);
+  const cols = d.columnHeaders.map(c => c.name);
+  return (d.rows ?? []).map(row => Object.fromEntries(row.map((v, i) => [cols[i], v])));
+}
