@@ -9,23 +9,31 @@ Acuan mengajar 4 pertemuan. Pengajar: Azriel Fajar Wicaksono & F. Misael Alfando
 - Semua murid kerja di **1 file Figma** yang sama selama 4 minggu (1 file, banyak frame). Biar nggak kena batas file akun gratis dan karya gampang dicari.
 - Fokus **mobile** terus: semua layar pakai frame HP (misalnya iPhone 16).
 
+## Prinsip Mengajar
+
+- **Praktek dulu, teori secukupnya.** Materi di slide maksimal sekitar 10 menit per pertemuan (kecuali Pertemuan 1 yang ada perkenalan). Sisanya langsung bikin di Figma.
+- **Semua desain selesai di kelas.** Nggak semua murid punya laptop di rumah, jadi nggak ada tugas rumah wajib yang butuh laptop atau Figma.
+- **Langkah wajib + tantangan bonus.** Murid yang cepat dapat tantangan bonus, jadi pengajar punya waktu bantu yang ketinggalan.
+- **Tugas rumah opsional, tanpa laptop:** cukup pakai HP atau kertas (mengamati aplikasi, sketsa). Hasilnya jadi bahan praktek minggu depan. Murid yang punya laptop boleh lanjut di Figma, tapi tidak wajib.
+
 ## Gambaran Besar
 
-Tiap minggu menambah 1 hal baru ke "aplikasi impian" murid. Di akhir, tiap murid punya mini app 4 layar yang bisa diklik.
+Tiap minggu menambah 1 hal ke "aplikasi impian" murid. Di akhir, tiap murid punya mini app **3 layar** yang bisa diklik.
 
-| Pertemuan | Tema | Hasil di Figma | Tugas Rumah |
+| Pertemuan | Tema | Hasil di Figma (di kelas) | Tugas opsional (tanpa laptop) |
 |---|---|---|---|
-| 1 | Kenalan UI/UX & Figma | Login page | Sign up page |
-| 2 | Bikin Cantik: warna, huruf, jarak | Login + sign up dirapikan, tema app dipilih, Home page | Selesaikan Home page |
-| 3 | Bikin Bisa Diklik: prototype | Halaman detail + semua layar tersambung | Rapikan & tes ke keluarga |
-| 4 | Proyek Mini & Pameran | Mini app 4 layar siap dipamerkan | - |
+| 1 | Kenalan UI/UX & Figma | Login page | Amati login page 2 aplikasi di HP |
+| 2 | Sign Up + pilih tema app | Sign Up page, login + sign up pakai warna tema | Sketsa Home app-mu di kertas |
+| 3 | Home page | Home page | Pikirkan: tombol mana pindah ke layar mana |
+| 4 | Bikin bisa diklik + pameran | 3 layar tersambung, dipamerkan | - |
 
 Alur mini app akhir:
 
 ```
-Login  -->  Home  -->  Detail
+Login  <-->  Sign Up
   |
-  +--> Sign Up --> (balik ke) Login
+  v
+Home  --(tombol Keluar)-->  Login
 ```
 
 ## Pembagian Peran Tiap Pertemuan
@@ -44,18 +52,17 @@ Login  -->  Home  -->  Detail
 
 | Menit | Kegiatan | Interaksi |
 |---|---|---|
-| 0-10 | Perkenalan | Murid sebut nama + aplikasi yang paling sering dibuka |
-| 10-15 | Pertanyaan pembuka: "Pernah kesel pakai aplikasi?" | Angkat tangan, 2-3 murid cerita |
-| 15-30 | UI vs UX (analogi botol kecap) | Kuis "Ini UI atau UX?" (lihat bank soal di bawah) |
-| 30-40 | Kenalan Figma + tur layar | Angkat tangan: siapa yang pernah buka Figma? |
-| 40-45 | Login/daftar akun Figma | Keliling cek semua sudah masuk |
-| 45-50 | Tebak shortcut (V, F, R, T, O, H) | Pemandu sebut alat, murid tebak hurufnya |
-| 50-80 | Praktek login page, langkah 1-6 | Pemandu demo per langkah, tunggu semua selesai baru lanjut |
-| 80-90 | Pamer karya + tugas rumah | 2-3 murid tampilkan layar, teman kasih 1 pujian + 1 saran |
+| 0-5 | Perkenalan | Murid sebut nama + aplikasi yang paling sering dibuka |
+| 5-10 | Pertanyaan pembuka: "Pernah kesel pakai aplikasi?" | Angkat tangan, 2-3 murid cerita |
+| 10-20 | UI vs UX (analogi botol kecap) | Kuis "Ini UI atau UX?" (bank soal di bawah) |
+| 20-30 | Kenalan Figma, tur layar, tebak shortcut | Angkat tangan: siapa yang pernah buka Figma? Pemandu sebut alat, murid tebak hurufnya |
+| 30-35 | Login/daftar akun Figma | Keliling cek semua sudah masuk |
+| 35-80 | **Praktek login page, langkah 1-6** | Pemandu demo per langkah, tunggu semua selesai baru lanjut |
+| 80-90 | Pamer karya + penutup | 2-3 murid tampilkan layar, teman kasih 1 pujian + 1 saran |
 
-**Tugas rumah:** bikin halaman **Sign Up** dengan gaya yang sama (frame baru di file yang sama).
-- Wajib ada: judul, kotak Nama, Email, Password, tombol "Daftar", link "Sudah punya akun? Masuk".
-- Tip: duplikat frame login (Ctrl+D), lalu ubah isinya. Lebih cepat.
+**Tantangan bonus (yang sudah selesai):** ganti warna tombol dan kotak input, tambah teks "Lupa password?" di bawah kotak Password.
+
+**Tugas opsional (tanpa laptop):** buka 2 aplikasi di HP (misalnya Instagram, Shopee, Roblox). Lihat login page-nya. Apa yang sama? Apa yang beda? Ceritakan minggu depan.
 
 **Bank soal kuis "UI atau UX?"** (pemandu bacakan, murid jawab serempak atau angkat tangan):
 1. Tombolnya warna biru. **UI**
@@ -65,96 +72,121 @@ Login  -->  Home  -->  Detail
 5. Ikon keranjang di pojok kanan atas. **UI**
 6. Lupa password, tapi gampang reset-nya. **UX**
 
-**Catatan:**
-- Slide P1 sudah ada (PDF Ekskul UI/UX Figma). Agenda di slide janji "main tebak-tebakan" di bagian UI & UX, tapi belum ada slide kuisnya. Tambah 1 slide kuis dari bank soal di atas.
+**Revisi slide P1 yang sudah ada (PDF Ekskul UI/UX Figma):**
+- Slide terakhir: kotak "Tantangan di rumah: bikin halaman Daftar (Sign Up)" diganti jadi tugas opsional di atas (amati login page di HP). Sign Up dikerjakan di kelas Pertemuan 2.
+- Agenda di slide janji "main tebak-tebakan" di bagian UI & UX, tapi belum ada slide kuisnya. Tambah 1 slide kuis dari bank soal di atas.
 - Belum ada slide langkah daftar/login akun Figma. Tambah 1 slide sebelum praktek, atau suruh daftar sebelum hari H (lihat Persiapan).
 
 ---
 
-## Pertemuan 2: Bikin Cantik (Warna, Huruf, Jarak)
+## Pertemuan 2: Sign Up + Pilih Tema Aplikasi
 
 **Tanggal:** ____ | **Pemandu:** ____ | **Keliling:** ____
 
-**Tujuan:** murid pilih tema aplikasi impian, paham 3 aturan simpel biar desain rapi, dan bikin Home page.
+**Tujuan:** murid pilih tema aplikasi impian, bikin Sign Up page, lalu samakan warna login + sign up sesuai tema.
 
-**3 aturan simpel (inti materi):**
+**Materi singkat: 3 aturan biar desain rapi**
 1. **Warna:** pakai 1 warna utama + 1 warna aksen (buat tombol). Sisanya putih/abu/hitam.
 2. **Huruf:** maksimal 2 jenis font. Judul besar & tebal, isi kecil & biasa.
 3. **Jarak:** kasih ruang kosong, sejajarkan semua benda (rata kiri atau rata tengah, pilih satu).
 
 | Menit | Kegiatan | Interaksi |
 |---|---|---|
-| 0-15 | Pamer tugas sign up | 3-4 murid tampilkan, kelas kasih 1 pujian + 1 saran |
-| 15-20 | Review cepat P1 | Kuis kilat: "F itu buat apa?", "UI atau UX?" |
-| 20-35 | 3 aturan simpel | Game **"Mana yang lebih enak dilihat?"**: tunjukkan 2 versi layar (A berantakan, B rapi), murid voting A atau B, lalu tebak kenapa |
-| 35-45 | Pilih tema aplikasi impian | Tiap murid sebut tema-nya. Contoh: kantin sekolah, perpustakaan, jadwal pelajaran, resep, game, hewan peliharaan, klub bola |
-| 45-60 | Praktek A: rapikan login + sign up | Ganti logo, nama app, dan warna sesuai tema. Terapkan 3 aturan |
-| 60-85 | Praktek B: bikin Home page | Header (halo + nama), banner/gambar besar, 3-4 kartu menu, menu bawah (navbar) dengan ikon |
-| 85-90 | Penutup + tugas rumah | Murid tunjukkan 1 hal yang mereka ubah hari ini |
+| 0-5 | Pembuka | 2-3 murid cerita login page yang mereka amati di HP |
+| 5-15 | 3 aturan biar rapi | Game **"Mana yang lebih enak dilihat?"**: tunjukkan 2 versi layar (A berantakan, B rapi), murid voting A atau B |
+| 15-20 | Pilih tema aplikasi impian | Tiap murid sebut tema-nya. Contoh: kantin sekolah, perpustakaan, jadwal pelajaran, resep, game, hewan peliharaan, klub bola |
+| 20-50 | **Praktek A: Sign Up page** | Duplikat frame login (Ctrl+D), ganti jadi Sign Up (langkah di bawah) |
+| 50-80 | **Praktek B: kasih tema** | Ganti nama app, logo, dan warna di login + sign up. Terapkan 3 aturan |
+| 80-90 | Pamer karya | 2-3 murid tampilkan login + sign up |
 
-**Alat baru yang dikenalkan:**
-- Ganti font & ukuran di panel kanan.
-- Corner radius (sudut bulat) dan Stroke (garis).
-- Plugin **Iconify** buat ikon dan **Unsplash** buat foto *(opsional, kalau waktu cukup)*.
+**Langkah Sign Up (versi murid):**
+1. Klik frame Login, tekan **Ctrl+D** (duplikat). Ganti nama frame jadi "Sign Up".
+2. Ganti judul jadi "Buat Akun".
+3. Tambah 1 kotak input lagi: **Nama**. Jadi ada Nama, Email, Password.
+4. Ganti tulisan tombol jadi "Daftar".
+5. Ganti link bawah jadi "Sudah punya akun? Masuk".
 
-**Tugas rumah:** selesaikan Home page. Minimal 1 gambar, 3 kartu menu, dan menu bawah.
+**Tantangan bonus:** tambah kotak "Ulangi Password", atau ganti font lewat panel kanan.
+
+**Tugas opsional (tanpa laptop):** sketsa di kertas Home page app-mu. Mau ada apa aja di halaman utamanya? Bawa minggu depan.
 
 **Persiapan khusus:** siapkan 3 pasang contoh layar "berantakan vs rapi" buat game voting.
 
 ---
 
-## Pertemuan 3: Bikin Bisa Diklik (Prototype)
+## Pertemuan 3: Home Page
 
 **Tanggal:** ____ | **Pemandu:** ____ | **Keliling:** ____
 
-**Tujuan:** murid bikin halaman detail, sambungkan semua layar jadi prototype, dan merasakan "UX" waktu temannya mencoba.
+**Tujuan:** murid bikin Home page sesuai tema aplikasinya.
 
-**Konsep inti:** desain yang tadinya gambar diam bisa "hidup". Klik tombol, pindah layar. Inilah cara desainer ngetes UX sebelum aplikasinya dibuat programmer.
+**Materi singkat: 4 bagian Home page**
+
+```
++-------------------+
+| Halo, Nama!    () |  1. Header (sapaan + foto profil)
+|+-----------------+|
+||  Banner/gambar  ||  2. Banner (gambar besar)
+|+-----------------+|
+| [Menu] [Menu]     |  3. Kartu menu (3-4 kotak)
+| [Menu] [Menu]     |
+|-------------------|
+| Home  Cari  Akun  |  4. Menu bawah (navbar) + ikon
++-------------------+
+```
 
 | Menit | Kegiatan | Interaksi |
 |---|---|---|
-| 0-10 | Pamer Home page | 2-3 murid tampilkan |
-| 10-20 | Apa itu prototype? Demo langsung | Pemandu tunjukkan contoh prototype jadi, murid tebak "ini aplikasi beneran atau cuma desain?" |
-| 20-40 | Praktek A: halaman Detail | Isi detail dari 1 kartu di Home (gambar besar, judul, deskripsi, tombol aksi). Contoh: detail menu kantin + tombol "Pesan" |
-| 40-65 | Praktek B: sambungkan layar | Tab **Prototype** di panel kanan, tarik panah dari tombol ke layar tujuan: Masuk ke Home, Daftar ke Sign Up, kartu ke Detail, tombol kembali ke Home |
-| 65-80 | **Tes tukar laptop** | Murid tukar dengan teman sebelah. Kasih misi: "Coba masuk, lalu buka detail". Pemilik diam, nggak boleh bantu. Catat di mana teman bingung |
-| 80-90 | Diskusi + tugas rumah | "Di mana temanmu bingung? Itu masalah UX!" |
+| 0-10 | 4 bagian Home page | Tunjukkan Home page aplikasi populer (WhatsApp, Shopee, Gojek). Murid tebak: mana header, banner, kartu menu, navbar? |
+| 10-80 | **Praktek Home page, per bagian** | Pemandu demo 1 bagian, murid ikut, lanjut bagian berikutnya. Yang bawa sketsa kertas boleh ikut sketsanya |
+| 80-90 | Pamer karya | 2-3 murid tampilkan Home page |
+
+**Urutan praktek:**
+1. Frame baru (F), ukuran HP sama, namai "Home".
+2. Header: teks "Halo, [nama]!" + lingkaran foto profil (O).
+3. Banner: kotak besar (R) dengan sudut bulat. Isi warna atau gambar.
+4. Kartu menu: 1 kotak + teks, lalu Ctrl+D jadi 4.
+5. Menu bawah: kotak panjang di bawah + 3 teks/ikon (Home, Cari, Akun).
+6. Tombol "Keluar" kecil (dipakai buat prototype minggu depan).
+
+**Tantangan bonus:** pasang ikon pakai plugin **Iconify** atau foto dari plugin **Unsplash**.
+
+**Tugas opsional (tanpa laptop):** pikirkan atau tulis di kertas: tombol apa pindah ke layar mana? (misalnya "Masuk" ke Home, "Daftar" ke Sign Up).
+
+---
+
+## Pertemuan 4: Bikin Bisa Diklik + Pameran
+
+**Tanggal:** ____ | **Pemandu:** ____ | **Keliling:** ____
+
+**Tujuan:** murid sambungkan 3 layar jadi prototype, teman mencoba, lalu pamerkan karya.
+
+**Materi singkat:** desain yang tadinya gambar diam bisa "hidup". Klik tombol, pindah layar. Inilah cara desainer ngetes UX sebelum aplikasinya dibuat programmer.
+
+| Menit | Kegiatan | Interaksi |
+|---|---|---|
+| 0-5 | Apa itu prototype? Demo langsung | Pemandu tunjukkan prototype jadi, murid tebak "ini aplikasi beneran atau cuma desain?" |
+| 5-35 | **Praktek: sambungkan layar** | Ikut langkah di bawah, lalu cek checklist |
+| 35-45 | **Tes tukar laptop** | Tukar dengan teman sebelah. Misi: "Coba daftar, lalu masuk ke Home". Pemilik diam, nggak boleh bantu. Catat di mana teman bingung, lalu perbaiki |
+| 45-80 | **Pameran** | Tiap murid max 2 menit: nama app, buat siapa, demo klik. Kalau murid banyak, pakai gaya galeri: laptop terbuka di meja, murid lain keliling dan coba |
+| 80-90 | Penghargaan + penutup | Voting 2 kategori, lalu foto bersama |
 
 **Langkah prototype (versi murid):**
 1. Klik tab **Prototype** di panel kanan.
 2. Klik tombol "Masuk", muncul titik biru di samping.
 3. Tarik titik itu ke frame Home.
 4. Pastikan: *On click* + *Navigate to*.
-5. Tekan tombol **Play** (Present) di kanan atas buat mencoba.
-
-**Tugas rumah:** perbaiki bagian yang bikin teman bingung. Coba prototype-nya ke 1 anggota keluarga.
-
-**Catatan:**
-- Animasi *Smart Animate* cukup ditunjukkan sebagai bonus, jangan diwajibkan.
-- Kalau ada yang punya HP, prototype bisa dibuka lewat aplikasi Figma di HP *(opsional)*.
-
----
-
-## Pertemuan 4: Proyek Mini & Pameran
-
-**Tanggal:** ____ | **Pemandu:** ____ | **Keliling:** ____
-
-**Tujuan:** murid menyelesaikan mini app 4 layar, mempresentasikannya, dan merayakan karya.
+5. Ulangi: "Daftar" di Login ke Sign Up, "Masuk" di Sign Up ke Login, "Keluar" di Home ke Login.
+6. Tekan tombol **Play** (Present) di kanan atas buat mencoba.
 
 **Checklist mini app (tampilkan di slide):**
 - [ ] Login page
 - [ ] Sign Up page
 - [ ] Home page
-- [ ] Halaman Detail
 - [ ] Semua layar tersambung (bisa diklik)
 - [ ] Ikut 3 aturan: warna, huruf, jarak
 
-| Menit | Kegiatan | Interaksi |
-|---|---|---|
-| 0-10 | Review 4 minggu | Kuis kilat (pakai Kahoot/Quizizz *(opsional)* atau angkat tangan) |
-| 10-40 | Finishing | Murid cek checklist, pengajar keliling bantu |
-| 40-80 | **Pameran** | Tiap murid presentasi max 2 menit: nama app, buat siapa, demo klik prototype. Kalau murid banyak, pakai gaya galeri: laptop terbuka di meja, murid lain keliling dan coba |
-| 80-90 | Penghargaan + penutup | Voting 2 kategori, lalu foto bersama |
+**Tantangan bonus:** animasi **Smart Animate** di pilihan transisi.
 
 **Kategori penghargaan** (nyambung ke materi P1):
 - **UI Terbaik:** desain paling cantik.
@@ -162,7 +194,7 @@ Login  -->  Home  -->  Detail
 
 Cara voting simpel: tiap murid tulis 1 nama per kategori di kertas, atau angkat tangan.
 
-**Penutup:** tunjukkan langkah berikutnya kalau mau lanjut sendiri (Figma Community buat cari inspirasi, belajar Auto Layout dan Components). Cukup 1 slide, jangan diajarkan.
+**Penutup:** 1 slide "mau lanjut belajar sendiri?" (Figma Community buat cari inspirasi, Auto Layout, Components). Cukup ditunjukkan, jangan diajarkan.
 
 ---
 
@@ -170,16 +202,16 @@ Cara voting simpel: tiap murid tulis 1 nama per kategori di kertas, atau angkat 
 
 - [ ] Konfirmasi ke sekolah: durasi, jumlah murid, ruang lab, internet, proyektor.
 - [ ] Cek syarat umur akun Figma (setahu saya minimal 13 tahun, cek ulang di figma.com). Murid kelas 7 bisa ada yang masih 12. Kalau perlu, minta izin/bantuan guru atau orang tua buat bikin akun.
-- [ ] Minta murid bikin akun Figma sebelum hari H (pakai email atau akun Google). Kirim link + panduan singkat lewat guru pembina.
-- [ ] Siapkan 1 file Figma contoh yang sudah jadi (login, sign up, home, detail, prototype) buat demo dan contekan.
-- [ ] Siapkan rencana cadangan kalau internet mati: kerjakan sketsa layar di kertas (UI/UX tetap jalan tanpa laptop).
+- [ ] Minta murid bikin akun Figma sebelum hari H (pakai email atau akun Google), bisa lewat lab sekolah. Kirim link + panduan singkat lewat guru pembina.
+- [ ] Siapkan 1 file Figma contoh yang sudah jadi (login, sign up, home, prototype) buat demo dan contekan.
+- [ ] Siapkan rencana cadangan kalau internet mati: sketsa layar di kertas (UI/UX tetap jalan tanpa laptop).
 
 ## Persiapan Tiap Minggu
 
-- [ ] Slide pertemuan itu sudah jadi (maksimal sekitar 10-12 slide).
+- [ ] Slide pertemuan itu sudah jadi. Sedikit slide materi, lebih banyak slide langkah praktek.
 - [ ] Bagi peran pemandu & keliling.
 - [ ] Coba ulang langkah praktek di Figma terbaru (tampilan Figma kadang berubah).
-- [ ] Catat murid yang ketinggalan minggu lalu, bantu duluan.
+- [ ] Catat murid yang ketinggalan minggu lalu. Bantu duluan, atau kasih waktu kejar di awal praktek.
 
 ## Catatan Setelah Mengajar
 
