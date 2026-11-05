@@ -17,10 +17,15 @@ export const TopFade: React.FC<{ color?: string }> = ({ color = T.bg }) => (
 // Retired (Azriel, 3 Nov 2026): the top stays clear, the caption carries the words. Kept so older pieces still compile.
 export const Header: React.FC<{ items: { t: number; kicker: string; title: string }[]; color?: string }> = () => null;
 
-// The account's logo, soft and one-colour, top right where the fade keeps the page plain. Header stops short of it.
-// Account @dibaliknyaapa has no logo yet (1 Nov 2026): put the logo's paths inside the svg when it exists.
+// The account's mark, faint and one-colour, top right: logo (shorts/brand/logo-1warna.svg) + handle, so a re-upload still names the channel (Azriel, 4 Nov 2026).
 export const Watermark: React.FC<{ color?: string }> = ({ color = T.ink }) => (
-  <svg viewBox="0 0 1024 1024" width={104} height={104} fill={color} style={{ position: 'absolute', right: 50, top: 172, opacity: 0.42, filter: 'blur(1.4px)' }} />
+  <div style={{ position: 'absolute', right: 50, top: 172, display: 'flex', alignItems: 'center', gap: 14, opacity: 0.4, color }}>
+    <span style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, letterSpacing: 0.5 }}>@dibaliknyaapa</span>
+    <svg viewBox="0 0 100 100" width={56} height={56} fill={color}>
+      <path d="M24 12 H76 Q88 12 88 24 V60 L60 88 H24 Q12 88 12 76 V24 Q12 12 24 12 Z" />
+      <path d="M84 66 L66 84 L67.5 70 Q68 67.5 70.5 67 Z" />
+    </svg>
+  </div>
 );
 
 // Chunks of 1-2 words, cut at punctuation, at long pauses and between lines, so each fits one glance.
@@ -64,12 +69,13 @@ export const Captions: React.FC<{ timing: Timing; keywords?: string[] | Record<s
   const a = c[0].s < 0.1 ? 1 : pop(t, c[0].s - 0.06, 0.2);
   const keys: Record<string, string> = Array.isArray(keywords) ? Object.fromEntries(keywords.map((k) => [k.toLowerCase(), T.orange])) : keywords;
   return (
-    <div style={{ position: 'absolute', left: 50, right: 50, top: L.captionY, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 30, transform: `translateY(${(1 - a) * 18}px)`, opacity: clamp(a * 2) }}>
+    // The whole row is widened, not each word: a per-word scaleX overran its fixed margin and glued long words together (4 Nov 2026).
+    <div style={{ position: 'absolute', left: 110, right: 110, top: L.captionY, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 28, transform: `translateY(${(1 - a) * 18}px) scaleX(1.18)`, opacity: clamp(a * 2) }}>
       {c.map((w, j) => {
         const clean = w.w.replace(/[.,;:?!]+$/, '');
         const key = keys[clean.toLowerCase().replace(/[^a-z0-9-]/g, '')];
         return (
-          <span key={j} style={{ display: 'inline-block', fontFamily: SANS, fontWeight: 900, fontSize: 78, lineHeight: 1.08, letterSpacing: '0.02em', textTransform: 'uppercase', color: key ?? T.ink, WebkitTextStroke: '10px #FFFFFF', paintOrder: 'stroke fill', transform: 'scaleX(1.18)', margin: '0 22px', whiteSpace: 'nowrap' }}>
+          <span key={j} style={{ display: 'inline-block', fontFamily: SANS, fontWeight: 900, fontSize: 78, lineHeight: 1.08, letterSpacing: '0.02em', textTransform: 'uppercase', color: key ?? T.ink, WebkitTextStroke: '10px #FFFFFF', paintOrder: 'stroke fill', whiteSpace: 'nowrap' }}>
             {clean}
           </span>
         );
@@ -112,18 +118,8 @@ export const Tag: React.FC<{ t0: number; t1?: number; x: number; y: number; to?:
   );
 };
 
-// Honesty badge, top right under the safe area: what kind of number or footage this is.
-export const Badge: React.FC<{ t0: number; t1?: number; text: string; color?: string }> = ({ t0, t1, text, color = T.blue }) => {
-  const t = useT();
-  const a = ev(t, t0, 0.2);
-  const out = t1 === undefined ? 1 : 1 - ev(t, t1, 0.2);
-  if (a <= 0 || out <= 0) return null;
-  return (
-    <div style={{ position: 'absolute', left: L.marginX, top: L.badgeY, opacity: a * out, background: color, color: '#fff', fontFamily: MONO, fontWeight: 700, fontSize: 23, letterSpacing: '0.09em', textTransform: 'uppercase', padding: '9px 22px', borderRadius: 30 }}>
-      {text}
-    </div>
-  );
-};
+// Honesty pills are gone (Azriel, 3 Nov 2026: not wanted on screen); kept so older pieces still compile. The upload text says what was simplified.
+export const Badge: React.FC<{ t0: number; t1?: number; text: string; color?: string }> = () => null;
 
 // Big tilted sound word.
 export const Pop: React.FC<{ t0: number; t1: number; x: number; y: number; text: string; size?: number; rot?: number; color?: string }> = ({ t0, t1, x, y, text, size = 118, rot = -6, color = T.yellow }) => {

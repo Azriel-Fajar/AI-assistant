@@ -1,6 +1,8 @@
 // Colours sampled from the reference frames; brand values are the only part meant to change per account.
 export const T = {
   bg: '#FFFFFF',
+  floor: '#EEEBE3', // default ground under every film (Frame); the page takes this colour too
+  floorLine: '#BDB6A8',
   bgWarm: '#E5DFC7',
   ink: '#141414',
   yellow: '#FDE25A',

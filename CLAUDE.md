@@ -116,4 +116,7 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - Teaching slides: credits on title slide (lecturer, TAs + NIM, session), never last.
 - sekitar vehicles: windows are openings with glass inside, never glass over body.
 - sekitar look: cut diorama, white bg, mid caption, own colours, no header.
+- sekitar: no pill badges on screen; simplification noted in upload text.
 - sekitar bed: quieter, varies per film and section, ducks under VO.
+- sekitar: objects stand on default grid floor with shadows, never bare white.
+- sekitar: every shot in a real place from kit props.tsx, never lone objects.

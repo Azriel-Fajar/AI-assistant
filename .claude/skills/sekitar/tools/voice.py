@@ -32,7 +32,7 @@ for name in ("GEMINI_API_KEY", "ELEVENLABS_API_KEY"):
 
 ap = argparse.ArgumentParser()
 ap.add_argument("piece")
-ap.add_argument("--engine", choices=["gemini", "elevenlabs", "edge"], default="gemini" if os.environ.get("GEMINI_API_KEY") else "edge")
+ap.add_argument("--engine", choices=["gemini", "elevenlabs", "edge", "none"], default="gemini" if os.environ.get("GEMINI_API_KEY") else "edge")
 ap.add_argument("--takes", type=int, default=3)
 ap.add_argument("--until", type=float, help="stop at the first take whose match reaches this, to save API quota")
 ap.add_argument("--sample")
@@ -412,7 +412,17 @@ def show_tokens(show, words):
 
 
 best = None
-for i in range(a.takes):
+if a.engine == "none":
+    # No narrator (Azriel, 4 Nov 2026, test film): captions carry the words at a reading pace over silence.
+    say, cur = [], 0.3
+    for li, l in enumerate(lines):
+        for w in l["say"].split():
+            d = max(0.18, syllables(w) / 6.0)
+            say.append({"w": w, "s": cur, "e": cur + d, "line": li})
+            cur += d + 0.03
+        cur += 0.3
+    best = (1.0, 0, np.zeros(int((cur + 1) * SR), dtype=np.float32), say)
+for i in range(a.takes if a.engine != "none" else 0):
     path = takes_dir / f"take{i + 1}"
     if a.reuse:
         src = max(takes_dir.glob(f"take{i + 1}.src.*"), key=lambda f: f.stat().st_mtime)  # newest engine's take

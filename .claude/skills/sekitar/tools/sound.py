@@ -6,7 +6,7 @@ Reads timing.json and sfx.json ([{"line":"hook1","word":"tik","n":1,"type":"drip
 script.json may set "bed": false for a film with no music under the voice, only effects.
 All sound is generated here, so there is nothing to license.
 """
-import json, subprocess, sys, wave
+import json, re, subprocess, sys, wave
 from pathlib import Path
 import numpy as np
 
@@ -183,7 +183,8 @@ v = np.frombuffer(raw, np.float32).copy()
 voice = np.zeros(n)
 m = min(n, len(v))
 voice[:m] = v[:m]
-voice /= rms(voice[np.abs(voice) > 0.01]) / 0.2
+if np.abs(voice).max() > 0.01:  # --engine none leaves a silent voice: nothing to level
+    voice /= rms(voice[np.abs(voice) > 0.01]) / 0.2
 
 if use_bed:
     b = bed()
@@ -208,4 +209,15 @@ with wave.open(str(tmp), "wb") as w:
 chain = "acompressor=threshold=-22dB:ratio=3.5:attack=6:release=90:makeup=3,loudnorm=I=-14:TP=-1.3:LRA=3:linear=false"
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(tmp), "-af", chain, "-ar", str(SR), "-ac", "2", str(out / "mix.wav")], check=True)
 tmp.unlink()
+
+# One-pass loudnorm lands up to ~1.5 dB short on these mixes (jalan-bolong-hujan, bawang-nangis, Nov 2026): measure, then correct the gain.
+meter = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(out / "mix.wav"), "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
+lufs = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", meter)[-1])
+peak = float(re.findall(r"Peak:\s+(-?[\d.]+) dBFS", meter)[-1])
+gain = min(-14.0 - lufs, -1.3 - peak)
+if abs(gain) > 0.3:
+    fixed = out / "_mix_gain.wav"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(out / "mix.wav"), "-af", f"volume={gain:.2f}dB", str(fixed)], check=True)
+    fixed.replace(out / "mix.wav")
+    print(f"gain: {lufs:.1f} LUFS, peak {peak:.1f} dBFS, corrected {gain:+.2f} dB")
 print("mix.wav:", out / "mix.wav")

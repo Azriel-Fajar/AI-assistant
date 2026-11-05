@@ -77,7 +77,10 @@ export type Common = {
 
 // Comic shading (Azriel, 3 Nov 2026, after the fig. Why retaining-wall short): faces in shade get a screen-space
 // halftone of ink dots that grow as the light drops; lit faces stay clean. Dots are 9 px on a 45° grid.
+// Off since 4 Nov 2026: films are flat minimal cartoons now (Azriel). Kept for a piece that asks for it.
+export const HALFTONE = false;
 const halftone = (sh: { fragmentShader: string }) => {
+  if (!HALFTONE) return;
   sh.fragmentShader = sh.fragmentShader.replace(
     '#include <opaque_fragment>',
     `{
@@ -210,6 +213,43 @@ export const Tiles: React.FC<{ w: number; d: number; tile: number; color?: strin
       </mesh>
       <lineSegments geometry={lines}>
         <lineBasicMaterial color={lineColor} />
+      </lineSegments>
+    </group>
+  );
+};
+
+// A pale floor with a thin grid that fades out with distance, so flat cartoon objects stand somewhere (Azriel,
+// 4 Nov 2026, from a laundry short he liked). Put objects on y = 0; `cell` is the grid spacing in world units.
+export const GridFloor: React.FC<{ size?: number; cell?: number; color?: string; lineColor?: string; pos?: V3 }> = ({
+  size = 240, cell = 1, color = '#EEEBE3', lineColor = '#BDB6A8', pos = [0, 0, 0],
+}) => {
+  const geo = useMemo(() => {
+    const p: number[] = [], c: number[] = [];
+    const a = new THREE.Color(lineColor), b = new THREE.Color(color), h = size / 2;
+    const push = (x: number, z: number) => {
+      const k = Math.min(1, Math.hypot(x, z) / 30);
+      const m = a.clone().lerp(b, k);
+      p.push(x, 0.002, z);
+      c.push(m.r, m.g, m.b);
+    };
+    for (let v = -h; v <= h; v += cell) for (let u = -h; u < h; u += cell) {
+      if (Math.hypot(u, v) > 32) continue; // past 30 the lines have faded into the floor
+      push(u, v); push(u + cell, v);
+      push(v, u); push(v, u + cell);
+    }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(p, 3));
+    g.setAttribute('color', new THREE.Float32BufferAttribute(c, 3));
+    return g;
+  }, [size, cell, color, lineColor]);
+  return (
+    <group position={pos}>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
+        <planeGeometry args={[size, size]} />
+        <meshLambertMaterial color={color} />
+      </mesh>
+      <lineSegments geometry={geo}>
+        <lineBasicMaterial vertexColors />
       </lineSegments>
     </group>
   );

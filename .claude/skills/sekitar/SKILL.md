@@ -16,7 +16,7 @@ Measurements and what is proven or guessed about the reference: [STYLE.md](STYLE
 
 **Say how long before anything slow.** A 60 s film took 2.9 min to render on Azriel's laptop (bau-hujan, 1 Nov 2026, about 600 objects, concurrency 4); 7.3 min on the original author's. A storyboard takes about 1 s per frame.
 
-**Account:** `@dibaliknyaapa` on Instagram and YouTube, `@dibaliknya.apa` on TikTok (Azriel, 1 Nov 2026; first film uploaded 1 Nov). Name a handle per platform in upload text. **Sign-off: "Intip baliknya."**, spoken as the last line of the hook by second 7, right after the question, so every film says it. `voice.py` adds 0.6 s of silence after it, so it lands before the film moves on; any other line can take `"pause": <seconds>` in script.json. No logo yet, so `Watermark` in `overlay.tsx` draws nothing; when Azriel has one, put its paths back in `Watermark`.
+**Account:** `@dibaliknyaapa` on Instagram and YouTube, `@dibaliknya.apa` on TikTok (Azriel, 1 Nov 2026; first film uploaded 1 Nov). Name a handle per platform in upload text. **Sign-off: "Intip baliknya."**, spoken as the last line of the hook by second 7, right after the question, so every film says it. `voice.py` adds 0.6 s of silence after it, so it lands before the film moves on; any other line can take `"pause": <seconds>` in script.json. `Watermark` in `overlay.tsx` puts the logo (`shorts/brand/logo-1warna.svg`) and `@dibaliknyaapa`, faint, top right on every frame (Azriel, 4 Nov 2026); if the logo changes, copy its paths into `Watermark`.
 
 **Narrator:** Gemini's **Achird** (default in `voice.py`), picked by Azriel from samples on 1 Nov 2026 over Sadaltager, the original skill's voice.
 
@@ -30,11 +30,11 @@ Measurements and what is proven or guessed about the reference: [STYLE.md](STYLE
 
 When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 2026), nobody is there to approve, so:
 
-- **Never ask.** Skip the reminders. Where a step waits for Azriel, a fresh reviewer gate from [rubrik.md](rubrik.md) decides instead: gate `naskah` after step 2, gate `look` after step 4, gate `akhir` after step 6. Apply its fixes and re-review, at most 3 rounds per gate.
-- **Hook:** write the 3 options as usual; the `naskah` reviewer picks the strongest and says why.
-- **Voice:** Gemini only, `--takes 3 --until 0.9`: it stops at the first take with `match` ≥ 0.9, so a film spends 1–3 of the free tier's 10 requests a day and 3 films fit in one day. If the best `match` is still under 0.8, generate no more: the film is PERLU CEK. If Gemini fails, stop and report; edge-tts never goes into an automatic film.
-- **Look:** `stills.mjs ... every=2 --scale=0.3` plus the 3–4 key moments, then gate `look`.
-- **Render:** a re-render after gate `akhir` goes to `<slug>_v2.mp4`; the report names the final file.
+- **Never ask.** Skip the reminders. Only the crucial approvals get a fresh reviewer from [rubrik.md](rubrik.md) (Azriel, 5 Nov 2026): gate `fakta` after step 2 and gate `look` after step 4 (the merged look gate let thin, placeless films through, so `look` stays its own gate). Apply all its fixes in one edit and re-review once; if it still fails, keep the best version and note what is left in the report. Hook, language, structure and the rendered film are the maker's own self-check in rubrik.md, with no reviewer.
+- **Hook:** write the 3 options as usual and pick the strongest yourself; say why in the report.
+- **Voice:** Gemini only, `--takes 2 --until 0.85`: it stops at the first take with `match` ≥ 0.85, so a film spends 1–2 of the free tier's 10 requests a day and 5 films fit in one day (Azriel, 5 Nov 2026: max 2 takes, 1 if it can). If `public/pieces/<slug>/takes/` already holds Gemini takes for this script, run `voice.py <piece> --reuse` first: it spends no quota. If the best `match` is still under 0.8, generate no more: the film is PERLU CEK. If Gemini fails, stop and report; edge-tts never goes into an automatic film.
+- **Look:** `stills.mjs ... every=2 --scale=0.25` plus the 3–4 key moments, self-check against the `look` criteria in rubrik.md, fix, then gate `look`.
+- **Render:** after the render, run the film self-check in rubrik.md (check scripts, one look at each review sheet). A re-render goes to `<slug>_v2.mp4`; the report names the final file.
 - **Facts are hard:** if a claim can't be sourced, cut it; if the film no longer stands without it, stop, report, and let `produksi-harian` swap the topic.
 - Azriel's check moves to the end: he watches the finished film and reads `LAPORAN.md` before he uploads by hand.
 
@@ -49,7 +49,7 @@ When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 20
 
 ## Non-negotiables
 
-1. **Facts before pictures.** Every claim on screen or in the voice gets a web-checked source, labelled `resmi` (official), `media`, or `model` (our own calculation or assumption). No source, no claim. Number assumptions are said on screen with a `Badge` or the card kicker.
+1. **Facts before pictures.** Every claim on screen or in the voice gets a web-checked source, labelled `resmi` (official), `media`, or `model` (our own calculation or assumption). No source, no claim. Number assumptions are said on screen in the card kicker.
 2. **Not a clone.** Copy the grammar, never the brand: no "Kita Bedah", "kita bedah", its logo, its name, its reference frames as assets, or its topics by default. Azriel's account gets its own name and sign-off.
 3. **Their paid material stays out.** Their guide, class and skill package are sold, and their terms forbid recording or downloading the class. Learn only from their public videos and pages, keep downloads in the scratchpad, and never commit them.
 4. **Azriel approves the script before any 3D work,** and the look before the render. A wrong angle caught in text costs a minute.
@@ -94,17 +94,16 @@ Write `piece.tsx` (start from the example) and `sfx.json`. Then `node <skill>/to
 
 **Picture rules, all measured from the reference:**
 - **One continuous world, no hard cuts.** Move the camera between places with an eased move, never blurred: blur makes viewers dizzy (Azriel, 1 Nov 2026). A new move about every 3–6 s; `camAt` pushes slowly in between so nothing freezes.
-- **The world is a cut-out diorama on a white page** (Azriel, 3 Nov 2026, from the fig. Why short). Build the setting as one block of ground with `Diorama`: the top surface (grass, road, floor) carries the scene, and its cut faces show what is underneath (soil, gravel, pipes, water) in layers. The page stays plain white (`T.bg`), no sky. The block still holds a whole place: a yard, a street edge, a room corner, with props and people. A lone object on an empty floor reads as a demo.
-- **Comic look is built in:** every part gets full-ink edges and a halftone of dots in its shaded faces (`prims.tsx`). Keep shapes flat-coloured so the dots read.
-- **Detail it like the real thing.** Layers, small parts and true shapes: check what the thing really looks like before modelling (Streptomyces is a branching thread, not a rod).
+- **Flat minimal cartoon standing on a floor** (Azriel, 4 Nov 2026 for flat cartoon; 5 Nov 2026 for the floor: objects on bare white had no depth). `Frame` lays a `GridFloor` at y = 0 by default and paints the page the floor's colour, so the far floor melts into it like a horizon. Stand objects on y = 0 so their shadows fall on it; a thing in the air still shows its height by its shadow. Add a topic surface where it fits (a road, a counter, a cutting board), and for a night, electric or dark topic pass a dark floor (`floor={{ color, lineColor }}`, `mark="#FFFFFF"`) with weather moving in front. Anything below y = 0 is hidden by the floor: move the floor down (`floor={{ pos: [0, -2, 0] }}`) for a cut-away below ground, and pass `floor={false}` only for a shot that must float. Keep the action within ~25 units of the origin, where the grid lines show. No sky and no ground block: the floor and the props make the place.
+- **Every shot happens in a place, built from the kit's props** (Azriel, 5 Nov 2026: the 5 Nov films were lone objects with no world and looked cheap; a friend's account gets rich scenes at about 17% of a usage window per film by reusing parts). `engine/src/kit/props.tsx` has `Person` (walks, raises an arm), `Room` (tiled floor, two walls, a window), `Window`, `House` (lit at night), `Tree`, `Road` (scrolling centre line, kerbs), `StreetLamp`, `Rain` (streaks and rings), `Pylon` + `pylonTips` + `Cable` (SUTET). Set the scene where the thing really lives (a stove in a kitchen, a bill in a shop, a phone in a hand in a room), with a person wherever people are part of the story, then model only the topic's own object in `piece.tsx` with real shape and detail: check what it really looks like first. When a film needs a setting part that isn't in `props.tsx` and could serve other films (a table, a car, a counter, a bathroom), add it to `props.tsx` rather than the piece, so the next film gets it free. Flat colours, full-ink edges (Azriel kept them, 5 Nov 2026), no halftone (`HALFTONE` is off in `prims.tsx`). `piece.tsx` stays near 15k characters because the setting comes from the kit, not because the world is empty.
 - **Something moves in every shot,** besides the camera: weather, sway, particles, a part working. A card held over a still scene is a dead spot.
 - **Build the object with kit parts** (`Box`, `Cyl`, `Lathe`, `Tube`, `Tiles`). `Lathe` with `cut` is the signature shot: a section that opens the thing, with the wall cut in a loud colour (`capColor`). Start solid and open it on the word that says so.
 - **Chrome, brass and water reflect:** put one `Env` in the scene, then give those parts `metal`/`rough`; `Lathe` takes `smooth` for round shading. Keep the rest flat. It barely slows the render (1 Nov 2026, about 8 min for 59 s). A deep bowl hides its floor from a low camera: floor-to-rim height must stay under radius × tan(camera elevation).
 - **Windows are openings, never stickers** (Azriel, 3 Nov 2026; glitched on palu-kaca-bus and etoll-tanpa-baterai). A thin glass box laid a few mm over a solid body flickers: the body's shadow and edge lines fight it. Build the frame around a gap (roof + pillars, as in palu-kaca-bus's bus side), put the glass inside the gap with `edge={false} shadow={false}`, and show dark interior behind it. The same goes for any flat decal on a moving or shadowed surface: lift it at least 1% of the object's size. Vibration is a slow sine (≤ ~2 Hz): `sin(40*t)` aliases into random jumps at 30 fps.
 - **Colour only what the sentence is about.** Everything else stays white, steel or dark. Water blue, heat orange-red, good green, bad red, copper for windings. Yellow is reserved for attention.
-- **Exaggerate honestly:** enlarge small parts and slow fast ones, and label the shot (`Badge`: "Ilustrasi disederhanakan", "Gerak lambat", "Dipercepat", "Hitungan kami").
+- **Exaggerate honestly:** enlarge small parts and slow fast ones. No pill badge on screen (Azriel, 3 Nov 2026: "Diperbesar · gerak lambat" pills are not wanted; `Badge` now draws nothing). Say what was simplified, enlarged, slowed or sped up in the upload text's notes instead, and keep a calculated number's "hitungan kami" in its card kicker.
 - **Watermark corner stays clear.** `Frame` draws `Watermark` (top right, 104 px, 42% opacity, 1.4 px blur), empty until the account has a logo; a piece never adds its own. Keep that corner clear anyway so nothing moves when the logo arrives. A film on a dark page passes `mark="#FFFFFF"` to `Frame`. Its fit under the TikTok, Instagram and YouTube icons is untested until the first upload: ask Azriel to check each app's preview.
-- **Upper part is for reading:** the top stays clear: no `Header` in new films, no white fade (Azriel, 3 Nov 2026). Only `Badge` (y=372) and the watermark sit there. Caption at y=1300, so keep the key part of the shot between y≈450 and y≈1250. Cards sit at y≈440. Nothing important below y≈1500: TikTok's UI lives there.
+- **Upper part is for reading:** the top stays clear: no `Header` in new films, no white fade (Azriel, 3 Nov 2026). Only the watermark sits there. Caption at y=1300, so keep the key part of the shot between y≈450 and y≈1250. Cards sit at y≈440. Nothing important below y≈1500: TikTok's UI lives there.
 - **Numbers become objects** where possible: 34 galon pop in rather than a figure on a card. Rows in `Steps` and stats light up only when spoken.
 - **Tags point at the part being named,** `to={at(worldPoint)}`, appearing on the word. `Pop` sound words at most every ~8 s.
 
@@ -123,35 +122,10 @@ Run the render in the background, and read its output for errors before trusting
 
 ### 7. Deliver
 - Cover: `npx remotion still <slug> out/<slug>/cover.jpg --frame=<n>` on the frame that best states the question (usually frame 0).
-- `out/<slug>/upload.md`: ready-to-paste text per platform, format in [examples/keran/upload.md](examples/keran/upload.md). `python3.13 <skill>/tools/upload_check.py out/<slug>/upload.md` must pass. Rules below.
+- `out/<slug>/upload.md`: ready-to-paste text per platform, format in [examples/keran/upload.md](examples/keran/upload.md). `python3.13 <skill>/tools/upload_check.py out/<slug>/upload.md` must pass. Rules in [UPLOAD.md](UPLOAD.md).
 - Report: file paths, the check table, and the weakest moment. Say what was estimated. Ask Azriel to listen on a phone. Paste all of `upload.md` in the message too, so he can copy it on his phone.
 
-**Upload text.** [examples/keran/upload.md](examples/keran/upload.md) shows the file layout only; its wording predates the style below. Written fresh for each film, never from a fill-in template, for the same reason as *Stay monetisable*. Indonesian, in the style Azriel set on the first upload (bau-hujan, 1 Nov 2026): a curiosity hook line, then a clear, slightly formal explanation that addresses the viewer as "Anda". Every number or claim needs a source already in the script's table; nothing new appears here. All three carry **sources by name, not links**, plus the assumptions behind any `model` number, and an affiliate disclosure if a link pays. Hashtags: the broad pair `#faktaunik #sains`, then the topic and the object; never `#fyp`, `#viral`, `#shorts`. Each platform gets its own wording:
-
-| | TikTok | Instagram | YouTube Shorts |
-|---|---|---|---|
-| Text | Caption, ≤2,200 (API limit, the safe one; in-app is reported as 4,000) | Caption, ≤2,200 | Title ≤100, description ≤5,000 |
-| Lead with | The hook line, the same one as the YouTube title without its hashtags | The hook line first, ≤125 characters, because the rest folds under "more" | A hook title, key words early, ending in `#faktaunik #sains`. Vary the hook pattern per film (see **Title hooks** below); never "Rahasia ... yang jarang orang tahu" by default |
-| Then | The common belief against the fact, the cause in 2–3 sentences, a comment prompt ("Fenomena alam apa yang ingin Anda ketahui selanjutnya?"), sources | The name of the thing, the cause, one reason to save or share it plus the comment prompt, sources | A plain summary of what the film shows, sources as a list, then an SEO block: an opening question ("Pernah penasaran kenapa ...?"), 2–3 short paragraphs that use the key terms (what people believe, what is true, how it works, who the video is for), a CTA to subscribe and comment the next topic, topic hashtags last |
-| Hashtags | `#faktaunik #sains` + 2–3 topic tags (5 max) | `#faktaunik #sains` + up to 3 topic tags (limit 5) | Title: `#faktaunik #sains`; description: 3 topic tags. Over 60 voids all |
-
-**Title hooks.** Each title is a hook in its own right, unique to its film, never a reused frame. Before writing, read the YouTube titles in the last 5 `out/*/upload.md` and pick a pattern none of them used; the pattern word ("Rahasia", "Ternyata", ...) appears at most once in any 5 titles. Patterns to rotate, examples only, never copy their wording:
-- Belief flip: "Bukan kotor, bau hujan itu dari bakteri tanah"
-- Surprising number: "Kaca bus cuma butuh 1 titik untuk pecah"
-- Hidden mechanism: "Kartu e-toll hidup dari gelombang radio, bukan baterai"
-- Wrong habit: "Menguras bak tiap minggu tidak membunuh telur nyamuk"
-- Cut-off reveal: "Ini yang terjadi saat kartu e-toll ditempel"
-- Question: "Kenapa jentik nyamuk balik lagi setelah bak dikuras?"
-- Rahasia / Ternyata: allowed, just not as the default.
-The claim in the title must be in the script's source table, like any other. TikTok and Instagram open with the same hook line.
-
-**Settings** go in the same file:
-- Cover: the frame from above.
-- YouTube: not made for kids, language Indonesian, category Education.
-- AI label: YouTube "altered content" **No** for a film in the kit's animated style, since its policy exempts non-realistic animation and script help, and the narrator imitates no real person. Instagram and TikTok **on**: Meta's rule names realistic-sounding audio, and TikTok's page couldn't be read, so the label is the safe side. Answer YouTube **Yes** if a film ever shows realistic footage or makes a real person seem to speak.
-- First comment: one real question the film leaves open, to pin.
-
-These limits were read on 1 Nov 2026. YouTube's title, description and hashtag rules and TikTok's API limit are from official pages. Instagram's 2,200, 125 and 5, and TikTok's 3–5, are from secondary sources. Platforms change them: if one refuses a text, recheck and update here.
+**Upload text:** the rules (platform table, title hooks, settings) are in [UPLOAD.md](UPLOAD.md). Read it at this step, not before.
 
 ### 8. Learn
 When a film is published, record its views at 7 days in the piece's `LOG.md`, and add a rule here only after a pattern shows across several films, not one.

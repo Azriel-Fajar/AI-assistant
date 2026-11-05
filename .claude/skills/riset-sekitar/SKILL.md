@@ -10,7 +10,7 @@ Finds what is worth filming and hands the chosen idea to `sekitar`. Nothing is s
 
 **Account: @dibaliknyaapa (Instagram, YouTube), @dibaliknya.apa (TikTok); sign-off "Intip baliknya."** (1 Nov 2026). `sekitar`'s SKILL.md holds both; if they change, update the `/sekitar` line in the block template below.
 
-**Every run leaves at least 10 unused ideas ready, all without a product, and researches only what's missing.** Azriel picks what he likes, so unpicked ideas stay in stock instead of costing a new search. **Upload target: 3 videos a day**, at 12.00, 15.00, 19.00 WIB (Azriel, 2 Nov 2026; was 1 a day). The month's plan is `shorts/ide/jadwal-<yyyy-mm>.md`: research in its order, ahead of the films (the daily runs research 6 rows a day, so the plan's unchecked `baru` rows get checked over the month), and turn its `saran` rows without a block into blocks before finding anything new. When a planned idea fails its fact check, swap in a stock idea of a different theme and fix the plan. If the research can't honestly fill the gap, widen the search first. If it still can't, deliver fewer and say how many are missing and why. A padded idea costs a 7-minute render and a script session.
+**Every run leaves at least 10 unused ideas ready, all without a product, and researches only what's missing.** Azriel picks what he likes, so unpicked ideas stay in stock instead of costing a new search. **Upload target: 5 videos a day**, at 07.00, 10.00, 13.00, 15.00, 19.00 WIB (Azriel, from 6 Nov 2026; 17.00 and 20.00 on 5 Nov; 3 a day from 2 Nov, 1 before). The month's plan is `shorts/ide/jadwal-<yyyy-mm>.md`: research in its order, ahead of the films (the daily runs research 6 rows a day, so the plan's unchecked `baru` rows get checked over the month), and turn its `saran` rows without a block into blocks before finding anything new. When a planned idea fails its fact check, swap in a stock idea of a different theme and fix the plan. If the research can't honestly fill the gap, widen the search first. If it still can't, deliver fewer and say how many are missing and why. A padded idea costs a 7-minute render and a script session.
 
 **Keranjang kuning is paused, because there is no account yet.** TikTok Shop affiliate needs a follower minimum (600 followers and a post in the past 28 days, as an app showed on 1 Nov 2026). Keep products out of the research and the report, even when a topic is about a product type, and don't name a brand to buy. If he asks for affiliate ideas, remind him it's paused and ask if it's back on. Only his word turns it back on; then read [references/keranjang.md](references/keranjang.md) and [references/aturan-keranjang.md](references/aturan-keranjang.md) and ask how to split the 10.
 
@@ -61,6 +61,10 @@ Keep a candidate only if all of these hold:
 3. At least one key number or fact has an official or primary source.
 4. Its mechanism can be built in `sekitar`'s 3D kit, one cause chain in 40–75 s. Say what the cutaway shows. A whole motorbike looks simple in the kit; one part looks fine.
 5. It touches money or safety, or is plainly fun. The reference's top topics are money and safety on things people own.
+6. **Sering:** most viewers run into it at least once a week. The phone, the kitchen and the bathroom are the most common; a motorbike beats a car. A once-a-year sight (hail, a rainbow puddle) or something few people own fails.
+7. **Berguna:** after watching, the viewer does something differently or drops a myth. Fun alone no longer passes 5; it must also pass 6 and 7 (Azriel, 4 Nov 2026: 28 of the November plan's 76 unmade topics were cut for this, logged `ditolak` with "relevansi").
+
+Rules 6 and 7 also gate the plan: a planned `baru` row that fails them is swapped like a failed fact check.
 
 ## 4. Report in chat
 
