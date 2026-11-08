@@ -20,7 +20,8 @@ export const Stage: React.FC<{ cam: Cam; blur?: number; children: React.ReactNod
   const { width, height } = useVideoConfig();
   // The shadow box follows the camera so one map stays sharp however far the film travels.
   const aim = useMemo(() => new THREE.Object3D(), []);
-  const R = Math.max(10, cam.width * 1.1);
+  // Floor of 2 (not 10) since 6 Nov 2026, so close-ups of small things (a glass, an ice cube) keep sharp shadows.
+  const R = Math.max(2, cam.width * 1.1);
   const [x, y, z] = cam.target;
   return (
     <div style={{ position: 'absolute', inset: 0, filter: blur > 0.4 ? `blur(${blur.toFixed(1)}px)` : undefined }}>

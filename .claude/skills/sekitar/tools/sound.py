@@ -152,6 +152,13 @@ def make(kind):
         return noise(0.16, 6500, 0.02) + 0.5 * sweep(300, 90, 0.16, 1.0, 0.04)
     if kind == "squeak":
         return sweep(900, 1500, 0.25, 0.4, 0.12)
+    if kind == "buzz":  # a fly passing: wobbling ~200 Hz wingbeat with a few harmonics, swelling in and out
+        d = 1.2
+        t = np.arange(int(d * SR)) / SR
+        f = 210 + 25 * np.sin(2 * np.pi * 3.1 * t) + 15 * np.sin(2 * np.pi * 7 * t)
+        ph = 2 * np.pi * np.cumsum(f) / SR
+        x = np.sin(ph) + 0.5 * np.sin(2 * ph) + 0.3 * np.sin(3 * ph)
+        return 0.45 * x * np.sin(np.pi * t / d) ** 1.5 * (0.7 + 0.3 * np.sin(2 * np.pi * 2.3 * t))
     raise SystemExit(f"Unknown sfx type: {kind}")
 
 
