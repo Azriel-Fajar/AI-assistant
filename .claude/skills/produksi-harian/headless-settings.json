@@ -1,6 +1,6 @@
 {
   "model": "opus",
-  "effortLevel": "high",
+  "effortLevel": "medium",
   "autoMemoryEnabled": false,
   "skillListingBudgetFraction": 0.001,
   "skillListingMaxDescChars": 20
