@@ -1,6 +1,6 @@
 ---
 name: produksi-harian
-description: Runs @dibaliknyaapa's daily video production unattended, 5 films a day (one per session) plus one research session a day. Picks the next topic from the month plan, researches it if needed, makes the film with sekitar in automatic mode (AI reviewer gates on facts and look instead of Azriel's approvals), writes the upload text and a report, researches the next topics, and notifies Azriel's phone. Started every day by Windows Task Scheduler (run.ps1), or by hand. Use when Azriel says "produksi harian", "buat video hari ini", "jalankan workflow harian", or "/produksi-harian".
+description: Runs @intipbaliknya's daily video production unattended, 5 films a day (one per session) plus one research session a day. Picks the next topic from the month plan, researches it if needed, makes the film with sekitar in automatic mode (AI reviewer gates on facts and look instead of Azriel's approvals), writes the upload text and a report, researches the next topics, and notifies Azriel's phone. Started every day by Windows Task Scheduler (run.ps1), or by hand. Use when Azriel says "produksi harian", "buat video hari ini", "jalankan workflow harian", or "/produksi-harian".
 ---
 
 # Produksi harian

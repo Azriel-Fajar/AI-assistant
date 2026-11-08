@@ -20,7 +20,7 @@ export const Header: React.FC<{ items: { t: number; kicker: string; title: strin
 // The account's mark, faint and one-colour, top right: logo (shorts/brand/logo-1warna.svg) + handle, so a re-upload still names the channel (Azriel, 4 Nov 2026).
 export const Watermark: React.FC<{ color?: string }> = ({ color = T.ink }) => (
   <div style={{ position: 'absolute', right: 50, top: 172, display: 'flex', alignItems: 'center', gap: 14, opacity: 0.4, color }}>
-    <span style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, letterSpacing: 0.5 }}>@dibaliknyaapa</span>
+    <span style={{ fontFamily: SANS, fontWeight: 700, fontSize: 30, letterSpacing: 0.5 }}>@intipbaliknya</span>
     <svg viewBox="0 0 100 100" width={56} height={56} fill={color}>
       <path d="M24 12 H76 Q88 12 88 24 V60 L60 88 H24 Q12 88 12 76 V24 Q12 12 24 12 Z" />
       <path d="M84 66 L66 84 L67.5 70 Q68 67.5 70.5 67 Z" />

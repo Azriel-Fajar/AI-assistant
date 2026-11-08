@@ -1,4 +1,4 @@
-// Shared OAuth + YouTube API helpers for the @dibaliknyaapa Google account. No dependencies: Node 18+ fetch.
+// Shared OAuth + YouTube API helpers for the @intipbaliknya Google account. No dependencies: Node 18+ fetch.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';

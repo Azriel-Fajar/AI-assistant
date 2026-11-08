@@ -24,12 +24,11 @@ export const T = {
 };
 
 // The account the follow end card shows. Its picture is public/brand/profil.png, copied there by setup.py.
-// Two handles: without the dot on Instagram and YouTube, with it on TikTok. One end card shows both, that order.
+// One handle on every platform since the rename (Azriel, 9 Nov 2026).
 export const ACCOUNT = {
-  name: 'Dibaliknya Apa',
+  name: 'Intip Baliknya',
   handles: [
-    { where: 'Instagram · YouTube', handle: '@dibaliknyaapa' },
-    { where: 'TikTok', handle: '@dibaliknya.apa' },
+    { where: 'Instagram · TikTok · YouTube', handle: '@intipbaliknya' },
   ],
   bio: 'Cara kerja hal sehari-hari, dalam 3D.',
 };

@@ -1,4 +1,4 @@
-// One-time login as the @dibaliknyaapa Google account. Catches Google's redirect on a localhost port
+// One-time login as the @intipbaliknya Google account. Catches Google's redirect on a localhost port
 // (the copy-paste "oob" flow is blocked for new OAuth clients) and saves tokens.json next to this file.
 import { createServer } from 'node:http';
 import { exec } from 'node:child_process';
@@ -21,7 +21,7 @@ const url = 'https://accounts.google.com/o/oauth2/v2/auth?' + new URLSearchParam
   access_type: 'offline',
   prompt: 'consent',
 });
-console.log(`Log in with the @dibaliknyaapa Google account:\n${url}\n`);
+console.log(`Log in with the @intipbaliknya Google account:\n${url}\n`);
 exec(process.platform === 'win32' ? `start "" "${url}"` : `xdg-open "${url}"`);
 
 const code = await new Promise(resolve => server.on('request', (req, res) => {

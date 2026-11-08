@@ -1,6 +1,6 @@
-# Google tools: @dibaliknyaapa
+# Google tools: @intipbaliknya
 
-YouTube stats for the @dibaliknyaapa channel, logged in as the channel's own Google account. Separate from `tools/google` (Azriel's main account). No `npm install`: Node 18+ only.
+YouTube stats for the @intipbaliknya channel (formerly @intipbaliknya; folder name kept, token is tied to the Google account), logged in as the channel's own Google account. Separate from `tools/google` (Azriel's main account). No `npm install`: Node 18+ only.
 
 ## Google Cloud setup (one-time, new account)
 
@@ -14,7 +14,7 @@ YouTube stats for the @dibaliknyaapa channel, logged in as the channel's own Goo
 node tools/google-dibaliknyaapa/auth.js
 ```
 
-Google warns "app isn't verified": **Advanced → Go to (app)**. Pick the @dibaliknyaapa channel. Token lands in `tokens.json`.
+Google warns "app isn't verified": **Advanced → Go to (app)**. Pick the @intipbaliknya channel (formerly @intipbaliknya; folder name kept, token is tied to the Google account). Token lands in `tokens.json`.
 
 ## Use
 

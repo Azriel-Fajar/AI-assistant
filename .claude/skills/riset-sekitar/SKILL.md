@@ -8,7 +8,7 @@ argument-hint: "[tema atau barang, opsional]"
 
 Finds what is worth filming and hands the chosen idea to `sekitar`. Nothing is scripted or rendered here.
 
-**Account: @dibaliknyaapa (Instagram, YouTube), @dibaliknya.apa (TikTok); sign-off "Intip baliknya."** (1 Nov 2026). `sekitar`'s SKILL.md holds both; if they change, update the `/sekitar` line in the block template below.
+**Account: @intipbaliknya (Instagram, TikTok, YouTube; renamed 9 Nov 2026); sign-off "Intip baliknya."** (1 Nov 2026). `sekitar`'s SKILL.md holds both; if they change, update the `/sekitar` line in the block template below.
 
 **Every run leaves at least 10 unused ideas ready, all without a product, and researches only what's missing.** Azriel picks what he likes, so unpicked ideas stay in stock instead of costing a new search. **Upload target: 5 videos a day**, at 07.00, 10.00, 13.00, 15.00, 19.00 WIB (Azriel, from 6 Nov 2026; 17.00 and 20.00 on 5 Nov; 3 a day from 2 Nov, 1 before). The month's plan is `shorts/ide/jadwal-<yyyy-mm>.md`: research in its order, ahead of the films (the daily runs research 6 rows a day, so the plan's unchecked `baru` rows get checked over the month), and turn its `saran` rows without a block into blocks before finding anything new. When a planned idea fails its fact check, swap in a stock idea of a different theme and fix the plan. If the research can't honestly fill the gap, widen the search first. If it still can't, deliver fewer and say how many are missing and why. A padded idea costs a 7-minute render and a script session.
 
@@ -75,7 +75,7 @@ Show the new blocks in full, then list the older stock by title with its file, s
 
 ### 1. <pertanyaan sebagai judul video>
 ```text
-/sekitar Ini ide konten akun edukasi 3D-ku @dibaliknyaapa (akun belum dibuat), tanpa keranjang kuning, tanpa barang dan merek yang dijual. Slug: <slug>.
+/sekitar Ini ide konten akun edukasi 3D-ku @intipbaliknya, tanpa keranjang kuning, tanpa barang dan merek yang dijual. Slug: <slug>.
 
 Pertanyaan: <pertanyaan sebagai judul video>
 Kejutan: <satu kalimat>
