@@ -4,12 +4,16 @@ Run from shorts/:
   python3.13 ../.claude/skills/produksi-harian/target.py film      -> today's target row + its idea block, missed rows,
                                                                        unmade count, last 5 hooks, last 5 YouTube titles
   python3.13 ../.claude/skills/produksi-harian/target.py riset 10  -> the next 10 plan rows without an idea block
+  python3.13 ../.claude/skills/produksi-harian/target.py gaps 5    -> how many of the next 5 films have no idea block
 """
 import glob, json, os, re, sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 
 sys.stdout.reconfigure(encoding='utf-8')
 today = datetime.now().date()
+# Films are made in the afternoon (15:30 since 10 Nov 2026, Azriel) for tomorrow's uploads, so from 12:00 on
+# the target starts at tomorrow's rows; today's slots are already past.
+start = today + timedelta(days=1) if datetime.now().hour >= 12 else today
 
 
 def plan_rows():
@@ -52,17 +56,24 @@ def blocks():
 rows, st, bl = plan_rows(), log_status(), blocks()
 mode = sys.argv[1] if len(sys.argv) > 1 else 'film'
 
+if mode == 'gaps':
+    # run.ps1 asks this before the films: how many of the next N films have no idea block yet.
+    n = int(sys.argv[2]) if len(sys.argv) > 2 else 5
+    todo = [r for r in rows if r['date'] >= start and st.get(r['slug']) != 'dibuat'][:n]
+    print(sum(1 for r in todo if r['slug'] not in bl))
+    sys.exit()
+
 if mode == 'riset':
     n = int(sys.argv[2]) if len(sys.argv) > 2 else 10
-    todo = [r for r in rows if r['date'] >= today and r['slug'] not in bl and st.get(r['slug']) != 'dibuat']
-    print(f'TODAY {today}  plan rows without a block from today: {len(todo)}  showing {min(n, len(todo))}')
+    todo = [r for r in rows if r['date'] >= start and r['slug'] not in bl and st.get(r['slug']) != 'dibuat']
+    print(f'TODAY {today}  plan rows without a block from {start}: {len(todo)}  showing {min(n, len(todo))}')
     for r in todo[:n]:
         print(r['line'])
     sys.exit()
 
-unmade = [r for r in rows if r['date'] >= today and st.get(r['slug']) != 'dibuat']
+unmade = [r for r in rows if r['date'] >= start and st.get(r['slug']) != 'dibuat']
 missed = [r for r in rows if r['date'] < today and st.get(r['slug']) not in ('dibuat', 'ditunda', 'ditolak')]
-print(f'TODAY {today}  unmade plan rows from today: {len(unmade)}')
+print(f'TODAY {today}  unmade plan rows from {start}: {len(unmade)}')
 for r in missed:
     print(f'MISSED (mark ditunda): {r["date"]} {r["jam"]} {r["slug"]}')
 if not unmade:

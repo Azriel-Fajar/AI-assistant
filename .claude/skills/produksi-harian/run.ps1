@@ -45,7 +45,7 @@ function Invoke-Session($tag, $arg) {
   if (Test-Path $lock) { Remove-Item $lock }
   if ((Get-Content $log, $err -Raw -ErrorAction SilentlyContinue) -match 'hit your .*limit') {
     Invoke-RestMethod -Uri 'https://ntfy.sh/JARVIS' -Method Post -Headers @{ Title = 'Produksi tertunda' } `
-      -Body "Sesi $arg kena limit Claude. Lanjut otomatis di jadwal berikutnya (08.10 / 13.20)." | Out-Null
+      -Body "Sesi $arg kena limit Claude. Lanjut otomatis di jadwal berikutnya (20.40 / 15.30)." | Out-Null
   } else {
     Invoke-RestMethod -Uri 'https://ntfy.sh/JARVIS' -Method Post -Headers @{ Title = 'Produksi gagal' } `
       -Body "Sesi ${arg}: Claude keluar dengan kode $($p.ExitCode). Log: shorts\log\produksi-$stamp-$tag.log" | Out-Null
@@ -53,26 +53,49 @@ function Invoke-Session($tag, $arg) {
   return $false
 }
 
-# 5 films a day since 5 Nov 2026 (Azriel): the task fires at 03:00, 08:10 and 13:20, one per 5-hour Claude usage
-# window. The 03:00 run makes 3 films and the 08:10 run 2 (Azriel, 5 Nov 2026); the 13:20 run only catches up.
+# 5 films a day again since 10 Nov 2026 (Azriel; 3 from 9 Nov). The task fires at 15:30 (after the 15:00 Gemini
+# reset), so tomorrow's films are ready the evening before, and at 20:40, one per 5-hour Claude usage window:
+# the 15:30 run makes 3 films, the 20:40 run the rest (3 films used up one window on 10 Nov 2026).
 # A run starts at the first film of today without a .done marker, so one that hit the limit is resumed by the next run.
 $code = 0
 $films = 0
 $ok = $true
-$cap = if ((Get-Date).Hour -lt 8) { 3 } else { 2 }
+$cap = if ((Get-Date).Hour -lt 20) { 3 } else { 5 }
+$risetDone = Join-Path $logDir "produksi-$day-riset.done"
+# When one of the next 5 films has no idea block (a day the PC was off, 9 Nov 2026), the research session runs first,
+# so no film session researches its own topic in the big Opus context.
+Push-Location $shorts
+$gaps = & python3.13 (Join-Path $PSScriptRoot 'target.py') gaps 5
+Pop-Location
+if ("$gaps" -match '^\d+$' -and [int]$gaps -gt 0 -and -not (Test-Path $risetDone)) { Invoke-Session 'riset' 'riset' | Out-Null }
+# Each film is three fresh sessions: 'naskah' (topic, script, gate fakta, voice) and 'gambar' (piece, storyboard,
+# gate look, render, cover) since 9 Nov 2026, so the picture work doesn't carry the research context, and 'laporan'
+# (upload text, report, notify) since 10 Nov 2026, so those light steps don't each re-read the 200k picture context.
+# naskah writes produksi-<day>-<n>-a.done; if it ends the slot itself (no target, film stopped) it writes <n>.done too.
+# gambar writes <n>-b.done, laporan <n>.done.
 foreach ($n in 1..5) {
   if (Test-Path (Join-Path $logDir "produksi-$day-$n.done")) { continue }
-  if ($films -ge $cap -or (Test-Path $stop)) { break }
+  if ($films -ge $cap) { break }
+  $partA = Test-Path (Join-Path $logDir "produksi-$day-$n-a.done")
+  $partB = Test-Path (Join-Path $logDir "produksi-$day-$n-b.done")
+  if (-not $partA -and (Test-Path $stop)) { break }
   $films++
-  if (-not (Invoke-Session "$n" "$n/5")) { $ok = $false; break }
+  if (-not $partA) {
+    if (-not (Invoke-Session "$n-a" "$n/5 naskah")) { $ok = $false; break }
+    if (Test-Path (Join-Path $logDir "produksi-$day-$n.done")) { continue }
+  }
+  if (-not $partB) {
+    if (-not (Invoke-Session "$n-b" "$n/5 gambar")) { $ok = $false; break }
+  }
+  if (-not (Invoke-Session "$n" "$n/5 laporan")) { $ok = $false; break }
 }
 # One research session a day (5 Nov 2026), after the day's last film: once all five films are done (normally the
-# 08:10 run), or in the 13:20 run at the latest. It needs no Gemini, so .stop-run doesn't stop it.
+# 20:40 run), or in the 20:40 run at the latest. It needs no Gemini, so .stop-run doesn't stop it.
 $allFilms = @(1..5 | Where-Object { Test-Path (Join-Path $logDir "produksi-$day-$_.done") }).Count -eq 5
-if ($ok -and -not (Test-Path (Join-Path $logDir "produksi-$day-riset.done")) -and ((Get-Date).Hour -ge 13 -or $allFilms)) {
+if ($ok -and -not (Test-Path $risetDone) -and ((Get-Date).Hour -ge 20 -or $allFilms)) {
   Invoke-Session 'riset' 'riset' | Out-Null
 }
-# Back to sleep, but only when nobody is using the PC (the 03:00 wake), never under someone's hands.
+# Back to sleep, but only when nobody is using the PC (a wake from sleep), never under someone's hands.
 # The 5-minute wait gives OneDrive time to upload the new video so the phone can reach it.
 Add-Type @'
 using System; using System.Runtime.InteropServices;
