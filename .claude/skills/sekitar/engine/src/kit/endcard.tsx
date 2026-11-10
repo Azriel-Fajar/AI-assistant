@@ -56,7 +56,7 @@ export const FollowCard: React.FC<{ t0: number }> = ({ t0 }) => {
         <div style={{ opacity: ev(t, 0.2, 0.25), transform: `translateY(${(1 - ev(t, 0.2, 0.25)) * 20}px)`, textAlign: 'center', marginTop: 34 }}>
           <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 66, color: T.ink, letterSpacing: '-0.015em' }}>{ACCOUNT.name}</div>
           {ACCOUNT.handles.map((a, i) => (
-            <div key={i} style={{ display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: 14, marginTop: i ? 4 : 8, opacity: ev(t, 0.25 + 0.1 * i, 0.25) }}>
+            <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, marginTop: i ? 4 : 8, opacity: ev(t, 0.25 + 0.1 * i, 0.25) }}>
               <span style={{ fontFamily: MONO, fontWeight: 700, fontSize: 21, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#7A766C' }}>{a.where}</span>
               <span style={{ fontFamily: MONO, fontWeight: 500, fontSize: 34, color: '#3A3A36' }}>{a.handle}</span>
             </div>

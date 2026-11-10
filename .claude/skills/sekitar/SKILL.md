@@ -34,7 +34,7 @@ When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 20
 - **Hook:** write the 3 options as usual and pick the strongest yourself; say why in the report.
 - **Voice:** Gemini only, `--takes 2 --until 0.85`: it stops at the first take with `match` ≥ 0.85, so a film spends 1–2 of the free tier's 10 requests a day and 5 films fit in one day (Azriel, 5 Nov 2026: max 2 takes, 1 if it can). If `public/pieces/<slug>/takes/` already holds Gemini takes for this script, run `voice.py <piece> --reuse` first: it spends no quota. If the best `match` is still under 0.8, generate no more: the film is PERLU CEK. If Gemini fails, stop and report; edge-tts never goes into an automatic film.
 - **Look:** `stills.mjs ... every=2 --scale=0.25` plus the 3–4 key moments, self-check against the `look` criteria in rubrik.md, fix, then gate `look`.
-- **Render:** after the render, run the film self-check in rubrik.md (check scripts, one look at each review sheet). A re-render goes to `<slug>_v2.mp4`; the report names the final file.
+- **Render:** in the foreground, chained with `check.py` in one call (Bash `timeout: 600000`), not in the background with polling. After the render, run the film self-check in rubrik.md (check scripts, one look at each review sheet). A re-render goes to `<slug>_v2.mp4`; the report names the final file.
 - **Facts are hard:** if a claim can't be sourced, cut it; if the film no longer stands without it, stop, report, and let `produksi-harian` swap the topic.
 - Azriel's check moves to the end: he watches the finished film and reads `LAPORAN.md` before he uploads by hand.
 
