@@ -63,6 +63,9 @@ export const Captions: React.FC<{ timing: Timing; keywords?: string[] | Record<s
   const i = chunks.findIndex((c, k) => t >= c[0].s - 0.06 && t < (chunks[k + 1]?.[0].s ?? Infinity) - 0.06);
   if (i < 0) return null;
   const c = chunks[i];
+  // A word longer than 14 letters (dihambur-hamburin) ran edge to edge at 78 px (11 Nov 2026): shrink the row to fit.
+  const longest = Math.max(...c.map((w) => w.w.replace(/[.,;:?!]+$/, '').length));
+  const size = Math.min(78, Math.floor((78 * 14) / longest));
   const last = c[c.length - 1];
   if (t > last.e + 0.6) return null;
   // The opening frame is also the thumbnail, so the first caption is already there.
@@ -75,7 +78,7 @@ export const Captions: React.FC<{ timing: Timing; keywords?: string[] | Record<s
         const clean = w.w.replace(/[.,;:?!]+$/, '');
         const key = keys[clean.toLowerCase().replace(/[^a-z0-9-]/g, '')];
         return (
-          <span key={j} style={{ display: 'inline-block', fontFamily: SANS, fontWeight: 900, fontSize: 78, lineHeight: 1.08, letterSpacing: '0.02em', textTransform: 'uppercase', color: key ?? T.ink, WebkitTextStroke: '10px #FFFFFF', paintOrder: 'stroke fill', whiteSpace: 'nowrap' }}>
+          <span key={j} style={{ display: 'inline-block', fontFamily: SANS, fontWeight: 900, fontSize: size, lineHeight: 1.08, letterSpacing: '0.02em', textTransform: 'uppercase', color: key ?? T.ink, WebkitTextStroke: '10px #FFFFFF', paintOrder: 'stroke fill', whiteSpace: 'nowrap' }}>
             {clean}
           </span>
         );

@@ -17,10 +17,11 @@ const h = (k: number, s: number) => {
 // (0 hangs, 1 points straight ahead), for holding, pointing or reaching. sit = 1 swings both legs straight ahead
 // (sitting up in bed or on the floor): stand it at y = surface - 0.78 so the legs rest on the surface.
 // head = false leaves neck and head out so a piece can draw its own (e.g. a cutaway) at [0, 1.66, 0].
+// reach = 0..1 swings both arms in toward the middle so raised hands meet (washing hands, holding one small thing).
 export const Person: React.FC<{
-  pos?: V3; rot?: number; t?: number; walk?: number; armR?: number; armL?: number; sit?: number;
+  pos?: V3; rot?: number; t?: number; walk?: number; armR?: number; armL?: number; sit?: number; reach?: number;
   shirt?: string; pants?: string; skin?: string; hair?: string; scale?: number; head?: boolean;
-}> = ({ pos = [0, 0, 0], rot = 0, t = 0, walk = 0, armR = 0, armL = 0, sit = 0, shirt = T.white, pants = '#2E3238', skin = '#C08A62', hair = '#2E2622', scale = 1, head = true }) => {
+}> = ({ pos = [0, 0, 0], rot = 0, t = 0, walk = 0, armR = 0, armL = 0, sit = 0, reach = 0, shirt = T.white, pants = '#2E3238', skin = '#C08A62', hair = '#2E2622', scale = 1, head = true }) => {
   const sw = walk * 0.45 * Math.sin(2 * Math.PI * 1.1 * t);
   const breathe = 0.006 * Math.sin(1.6 * t);
   const Leg = ({ x, a }: { x: number; a: number }) => (
@@ -30,7 +31,7 @@ export const Person: React.FC<{
     </group>
   );
   const Arm = ({ x, a }: { x: number; a: number }) => (
-    <group position={[x, 1.42, 0]} rotation={[a, 0, 0]}>
+    <group position={[x, 1.42, 0]} rotation={[a, 0, -Math.sign(x) * reach * 0.42]}>
       <Cyl r={0.06} h={0.22} pos={[0, -0.08, 0]} color={shirt} />
       <Cyl r={0.045} h={0.5} pos={[0, -0.36, 0]} color={skin} />
       <Ball r={0.055} pos={[0, -0.63, 0]} color={skin} />
@@ -119,6 +120,19 @@ export const Tree: React.FC<{ pos?: V3; t?: number; scale?: number; leaf?: strin
     <Ball r={1.0} pos={[0, 2.8, 0]} color={leaf} />
     <Ball r={0.75} pos={[0.65, 2.4, 0.2]} color="#94B070" />
     <Ball r={0.7} pos={[-0.6, 2.5, -0.15]} color="#94B070" />
+  </group>
+);
+
+// A flat-bottomed cloud of puffs, about 5 m wide at scale 1, drifting along x (drift in m/s). color grey for
+// overcast, white for fair weather; opacity < 1 for thin cloud. No shadow, so the street below stays readable.
+export const Cloud: React.FC<{ pos?: V3; t?: number; drift?: number; scale?: number; color?: string; opacity?: number; seed?: number }> = ({
+  pos = [0, 10, 0], t = 0, drift = 0.15, scale = 1, color = '#D5D8DA', opacity = 1, seed = 1,
+}) => (
+  <group position={[pos[0] + drift * t, pos[1] + 0.08 * Math.sin(0.5 * t + seed), pos[2]]} scale={scale}>
+    {[[0, 0.35, 0, 1.15], [1.25, 0.1, 0.2, 0.85], [-1.3, 0.05, -0.1, 0.9], [0.5, 0.85, -0.2, 0.75], [-0.6, 0.7, 0.3, 0.7], [2.2, -0.05, 0, 0.55], [-2.2, -0.05, 0.1, 0.5]].map(([x, y, z, r], k) => (
+      <Ball key={k} r={r * (0.9 + 0.2 * h(k, seed))} pos={[x, y, z]} color={color} opacity={opacity} shadow={false} />
+    ))}
+    <Box size={[4.6, 0.3, 1.6]} pos={[0, -0.15, 0]} color={color} opacity={opacity} edge={false} shadow={false} />
   </group>
 );
 
@@ -610,12 +624,49 @@ export const Mug: React.FC<{ pos?: V3; color?: string; drink?: string; steam?: n
 // a helmet with hands on the bar; nod tips the rider's head forward (radians, 0 upright), lean leans the bike into
 // a turn. head = false leaves the head out so a piece can draw its own (e.g. a cutaway) at bikeNeck.
 // children draw in the rider's frame in place of the head. lights = 0..1 head and tail lamps. Wheels at x = -0.62, 0.63.
+// Arms: sleeve = share of the arm (shoulder to wrist) the shirt covers (1 long sleeve, ~0.35 short); skin is the bare
+// arm and hand, pale the skin above tanLine (same share), so a rolled-up sleeve shows a tan line. Back of hand faces up.
 export const bikeNeck: V3 = [-0.17, 1.5, 0];
+export const bikeHand = (s: 1 | -1): V3 => [0.41, 1.15, s * 0.37];
+const SH = [-0.2, 1.38, 0.2], EL = [0.05, 1.2, 0.27], WR = [0.36, 1.13, 0.33];
+const armAt = (u: number, s: number): V3 => {
+  const l1 = 0.31, l2 = 0.32, d = u * (l1 + l2);
+  const [a, b, k] = d <= l1 ? [SH, EL, d / l1] : [EL, WR, (d - l1) / l2];
+  return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, s * (a[2] + (b[2] - a[2]) * k)];
+};
+const RiderArm: React.FC<{ s: number; sleeve: number; tanLine: number; shirt: string; skin: string; pale: string }> = ({ s, sleeve, tanLine, shirt, skin, pale }) => {
+  const seg = (u0: number, u1: number, color: string, r: number) => {
+    if (u1 - u0 < 0.004) return null;
+    const pts: V3[] = [armAt(u0, s)];
+    if (u0 < 0.49 && u1 > 0.49) pts.push(armAt(0.49, s));
+    pts.push(armAt(u1, s));
+    return <Tube key={`${color}${u0}`} pts={pts} r={r} color={color} />;
+  };
+  const sl = Math.min(1, Math.max(0, sleeve));
+  const tl = Math.max(sl, tanLine);
+  return (
+    <>
+      {seg(0, sl, shirt, 0.05)}
+      {seg(sl, tl, pale, 0.042)}
+      {seg(tl, 1, skin, 0.04)}
+      {sl > 0.47 && sl < 1 && <Ball r={0.05} pos={armAt(sl, s)} color={shirt} />}
+      <Ball r={0.042} pos={armAt(0.49, s)} color={sl > 0.49 ? shirt : tl > 0.49 ? pale : skin} />
+      {/* hand on the grip: back of the hand up, fingers wrapped round the front */}
+      <group position={bikeHand(s as 1 | -1)} scale={[1.35, 0.6, 1.1]}>
+        <Ball r={0.05} color={skin} />
+      </group>
+      {[-0.03, 0, 0.03].map((z) => (
+        <Tube key={z} pts={[[0.44, 1.15, s * 0.37 + z], [0.465, 1.11, s * 0.37 + z], [0.44, 1.075, s * 0.37 + z]]} r={0.014} color={skin} />
+      ))}
+    </>
+  );
+};
 export const Motorbike: React.FC<{
   pos?: V3; rot?: number; body?: string; rider?: boolean; head?: boolean; nod?: number; lean?: number; lights?: number;
   shirt?: string; pants?: string; helmet?: string; t?: number; children?: React.ReactNode;
-}> = ({ pos = [0, 0, 0], rot = 0, body = T.white, rider = false, head = true, nod = 0, lean = 0, lights = 0, shirt = '#4F6D8A', pants = '#2E3238', helmet = T.dark, t = 0, children }) => {
-  const skin = '#C08A62';
+  sleeve?: number; tanLine?: number; skin?: string; pale?: string;
+}> = ({ pos = [0, 0, 0], rot = 0, body = T.white, rider = false, head = true, nod = 0, lean = 0, lights = 0, shirt = '#4F6D8A', pants = '#2E3238', helmet = T.dark, t = 0, children,
+  sleeve = 1, tanLine = 0, skin = '#C08A62', pale }) => {
   const sway = 0.006 * Math.sin(1.7 * t);
   return (
     <group position={pos} rotation={[0, rot, 0]}>
@@ -655,8 +706,7 @@ export const Motorbike: React.FC<{
                 <Box size={[0.42, 0.15, 0.15]} pos={[-0.08, 0.92, s * 0.11]} rot={[0, 0, 0.12]} color={pants} />
                 <Box size={[0.13, 0.48, 0.13]} pos={[0.12, 0.62, s * 0.13]} rot={[0, 0, -0.12]} color={pants} />
                 <Box size={[0.26, 0.08, 0.12]} pos={[0.18, 0.41, s * 0.13]} color={T.rubber} />
-                <Tube pts={[[-0.2, 1.38, s * 0.2], [0.05, 1.2, s * 0.27], [0.4, 1.12, s * 0.34]]} r={0.045} color={shirt} />
-                <Ball r={0.045} pos={[0.41, 1.12, s * 0.36]} color={skin} />
+                <RiderArm s={s} sleeve={sleeve} tanLine={tanLine} shirt={shirt} skin={skin} pale={pale ?? skin} />
               </group>
             ))}
             <Box size={[0.26, 0.56, 0.4]} pos={[-0.26, 1.18, 0]} rot={[0, 0, -0.18]} color={shirt} />
@@ -772,3 +822,75 @@ export const Fan: React.FC<{ pos?: V3; rot?: number; t?: number; on?: number; sw
     </group>
   );
 };
+
+// A long backless wooden bench (bangku teras), seat top at y = hgt, w across (x). For a person sitting on it:
+// Person sit = 0.55 at y = hgt - 0.81 puts the hips on the seat and the feet on the floor.
+export const Bench: React.FC<{ pos?: V3; rot?: number; w?: number; d?: number; hgt?: number; color?: string; leg?: string }> = ({
+  pos = [0, 0, 0], rot = 0, w = 2, d = 0.42, hgt = 0.5, color = '#B98A5E', leg = '#8E6542',
+}) => (
+  <group position={pos} rotation={[0, rot, 0]}>
+    {[-1, 0, 1].map((k) => <Box key={k} size={[w, 0.05, d / 3 - 0.015]} pos={[0, hgt - 0.025, (k * d) / 3]} color={color} />)}
+    <Box size={[w - 0.2, 0.08, d - 0.1]} pos={[0, hgt - 0.09, 0]} color={leg} edge={false} />
+    {[-1, 1].map((sx) => (
+      <group key={sx}>
+        <Box size={[0.06, hgt - 0.05, d - 0.06]} pos={[sx * (w / 2 - 0.15), (hgt - 0.05) / 2, 0]} color={leg} />
+        <Box size={[0.08, 0.04, d]} pos={[sx * (w / 2 - 0.15), 0.02, 0]} color={leg} />
+      </group>
+    ))}
+  </group>
+);
+
+// An Aedes mosquito (black with white bands and white-banded legs), nose toward +z, always drawn enlarged
+// (about 0.35 units long at s = 1). t beats the wings slowly (2 Hz, so it doesn't alias at 30 fps).
+// The feathery antennae run from ANT_BASE to ANT_TIP (x mirrored); children draw in its frame, e.g. marks on them.
+export const ANT_BASE: V3 = [0.012, 0.012, 0.13];
+export const ANT_TIP: V3 = [0.07, 0.08, 0.22];
+export const Mosquito: React.FC<{ pos: V3; yaw?: number; pitch?: number; s?: number; t?: number; opacity?: number; children?: React.ReactNode }> = ({
+  pos, yaw = 0, pitch = 0, s = 1, t = 0, opacity = 1, children,
+}) => {
+  if (opacity <= 0.01) return null;
+  const o = opacity, blk = '#161616', wht = '#F2F2F2';
+  const flap = 0.35 * Math.sin(2 * Math.PI * 2 * t);
+  const leg = (sx: number, z: number, k: number): V3[] => [[0, -0.01, z], [sx * 0.07, 0.04, z + 0.015 * k], [sx * 0.15, -0.06, z + 0.04 * k], [sx * 0.19, -0.16, z + 0.07 * k]];
+  return (
+    <group position={pos} rotation={[pitch, yaw, 0]} scale={s}>
+      <Ball r={0.045} pos={[0, 0, 0.05]} color={blk} opacity={o} />
+      <Box size={[0.012, 0.004, 0.05]} pos={[0, 0.044, 0.055]} color={wht} opacity={o} edge={false} />
+      <Ball r={0.028} pos={[0, -0.005, 0.11]} color={blk} opacity={o} />
+      <Ball r={0.018} pos={[0.018, 0.004, 0.122]} color="#3A3F44" opacity={o} edge={false} />
+      <Ball r={0.018} pos={[-0.018, 0.004, 0.122]} color="#3A3F44" opacity={o} edge={false} />
+      <Cyl r={0.005} h={0.11} pos={[0, -0.03, 0.18]} rot={[Math.PI / 2 + 0.35, 0, 0]} color={blk} opacity={o} edge={false} />
+      {[1, -1].map((sx) => {
+        const a: V3 = [sx * ANT_BASE[0], ANT_BASE[1], ANT_BASE[2]], b: V3 = [sx * ANT_TIP[0], ANT_TIP[1], ANT_TIP[2]];
+        return (
+          <group key={sx}>
+            <Tube pts={[a, b]} r={0.004} color={blk} opacity={o} />
+            {[0.25, 0.45, 0.65, 0.85].map((u) => (
+              <Tube key={u} pts={[[mixV(a[0], b[0], u) - 0.012, mixV(a[1], b[1], u) + 0.012, mixV(a[2], b[2], u) + 0.006], [mixV(a[0], b[0], u) + 0.012, mixV(a[1], b[1], u) - 0.012, mixV(a[2], b[2], u) - 0.006]]} r={0.0022} color="#4A4F55" opacity={o} />
+            ))}
+          </group>
+        );
+      })}
+      <group position={[0, 0.005, -0.09]} scale={[0.6, 0.55, 2]}>
+        <Ball r={0.05} color={blk} opacity={o} />
+      </group>
+      {[-0.04, -0.08, -0.12].map((z, i) => <Cyl key={i} r={0.029 - i * 0.004} h={0.009} pos={[0, 0.005, z]} rot={[Math.PI / 2, 0, 0]} color={wht} opacity={o} edge={false} />)}
+      {[[1, 0.07, 1], [1, 0.05, 0], [1, 0.03, -1], [-1, 0.07, 1], [-1, 0.05, 0], [-1, 0.03, -1]].map(([sx, z, k], i) => {
+        const p = leg(sx, z, k);
+        return (
+          <group key={i}>
+            <Tube pts={p} r={0.0045} color={blk} opacity={o} />
+            <Ball r={0.007} pos={p[2]} color={wht} opacity={o} edge={false} />
+          </group>
+        );
+      })}
+      {[1, -1].map((sx) => (
+        <group key={sx} position={[sx * 0.02, 0.035, 0.03]} rotation={[0, sx * 0.25, sx * (0.3 + flap)]}>
+          <Box size={[0.19, 0.003, 0.055]} pos={[sx * 0.095, 0, -0.035]} color="#DDE4E8" opacity={0.55 * o} edge={false} />
+        </group>
+      ))}
+      {children}
+    </group>
+  );
+};
+const mixV = (a: number, b: number, u: number) => a + (b - a) * u;

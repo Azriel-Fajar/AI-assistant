@@ -395,16 +395,21 @@ def show_tokens(show, words):
         if op == "equal":
             for k in range(i2 - i1):
                 toks[i1 + k] = {"w": show[i1 + k], "s": words[j1 + k]["s"], "e": words[j1 + k]["e"]}
-        elif op in ("replace", "insert"):
+        elif op in ("replace", "delete"):
+            lo = i1
             if j2 > j1:
                 t0, t1 = words[j1]["s"], words[j2 - 1]["e"]
+            elif i1 and toks[i1 - 1]:
+                # Shown but never said ("(ISPA),"): it shares the time of the word before it, so it stays on screen.
+                lo = i1 - 1
+                t0, t1 = toks[lo]["s"], toks[lo]["e"]
             else:
                 t0 = words[j1 - 1]["e"] if j1 else words[0]["s"]
                 t1 = words[j1]["s"] if j1 < len(words) else t0 + 0.12
             t1 = max(t1, t0 + 0.05)
-            tot = sum(syllables(show[k]) for k in range(i1, i2))
+            tot = sum(syllables(show[k]) for k in range(lo, i2))
             cur = t0
-            for k in range(i1, i2):
+            for k in range(lo, i2):
                 d = (t1 - t0) * syllables(show[k]) / tot
                 toks[k] = {"w": show[k], "s": round(cur, 3), "e": round(cur + d, 3)}
                 cur += d
