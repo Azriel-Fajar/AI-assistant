@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>How AI Works</title>
+<script src="assets/gsap.min.js"></script>
+<script src="assets/doodle.js"></script>
+<script src="scenes.js"></script>
+<link rel="stylesheet" href="assets/theme.css">
+<style>
+  .title-pos { position: absolute; left: 0; top: 0; }
+  .art { position: absolute; left: 0; top: 330px; width: 860px; height: 600px; }
+  .abs { position: absolute; }
+  .row-label { position: absolute; left: 0; width: 240px; }
+</style>
+</head><body>
+<div id="main" class="stage" data-composition-id="main" data-start="0" data-duration="20.3" data-width="1080" data-height="1920">
+
+<div id="sheet" class="sheet clip" style="height:9600px" data-start="0" data-duration="20.3" data-track-index="0">
+
+  <!-- 1 hook -->
+  <section class="scene" style="top:0">
+    <div class="scene-body">
+      <h1 id="s1-title" class="hand-title title-pos">How does <span class="mark">AI<svg id="s1-mark" viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M18 8 C45 -2 92 4 96 24 C99 44 55 52 28 46 C4 41 -2 22 14 10 L24 6"/></svg></span> answer?</h1>
+      <svg class="doodle art" viewBox="0 0 860 600">
+        <g id="s1-bubble">
+          <path d="M70 60 C150 52 300 56 350 64 C376 68 384 90 382 150 C380 220 384 268 352 286 C300 296 200 292 140 294 L96 350 L110 292 C70 290 46 270 44 220 C40 160 42 90 70 60 Z"/>
+          <path d="M175 130 C182 96 250 92 255 132 C258 162 215 170 214 205 M214 245 L215 250"/>
+        </g>
+        <g id="s1-arrow"><path d="M400 180 C450 170 500 172 540 182"/><path d="M518 162 L542 182 L516 200"/></g>
+        <g id="s1-bot">
+          <path d="M580 80 C660 74 760 76 800 84 C812 150 812 230 804 300 C730 308 640 306 584 300 C576 230 574 150 580 80 Z"/>
+          <path d="M650 160 L652 192 M740 160 L742 192"/>
+          <path d="M640 240 C680 268 720 268 760 240"/>
+          <path d="M690 80 L690 42"/><path d="M680 32 C680 18 700 18 700 32 C700 44 680 44 680 32 Z"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 2 data -->
+  <section class="scene" style="top:1920px">
+    <div class="scene-body">
+      <h1 id="s2-title" class="hand-title title-pos">AI learns from millions of examples</h1>
+      <svg class="doodle art" viewBox="0 0 860 600">
+        <g id="s2-doc"><path d="M60 90 L230 84 L236 300 L66 306 Z"/><path d="M90 140 L200 136 M90 180 L205 178 M90 220 L180 218 M90 260 L195 258" class="soft"/></g>
+        <g id="s2-img"><path d="M300 90 L540 86 L544 300 L304 304 Z"/><path d="M320 282 L390 190 L440 240 L480 200 L528 282"/><path d="M468 140 C468 110 512 110 512 140 C512 168 468 168 468 140 Z"/></g>
+        <g id="s2-chat"><path d="M600 100 C680 94 790 96 810 104 C818 140 816 170 808 190 C740 196 660 196 610 192 L590 222 L598 188 C590 160 592 120 600 100 Z"/><path d="M640 236 C700 230 790 232 812 238 C818 264 818 290 810 306 C760 312 690 312 646 308 C638 290 636 260 640 236 Z"/><path d="M630 146 L770 142 M666 272 L780 270" class="soft"/></g>
+        <g id="s2-arrows"><path d="M150 330 C200 390 300 420 370 440"/><path d="M345 424 L372 440 L344 456"/><path d="M424 330 L428 420"/><path d="M410 400 L428 424 L446 400"/><path d="M710 340 C650 392 560 420 490 440"/><path d="M516 456 L488 440 L514 424"/></g>
+      </svg>
+      <p id="s2-label" class="hand-title abs" style="top:800px;left:0;width:860px;text-align:center"><span class="mark">data<svg id="s2-mark" viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M4 44 C30 40 70 42 98 38 M10 50 C40 46 70 48 92 45"/></svg></span></p>
+    </div>
+  </section>
+
+  <!-- 3 pattern -->
+  <section class="scene" style="top:3840px">
+    <div class="scene-body">
+      <h1 id="s3-title" class="hand-title title-pos">AI looks for <span class="mark">patterns<svg id="s3-mark" viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M14 10 C45 -2 94 4 97 25 C99 46 52 52 26 45 C3 39 -1 18 12 9 L22 5"/></svg></span></h1>
+      <svg class="doodle art" viewBox="0 0 860 600" style="height:420px">
+        <g id="s3-lines" class="soft"><path d="M150 70 L404 130 M150 70 L404 300 M150 200 L404 130 M150 200 L404 300 M150 330 L404 130 M150 330 L404 300 M456 130 L706 210 M456 300 L706 210"/></g>
+        <g id="s3-nodes"><path d="M100 70 C100 40 150 40 150 70 C150 98 100 98 100 70 Z"/><path d="M100 200 C100 170 150 170 150 200 C150 228 100 228 100 200 Z"/><path d="M100 330 C100 300 150 300 150 330 C150 358 100 358 100 330 Z"/><path d="M404 130 C404 100 456 100 456 130 C456 158 404 158 404 130 Z"/><path d="M404 300 C404 270 456 270 456 300 C456 328 404 328 404 300 Z"/><path d="M706 210 C706 176 762 176 762 210 C762 242 706 242 706 210 Z" class="red"/></g>
+      </svg>
+      <p id="s3-ex" class="hand-body abs" style="top:800px;left:0;width:860px;text-align:center">"good" &#8594; "morning"</p>
+      <p id="s3-note" class="hand-note abs" style="top:880px;left:0;width:860px;text-align:center">words that often go together</p>
+    </div>
+  </section>
+
+  <!-- 4 guess -->
+  <section class="scene" style="top:5760px">
+    <div class="scene-body">
+      <h1 id="s4-title" class="hand-title title-pos">AI <span class="mark">predicts<svg id="s4-mark" viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M4 44 C30 40 70 42 98 38"/></svg></span> the next word</h1>
+      <p id="s4-q" class="hand-body abs" style="top:330px;left:0">The capital of France is ...</p>
+      <p id="s4-l1" class="hand-body row-label" style="top:480px"><span class="mark">Paris<svg id="s4-ring" viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M12 8 C45 -2 94 4 97 25 C99 46 52 52 26 45 C3 39 -1 18 10 9 L20 5"/></svg></span></p>
+      <p id="s4-l2" class="hand-body row-label" style="top:620px">Lyon</p>
+      <p id="s4-l3" class="hand-body row-label" style="top:760px">Nice</p>
+      <svg class="doodle abs" viewBox="0 0 600 420" style="left:260px;top:470px;width:600px;height:420px">
+        <path id="s4-b1" class="wash" d="M10 20 L470 16 L474 76 L12 80 Z"/>
+        <path id="s4-b2" class="wash" d="M10 160 L80 158 L82 218 L12 220 Z"/>
+        <path id="s4-b3" class="wash" d="M10 300 L50 298 L52 358 L12 360 Z"/>
+      </svg>
+      <p id="s4-p1" class="hand-note abs" style="top:495px;left:750px">92%</p>
+      <p id="s4-p2" class="hand-note abs" style="top:635px;left:360px">5%</p>
+      <p id="s4-p3" class="hand-note abs" style="top:775px;left:330px">3%</p>
+    </div>
+  </section>
+
+  <!-- 5 outro -->
+  <section class="scene" style="top:7680px">
+    <div class="scene-body">
+      <h1 id="s5-title" class="hand-title title-pos">AI doesn't think like us</h1>
+      <svg class="doodle art" viewBox="0 0 860 600" style="height:420px">
+        <g id="s5-brain"><path d="M120 200 C80 150 120 80 190 96 C210 50 300 50 320 100 C390 90 420 170 380 210 C410 260 350 320 290 300 C260 340 170 340 160 296 C100 300 80 240 120 200 Z"/><path d="M190 140 C220 170 200 210 240 230 M280 120 C260 170 300 200 290 250" class="soft"/></g>
+        <g id="s5-cross"><path class="red" d="M110 70 L400 330"/><path class="red" d="M400 70 L110 330"/></g>
+        <g id="s5-target"><path d="M560 200 C560 110 760 110 760 200 C760 290 560 290 560 200 Z"/><path d="M610 200 C610 150 710 150 710 200 C710 250 610 250 610 200 Z"/><path d="M650 200 C650 182 670 182 670 200 C670 218 650 218 650 200 Z"/><path d="M820 80 L668 196"/><path d="M790 70 L822 80 L812 110"/></g>
+      </svg>
+      <p id="s5-line" class="hand-body abs" style="top:800px;left:0;width:860px;text-align:center">it makes very <span class="mark">smart<svg id="s5-mark" viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M14 10 C45 -2 94 4 97 25 C99 46 52 52 26 45 C3 39 -1 18 12 9 L22 5"/></svg></span> guesses</p>
+    </div>
+  </section>
+</div>
+
+
+<audio id="vo" src="assets/vo.mp3" data-start="0" data-duration="19.58" data-track-index="10" data-volume="1"></audio>
+<audio id="bed" src="assets/music-bed.m4a" data-start="0" data-duration="20.3" data-track-index="11" data-volume="1"></audio>
+<audio id="wh1" src=".media/audio/sfx/sfx_001.mp3" data-start="2.0" data-duration="1.2" data-track-index="12" data-volume="0.3"></audio>
+<audio id="wh2" src=".media/audio/sfx/sfx_001.mp3" data-start="5.5" data-duration="1.2" data-track-index="12" data-volume="0.3"></audio>
+<audio id="wh3" src=".media/audio/sfx/sfx_001.mp3" data-start="10.7" data-duration="1.2" data-track-index="12" data-volume="0.3"></audio>
+<audio id="wh4" src=".media/audio/sfx/sfx_001.mp3" data-start="15.58" data-duration="1.2" data-track-index="12" data-volume="0.3"></audio>
+<audio id="ck1" src=".media/audio/sfx/sfx_003.mp3" data-start="0.62" data-duration="0.4" data-track-index="13" data-volume="0.4"></audio>
+<audio id="ck2" src=".media/audio/sfx/sfx_003.mp3" data-start="5.12" data-duration="0.4" data-track-index="13" data-volume="0.4"></audio>
+<audio id="ck3" src=".media/audio/sfx/sfx_003.mp3" data-start="7.69" data-duration="0.4" data-track-index="13" data-volume="0.4"></audio>
+<audio id="ck4" src=".media/audio/sfx/sfx_003.mp3" data-start="14.84" data-duration="0.4" data-track-index="13" data-volume="0.4"></audio>
+<audio id="ck5" src=".media/audio/sfx/sfx_003.mp3" data-start="18.53" data-duration="0.4" data-track-index="13" data-volume="0.4"></audio>
+</div>
+
+<script>
+const S = window.SCENES.scenes;
+// start time of the n-th occurrence of a word in scene s (0-based scene index)
+const at = (s, w, n = 1) => S[s].words.filter((x) => x[0] === w)[n - 1][1];
+const tl = gsap.timeline({ paused: true });
+const lead = 0.1;
+
+// camera pans between scenes
+for (let i = 1; i < S.length; i++) Doodle.pan(tl, "#sheet", i, S[i].start - 0.3);
+
+// 1 hook
+Doodle.write(tl, "#s1-title", 0.15);
+Doodle.draw(tl, "#s1-mark", at(0, "ai") + 0.1, 0.4);
+Doodle.draw(tl, "#s1-bubble", at(0, "answer") - lead, 0.5);
+Doodle.draw(tl, "#s1-arrow", at(0, "questions") - lead, 0.3);
+Doodle.draw(tl, "#s1-bot", at(0, "questions") + 0.2, 0.55);
+
+// 2 data
+Doodle.write(tl, "#s2-title", S[1].start + 0.15);
+Doodle.draw(tl, "#s2-doc", at(1, "millions") - lead, 0.4);
+Doodle.draw(tl, "#s2-img", at(1, "examples") - lead, 0.4);
+Doodle.draw(tl, "#s2-chat", at(1, "examples") + 0.35, 0.4);
+Doodle.draw(tl, "#s2-arrows", at(1, "thats") - lead, 0.4);
+Doodle.write(tl, "#s2-label", at(1, "data") - lead, 0.3);
+Doodle.draw(tl, "#s2-mark", at(1, "data") + 0.1, 0.3);
+
+// 3 pattern
+Doodle.write(tl, "#s3-title", S[2].start + 0.15);
+Doodle.draw(tl, "#s3-nodes", at(2, "data") - lead, 0.6);
+Doodle.draw(tl, "#s3-lines", at(2, "looks") - lead, 0.5);
+Doodle.draw(tl, "#s3-mark", at(2, "patterns") + 0.05, 0.4);
+Doodle.write(tl, "#s3-ex", at(2, "which") - lead);
+Doodle.write(tl, "#s3-note", at(2, "come") - lead);
+
+// 4 guess
+Doodle.write(tl, "#s4-title", S[3].start + 0.15);
+Doodle.write(tl, "#s4-q", at(3, "ask") - lead);
+Doodle.draw(tl, "#s4-mark", at(3, "predicts") + 0.1, 0.3);
+Doodle.write(tl, ["#s4-l1", "#s4-l2", "#s4-l3"], at(3, "most") - 0.3, 0.3);
+Doodle.draw(tl, "#s4-b1", at(3, "likely") - lead, 0.4);
+Doodle.draw(tl, "#s4-b2", at(3, "answer") - lead, 0.2);
+Doodle.draw(tl, "#s4-b3", at(3, "answer") + 0.15, 0.2);
+Doodle.pop(tl, ["#s4-p1", "#s4-p2", "#s4-p3"], at(3, "word") - lead);
+Doodle.draw(tl, "#s4-ring", at(3, "by"), 0.4);
+
+// 5 outro
+Doodle.write(tl, "#s5-title", S[4].start + 0.15);
+Doodle.draw(tl, "#s5-brain", at(4, "think") - lead, 0.5);
+Doodle.draw(tl, "#s5-cross", at(4, "do") - lead, 0.3);
+Doodle.draw(tl, "#s5-target", at(4, "it") - lead, 0.6);
+Doodle.write(tl, "#s5-line", at(4, "makes") - lead);
+Doodle.draw(tl, "#s5-mark", at(4, "smart") + 0.05, 0.4);
+
+
+window.__timelines = window.__timelines || {};
+window.__timelines["main"] = tl;
+</script>
+</body></html>

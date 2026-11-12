@@ -1,0 +1,35 @@
+/* kinetic theme: 3D kinetic type, red cards. Tokens + classes named in THEME.md */
+/* Poppins (Indian Type Foundry) + Six Caps (Vernon Adams): SIL OFL 1.1, latin subset */
+@font-face { font-family: 'Poppins'; font-weight: 900; src: url('fonts/poppins-900.woff2') format('woff2'); }
+@font-face { font-family: 'Poppins'; font-weight: 600; src: url('fonts/poppins-600.woff2') format('woff2'); }
+@font-face { font-family: 'Six Caps'; font-weight: 400; src: url('fonts/six-caps.woff2') format('woff2'); }
+
+:root { --plate: #e9e6e1; --plate-edge: #c9c4bc; --ink: #161616; --white: #f4f4f4; --red: #b51722; --grey: #7d7d7d;
+  --card-c: #c70808; --card-m: #ae0606; --card-e: #880404; --shadow-red: #5e0006; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--plate); }
+.stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; perspective: 1600px; background: radial-gradient(ellipse at 50% 42%, var(--plate), var(--plate-edge) 90%); }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+.world { transform-style: preserve-3d; }   /* camera dolly animates its z */
+
+/* full-screen red grid card (punchlines) */
+.card { background-color: var(--card-m);
+  background-image:linear-gradient(rgba(255,255,255,.05) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,.05) 2px, transparent 2px),
+    radial-gradient(circle at 50% 45%, var(--card-c), var(--card-m) 50%, var(--card-e));
+  background-size: 216px 216px, 216px 216px, 100% 100%; }
+.drop { position: absolute; border-radius: 50%; background: var(--card-c); }
+
+/* words: absolutely placed, lowercase, tight */
+.w { position: absolute; font-family: 'Poppins', sans-serif; font-weight: 900; text-transform: lowercase; letter-spacing: -0.05em;
+  line-height: 0.85; white-space: nowrap; color: var(--ink); transform-origin: 50% 60%; }
+.w.small { font-weight: 600; letter-spacing: -0.02em; }
+.on-card .w, .w.white { color: var(--white); text-shadow: 0 0.03em 0.09em rgba(0,0,0,.28); }
+.w.red { color: var(--red); }
+.w.grey { color: var(--grey); }
+.w.cond { font-family: 'Six Caps', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.02em; -webkit-text-stroke: 8px currentColor; }
+.w.hard { text-shadow: 0.045em 0.045em 0 var(--shadow-red); }
+
+/* text on an arc: <svg class="layer"><path id=".." d="arc"/><text class="arc"><textPath href="#..">word</textPath></text></svg> */
+.arc { font-family: 'Poppins', sans-serif; font-weight: 900; letter-spacing: -0.03em; fill: var(--ink); }
+.on-card .arc { fill: var(--white); }

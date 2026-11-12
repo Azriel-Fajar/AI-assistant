@@ -1,0 +1,17 @@
+[
+  { "line": "hook1", "word": "tik", "n": 1, "type": "drip", "gain": -3 },
+  { "line": "hook1", "word": "tik", "n": 2, "type": "drip", "gain": -3 },
+  { "line": "hook1", "word": "tik", "n": 3, "type": "drip", "gain": -3 },
+  { "line": "hook4", "word": "lihat", "type": "whoosh", "gain": -4 },
+  { "line": "num3", "offset": 0.1, "type": "pop", "gain": -8 },
+  { "line": "num4", "offset": 0.05, "type": "whoosh", "gain": -6 },
+  { "line": "why1", "offset": 0, "type": "whoosh", "gain": -5 },
+  { "line": "why3", "word": "neken", "type": "thud", "gain": -2 },
+  { "line": "wear2", "word": "aus", "type": "crack", "gain": -2 },
+  { "line": "wear3", "word": "lolos", "type": "drip", "gain": -3 },
+  { "line": "fix0", "offset": 0, "type": "whoosh", "gain": -6 },
+  { "line": "fix1", "word": "tutup", "type": "squeak", "gain": -5 },
+  { "line": "fix2", "word": "lepas", "type": "pop", "gain": -5 },
+  { "line": "fix3", "word": "pasang", "type": "thud", "gain": -5 },
+  { "line": "close2", "word": "karet", "type": "ding", "gain": -6 }
+]

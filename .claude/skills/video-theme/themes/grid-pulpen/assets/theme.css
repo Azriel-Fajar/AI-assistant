@@ -1,0 +1,57 @@
+/* grid-pulpen theme: tokens + classes named in THEME.md */
+/* Kalam by Indian Type Foundry, SIL Open Font License 1.1 (Google Fonts), latin subset */
+@font-face { font-family: 'Kalam'; font-weight: 400; src: url('fonts/kalam-400.woff2') format('woff2'); }
+@font-face { font-family: 'Kalam'; font-weight: 700; src: url('fonts/kalam-700.woff2') format('woff2'); }
+
+:root {
+  --paper: #fdfdfb;
+  --grid: #dde6f3;
+  --ink: #1d3b8f;
+  --ink-soft: #5b72b5;
+  --wash: #e9eefa;
+  --red: #d83a3a;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+
+.stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+
+/* one tall sheet; scene i sits at top: i*1920px */
+.sheet {
+  position: absolute; left: 0; top: 0; width: 1080px;
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 2px, transparent 2px),
+    linear-gradient(90deg, var(--grid) 2px, transparent 2px);
+  background-size: 72px 72px;
+}
+.scene { position: absolute; left: 0; width: 1080px; height: 1920px; }
+.scene-body { position: absolute; left: 80px; top: 220px; width: 860px; height: 930px; }
+
+.hand-title, .hand-body, .hand-note, .caption { font-family: 'Kalam', cursive; color: var(--ink); margin: 0; }
+.hand-title { font-size: 104px; font-weight: 700; line-height: 1.05; max-width: 860px; }
+.hand-body { font-size: 60px; font-weight: 400; line-height: 1.15; }
+.hand-note { font-size: 44px; font-weight: 400; color: var(--ink-soft); }
+.red-text { color: var(--red); }
+
+.doodle { overflow: visible; }
+.doodle * { fill: none; stroke: var(--ink); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.doodle .red { stroke: var(--red); }
+.doodle .soft { stroke: var(--ink-soft); stroke-width: 5; }
+.doodle .wash { fill: var(--wash); }
+
+/* red pen mark around/under one word: <span class="mark">kata<svg viewBox="0 0 100 50" preserveAspectRatio="none">...</svg></span> */
+.mark { position: relative; display: inline-block; }
+.mark > svg { position: absolute; left: -14%; top: -24%; width: 128%; height: 148%; overflow: visible; }
+.mark > svg * { fill: none; stroke: var(--red); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+
+.caption-box { position: absolute; left: 80px; top: 1250px; width: 860px; height: 250px; }
+.caption {
+  position: absolute; left: 0; right: 0; top: 0;
+  padding: 18px 24px 22px; text-align: center;
+  font-size: 58px; font-weight: 700; line-height: 1.15;
+  background: var(--paper); border-top: 4px dashed var(--ink);
+  opacity: 0;
+}
+.caption .key { color: var(--red); }

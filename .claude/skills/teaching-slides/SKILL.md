@@ -26,6 +26,7 @@ Courses supported: **DDP** (Dasar-Dasar Pemrograman, bahasa C), **PTI** (Pengant
 2. Language of the deck? (Indonesian with English technical terms / full English / other) -- **always ask, no default.**
 3. Anything to add beyond the material? (Azriel often adds a subtopic, e.g. type conversion added to DDP struktur C.)
 4. Include an assignment slide? Only ask if the material has no assignment. If the material has one, include it automatically.
+5. Lecturer name and meeting number? Skip whichever Azriel already gave. Both go on the title slide.
 
 Do not ask about slide count or design. Those are fixed below.
 
@@ -35,7 +36,14 @@ Do not ask about slide count or design. Those are fixed below.
 - **Design:** follow the existing design system in Claude Design. Do not invent a new theme. Only ask for monospace on code.
 - **Code:** always in a code block with syntax highlighting, copied exactly from source material.
 - **Tone:** asisten dosen talking to first-year students. Casual, clear, analogy-heavy. Not a lecture.
-- **Credits slide:** last slide, names + NIM of Azriel and the co-assistant(s) for that course (table below).
+- **Credits go on slide 1 (title slide), never a separate credits slide at the end.** Layout, top to bottom:
+  - Course full name as a small accent-colored monospace eyebrow (e.g. `Dasar-Dasar Pemrograman`).
+  - Topic as the big bold title.
+  - Thin horizontal divider.
+  - Three label/value rows, labels in small uppercase muted monospace, values in normal text:
+    - `LECTURER` -- lecturer name (bold).
+    - `TEACHING ASSISTANTS` -- each name in bold followed by its NIM in small muted monospace, names separated by a thin vertical bar (table below).
+    - `SESSION` -- `Meeting N`.
 
 ### 4. Per-course rules
 
@@ -68,10 +76,10 @@ Write the prompt in the deck's chosen language. Structure:
 
 1. One opening paragraph: course, topic, audience, language rule, tone.
 2. Constraint line: max 20 slides, efficient, one idea per slide, max 5 bullets, code in highlighted blocks.
-3. Numbered slide-by-slide spec. Each slide gets a title plus what goes on it. Inline every code sample and table in full, so Claude Design never has to guess.
-4. Interaction slide (per-course rule above).
-5. Assignment slide if applicable, with the full task spec and the Command Prompt output block for DDP.
-6. Credits slide with names + NIM.
+3. Slide 1: title slide with credits, exact layout from section 3.
+4. Numbered slide-by-slide spec. Each slide gets a title plus what goes on it. Inline every code sample and table in full, so Claude Design never has to guess.
+5. Interaction slide (per-course rule above).
+6. Assignment slide if applicable, with the full task spec and the Command Prompt output block for DDP.
 7. Closing line: follow the existing design system, do not create a new theme; monospace for code.
 
 Output it as one fenced block, nothing else after it except a one-line note if something needs Azriel's attention.
@@ -83,3 +91,4 @@ Output it as one fenced block, nothing else after it except a one-line note if s
 - Never invent code output. If unsure what a program prints, say so instead of guessing.
 - Copy buggy example code exactly as written, bugs intact. They are the exercise.
 - Never assume the deck language. Ask.
+- Never add a credits slide at the end. Credits live on slide 1.

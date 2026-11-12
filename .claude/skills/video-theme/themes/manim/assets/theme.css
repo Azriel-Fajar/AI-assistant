@@ -1,0 +1,14 @@
+/* manim theme (3Blue1Brown look): tokens + classes named in THEME.md */
+/* KaTeX_Main fonts (Computer Modern look) from KaTeX, MIT licence */
+@font-face { font-family: 'KaTeX_Main'; font-weight: 400; src: url('fonts/katex-main.woff2') format('woff2'); }
+@font-face { font-family: 'KaTeX_Main'; font-style: italic; font-weight: 400; src: url('fonts/katex-italic.woff2') format('woff2'); }
+
+:root { --bg: #0e0e0e; --white: #ece9e1; --blue: #58c4dd; --yellow: #f7d96f; --green: #83c167; --red: #fc6255; --grey: #888888; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--bg); }
+.stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--bg); }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+
+text { font-family: 'KaTeX_Main', serif; fill: var(--white); stroke: var(--white); stroke-width: 2; white-space: pre; }
+.shape { fill: none; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }

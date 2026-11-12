@@ -1,0 +1,53 @@
+/* hud theme (inspired by the "Level 5" workflow): tokens + classes named in THEME.md */
+/* Unbounded, Space Grotesk, JetBrains Mono, Instrument Serif: SIL OFL 1.1, latin subset */
+@font-face { font-family: 'Unbounded'; font-weight: 900; src: url('fonts/unbounded-900.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 500; src: url('fonts/space-grotesk-500.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-weight: 700; src: url('fonts/space-grotesk-700.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url('fonts/jetbrains-mono-500.woff2') format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: italic; font-weight: 400; src: url('fonts/instrument-serif-italic.woff2') format('woff2'); }
+
+:root { --black: #0b0a09; --orange: #ff5a26; --red: #ff3b1f; --white: #eceae4; --indigo: #1b1d4a; --dim: #6f6a63; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--black); }
+.stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--black); color: var(--white); }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+
+/* type roles */
+.title { font-family: 'Unbounded', sans-serif; font-weight: 900; text-transform: uppercase; line-height: 0.9; letter-spacing: -0.02em; }
+.ui { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+.mono { font-family: 'JetBrains Mono', monospace; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }
+.serif { font-family: 'Instrument Serif', serif; font-style: italic; }
+.abs { position: absolute; }
+.ca { text-shadow: -4px 0 rgba(255, 59, 31, .55), 4px 0 rgba(80, 160, 255, .45); }   /* chromatic aberration */
+.bloom { text-shadow: 0 0 28px rgba(255, 90, 38, .65), 0 0 60px rgba(255, 90, 38, .35); }
+
+/* backgrounds */
+.bg-orange { background: repeating-radial-gradient(circle at 50% 46%, #ff5a26 0 38px, #f04c1a 38px 76px); }
+.bg-black { background: radial-gradient(ellipse at 50% 45%, #1a1714, var(--black) 70%); }
+.bg-indigo { background: radial-gradient(ellipse at 50% 40%, #2a2d6a, var(--indigo) 70%); }
+
+/* HUD chrome (built by HUD.frame) */
+.hud { pointer-events: none; z-index: 50; }
+.hud .corner { position: absolute; width: 56px; height: 56px; border-color: rgba(236, 234, 228, .7); border-style: solid; border-width: 0; }
+.hud .tl { left: 36px; top: 36px; border-top-width: 3px; border-left-width: 3px; }
+.hud .tr { right: 36px; top: 36px; border-top-width: 3px; border-right-width: 3px; }
+.hud .bl { left: 36px; bottom: 36px; border-bottom-width: 3px; border-left-width: 3px; }
+.hud .br { right: 36px; bottom: 36px; border-bottom-width: 3px; border-right-width: 3px; }
+.hud .t-title { left: 80px; top: 92px; font-size: 34px; letter-spacing: 0.32em; }
+.hud .t-sub { left: 80px; top: 140px; font-size: 20px; color: var(--dim); }
+.hud .t-code { right: 80px; top: 92px; font-size: 34px; }
+.hud .t-wpm { right: 80px; top: 140px; font-size: 20px; color: var(--dim); }
+.hud .strip { left: 80px; top: 1580px; width: 920px; height: 70px; }
+.hud .bar { position: absolute; bottom: 0; width: 5px; background: rgba(236, 234, 228, .35); }
+.hud .mark { position: absolute; top: -18px; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 11px solid var(--orange); }
+.hud .playhead { position: absolute; top: -26px; width: 3px; height: 100px; background: var(--red); }
+.hud .readout { left: 80px; top: 1500px; font-size: 22px; color: var(--orange); }
+.hud .handle { left: 80px; top: 1690px; font-size: 26px; letter-spacing: 0.02em; }
+.hud .chapter { right: 80px; top: 1690px; font-size: 24px; }
+
+/* finishing */
+.vignette { background: radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(0, 0, 0, .55)); z-index: 40; pointer-events: none; }
+.grain { z-index: 45; pointer-events: none; mix-blend-mode: overlay; opacity: .22; }
+.flash { background: #fff; opacity: 0; z-index: 60; pointer-events: none; }
+.bracket { position: absolute; width: 40px; height: 40px; border: 0 solid var(--orange); }

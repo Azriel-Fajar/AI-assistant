@@ -1,0 +1,29 @@
+{
+  "title": "Keran netes",
+  "lines": [
+    { "id": "hook1", "say": "Tik. Tik. Tik." },
+    { "id": "hook2", "say": "Keran netes semalaman, dibiarin aja." },
+    { "id": "hook3", "say": "Paling cuma setetes." },
+    { "id": "hook4", "say": "Beneran cuma setetes? Kita lihat dalemnya." },
+    { "id": "num1", "say": "Satu tetes itu kira-kira seperempat mililiter.", "show": "Satu tetes kira-kira ¼ mililiter." },
+    { "id": "num2", "say": "Kalau netes sedetik sekali, sehari jadi dua puluh satu liter lebih.", "show": "Kalau netes sedetik sekali, sehari jadi 21 liter lebih." },
+    { "id": "num3", "say": "Sebulan, sekitar enam ratus lima puluh liter.", "show": "Sebulan, sekitar 650 liter." },
+    { "id": "num4", "say": "Itu tiga puluh empat galon, kebuang begitu aja.", "show": "Itu 34 galon, kebuang begitu aja." },
+    { "id": "why1", "say": "Kenapa bisa netes?" },
+    { "id": "why2", "say": "Ini keran model putar." },
+    { "id": "why3", "say": "Kamu muter tuasnya, batangnya turun, lalu neken karet kecil ke dudukannya." },
+    { "id": "why4", "say": "Karet inilah yang nahan air." },
+    { "id": "wear1", "say": "Tiap ditutup, karetnya kejepit lagi." },
+    { "id": "wear2", "say": "Lama-lama karetnya keras dan aus." },
+    { "id": "wear3", "say": "Muncul celah kecil, dan air lolos setetes demi setetes." },
+    { "id": "wear4", "say": "Dikencengin pun, sering tetep netes." },
+    { "id": "fix0", "say": "Jadi benerinnya gimana?" },
+    { "id": "fix1", "say": "Satu, tutup dulu kran utama." },
+    { "id": "fix2", "say": "Dua, buka kepala keran, lepas karet lamanya." },
+    { "id": "fix3", "say": "Tiga, pasang karet baru yang ukurannya sama." },
+    { "id": "nuance", "say": "Tapi ini buat keran putar. Keran tuas, isinya beda." },
+    { "id": "close1", "say": "Jadi yang bikin boros bukan kerannya." },
+    { "id": "close2", "say": "Cuma satu karet kecil." },
+    { "id": "cta", "say": "Ikuti buat benda berikutnya." }
+  ]
+}
