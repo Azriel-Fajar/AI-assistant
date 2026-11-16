@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Cheat Sheet Penjadwalan CPU</title>
+<style>
+  @page { size: A4; margin: 7mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; line-height: 1.28; color: #000; background: #fff; }
+  h1 { font-size: 12pt; text-align: center; border-bottom: 1.5px solid #000; padding-bottom: 2px; margin-bottom: 4px; }
+  .cols { column-count: 2; column-gap: 5mm; column-rule: 1px solid #999; }
+  .box { break-inside: avoid; border: 1px solid #000; padding: 3px 5px; margin-bottom: 4px; }
+  h2 { font-size: 9.2pt; background: #000; color: #fff; padding: 1px 4px; margin: -3px -5px 3px; }
+  ul { padding-left: 12px; }
+  li { margin-bottom: 1px; }
+  b { font-weight: bold; }
+  table { width: 100%; border-collapse: collapse; font-size: 8.4pt; margin-top: 2px; }
+  th, td { border: 1px solid #000; padding: 1px 3px; text-align: left; vertical-align: top; }
+  th { background: #ddd; }
+  .f { font-family: Consolas, "Courier New", monospace; font-weight: bold; }
+  .warn { background: #eee; border-left: 3px solid #000; padding: 1px 4px; margin-top: 2px; }
+  .algo { margin-bottom: 3px; }
+  .algo > b:first-child { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="cols">
+
+<div class="box">
+<h2>1. Konsep Dasar</h2>
+<ul>
+<li><b>Penjadwalan CPU</b> = memilih proses di ready queue untuk dijalankan CPU</li>
+<li><b>Tujuan:</b> CPU tidak nganggur, proses cepat selesai, semua kebagian giliran</li>
+<li><b>Ready queue</b> = antrean | <b>Scheduler</b> = memilih | <b>Dispatcher</b> = memberi CPU (context switch)</li>
+<li><b>Non-preemptive:</b> proses pegang CPU sampai selesai / tunggu I/O (FCFS, SJF)</li>
+<li><b>Preemptive:</b> CPU bisa direbut paksa (SRTF, RR, Priority pre)</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>2. Process vs Thread</h2>
+<ul>
+<li><b>Process:</b> program yang dieksekusi, punya address space + <b>PCB</b></li>
+<li><b>Thread:</b> unit eksekusi dalam proses. Berbagi code/data/file, punya stack/register/PC sendiri (<b>TCB</b>)</li>
+<li><b>Status:</b> New, Ready, Running, Waiting, Terminated</li>
+</ul>
+<table>
+<tr><th>Transisi</th><th>Penyebab</th><th>Jenis</th></tr>
+<tr><td>Run → Wait</td><td>tunggu I/O / event</td><td>Non-pre</td></tr>
+<tr><td>Run → Term</td><td>proses selesai</td><td>Non-pre</td></tr>
+<tr><td>Run → Ready</td><td>interrupt / quantum habis</td><td>Pre</td></tr>
+<tr><td>Wait → Ready</td><td>I/O selesai</td><td>Pre</td></tr>
+<tr><td>Ready → Run</td><td>dispatch scheduler</td><td>Pilih CPU</td></tr>
+</table>
+</div>
+
+<div class="box">
+<h2>3. Kriteria</h2>
+<ul>
+<li><b>MAKSIMALKAN:</b> CPU Utilization (% CPU sibuk), Throughput (proses selesai / waktu)</li>
+<li><b>MINIMALKAN:</b> Turnaround Time, Waiting Time (total di ready queue), Response Time (sampai respons pertama)</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>4. Rumus Wajib</h2>
+<table>
+<tr><th>Singkatan</th><th>Rumus</th></tr>
+<tr><td>AT, BT</td><td>diketahui dari soal (tiba, burst)</td></tr>
+<tr><td>CT</td><td>dibaca dari Gantt chart (waktu selesai)</td></tr>
+<tr><td>TAT</td><td class="f">CT − AT</td></tr>
+<tr><td>WT</td><td class="f">TAT − BT</td></tr>
+<tr><td>RT</td><td class="f">Start pertama − AT</td></tr>
+<tr><td>AWT/ATAT/ART</td><td class="f">ΣWT/n, ΣTAT/n, ΣRT/n</td></tr>
+<tr><td>CPU Util</td><td class="f">(waktu sibuk / total) × 100%</td></tr>
+<tr><td>Throughput</td><td class="f">jml proses selesai / total waktu</td></tr>
+</table>
+</div>
+
+<div class="box">
+<h2>5. Algoritma + Cara Ngerjain</h2>
+<div class="algo"><b>FCFS</b> (non-pre, FIFO): urut AT, jalankan sampai habis. Paling sederhana.<br>
+Kelemahan: <b>convoy effect</b> (proses pendek nunggu proses panjang).</div>
+<div class="algo"><b>SJF</b> (non-pre): tiap CPU kosong, pilih <b>BT terkecil dari yang SUDAH TIBA</b>. BT sama → tiba duluan.<br>
+AWT paling kecil. Kelemahan: <b>starvation</b>, burst sulit diprediksi.<br>
+Prediksi: <span class="f">τ(n+1) = α·t(n) + (1−α)·τ(n)</span>, 0 ≤ α ≤ 1</div>
+<div class="algo"><b>SRTF</b> (SJF preemptive): cek <b>setiap ada proses tiba</b>. BT baru &lt; sisa proses jalan → sela.<br>
+<span class="f">Sisa = BT − yang sudah jalan</span></div>
+<div class="algo"><b>Priority</b> (pre / non-pre): CPU ke prioritas tertinggi. Contoh PPT: <b>angka kecil = tinggi</b> (CEK SOAL!).<br>
+Kelemahan: starvation → solusi <b>aging</b> (prioritas naik selama menunggu).<br>
+<span class="f">Prio efektif = prio awal + (waktu tunggu / interval aging)</span><br>
+SJF = kasus khusus Priority (prioritas = 1/burst).</div>
+<div class="algo"><b>Round Robin</b> (pre, time-sharing): jalan maks q, lalu ke belakang antrean. Sisa &lt; q → jalan sesuai sisa.<br>
+<span class="warn"><b>PENTING:</b> proses baru tiba masuk antrean SEBELUM proses yang baru kena potong.</span><br>
+q besar ≈ FCFS | q kecil = overhead context switch tinggi<br>
+<span class="f">Giliran = ⌈BT/q⌉ &nbsp; RT maks = (n−1)×q</span></div>
+<div class="algo"><b>MLQ:</b> antrean dibagi per jenis (foreground RR, background FCFS). Antar antrean: prioritas tetap / time slice (80/20). Proses <b>TIDAK pindah</b>.</div>
+<div class="algo"><b>MLFQ:</b> proses <b>BOLEH pindah</b>. Pakai CPU lama → turun. Nunggu lama → naik (aging). Contoh: Q0 RR q=8, Q1 RR q=16, Q2 FCFS.</div>
+</div>
+
+<div class="box">
+<h2>6. Windows</h2>
+<ul>
+<li>Priority-based + preemptive, yang dijadwalkan = <b>thread</b>. Prioritas sama → RR</li>
+<li><b>32 level:</b> 0 sistem | 1-15 variable | 16-31 real-time</li>
+<li>Prioritas thread = priority class proses + prioritas relatif thread</li>
+<li><b>Priority boost:</b> habis I/O, thread foreground, thread kelaparan. Tidak untuk real-time</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>7. Perbandingan</h2>
+<table>
+<tr><th>Algo</th><th>Tipe</th><th>Plus</th><th>Minus</th></tr>
+<tr><td>FCFS</td><td>Non-pre</td><td>Sederhana</td><td>Convoy effect</td></tr>
+<tr><td>SJF/SRTF</td><td>Non/Pre</td><td>AWT minimum</td><td>Starvation</td></tr>
+<tr><td>Priority</td><td>Keduanya</td><td>Fleksibel</td><td>Starvation (aging)</td></tr>
+<tr><td>RR</td><td>Pre</td><td>Response bagus, adil</td><td>Tergantung q</td></tr>
+<tr><td>MLQ/MLFQ</td><td>Pre</td><td>Adaptif</td><td>Konfigurasi rumit</td></tr>
+</table>
+Pilihan algoritma tergantung sistem: batch, interaktif, real-time.
+</div>
+
+<div class="box">
+<h2>8. Langkah Ngerjain Soal</h2>
+<ol style="padding-left:14px">
+<li>Tulis tabel P, AT, BT (+ prioritas)</li>
+<li>Gambar Gantt chart, tulis angka waktu di tiap batas</li>
+<li>Baca CT dari Gantt (waktu terakhir proses selesai)</li>
+<li>Hitung TAT, WT (RT kalau diminta), lalu rata-rata</li>
+<li>Cek: WT tidak boleh negatif. CPU kosong → tulis <b>idle</b></li>
+</ol>
+</div>
+
+<div class="box">
+<h2>9. Contoh (P1 0/7, P2 2/4, P3 4/1, P4 5/4)</h2>
+<table>
+<tr><th>Algo</th><th>Gantt</th><th>AWT</th><th>ATAT</th></tr>
+<tr><td>FCFS</td><td class="f">P1 0-7 P2 -11 P3 -12 P4 -16</td><td>4,75</td><td>8,75</td></tr>
+<tr><td>SJF</td><td class="f">P1 0-7 P3 -8 P2 -12 P4 -16</td><td>4</td><td>8</td></tr>
+<tr><td>SRTF</td><td class="f">P1 0-2 P2 -4 P3 -5 P2 -7 P4 -11 P1 -16</td><td>3</td><td>7</td></tr>
+<tr><td>RR q=3</td><td class="f">P1 0-3 P2 -6 P1 -9 P3 -10 P4 -13 P2 -14 P1 -15 P4 -16</td><td>7</td><td>11</td></tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>
