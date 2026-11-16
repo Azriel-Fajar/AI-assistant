@@ -51,5 +51,13 @@ if len(yt) == 2:
     title = yt[0].strip()
     row("YouTube title length", size(title), size(title) <= 100, "<=100")
     row("YouTube title one line", title.count("\n") + 1, "\n" not in title, "1")
+    core = re.sub(r"#\w+", "", title).strip()
+    row("YouTube core title", size(core), size(core) <= 50, "<=50 without hashtags")
     body("YouTube desc", yt[1], 5000, 5)
+    opener = yt[1].strip().split("\n")[0]
+    row("YouTube desc opener", opener[:12], not opener.lower().startswith("video ini"), "search question, not 'Video ini'")
+yt_tags = blocks("Tags YouTube")
+if yt_tags:
+    old = [t.strip() for t in yt_tags[0].split(",") if t.strip().lower() in ("tips", "tutorial", "fyp", "3d")]
+    row("YouTube tags dropped", len(old), not old, "0 of tips/tutorial/FYP/3D")
 sys.exit(f"FAILED: {', '.join(fails)}" if fails else 0)
