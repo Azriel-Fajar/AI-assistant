@@ -1,13 +1,11 @@
 ---
 name: analisis-mingguan
-description: Weekly unattended analysis of the @intipbaliknya YouTube channel. Pulls the channel's own stats and YouTube Analytics, compares title patterns, title length, upload hour and retention, checks last week's rule changes, then applies data-backed changes to the upload-text rules (sekitar UPLOAD.md + upload_check.py) and the topic notes in riset-sekitar, commits and pushes, writes a report and notifies Azriel's phone. Started every Sunday 09:00 by Windows Task Scheduler (run.ps1), or by hand. Use when Azriel says "analisis mingguan", "analisis channel", "cek performa channel minggu ini", or "/analisis-mingguan".
+description: Weekly unattended analysis of the @intipbaliknya YouTube channel. Pulls the channel's own stats and YouTube Analytics, compares title patterns, title length, upload hour and retention, checks last week's rule changes, then applies data-backed changes to the upload-text rules (sekitar UPLOAD.md + upload_check.py) and the topic notes in riset-sekitar, commits and pushes, writes a report and notifies Azriel through Claude. Started every Sunday 09:00 by the Claude app's scheduled task "analisis-mingguan", or by hand. Use when Azriel says "analisis mingguan", "analisis channel", "cek performa channel minggu ini", or "/analisis-mingguan".
 ---
 
 # Analisis mingguan
 
-One session, once a week (Sunday 09:00, Azriel 16 Nov 2026). Headless: no CLAUDE.md, no memory, nobody watching. **Never ask a question**; take the default written here and note it in the report. Working directory is `shorts/` (gitignored, never committed); the JARVIS root is `..`.
-
-Started by hand in a normal session, do the same steps from `shorts/`.
+One session, once a week (Sunday 09:00, Azriel 16 Nov 2026), started by the Claude app's scheduled task. Nobody is watching: **never ask a question**, even where CLAUDE.md says to ask; take the default written here and note it in the report. Run every command from `shorts/` (gitignored, never committed; `cd shorts` first); the JARVIS root is `..`. Use `python3.13` for Python. Never run `git checkout --`, `git reset`, `git add -A` or `git push --force`.
 
 ## 1. Numbers
 
@@ -17,7 +15,7 @@ One shell call, in `shorts/`:
 mkdir -p analisis && node ../tools/google-dibaliknyaapa/stats.js > log/yt-<yyyy-mm-dd>.json && python3.13 ../.claude/skills/analisis-mingguan/analisis.py log/yt-<yyyy-mm-dd>.json
 ```
 
-`stats.js` logs in as the channel's own Google account (read-only scopes: it cannot change videos on YouTube). `analisis.py` prints the week's totals against the stats file from ~7 days earlier, dead videos, a table per video, and medians per title pattern, core-title length and upload hour. If `stats.js` fails, write the report with the error, send the notification with `Title: Analisis gagal`, and stop: no numbers, no changes.
+`stats.js` logs in as the channel's own Google account (read-only scopes: it cannot change videos on YouTube). `analisis.py` prints the week's totals against the stats file from ~7 days earlier, dead videos, a table per video, and medians per title pattern, core-title length and upload hour. If `stats.js` fails, write the report with the error, notify "Analisis gagal" (step 5), and stop: no numbers, no changes.
 
 The main measure is **engaged views** (YouTube changed how `views` counts on 27 Aug 2026; engaged views did not change), then **% watched**. Raw views are context only. Groups use videos at least 3 days old with analytics; dead videos (≥2 days, <50 views) are left out of groups and listed on their own, because their problem is distribution, not the title.
 
@@ -82,14 +80,10 @@ Write `shorts/analisis/<yyyy-mm-dd>.md` in casual Indonesian, short, tables and 
 - **Diterapkan:** each change, before → after, the numbers, the commit hash. Or "Tidak ada perubahan: <why>".
 - **Usulan** (not applied): at most 3, for areas outside the allowed files.
 
-Then:
+Then notify through Claude, not ntfy (Azriel, 16 Nov 2026; ntfy.sh is unreachable from this PC): call the `PushNotification` tool (load it with ToolSearch if it is deferred) with one line under 200 characters, e.g. "Analisis mingguan: +23k views, +21 subs, 1 aturan diubah. Laporan: shorts/analisis/<yyyy-mm-dd>.md". End the session with the same summary in 3-5 short lines as the final message, since the Claude app shows it on the run.
 
-```
-curl -s -o /dev/null -H "Title: Analisis mingguan" -d "<views minggu ini, subscriber +n, n perubahan diterapkan>. Buka shorts/analisis/<yyyy-mm-dd>.md" ntfy.sh/JARVIS
-```
-
-If a step fails beyond repair, still write the report with the error and send `Title: Analisis gagal` naming the step. A run never ends silently.
+If a step fails beyond repair, still write the report with the error and notify "Analisis gagal: <step>" the same way. A run never ends silently.
 
 ## Schedule
 
-Task Scheduler task **Sekitar Analisis Mingguan** runs `run.ps1` (next to this file) every Sunday at 09:00, away from the 15:30 and 20:30 production runs. Same lean headless mode as `produksi-harian` (its `headless-settings.json` and `headless-mcp.json`), with `headless-context.md` from this folder. If `shorts/.produksi.lock` is younger than 3 hours, `run.ps1` waits up to 2 hours for it to clear so the two never edit at once.
+The Claude app's scheduled task **analisis-mingguan** (`~/.claude/scheduled-tasks/analisis-mingguan/`) runs this skill every Sunday at 09:00, away from the 15:30 and 20:30 production runs. It runs while the app is open; if the app is closed or the PC asleep at 09:00, it runs on the next launch. Before step 1, if `shorts/.produksi.lock` exists and is younger than 3 hours, a production session is running: wait (check every 5 minutes, up to 2 hours) so the two never edit skill files at once.
