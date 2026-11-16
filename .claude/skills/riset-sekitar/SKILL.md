@@ -109,3 +109,14 @@ Save every new block to `shorts/ide/saran-<tanggal>.md`, adding to the file if t
 `status` is `saran`, `dipilih`, `dibuat`, `ditolak` or `ditunda`. When Azriel picks one, change its status and start `sekitar` with the idea, its sources and the claims already checked, so nothing gets searched twice.
 
 When a film is published, its views are recorded by `sekitar` in the piece's `LOG.md`. Add a rule here only after a pattern shows across several films.
+
+## Yang terbukti di channel
+
+Diperbarui tiap minggu oleh `analisis-mingguan`. Ukuran: engaged views, video ≥3 hari, tanpa video mati.
+
+- (16 Nov 2026) Hewan dan alam paling kuat: median 2.063 engaged, 73% ditonton (n=4: bau hujan, jentik nyamuk, lalat, nyamuk DBD).
+- (16 Nov 2026) Dapur dan rumah stabil: median 1.318, 54% (n=8). Pisang diperam 1.969, spons 1.981, api kompor 1.615, minyak terbakar 1.607.
+- (16 Nov 2026) Tubuh dan kesehatan lemah, kecuali jari keriput (4.662, 77%): median 833 (n=7). Cuci tangan pakai sabun paling bawah (210, 26% ditonton), mungkin karena topiknya terasa sudah diketahui.
+- (16 Nov 2026) Jalan dan kendaraan median 1.000 (n=8); gadget dan uang 880 (n=4). Microsleep 707, kaca mobil 875.
+- (16 Nov 2026) Sudut "apa yang terjadi di dalam benda yang biasa dilihat" (jari keriput, pisang, bau hujan) unggul dari sudut "tips benar/salah" (sabun 210, earphone 833, helm 894).
+- (16 Nov 2026) Data masih tipis (28 video, 2 minggu); anggap ini arah, bukan aturan.
