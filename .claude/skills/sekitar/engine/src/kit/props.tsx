@@ -18,16 +18,17 @@ const h = (k: number, s: number) => {
 // (sitting up in bed or on the floor): stand it at y = surface - 0.78 so the legs rest on the surface.
 // head = false leaves neck and head out so a piece can draw its own (e.g. a cutaway) at [0, 1.66, 0].
 // reach = 0..1 swings both arms in toward the middle so raised hands meet (washing hands, holding one small thing).
+// feet colours the shoes: pass the skin colour for bare feet, or a bright colour for sandals.
 export const Person: React.FC<{
   pos?: V3; rot?: number; t?: number; walk?: number; armR?: number; armL?: number; sit?: number; reach?: number;
-  shirt?: string; pants?: string; skin?: string; hair?: string; scale?: number; head?: boolean;
-}> = ({ pos = [0, 0, 0], rot = 0, t = 0, walk = 0, armR = 0, armL = 0, sit = 0, reach = 0, shirt = T.white, pants = '#2E3238', skin = '#C08A62', hair = '#2E2622', scale = 1, head = true }) => {
+  shirt?: string; pants?: string; skin?: string; hair?: string; scale?: number; head?: boolean; feet?: string;
+}> = ({ pos = [0, 0, 0], rot = 0, t = 0, walk = 0, armR = 0, armL = 0, sit = 0, reach = 0, shirt = T.white, pants = '#2E3238', skin = '#C08A62', hair = '#2E2622', scale = 1, head = true, feet = T.rubber }) => {
   const sw = walk * 0.45 * Math.sin(2 * Math.PI * 1.1 * t);
   const breathe = 0.006 * Math.sin(1.6 * t);
   const Leg = ({ x, a }: { x: number; a: number }) => (
     <group position={[x, 0.86, 0]} rotation={[a, 0, 0]}>
       <Cyl r={0.085} h={0.8} pos={[0, -0.4, 0]} color={pants} />
-      <Box size={[0.14, 0.07, 0.27]} pos={[0, -0.83, 0.05]} color={T.rubber} />
+      <Box size={[0.14, 0.07, 0.27]} pos={[0, -0.83, 0.05]} color={feet} />
     </group>
   );
   const Arm = ({ x, a }: { x: number; a: number }) => (
@@ -75,14 +76,14 @@ export const Window: React.FC<{ pos: V3; w?: number; hgt?: number; lit?: number;
 // the open side faces +z, so the camera looks in. Keep the camera inside az -10..60 so the walls don't block it.
 export const Room: React.FC<{
   pos?: V3; w?: number; d?: number; hgt?: number; floor?: string; wall?: string; side?: string; tile?: number;
-  window?: number | false; lit?: number; sky?: string;
-}> = ({ pos = [0, 0, 0], w = 6, d = 5, hgt = 3, floor = '#D9CDB8', wall = '#E9E4D8', side = '#DCD6C8', tile = 0.6, window = 0.6, lit = 0, sky }) => (
+  window?: number | false; lit?: number; sky?: string; sideWall?: boolean;
+}> = ({ pos = [0, 0, 0], w = 6, d = 5, hgt = 3, floor = '#D9CDB8', wall = '#E9E4D8', side = '#DCD6C8', tile = 0.6, window = 0.6, lit = 0, sky, sideWall = true }) => (
   <group position={pos}>
     <Tiles w={w} d={d} tile={tile} color={floor} lineColor="#BBAE98" pos={[0, 0.004, 0]} />
     <Box size={[w, hgt, 0.12]} pos={[0, hgt / 2, -d / 2 - 0.06]} color={wall} />
-    <Box size={[0.12, hgt, d]} pos={[-w / 2 - 0.06, hgt / 2, 0]} color={side} />
+    {sideWall && <Box size={[0.12, hgt, d]} pos={[-w / 2 - 0.06, hgt / 2, 0]} color={side} />}
     <Box size={[w, 0.1, 0.03]} pos={[0, 0.05, -d / 2 + 0.015]} color="#BFB5A3" edge={false} />
-    <Box size={[0.03, 0.1, d]} pos={[-w / 2 + 0.015, 0.05, 0]} color="#BFB5A3" edge={false} />
+    {sideWall && <Box size={[0.03, 0.1, d]} pos={[-w / 2 + 0.015, 0.05, 0]} color="#BFB5A3" edge={false} />}
     {window !== false && <Window pos={[(window - 0.5) * w, 1.6, -d / 2 + 0.06]} w={1.2} hgt={1.1} lit={lit} sky={sky} />}
   </group>
 );
@@ -894,3 +895,274 @@ export const Mosquito: React.FC<{ pos: V3; yaw?: number; pitch?: number; s?: num
   );
 };
 const mixV = (a: number, b: number, u: number) => a + (b - a) * u;
+
+// A sneaker, toe toward +z, 0.28 m long at scale 1: sole, upper with an opening on top, laces, toe cap.
+// wet = 0..1 darkens the upper (soaked); drip > 0 lets drops fall from its heel (pass t).
+export const Sneaker: React.FC<{ pos?: V3; rot?: number; scale?: number; color?: string; sole?: string; wet?: number; t?: number; drip?: number }> = ({
+  pos = [0, 0, 0], rot = 0, scale = 1, color = '#5B7FA6', sole = T.white, wet = 0, t = 0, drip = 0,
+}) => {
+  const up = '#' + new THREE.Color(color).lerp(new THREE.Color('#2B3540'), wet * 0.45).getHexString();
+  const f = (t * 0.8) % 1;
+  return (
+    <group position={pos} rotation={[0, rot, 0]} scale={scale}>
+      <Box size={[0.1, 0.03, 0.28]} pos={[0, 0.015, 0]} color={sole} />
+      <Box size={[0.092, 0.07, 0.17]} pos={[0, 0.065, -0.045]} color={up} />
+      <Box size={[0.092, 0.045, 0.1]} pos={[0, 0.052, 0.085]} color={up} />
+      <Box size={[0.07, 0.012, 0.09]} pos={[0, 0.101, -0.07]} color="#2A2E33" edge={false} />
+      {[0, 1, 2].map((k) => <Box key={k} size={[0.07, 0.006, 0.01]} pos={[0, 0.078 + k * 0.004, 0.0 + k * 0.025]} rot={[-0.5, 0, 0]} color={T.white} edge={false} />)}
+      {drip > 0.01 && <Ball r={0.008} pos={[0, 0.03 - 0.03 * f * f, -0.15]} color={T.water} opacity={drip * (1 - f)} edge={false} shadow={false} />}
+    </group>
+  );
+};
+
+// A plastic bucket (ember) with a dipper (gayung) floating in it. fill = water level 0..1.
+export const Bucket: React.FC<{ pos?: V3; r?: number; hgt?: number; color?: string; fill?: number; t?: number; dipper?: boolean }> = ({
+  pos = [0, 0, 0], r = 0.2, hgt = 0.34, color = '#3C8FD0', fill = 0.8, t = 0, dipper = true,
+}) => (
+  <group position={pos}>
+    <Lathe profile={[[0, 0], [r * 0.8, 0], [r, hgt], [r * 0.93, hgt], [r * 0.74, 0.02], [0, 0.02]]} color={color} />
+    <Cyl r={r * (0.76 + 0.17 * fill)} h={0.004} pos={[0, hgt * fill, 0]} color={T.water} edge={false} shadow={false} />
+    {dipper && (
+      <group position={[0.03, hgt * fill + 0.01 + 0.004 * Math.sin(1.5 * t), 0]} rotation={[0, 0.6, 0]}>
+        <Cyl r={0.07} r2={0.06} h={0.07} pos={[0, 0.02, 0]} color="#E7C43C" />
+        <Box size={[0.16, 0.025, 0.03]} pos={[0.13, 0.05, 0]} color="#E7C43C" />
+      </group>
+    )}
+  </group>
+);
+
+// A row of n steel lockers, 0.4 m wide each, backs against -z (ruang ganti, gym, school). open = index of an open door, -1 none.
+export const Lockers: React.FC<{ pos?: V3; rot?: number; n?: number; hgt?: number; color?: string; open?: number }> = ({
+  pos = [0, 0, 0], rot = 0, n = 4, hgt = 1.8, color = '#7FA3B8', open = -1,
+}) => (
+  <group position={pos} rotation={[0, rot, 0]}>
+    {Array.from({ length: n }, (_, i) => {
+      const x = (i - (n - 1) / 2) * 0.4;
+      return (
+        <group key={i} position={[x, 0, 0]}>
+          <Box size={[0.39, hgt, 0.45]} pos={[0, hgt / 2, 0]} color={color} />
+          {i !== open && [0.35, 0.42, 0.49].map((y) => <Box key={y} size={[0.22, 0.015, 0.01]} pos={[0, hgt * 0 + y + hgt - 0.7, 0.23]} color="#4E6A7A" edge={false} />)}
+          {i !== open && <Box size={[0.03, 0.08, 0.02]} pos={[0.13, hgt / 2, 0.235]} color={T.steel} edge={false} />}
+        </group>
+      );
+    })}
+  </group>
+);
+
+// An open shoe rack, toe toward +z: w across, three shelves; put shoes on y = 0.02, 0.3, 0.58.
+export const ShoeRack: React.FC<{ pos?: V3; rot?: number; w?: number; color?: string }> = ({ pos = [0, 0, 0], rot = 0, w = 0.9, color = '#9A7350' }) => (
+  <group position={pos} rotation={[0, rot, 0]}>
+    {[0, 0.28, 0.56].map((y) => <Box key={y} size={[w, 0.025, 0.32]} pos={[0, y + 0.0125, 0]} color={color} />)}
+    {[-1, 1].map((s) => <Box key={s} size={[0.03, 0.7, 0.32]} pos={[s * (w / 2 + 0.015), 0.35, 0]} color={color} />)}
+  </group>
+);
+
+// A split wall air conditioner facing +z, w wide; pos is the middle of its back, flat on the wall. on = 0..1 swings
+// the louver and blows pale cold-air streaks forward and down (t drives them).
+export const AirCon: React.FC<{ pos: V3; t?: number; on?: number; w?: number; color?: string }> = ({ pos, t = 0, on = 1, w = 0.9, color = T.white }) => (
+  <group position={pos}>
+    <Box size={[w, 0.3, 0.2]} pos={[0, 0, 0.1]} color={color} />
+    <Box size={[w - 0.04, 0.012, 0.01]} pos={[0, 0.07, 0.205]} color="#DADAD3" edge={false} />
+    <Box size={[w - 0.1, 0.03, 0.12]} pos={[0, -0.14, 0.12]} color="#2E3338" edge={false} />
+    <group position={[0, -0.15, 0.18]} rotation={[0.35 + 0.18 * on * Math.sin(0.8 * t), 0, 0]}>
+      <Box size={[w - 0.12, 0.012, 0.09]} pos={[0, 0, 0.04]} color={color} />
+    </group>
+    <Ball r={0.008} pos={[w / 2 - 0.08, -0.08, 0.205]} color={on > 0.5 ? T.green : T.dark} edge={false} shadow={false} />
+    {on > 0.01 && Array.from({ length: 8 }, (_, i) => {
+      const u = (t * 0.4 + i / 8) % 1;
+      const x = (h(i, 11) - 0.5) * (w - 0.2);
+      return <Box key={i} size={[0.014, 0.014, 0.34]} pos={[x, -0.2 - 0.7 * u * u - 0.15 * u, 0.32 + 1.4 * u]} rot={[0.3 + 0.4 * u, 0, 0]} color="#BFDDF0" opacity={0.8 * on * Math.sin(Math.PI * u)} edge={false} shadow={false} />;
+    })}
+  </group>
+);
+
+// A laptop on a surface, hinge at the back (-z), screen facing +z toward a user in front. Turn it with rot
+// (Math.PI faces a user sitting at -z). on = 0..1 lights the screen.
+export const Laptop: React.FC<{ pos?: V3; rot?: number; on?: number; color?: string; tint?: string }> = ({ pos = [0, 0, 0], rot = 0, on = 1, color = '#C9CDD0', tint = '#9FD3F2' }) => (
+  <group position={pos} rotation={[0, rot, 0]}>
+    <Box size={[0.34, 0.018, 0.24]} pos={[0, 0.009, 0]} color={color} />
+    <Box size={[0.3, 0.003, 0.1]} pos={[0, 0.019, -0.02]} color={T.dark} edge={false} shadow={false} />
+    <Box size={[0.1, 0.003, 0.06]} pos={[0, 0.019, 0.075]} color="#B5BABE" edge={false} shadow={false} />
+    <group position={[0, 0.018, -0.115]} rotation={[-0.3, 0, 0]}>
+      <Box size={[0.34, 0.23, 0.012]} pos={[0, 0.115, 0]} color={color} />
+      <Box size={[0.31, 0.2, 0.002]} pos={[0, 0.118, 0.007]} color={on > 0.01 ? tint : '#14171A'} edge={false} shadow={false} />
+    </group>
+  </group>
+);
+
+// A cutting board (talenan), long side along x, top surface at y = th. kind 'wood' draws grain and a hang hole,
+// 'plastic' is plain, 'glass' see-through. color overrides (e.g. red for raw meat, green for vegetables).
+// scratches = 0..1 adds knife marks on the top (a worn board).
+export const CuttingBoard: React.FC<{ pos?: V3; rot?: V3; w?: number; d?: number; th?: number; kind?: 'wood' | 'plastic' | 'glass'; color?: string; scratches?: number; scale?: number }> = ({
+  pos = [0, 0, 0], rot = [0, 0, 0], w = 0.42, d = 0.28, th = 0.025, kind = 'wood', color, scratches = 0, scale = 1,
+}) => {
+  const c = color ?? (kind === 'wood' ? '#C8945E' : kind === 'glass' ? '#CFE6EE' : '#F2F1EC');
+  if (scale <= 0.005) return null;
+  return (
+    <group position={pos} rotation={rot} scale={scale}>
+      <Box size={[w, th, d]} pos={[0, th / 2, 0]} color={c} opacity={kind === 'glass' ? 0.55 : 1} />
+      {kind === 'wood' && [-0.32, -0.12, 0.1, 0.3].map((z, i) => (
+        <Box key={i} size={[w * (0.82 - 0.12 * (i % 2)), 0.002, 0.006]} pos={[0.02 * (i - 1.5), th + 0.001, z * d]} color="#A06F42" edge={false} shadow={false} />
+      ))}
+      {kind !== 'glass' && <Cyl r={0.016} h={th + 0.004} pos={[w / 2 - 0.04, th / 2, 0]} color={T.dark} edge={false} />}
+      {scratches > 0 && Array.from({ length: Math.round(16 * scratches) }, (_, i) => (
+        <Box key={'s' + i} size={[0.005, 0.002, 0.05 + 0.1 * h(i, 3)]} pos={[(h(i, 1) - 0.5) * w * 0.75, th + 0.001, (h(i, 2) - 0.5) * d * 0.45]} rot={[0, (h(i, 4) - 0.5) * 1.4, 0]} color="#7E7C76" edge={false} shadow={false} />
+      ))}
+    </group>
+  );
+};
+
+// A kitchen knife standing on its edge (y = 0 is the edge), blade along +x from the origin, handle along -x.
+export const Knife: React.FC<{ pos?: V3; rot?: V3; scale?: number; handle?: string }> = ({ pos = [0, 0, 0], rot = [0, 0, 0], scale = 1, handle = T.dark }) => (
+  <group position={pos} rotation={rot} scale={scale}>
+    <Box size={[0.2, 0.045, 0.004]} pos={[0.1, 0.0225, 0]} color={T.steel} metal={0.6} rough={0.35} />
+    <Box size={[0.03, 0.02, 0.004]} pos={[0.21, 0.035, 0]} rot={[0, 0, -0.5]} color={T.steel} metal={0.6} rough={0.35} edge={false} />
+    <Box size={[0.11, 0.026, 0.02]} pos={[-0.055, 0.032, 0]} color={handle} />
+  </group>
+);
+
+// A two-burner gas stove (kompor) for a counter top, knobs facing +z. on = 0..1 lights the right burner (pass t).
+export const Stove: React.FC<{ pos?: V3; on?: number; t?: number; color?: string }> = ({ pos = [0, 0, 0], on = 0, t = 0, color = '#3F454A' }) => (
+  <group position={pos}>
+    <Box size={[0.7, 0.09, 0.42]} pos={[0, 0.045, 0]} color={color} />
+    {[-0.17, 0.17].map((x, i) => (
+      <group key={i} position={[x, 0.09, -0.01]}>
+        <Cyl r={0.065} h={0.02} pos={[0, 0.01, 0]} color="#2A2E32" />
+        {[0, 1, 2, 3].map((k) => (
+          <Box key={k} size={[0.16, 0.012, 0.012]} pos={[0, 0.032, 0]} rot={[0, (k * Math.PI) / 4, 0]} color="#22262A" edge={false} />
+        ))}
+        <Cyl r={0.022} h={0.02} pos={[0, -0.03, 0.22]} rot={[Math.PI / 2, 0, 0]} color={T.white} />
+        {i === 1 && on > 0.01 && <Cyl r={0.055} r2={0.03} h={0.03 + 0.006 * Math.sin(2 * Math.PI * 1.7 * t)} pos={[0, 0.035, 0]} color="#4F8FE0" opacity={0.75 * on} edge={false} shadow={false} />}
+      </group>
+    ))}
+  </group>
+);
+
+// A pedal bin (tempat sampah) whose lid is hinged at the back; open = 0..1 lifts it.
+export const TrashBin: React.FC<{ pos?: V3; r?: number; hgt?: number; open?: number; color?: string }> = ({ pos = [0, 0, 0], r = 0.16, hgt = 0.45, open = 0, color = '#7C8A8F' }) => (
+  <group position={pos}>
+    <Lathe profile={[[0, 0], [r * 0.88, 0], [r, hgt], [r * 0.94, hgt], [r * 0.82, 0.02], [0, 0.02]]} color={color} />
+    <group position={[0, hgt, -r]} rotation={[-1.7 * open, 0, 0]}>
+      <Cyl r={r * 1.03} h={0.025} pos={[0, 0.0125, r]} color={color} />
+    </group>
+    <Box size={[0.1, 0.02, 0.08]} pos={[0, 0.02, r * 0.95]} color={T.dark} />
+  </group>
+);
+
+// A two-door wardrobe facing +z, top at hgt. open = 0..1 swings both doors out (hinged at the outer edges); closed
+// doors leave a thin gap down the middle, as real ones do. Shelves sit at y = shelves; children go in its local frame.
+export const Wardrobe: React.FC<{ pos?: V3; rot?: number; w?: number; d?: number; hgt?: number; open?: number; shelves?: number[]; color?: string; inside?: string; children?: React.ReactNode }> = ({
+  pos = [0, 0, 0], rot = 0, w = 1.1, d = 0.55, hgt = 1.9, open = 0, shelves = [0.75, 1.3], color = '#B98A5E', inside = '#8A6646', children,
+}) => {
+  const th = 0.03, dw = w / 2 - 0.008, a = 1.9 * open, dh = hgt - 0.1;
+  const Door = ({ s }: { s: 1 | -1 }) => (
+    <group position={[-s * w / 2, 0, d / 2]} rotation={[0, -s * a, 0]}>
+      <Box size={[dw, dh, 0.025]} pos={[s * dw / 2, hgt / 2 + 0.03, 0.0125]} color={color} />
+      <Box size={[dw - 0.12, dh - 0.16, 0.008]} pos={[s * dw / 2, hgt / 2 + 0.03, 0.029]} color={color} />
+      <Box size={[0.02, 0.14, 0.02]} pos={[s * (dw - 0.06), hgt * 0.52, 0.04]} color={T.dark} edge={false} />
+    </group>
+  );
+  return (
+    <group position={pos} rotation={[0, rot, 0]}>
+      <Box size={[w, 0.08, d]} pos={[0, 0.04, 0]} color={color} />
+      <Box size={[w - 2 * th, th, d - th]} pos={[0, 0.08 + th / 2, th / 2]} color={inside} />
+      <Box size={[w + 0.04, 0.04, d + 0.04]} pos={[0, hgt + 0.02, 0]} color={color} />
+      {[-1, 1].map((s) => <Box key={s} size={[th, hgt, d]} pos={[s * (w / 2 - th / 2), hgt / 2, 0]} color={color} />)}
+      <Box size={[w, hgt, th]} pos={[0, hgt / 2, -d / 2 + th / 2]} color={inside} />
+      {shelves.map((y, i) => <Box key={i} size={[w - 2 * th, 0.025, d - th - 0.02]} pos={[0, y - 0.0125, th / 2 - 0.01]} color={color} />)}
+      <Door s={1} />
+      <Door s={-1} />
+      {children}
+    </group>
+  );
+};
+
+// A baby cot with slatted sides, long along x; the mattress top is at y = 0.45. Children go in its local frame.
+export const Crib: React.FC<{ pos?: V3; rot?: number; len?: number; w?: number; color?: string; sheet?: string; children?: React.ReactNode }> = ({
+  pos = [0, 0, 0], rot = 0, len = 1.15, w = 0.65, color = T.white, sheet = '#F1EEE6', children,
+}) => {
+  const top = 0.95, low = 0.35, n = Math.round(len / 0.09);
+  return (
+    <group position={pos} rotation={[0, rot, 0]}>
+      {[-1, 1].map((sx) => [-1, 1].map((sz) => <Box key={`${sx}${sz}`} size={[0.05, top, 0.05]} pos={[sx * len / 2, top / 2, sz * w / 2]} color={color} />))}
+      {[-1, 1].map((sz) => [low, top].map((y) => <Box key={`${sz}${y}`} size={[len, 0.035, 0.035]} pos={[0, y, sz * w / 2]} color={color} />))}
+      {[-1, 1].map((sx) => [low, top].map((y) => <Box key={`${sx}${y}`} size={[0.035, 0.035, w]} pos={[sx * len / 2, y, 0]} color={color} />))}
+      {[-1, 1].map((sz) => Array.from({ length: n - 1 }, (_, i) => (
+        <Cyl key={`${sz}${i}`} r={0.011} h={top - low} pos={[-len / 2 + (i + 1) * len / n, (top + low) / 2, sz * w / 2]} color={color} edge={false} />
+      )))}
+      <Box size={[len - 0.04, 0.1, w - 0.04]} pos={[0, 0.4, 0]} color={sheet} />
+      {children}
+    </group>
+  );
+};
+
+// A clothesline: two posts and a line along x at y = hgt. Children hang in its local frame (the line runs through [x, hgt, 0]).
+export const Clothesline: React.FC<{ pos?: V3; rot?: number; len?: number; hgt?: number; color?: string; children?: React.ReactNode }> = ({
+  pos = [0, 0, 0], rot = 0, len = 3, hgt = 1.8, color = '#8E959B', children,
+}) => (
+  <group position={pos} rotation={[0, rot, 0]}>
+    {[-1, 1].map((s) => (
+      <group key={s}>
+        <Cyl r={0.035} h={hgt + 0.1} pos={[s * len / 2, (hgt + 0.1) / 2, 0]} color={color} />
+        <Cyl r={0.1} h={0.05} pos={[s * len / 2, 0.025, 0]} color={T.dark} />
+      </group>
+    ))}
+    <Cyl r={0.008} h={len} pos={[0, hgt, 0]} rot={[0, 0, Math.PI / 2]} color={T.ink} edge={false} />
+    {children}
+  </group>
+);
+
+// A hanging round bird cage (sangkar) with a small bird on a perch. The cage hangs from a hook at `pos` (top of the
+// chain), its floor 0.5 m below. down = 0..1 tips the bird off the perch onto the cage floor (keep it gentle);
+// dim = 0..1 greys the bird. t bobs the bird slowly. Children go in the cage's local frame (floor at y = -0.5).
+export const BirdCage: React.FC<{ pos: V3; t?: number; down?: number; dim?: number; bird?: string; color?: string; children?: React.ReactNode }> = ({
+  pos, t = 0, down = 0, dim = 0, bird = '#8CC152', color = T.white, children,
+}) => {
+  const r = 0.17, fl = -0.5, top = -0.12;
+  const bob = (1 - down) * 0.006 * Math.sin(2 * Math.PI * 0.8 * t);
+  const by = fl + 0.2 + bob - down * 0.17;
+  const body = dim > 0.5 ? '#B7BCB4' : bird;
+  return (
+    <group position={pos}>
+      <Cyl r={0.006} h={0.1} pos={[0, -0.05, 0]} color={T.ink} edge={false} />
+      <Lathe profile={[[0, top + 0.08], [r * 0.55, top + 0.06], [r * 0.95, top + 0.01], [r, top], [r * 0.95, top - 0.005], [0, top + 0.05]]} color={color} smooth />
+      <Cyl r={r + 0.015} h={0.04} pos={[0, fl + 0.02, 0]} color={color} />
+      <Cyl r={r + 0.005} h={0.008} pos={[0, fl + 0.045, 0]} color="#D9C9A3" edge={false} />
+      {Array.from({ length: 16 }, (_, i) => {
+        const a = (i / 16) * Math.PI * 2;
+        return <Cyl key={i} r={0.004} h={top - fl - 0.04} pos={[r * Math.sin(a), (top + fl + 0.04) / 2, r * Math.cos(a)]} color={color} edge={false} />;
+      })}
+      <Cyl r={0.007} h={2 * r - 0.02} pos={[0, fl + 0.17, 0]} rot={[0, 0, Math.PI / 2]} color="#A57C52" edge={false} />
+      <group position={[down * 0.04, by, 0]} rotation={[0, 0, -down * 1.45]}>
+        <Ball r={0.045} pos={[0, 0.03, 0]} color={body} />
+        <Ball r={0.032} pos={[0.03, 0.08, 0]} color={body} />
+        <Cyl r={0.009} r2={0.001} h={0.025} pos={[0.062, 0.078, 0]} rot={[0, 0, -Math.PI / 2]} color="#E8A23A" edge={false} />
+        <Ball r={0.006} pos={[0.045, 0.092, 0.024]} color={T.ink} edge={false} />
+        <Box size={[0.07, 0.012, 0.035]} pos={[-0.06, 0.0, 0]} rot={[0, 0, 0.35]} color={dim > 0.5 ? '#9AA19A' : '#5E8F3A'} />
+      </group>
+      {children}
+    </group>
+  );
+};
+
+// A square exhaust fan (kipas penyedot) set into a wall that faces +z, centred at `pos`. on = 0..1 spins the blades.
+export const WallExhaust: React.FC<{ pos: V3; t?: number; on?: number; size?: number; color?: string }> = ({ pos, t = 0, on = 0, size = 0.3, color = T.white }) => {
+  const spin = on * 2 * Math.PI * 0.9 * t;
+  return (
+    <group position={pos}>
+      <Box size={[size, size, 0.06]} pos={[0, 0, 0.03]} color={color} />
+      <Cyl r={size * 0.4} h={0.01} pos={[0, 0, 0.065]} rot={[Math.PI / 2, 0, 0]} color="#3A3F44" edge={false} />
+      <group position={[0, 0, 0.075]} rotation={[0, 0, spin]}>
+        {[0, 1, 2, 3, 4].map((i) => (
+          <group key={i} rotation={[0, 0, (i * 2 * Math.PI) / 5]}>
+            <Box size={[0.06, size * 0.17, 0.006]} pos={[0, size * 0.11, 0]} rot={[0, 0.45, 0]} color="#C9CDD0" edge={false} />
+          </group>
+        ))}
+        <Cyl r={0.025} h={0.02} rot={[Math.PI / 2, 0, 0]} color={color} />
+      </group>
+      {Array.from({ length: 4 }, (_, i) => (
+        <Box key={i} size={[size * 0.82, 0.008, 0.008]} pos={[0, -size * 0.3 + i * size * 0.2, 0.095]} color={color} edge={false} />
+      ))}
+    </group>
+  );
+};
