@@ -46,9 +46,19 @@ function Invoke-Session($tag, $arg) {
   # gambar and tinjau run at effort medium (11 Nov 2026): the picture session's thinking was ~2/3 of its output and
   # stayed in the context every later step re-read. naskah (fact gate), laporan and riset keep high from headless-settings.json.
   $effort = if ($arg -match 'gambar|tinjau') { @('--effort', 'medium') } else { @() }
-  $p = Start-Process -FilePath $claude -WorkingDirectory $shorts -NoNewWindow -Wait -PassThru `
-    -ArgumentList (@('-p', "`"$prompt`"", '--dangerously-skip-permissions') + $lean + $effort) `
-    -RedirectStandardOutput $log -RedirectStandardError $err
+  # Claude limit ("You've hit your session limit"): often an earlier session's 5-hour window that ends a few minutes after
+  # this run started, so wait 15 minutes and retry, up to 4 times (1 hour), before giving up as TERTUNDA.
+  $attempt = 0
+  while ($true) {
+    $p = Start-Process -FilePath $claude -WorkingDirectory $shorts -NoNewWindow -Wait -PassThru `
+      -ArgumentList (@('-p', "`"$prompt`"", '--dangerously-skip-permissions') + $lean + $effort) `
+      -RedirectStandardOutput $log -RedirectStandardError $err
+    $hitLimit = $p.ExitCode -ne 0 -and ((Get-Content $log, $err -Raw -ErrorAction SilentlyContinue) -match 'hit your .*limit')
+    if (-not $hitLimit -or $attempt -ge 4) { break }
+    $attempt++
+    if (Test-Path $lock) { Remove-Item $lock }
+    Start-Sleep -Seconds 900
+  }
   $script:code = $p.ExitCode
   if ($p.ExitCode -eq 0) { New-Item -ItemType File -Force -Path (Join-Path $logDir "produksi-$day-$tag.done") | Out-Null; return $true }
   # The session died mid-way, so its lock is stale; left in place it would block the resume for 3 hours.
