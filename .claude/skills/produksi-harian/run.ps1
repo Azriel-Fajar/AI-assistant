@@ -1,5 +1,5 @@
-﻿# Started daily by Task Scheduler ("Sekitar Produksi Harian"). Runs produksi-harian headless for 5 films a day (one film per
-# session, fresh context each) and one research session a day, and keeps a log per session.
+﻿# Started daily by Task Scheduler ("Sekitar Produksi Harian"). Runs produksi-harian headless for 4 films a day (2 per run, one
+# film per session, fresh context each) and a research session only when idea blocks run low (every 2-3 days), and keeps a log per session.
 # Lives in <JARVIS>\.claude\skills\produksi-harian, so JARVIS is three folders up: no username or drive hardcoded.
 $root = (Resolve-Path (Join-Path $PSScriptRoot '..\..\..')).Path
 $shorts = Join-Path $root 'shorts'
@@ -14,6 +14,13 @@ $geminiReset = (Get-Date).Date.AddHours(15)
 if ((Get-Date) -lt $geminiReset) { $geminiReset = $geminiReset.AddDays(-1) }
 if ((Test-Path $stop) -and (Get-Item $stop).LastWriteTime -lt $geminiReset) { Remove-Item $stop }
 $lock = Join-Path $shorts '.produksi.lock'
+# Did this run's own scheduled wake pull the PC out of sleep? Windows logs it (Power-Troubleshooter 1, wake source names the
+# task). Only then does the PC go back to sleep at the end; a PC that was already on stays on (Azriel, 16 Nov 2026).
+$wokenByTask = $false
+try {
+  $wk = Get-WinEvent -FilterHashtable @{ LogName = 'System'; ProviderName = 'Microsoft-Windows-Power-Troubleshooter'; Id = 1; StartTime = (Get-Date).AddMinutes(-15) } -MaxEvents 1 -ErrorAction Stop
+  if ($wk.Message -match 'Sekitar Produksi Harian') { $wokenByTask = $true }
+} catch {}
 
 $env:GEMINI_API_KEY = [Environment]::GetEnvironmentVariable('GEMINI_API_KEY', 'User')
 $env:PYTHONIOENCODING = 'utf-8'
@@ -48,7 +55,7 @@ function Invoke-Session($tag, $arg) {
   if (Test-Path $lock) { Remove-Item $lock }
   if ((Get-Content $log, $err -Raw -ErrorAction SilentlyContinue) -match 'hit your .*limit') {
     Invoke-RestMethod -Uri 'https://ntfy.sh/JARVIS' -Method Post -Headers @{ Title = 'Produksi tertunda' } `
-      -Body "Sesi $arg kena limit Claude. Lanjut otomatis di jadwal berikutnya (02.30 / 15.30)." | Out-Null
+      -Body "Sesi $arg kena limit Claude. Lanjut otomatis di jadwal berikutnya (15.30 / 20.30)." | Out-Null
   } else {
     Invoke-RestMethod -Uri 'https://ntfy.sh/JARVIS' -Method Post -Headers @{ Title = 'Produksi gagal' } `
       -Body "Sesi ${arg}: Claude keluar dengan kode $($p.ExitCode). Log: shorts\log\produksi-$stamp-$tag.log" | Out-Null
@@ -56,20 +63,19 @@ function Invoke-Session($tag, $arg) {
   return $false
 }
 
-# 5 films a day again since 10 Nov 2026 (Azriel; 3 from 9 Nov). The task fires at 02:30 and at 15:30 (after the
-# 15:00 Gemini reset), one per 5-hour Claude usage window, both outside Claude's weekday peak hours (about
-# 20:00-02:00 WIB), when a window holds only ~0.6x as much (11 Nov 2026: one film took 58% of a 21:50 window).
-# The 02:30 run makes films 1-2 of the day plus the research session, the 15:30 run films 3-5.
+# 4 films a day on 16 Nov 2026, back to 5 on 17 Nov (Azriel): the 02:00-03:37 run of 16 Nov hit the 5-hour limit
+# after about 2.5 films plus research (~7% of the weekly limit). The task fires at 15:30 (after the 15:00 Gemini reset) and at 20:30 (since 17 Nov 2026,
+# Azriel: 2 films use under 30% of a 5-hour window, so two runs fit two windows), both for tomorrow's slots.
+# 5 films a day again: at most 3 films at 15:30 (films 1-3), 2 at 20:30 (films 4-5).
 # A run starts at the first film of today without a .done marker, so one that hit the limit is resumed by the next
-# run of the same date (02:30 -> 15:30); a 15:30 film left unfinished is redone from its naskah by the next 02:30 run.
+# run of the same date (15:30 -> 20:30); a 20:30 film left unfinished is redone from its naskah by the next day's 15:30 run.
 $code = 0
 $films = 0
 $ok = $true
-$night = (Get-Date).Hour -lt 12
-$cap = if ($night) { 2 } else { 3 }
+$cap = if ((Get-Date).Hour -lt 19) { 3 } else { 2 }
 $risetDone = Join-Path $logDir "produksi-$day-riset.done"
-# When one of the next 5 films has no idea block (a day the PC was off, 9 Nov 2026), the research session runs first,
-# so no film session researches its own topic in the big Opus context.
+# Research runs only when one of the next 5 films has no idea block (every 2-3 days, since 16 Nov 2026, as each
+# research session writes about 10 blocks), before the films, so no film session researches its own topic in the big Opus context.
 Push-Location $shorts
 $gaps = & python3.13 (Join-Path $PSScriptRoot 'target.py') gaps 5
 Pop-Location
@@ -101,13 +107,7 @@ foreach ($n in 1..5) {
   }
   if (-not (Invoke-Session "$n" "$n/5 laporan")) { $ok = $false; break }
 }
-# One research session a day (5 Nov 2026), after the 02:30 run's films (so the 15:30 films find their blocks
-# ready), or after all five films if the 02:30 run didn't do it. It needs no Gemini, so .stop-run doesn't stop it.
-$allFilms = @(1..5 | Where-Object { Test-Path (Join-Path $logDir "produksi-$day-$_.done") }).Count -eq 5
-if ($ok -and -not (Test-Path $risetDone) -and ($night -or $allFilms)) {
-  Invoke-Session 'riset' 'riset' | Out-Null
-}
-# Back to sleep, but only when nobody is using the PC (a wake from sleep), never under someone's hands.
+# Back to sleep only when this run's own wake started it and nobody is using the PC now; a PC that was already on is left on.
 # The 5-minute wait gives OneDrive time to upload the new video so the phone can reach it.
 Add-Type @'
 using System; using System.Runtime.InteropServices;
@@ -118,7 +118,7 @@ public static class Idle {
 }
 '@
 Start-Sleep -Seconds 300
-if ([Idle]::Seconds() -ge 900) {
+if ($wokenByTask -and [Idle]::Seconds() -ge 900) {
   Add-Type -AssemblyName System.Windows.Forms
   [System.Windows.Forms.Application]::SetSuspendState('Suspend', $false, $false) | Out-Null
 }

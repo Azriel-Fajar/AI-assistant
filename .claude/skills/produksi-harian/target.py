@@ -3,7 +3,7 @@
 Run from shorts/:
   python3.13 ../.claude/skills/produksi-harian/target.py film      -> today's target row + its idea block, missed rows,
                                                                        unmade count, last 5 hooks, last 5 YouTube titles
-  python3.13 ../.claude/skills/produksi-harian/target.py riset 10  -> the next 10 plan rows without an idea block
+  python3.13 ../.claude/skills/produksi-harian/target.py riset 14  -> the next 14 plan rows without an idea block
   python3.13 ../.claude/skills/produksi-harian/target.py gaps 5    -> how many of the next 5 films have no idea block
 """
 import glob, json, os, re, sys
