@@ -53,13 +53,13 @@ function Invoke-Session($tag, $arg) {
   if ($p.ExitCode -eq 0) { New-Item -ItemType File -Force -Path (Join-Path $logDir "produksi-$day-$tag.done") | Out-Null; return $true }
   # The session died mid-way, so its lock is stale; left in place it would block the resume for 3 hours.
   if (Test-Path $lock) { Remove-Item $lock }
-  if ((Get-Content $log, $err -Raw -ErrorAction SilentlyContinue) -match 'hit your .*limit') {
-    Invoke-RestMethod -Uri 'https://ntfy.sh/JARVIS' -Method Post -Headers @{ Title = 'Produksi tertunda' } `
-      -Body "Sesi $arg kena limit Claude. Lanjut otomatis di jadwal berikutnya (15.30 / 20.30)." | Out-Null
+  # No ntfy (unreachable from this PC, 16 Nov 2026): a HARIAN.md row, which the Claude app task ringkasan-pagi reads at 06:30.
+  $row = if ((Get-Content $log, $err -Raw -ErrorAction SilentlyContinue) -match 'hit your .*limit') {
+    "| $day | $tag | TERTUNDA | - | sesi $arg kena limit Claude, lanjut otomatis di jadwal berikutnya (15.30 / 20.30) |"
   } else {
-    Invoke-RestMethod -Uri 'https://ntfy.sh/JARVIS' -Method Post -Headers @{ Title = 'Produksi gagal' } `
-      -Body "Sesi ${arg}: Claude keluar dengan kode $($p.ExitCode). Log: shorts\log\produksi-$stamp-$tag.log" | Out-Null
+    "| $day | $tag | GAGAL | - | sesi ${arg}: Claude keluar dengan kode $($p.ExitCode), log shorts\log\produksi-$stamp-$tag.log |"
   }
+  [IO.File]::AppendAllText((Join-Path $shorts 'out\HARIAN.md'), "$row`n", (New-Object Text.UTF8Encoding $false))
   return $false
 }
 
