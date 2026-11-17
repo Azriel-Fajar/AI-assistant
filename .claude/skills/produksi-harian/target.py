@@ -63,6 +63,11 @@ if mode == 'gaps':
     print(sum(1 for r in todo if r['slug'] not in bl))
     sys.exit()
 
+if mode == 'stock':
+    # run.ps1 (17 Nov 2026): research only when fewer than 5 unmade plan rows hold an idea block.
+    print(sum(1 for r in rows if r['date'] >= start and st.get(r['slug']) != 'dibuat' and r['slug'] in bl))
+    sys.exit()
+
 if mode == 'riset':
     n = int(sys.argv[2]) if len(sys.argv) > 2 else 10
     todo = [r for r in rows if r['date'] >= start and r['slug'] not in bl and st.get(r['slug']) != 'dibuat']

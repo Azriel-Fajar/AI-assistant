@@ -46,6 +46,8 @@ function Invoke-Session($tag, $arg) {
   # gambar and tinjau run at effort medium (11 Nov 2026): the picture session's thinking was ~2/3 of its output and
   # stayed in the context every later step re-read. naskah (fact gate), laporan and riset keep high from headless-settings.json.
   $effort = if ($arg -match 'gambar|tinjau') { @('--effort', 'medium') } else { @() }
+  # laporan (upload text, report) runs on Sonnet since 17 Nov 2026: light text step, Opus cost ~0.5M per film for no gain.
+  if ($arg -match 'laporan') { $effort = @('--model', 'sonnet', '--effort', 'medium') }
   # Claude limit ("You've hit your session limit"): often an earlier session's 5-hour window that ends a few minutes after
   # this run started, so wait 15 minutes and retry, up to 4 times (1 hour), before giving up as TERTUNDA.
   $attempt = 0
@@ -87,9 +89,11 @@ $risetDone = Join-Path $logDir "produksi-$day-riset.done"
 # Research runs only when one of the next 5 films has no idea block (every 2-3 days, since 16 Nov 2026, as each
 # research session writes about 10 blocks), before the films, so no film session researches its own topic in the big Opus context.
 Push-Location $shorts
-$gaps = & python3.13 (Join-Path $PSScriptRoot 'target.py') gaps 5
+$stock = & python3.13 (Join-Path $PSScriptRoot 'target.py') stock
 Pop-Location
-if ("$gaps" -match '^\d+$' -and [int]$gaps -gt 0 -and -not (Test-Path $risetDone)) { Invoke-Session 'riset' 'riset' | Out-Null }
+# Research only in the evening run, and only when fewer than 5 unmade plan rows hold an idea block (17 Nov 2026, Azriel):
+# at 15:30 it took ~half of the 5-hour window, and a friend's setup skips research while the stock is enough.
+if ((Get-Date).Hour -ge 19 -and "$stock" -match '^\d+$' -and [int]$stock -lt 5 -and -not (Test-Path $risetDone)) { Invoke-Session 'riset' 'riset' | Out-Null }
 # Each film is four fresh sessions: 'naskah' (topic, script, gate fakta, voice) and 'gambar' since 9 Nov 2026, so
 # the picture work doesn't carry the research context; 'laporan' (upload text, report, notify) since 10 Nov 2026, so
 # those light steps don't each re-read the 200k picture context; and 'tinjau' (storyboard, gate look, render, cover)
