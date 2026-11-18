@@ -26,6 +26,8 @@ Everything happens in `shorts/` at the JARVIS root (gitignored, never committed)
 
 Gemini's free tier allows 10 voice requests a day (reset at midnight Pacific time, 15:00 WIB); a film spends 1–2, so 5 films use at most 10. If Gemini refuses with 429 or a quota message, create `shorts/.stop-run` so `run.ps1` starts no more film sessions today, and say so in the report.
 
+**Checkpoint as you go (18 Nov 2026).** A limit can end a session at any step, and the retry starts the same part again. In a film session, right after each sub-step finishes (each `fakta` round, voice, typecheck clean, sound, each look board, gate `look`, render + `check.py`, cover, `upload.md`), append one line to `HANDOFF.md`: `- [<part>] done: <step>, files: <paths>`. Write `HANDOFF.md` with the slug and these lines as soon as part A knows the slug, not only at its end. A part that finds its own `[<part>] done:` lines skips those steps and goes on from the next one; the files they name are already made.
+
 ## Work lean
 
 Every step re-reads the whole conversation, and the late steps re-read 200k tokens or more each. The palu-kaca-bus film (3 Nov 2026) took 62 steps; aim for about **35 per film**. Fewer steps come from doing more per step, never from doing less:

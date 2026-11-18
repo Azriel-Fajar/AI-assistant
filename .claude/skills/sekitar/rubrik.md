@@ -10,6 +10,10 @@ Each gate gets a **fresh** reviewer (an Agent with no part in making the film, s
 
 **Before calling a reviewer**, the maker scores its own work against the gate's table and fixes anything under 8 first, so the first review usually passes.
 
+**Known round-1 failures (Nov 2026 runs), check these first:**
+- `look`: a person cut off at the frame edge; the camera inside or through a body (legs, torso); a head hidden behind a card or tag; an empty or blank frame at a shot change; a shot where only the camera moves (`latar-gerak` 7).
+- `fakta`: a number or date in `say`/`show` with no row in the source table, or rounded past what the source says.
+
 **Pass (since 16 Nov 2026, Azriel, to save usage: film 1 of 16 Nov took about 70 steps, with both gates re-reviewed):**
 - `fakta`: the hard `fakta` criterion at 10, `kejutan` ≥ 8. All fixes go in one edit. A **re-review happens only when the hard `fakta` criterion was under 10** (a claim was unsourced, over-claimed or wrong), by a new reviewer told the earlier fixes. If `kejutan` alone was under 8, apply the fixes and go on with no re-review. If the re-review fails too, cut the unsourced claim, and if the film no longer stands without it, stop and report; otherwise go on with the gate marked **PERLU CEK**. Never publish a film with an unsourced claim.
 - `look`: every criterion ≥ 7. A failed gate gets all its fixes applied in one edit and **no re-review**: the maker re-checks the fixed frames itself with one `stills.mjs` pass on the changed seconds only. The report lists the round-1 scores and the fixes.

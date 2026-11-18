@@ -48,6 +48,9 @@ function Invoke-Session($tag, $arg) {
   $effort = if ($arg -match 'gambar|tinjau') { @('--effort', 'medium') } else { @() }
   # laporan (upload text, report) runs on Sonnet since 17 Nov 2026: light text step, Opus cost ~0.5M per film for no gain.
   if ($arg -match 'laporan') { $effort = @('--model', 'sonnet', '--effort', 'medium') }
+  # Turn cap (18 Nov 2026): one part of a film takes ~10-30 turns; 60 stops a stuck gate or fix loop from draining the
+  # window. A capped session exits non-zero, so it gets a GAGAL row and the run stops starting films.
+  $effort += @('--max-turns', '60')
   # Claude limit ("You've hit your session limit"): often an earlier session's 5-hour window that ends a few minutes after
   # this run started, so wait 15 minutes and retry, up to 4 times (1 hour), before giving up as TERTUNDA.
   $attempt = 0
