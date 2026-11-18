@@ -60,4 +60,6 @@ yt_tags = blocks("Tags YouTube")
 if yt_tags:
     old = [t.strip() for t in yt_tags[0].split(",") if t.strip().lower() in ("tips", "tutorial", "fyp", "3d")]
     row("YouTube tags dropped", len(old), not old, "0 of tips/tutorial/FYP/3D")
+    long = [t.strip() for t in yt_tags[0].split(",") if len(t.split()) > 2]
+    row("YouTube tags >2 words", len(long), not long, "0, each tag 1-2 words")
 sys.exit(f"FAILED: {', '.join(fails)}" if fails else 0)

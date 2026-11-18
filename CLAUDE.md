@@ -138,3 +138,5 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - sekitar bed: quieter, varies per film and section, ducks under VO.
 - sekitar: objects stand on default grid floor with shadows, never bare white.
 - sekitar: every shot in a real place from kit props.tsx, never lone objects.
+- sekitar: render without asking after script OK; output in out/<date>/<slug>/.
+- sekitar YouTube tags: 1-2 words each, no search-phrase tags.

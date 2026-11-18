@@ -26,6 +26,15 @@ Measurements and what is proven or guessed about the reference: [STYLE.md](STYLE
 - Pastikan internet nyala saat riset dan buat suara. Render jalan offline.
 - Jangan unggah video bersuara edge-tts kalau akunnya mau dimonetisasi.
 
+## Keep usage low
+
+For interactive sessions (Azriel's manual flow, 17 Nov 2026, adapted from a friend's version of this skill). Every message re-reads the whole chat, so its length is the main cost; a render costs almost nothing.
+
+- One film per chat. Before a long investigation, or once a chat passes about 150,000 tokens, say so and suggest a new chat.
+- Read only the part of a file you need: Grep first, then a line range. Read a file before editing it. Don't read `props.tsx` whole: `grep -n "^export"` it, then read only the props the film uses.
+- Build `piece.tsx` from kit parts before writing a new component, and keep it short.
+- One look round: make the `every=3` board once and fix everything it shows in one pass. Open a crop only when small text can't be read.
+
 ## Automatic mode
 
 When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 2026), nobody is there to approve, so:
@@ -52,8 +61,9 @@ When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 20
 1. **Facts before pictures.** Every claim on screen or in the voice gets a web-checked source, labelled `resmi` (official), `media`, or `model` (our own calculation or assumption). No source, no claim. Number assumptions are said on screen in the card kicker.
 2. **Not a clone.** Copy the grammar, never the brand: no "Kita Bedah", "kita bedah", its logo, its name, its reference frames as assets, or its topics by default. Azriel's account gets its own name and sign-off.
 3. **Their paid material stays out.** Their guide, class and skill package are sold, and their terms forbid recording or downloading the class. Learn only from their public videos and pages, keep downloads in the scratchpad, and never commit them.
-4. **Azriel approves the script before any 3D work,** and the look before the render. A wrong angle caught in text costs a minute.
+4. **Azriel approves the script before any 3D work.** A wrong angle caught in text costs a minute. The look and the render need no approval (Azriel, 18 Nov 2026): self-check the look, then render straight away.
 5. **Done is measured.** `tools/check.py` passes and you have looked at the contact sheets. You cannot hear the mix: say so, and ask Azriel to listen on a phone speaker.
+6. **Each film lives in its day folder** (Azriel, 18 Nov 2026). Every `out/<slug>/` in this file means `out/<yyyy-mm-dd>/<slug>/`, dated the day the film's folder is first created (create the day folder if missing); a re-render or a later session keeps using that same folder. Exception: in automatic mode keep `out/<slug>/`, because `produksi-harian` moves it in its report step.
 
 ## The flow
 
@@ -90,7 +100,7 @@ Casual Indonesian: *nggak, kok, tapi, jadi*. No academic words, no "tahukah kamu
 Never put a key in a file. It lives in the environment.
 
 ### 4. Look check-in
-Write `piece.tsx` (start from the example) and `sfx.json`. Then `node <skill>/tools/stills.mjs <project> <slug> out/<slug>/look.jpg "1,14,30,50" --scale=0.3` for 3–4 very different moments; check every-3-seconds with `every=3` before rendering. Show the board and wait for a yes.
+Write `piece.tsx` (start from the example) and `sfx.json`. Then `node <skill>/tools/stills.mjs <project> <slug> out/<slug>/look.jpg "1,14,30,50" --scale=0.3` for 3–4 very different moments; check every-3-seconds with `every=3` before rendering. Self-check the board against the `look` criteria in [rubrik.md](rubrik.md), fix what fails, then go on to sound and render without asking Azriel (18 Nov 2026); he judges the finished film.
 
 **Picture rules, all measured from the reference:**
 - **One continuous world, no hard cuts.** Move the camera between places with an eased move, never blurred: blur makes viewers dizzy (Azriel, 1 Nov 2026). A new move about every 3–6 s; `camAt` pushes slowly in between so nothing freezes.
@@ -118,7 +128,7 @@ cd shorts
 npx remotion render <slug> out/<slug>/<slug>.mp4 --concurrency=4
 python3.13 <skill>/tools/check.py out/<slug>/<slug>.mp4 src/pieces/<slug>
 ```
-Run the render in the background, and read its output for errors before trusting the check. Windows refuses to overwrite a video that is open in a player (`EPERM`), so a re-render goes to a new name (`<slug>_v2.mp4`). Look at every `review/sheet_*.jpg` for clipped labels, tags pointing at nothing and parts hidden behind a card or the wall. A check failure or a visible error gets fixed, not reported as-is. Note on the caption sync: words the recogniser missed are placed by syllable share, so ask Azriel to check the captions on a low-`match` take.
+Run the render in the background, and read its output for errors before trusting the check. Windows refuses to overwrite a video that is open in a player (`EPERM`), so a re-render goes to a new name (`<slug>_v2.mp4`). When another chat may be rendering at the same time, give this render its own temp folder (`TEMP=<scratchpad>/rtmp TMP=<scratchpad>/rtmp`): a shared temp folder lost `remotion-audio-mixing` mid-render (14 Nov 2026, friend's setup) and a piped render still reported exit 0, so end the command with `set -o pipefail` and an `EXIT=$?` echo. Look at every `review/sheet_*.jpg` for clipped labels, tags pointing at nothing and parts hidden behind a card or the wall. A check failure or a visible error gets fixed, not reported as-is. Note on the caption sync: words the recogniser missed are placed by syllable share, so ask Azriel to check the captions on a low-`match` take.
 
 ### 7. Deliver
 - Cover: `npx remotion still <slug> out/<slug>/cover.jpg --frame=<n>` on the frame that best states the question (usually frame 0).
