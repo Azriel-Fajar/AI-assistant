@@ -1,0 +1,100 @@
+/* Liquid Glass layers. Pair with liquid-glass.js.
+ *
+ * Markup (the bend layer MUST be a sibling of the content, never its parent,
+ * or the refraction would distort your text too):
+ *
+ *   <div class="liquid-glass" style="--lg-radius: 28px">
+ *     <div class="liquid-glass-bend"></div>
+ *     <div class="liquid-glass-tint"></div>
+ *     <div class="liquid-glass-shine"></div>
+ *     <div class="liquid-glass-content">...your content...</div>
+ *   </div>
+ *
+ * The glass only shows something when there is a colorful/detailed background BEHIND it
+ * (image, gradient, video, scrolling content). On a flat color it looks like plain frosted glass.
+ */
+
+:root {
+  --lg-radius: 28px;
+  --lg-blur: 1.5px;
+  --lg-saturate: 150%;
+  --lg-brightness: 1.2;                 /* light theme */
+  --lg-tint: rgba(255, 255, 255, 0.12);
+  --lg-edge: rgba(255, 255, 255, 0.55); /* specular rim highlight */
+  --lg-edge-dim: rgba(255, 255, 255, 0.15);
+  --lg-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Dark theme: matches `.dark` on <html> (Tailwind), [data-theme=dark], or OS preference when no explicit theme */
+.dark,
+[data-theme='dark'] {
+  --lg-brightness: 0.85;
+  --lg-tint: rgba(255, 255, 255, 0.06);
+  --lg-edge: rgba(255, 255, 255, 0.35);
+  --lg-edge-dim: rgba(255, 255, 255, 0.08);
+  --lg-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not(.light):not([data-theme='light']) {
+    --lg-brightness: 0.85;
+    --lg-tint: rgba(255, 255, 255, 0.06);
+    --lg-edge: rgba(255, 255, 255, 0.35);
+    --lg-edge-dim: rgba(255, 255, 255, 0.08);
+    --lg-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.liquid-glass {
+  position: relative;
+  isolation: isolate;
+  border-radius: var(--lg-radius);
+  box-shadow: var(--lg-shadow);
+}
+
+/* Absolute layers fill the card and inherit its radius */
+.liquid-glass-bend,
+.liquid-glass-tint,
+.liquid-glass-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* JS sets backdrop-filter here (SVG displacement). Fallback below for non-Chromium. */
+.liquid-glass-bend {
+  z-index: 0;
+}
+.lg-fallback .liquid-glass-bend {
+  -webkit-backdrop-filter: blur(16px) saturate(170%) brightness(var(--lg-brightness));
+  backdrop-filter: blur(16px) saturate(170%) brightness(var(--lg-brightness));
+}
+
+.liquid-glass-tint {
+  z-index: 1;
+  background: var(--lg-tint);
+}
+
+/* Specular highlights on the rim: bright top-left, soft bottom-right */
+.liquid-glass-shine {
+  z-index: 2;
+  box-shadow:
+    inset 1px 1px 0 var(--lg-edge),
+    inset -1px -1px 0 var(--lg-edge-dim),
+    inset 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.liquid-glass-content {
+  position: relative;
+  z-index: 3;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .liquid-glass-bend {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  .liquid-glass-tint {
+    background: rgba(40, 40, 50, 0.85);
+  }
+}

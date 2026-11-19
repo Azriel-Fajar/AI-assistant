@@ -18,7 +18,9 @@ Finds what is worth filming and hands the chosen idea to `sekitar`. Nothing is s
 
 Report in casual Indonesian, in short sentences with terms explained (he won't ask what a term means).
 
-**When `produksi-harian` runs this unattended,** research only the slugs it names, never ask, skip the time estimate and the chat report (the run's `LAPORAN.md` carries it), and still save every block and log row.
+**Never wait for his approval** (Azriel, 19 Nov 2026: "Untuk semua persetujuan, gunakan yang direkomendasikan. Tidak perlu persetujuan dari aku."). Any choice that would ask him (which ideas to film, a swap for a failed plan row, an angle) takes your own recommendation (`Pilihanku`) and goes on; say what you chose in the report. Only turning keranjang kuning back on still needs his word.
+
+**When an unattended run calls this (the old Task Scheduler `produksi-harian`, archived 19 Nov 2026; today's `produksi-harian` runs it in chat as usual),** research only the slugs it names, never ask, skip the time estimate and the chat report (the run's `LAPORAN.md` carries it), and still save every block and log row.
 
 ## 1. Count the stock first
 
@@ -89,7 +91,7 @@ Fakta sudah dicek <tanggal>, tidak perlu dicari ulang:
 Belum pasti, cek dulu sebelum naskah atau jangan dipakai:
 - <yang masih perlu dicek>
 
-Mulai dari langkah naskah. Setelah kusetujui, ubah status topik ini di shorts/ide/log.md jadi dipilih, dan jadi dibuat setelah videonya jadi.
+Mulai dari langkah naskah, lalu langsung lanjut sampai render tanpa menunggu persetujuanku. Ubah status topik ini di shorts/ide/log.md jadi dipilih saat mulai, dan jadi dibuat setelah videonya jadi.
 ```
 
 ## Pilihanku

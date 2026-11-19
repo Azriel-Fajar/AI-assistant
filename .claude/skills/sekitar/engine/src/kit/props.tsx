@@ -1166,3 +1166,27 @@ export const WallExhaust: React.FC<{ pos: V3; t?: number; on?: number; size?: nu
     </group>
   );
 };
+
+// A sit-down toilet (kloset duduk) facing +z, tank against a back wall at -z: stand it about 0.39 m off that wall.
+// water colours the bowl (urine yellow, clear blue); lid = 0..1 lifts the lid against the tank. Seat top at y = 0.44.
+export const TOILET_BOWL: V3 = [0, 0.36, 0.05];
+export const Toilet: React.FC<{ pos?: V3; rot?: number; water?: string; lid?: number; color?: string }> = ({
+  pos = [0, 0, 0], rot = 0, water = '#BFE0EE', lid = 1, color = T.white,
+}) => (
+  <group position={pos} rotation={[0, rot, 0]}>
+    <Box size={[0.24, 0.29, 0.36]} pos={[0, 0.145, -0.02]} color={color} />
+    <group position={[0, 0.27, 0.05]} scale={[1, 1, 1.3]}>
+      <Lathe profile={[[0, 0], [0.1, 0], [0.19, 0.15], [0.165, 0.15], [0.08, 0.03], [0, 0.03]]} color={color} smooth />
+      <Cyl r={0.112} h={0.004} pos={[0, 0.08, 0]} color={water} edge={false} shadow={false} />
+      <Lathe profile={[[0.14, 0.15], [0.2, 0.15], [0.2, 0.17], [0.14, 0.17]]} color={color} />
+    </group>
+    <group position={[0, 0.44, -0.2]} rotation={[-1.45 * lid, 0, 0]}>
+      <group position={[0, 0.01, 0.245]} scale={[1, 1, 1.3]}>
+        <Cyl r={0.19} h={0.02} color={color} />
+      </group>
+    </group>
+    <Box size={[0.42, 0.38, 0.17]} pos={[0, 0.62, -0.3]} color={color} />
+    <Box size={[0.45, 0.03, 0.2]} pos={[0, 0.825, -0.3]} color={color} />
+    <Cyl r={0.025} h={0.012} pos={[0, 0.845, -0.3]} color={T.steel} />
+  </group>
+);

@@ -37,14 +37,14 @@ For interactive sessions (Azriel's manual flow, 17 Nov 2026, adapted from a frie
 
 ## Automatic mode
 
-When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 2026), nobody is there to approve, so:
+When an unattended run calls this skill (the old Task Scheduler `produksi-harian`, archived 19 Nov 2026 in `archives/produksi-harian-unattended-2026-11-19/`; today's `produksi-harian` starts normal sessions, not this mode), nobody is there to approve, so:
 
 - **Never ask.** Skip the reminders. Only the crucial approvals get a fresh reviewer from [rubrik.md](rubrik.md) (Azriel, 5 Nov 2026): gate `fakta` after step 2 and gate `look` after step 4 (the merged look gate let thin, placeless films through, so `look` stays its own gate). Apply all its fixes in one edit and re-review once; if it still fails, keep the best version and note what is left in the report. Hook, language, structure and the rendered film are the maker's own self-check in rubrik.md, with no reviewer.
 - **Hook:** write the 3 options as usual and pick the strongest yourself; say why in the report.
 - **Voice:** Gemini only, `--takes 2 --until 0.85`: it stops at the first take with `match` ≥ 0.85, so a film spends 1–2 of the free tier's 10 requests a day and 5 films fit in one day (Azriel, 5 Nov 2026: max 2 takes, 1 if it can). If `public/pieces/<slug>/takes/` already holds Gemini takes for this script, run `voice.py <piece> --reuse` first: it spends no quota. If the best `match` is still under 0.8, generate no more: the film is PERLU CEK. If Gemini fails, stop and report; edge-tts never goes into an automatic film.
 - **Look:** `stills.mjs ... every=2 --scale=0.25` plus the 3–4 key moments, self-check against the `look` criteria in rubrik.md, fix, then gate `look`.
 - **Render:** in the foreground, chained with `check.py` in one call (Bash `timeout: 600000`), not in the background with polling. After the render, run the film self-check in rubrik.md (check scripts, one look at each review sheet). A re-render goes to `<slug>_v2.mp4`; the report names the final file.
-- **Facts are hard:** if a claim can't be sourced, cut it; if the film no longer stands without it, stop, report, and let `produksi-harian` swap the topic.
+- **Facts are hard:** if a claim can't be sourced, cut it; if the film no longer stands without it, stop, report, and let the run swap the topic.
 - Azriel's check moves to the end: he watches the finished film and reads `LAPORAN.md` before he uploads by hand.
 
 ## Related skills
@@ -61,7 +61,7 @@ When `produksi-harian` runs this skill unattended (Azriel chose this on 1 Nov 20
 1. **Facts before pictures.** Every claim on screen or in the voice gets a web-checked source, labelled `resmi` (official), `media`, or `model` (our own calculation or assumption). No source, no claim. Number assumptions are said on screen in the card kicker.
 2. **Not a clone.** Copy the grammar, never the brand: no "Kita Bedah", "kita bedah", its logo, its name, its reference frames as assets, or its topics by default. Azriel's account gets its own name and sign-off.
 3. **Their paid material stays out.** Their guide, class and skill package are sold, and their terms forbid recording or downloading the class. Learn only from their public videos and pages, keep downloads in the scratchpad, and never commit them.
-4. **Azriel approves the script before any 3D work.** A wrong angle caught in text costs a minute. The look and the render need no approval (Azriel, 18 Nov 2026): self-check the look, then render straight away.
+4. **Nothing waits for Azriel's approval. Any choice that would ask him (script, hook, look, render, a fix, an option A/B/C) takes your own recommended option and goes on** (Azriel, 19 Nov 2026: "Untuk semua persetujuan, gunakan yang direkomendasikan. Tidak perlu persetujuan dari aku."; earlier the same day: "Untuk naskahnya nggak perlu persetujuan aku, langsung aja di render"; look and render since 18 Nov 2026). Self-check the script against the facts and the grammar, pick the hook yourself, then go straight on through voice, 3D, look self-check and render without asking. The hook/pembuka needs no approval either (Azriel, 19 Nov 2026: "gunakan yang direkomendasikan saja"): your recommended option is the one used. Never end a turn on "naskah/hook disetujui?" or offer approval buttons; show the script and hook in the final report, not as a gate.
 5. **Done is measured.** `tools/check.py` passes and you have looked at the contact sheets. You cannot hear the mix: say so, and ask Azriel to listen on a phone speaker.
 6. **Each film lives in its day folder** (Azriel, 18 Nov 2026). Every `out/<slug>/` in this file means `out/<yyyy-mm-dd>/<slug>/`, dated the day the film's folder is first created (create the day folder if missing); a re-render or a later session keeps using that same folder. Exception: in automatic mode keep `out/<slug>/`, because `produksi-harian` moves it in its report step.
 
@@ -86,9 +86,9 @@ Write `src/pieces/<slug>/script.json`, one line per beat. `say` is spelled as sp
 
 **The CTA is its own motion graphic** (Azriel, 1 Nov 2026). The last line has id `cta` and asks to follow ("Ikuti buat ..."). From that line `Frame` lays the follow end card over the film: a paper panel with the brand's peeled corner, the profile picture, name and both handles, Instagram/YouTube first and TikTok second (`ACCOUNT` in `theme.ts`), and a hand tapping "+ Ikuti" until it reads "✓ Mengikuti". `sound.py` adds its tap and ding, and `voice.py`'s default 1.3 s tail lets it rest. A piece animates nothing for the `cta` line.
 
-**A new hook every film.** Before writing it, list the opening line of every earlier film (`src/pieces/*/script.json`, first line, plus `ide/log.md`). Offer Azriel 3 hook options in different shapes and let him pick. Shapes: a sound of the object ("Tik. Tik. Tik."), a price or number contrast, a quoted belief ("Kata tukang servis …"), the failure moment on screen, a direct challenge to the viewer, a before/after, a side-by-side comparison ("Api biru. Api kuning."), a belief stated then flatly denied, a sense other than sight (a smell, a feel). None may repeat the shape of the last 5 films or reuse their words. If riset-sekitar's block gives a `Pembuka`, make it one of the 3.
+**A new hook every film.** Before writing it, list the opening line of every earlier film (`src/pieces/*/script.json`, first line, plus `ide/log.md`). Draft 3 hook options in different shapes and pick the strongest yourself (no asking, 19 Nov 2026). Shapes: a sound of the object ("Tik. Tik. Tik."), a price or number contrast, a quoted belief ("Kata tukang servis …"), the failure moment on screen, a direct challenge to the viewer, a before/after, a side-by-side comparison ("Api biru. Api kuning."), a belief stated then flatly denied, a sense other than sight (a smell, a feel). None may repeat the shape of the last 5 films or reuse their words. If riset-sekitar's block gives a `Pembuka`, make it one of the 3.
 
-Casual Indonesian: *nggak, kok, tapi, jadi*. No academic words, no "tahukah kamu", no hype. 100–190 words. Show Azriel the script and a source table; wait for approval.
+Casual Indonesian: *nggak, kok, tapi, jadi*. No academic words, no "tahukah kamu", no hype. 100–190 words. Self-check it with a source table, then continue straight to the voice; don't stop for approval.
 
 ### 3. Voice
 `python3.13 <skill>/tools/voice.py <piece> --takes 3` narrates the whole script in one session each take, scores the takes (words heard against the script, pace), trims long pauses, keeps the best, and writes `timing.json` plus `public/pieces/<slug>/voice.wav`. It prints each take's numbers: show them, and read a low `match` (<0.8) as a voice that misread something. `--reuse` re-times the takes already on disk without spending API quota. `--sample Charon,Achird` makes a short clip per voice for Azriel to choose from.
@@ -132,8 +132,8 @@ Run the render in the background, and read its output for errors before trusting
 
 ### 7. Deliver
 - Cover: `npx remotion still <slug> out/<slug>/cover.jpg --frame=<n>` on the frame that best states the question (usually frame 0).
-- `out/<slug>/upload.md`: ready-to-paste text per platform, format in [examples/keran/upload.md](examples/keran/upload.md). `python3.13 <skill>/tools/upload_check.py out/<slug>/upload.md` must pass. Rules in [UPLOAD.md](UPLOAD.md).
-- Report: file paths, the check table, and the weakest moment. Say what was estimated. Ask Azriel to listen on a phone. Paste all of `upload.md` in the message too, so he can copy it on his phone.
+- Captions: no `upload.md` file (Azriel, 19 Nov 2026). Write the Instagram, TikTok and YouTube captions (and the YouTube Tags line and settings) straight into this session's final message, one plain copy-paste block per platform, no file. Rules in [UPLOAD.md](UPLOAD.md); [examples/keran/upload.md](examples/keran/upload.md) shows only the layout. Check the limits (platform table in UPLOAD.md) yourself before sending; `upload_check.py` needs a file, so skip it.
+- Report: file paths, the check table, and the weakest moment. Say what was estimated. Ask Azriel to listen on a phone.
 
 **Upload text:** the rules (platform table, title hooks, settings) are in [UPLOAD.md](UPLOAD.md). Read it at this step, not before.
 

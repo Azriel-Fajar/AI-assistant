@@ -96,11 +96,13 @@ const halftone = (sh: { fragmentShader: string }) => {
 };
 
 // Setting metal or rough switches a part from flat shading to reflective, for chrome, brass and water.
+// The key remounts the material when it turns transparent or opaque: three.js doesn't rebuild it on that flag in a
+// continuous render, so a fading part stayed solid in the video while stills (fresh mounts) looked right (jari-krek, 17 Nov 2026).
 const Mat: React.FC<{ color: string; opacity: number; side?: THREE.Side; metal?: number; rough?: number }> = ({ color, opacity, side, metal, rough }) =>
   metal === undefined && rough === undefined ? (
-    <meshLambertMaterial onBeforeCompile={halftone} color={color} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
+    <meshLambertMaterial key={opacity < 1 ? 't' : 'o'} onBeforeCompile={halftone} color={color} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
   ) : (
-    <meshStandardMaterial onBeforeCompile={halftone} color={color} metalness={metal ?? 0} roughness={rough ?? 0.5} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
+    <meshStandardMaterial key={opacity < 1 ? 't' : 'o'} onBeforeCompile={halftone} color={color} metalness={metal ?? 0} roughness={rough ?? 0.5} transparent={opacity < 1} opacity={opacity} side={side ?? THREE.FrontSide} depthWrite={opacity > 0.6} />
   );
 
 const Edges: React.FC<{ geo: THREE.BufferGeometry; angle: number; opacity: number }> = ({ geo, angle, opacity }) => {

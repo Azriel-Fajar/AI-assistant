@@ -22,4 +22,5 @@
 ## Status
 
 - Slide Pertemuan 1 sudah ada (dibuat di Claude, PDF "Ekskul UI/UX Figma"). Perlu revisi kecil, lihat `timeline.md` bagian Pertemuan 1.
-- Slide Pertemuan 2-4 belum.
+- Slide Pertemuan 2: Claude Slides "KKA - Pertemuan 2" (https://claude.ai/artifact/STWr2Xtvu6zMQFa6uThqn8).
+- Pertemuan 3 + 4 digabung jadi 1 pertemuan terakhir (2026-11-20): Home page + prototype + tes + pameran + voting, 18 slide. Claude Slides https://claude.ai/artifact/8n5KoFhLb3bbPH6JHhyPt6.

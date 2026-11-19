@@ -87,7 +87,7 @@ See [[feedback_leads_vs_customers_reference]].
 
 ## Skills
 
-Custom skills in `.claude/skills/<name>/SKILL.md`, invoke with `/<name>`. Each skill's description tells you when to use it. Notable: `/daily-priorities`, `/follow-up`, `/client-proposal`, `/lead-tracker`, `/demo-website`, `/site-review`, `/caption`, `/grill-me`, `/git-command`, `/project-kickoff`, `/project-completion-doc`, `/claude-coach`, `/video-studio` (social video editing, HyperFrames kit in `video-studio/`), `/explainer-video` + `/video-theme` (animated explainers / motion graphics synced to VO; themes chalkboard, manim, kinetic, hud, grid-pulpen; code-made SFX), `/riset-sekitar` + `/sekitar` (idea research, then 3D everyday-object explainer shorts, Remotion + Three.js + Gemini VO; project in gitignored `shorts/`).
+Custom skills in `.claude/skills/<name>/SKILL.md`, invoke with `/<name>`. Each skill's description tells you when to use it. Notable: `/daily-priorities`, `/follow-up`, `/client-proposal`, `/lead-tracker`, `/demo-website`, `/site-review`, `/caption`, `/grill-me`, `/git-command`, `/project-kickoff`, `/project-completion-doc`, `/claude-coach`, `/video-studio` (social video editing, HyperFrames kit in `video-studio/`), `/explainer-video` + `/video-theme` (animated explainers / motion graphics synced to VO; themes chalkboard, manim, kinetic, hud, grid-pulpen; code-made SFX), `/liquid-glass` (Apple liquid glass UI for any stack: React, Laravel, PHP, plain CSS; Chromium refraction, fallback elsewhere), `/riset-sekitar` + `/sekitar` (idea research, then 3D everyday-object explainer shorts, Remotion + Three.js + Gemini VO; project in gitignored `shorts/`), `/produksi-harian` (riset-sekitar, pick 5, one new session per /sekitar film, no approvals).
 
 ---
 
@@ -138,5 +138,6 @@ Applies to: wrong format, wrong file, wrong assumption, wrong tone, anything cor
 - sekitar bed: quieter, varies per film and section, ducks under VO.
 - sekitar: objects stand on default grid floor with shadows, never bare white.
 - sekitar: every shot in a real place from kit props.tsx, never lone objects.
-- sekitar: render without asking after script OK; output in out/<date>/<slug>/.
+- sekitar: never ask approval; use own recommendation; out/<date>/<slug>/.
 - sekitar YouTube tags: 1-2 words each, no search-phrase tags.
+- sekitar: no upload.md; captions IG/TikTok/YouTube go in session's final message.

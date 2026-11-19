@@ -1,6 +1,6 @@
 # Reviewer rubric (automatic mode)
 
-The reviewer replaces Azriel's approvals when `produksi-harian` runs `sekitar` unattended. Since 5 Nov 2026 (Azriel: the original author approves quickly, so review only what is crucial) a film gets **two reviewer gates**: `fakta` on the script and `look` on the storyboard. Everything else is the maker's own self-check below, with no reviewer: the 5 Nov films used 7 reviewers each (21% of a film's Claude usage), and most still ended PERLU CEK.
+The reviewer replaces Azriel's approvals when an unattended run (the old `produksi-harian`, archived 19 Nov 2026) runs `sekitar`. Since 5 Nov 2026 (Azriel: the original author approves quickly, so review only what is crucial) a film gets **two reviewer gates**: `fakta` on the script and `look` on the storyboard. Everything else is the maker's own self-check below, with no reviewer: the 5 Nov films used 7 reviewers each (21% of a film's Claude usage), and most still ended PERLU CEK.
 
 Each gate gets a **fresh** reviewer (an Agent with no part in making the film, started with `model: "sonnet"`), given only file paths and this rubric. It returns JSON and nothing else:
 
@@ -46,7 +46,7 @@ The maker checks these itself and notes any shortfall in the report.
 - **struktur:** hook, stakes, one cause chain, twist, at most 3 steps, reframe, and a last line with id `cta` asking to follow.
 
 **Film, after the render (replaces the old `akhir` gate):**
-- **cek-teknis (*hard*):** `check.py` prints `RESULT: all pass`, and `upload_check.py` passes. A failure gets fixed and re-rendered to `<slug>_v2.mp4`.
+- **cek-teknis (*hard*):** `check.py` prints `RESULT: all pass`, and the captions in the final message respect the platform limits. A failure gets fixed and re-rendered to `<slug>_v2.mp4`.
 - **lembar-review:** look at every `review/sheet_*.jpg` once against the look criteria. Fix and re-render only for a real error (clipped label, tag pointing at nothing, broken or empty frame), not for taste.
 - **caption:** hard words (names, numbers) sit on the right frames per `timing.json`.
-- **teks-unggah:** `upload.md` follows [UPLOAD.md](UPLOAD.md), every claim from the source table, and health or safety films carry the disclaimer.
+- **teks-unggah:** the captions in the final message follow [UPLOAD.md](UPLOAD.md), every claim from the source table, and health or safety films carry the disclaimer.

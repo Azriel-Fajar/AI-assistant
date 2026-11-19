@@ -159,6 +159,13 @@ def make(kind):
         ph = 2 * np.pi * np.cumsum(f) / SR
         x = np.sin(ph) + 0.5 * np.sin(2 * ph) + 0.3 * np.sin(3 * ph)
         return 0.45 * x * np.sin(np.pi * t / d) ** 1.5 * (0.7 + 0.3 * np.sin(2 * np.pi * 2.3 * t))
+    if kind == "sizzle":  # fat on hot coals: bright hiss with crackle pops, fading over ~1 s
+        d = 1.1
+        x = noise(d, 9000, 0.45) * 0.6
+        pops = np.zeros_like(x)
+        for k in RNG.integers(0, len(x) - 400, 14):
+            pops[k:k + 400] += noise(400 / SR, 5000, 0.002)
+        return x + 0.5 * pops * env(d, decay=0.4)
     raise SystemExit(f"Unknown sfx type: {kind}")
 
 
